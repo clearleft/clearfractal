@@ -1,0 +1,15 @@
+.DS_Store
+
+/vendor
+composer.phar
+
+/node_modules
+npm-debug.log
+
+/bower_components
+
+.sass-cache
+.vagrant
+
+/public/assets
+/build

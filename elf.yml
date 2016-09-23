@@ -1,0 +1,7 @@
+repository: git@github.com:clearleft/clearfractal.git
+webroot: build
+build: ['npm install', 'npm run build']
+deploy:
+    branch: master
+    server: clearleft
+    domain: fractal.clearleft.com
