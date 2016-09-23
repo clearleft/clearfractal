@@ -5,3 +5,5 @@ deploy:
     branch: master
     server: clearleft
     domain: fractal.clearleft.com
+    auth:
+        clearfractal: clearfractal
