@@ -7,3 +7,6 @@ deploy:
     domain: fractal.clearleft.com
     auth:
         clearfractal: clearfractal
+
+devbox:
+    domain: clearfractal.elf
