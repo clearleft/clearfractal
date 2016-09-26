@@ -21,7 +21,7 @@ main {
 .Sharpies {}
 .Sharpies-headings h2 {
     font-family: 'Gilroy Black';
-    font-size: 5rem;
+    font-size: 3rem;
     margin: 1rem 0;
 }
 
@@ -43,6 +43,19 @@ main {
 .Sharpies-headings h2:nth-child(6) {
     background: url('../img/streak-6.jpg') 0 100% no-repeat;
 }
+
+@media only screen and (min-width: 580px) {
+    .Sharpies-headings h2 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Sharpies-headings h2 {
+        font-size: 5rem;
+    }
+}
+
 
 .Sharpie-blob1 {
     background: url('../img/streakyblob1.jpg') 50% 50% no-repeat;
