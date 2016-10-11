@@ -2,7 +2,7 @@
     "name": "clearleft-fractal",
     "version": "0.1.0",
     "dependencies": {
-        "@frctl/fractal": "^1.0.8",
+        "@frctl/fractal": "^1.1.0-beta.1",
         "@frctl/mandelbrot": "^1.1.0-alpha.0",
         "@frctl/twig": "^1.0.0-beta.1"
     },
