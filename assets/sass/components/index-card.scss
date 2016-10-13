@@ -10,9 +10,8 @@
     justify-content: space-between;
 }
 .IndexCard-name {
-    @include font(30px);
+    @include font(30px, 30px);
     margin-bottom: 0.5em;
-    line-height: 30px;
 }
 .IndexCard-info {
     margin-bottom: 2em;
