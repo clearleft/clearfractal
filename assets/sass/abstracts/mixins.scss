@@ -1,4 +1,7 @@
-/*Font size px convertd to rems*/
-@mixin font($size-px) {
+/*Font size and line height px to rems*/
+@mixin font($size-px, $line-height-px: false) {
     font-size: $size-px / $base-font-size * 1rem;
+    @if $line-height-px {
+        line-height: ($line-height-px / $base-font-size * 1rem);
+    }
 }
