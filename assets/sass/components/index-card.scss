@@ -1,0 +1,26 @@
+.IndexCard {
+    background-color: #DAE1E8;
+    color: #333;
+    font-weight: 700;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.IndexCard-name {
+    @include font(30px);
+    margin-bottom: 0.5em;
+    line-height: 30px;
+}
+.IndexCard-info {
+    margin-bottom: 2em;
+    color: #656565;
+    text-transform: uppercase;
+    @include font(14px);
+    letter-spacing: 1px;
+}
+.IndexCard-image {
+    margin: 0 auto;
+}
