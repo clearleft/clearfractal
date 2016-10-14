@@ -8,14 +8,15 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    border-bottom: none;
 }
 .IndexCard-name {
     @include font(30px, 30px);
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 .IndexCard-info {
-    margin-bottom: 2em;
-    color: $dark-grey;
+    margin-bottom: 2.25em;
+    color: #656565;
     text-transform: uppercase;
     @include font(14px);
     letter-spacing: 1px;

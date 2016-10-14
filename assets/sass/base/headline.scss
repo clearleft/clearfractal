@@ -1,0 +1,13 @@
+.Headline {
+    color: $jet-grey;
+    &--main {
+        @include font(90px);
+        font-weight: 800;
+    }
+    &--secondary {
+        @include font(40px);
+    }
+    &--body {
+        @include font(30px);
+    }
+}
