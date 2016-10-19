@@ -12,11 +12,11 @@
 }
 .IndexCard-name {
     @include font(30px, 30px);
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
 }
 .IndexCard-info {
-    margin-bottom: 2.25em;
-    color: #656565;
+    margin-bottom: 2.25rem;
+    color: $mid-grey;
     text-transform: uppercase;
     @include font(14px);
     letter-spacing: 1px;
