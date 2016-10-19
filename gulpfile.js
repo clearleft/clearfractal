@@ -1,93 +1,228 @@
+
 'use strict';
 
-const gulp         = require('gulp');
-const sass         = require('gulp-sass');
-const sourcemaps   = require('gulp-sourcemaps');
-const autoprefixer = require('gulp-autoprefixer');
-const sassGlob     = require('gulp-sass-glob');
-const del          = require('del');
-const babel        = require('babelify');
-const source       = require('vinyl-source-stream');
-const buffer       = require('vinyl-buffer');
+
+/*************************************
+ *  Config - EDIT THESE
+ *************************************/
+
+ const CONFIG = {
+    css: {
+        src:                ['assets/sass/build.scss'],
+        dest:               'public/assets/css/all.css',
+        autoprefix:         ['> 1%', 'last 2 versions'],
+        watch:              'assets/sass/**/*.scss',
+        clean:              ['public/assets/css/*']
+    },
+
+    images: {
+        src:                'assets/img',
+        dest:               'public/assets',
+        optimise:           ['**/*.{png,jpg,jpeg,gif}'],
+        copy:               ['**/*.svg'],
+        watch:              ['assets/img/**/*.{png,jpg,jpeg,gif,svg}'],
+        clean:              ['public/assets/img'],
+        optimizationLevel:  3,
+    },
+
+    fonts: {
+        src:                'assets/fonts',
+        dest:               'public/assets/fonts',
+        copy:               ['**/*.{eot,ttf,woff,woff2}'],
+        clean:              ['public/assets/fonts/*'],
+        watch:              ['assets/fonts/**/*.{eot,ttf,woff,woff2}']
+    },
+
+    scripts: {
+        src:                ['assets/js/main.js'],
+        dest:               'public/assets/js/main.js',
+        watch:              ['assets/js/**/*.js'],
+        clean:              ['public/assets/js/*']
+    }
+}
 
 
+/*************************************
+ *  Packages
+ *************************************/
 
-/* SASS */
 
-gulp.task('css:build', () => {
-  return gulp.src('assets/sass/main.scss')
-    .pipe(sassGlob())
-    .pipe(sass({
-        includePaths: ['node_modules']
-    }).on('error', sass.logError))
-    .pipe(autoprefixer({
-        browsers: ['last 2 versions']
-    }))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('public/assets/css'));
+const autoprefixer  = require('autoprefixer');
+const del           = require('del');
+const gulp          = require('gulp');
+const postcss       = require('gulp-postcss');
+const rename        = require('gulp-rename');
+const sass          = require('gulp-sass');
+const sassGlob      = require('gulp-sass-glob');
+const sourcemaps    = require('gulp-sourcemaps');
+const syntax_scss   = require('postcss-scss');
+const stylelint     = require('gulp-stylelint');
+
+
+// TODO: Do some ENV stuff here.
+// console.log(process.argv);
+// const env = process.argv.contains('env') ? process.argv['env'] : 'production';
+
+
+/*************************************
+ *  Functions
+ *************************************/
+
+const SplitParts = (str) => {
+    let parts      = str.split('/');
+    let fileName   = parts.pop();
+    let path       = parts.join('/');
+
+    return { fileName, path };
+};
+
+
+// TASKS ===========================================================
+
+
+/*************************************
+    SASS
+
+    - Read source build file
+    - Glob files
+    - Lint SASS (not the resulting CSS)
+    - Compile
+    - Autoprefix
+    - Create Sourcemap
+    - Output stats
+    - Write to disk
+ *************************************/
+
+
+const CSSProcessors = [
+    autoprefixer( { browsers: CONFIG.css.autoprefix } )
+];
+
+gulp.task('sass:lint', () => {
+    return gulp.src( 'assets/sass/**/*' )
+        // lint
+        .pipe(stylelint({
+            reporters: [
+                { formatter: 'string', console: true }
+            ]
+        }));
 });
 
-gulp.task('css:clean', done => {
-    return del(['public/assets/css'], done);
+gulp.task('sass:build', () => {
+
+    let { fileName, path } = SplitParts(CONFIG.css.dest);
+
+    // delete all build files + folders
+    del( CONFIG.css.clean );
+
+    return gulp.src( CONFIG.css.src )
+
+        .pipe(sourcemaps.init())
+
+        // glob
+        .pipe(sassGlob())
+
+        // compile SASS
+        .pipe(
+            sass().on('error', sass.logError)
+        )
+
+        // PostCSS
+        .pipe(postcss( CSSProcessors ) )
+
+        // create sourcemap
+        .pipe(sourcemaps.write('.'))
+
+        // output
+        .pipe( rename( fileName ) )
+        .pipe( gulp.dest( path ) );
 });
 
-gulp.task('css', gulp.series('css:clean', 'css:build'));
+gulp.task('sass', gulp.series('sass:lint', 'sass:build'));
 
 
-/* Fonts */
+/******************************************************************************
+    Images
 
-gulp.task('fonts:copy', function() {
-  return gulp.src('assets/fonts/**/*')
-    .pipe(gulp.dest('public/assets/fonts'));
+    - Delete source directory (in development mode)
+ ******************************************************************************/
+
+gulp.task('images', () => {
+
+    // delete all build files + folders
+    del( CONFIG.images.clean );
+
+    return gulp.src( CONFIG.images.src )
+
+        // image minification
+        // all files are piped through this package. Remove this pipe if you simply want to copy files without being minified.
+        // .pipe(imagemin({
+        //     progressive: true,
+        //     svgoPlugins: [
+        //         { removeViewBox: false },
+        //         { removeUselessStrokeAndFill: false }
+        //     ],
+        // }))
+
+        // output to dest folder
+        .pipe( gulp.dest( CONFIG.images.dest ) );
 });
 
-gulp.task('fonts:clean', function(done) {
-    return del(['public/assets/fonts'], done);
+
+/******************************************************************************
+    Fonts
+
+    - Copy font files
+ ******************************************************************************/
+
+gulp.task('fonts', () => {
+
+    // delete all build files + folders
+    del( CONFIG.fonts.clean );
+
+    return gulp.src( CONFIG.fonts.src )
+
+        // output to dest folder
+        .pipe( gulp.dest( CONFIG.fonts.dest ) );
 });
 
-gulp.task('fonts', gulp.series('fonts:clean', 'fonts:copy'));
 
+/******************************************************************************
+    JavaScript
 
-/* Images */
+    - Copies files over to build folder
+ ******************************************************************************/
 
-gulp.task('images:copy', () => {
-    return  gulp.src('assets/img/**/*')
-                .pipe(gulp.dest('public/assets/img'));
+ gulp.task('scripts', () => {
+
+     let { fileName, path } = SplitParts(CONFIG.scripts.dest);
+
+     // delete all previously compiled files + folders
+     del( CONFIG.scripts.clean );
+
+     return gulp.src( CONFIG.scripts.src )
+
+        // write sourcemap
+        // .pipe(sourcemaps.write('.'))
+
+        // output
+        .pipe( rename( fileName ) )
+        .pipe( gulp.dest( path ) );
 });
-
-gulp.task('images:clean', done => {
-    return del(['public/assets/img'], done);
-});
-
-gulp.task('images', gulp.series('images:clean', 'images:copy'));
-
-
-
-/* JS */
-
-gulp.task('js:clean', done => {
-    return del(['public/assets/js'], done);
-});
-
-gulp.task('js:build', () => {
-    return  gulp.src('assets/js/**/*')
-                .pipe(gulp.dest('public/assets/js'))
-});
-
-gulp.task('js', gulp.series('js:clean', 'js:build'));
 
 
 
 /** Watch **/
 
-gulp.task('css:watch',      () => { gulp.watch( 'assets/sass/**/*.scss',    gulp.parallel('css') )      });
-gulp.task('images:watch',   () => { gulp.watch( 'assets/img/**/*',          gulp.parallel('images') )   });
-gulp.task('js:watch',       () => { gulp.watch( 'assets/js/**/*',           gulp.parallel('js') )       });
+gulp.task('sass:watch',     () => { gulp.watch( 'assets/sass/**/*',     gulp.series('sass') )       });
+gulp.task('images:watch',   () => { gulp.watch( 'assets/img/**/*',      gulp.series('images') )     });
+gulp.task('fonts:watch',    () => { gulp.watch( 'assets/fonts/**/*',    gulp.series('fonts') )      });
+gulp.task('scripts:watch',  () => { gulp.watch( 'assets/js/**/*',       gulp.series('scripts') )    });
 
 
 /** Tasks **/
 
-gulp.task('default', gulp.parallel('fonts', 'css', 'images', 'js'));
+gulp.task('default', gulp.parallel('fonts', 'sass', 'images', 'scripts'));
 
-gulp.task('watch:build', gulp.parallel('css:watch', 'images:watch', 'js:watch'));
+gulp.task('watch:build', gulp.parallel('sass:watch', 'images:watch', 'fonts:watch', 'scripts:watch'));
 gulp.task('watch', gulp.series('default', 'watch:build') );
