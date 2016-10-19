@@ -1,13 +1,23 @@
 .Heading {
     color: $jet-grey;
+    margin-bottom: 0.75rem;
     &--main {
         @include font(90px, 80px);
         font-weight: 800;
     }
     &--secondary {
         @include font(40px, 49px);
+        letter-spacing: -0.5px;
     }
     &--body {
         @include font(30px, 33px);
+        font-weight: 700;
+    }
+    &--context {
+        @include font(14px, 17px);
+        text-transform: uppercase;
+        color: $mid-grey;
+        font-weight: 700;
+        letter-spacing: 1px;
     }
 }
