@@ -10,7 +10,19 @@ module.exports = {
         "cardDescription": "In my previous article, I wrote about some of the misconceptions with “agile” that I see in organisations. This article will focus on one of them specifically – the common (mis)understanding that agile—and more recently lean start-up methods—are seen as operational [...]"
     },
     "variants": [{
-        "name": "tiny-lesson",
+        "name": "Card header modifier",
+        "context": {
+            "cardModifier": "--header",
+            "openContext": "Tiny Lesson",
+            "cardTitle": "Article Title Goes here",
+            "indexCard": true,
+            "secondContext": "Visual design, 2 hours",
+            "closeContext": false,
+            "cardDescription": false
+        }
+    },
+    {
+        "name": "A card with an index card and no description",
         "context": {
             "openContext": "Tiny Lesson",
             "cardTitle": "The 20 second gut test",
