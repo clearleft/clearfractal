@@ -11,18 +11,18 @@
         src:                ['assets/sass/build.scss'],
         dest:               'public/assets/css/all.css',
         autoprefix:         ['> 1%', 'last 2 versions'],
-        watch:              'assets/sass/**/*.scss',
-        clean:              ['public/assets/css/*']
+        clean:              ['public/assets/css/*'],
+        watch:              'assets/sass/**/*.scss'
     },
 
     images: {
         src:                'assets/img',
-        dest:               'public/assets',
-        optimise:           ['**/*.{png,jpg,jpeg,gif}'],
+        dest:               'public/assets/img',
+        optimise:           ['**/*.{png,jpg,jpeg,gif,svg}'],
         copy:               ['**/*.svg'],
-        watch:              ['assets/img/**/*.{png,jpg,jpeg,gif,svg}'],
         clean:              ['public/assets/img'],
         optimizationLevel:  3,
+        watch:              ['assets/img/**/*.{png,jpg,jpeg,gif,svg}']
     },
 
     fonts: {
@@ -36,8 +36,8 @@
     scripts: {
         src:                ['assets/js/main.js'],
         dest:               'public/assets/js/main.js',
-        watch:              ['assets/js/**/*.js'],
-        clean:              ['public/assets/js/*']
+        clean:              ['public/assets/js/*'],
+        watch:              ['assets/js/**/*.js']
     }
 }
 
@@ -152,7 +152,7 @@ gulp.task('images', () => {
     // delete all build files + folders
     del( CONFIG.images.clean );
 
-    return gulp.src( CONFIG.images.src )
+    return gulp.src( CONFIG.images.src + '/' + CONFIG.images.optimise )
 
         // image minification
         // all files are piped through this package. Remove this pipe if you simply want to copy files without being minified.
@@ -180,7 +180,7 @@ gulp.task('fonts', () => {
     // delete all build files + folders
     del( CONFIG.fonts.clean );
 
-    return gulp.src( CONFIG.fonts.src )
+    return gulp.src( CONFIG.fonts.src + '/' + CONFIG.fonts.copy )
 
         // output to dest folder
         .pipe( gulp.dest( CONFIG.fonts.dest ) );
@@ -214,10 +214,10 @@ gulp.task('fonts', () => {
 
 /** Watch **/
 
-gulp.task('sass:watch',     () => { gulp.watch( 'assets/sass/**/*',     gulp.series('sass') )       });
-gulp.task('images:watch',   () => { gulp.watch( 'assets/img/**/*',      gulp.series('images') )     });
-gulp.task('fonts:watch',    () => { gulp.watch( 'assets/fonts/**/*',    gulp.series('fonts') )      });
-gulp.task('scripts:watch',  () => { gulp.watch( 'assets/js/**/*',       gulp.series('scripts') )    });
+gulp.task('sass:watch',     () => { gulp.watch( CONFIG.css.watch,       gulp.series('sass') )       });
+gulp.task('images:watch',   () => { gulp.watch( CONFIG.images.watch,    gulp.series('images') )     });
+gulp.task('fonts:watch',    () => { gulp.watch( CONFIG.fonts.watch,     gulp.series('fonts') )      });
+gulp.task('scripts:watch',  () => { gulp.watch( CONFIG.scripts.watch,   gulp.series('scripts') )    });
 
 
 /** Tasks **/
