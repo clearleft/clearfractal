@@ -5,12 +5,12 @@
     border-bottom: none;
     display: flex;
     align-items: flex-end;
-}
-a.IndexCard:hover {
-    color: inherit;
-}
-a.IndexCard:hover .IndexCard-info {
-    text-decoration: underline;
+    &:hover {
+        color: inherit;
+    }
+    &:hover .IndexCard-info {
+        text-decoration: underline;
+    }
 }
 .IndexCard-name {
     @include font(14px, 17px);
