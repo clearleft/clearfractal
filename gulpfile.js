@@ -130,11 +130,13 @@ gulp.task('sass:build', () => {
         // PostCSS
         .pipe(postcss( CSSProcessors ) )
 
+        // rename (must be done before creating the sourcemap)
+        .pipe( rename( fileName ) )
+
         // create sourcemap
         .pipe(sourcemaps.write('.'))
 
         // output
-        .pipe( rename( fileName ) )
         .pipe( gulp.dest( path ) );
 });
 
