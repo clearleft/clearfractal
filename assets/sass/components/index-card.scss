@@ -1,26 +1,87 @@
 .IndexCard {
-    background-color: $light-grey;
     color: $jet-grey;
-    font-weight: 700;
-    padding: 1.5rem 1.5rem 0 1.5rem;
+    line-height: 1.1;
     text-decoration: none;
+    border-bottom: none;
+    display: flex;
+    align-items: flex-end;
+}
+a.IndexCard:hover {
+    color: inherit;
+}
+a.IndexCard:hover .IndexCard-info {
+    text-decoration: underline;
+}
+.IndexCard-name {
+    @include font(14px, 17px);
+    text-transform: uppercase;
+    color: $mid-grey;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.IndexCard-details {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+.IndexCard-info {
+    @include font(13px, 14px);
+    margin: 0.1rem 0 0.275rem 0;
+}
+.IndexCard--profile {
+    position: relative;
+    margin-bottom: 2rem;
+    .IndexCard-details {
+        position: absolute;
+        left: 1rem;
+        bottom: -2em;
+        background-color: $light-grey;
+        width: 9rem;
+    }
+    .IndexCard-name {
+        color: $jet-grey;
+        @include font(18px, 22px);
+    }
+    .IndexCard-info {
+        margin: 0;
+    }
+}
+.IndexCard--tile {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    border-bottom: none;
+    background-color: $light-grey;
+    padding: 1rem 1rem 0 1rem;
+    .IndexCard-image {
+        order: 2;
+    }
+    .IndexCard-details {
+        padding: 0;
+    }
+    .IndexCard-name {
+        @include font(25px, 25px);
+        color: $jet-grey;
+        font-weight: 700;
+        margin-bottom: 0.3rem;
+    }
+    .IndexCard-info {
+        margin-bottom: 1rem;
+        color: $mid-grey;
+        text-transform: uppercase;
+        @include font(14px);
+        letter-spacing: 1px;
+    }
+    .IndexCard-image {
+        margin: 0 auto;
+    }
 }
-.IndexCard-name {
-    @include font(30px, 30px);
-    margin-bottom: 0.5rem;
-}
-.IndexCard-info {
-    margin-bottom: 2.25rem;
-    color: $mid-grey;
-    text-transform: uppercase;
-    @include font(14px);
-    letter-spacing: 1px;
-}
-.IndexCard-image {
-    margin: 0 auto;
+@media screen and (min-width: 15em) {
+    .IndexCard--tile {
+        padding: 1.5rem 1.5rem 0 1.5rem;
+        .IndexCard-name {
+            @include font(30px, 30px);
+            margin-bottom: 0.5rem;
+        }
+    }
 }
