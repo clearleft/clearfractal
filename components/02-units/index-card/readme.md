@@ -1,1 +1,1 @@
-IndexCards are a type of content block for displaying small chunks of information; usually as meta information to accompany the content around it. IndexCards can be displayed in as single items (E.g. on articles) or in groups (E.g. listing the team members on the About page).
+IndexCards are a type of content block for displaying small chunks of information; usually as meta information to accompany the content around it. IndexCards can be displayed in as single items (e.g. on articles) or in groups (e.g. listing the team members on the About page).
