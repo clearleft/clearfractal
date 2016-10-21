@@ -20,7 +20,7 @@
         dest:               'public/assets/img',
         optimise:           ['**/*.{png,jpg,jpeg,gif,svg}'],
         copy:               ['**/*.svg'],
-        clean:              ['public/assets/img'],
+        clean:              ['public/assets/img/*'],
         optimizationLevel:  3,
         watch:              ['assets/img/**/*.{png,jpg,jpeg,gif,svg}']
     },
