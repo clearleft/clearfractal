@@ -1,12 +1,12 @@
 <div class="Card">
     <div class="Card-primary">
-        <div class="Heading Heading--context">{{ openContext }}</div>
-        <h3 class="Heading Heading--body">{{ cardTitle }}</h3>
+        <div class="Card-context">{{ openContext }}</div>
+        <h3 class="Card-title">{{ cardTitle }}</h3>
         {% if cardDescription %}
-        <p>{{ cardDescription }}</p>
+        <p class="Card-description">{{ cardDescription }}</p>
         {% endif %}
         {% if secondContext %}
-        <span class="Heading Heading--context">{{ secondContext }}</span>
+        <div class="Heading Heading--context">{{ secondContext }}</div>
         {% endif %}
     </div><!--/.Card-main-->
     <div class="Card-secondary">
