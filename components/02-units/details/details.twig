@@ -1,18 +1,8 @@
 <dl class="Details">
+    {% for detail in details %}
     <div class="Details-item">
-        <dt class="Details-heading">Price</dt>
-        <dd class="Details-description">£2500</dd>
+        <dt class="Details-heading">{{detail.detailItem}}</dt>
+        <dd class="Details-description">{{detail.detailDescription}}</dd>
     </div>
-    <div class="Details-item">
-        <dt class="Details-heading">Attendees</dt>
-        <dd class="Details-description">Up to 8 people</dd>
-    </div>
-    <div class="Details-item">
-        <dt class="Details-heading">Duration</dt>
-        <dd class="Details-description">1 day</dd>
-    </div>
-    <div class="Details-item">
-        <dt class="Details-heading">Contact</dt>
-        <dd class="Details-description">andybudd@clearleft.com</dd>
-    </div>
+    {% endfor %}
 </dl><!--/.Details-->
