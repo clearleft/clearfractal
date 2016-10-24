@@ -3,7 +3,6 @@ module.exports = {
     "status": "wip",
     "collated": true,
     "context": {
-        "title": "Our users",
         "details": [{
             "detailItem": "Price",
             "detailDescription": "£2500"

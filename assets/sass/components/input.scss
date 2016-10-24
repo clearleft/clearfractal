@@ -1,0 +1,45 @@
+.Input {
+    display: flex;
+    flex-flow: column;
+    padding: 0 0.5rem;
+    border: 0.15rem solid #C0C0C0;
+    border-radius: 0.3rem;
+    position: relative;
+}
+.Input-item {
+    background: #FFFFFF;
+    order: 2;
+    border: 0;
+    font-family: inherit;
+    @include font(16px);
+}
+.Input-label,
+.Input-item {
+    color: $dark-grey;
+    transition: all 0.2s;
+}
+.Input-item:focus {
+    outline: 0;
+    border-bottom: $mid-blue solid 0.1rem;
+    padding-bottom: 0.1rem;
+}
+.Input-item:placeholder-shown + label {
+    transform-origin: left bottom;
+    transform: translate(0, 0.6rem) scale(1);
+}
+::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+}
+.Input-item:focus::-webkit-input-placeholder {
+    opacity: 1;
+}
+.Input-item:not(:placeholder-shown) + .Input-label,
+.Input-item:focus + .Input-label {
+    transform: translate(0, 0) scale(1);
+    color: $mid-grey;
+}
+.Input-item:not(:placeholder-shown),
+.Input-item:focus {
+    margin-bottom: 0.5rem;
+}
