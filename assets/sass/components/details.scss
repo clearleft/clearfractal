@@ -1,0 +1,19 @@
+.Details-item {
+    margin: 0 1rem 0.8rem 0;
+}
+.Details-heading {
+    @include font (14px, 17px);
+    color: #B1B1B1;
+    text-transform: uppercase;
+}
+.Details-description {
+    @include font (16px, 24px);
+    color: $dark-grey;
+}
+@media screen and (min-width: 20em) {
+    .Details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
