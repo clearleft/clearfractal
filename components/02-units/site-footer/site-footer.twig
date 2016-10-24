@@ -1,0 +1,17 @@
+
+<div class="SiteFooter">
+
+    <nav class="SiteFooter-navigation">
+        <ul class="SiteFooter-navigationLinks">
+            {% for link in links %}
+            <li class="SiteFooter-navigationItem"><a href="#" class="SiteFooter-navigationLink">{{ link.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+    <div class="SiteFooter-text">
+        <p class="SiteFooter-textMessage">{{ message }}</p>
+        <small class="SiteFooter-textSmall">{{ small }}</small>
+    </div>
+
+</div>
