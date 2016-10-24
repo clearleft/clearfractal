@@ -3,8 +3,10 @@
 }
 .Details-heading {
     @include font (14px, 17px);
+    font-weight: 700;
     color: #B1B1B1;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .Details-description {
     @include font (16px, 24px);
