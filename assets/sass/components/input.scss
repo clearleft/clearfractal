@@ -1,7 +1,7 @@
 .Input {
     display: flex;
     flex-flow: column;
-    padding: 0 0.5rem;
+    padding: 0 0.85rem;
     border: 0.15rem solid #C0C0C0;
     border-radius: 0.3rem;
     position: relative;
@@ -11,7 +11,7 @@
     order: 2;
     border: 0;
     font-family: inherit;
-    @include font(16px);
+    @include font(18px);
 }
 .Input-label,
 .Input-item {
@@ -21,9 +21,10 @@
 .Input-item:focus {
     outline: 0;
     border-bottom: $mid-blue solid 0.1rem;
-    padding-bottom: 0.1rem;
+    margin-top: -0.2rem;
+    margin-bottom: 0.2rem;
 }
-.Input-item:placeholder-shown + label {
+.Input-item:placeholder-shown + .Input-label {
     transform-origin: left bottom;
     transform: translate(0, 0.6rem) scale(1);
 }
@@ -36,10 +37,8 @@
 }
 .Input-item:not(:placeholder-shown) + .Input-label,
 .Input-item:focus + .Input-label {
+    font-family: inherit;
     transform: translate(0, 0) scale(1);
     color: $mid-grey;
-}
-.Input-item:not(:placeholder-shown),
-.Input-item:focus {
-    margin-bottom: 0.5rem;
+    @include font (14px);
 }
