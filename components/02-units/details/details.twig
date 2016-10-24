@@ -1,0 +1,8 @@
+<dl class="Details">
+    {% for detail in details %}
+    <div class="Details-item">
+        <dt class="Details-heading">{{detail.detailItem}}</dt>
+        <dd class="Details-description">{{detail.detailDescription}}</dd>
+    </div>
+    {% endfor %}
+</dl><!--/.Details-->
