@@ -1,0 +1,27 @@
+.Signpost-image {
+    max-width: 100%;
+    border-bottom: 2px solid $light-grey;
+}
+.Signpost-directions {
+    padding: 0.25rem 0.75rem 0.75rem;
+}
+.Signpost-title {
+    @include font(22px, 27px);
+    color: $mid-blue;
+    margin-bottom: 1rem;
+}
+.Signpost-description {
+    color: $dark-grey;
+    margin-bottom: 0.85rem;
+}
+.Signpost-exit {
+    border-bottom: solid 2px $clearleft-red;
+    padding-bottom: 0.25rem;
+    @include font(16px);
+    font-weight: 700;
+}
+@media screen and (min-width: 18em) {
+    .Signpost-directions {
+        padding: 1rem 1.25rem 1.25rem;
+    }
+}
