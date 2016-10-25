@@ -1,0 +1,44 @@
+.InputGroup-field {
+    background: #FFFFFF;
+    border: 0;
+    font-family: inherit;
+    @include font(14px);
+    padding: 0.65rem 0.75rem;
+    border: 0.15rem solid #C0C0C0;
+    border-radius: 0.3rem;
+}
+.InputGroup-submit {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    color: #ffffff;
+    background-color: $clearleft-red;
+    padding: 0.4rem 0.5rem;
+    font-weight: 700;
+    @include font(14px);
+}
+.InputGroup-label {
+    @include font(16px);
+    display: block;
+    flex-basis: 100%;
+}
+.InputGroup--combo {
+    display: flex;
+    .InputGroup-field {
+        flex-grow: 1;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .InputGroup-submit {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+@media screen and (min-width: 22em) {
+    .InputGroup-field {
+        @include font(16px);
+    }
+    .InputGroup-submit {
+        padding: 0.6rem 2rem;
+        @include font(17px);
+    }
+}
