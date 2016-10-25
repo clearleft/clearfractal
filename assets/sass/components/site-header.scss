@@ -1,10 +1,10 @@
 
-.Masthead {
+.SiteHeader {
     padding: 1rem;
 }
 
 @media only screen and (min-width: #{(720/16)}em) {
-    .Masthead {
+    .SiteHeader {
         display: flex;
         justify-content: space-between;
     }
