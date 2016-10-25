@@ -2,34 +2,10 @@
 .Masthead {
     padding: 1rem;
 }
-.PrimaryNavigation-list {
-    list-style: none;
-}
-.PrimaryNavigation-link {
-    color: #333;
-    display: block;
-    @include font(15px, 18px);
-    font-weight: 700;
-}
-
-@media only screen and (min-width: #{(480/16)}em) {
-    .PrimaryNavigation-list {
-        display: flex;
-    }
-    .PrimaryNavigation-link {
-        padding: 0.5rem;
-    }
-}
 
 @media only screen and (min-width: #{(720/16)}em) {
     .Masthead {
         display: flex;
         justify-content: space-between;
-    }
-}
-
-@media only screen and (min-width: #{(900/16)}em) {
-    .PrimaryNavigation-link {
-        padding: 0.5rem 1rem;
     }
 }
