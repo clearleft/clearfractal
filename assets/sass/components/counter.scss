@@ -1,0 +1,16 @@
+.Counter {
+    @include font(22px);
+    font-weight: 700;
+    border-radius: 10rem;
+    background-color: transparent;
+    border: 0.15rem solid $dark-grey;
+    width: 2.1rem;
+    height: 2.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0.25rem;
+}
+.Counter-small {
+    @include font(10px);
+}
