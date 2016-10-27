@@ -1,6 +1,8 @@
 
 .PrimaryNavigation-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .PrimaryNavigation-link {
     color: #333;
@@ -9,17 +11,17 @@
     font-weight: 700;
 }
 
-@media only screen and (min-width: #{(480/16)}em) {
+@media only screen and (min-width: px2em(480px)) {
     .PrimaryNavigation-list {
         display: flex;
     }
     .PrimaryNavigation-link {
-        padding: 0.5rem;
+        padding: px2rem(8px);
     }
 }
 
-@media only screen and (min-width: #{(900/16)}em) {
+@media only screen and (min-width: px2em(900px)) {
     .PrimaryNavigation-link {
-        padding: 0.5rem 1rem;
+        padding: px2rem(8px) px2rem(16px);
     }
 }

@@ -4,7 +4,9 @@
     </div><!--/.Chapter-label-->
     <div class="Chapter-primary Chapter-number">
         <h2 class="Chapter-title">{{chapterTitle}}</h2>
-        <p>{{chapterText}}</p>
+        {% for text in chapterText %}
+        <p>{{text}}</p>
+        {% endfor %}
     </div><!--/.Chapter-primary-->
     <div class="Chapter-secondary">
         <img class="Chapter-image" src="{{chapterImageSVG}}" onerror="this.src='{{chapterImagePNG}}'; this.onerror=null;" alt="">

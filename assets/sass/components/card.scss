@@ -1,3 +1,4 @@
+
 .Card {
     background: #FFFFFF;
     color: $jet-grey;
@@ -8,14 +9,9 @@
     align-items: flex-start;
     padding: 0;
 }
-.Card-title {
-    @include font(30px, 33px);
-    font-weight: 700;
-    margin-bottom: 1.25rem;
-}
 .Card-context {
     @include font(14px, 17px);
-    margin-bottom: 0.5rem;
+    margin-bottom: px2rem(12px);
     color: $mid-grey;
     text-transform: uppercase;
     font-weight: 700;
@@ -24,11 +20,18 @@
         margin-bottom: 0;
     }
 }
+.Card-title {
+    @include font(30px, 30px);
+    font-weight: 700;
+    margin: 0 0 px2rem(18px) 0;
+}
 .Card-image {
     width: 100%;
 }
 .Card-description {
-    margin: 1rem 0;
+    color: #505050;
+    @include font(17px, 29px);
+    margin: 0 0 px2rem(8px) 0;
 }
 .Card-primary {
     flex-grow: 1;
@@ -40,11 +43,11 @@
 .Card--header {
     border-radius: 0;
 }
-@media screen and (min-width: 18em) {
+@media screen and (min-width: px2em(288px)) {
     .Card-primary {
-        padding: 1.5rem;
+        padding: px2rem(24px);
     }
     .Card-secondary {
-        padding: 1.5rem;
+        padding: px2rem(24px);
     }
 }

@@ -1,18 +1,34 @@
-/*Fonts*/
-$base-font-size: 18px;
 
-/*Brand olours*/
+//------------------------------------
+//    $VARIABLES
+//------------------------------------
+
+
+/** Fonts */
+
+$base-font-size: 16px;
+
+/** Colours */
+
+// Brand colours
 $brand-plum: #973B8A;
 $brand-green: #00D494;
 $clearleft-yellow: #FFDA69;
 $clearleft-red: #EA215A;
 $clearleft-blue: #006FF5;
 $mid-blue: #1F6B9C;
-/*$light-blue: #56CBE6;*/
+// $light-blue: #56CBE6;
 
-/*Canvas colours*/
+// Canvas colours
 $jet-grey: #333333;
 $dark-grey: #505050;
 $mid-grey: #656565;
 $light-grey: #DAE1E8;
 $white-grey: #F3F2F2;
+
+
+/** Typography */
+
+$font-primary: "Gilroy", "Helvetica Neue", sans-serif;
+$font-secondary: "Gilroy Black", "Arial Black", sans-serif;
+$font-tertiary: Georgia, serif;
