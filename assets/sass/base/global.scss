@@ -1,30 +1,41 @@
-* {
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
-html,
-body {
-    margin: 0;
-    font-size: 17px;
+
+html {
+    color: #333;
     font-family: 'Gilroy', 'Helvetica Neue', sans-serif;
     font-weight: 500;
-    line-height: 29px;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS */
 }
+
+body {
+    font-size: px2rem(17px);
+    margin: 0;
+}
+
 a {
     color: $clearleft-blue;
     text-decoration: none;
 }
+
 a:active,
 a:hover {
     color: $clearleft-red;
 }
-p {
-    margin-bottom: 0.5em;
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+    border-style: none;
 }
-small {
-    font-size: 80%;
-}
+
 button {
     border: 0;
 }
