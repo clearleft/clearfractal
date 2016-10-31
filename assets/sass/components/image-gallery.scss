@@ -1,0 +1,48 @@
+.ImageGallery {
+    max-width: px2em(1025px);
+    margin: -1rem;
+}
+.ImageGallery-image {
+    width: 100%;
+    vertical-align: bottom;
+    float: left;
+    padding: 0.5rem;
+}
+@media screen and (min-width: px2em(200px)) {
+    .ImageGallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ImageGallery-group {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        &--wide .ImageGallery-image {
+            width: 100%;
+        }
+        &--pair .ImageGallery-image {
+            width: 50%;
+        }
+    }
+    .ImageGallery-group--quad {
+        display: flex;
+        flex-direction: column;
+    }
+    .ImageGallery-quadRow {
+        width: 100%;
+    }
+    .ImageGallery-image {
+        width: auto;
+        &--quadSmall {
+            width: 33.333%;
+        }
+        &--quadWide {
+            width: 66.666%;
+        }
+    }
+}
+@media screen and (min-width: px2em(630px)) {
+    .ImageGallery-group {
+        width: 50%;
+    }
+}
