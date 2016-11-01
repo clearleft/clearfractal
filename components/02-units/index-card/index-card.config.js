@@ -3,7 +3,9 @@ module.exports = {
     "status": "wip",
     "collated": true,
     "context": {
-        "imageSrc": "http://fillmurray.com/68/68"
+        "imageSrc": "http://fillmurray.com/68/68",
+        "indexCardName": "Andy Budd",
+        "indexCardInfo": "Managing Director"
     },
     "variants": [
         {

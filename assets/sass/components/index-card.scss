@@ -1,6 +1,7 @@
-
 .IndexCard {
     color: $jet-grey;
+    width: 96%;
+    margin: 1% 2%;
     line-height: 1.1;
     text-decoration: none;
     border-bottom: none;
@@ -53,6 +54,7 @@
     align-items: flex-start;
     justify-content: space-between;
     background-color: $light-grey;
+    font-weight: 700;
     padding: px2rem(16px) px2rem(16px) 0 px2rem(16px);
     .IndexCard-image {
         order: 2;
@@ -78,12 +80,27 @@
         margin: 0 auto;
     }
 }
-@media screen and (min-width: px2em(240px)) {
+@media screen and (min-width: px2em(220px)) {
     .IndexCard--tile {
         padding: px2rem(24px) px2rem(24px) 0 px2rem(24px);
-        .IndexCard-name {
-            @include font(30px, 30px);
-            margin-bottom: px2rem(8px);
-        }
+    }
+}
+@media screen and (min-width: px2em(350px)) {
+    .IndexCard--tile {
+        width: 48%;
+        margin: 1%;
+    }
+}
+@media screen and (min-width: px2em(640px)) {
+    .IndexCard--tile {
+        width: 31.333%;
+    }
+    .IndexCard-name {
+        @include font(30px, 30px);
+    }
+}
+@media screen and (min-width: px2em(780px)) {
+    .IndexCard--tile {
+        width: 23%;
     }
 }
