@@ -1,0 +1,5 @@
+<div class="FlexGrid">
+    {% for person in persons %}
+        {% include '@index-card' with {indexCardName: person.indexCardName} %}
+    {% endfor %}
+</div>
