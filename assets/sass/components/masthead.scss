@@ -1,0 +1,24 @@
+.Masthead-primary {
+    padding: 1rem;
+}
+.Masthead-secondary {
+    padding: 1rem;
+}
+.Masthead a {
+    font-weight: 700;
+    border-bottom: px2rem(2) $clearleft-red solid;
+}
+@media screen and (min-width: px2em(780px)) {
+    .Masthead {
+        max-width: px2rem(940);
+        margin: auto;
+        display: flex;
+    }
+    .Masthead--combo .Masthead-primary {
+        width: 70%;
+    }
+    .Masthead-secondary {
+        width: 30%;
+        margin-top: 1rem;
+    }
+}

@@ -1,10 +1,12 @@
 .Heading {
+    font-family: 'Gilroy';
     color: $jet-grey;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
 }
 .Heading--main {
     @include font(90px, 80px);
-    font-weight: 800;
+    font-family: 'Gilroy Black';
 }
 .Heading--secondary {
     @include font(40px, 49px);
