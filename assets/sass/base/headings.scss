@@ -5,15 +5,16 @@
     margin-top: 0.25rem;
 }
 .Heading--main {
-    @include font(90px, 80px);
+    @include font(90px, 84px);
     font-family: 'Gilroy Black';
+    letter-spacing: -1.29px;
 }
 .Heading--secondary {
-    @include font(40px, 49px);
-    letter-spacing: -0.5px;
+    @include font(40px, 47px);
+    letter-spacing: -0.58px;
 }
 .Heading--body {
-    @include font(30px, 33px);
+    @include font(30px, 35px);
     font-weight: 700;
 }
 .Heading--context {
