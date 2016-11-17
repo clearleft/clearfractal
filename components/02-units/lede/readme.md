@@ -1,0 +1,1 @@
+The Lede component contains text for the lede paragraph on a page or section.
