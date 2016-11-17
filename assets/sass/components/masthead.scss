@@ -6,11 +6,11 @@
 }
 .Masthead a {
     font-weight: 700;
-    border-bottom: px2rem(2) $clearleft-red solid;
+    border-bottom: px2rem(2px) $clearleft-red solid;
 }
 @media screen and (min-width: px2em(780px)) {
     .Masthead {
-        max-width: px2rem(940);
+        max-width: px2rem(940px);
         margin: auto;
         display: flex;
     }
