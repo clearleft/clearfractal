@@ -11,7 +11,7 @@ module.exports = {
             "name": "profile",
             "context": {
                 "indexCardModifier": "--profile",
-                "imageSrc": "http://fillmurray.com/154/154",
+                "imageSrc": "/assets/img/team/james-g-154.jpg",
                 "indexCardInfo": "13th Sep 2015"
             }
         }

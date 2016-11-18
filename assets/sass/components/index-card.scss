@@ -50,13 +50,14 @@
     letter-spacing: px2rem(1px);
 }
 .IndexCard--profile {
-    display: inline-block;
-    position: relative;
     margin-bottom: 2rem;
     .IndexCard-details {
+        padding: px2rem(12px);
+        text-transform: uppercase;
+        display: block;
         position: absolute;
         left: px2rem(16px);
-        bottom: px2em(-32px);
+        bottom: px2em(-20px);
         background-color: #FFFFFF;
         border: 1px solid #E2EBF1;
         width: 98%;
@@ -67,6 +68,10 @@
     }
     .IndexCard-info {
         margin: 0;
+        color: $jet-grey;
+        text-transform: none;
+        font-weight: 500;
+        letter-spacing: 0;
     }
     .IndexCard-image {
         border: 1px solid #E2EBF1;
