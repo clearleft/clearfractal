@@ -1,25 +1,18 @@
 'use strict';
 module.exports = {
     "status": "wip",
-    "collated": true,
     "context": {
-        "imageSrc": "http://fillmurray.com/68/68",
-        "indexCardName": "Andy Budd",
-        "indexCardInfo": "Managing Director"
+        "imageSrc": "/assets/img/team/james-g.jpg",
+        "indexCardName": "Tea Ivanova",
+        "indexCardInfo": "Project Manager"
     },
     "variants": [
         {
             "name": "profile",
             "context": {
-                "modifier": "--profile",
-                "imageSrc": "http://fillmurray.com/154/154"
-            }
-        },
-        {
-            "name": "tile",
-            "context": {
-                "modifier": "--tile",
-                "imageSrc": "http://fillmurray.com/120/120"
+                "indexCardModifier": "--profile",
+                "imageSrc": "http://fillmurray.com/154/154",
+                "indexCardInfo": "13th Sep 2015"
             }
         }
     ]
