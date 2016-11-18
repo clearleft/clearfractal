@@ -1,8 +1,8 @@
 .IndexCard {
     color: $white-grey;
-    line-height: 1.1;
     display: inline-block;
     position: relative;
+    line-height: 1;
     &:after {
         position: absolute;
         content: "";
@@ -41,8 +41,9 @@
     @include font(22px, 17px);
     color: $white-grey;
     font-weight: 700;
+    line-height: 1;
     letter-spacing: -0.5px;
-    margin: 0 0 px2rem(4px) 0;
+    margin: 0 0 px2rem(8px) 0;
 }
 .IndexCard-info {
     @include font(12px, 14px);
