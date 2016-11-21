@@ -1,0 +1,1 @@
+The Container component is for holding holding content with some padding around it. 
