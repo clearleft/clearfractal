@@ -1,45 +1,45 @@
-.TileGrid {
+.TeamGrid {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
 }
-.TileGrid-item {
+.TeamGrid-item {
     display: inline-flex;
 }
 @media only screen and (min-width: px2em(280px)) {
-    .TileGrid-item {
+    .TeamGrid-item {
         width: 50%;
     }
 }
 @media only screen and (min-width: px2em(450px)) {
-    .TileGrid-item {
+    .TeamGrid-item {
         width: 33.3%;
     }
 }
 @media only screen and (min-width: px2em(650px)) {
-    .TileGrid {
+    .TeamGrid {
         max-width: px2rem(500px);
     }
-    .TileGrid-item:nth-child(6n+4) {
+    .TeamGrid-item:nth-child(6n+4) {
         margin-left: px2em(-75px);
     }
 }
 @media only screen and (min-width: px2em(990px)) {
-    .TileGrid {
+    .TeamGrid {
         max-width: px2rem(760px);
     }
-    .TileGrid-item:nth-child(6n+4) {
+    .TeamGrid-item:nth-child(6n+4) {
         margin-left: 0;
     }
-    .TileGrid-item {
+    .TeamGrid-item {
         width: 25%;
     }
-    .TileGrid-item:nth-child(8n+5) {
+    .TeamGrid-item:nth-child(8n+5) {
         margin-left: px2em(-105px);
     }
 }
 @media only screen and (min-width: px2em(1170px)) {
-    .TileGrid {
+    .TeamGrid {
         max-width: px2rem(940px);
     }
 }
