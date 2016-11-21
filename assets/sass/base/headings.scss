@@ -5,7 +5,7 @@
     margin-top: 0.25rem;
 }
 .Heading--main {
-    @include font(90px, 84px);
+    @include font(36px, 43px);
     font-family: 'Gilroy Black';
     letter-spacing: -1.29px;
 }
@@ -23,4 +23,14 @@
     color: $mid-grey;
     font-weight: 700;
     letter-spacing: 1px;
+}
+@media screen and (min-width: px2em(300px)) {
+    .Heading--main {
+        @include font(60px, 54px);
+    }
+}
+@media screen and (min-width: px2em(500px)) {
+    .Heading--main {
+        @include font(90px, 88px);
+    }
 }
