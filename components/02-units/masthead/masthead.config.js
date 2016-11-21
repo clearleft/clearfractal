@@ -1,7 +1,6 @@
 'use strict';
 module.exports = {
     "status": "wip",
-    "collated": true,
     "context": {
         "mastheadTitle": "Dedicated to advancing the practice of design",
         "mastheadSecondary": "",

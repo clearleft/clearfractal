@@ -1,8 +1,8 @@
 .Masthead-primary {
-    padding: 1rem;
+    padding: px2em(16px);
 }
 .Masthead-secondary {
-    padding: 1rem;
+    padding: px2em(16px);
 }
 .Masthead a {
     font-weight: 700;
@@ -13,6 +13,7 @@
         max-width: px2rem(940px);
         margin: auto;
         display: flex;
+        padding: px2rem(20px) px2rem(20px) px2rem(40px) px2rem(20px);
     }
     .Masthead--combo .Masthead-primary {
         width: 70%;

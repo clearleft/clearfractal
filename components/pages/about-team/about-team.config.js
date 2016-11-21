@@ -15,7 +15,8 @@ module.exports = {
     "status": "wip",
     "context": {
         "links": [{ title: "Home", url: "#" }],
-        "mastheadTitle": "Meet the Clearlefties",
+        "mastheadTitle": "Advancing the practice of design",
+        "ledeText": "@lede.ledeText",
         "persons": persons,
         "message": "Lovingly crafted by Clearleft in Brighton, England",
         "small": "&copy; 2005‑now Clearleft Ltd. All rights reserved."
