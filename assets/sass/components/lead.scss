@@ -1,0 +1,14 @@
+.Lead {
+    @include font(23px, 33px);
+}
+.Lead--bar .Lead-content {
+    background-image: url('/assets/img/bar.svg');
+    background-repeat: no-repeat;
+    padding-top: 1.5rem;
+    margin-top: -4px;
+}
+.Lead--wrapper {
+    background-color: #FFFFFF;
+    border: 1px solid #E2EBF1;
+    padding: 2rem 3rem;
+}
