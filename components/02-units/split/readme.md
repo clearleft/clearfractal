@@ -1,1 +1,0 @@
-The split component is a flex container with two equal width and height columns.

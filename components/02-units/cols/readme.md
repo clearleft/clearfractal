@@ -1,0 +1,1 @@
+The columns component is a layout container with two equal width and height columns.
