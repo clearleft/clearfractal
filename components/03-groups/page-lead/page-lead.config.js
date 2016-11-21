@@ -2,6 +2,6 @@
 module.exports = {
     "status": "wip",
     "context": {
-        "ledeText": "@lede.ledeText"
+        "leadText": "@lead.leadText"
     }
 };
