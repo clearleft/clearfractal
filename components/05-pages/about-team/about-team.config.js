@@ -16,7 +16,7 @@ module.exports = {
     "context": {
         "links": [{ title: "Home", url: "#" }],
         "mastheadTitle": "Advancing the practice of design",
-        "ledeText": "@lede.ledeText",
+        "leadText": "@lead.leadText",
         "persons": persons,
         "message": "Lovingly crafted by Clearleft in Brighton, England",
         "small": "&copy; 2005‑now Clearleft Ltd. All rights reserved."
