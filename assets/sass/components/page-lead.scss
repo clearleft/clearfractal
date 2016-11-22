@@ -3,7 +3,7 @@
 }
 @media screen and (min-width: px2em(680px)) {
     .PageLead {
-        padding: 0 px2rem(16px);
+        padding: px2rem(32px) px2rem(16px) 0 px2rem(16px);
         display: flex;
         max-width: px2rem(1180px);
         margin-left: auto;
@@ -21,5 +21,16 @@
         margin-bottom: px2rem(-24px);
         position: relative;
         z-index: 3;
+    }
+}
+@media screen and (min-width: px2em(800px)) {
+    .PageLead {
+        padding: px2rem(16px) px2rem(16px) 0 px2rem(16px);
+    }
+}
+@media screen and (min-width: px2em(1200px)) {
+    .PageLead {
+        padding: 0;
+        max-width: px2rem(1160px);
     }
 }
