@@ -4,7 +4,7 @@ module.exports = {
     "status": "wip",
     "context": {
         "links": [
-            { "title": "About Us", "url": "#" },
+            { "title": "About Us", "url": "#", "primaryActive": true },
             { "title": "Our Work", "url": "#" },
             { "title": "Our Approach", "url": "#" },
             { "title": "Our Events", "url": "#" },

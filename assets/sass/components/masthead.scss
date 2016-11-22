@@ -12,10 +12,10 @@
 }
 @media screen and (min-width: px2em(780px)) {
     .Masthead {
-        max-width: px2rem(940px);
+        max-width: px2rem(980px);
         margin: auto;
         display: flex;
-        padding: px2rem(20px) px2rem(20px) px2rem(40px) px2rem(20px);
+        padding: px2rem(30px) px2rem(20px) px2rem(40px) px2rem(20px);
     }
     .Masthead-primary {
         &:after {

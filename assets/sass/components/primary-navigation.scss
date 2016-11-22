@@ -1,4 +1,3 @@
-
 .PrimaryNavigation-list {
     list-style: none;
     padding: 0;
@@ -9,6 +8,11 @@
     display: block;
     @include font(15px, 18px);
     font-weight: 700;
+    border-bottom: none;
+    &.is-active {
+        background: url(../img/small-streak.svg) center bottom no-repeat;
+
+    }
 }
 
 @media only screen and (min-width: px2em(480px)) {

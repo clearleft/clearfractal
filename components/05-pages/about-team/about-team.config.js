@@ -14,7 +14,13 @@ for(var i = 0; i < 26; i++){
 module.exports = {
     "status": "wip",
     "context": {
-        "links": [{ title: "Home", url: "#" }],
+        "links": [
+            { "title": "What we do", "url": "#" },
+            { "title": "Who we sre", "url": "#", "primaryActive": true },
+            { "title": "What we think", "url": "#" },
+            { "title": "Events we run", "url": "#" },
+            { "title": "Get in touch", "url": "#" }
+        ],
         "mastheadTitle": "Advancing the practice of design",
         "leadText": "@lead.leadText",
         "persons": persons,
