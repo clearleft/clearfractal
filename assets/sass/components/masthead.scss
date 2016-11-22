@@ -1,5 +1,17 @@
 .Masthead-primary {
     padding: px2em(16px);
+    position: relative;
+    z-index: 1;
+    &:after {
+        content: "";
+        width: 14rem;
+        height: 2rem;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: px2rem(82px);
+        background: url(../img/streak-clearleft.svg) 0 100% no-repeat;
+    }
 }
 .Masthead-secondary {
     padding: px2em(16px);
