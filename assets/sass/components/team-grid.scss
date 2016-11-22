@@ -44,6 +44,7 @@
     .TeamGrid {
         max-width: px2rem(1160px);
         padding-left: 100px;
+        margin-top: px2rem(-16px);
     }
     .TeamGrid-item {
         width: 20%;
@@ -55,7 +56,7 @@
         margin-left: 0;
     }
     .TeamGrid-item:nth-child(10n+6) {
-        margin-left: px2em(-96px);
+        margin-left: px2em(-105px);
     }
 }
 @media only screen and (min-width: px2em(1360px)) {
