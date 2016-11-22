@@ -3,6 +3,7 @@
     display: inline-block;
     position: relative;
     line-height: 1;
+    border: $light-grey solid 0.5px;
     &:after {
         position: absolute;
         content: "";
