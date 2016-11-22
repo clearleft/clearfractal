@@ -1,14 +1,17 @@
 .Lead {
-    @include font(23px, 33px);
+    @include font(23px, 36px);
+}
+.Lead-content {
+    max-width: 95%;
 }
 .Lead--bar .Lead-content {
     background-image: url('/assets/img/bar.svg');
     background-repeat: no-repeat;
-    padding-top: 1.5rem;
-    margin-top: -4px;
+    padding-top: px2rem(24px);
+    margin-top: px2rem(4px);
 }
 .Lead--wrapper {
     background-color: #FFFFFF;
-    border: 1px solid #E2EBF1;
-    padding: 2rem 3rem;
+    border: px2rem(1px) solid #E2EBF1;
+    padding: px2rem(32px) px2rem(64px) px2rem(38px) px2rem(64px);
 }

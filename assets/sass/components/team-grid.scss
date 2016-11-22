@@ -16,10 +16,10 @@
         width: 33.3%;
     }
 }
-@media only screen and (min-width: px2em(630px)) {
+@media only screen and (min-width: px2em(680px)) {
     .TeamGrid {
         max-width: px2rem(720px);
-        padding-left: 83px;
+        padding-left: px2em(80px);
     }
     .TeamGrid-item:nth-child(6n+4) {
         margin-left: px2em(-80px);
@@ -40,8 +40,27 @@
         padding-left: 113px;
     }
 }
-@media only screen and (min-width: px2em(1050px)) {
+@media only screen and (min-width: px2em(1200px)) {
     .TeamGrid {
-        max-width: px2rem(1024px);
+        max-width: px2rem(1160px);
+        padding-left: 100px;
+    }
+    .TeamGrid-item {
+        width: 20%;
+    }
+    .TeamGrid-item:nth-child(8n+5) {
+        margin-left: 0;
+    }
+    .TeamGrid-item:nth-child(6n+4) {
+        margin-left: 0;
+    }
+    .TeamGrid-item:nth-child(10n+6) {
+        margin-left: px2em(-96px);
+    }
+}
+@media only screen and (min-width: px2em(1360px)) {
+    .TeamGrid {
+        max-width: px2rem(1260px);
+        padding-left: 106px;
     }
 }
