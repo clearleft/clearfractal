@@ -22,11 +22,5 @@ module.exports = {
         "context": {
             "leadModifier": "--bar Lead--wrapper"  
         }
-    },
-    {
-        "name": "overlap",
-        "context": {
-            "leadModifier": "--overlap Lead--bar Lead--wrapper"  
-        }
     }]
 }

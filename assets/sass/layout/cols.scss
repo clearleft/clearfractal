@@ -1,13 +1,12 @@
-/*.Cols-item {
-    padding: px2em(8px);
-}*/
+.Cols-item {
+    padding: px2em(8px) px2em(16px);
+}
 @media screen and (min-width: px2em(680px)) {
     .Cols {
         display: flex;
         max-width: px2rem(1180px);
         margin-left: auto;
         margin-right: auto;
-        padding: px2rem(16px);
     }
     .Cols--balanced {
         align-items: center;
@@ -15,7 +14,4 @@
     .Cols-half {
         flex-basis: 50%;
     }
-    /*.Cols-item {
-        padding: px2em(16px);
-    }*/
 }

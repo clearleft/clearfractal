@@ -1,8 +1,5 @@
 .Lead {
-    @include font(17px, 28px);
-}
-.Lead-content {
-    max-width: 95%;
+    @include font(18px, 28px);
 }
 .Lead--bar .Lead-content {
     background-image: url('/assets/img/bar.svg');
@@ -16,21 +13,19 @@
     border: px2rem(1px) solid #E2EBF1;
     padding: px2rem(16px) px2rem(24px) px2rem(16px) px2rem(24px);
 }
-.Lead--overlap {
-    margin-bottom: px2rem(-36px);
-    position: relative;
-    z-index: 3;
-}
 @media screen and (min-width: px2em(520px)) {
-    .Lead--wrapper {
-        padding: px2rem(32px) px2rem(32px) px2rem(38px) px2rem(32px);
-    }
     .Lead {
         @include font(20px, 34px);
     }
     .Lead--bar .Lead-content {
         background-size: auto;
         padding-top: px2rem(24px);
+    }
+    .Lead--wrapper {
+        padding: px2rem(32px) px2rem(32px) px2rem(38px) px2rem(32px);
+    }
+    .Lead-content {
+        width: 95%;
     }
 }
 @media screen and (min-width: px2em(985px)) {
