@@ -1,3 +1,8 @@
+.List {
+    display: inline-block;
+    padding-left: px2rem(5px);
+    margin: px2rem(16px) 0;
+}
 .List-item {
     list-style: none;
     margin-bottom: px2rem(16px);
