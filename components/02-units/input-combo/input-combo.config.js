@@ -3,7 +3,7 @@ module.exports = {
     "status": "wip",
     "collated": true,
     "context": {
-        "inputLabel": "Email address",
+        "inputLabel": "Get Clearleft insights in your inbox once a week",
         "inputID": "ID2"
     }
 };

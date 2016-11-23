@@ -24,7 +24,7 @@ module.exports = {
         "mastheadTitle": "Advancing the practice of design",
         "leadText": "@lead.leadText",
         "persons": persons,
-        "message": "Lovingly crafted by Clearleft in Brighton, England",
-        "small": "&copy; 2005‑now Clearleft Ltd. All rights reserved."
+        "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
+        "inputLabel": "@input-combo.inputLabel"
     }
 };
