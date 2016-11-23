@@ -1,0 +1,11 @@
+{
+    "title": "Team Member",
+    "status": "wip",
+    "context": {
+        "links": "@primary-navigation.links",
+        "mastheadSecondary": "true",
+        "mastheadTitle": "Charlotte Jackson",
+        "message": "Lovingly crafted by Clearleft in Brighton, England",
+        "small": "&copy; 2005‑now Clearleft Ltd. All rights reserved."
+    }
+}

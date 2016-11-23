@@ -1,0 +1,10 @@
+{
+    "title": "Work",
+    "status": "wip",
+    "context": {
+        "links": "@primary-navigation.links",
+        "mastheadTitle": "Helping organisations of all sizes get better results",
+        "message": "@site-footer.message",
+        "small": "@site-footer.small"
+    }
+}
