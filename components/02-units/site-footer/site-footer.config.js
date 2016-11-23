@@ -11,7 +11,7 @@ module.exports = {
             { "title": "Styleguide", "url": "#" },
             { "title": "Jobs", "url": "#" }
         ],
-        "message": "Lovingly crafted by Clearleft in Brighton, England",
-        "small": "&copy; 2005‑now Clearleft Ltd. All rights reserved."
+        "inputLabel": "@input-combo.inputLabel",
+        "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
     }
 }

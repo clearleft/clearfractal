@@ -1,17 +1,26 @@
 
 <footer class="SiteFooter">
-
-    <nav class="SiteFooter-navigation">
-        <ul class="SiteFooter-navigationLinks">
-            {% for link in links %}
-            <li class="SiteFooter-navigationItem"><a href="#" class="SiteFooter-navigationLink">{{ link.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </nav>
-
-    <div class="SiteFooter-text">
-        <p class="SiteFooter-textMessage">{{ message }}</p>
-        <small class="SiteFooter-textSmall">{{ small }}</small>
-    </div>
-
-</footer>
+    <div class="SiteFooter-container Cols">
+        <div class="Cols-half Cols-item">
+            {% include '@input-combo' %}
+            <small class="Heading Heading--context">We never spam!</small>
+        </div>
+        <div class="Cols-half Cols-item">
+            <nav class="SiteFooter-navigation">
+                <ul class="SiteFooter-navigationLinks">
+                    {% for link in links %}
+                    <li class="SiteFooter-navigationItem"><a href="#" class="SiteFooter-navigationLink">{{ link.title }}</a></li>
+                    {% endfor %}
+                </ul>
+                <ul class="SiteFooter-icons">
+                    <li class="SiteFooter-icon"><a class="SiteFooter-iconLink" href="#"><img src="http://fillmurray.com/30/30" alt=""></a></li>
+                    <li class="SiteFooter-icon"><a class="SiteFooter-iconLink" href="#"><img src="http://fillmurray.com/30/30" alt=""></a></li>
+                    <li class="SiteFooter-icon"><a class="SiteFooter-iconLink" href="#"><img src="http://fillmurray.com/30/30" alt=""></a></li>
+                </ul>
+            </nav>
+        </div><!--/.Cols-half-->
+        <div class="Cols-item SiteFooter-small">
+            {{siteFooterSmall}}
+        </div>
+    </div><!--/.Cols-->
+</footer><!--/.SiteFooter-->

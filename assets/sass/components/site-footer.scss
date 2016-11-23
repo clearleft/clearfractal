@@ -1,19 +1,13 @@
 
 .SiteFooter {
-    padding: px2rem(16px);
+    background-color: #000000;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
 }
-.SiteFooter-textMessage {
-    @include font(14px, 18px);
-    font-weight: 700;
-    margin: 0 0 px2rem(4px) 0;
-}
-.SiteFooter-textSmall {
-    display: block;
-    color: #999;
-    @include font(10px, 18px);
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+.SiteFooter-container {
+    max-width: px2em(1260px);
+    padding: px2rem(16px) px2rem(8px);
 }
 .SiteFooter-navigationLinks {
     list-style: none;
@@ -22,31 +16,62 @@
 }
 .SiteFooter-navigationLink {
     border-bottom: none;
-    display: block;
+    display: inline-block;
     @include font(14px, 16px);
     font-weight: 700;
-    padding: px2rem(8px) 0;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: px2rem(8px);
+    color: #ffffff;
 }
-
-@media only screen and (max-width: px2em(600px)) {
-    .SiteFooter-textMessage {
-        margin-top: px2rem(8px);
-    }
+.SiteFooter-icons {
+    padding: 0;
+    display: flex;
 }
-
-@media only screen and (min-width: px2em(500px)) {
+.SiteFooter-icon {
+    list-style: none;
+    margin-bottom: px2rem(8px);
+    margin-right: px2rem(8px);
+}
+.SiteFooter-iconLink {
+    border-bottom: none;
+}
+.SiteFooter-small {
+    @include font(10px, 17px);
+}
+@media only screen and (min-width: px2em(350px)) {
     .SiteFooter-navigationLinks {
-        display: flex;
-    }
-    .SiteFooter-navigationLink {
-        padding: px2rem(8px) px2rem(16px);
+        column-count: 2;
     }
 }
-
-@media only screen and (min-width: px2em(600px)) {
-    .SiteFooter {
+@media only screen and (min-width: px2em(550px)) {
+    .SiteFooter-container {
+        padding: px2rem(32px) px2rem(16px) px2rem(16px) px2rem(16px);
+    }
+    .SiteFooter-navigationLinks {
+        column-count: 3;
+    }
+}
+@media only screen and (min-width: px2em(680px)) {
+    .SiteFooter-navigationLinks {
+        column-count: 2;
+        column-gap: px2rem(32px);
+    }
+}
+@media only screen and (min-width: px2em(880px)) {
+    .SiteFooter-navigation {
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
+    }
+    .SiteFooter-navigationLinks {
+        flex-grow: 1;
+    }
+    .SiteFooter-icons {
+        margin: px2rem(8px) 0 0 px2rem(16px);
+        display: block;
+    }
+    .SiteFooter-icon {
+        margin-bottom: 0;
+    }
+    .SiteFooter-small {
+        margin-top: px2rem(32px);
     }
 }
