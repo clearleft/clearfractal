@@ -1,9 +1,18 @@
-
-{% include '@site-header' %}
+<div class="Background">{% include '@site-header' %}</div>
 
     <main>
 
-        {% include '@masthead' %}
+        <div class="Background">{% include '@masthead' %}</div>
+
+        <div class="Background">{% include '@page-lead' %}</div>
+
+        {% include '@team-grid' %}
+
+        {% include '@banner' %}
+        
+        {% include '@image-gallery' %}
+
+        {% include '@banner' with {bannerCaption: 'Work with us', bannerHeadline: 'When you need to…'} %}
 
     </main>
 

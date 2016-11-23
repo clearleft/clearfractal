@@ -1,0 +1,10 @@
+{
+    "title": "Article",
+    "status": "wip",
+    "context": {
+        "links": "@primary-navigation.links",
+        "mastheadTitle": "The Ripping Exercise",
+        "message": "@site-footer.message",
+        "small": "@site-footer.small"
+    }
+}
