@@ -2,12 +2,12 @@
 .SiteFooter {
     background-color: #000000;
     color: #ffffff;
-    padding: px2rem(16px) px2rem(8px);
     margin-left: auto;
     margin-right: auto;
 }
 .SiteFooter-container {
-    max-width: px2em(1180px);
+    max-width: px2em(1260px);
+    padding: px2rem(16px) px2rem(8px);
 }
 .SiteFooter-navigationLinks {
     list-style: none;
@@ -44,8 +44,8 @@
     }
 }
 @media only screen and (min-width: px2em(550px)) {
-    .SiteFooter {
-        padding: px2rem(32px) px2rem(8px) px2rem(16px) px2rem(8px);
+    .SiteFooter-container {
+        padding: px2rem(32px) px2rem(16px) px2rem(16px) px2rem(16px);
     }
     .SiteFooter-navigationLinks {
         column-count: 3;
