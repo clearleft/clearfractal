@@ -6,18 +6,49 @@
 .Masthead-secondary {
     padding: px2em(16px);
 }
-.Masthead a {
+.Masthead-link {
     font-weight: 700;
-    border-bottom: px2rem(2px) $clearleft-red solid;
+}
+.Masthead-exit {
+    border-bottom: none;
+    display: block;
+    margin-top: px2rem(16px);
 }
 @media screen and (min-width: px2em(780px)) {
     .Masthead {
-        max-width: px2rem(980px);
+        max-width: px2em(980px);
         margin: auto;
         display: flex;
         padding: px2rem(30px) px2rem(20px) px2rem(40px) px2rem(20px);
     }
     .Masthead-primary {
+        width: 75%;
+    }
+    .Masthead-secondary {
+        width: 25%;
+        margin-top: px2rem(16px);
+        position: relative;
+    }
+    .Masthead-exit {
+        position: absolute;
+        right: px2rem(16px);
+        top: px2rem(20px);
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    .Masthead--combo {
+        max-width: px2em(1180px);
+        .Masthead-primary {
+            width: 50%;
+            word-wrap: break-word;
+            margin-left: px2rem(8px);
+        }
+        .Masthead-secondary {
+            width: 50%;
+        }
+    }
+    .Masthead--streak .Masthead-primary {
         &:after {
             content: "";
             width: 14rem;
@@ -29,11 +60,9 @@
             background: url(../img/streak-clearleft.svg) 0 100% no-repeat;
         }
     }
+}
+@media screen and (min-width: px2em(800px)) {
     .Masthead--combo .Masthead-primary {
-        width: 70%;
-    }
-    .Masthead-secondary {
-        width: 30%;
-        margin-top: 1rem;
+        margin-left: px2rem(64px);
     }
 }

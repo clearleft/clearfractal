@@ -1,5 +1,5 @@
 .ImageGallery {
-    max-width: px2rem(940px);
+    max-width: px2em(940px);
     margin-left: auto;
     margin-right: auto;
     /*padding: px2rem(32px) px2rem(16px);*/
@@ -45,7 +45,7 @@
 }
 @media only screen and (min-width: px2em(680px)) {
     .ImageGallery {
-        max-width: px2rem(720px);
+        max-width: px2em(720px);
     }
     .ImageGallery-group {
         width: 50%;
@@ -53,11 +53,11 @@
 }
 @media only screen and (min-width: px2em(980px)) {
     .ImageGallery {
-        max-width: px2rem(940px);
+        max-width: px2em(940px);
     }
 }
 @media only screen and (min-width: px2em(1200px)) {
     .ImageGallery {
-        max-width: px2rem(1200px);
+        max-width: px2em(1040px);
     }
 }

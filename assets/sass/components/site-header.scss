@@ -1,6 +1,6 @@
 
 .SiteHeader {
-    padding: px2rem(24px) px2rem(16px);
+    padding: px2em(24px) px2rem(16px);
     font-family: 'Gilroy';
 }
 
@@ -8,7 +8,7 @@
     .SiteHeader {
         display: flex;
         justify-content: space-between;
-        max-width: px2em(1180px);
+        max-width: px2em(1040px);
         margin-left: auto;
         margin-right: auto;
     }
