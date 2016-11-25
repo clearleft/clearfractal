@@ -42,3 +42,25 @@ fractal.set('components.default.preview', '@skeleton');
 
 const theme = require('@frctl/mandelbrot')();
 fractal.web.theme(theme);
+
+/*
+ * Handle => filesystem path mapping export.
+ */
+const fs = require('fs');
+
+function exportPaths() {
+    const map = {};
+    for (let item of fractal.components.flatten()) {
+        map[`@${item.handle}`] = item.viewPath;
+    }
+    fs.writeFileSync('components-map.json', JSON.stringify(map, null, 2), 'utf8');
+}
+
+fractal.components.on('updated', function(){
+    exportPaths();
+});
+
+fractal.cli.command('pathmap', function(opts, done){
+    exportPaths();
+    done();
+});
