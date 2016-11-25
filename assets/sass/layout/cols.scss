@@ -9,6 +9,9 @@
         margin-right: auto;
         flex-wrap: wrap;
     }
+    .Cols--narrow {
+        max-width: px2rem(980px);
+    }
     .Cols--balanced {
         align-items: center;
     }

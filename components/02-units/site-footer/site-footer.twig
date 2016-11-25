@@ -8,8 +8,8 @@
         <div class="Cols-half Cols-item">
             <nav class="SiteFooter-navigation">
                 <ul class="SiteFooter-navigationLinks">
-                    {% for link in links %}
-                    <li class="SiteFooter-navigationItem"><a href="#" class="SiteFooter-navigationLink">{{ link.title }}</a></li>
+                    {% for primaryNavlink in primaryNavlinks %}
+                    <li class="SiteFooter-navigationItem"><a href="#" class="SiteFooter-navigationLink">{{ primaryNavlink.title }}</a></li>
                     {% endfor %}
                 </ul>
                 <ul class="SiteFooter-icons">

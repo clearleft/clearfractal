@@ -4,7 +4,7 @@ module.exports = {
     "status": "wip",
 
     "context": {
-        "links": [
+        "primaryNavlinks": [
             { "title": "Test Lab", "url": "#" },
             { "title": "Accessibility", "url": "#" },
             { "title": "Cookies", "url": "#" },

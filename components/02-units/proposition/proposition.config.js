@@ -11,5 +11,11 @@ module.exports = {
             { "src": "/assets/img/logos/johnlewis.png" },
             { "src": "/assets/img/logos/wellcome.png" }
         ]
-    }
+    },
+    "variants": [{
+        "name": "Purple streak",
+        "context": {
+            "signpostModifier": "--bgPurple"
+        }
+    }]
 }

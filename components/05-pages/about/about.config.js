@@ -14,13 +14,9 @@ for(var i = 0; i < 26; i++){
 module.exports = {
     "status": "wip",
     "context": {
-        "links": [
-            { "title": "What we do", "url": "#" },
-            { "title": "Who we sre", "url": "#", "primaryActive": true },
-            { "title": "What we think", "url": "#" },
-            { "title": "Events we run", "url": "#" },
-            { "title": "Get in touch", "url": "#" }
-        ],
+        "primaryNavlinks": "@primary-navigation.primaryNavlinks",
+        "propositionLogos": "@proposition.propositionLogos",
+        "signpostTitle": "@proposition.signpostTitle",
         "mastheadTitle": "Advancing the practice of design",
         "leadText": "@lead.leadText",
         "persons": persons,
