@@ -1,0 +1,21 @@
+
+.Proposition {
+    margin-bottom: px2rem(32px);
+}
+.Proposition--bgGreen {
+    background: url(/assets/img/green-diagonal-streak.svg) 50% 50% no-repeat;
+}
+.Proposition--bgPurple {
+    background: url(/assets/img/purple-diagonal-streak.svg) 80% 80% no-repeat;
+}
+.Proposition-title {
+    margin: 0 0 px2rem(32px) 0;
+}
+.Proposition-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Proposition-list {
+    column-count: 2;
+}

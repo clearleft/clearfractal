@@ -1,0 +1,14 @@
+<div class="Proposition{% if signpostModifier %} Proposition{{signpostModifier}} {% endif %} Cols">
+    <div class="Cols-half">
+        <h3 class="Proposition-title Heading Heading--body">{{signpostTitle}}</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor autem, ea hic debitis id sunt, omnis ipsa quisquam beatae! Deserunt inventore, rem eum libero consectetur tempora, corporis magnam ratione odit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit possimus a voluptatibus quo, labore sequi consectetur necessitatibus doloremque ratione pariatur nulla cumque, maxime perferendis.</p>
+    </div>
+    <div class="Proposition-secondary Cols-half">
+        <ul class="Proposition-list List ">
+        {% for propositionLogo in propositionLogos %}
+            <li class="List-item"><img src="{{propositionLogo.src}}" alt=""></li>
+        {% endfor %}
+        </ul>
+    </div><!--/.Proposition-directions-->
+</div><!--/.Proposition-->
