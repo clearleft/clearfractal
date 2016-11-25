@@ -1,11 +1,13 @@
-<div class="Masthead{% if mastheadModifier %}{{mastheadModifier}}{% endif %}">
+<div class="Masthead{% if mastheadModifier %} Masthead{{mastheadModifier}}{% endif %}">
     <div class="Masthead-primary">
-        <h1 class="Heading Heading--main">{{mastheadTitle}}</h1>
+        <h1 class="{% if mastheadModifier == '--combo' %} Heading Heading--secondary{% else %} Heading Heading--main{% endif %}">{{mastheadTitle}}</h1>
+        {% if mastheadModifier == '--combo' %}<p class="Heading Heading--context">Senior UX Designer</p>{% endif %}
     </div>
     {% if mastheadSecondary %}
-        <div class="Masthead-secondary">
-            <div class="Heading Heading--context">{{mastheadSecondaryHeading}}</div>
-            <a href="#">A link to somewhere</a>
-        </div><!--/.Masthead-secondary-->
+    <div class="Masthead-secondary">
+        <div class="Heading Heading--context">{{mastheadSecondaryHeading}}</div>
+        <a class="Masthead-link" href="#">{{mastheadSecondaryLink}}</a>
+        <a class="Masthead-exit" href="#"><img src="/assets/img/circle-arrow.svg" alt=""></a>
+    </div><!--/.Masthead-secondary-->
     {% endif %}
 </div><!--/.Masthead-->
