@@ -1,1 +1,0 @@
-The Shape component can be used on an image or an element with a semi-circle shape. Its surrounding contents will form the shape around it.
