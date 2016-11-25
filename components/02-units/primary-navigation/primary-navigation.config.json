@@ -1,7 +1,7 @@
 {
     "status": "wip",
     "context": {
-        "links": [
+        "primaryNavlinks": [
             { "title": "About Us", "url": "#", "primaryActive": true },
             { "title": "Our Work", "url": "#" },
             { "title": "Our Approach", "url": "#" },

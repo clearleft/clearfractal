@@ -1,8 +1,8 @@
 
 <nav class="PrimaryNavigation">
     <ul class="PrimaryNavigation-list">
-        {% for link in links %}
-        <li class="PrimaryNavigation-listItem"><a href="#" class="PrimaryNavigation-link{% if link.primaryActive %} is-active {% endif %}">{{ link.title }}</a></li>
+        {% for primaryNavlink in primaryNavlinks %}
+        <li class="PrimaryNavigation-listItem"><a href="#" class="PrimaryNavigation-link{% if primaryNavlink.primaryActive %} is-active {% endif %}">{{ primaryNavlink.title }}</a></li>
         {% endfor %}
     </ul>
 </nav>
