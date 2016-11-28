@@ -1,4 +1,4 @@
-<div class="PageLead">
+<div class="PageLead {% if pageLeadModifier %}PageLead{{pageLeadModifier}} {% endif %}">
     <div class="PageLead-primary">
         {% include '@lead' with {leadModifier: '--bar Lead--wrapper'} %}
     </div>
