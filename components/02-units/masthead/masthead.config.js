@@ -14,11 +14,21 @@ module.exports = {
         }
     },
     {
-        "name": "Masthead interior pages",
+        "name": "Masthead combo",
         "context": {
             "mastheadTitle": "Hana Stevenson",
             "mastheadSecondary": "true",
             "mastheadModifier": "--combo",
+            "mastheadSecondaryHeading": "Catch Hana speaking at:",
+            "mastheadSecondaryLink": "Beyond Tellerrand 2016"
+        }
+    },
+    {
+        "name": "Masthead tall",
+        "context": {
+            "mastheadTitle": "Hana Stevenson",
+            "mastheadSecondary": "true",
+            "mastheadModifier": "--tall",
             "mastheadSecondaryHeading": "Catch Hana speaking at:",
             "mastheadSecondaryLink": "Beyond Tellerrand 2016"
         }
