@@ -4,7 +4,9 @@
 
         <div class="Background">{% include '@masthead' %}</div>
 
-        <div class="Background">{% include '@page-lead' %}</div>
+        {# {% include '@page-lead' with {pageLeadModifier: '--loud'} %} #}
+
+        {% include '@layout-alternate' %}
 
     </main>
 

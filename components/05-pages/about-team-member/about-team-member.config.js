@@ -1,6 +1,6 @@
 'use strict';
 
-let image = "/assets/img/team/james-g.jpg";
+let image = "/assets/img/team/andy-t-lg.jpg";
 
 module.exports = {
     "title": "Team Member",
@@ -8,7 +8,7 @@ module.exports = {
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
         "mastheadSecondary": "true",
-        "mastheadModifier": "--combo",
+        "mastheadModifier": "--combo Masthead--tall",
         "mastheadTitle": "Andy Thornton",
         "mastheadSecondaryHeading": "Catch Andy speaking at:",
         "mastheadSecondaryLink": "Beyond Tellerrand 2016",

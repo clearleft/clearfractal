@@ -1,0 +1,69 @@
+.LayoutAlternate {
+    padding: px2rem(16px);
+    margin-top: px2rem(-84px);
+}
+.LayoutAlternate-image {
+    width: 100%;
+}
+.LayoutAlernate-item--leadSecondary {
+    margin-top: px2rem(-32px);
+    margin-left: px2rem(-16px);
+    margin-right: px2rem(-16px);
+    position: relative;
+    z-index: -1;
+}
+@media screen and (min-width: px2em(630px)) {
+    .LayoutAlternate {
+        max-width: px2em(1040px);
+        margin-left: auto;
+        margin-right: auto;
+        overflow: auto;
+        padding: 0;
+    }
+    .LayoutAlternate-left {
+        float: left;
+    }
+    .LayoutAlternate-right {
+        float: right;
+    }
+    .LayoutAlternate-item {
+        width: 50%;
+        padding: px2rem(16px);
+    }
+    .LayoutAlernate-item--leadPrimary {
+        margin-top: px2rem(32px);
+        width: 55%;
+        position: relative;
+        padding: 0;
+        z-index: 2;
+        padding: 0;
+    }
+    .LayoutAlernate-item--leadSecondary {
+        z-index: 1;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: px2rem(-64px);
+        padding: 0;
+    }
+}
+@media screen and (min-width: px2em(750px)) {
+    .LayoutAlternate {
+        margin-top: px2rem(-42px);
+    }
+    .LayoutAlernate-item--leadPrimary {
+        margin-top: px2rem(40px);
+    }
+}
+@media screen and (min-width: px2em(900px)) {
+    .LayoutAlternate {
+        margin-top: px2rem(-132px);
+    }
+    .LayoutAlternate-item {
+        padding-left: px2rem(32px);
+        padding-right: px2rem(32px);
+    }
+    .LayoutAlernate-item--leadSecondary,
+    .LayoutAlernate-item--leadPrimary {
+        padding: 0;
+    }
+}
