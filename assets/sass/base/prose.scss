@@ -1,3 +1,11 @@
-.Prose p:first-child {
-    @include font(25px, 33px);
+.Prose {
+    color: $dark-grey;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        
+    }
 }
