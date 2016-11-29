@@ -1,9 +1,10 @@
 'use strict';
 
 /*
-* Require the path module
+* Require some core modules
 */
 const path = require('path');
+const fs = require('fs');
 
 /*
  * Require the Fractal module
@@ -42,3 +43,24 @@ fractal.set('components.default.preview', '@skeleton');
 
 const theme = require('@frctl/mandelbrot')();
 fractal.web.theme(theme);
+
+/*
+ * Handle => filesystem path mapping export.
+ */
+
+function exportPaths() {
+    const map = {};
+    for (let item of fractal.components.flatten()) {
+        map[`@${item.handle}`] = path.relative(process.cwd(), item.viewPath);
+    }
+    fs.writeFileSync('components-map.json', JSON.stringify(map, null, 2), 'utf8');
+}
+
+fractal.components.on('updated', function(){
+    exportPaths();
+});
+
+fractal.cli.command('pathmap', function(opts, done){
+    exportPaths();
+    done();
+});
