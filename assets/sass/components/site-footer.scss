@@ -27,6 +27,18 @@
 .SiteFooter-small {
     @include font(10px, 17px);
 }
+.SiteFooter-icons {
+    padding: 0;
+    display: flex;
+}
+.SiteFooter-icon {
+    list-style: none;
+    margin-bottom: px2rem(8px);
+    margin-right: px2rem(8px);
+}
+.SiteFooter-iconLink {
+    border-bottom: none;
+}
 @media only screen and (min-width: px2em(350px)) {
     .SiteFooter-navigationLinks {
         column-count: 2;
@@ -55,5 +67,12 @@
     }
     .SiteFooter-small {
         margin-top: px2rem(32px);
+    }
+    .SiteFooter-icons {
+        margin: px2rem(8px) 0 0 px2rem(16px);
+        display: block;
+    }
+    .SiteFooter-icon {
+        margin-bottom: 0;
     }
 }

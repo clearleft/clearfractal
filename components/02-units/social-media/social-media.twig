@@ -1,0 +1,5 @@
+<ul class="SocialMedia">
+    {% for socialLink in socialLinks %}
+    <li class="SocialMedia-item"><a href="{{socialLink.url}}" class="SocialMedia-link"><img src="{{socialLink.src}}" alt=""></a></li>
+    {% endfor %}
+</ul><!--/.SocialMedia-->
