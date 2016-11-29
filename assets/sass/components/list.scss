@@ -3,6 +3,9 @@
     padding-left: px2rem(5px);
     margin: px2rem(16px) 0;
 }
+.List--inline .List-item {
+    display: inline-block;
+}
 .List-item {
     list-style: none;
     margin-bottom: px2rem(16px);
