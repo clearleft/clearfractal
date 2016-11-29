@@ -2,7 +2,6 @@
     padding: px2em(16px);
     position: relative;
     z-index: 1;
-    padding-right: px2rem(64px);
 }
 .Masthead-secondary {
     padding: px2em(16px);
@@ -40,16 +39,20 @@
         padding: px2rem(30px) px2rem(20px) px2rem(40px) px2rem(20px);
     }
     .Masthead-primary {
-        width: 50%;
+        width: 75%;
     }
     .Masthead-secondary {
-        width: 50%;
+        width: 25%;
         margin-top: px2rem(16px);
     }
     .Masthead--combo {
         max-width: px2em(1040px);
         .Masthead-primary {
             word-wrap: break-word;
+            width: 50%;
+        }
+        .Masthead-secondary {
+            width: 50%;
         }
     }
     .Masthead--streak .Masthead-primary {
@@ -71,6 +74,7 @@
 @media screen and (min-width: px2em(800px)) {
     .Masthead--combo .Masthead-primary {
         margin-left: px2rem(32px);
+        padding-right: px2rem(64px);
     }
 }
 @media screen and (min-width: px2em(900px)) {
