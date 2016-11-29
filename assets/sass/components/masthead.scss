@@ -2,10 +2,14 @@
     padding: px2em(16px);
     position: relative;
     z-index: 1;
+    padding-right: px2rem(64px);
 }
 .Masthead-secondary {
     padding: px2em(16px);
     position: relative;
+}
+.Masthead-sub {
+    margin-top: px2rem(16px);
 }
 .Masthead-link {
     font-weight: 700;
