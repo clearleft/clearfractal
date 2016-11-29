@@ -1,0 +1,14 @@
+.SocialMedia {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    margin-top: px2rem(8px);
+}
+.SocialMedia-item {
+    list-style: none;
+    margin-right: px2rem(16px);
+}
+.SocialMedia-link {
+    border: none;
+}
