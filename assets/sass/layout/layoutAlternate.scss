@@ -1,9 +1,9 @@
 .LayoutAlternate {
     padding: px2rem(16px);
-    margin-top: px2rem(-84px);
-}
-.LayoutAlternate--balanced {
     margin-top: px2rem(16px);
+}
+.LayoutAlternate--weave {
+    margin-top: px2rem(-84px);
 }
 .LayoutAlternate-image {
     width: 100%;
@@ -55,31 +55,22 @@
         margin-left: px2rem(-64px);
         padding: 0;
     }
-    .LayoutAlternate--balanced {
-        margin-top: px2rem(16px);
-    }
 }
 @media screen and (min-width: px2em(690px)) {
     .LayoutAlternate-solo {
         padding: px2rem(16px) px2rem(16px) 0 px2rem(16px);
     }
-    .LayoutAlternate--balanced {
-        margin-top: px2rem(16px);
-    }
 }
 @media screen and (min-width: px2em(750px)) {
-    .LayoutAlternate {
+    .LayoutAlternate--weave {
         margin-top: px2rem(-42px);
     }
     .LayoutAlernate-item--leadPrimary {
         margin-top: px2rem(40px);
     }
-    .LayoutAlternate--balanced {
-        margin-top: px2rem(16px);
-    }
 }
 @media screen and (min-width: px2em(900px)) {
-    .LayoutAlternate {
+    .LayoutAlternate--weave {
         margin-top: px2rem(-132px);
     }
     .LayoutAlternate-item {
@@ -92,8 +83,5 @@
     .LayoutAlernate-item--leadSecondary,
     .LayoutAlernate-item--leadPrimary {
         padding: 0;
-    }
-    .LayoutAlternate--balanced {
-        margin-top: px2rem(16px);
     }
 }
