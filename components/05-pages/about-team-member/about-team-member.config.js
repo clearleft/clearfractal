@@ -16,8 +16,8 @@ module.exports = {
         "infoBlockContents": "@info-block.infoBlockContents",
         "message": "Lovingly crafted by Clearleft in Brighton, England",
         "small": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
-        imageBlockContents: "@info-block.infoBlockContents",
-        noImageBlock: "@info-block--without-images.infoBlockContents",
+        imageBlockContents: "@info-blocks.imageBlockContents",
+        noImageBlock: "@info-blocks.noImageBlock",
         "socialLinks": "@social-media.socialLinks"
     }
 };
