@@ -1,5 +1,8 @@
 .LayoutAlternate {
     padding: px2rem(16px);
+    margin-top: px2rem(16px);
+}
+.LayoutAlternate--weave {
     margin-top: px2rem(-84px);
 }
 .LayoutAlternate-image {
@@ -59,7 +62,7 @@
     }
 }
 @media screen and (min-width: px2em(750px)) {
-    .LayoutAlternate {
+    .LayoutAlternate--weave {
         margin-top: px2rem(-42px);
     }
     .LayoutAlernate-item--leadPrimary {
@@ -67,7 +70,7 @@
     }
 }
 @media screen and (min-width: px2em(900px)) {
-    .LayoutAlternate {
+    .LayoutAlternate--weave {
         margin-top: px2rem(-132px);
     }
     .LayoutAlternate-item {

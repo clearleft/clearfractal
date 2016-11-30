@@ -1,0 +1,25 @@
+.InfoBlock {
+    border-bottom: none;
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    line-height: px2rem(24px);
+    margin-bottom: px2rem(24px);
+}
+.InfoBlock-image {
+    margin-right: px2rem(16px);
+    margin-bottom: px2rem(24px);
+}
+.InfoBlock-title {
+    margin-top: 0;
+    margin-bottom: px2rem(4px);
+    color: $dark-grey;
+    @include font(17px);
+}
+.InfoBlock-sub {
+    text-transform: uppercase;
+    font-size: px2rem(14px);
+    color: $mid-grey;
+    letter-spacing: 1px;
+}
