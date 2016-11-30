@@ -14,8 +14,12 @@
     letter-spacing: -0.58px;
     font-family: 'Gilroy Black';
 }
+.Heading--medium {
+    @include font(30px, 35px);
+    font-weight: 700;
+}
 .Heading--body {
-    @include font(40px, 45px);
+    @include font(20px, 25px);
     font-weight: 700;
 }
 .Heading--context {
@@ -36,5 +40,13 @@
 @media screen and (min-width: px2em(500px)) {
     .Heading--main {
         @include font(90px, 88px);
+    }
+    .Heading--medium {
+        @include font(40px, 45px);
+        font-weight: 700;
+    }
+    .Heading--body {
+        @include font(20px, 25px);
+        font-weight: 700;
     }
 }
