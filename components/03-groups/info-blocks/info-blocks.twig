@@ -1,0 +1,14 @@
+<div class="LayoutAlternate LayoutAlternate--balanced">
+    <div class="LayoutAlternate-left LayoutAlternate-item">
+        <h3 class="Heading Heading--body">Published books</h3>
+        {% include '@info-block' with {
+            infoBlockContents: imageBlockContents
+        } %}
+    </div><!--/.Cols-half-->
+    <div class="LayoutAlternate-right LayoutAlternate-item">
+        <h3 class="Heading Heading--body">Published books</h3>
+        {% include '@info-block' with {
+            infoBlockContents: noImageBlock
+        } %}
+    </div><!--/.Cols-half-->
+</div><!--/.Cols-->
