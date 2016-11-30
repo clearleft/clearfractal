@@ -1,8 +1,8 @@
 .Heading {
     font-family: 'Gilroy';
     color: $jet-grey;
-    margin-bottom: 0.25rem;
-    margin-top: 0.25rem;
+    margin-bottom: px2rem(8px);
+    margin-top: px2rem(8px);
 }
 .Heading--main {
     @include font(36px, 43px);
@@ -14,8 +14,16 @@
     letter-spacing: -0.58px;
     font-family: 'Gilroy Black';
 }
+.Heading--medium {
+    @include font(30px, 35px);
+    font-weight: 700;
+}
+.Heading--small {
+    @include font(26px, 31px);
+    font-weight: 700;
+}
 .Heading--body {
-    @include font(40px, 45px);
+    @include font(20px, 25px);
     font-weight: 700;
 }
 .Heading--context {
@@ -30,11 +38,26 @@
         @include font(60px, 54px);
     }
     .Heading--secondary {
-        @include font(70px, 75px);
+        @include font(60px, 65px);
     }
 }
 @media screen and (min-width: px2em(500px)) {
     .Heading--main {
         @include font(90px, 88px);
+    }
+    .Heading--secondary {
+        @include font(70px, 75px);
+    }
+    .Heading--medium {
+        @include font(40px, 45px);
+        font-weight: 700;
+    }
+    .Heading--small {
+        @include font(30px, 35px);
+        font-weight: 700;
+    }
+    .Heading--body {
+        @include font(22px, 25px);
+        font-weight: 700;
     }
 }

@@ -1,0 +1,13 @@
+<ul class="List">
+    {% for infoBlockContent in infoBlockContents %}
+    <li class="List-item">
+        <a class="InfoBlock" href="{{infoBlockContent.url}}">
+            {% if infoBlockContent.src %}<img class="InfoBlock-image" src="{{infoBlockContent.src}}" alt="">{% endif %}
+            <div class="InfoBlock-group">
+                <p class="InfoBlock-title">{{infoBlockContent.title}}</p>
+                <span class="InfoBlock-sub">{{infoBlockContent.sub}}</span>
+            </div><!--/.Infoblock-group-->
+        </a><!--/.InfoBlock-->
+    </li><!--/.List-item-->
+    {% endfor %}
+</ul><!--/.List-->
