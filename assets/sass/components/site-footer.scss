@@ -26,6 +26,7 @@
 }
 .SiteFooter-small {
     @include font(10px, 17px);
+    text-transform: uppercase;
 }
 .SiteFooter-icons {
     padding: 0;
