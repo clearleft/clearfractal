@@ -14,10 +14,10 @@ module.exports = {
         "mastheadSecondaryLink": "Beyond Tellerrand 2016",
         "leadText": "Andy has been involved in digital in one form or another since 1999. Originally a front-end developer and visual designer, he naturally migrated towards the world of UX with a covert desire to seed the importance of design (with a big D) earlier in the conception and planning of projects.",
         "infoBlockContents": "@info-block.infoBlockContents",
-        "message": "Lovingly crafted by Clearleft in Brighton, England",
-        "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
+        "bannerModifier": "--short",
         imageBlockContents: "@info-blocks.imageBlockContents",
         noImageBlock: "@info-blocks.noImageBlock",
+        "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
         "socialLinks": "@social-media.socialLinks"
     }
 };
