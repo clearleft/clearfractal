@@ -22,22 +22,22 @@
     font-family: 'Gilroy';
     @include font(30px, 30px);
     font-weight: 700;
-    margin: px2rem(32px) 0 px2rem(16px) 0;
+    margin: px2rem(48px) 0 px2rem(24px) 0;
 }
 .Card-image {
     width: 100%;
 }
 .Card-description {
     color: #505050;
-    @include font(17px, 29px);
+    @include font(18px, 32px);
     margin: 0 0 px2rem(8px) 0;
 }
 .Card-primary {
     flex-grow: 1;
-    padding: 1rem;
+    padding: px2rem(24px);
 }
 .Card-secondary {
-    padding: 1rem;
+    padding: (24px);
 }
 @media screen and (min-width: px2em(288px)) {
     .Card-primary {
