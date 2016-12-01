@@ -12,6 +12,6 @@ module.exports = {
             { "title": "Jobs", "url": "#" }
         ],
         "inputLabel": "@input-combo.inputLabel",
-        "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
+        "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved."
     }
 }

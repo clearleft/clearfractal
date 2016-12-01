@@ -10,8 +10,6 @@
     @include font(14px);
     padding: px2rem(8px) px2rem(10px);
     border-radius: px2rem(5px);
-}
-.InputGroup--encased .InputGroup-field {
     border: 1px solid $shadow-grey;
 }
 .InputGroup-submit {

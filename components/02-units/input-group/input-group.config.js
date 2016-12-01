@@ -7,9 +7,9 @@ module.exports = {
     },
     "variants": [
     {
-        "name": "encased",
+        "name": "combo",
         "context": {
-            "inputModifier": "--encased"  
+            "inputModifier": "--combo"  
         }
     }]
 };

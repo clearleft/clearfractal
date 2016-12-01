@@ -1,1 +1,0 @@
-InputGroup Combo is a modifier which adds styles to an input and button when they are placed together.
