@@ -1,4 +1,4 @@
-<div class="InputGroup">
+<div class="InputGroup{% if inputModifier%} InputGroup{{inputModifier}}{% endif %}">
     <label class="InputGroup-label" for="{{inputID}}">{{inputLabel}}</label>
     <input class="InputGroup-field" type="email" placeholder="E.g. example@domain.com" id="{{inputID}}" />
 </div><!--/.InputGroup-->
