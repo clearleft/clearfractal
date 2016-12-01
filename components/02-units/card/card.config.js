@@ -10,7 +10,7 @@ module.exports = {
     "variants": [{
         "name": "Card header modifier",
         "context": {
-            "cardModifier": "--header",
+            "cardModifier": "",
             "openContext": "Tiny Lesson",
             "cardTitle": "Article Title Goes here",
             "indexCard": true,
