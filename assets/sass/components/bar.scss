@@ -1,0 +1,8 @@
+.Bar:before {
+    content: "";
+    display: block;
+    margin-bottom: px2rem(24px);
+    width: px2rem(54px);
+    height: px2rem(10px);
+    background-color: $jet-grey;
+}

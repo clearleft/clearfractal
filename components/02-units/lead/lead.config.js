@@ -6,12 +6,6 @@ module.exports = {
     },
     "variants": [
     {
-        "name": "bar",
-        "context": {
-            "leadModifier": "--bar"  
-        }
-    },
-    {
         "name": "wrapper",
         "context": {
             "leadModifier": "--wrapper"  
