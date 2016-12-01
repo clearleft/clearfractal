@@ -1,13 +1,6 @@
 .Lead {
     @include font(18px, 28px);
 }
-.Lead--bar .Lead-content {
-    background-image: url('/assets/img/bar.svg');
-    background-repeat: no-repeat;
-    background-size: px2rem(32px);
-    padding-top: px2rem(16px);
-    margin-top: px2rem(4px);
-}
 .Lead--wrapper {
     background-color: #FFFFFF;
     border: px2rem(1px) solid #E2EBF1;
@@ -16,10 +9,6 @@
 @media screen and (min-width: px2em(520px)) {
     .Lead {
         @include font(20px, 34px);
-    }
-    .Lead--bar .Lead-content {
-        background-size: auto;
-        padding-top: px2rem(24px);
     }
     .Lead--wrapper {
         padding: px2rem(32px) px2rem(32px) px2rem(38px) px2rem(32px);

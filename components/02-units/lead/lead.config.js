@@ -10,11 +10,5 @@ module.exports = {
         "context": {
             "leadModifier": "--wrapper"  
         }
-    },
-    {
-        "name": "bar and wrapper",
-        "context": {
-            "leadModifier": "--bar Lead--wrapper"  
-        }
     }]
 }
