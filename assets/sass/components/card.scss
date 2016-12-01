@@ -2,7 +2,7 @@
 .Card {
     background: #FFFFFF;
     color: $jet-grey;
-    border: 2px solid $light-grey;
+    border: 2px solid #DAE1E8;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -10,20 +10,19 @@
     padding: 0;
 }
 .Card-context {
+    font-family: 'Gilroy';
     @include font(14px, 17px);
-    margin-bottom: px2rem(12px);
+    margin-bottom: px2rem(16px);
     color: $mid-grey;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
-    &--bare {
-        margin-bottom: 0;
-    }
 }
 .Card-title {
+    font-family: 'Gilroy';
     @include font(30px, 30px);
     font-weight: 700;
-    margin: 0 0 px2rem(18px) 0;
+    margin: px2rem(32px) 0 px2rem(16px) 0;
 }
 .Card-image {
     width: 100%;

@@ -2,7 +2,8 @@
     {% if cardModifier == "--header" %}<img class="Card-image" src="http://fillmurray.com/396/248" alt="">{% endif %}
     <div class="Card-primary">
         <div class="Card-context">{{ openContext }}</div>
-        <h3 class="Card-title">{{ cardTitle }}</h3>
+        <p class="Card-title">{{ cardTitle }}</p>
+        <p class="Card-context">X weeks ago</p>
         {% if cardDescription %}
         <p class="Card-description">{{ cardDescription }}</p>
         {% endif %}
@@ -12,7 +13,7 @@
     </div><!--/.Card-primary-->
     <div class="Card-secondary">
         {% if closeContext %}
-            <div class="Card-context Card-context--bare">{{ closeContext }}</div>
+            <div class="Card-context Card-context--bare"></div>
         {% endif %}
         {% if indexCard %}
             {% include '@index-card' %}
