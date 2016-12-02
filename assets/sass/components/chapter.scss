@@ -4,7 +4,7 @@
     max-width: px2em(1040px);
     margin: 0 auto;
     background-color: #ffffff;
-    border-bottom: solid 1px $shadow-grey;
+    border-bottom: solid px2rem(2px) $shadow-grey;
 }
 .Chapter:last-child {
     margin-bottom: px2rem(84px);
@@ -40,8 +40,8 @@
     .Chapter {
         display: flex;
         flex-wrap: wrap;
-        padding-top: px2rem(64px);
-        padding-bottom: px2rem(64px);
+        padding-top: px2rem(48px);
+        padding-bottom: px2rem(48px);
     }
     .Chapter-space {
         padding: px2rem(32px);
@@ -50,7 +50,7 @@
         @include font(40px, 47px);
     }
     .Chapter-label {
-        padding: 1.25rem 0 1rem 1rem;
+        padding: px2rem(24px) 0 px2rem(16px) px2rem(16px);
     }
     .Chapter-space--secondary {
         display: flex;
