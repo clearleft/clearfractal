@@ -1,0 +1,10 @@
+.Breadcrumb {
+    border-bottom: none;
+    text-transform: uppercase;
+    @include font(14px);
+    font-weight: 700;
+    letter-spacing: px2rem(1.75px);
+}
+.Breadcrumb:before {
+    content: "←";
+}
