@@ -2,6 +2,14 @@
 /** Normal  **/
 
 @font-face {
+    font-family: 'AdelleSans';
+    src: url('../fonts/adellesans-regular-webfont.woff2') format('woff2'),
+        url('../fonts/adellesans-regular-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Gilroy';
     src: url('../fonts/gilroy-medium-webfont.woff2') format('woff2'),
         url('../fonts/gilroy-medium-webfont.woff') format('woff');
@@ -12,14 +20,6 @@
     font-family: 'Gilroy';
     src: url('../fonts/gilroy-bold-webfont.woff2') format('woff2'),
         url('../fonts/gilroy-bold-webfont.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'AdelleSans';
-    src: url('../fonts/adellesans-regular-webfont.woff2') format('woff2'),
-        url('../fonts/adellesans-regular-webfont.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }

@@ -6,7 +6,7 @@
 .InputGroup-field {
     background: #fff;
     border: 0;
-    font-family: $font-primary;
+    font-family: $font-secondary;
     @include font(14px);
     padding: px2rem(8px) px2rem(10px);
     border-radius: px2rem(5px);
@@ -18,7 +18,7 @@
     color: #ffffff;
     background-color: $clearleft-red;
     padding: px2rem(6px) px2rem(8px);
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-weight: 700;
     @include font(14px);
 }

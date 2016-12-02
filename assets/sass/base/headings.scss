@@ -1,5 +1,5 @@
 .Heading {
-    font-family: 'Gilroy';
+    font-family: $font-secondary;
     color: $jet-grey;
     margin-bottom: px2rem(8px);
     margin-top: px2rem(8px);
@@ -7,13 +7,13 @@
 }
 .Heading--main {
     @include font(36px, 43px);
-    font-family: 'Gilroy Black';
+    font-family: $font-statement;
     letter-spacing: -1.29px;
 }
 .Heading--secondary {
     @include font(40px, 45px);
     letter-spacing: -0.58px;
-    font-family: 'Gilroy Black';
+    font-family: $font-statement;
 }
 .Heading--medium {
     @include font(30px, 35px);

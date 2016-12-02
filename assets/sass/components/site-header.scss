@@ -1,7 +1,7 @@
 
 .SiteHeader {
     padding: px2em(24px) px2rem(16px);
-    font-family: 'Gilroy';
+    font-family: $font-secondary;
 }
 
 @media only screen and (min-width: px2em(720px)) {

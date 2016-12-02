@@ -10,7 +10,7 @@
     padding: 0;
 }
 .Card-context {
-    font-family: 'Gilroy';
+    font-family: $font-secondary;
     @include font(14px, 17px);
     margin-bottom: px2rem(16px);
     color: $mid-grey;
@@ -19,7 +19,7 @@
     letter-spacing: 1px;
 }
 .Card-title {
-    font-family: 'Gilroy';
+    font-family: $font-secondary;
     @include font(30px, 30px);
     font-weight: 700;
     margin: px2rem(48px) 0 px2rem(24px) 0;
