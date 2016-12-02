@@ -21,7 +21,7 @@ module.exports = {
         "leadText": "@lead.leadText",
         "persons": persons,
         "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
-        "inputLabel": "@input-combo.inputLabel",
+        "inputLabel": "@input-group.inputLabel",
         "bannerCaption": "@banner.bannerCaption",
         "bannerHeadline": "@banner.bannerHeadline"
     }

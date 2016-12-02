@@ -6,6 +6,9 @@
     background-color: #ffffff;
     border-bottom: solid 1px $shadow-grey;
 }
+.Chapter:last-child {
+    margin-bottom: px2rem(84px);
+}
 .Chapter-title {
     @include font(30px, 37px);
     font-family: $font-primary;

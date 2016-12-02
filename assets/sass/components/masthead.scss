@@ -58,8 +58,8 @@
     .Masthead--streak .Masthead-primary {
         &:after {
             content: "";
-            width: 14rem;
-            height: 2rem;
+            width: px2rem(275px);
+            height: px2rem(32px);
             display: block;
             position: absolute;
             z-index: -1;

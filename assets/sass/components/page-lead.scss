@@ -22,6 +22,12 @@
         position: relative;
         z-index: 3;
     }
+    .PageLead--pinch {
+        margin-bottom: px2rem(64px);
+    }
+    .PageLead--pinch .PageLead-primary {
+        margin-bottom: px2rem(-64px);
+    }
 }
 .PageLead-image {
     border: $light-grey solid 0.5px;
