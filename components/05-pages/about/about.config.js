@@ -19,6 +19,7 @@ module.exports = {
         "signpostTitle": "@proposition.signpostTitle",
         "mastheadTitle": "Advancing the practice of design",
         "leadText": "@lead.leadText",
+        "pageLeadSecondary": true,
         "persons": persons,
         "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
         "inputLabel": "@input-group.inputLabel",

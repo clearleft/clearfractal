@@ -11,10 +11,10 @@
         align-items: center;
     }
     .PageLead-primary {
-        flex-basis: 50%;
+        flex-basis: 52%;
     }
     .PageLead-secondary {
-        flex-basis: 50%;
+        flex-basis: 48%;
         padding: px2em(8px) px2em(32px);
     }
     .PageLead-primary {
@@ -22,9 +22,6 @@
         position: relative;
         z-index: 3;
     }
-    /*.PageLead--pinch {
-        margin-bottom: px2rem(64px);
-    }*/
     .PageLead--pinch .PageLead-primary {
         margin-bottom: px2rem(-64px);
     }

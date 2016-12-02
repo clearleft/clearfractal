@@ -2,7 +2,9 @@
     <div class="PageLead-primary">
         {% include '@lead' with {leadModifier: '--wrapper Bar'} %}
     </div>
+    {% if pageLeadSecondary %}
     <div class="PageLead-secondary">
         {% include '@list' %}
     </div>
+    {% endif %}
 </div>

@@ -10,6 +10,12 @@ module.exports = {
             "context": {
                 "pageLeadModifier": "--pinch"
             }
+        },
+        {
+            "name": "secondary",
+            "context": {
+                "pageLeadSecondary": true
+            }
         }
     ]
 };
