@@ -31,6 +31,8 @@ a {
     text-decoration: none;
     border-bottom: $clearleft-red px2rem(2px) solid;
     padding-bottom: px2rem(1px);
+    font-family: $font-secondary;
+    font-weight: 700;
 }
 
 a:active,
