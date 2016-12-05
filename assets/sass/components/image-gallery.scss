@@ -1,7 +1,6 @@
 .ImageGallery {
     max-width: px2em(940px);
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto px2rem(64px) auto;
 }
 .ImageGallery-image {
     width: 100%;
