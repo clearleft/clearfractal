@@ -6,7 +6,7 @@ module.exports = {
         "mastheadSecondary": "",
     },
     "variants": [{
-        "name": "Masthead streak",
+        "name": "Streak",
         "context": {
             "mastheadTitle": "Hana Stevenson",
             "mastheadModifier": "--streak",
@@ -14,7 +14,7 @@ module.exports = {
         }
     },
     {
-        "name": "Masthead combo",
+        "name": "Combo",
         "context": {
             "mastheadTitle": "Hana Stevenson",
             "mastheadSecondary": "true",
@@ -24,13 +24,20 @@ module.exports = {
         }
     },
     {
-        "name": "Masthead tall",
+        "name": "tall",
         "context": {
             "mastheadTitle": "Hana Stevenson",
             "mastheadSecondary": "true",
             "mastheadModifier": "--tall",
             "mastheadSecondaryHeading": "Catch Hana speaking at:",
             "mastheadSecondaryLink": "Beyond Tellerrand 2016"
+        }
+    },
+    {
+        "name": "With breadcrumb",
+        "context": {
+            "mastheadTitle": "Hana Stevenson",
+            "mastheadBreadcrumb": true
         }
     }]
 };
