@@ -1,21 +1,23 @@
 <div class="Background">{% include '@site-header' %}</div>
 
-    <main>
+<main>
 
-        <div class="Background">{% include '@masthead' %}</div>
+    <div class="Background">{% include '@masthead' %}</div>
 
-        <div class="Background">{% include '@page-lead' %}</div>
+    <div class="Background">{% include '@page-lead' %}</div>
 
-        {% include '@team-grid' %}
+    {% include '@team-grid' %}
 
-        {% include '@banner' with {bannerCaption: 'Work with us', bannerHeadline: 'When you need to…'} %}
+    {% include '@banner' with {bannerCaption: 'Work with us', bannerHeadline: 'When you need to…'} %}
 
-        {% include '@propositions-circle' %}
+    {% include '@propositions-circle' %}
 
-        {% include '@banner' %}
-        
-        {% include '@image-gallery' %}
+    {% include '@banner' with {bannerCaption: 'Take a peek inside', bannerHeadline: 'Our Studio'} %}
+    
+    {% include '@image-gallery' %}
 
-    </main>
+    {% include '@banner' with {bannerModifier: '--notice', bannerCaption: 'Fancy a change?', bannerHeadline: 'Come grow with us'} %}
+
+</main>
 
 {% include '@site-footer' %}

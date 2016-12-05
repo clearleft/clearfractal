@@ -1,4 +1,11 @@
-<div class="Banner">
-    <div class="Banner-caption Heading Heading--context">{{bannerCaption}}</div>
-    <div class="Banner-headline Heading Heading--secondary">{{bannerHeadline}}</div>
+<div class="Banner{% if bannerModifier %} Banner{{bannerModifier}}{% endif %}">
+    <div class="Banner-content">
+        <div class="Banner-caption">{{bannerCaption}}</div>
+        <div class="Banner-headline">{{bannerHeadline}}</div>
+        {% if bannerModifier == '--notice' %}
+        <div class="Banner-body">
+            {{bannerBody}}
+        </div>
+        {% endif %}
+    </div>
 </div>

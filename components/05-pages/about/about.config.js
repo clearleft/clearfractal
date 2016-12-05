@@ -23,7 +23,6 @@ module.exports = {
         "persons": persons,
         "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
         "inputLabel": "@input-group.inputLabel",
-        "bannerCaption": "@banner.bannerCaption",
-        "bannerHeadline": "@banner.bannerHeadline"
+        "bannerBody": "@banner--notice.bannerBody"
     }
 };
