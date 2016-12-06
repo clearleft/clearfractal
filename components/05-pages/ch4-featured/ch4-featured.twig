@@ -1,4 +1,15 @@
-
-{% include '@project-landing' %}
+<div class="Ch4Featured">
+    {% include '@site-header' %}
+    <div class="Ch4Featured-wrapper">
+        <div class="Ch4Featured-primary">
+            {% include '@breadcrumb' %}
+            <h1 class="Ch4Featured-title">{{featuredTitle}}</h1>
+            <div class="Lead Bar">{{featuredText}}</div>
+        </div>
+        <img class="Ch4Featured-secondary" src="/assets/img/work/ch4/sling.png" alt="">
+        <img class="Ch4Featured-logo" src="/assets/img/work/ch4/ch4-logo.svg" alt="">
+    </div>
+    <div class="Ch4Featured-bg" aria-hidden="true"></div>
+</div>
 
 {% include '@site-footer' %}
