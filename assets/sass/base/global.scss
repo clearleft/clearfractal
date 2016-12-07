@@ -21,7 +21,7 @@ h6 {
     font-weight: normal;
 }
 body {
-    font-size: px2rem(18px);
+    @include font(16px, 26px);
     margin: 0;
     line-height: px2rem(32px);
 }
@@ -53,4 +53,9 @@ img {
 
 button {
     border: 0;
+}
+@media screen and (min-width: px2em(800px)) {
+    body {
+        @include font(18px, 32px);
+    }
 }

@@ -10,5 +10,9 @@
         font-weight: 700;
         -webkit-font-smoothing: antialiased;
         color: $jet-grey;
+        margin-top: 0;
+    }
+    h2 {
+        @include font(37px, 42px);
     }
 }

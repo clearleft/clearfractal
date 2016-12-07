@@ -1,0 +1,12 @@
+.Pill {
+    background-color: $clearleft-blue;
+    color: #ffffff;
+    border-radius: px2rem(18px);
+    padding: px2rem(2px) px2rem(8px);
+    margin-right: px2rem(4px);
+    margin-bottom: px2rem(4px);
+    font-weight: 700;
+    font-family: $font-secondary;
+    @include font(14px);
+    display: inline-block;
+}

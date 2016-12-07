@@ -1,0 +1,28 @@
+.ProjectIntro {
+    max-width: px2em(760px);
+    margin: 0 auto;
+    padding: px2rem(16px);
+}
+@media screen and (min-width: px2em(700)) {
+    .ProjectIntro {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ProjectIntro-main {
+        padding: px2rem(30px);
+        width: 66%;
+    }
+    .ProjectIntro-side {
+        padding: px2rem(30px);
+        width: 34%;
+    }
+}
+@media screen and (min-width: px2rem(900px)) {
+    .ProjectIntro-heading {
+        margin-left: px2rem(-52px);
+        max-width: 80%;
+    }
+    .ProjectIntro {
+        margin-top: px2rem(36px);
+    }
+}

@@ -1,0 +1,22 @@
+
+.Metadata {
+    margin-top: 0;
+}
+.Metadata-item {
+    margin: 0 px2rem(16px) px2rem(24px) 0;
+}
+.Metadata-heading {
+    @include font(14px, 17px);
+    font-weight: 700;
+    color: $mid-grey;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: px2rem(4px);
+}
+.Metadata-description {
+    font-family: $font-secondary;
+    @include font(14px, 22px);
+    color: #777777;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}

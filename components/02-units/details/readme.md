@@ -1,1 +1,0 @@
-The details pattern typically accompanies another section of content and its job is to show additional details. The content of the details pattern should be very short, usually only a few words. It could take the form of a definition list.
