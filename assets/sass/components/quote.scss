@@ -1,0 +1,30 @@
+.Quote {
+    max-width: px2rem(600px);
+    position: relative;
+    margin: px2rem(48px) auto;
+}
+.Quote:before {
+    background-image: url(/assets/img/quote-open.svg);
+    content: ' ';
+    width: px2rem(60px);
+    height: px2rem(45px);
+    display: block;
+    position: absolute;
+    top: -4rem;
+}
+.Quote-citation {
+    text-transform: uppercase;
+    color: $mid-grey;
+    @include font(13px, 16px);
+    font-family: $font-secondary;
+    font-weight: 700;
+    letter-spacing: px2rem(1px);
+    margin-top: px2rem(16px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.Quote-image {
+    border: px2rem(2px) solid #1E6B9C;
+    margin-right: px2rem(16px);
+}
