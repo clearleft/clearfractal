@@ -1,0 +1,13 @@
+.ImageBlock {
+    padding: px2rem(16px);
+    display: table;
+    max-width: px2em(1040px);
+    margin: 0 auto;
+}
+.ImageBlock-item {
+    @include font(13px, 16px);
+    font-family: $font-secondary;
+    color: $mid-grey;
+    text-transform: uppercase;
+    font-weight: 700;
+}

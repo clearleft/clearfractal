@@ -1,9 +1,10 @@
+
 .ProjectIntro {
     max-width: px2em(760px);
     margin: 0 auto;
     padding: px2rem(16px);
 }
-@media screen and (min-width: px2em(700)) {
+@media screen and (min-width: px2em(700px)) {
     .ProjectIntro {
         display: flex;
         flex-wrap: wrap;

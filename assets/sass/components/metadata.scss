@@ -1,12 +1,13 @@
 
 .Metadata {
     margin-top: 0;
+    -webkit-font-smoothing: antialiased;
 }
 .Metadata-item {
     margin: 0 px2rem(16px) px2rem(24px) 0;
 }
 .Metadata-heading {
-    @include font(14px, 17px);
+    @include font(13px, 16px);
     font-weight: 700;
     color: $mid-grey;
     text-transform: uppercase;

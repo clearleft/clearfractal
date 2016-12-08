@@ -43,12 +43,9 @@ a:hover {
     color: $clearleft-red;
 }
 
-/**
- * Remove the border on images inside links in IE 10-.
- */
-
 img {
-    border-style: none;
+    max-width: 100%;
+    border-style: none; /*Remove the border on images inside links in IE 10-.*/
 }
 
 button {
