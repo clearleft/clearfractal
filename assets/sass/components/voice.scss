@@ -9,6 +9,9 @@
 .Voice-description {
     @include font(16px, 27px);
 }
+.Voice-person {
+    max-width: px2rem(100px);
+}
 @media screen and (min-width: px2em(300px)) {
     .Voice-person {
         float: left;

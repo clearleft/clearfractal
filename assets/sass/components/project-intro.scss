@@ -10,11 +10,13 @@
         flex-wrap: wrap;
     }
     .ProjectIntro-main {
-        padding: px2rem(30px);
+        padding-left: px2rem(30px);
+        padding-right: px2rem(30px);
         width: 66%;
     }
     .ProjectIntro-side {
-        padding: px2rem(30px);
+        padding-left: px2rem(30px);
+        padding-right: px2rem(30px);
         width: 34%;
     }
 }
@@ -24,6 +26,6 @@
         max-width: 80%;
     }
     .ProjectIntro {
-        margin-top: px2rem(36px);
+        /*margin-top: px2rem(36px);*/
     }
 }

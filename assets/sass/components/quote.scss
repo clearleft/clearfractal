@@ -1,16 +1,19 @@
 .Quote {
-    max-width: px2rem(600px);
+    max-width: px2rem(680px);
     position: relative;
-    margin: px2rem(48px) auto;
-}
-.Quote:before {
-    background-image: url(/assets/img/quote-open.svg);
-    content: ' ';
-    width: px2rem(60px);
-    height: px2rem(45px);
-    display: block;
-    position: absolute;
-    top: -4rem;
+    margin: 0 auto;
+    padding: px2rem(16px);
+    &:before {
+        background-image: url(/assets/img/quote-open.svg);
+        background-repeat: no-repeat;
+        content: ' ';
+        width: px2rem(60px);
+        height: px2rem(45px);
+        display: block;
+        position: absolute;
+        top: -1rem;
+        background-size: 65%;
+    }
 }
 .Quote-citation {
     text-transform: uppercase;
@@ -27,4 +30,15 @@
 .Quote-image {
     border: px2rem(2px) solid #1E6B9C;
     margin-right: px2rem(16px);
+}
+@media screen and (min-width: px2em(500px)) {
+    .Quote {
+        margin-top: px2rem(48px);
+        padding-bottom: px2rem(32px);
+        padding-top: px2rem(32px);
+        &:before {
+            top: px2rem(-48px);
+            background-size: 100%;
+        }
+    }
 }
