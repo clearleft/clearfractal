@@ -1,14 +1,14 @@
 .Ch4Featured {
     background-color: #7123A8;
     background-image: radial-gradient(59% 81%, #7123A8 63%, #4D1574 100%);
-    color: #ffffff;
+    color: #ffffff; /*SC*/
 }
-.Ch4Featured-title {
+.Ch4Featured-title { /*SC*/
     font-family: $font-statement;
     @include font(50px, 50px);
     font-weight: 700;
 }
-.Ch4Featured-wrapper {
+.Ch4Featured-wrapper { /*SC*/
     max-width: px2em(900px);
     margin: 0 auto;
     padding: px2rem(16px);
@@ -16,10 +16,10 @@
     z-index: 1;
     -webkit-font-smoothing: antialiased;
 }
-.Ch4Featured-primary {
+.Ch4Featured-primary { /*SC*/
     max-width: px2rem(400px);
 }
-.Ch4Featured-secondary {
+.Ch4Featured-image {
     width: 52%;
     right: -2rem;
     top: 2rem;
