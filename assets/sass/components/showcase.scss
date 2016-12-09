@@ -3,7 +3,7 @@
 }
 .Showcase-title {
     font-family: $font-statement;
-    @include font(68px, 75px);
+    @include font(40px, 45px);
     font-weight: 700;
     margin-top: px2rem(30px);
 }
@@ -23,6 +23,12 @@
 }
 .Showcase-image {
     text-align: center;
-    margin: px2rem(32px) auto 0 auto;
+    margin: px2rem(48px) auto 0 auto;
     display: block;
+}
+@media screen and (min-width: px2em(520px)) {
+    .Showcase-title {
+        letter-spacing: px2rem(-1.45px);
+        @include font(72px, 77px);
+    }
 }
