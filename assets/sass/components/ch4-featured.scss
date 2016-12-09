@@ -1,7 +1,7 @@
-.Ch4Featured {
+.Ch4Featured { /*SC*/
     background-color: #7123A8;
     background-image: radial-gradient(59% 81%, #7123A8 63%, #4D1574 100%);
-    color: #ffffff; /*SC*/
+    color: #ffffff;
 }
 .Ch4Featured-title { /*SC*/
     font-family: $font-statement;
@@ -19,14 +19,14 @@
 .Ch4Featured-primary { /*SC*/
     max-width: px2rem(400px);
 }
-.Ch4Featured-image {
+.Ch4Featured-image { /*SC*/
     width: 52%;
     right: -2rem;
     top: 2rem;
     position: absolute;
     z-index: -1;
 }
-.Ch4Featured-logo {
+.Ch4Featured-logo { /*SC*/
     position: absolute;
     left: -3rem;
     bottom: -5rem;
@@ -35,7 +35,7 @@
 .Ch4Featured a {
     color: #ffffff;
 }
-.Ch4Featured-bg {
+.Ch4Featured-bg { /*SC*/
     background: #380F55;
     position: relative;
     z-index: 0;

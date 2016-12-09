@@ -1,4 +1,4 @@
-<div class="Showcase" style="background-color: #325E94">
+<div class="Showcase{% if showcaseModifier %} Showcase{{showcaseModifier}}{% endif %}">
     {% include '@site-header' %}
     <div class="Showcase-wrapper">
         <div class="Showcase-primary">
@@ -6,7 +6,8 @@
             <h1 class="Showcase-title">{{showcaseTitle}}</h1>
             <div class="Showcase-description Lead Bar">{{showcaseText}}</div>
         </div>
-        <img aria-hidden="true" class="Showcase-image" src="/assets/img/work/kensington/landing.png" alt="">
+        <img aria-hidden="true" class="Showcase-image" src="{{showcaseImage}}" alt="">
+        {% if showcaseModifier == '--featuredCh4' %}<img class="Ch4Featured-logo" src="/assets/img/work/ch4/ch4-logo.svg" alt="Channel 4 logo">{% endif %}
     </div>
     <div class="Showcase-bg" aria-hidden="true">
         <div class="Showcase-middle" aria-hidden="true"></div>
