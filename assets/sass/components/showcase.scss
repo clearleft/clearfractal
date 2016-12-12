@@ -168,16 +168,22 @@
         margin-top: px2rem(32px);
     }
 }
-@media screen and (min-width: px2em(800px)) {
+@media screen and (min-width: px2em(700px)) {
     .Showcase--featuredRBKC {
         background-image: url(/assets/img/work/penguin/penguin.png);
         background-repeat: no-repeat;
-        background-position: 120% 170%;
-        background-size: 60%;
+        background-position: 180% 100%;
+        background-size: 65%;
         /*.Showcase-image {
             position: absolute;
             right: px2rem(-280px);
             top: px2rem(80px);
         }*/
+    }
+}
+@media screen and (min-width: px2em(900px)) {
+    .Showcase--featuredRBKC {
+        background-position: 120% 120%;
+        background-size: 60%;
     }
 }
