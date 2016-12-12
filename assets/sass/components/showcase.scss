@@ -31,6 +31,10 @@
     margin: px2rem(48px) auto 0 auto;
     display: block;
 }
+.Showcase-logo {
+    margin-top: px2rem(32px);
+    margin-bottom: px2rem(32px);
+}
 @media screen and (min-width: px2em(520px)) {
     .Showcase-title {
         letter-spacing: px2rem(-1.45px);
@@ -160,12 +164,9 @@
     background-color: #FF6600;
     overflow: hidden;
     position: relative;
-    padding-bottom: px2rem(32px);
+    padding-bottom: px2rem(16px);
     .Showcase-image {
         width: 50%;
-    }
-    .Showcase-logo {
-        margin-top: px2rem(32px);
     }
 }
 @media screen and (min-width: px2em(700px)) {
@@ -174,16 +175,37 @@
         background-repeat: no-repeat;
         background-position: 180% 100%;
         background-size: 65%;
-        /*.Showcase-image {
-            position: absolute;
-            right: px2rem(-280px);
-            top: px2rem(80px);
-        }*/
     }
 }
 @media screen and (min-width: px2em(900px)) {
     .Showcase--featuredRBKC {
         background-position: 120% 120%;
         background-size: 60%;
+    }
+}
+
+/*Feaured Evo case study = --featuredEvo*/
+.Showcase--featuredEvo {
+    padding-bottom: px2rem(16px);
+    background-color: #000000;
+}
+@media screen and (min-width: px2em(700px)) {
+    .Showcase--featuredEvo {
+        background-image: url(/assets/img/work/evo/evo-landing.png), radial-gradient(42% 45%, #3F3F3F 34%, #333333 45%, #000000 98%);
+        background-repeat: no-repeat;
+        background-position: 200% 120%;
+        .Showcase-primary {
+            width: 45%;
+        }
+    }
+}
+@media screen and (min-width: px2em(820px)) {
+    .Showcase--featuredEvo {
+        background-position: 140% 200%;
+    }
+}
+@media screen and (min-width: px2em(1000px)) {
+    .Showcase--featuredEvo {
+        background-position: 100% 300%;
     }
 }

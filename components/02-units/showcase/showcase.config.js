@@ -31,7 +31,11 @@ module.exports = {
     {
         "name": "Featured Evo",
         "context": {
-            "showcaseModifier": "--featuredEvo"
+            "showcaseModifier": "--featuredEvo",
+            "showcaseTitle": "Inject energy.",
+            "showcaseText": "How do you give a magazine a huge boost to increase readership? This is the story of how we made Apple’s “Best Newsstand App” with 97,000 new downloads in 4 months.",
+            "showcaseLogo": "/assets/img/work/evo/evo-logo.svg",
+            "showcaseImage": false
         }
     }]
 };
