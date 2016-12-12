@@ -38,6 +38,7 @@
 @media screen and (min-width: px2em(800px)) {
     .Voice-person {
         width: 20%;
+        max-width: none;
     }
     .Voice-description {
         @include font(22px, 33px);
