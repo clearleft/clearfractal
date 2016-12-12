@@ -1,49 +1,49 @@
 
 .Card {
-    background: #FFFFFF;
+    background: #fff;
     color: $jet-grey;
-    border: 2px solid #DAE1E8;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
+
+    &--tiny-lesson {
+
+        header {
+            border-top: 1px solid $clearleft-yellow;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                background: #fff url('/assets/img/tiny-lessons-logo.svg') 0 50% no-repeat;
+                width: 166px;
+                height: 50px;
+                margin-top: -1.6rem;
+            }
+
+            .Card-title {
+                margin-top: px2rem(8px);
+            }
+        }
+
+    }
 }
-.Card-context {
+.Card-primary {
+    padding: px2rem(24px) 0;
+}
+.Card-title {
+    font-family: $font-secondary;
+    @include font(42px, 54px);
+    font-weight: 700;
+    margin: 0 0 px2rem(24px) 0;
+}
+.Card-category {
     font-family: $font-secondary;
     @include font(14px, 17px);
-    margin-bottom: px2rem(16px);
+    margin: 0 0 px2rem(16px) 0;
     color: $mid-grey;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
 }
-.Card-title {
-    font-family: $font-secondary;
-    @include font(30px, 30px);
-    font-weight: 700;
-    margin: px2rem(48px) 0 px2rem(24px) 0;
-}
-.Card-image {
-    width: 100%;
-}
 .Card-description {
     color: #505050;
     @include font(18px, 32px);
     margin: 0 0 px2rem(8px) 0;
-}
-.Card-primary {
-    flex-grow: 1;
-    padding: px2rem(24px);
-}
-.Card-secondary {
-    padding: (24px);
-}
-@media screen and (min-width: px2em(288px)) {
-    .Card-primary {
-        padding: px2rem(24px);
-    }
-    .Card-secondary {
-        padding: px2rem(24px);
-    }
 }

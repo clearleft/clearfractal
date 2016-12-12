@@ -1,22 +1,19 @@
-<div class="Card{% if cardModifier %} Card{{ cardModifier }}{% endif %}">
-    {% if cardModifier == "--header" %}<img class="Card-image" src="http://fillmurray.com/396/248" alt="">{% endif %}
+<article class="Card{% if cardModifier %} Card{{ cardModifier }}{% endif %}">
+
+    {% if cardModifier != "--tiny-lesson" %}<div class="Bar"></div>{% endif %}
+
     <div class="Card-primary">
-        <div class="Card-context">{{ openContext }}</div>
-        <p class="Card-title">{{ cardTitle }}</p>
-        <p class="Card-context">X weeks ago</p>
-        {% if cardDescription %}
+        <header>
+            <h3 class="Card-title">{{ cardTitle }}</h3>
+        </header>
+
+        <div class="Card-category">{{ cardCategory }}</div>
+
         <p class="Card-description">{{ cardDescription }}</p>
-        {% endif %}
-        {% if secondContext %}
-        <div class="Card-context">{{ secondContext }}</div>
-        {% endif %}
-    </div><!--/.Card-primary-->
-    <div class="Card-secondary">
-        {% if closeContext %}
-            <div class="Card-context Card-context--bare"></div>
-        {% endif %}
+
         {% if indexCard %}
             {% include '@index-card' %}
         {% endif %}
-    </div><!--/.Card-secondary-->
-</div><!--/.Card-->
+    </div>
+
+</article>
