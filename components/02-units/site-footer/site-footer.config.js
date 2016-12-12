@@ -11,7 +11,7 @@ module.exports = {
             { "title": "Styleguide", "url": "#" },
             { "title": "Jobs", "url": "#" }
         ],
-        "inputLabel": "@input-combo.inputLabel",
+        "inputLabel": "Feed your curiosity.",
         "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved."
     }
 }
