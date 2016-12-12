@@ -14,6 +14,7 @@ module.exports = {
         "context": {
             "showcaseModifier": "--featuredCh4",
             "showcaseImage": "/assets/img/work/ch4/sling.png",
+            "showcaseLogo": "/assets/img/work/ch4/ch4-logo.svg",
             "showcaseTitle": "Take on Goliath.",
             "showcaseText": "How could our small team make any impact on the giant eco-system of content in Channel 4’s News Room? This is a story of how small changes make a big difference.",
         }
@@ -22,7 +23,9 @@ module.exports = {
         "name": "Featured RBKC",
         "context": {
             "showcaseModifier": "--featuredRBKC",
-            "showcaseImage": "/assets/img/work/penguin/penguin.png"
+            "showcaseTitle": "Create a new Universe",
+            "showcaseImage": false,
+            "showcaseLogo": "/assets/img/work/penguin/penguin-logo.svg"
         }
     },
     {

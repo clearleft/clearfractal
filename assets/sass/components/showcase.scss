@@ -158,4 +158,26 @@
 /*Feaured RBKC case study = --featuredRBKC*/
 .Showcase--featuredRBKC {
     background-color: #FF6600;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: px2rem(32px);
+    .Showcase-image {
+        width: 50%;
+    }
+    .Showcase-logo {
+        margin-top: px2rem(32px);
+    }
+}
+@media screen and (min-width: px2em(800px)) {
+    .Showcase--featuredRBKC {
+        background-image: url(/assets/img/work/penguin/penguin.png);
+        background-repeat: no-repeat;
+        background-position: 120% 170%;
+        background-size: 60%;
+        /*.Showcase-image {
+            position: absolute;
+            right: px2rem(-280px);
+            top: px2rem(80px);
+        }*/
+    }
 }
