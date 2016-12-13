@@ -11,23 +11,8 @@ module.exports = {
         "voiceModifier": "--tall",
         "voiceDescription": "@voice.voiceDescription",
         "voiceCite": "@voice.voiceCite",
+        "sceneModifier": "@scene--shuffle.sceneModifier",
         "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
-        "socialLinks": "@social-media.socialLinks",
-        "metadata": [{
-            "item": "What we did",
-            "description": "£2500"
-        },{
-            "item": "Our Team",
-            "description": "Up to 8 people"
-        },{
-            "item": "Environment",
-            "description": "1 day"
-        },{
-            "item": "Stakeholders",
-            "description": "Call Andy on +44 (0)845 858 6563"
-        },{
-            "item": "Duration",
-            "description": "6 months"
-        }]
+        "socialLinks": "@social-media.socialLinks"
     }
 };
