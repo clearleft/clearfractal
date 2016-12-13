@@ -13,6 +13,11 @@
     font-weight: 700;
     -webkit-font-smoothing: antialiased;
 }
+.ImageBlock--rightCaption {
+    .ImageBlock-item {
+        text-align: right;
+    }
+}
 @media screen and (min-width: px2em(500px)) {
     .ImageBlock {
         padding-top: px2rem(32px);
