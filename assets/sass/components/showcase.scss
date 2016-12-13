@@ -31,6 +31,10 @@
     margin: px2rem(48px) auto 0 auto;
     display: block;
 }
+.Showcase-logo {
+    margin-top: px2rem(32px);
+    margin-bottom: px2rem(32px);
+}
 @media screen and (min-width: px2em(520px)) {
     .Showcase-title {
         letter-spacing: px2rem(-1.45px);
@@ -63,7 +67,7 @@
         bottom: px2rem(-80px);
         display: none;
     }
-    .Showcase-bg {
+    .Showcase-skew {
         background: #380F55;
         position: relative;
         z-index: 0;
@@ -85,13 +89,13 @@
     }
 }
 @media screen and (min-width: px2em(330px)) {
-    .Showcase--featuredCh4 .Showcase-bg:before {
+    .Showcase--featuredCh4 .Showcase-skew:before {
         transform-origin: -58%;
         height: px2rem(80px);
     }
 }
 @media screen and (min-width: px2em(483px)) {
-    .Showcase--featuredCh4 .Showcase-bg {
+    .Showcase--featuredCh4 .Showcase-skew {
         &:before {
             height: px2rem(96px);
         }
@@ -101,7 +105,7 @@
     }
 }
 @media screen and (min-width: px2em(584px)) {
-    .Showcase--featuredCh4 .Showcase-bg {
+    .Showcase--featuredCh4 .Showcase-skew {
         margin-bottom: 5rem;
         &:before {
             height: px2rem(112px);
@@ -116,7 +120,7 @@
     .Showcase--featuredCh4 .Showcase-secondary {
         right: -3rem;
     }
-    .Showcase--featuredCh4 .Showcase-bg {
+    .Showcase--featuredCh4 .Showcase-skew {
         &:before {
             height: 11rem;
         }
@@ -130,7 +134,7 @@
     .Showcase--featuredCh4 .Showcase-logo {
         display: block;
     }
-    .Showcase--featuredCh4 .Showcase-bg {
+    .Showcase--featuredCh4 .Showcase-skew {
         margin-bottom: px2rem(64px);
         &:before {
             height: 11rem;
@@ -150,34 +154,112 @@
     }
 }
 @media screen and (min-width: px2em(1400px)) {
-    .Showcase--featuredCh4 .Showcase-bg:before {
+    .Showcase--featuredCh4 .Showcase-skew:before {
         margin-top: 2rem;
     }
 }
 
-/*Feaured RBKC case study = --featuredRBKC*/
-.Showcase--featuredRBKC {
+/*Feaured Penguin case study = --featuredPenguin*/
+.Showcase--featuredPenguin {
     background-color: #FF6600;
+    background-image: url(/assets/img/work/penguin/orange-bg.jpg);
     overflow: hidden;
     position: relative;
-    padding-bottom: px2rem(32px);
-    .Showcase-image {
-        width: 50%;
-    }
-    .Showcase-logo {
-        margin-top: px2rem(32px);
+    .Showcase-wrapper {
+        padding-bottom: px2rem(16px);
     }
 }
-@media screen and (min-width: px2em(800px)) {
-    .Showcase--featuredRBKC {
-        background-image: url(/assets/img/work/penguin/penguin.png);
-        background-repeat: no-repeat;
-        background-position: 120% 170%;
-        background-size: 60%;
-        /*.Showcase-image {
+@media screen and (min-width: px2em(700px)) {
+    .Showcase--featuredPenguin {
+        background-image: url(/assets/img/work/penguin/penguin.png), url(/assets/img/work/penguin/orange-bg.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 150% 100%, 0 0;
+        background-size: px2rem(400px), cover;
+        .Showcase-primary {
+            width: 70%;
+        }
+    }
+}
+@media screen and (min-width: px2em(780px)) {
+    .Showcase--featuredPenguin {
+        background-size: px2rem(500px), cover;
+    }
+}
+@media screen and (min-width: px2em(950px)) {
+    .Showcase--featuredPenguin {
+        background-position: 125% 100%, 0 0;
+        background-size: px2rem(580px), cover;
+    }
+}
+@media screen and (min-width: px2em(1200px)) {
+    .Showcase--featuredPenguin {
+        background-position: 100% 100%, 0 0;
+        background-size: px2rem(650px), cover;
+    }
+}
+
+/*Feaured Evo case study = --featuredEvo*/
+.Showcase--featuredEvo {
+    background-color: #000000;
+    position: relative;
+    .Showcase-wrapper {
+        padding-bottom: px2rem(16px);
+        &:after {
+            content: '';
+            width: 150%;
+            height: px2rem(64px);
+            transform: skewY(2deg);
             position: absolute;
-            right: px2rem(-280px);
-            top: px2rem(80px);
-        }*/
+            bottom: px2rem(-20px);
+            left: 0;
+            right: 0;
+            background: black;
+            z-index: -1;
+        }
+    }
+    .Showcase-image {
+        position: absolute;
+        bottom: px2rem(-25px);
+        z-index: 0;
+        opacity: 0.3;
+        max-width: 80%;
+        right: 0;
+    }
+    .Showcase-primary {
+        z-index: 2;
+        position: relative;
+    }
+}
+@media screen and (min-width: px2em(500px)) {
+    .Showcase--featuredEvo {
+        .Showcase-image {
+            max-width: 60%;
+        }
+    }
+}
+@media screen and (min-width: px2em(700px)) {
+    .Showcase--featuredEvo {
+        background-image: radial-gradient(42% 45%, #3F3F3F 34%, #333333 45%, #000000 98%);
+        .Showcase-primary {
+            width: 45%;
+        }
+        .Showcase-image {
+            opacity: 1;
+        }
+    }
+}
+@media screen and (min-width: px2em(820px)) {
+    .Showcase--featuredEvo {
+        .Showcase-wrapper:after {
+            bottom: px2rem(-50px);
+        }
+        .Showcase-image {
+            bottom: px2rem(-58px);
+        }
+    }
+}
+@media screen and (min-width: px2em(1000px)) {
+    .Showcase--featuredEvo {
+        background-position: 100% 300%;
     }
 }

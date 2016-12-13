@@ -1,31 +1,36 @@
 
-.ProjectIntro {
+.Scene {
     max-width: px2em(760px);
     margin: 0 auto;
     padding: px2rem(16px);
 }
 @media screen and (min-width: px2em(700px)) {
-    .ProjectIntro {
+    .Scene {
         display: flex;
         flex-wrap: wrap;
+        padding-top: px2rem(64px);
+        padding-bottom: px2rem(32px);
     }
-    .ProjectIntro-main {
+    .Scene-main {
         padding-left: px2rem(30px);
         padding-right: px2rem(30px);
         width: 66%;
     }
-    .ProjectIntro-side {
+    .Scene-side {
         padding-left: px2rem(30px);
         padding-right: px2rem(30px);
         width: 34%;
     }
+    .Scene--shuffle .Scene-side {
+        order: 2;
+    }
 }
 @media screen and (min-width: px2rem(900px)) {
-    .ProjectIntro-heading {
+    .Scene-heading {
         margin-left: px2rem(-52px);
-        max-width: 80%;
+        max-width: 90%;
     }
-    .ProjectIntro {
+    .Scene {
         /*margin-top: px2rem(36px);*/
     }
 }

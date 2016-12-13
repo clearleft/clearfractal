@@ -1,97 +1,19 @@
-<div class="Ch4Featured">
-    {% include '@site-header' %}
-    <div class="Ch4Featured-wrapper">
-        <div class="Ch4Featured-primary">
-            {% include '@breadcrumb' %}
-            <h1 class="Ch4Featured-title">{{featuredTitle}}</h1>
-            <div class="Lead Bar">{{featuredText}}</div>
-        </div>
-        <img aria-hidden="true" class="Ch4Featured-image" src="/assets/img/work/ch4/sling.png" alt="">
-        <img class="Ch4Featured-logo" src="/assets/img/work/ch4/ch4-logo.svg" alt="Channel 4 logo">
-    </div>
-    <div class="Ch4Featured-bg" aria-hidden="true">
-        <div class="Ch4Featured-middle" aria-hidden="true"></div>
-    </div><!--/.Skewed section-->
-</div><!--/.Ch4Featured-->
+{% include '@showcase--featured-channel4' %}
+
 <div class="Background">
-    <div class="Voice Voice--tall">
-        <div class="Voice-person">
-            <img src="/assets/img/team/voice/graham.png" alt="Graham Smith">
-        </div>
-        <div class="Voice-description">
-            <p>We’re in the news room, in the centre of all the activity, watching the team capture, edit, and share events from all over the world.  It’s fast-moving, exciting, and iterative. In that moment, I realised that we could also design in a way that harnesses that same excitement.</p>
-            <p class="Voice-cite Heading Heading--context">James Box, UX Director, Team lead</p>
-        </div>
-    </div><!--/.Voice-->
-</div><!--/.Background-->
-<div class="ProjectIntro">
-    <div class="ProjectIntro-side">
-        <dl class="Metadata">
-        <div class="Metadata-item">
-            <dt class="Metadata-heading">What we did</dt>
-            <dd class="Metadata-description">
-                <span class="Pill">Strategy</span>
-                <span class="Pill">UX Design</span>
-                <span class="Pill">Visual Design</span>
-            </dd>
-        </div><!--/.Metadata-item-->
-        <div class="Metadata-item">
-            <dt class="Metadata-heading">Our Team</dt>
-            <dd class="Metadata-description">James Box, UX designer</dd>
-            <dd class="Metadata-description">James Bates, Visual Design</dd>
-            <dd class="Metadata-description">Mark Perkins, Developer</dd>
-        </div><!--/.Metadata-item-->
-        <div class="Metadata-item">
-            <dt class="Metadata-heading">Environment</dt>
-            <dd class="Metadata-description">Channel 4 Studios</dd>
-            <dd class="Metadata-description">ITN London</dd>
-        </div><!--/.Metadata-item-->
-        <div class="Metadata-item">
-            <dt class="Metadata-heading">Stakeholders</dt>
-            <dd class="Metadata-description">10+</dd>
-        </div><!--/.Metadata-item-->
-        <div class="Metadata-item">
-            <dt class="Metadata-heading">Duration</dt>
-            <dd class="Metadata-description">6 months</dd>
-        </div><!--/.Metadata-item-->
-        <div class="Metadata-item">
-            <dt class="Metadata-heading">Link</dt>
-            <dd class="Metadata-description"><a href="#">See it live</a></dd>
-        </div><!--/.Metadata-item-->
-    </div><!--/.ProjectIntro-side-->
-    <div class="ProjectIntro-main Prose">
-        <h2>The challenge for the Channel 4 News Room</h2>
-        <p>We had worked with Channel 4 News before, designing their mobile apps and refreshing their website, but this was the biggest challenge yet.  We needed to find tiny ways to make big changes to a vast eco-system of content production to make it more suitable for mobile consumption. Not only did the new website need to adapt to many devices and screen sizes, it needed to adapt to the fast-paced way the news itself gets produced.</p>
-        <p>Channel 4 and ITN work together to deliver the news, which means there are lots of people involved at each stage. They have an enormous responsibility to the public but their online strategy didn’t reflect the many ways in which news is captured and consumed. The Channel 4 news team have a passion for the power of journalism, so together we set out to design a way to convey that passion on the web.</p>
-        <a class="Anchor" href="#results">Go straight to results &#8595;</a>
-    </div>
-</div><!--/.ProjectIntro-->
-<figure class="ImageBlock">
-    <img class="ImageBlock-item" src="/assets/img/work/ch4/ch4-team.jpg" alt="The team">  
-    <figcaption class="ImageBlock-item">the channel 4 news team. Image courtesy of ITN News</figcaption>
-</figure>
-<div class="TextBlock Prose">
-    <h2>So how do you work together to understand your users?</h2>
-    <p>The Clearleft team kicked off with a collaborative workshop in our Brighton studio to dig deeper into the needs and expectations of the news audience. Channel 4 News took us through their audience archetypes, which was a great starting point for us.</p>
-    <p>For good design to work, everyone involved needs to be in agreement on the priorities of the project. By getting everyone in a room together, there was a great sense of collaboration and co-creation between Clearleft, Channel 4, and ITN.</p>
-    <p>By getting everyone together we also learned that some users want bite size news and other people want in-depth reporting on newsworthy topics. So how do you provide for these varying needs?</p>
+    {% include '@voice--tall' %}
 </div>
-<blockquote class="Quote">
-    I remember a really good sense of collaboration. There were a lot of moving parts—us at Clearleft, the team at Channel 4, but also the team at ITN. I think we had a really good working relationship between all of those people.
-    <div class="Quote-citation">
-        <img class="Quote-image" src="/assets/img/work/ch4/anna-doble.jpg" alt="Anna Doble">
-        <span>James Bates</span>
-    </div>
-</blockquote>
-<figure class="ImageBlock">
-    <img class="ImageBlock-item" src="/assets/img/work/ch4/sketching-lo-hi.jpg" alt="Sketching">  
-    <figcaption class="ImageBlock-item">Sketching from lo-fi to hi-fi</figcaption>
-</figure>
-<div class="TextBlock Prose">
-    <h2>So how do you work together to understand your users?</h2>
-    <p>The Clearleft team kicked off with a collaborative workshop in our Brighton studio to dig deeper into the needs and expectations of the news audience. Channel 4 News took us through their audience archetypes, which was a great starting point for us.</p>
-    <p>For good design to work, everyone involved needs to be in agreement on the priorities of the project. By getting everyone in a room together, there was a great sense of collaboration and co-creation between Clearleft, Channel 4, and ITN.</p>
-    <p>By getting everyone together we also learned that some users want bite size news and other people want in-depth reporting on newsworthy topics. So how do you provide for these varying needs?</p>
-</div>
+
+{% include '@scene--shuffle' %}
+
+{% include '@image-block' %}
+
+{% include '@text-block' %}
+
+{% include '@quote' %}
+
+{% include '@image-block--right-caption' with {imageBlockModifier: '--rightCaption', imageBlockCaption: 'Sketching from lo-fi to hi-fi', imageBlockSrc: '/assets/img/work/ch4/sketching-lo-hi.jpg'} %}
+
+{% include '@text-block' %}
 
 {% include '@site-footer' %}

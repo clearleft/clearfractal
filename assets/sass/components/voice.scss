@@ -22,7 +22,7 @@
     .Voice {
         display: flex;
         flex-wrap: wrap;
-        padding: px2rem(32px) px2rem(8px);
+        padding: px2rem(35px) px2rem(8px);
     }
     .Voice-person {
         float: none;
@@ -38,13 +38,14 @@
 @media screen and (min-width: px2em(800px)) {
     .Voice-person {
         width: 20%;
+        max-width: none;
     }
     .Voice-description {
         @include font(22px, 33px);
         width: 65%;
     }
     .Voice--tall {
-        padding-top: px2rem(125px);
+        padding-top: px2rem(145px);
         margin-top: px2rem(-65px);
     }
 }
