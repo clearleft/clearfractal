@@ -31,7 +31,6 @@
 
 .IndexCard--profile {
     border: none;
-    margin-bottom: 2rem;
 
     .IndexCard-details {
         border: none;
@@ -42,5 +41,6 @@
         color: $mid-grey;
         @include font(14px, 14px);
         letter-spacing: px2rem(1px);
+        text-align: center;
     }
 }

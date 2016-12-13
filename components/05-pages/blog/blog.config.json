@@ -1,9 +1,0 @@
-{
-    "title": "Blog",
-    "status": "wip",
-    "context": {
-        "links": "@primary-navigation.links",
-        "message": "@site-footer.message",
-        "small": "@site-footer.small"
-    }
-}
