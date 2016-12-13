@@ -159,30 +159,41 @@
     }
 }
 
-/*Feaured RBKC case study = --featuredRBKC*/
-.Showcase--featuredRBKC {
+/*Feaured Penguin case study = --featuredPenguin*/
+.Showcase--featuredPenguin {
     background-color: #FF6600;
     overflow: hidden;
     position: relative;
-    .Showcase-image {
-        width: 50%;
-    }
     .Showcase-wrapper {
         padding-bottom: px2rem(16px);
     }
 }
 @media screen and (min-width: px2em(700px)) {
-    .Showcase--featuredRBKC {
+    .Showcase--featuredPenguin {
         background-image: url(/assets/img/work/penguin/penguin.png);
         background-repeat: no-repeat;
-        background-position: 180% 100%;
-        background-size: 65%;
+        background-position: 150% 100%;
+        background-size: px2rem(400px);
+        .Showcase-primary {
+            width: 70%;
+        }
     }
 }
-@media screen and (min-width: px2em(900px)) {
-    .Showcase--featuredRBKC {
-        background-position: 120% 120%;
-        background-size: 60%;
+@media screen and (min-width: px2em(780px)) {
+    .Showcase--featuredPenguin {
+        background-size: px2rem(500px);
+    }
+}
+@media screen and (min-width: px2em(950px)) {
+    .Showcase--featuredPenguin {
+        background-position: 125% 100%;
+        background-size: px2rem(580px);
+    }
+}
+@media screen and (min-width: px2em(1200px)) {
+    .Showcase--featuredPenguin {
+        background-position: 100% 100%;
+        background-size: px2rem(650px);
     }
 }
 

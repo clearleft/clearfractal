@@ -20,9 +20,9 @@ module.exports = {
         }
     },
     {
-        "name": "Featured RBKC",
+        "name": "Featured Penguin",
         "context": {
-            "showcaseModifier": "--featuredRBKC",
+            "showcaseModifier": "--featuredPenguin",
             "showcaseTitle": "Create a new Universe",
             "showcaseImage": false,
             "showcaseLogo": "/assets/img/work/penguin/penguin-logo.svg"
