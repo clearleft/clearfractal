@@ -162,6 +162,7 @@
 /*Feaured Penguin case study = --featuredPenguin*/
 .Showcase--featuredPenguin {
     background-color: #FF6600;
+    background-image: url(/assets/img/work/penguin/orange-bg.jpg);
     overflow: hidden;
     position: relative;
     .Showcase-wrapper {
@@ -170,10 +171,10 @@
 }
 @media screen and (min-width: px2em(700px)) {
     .Showcase--featuredPenguin {
-        background-image: url(/assets/img/work/penguin/penguin.png);
-        background-repeat: no-repeat;
-        background-position: 150% 100%;
-        background-size: px2rem(400px);
+        background-image: url(/assets/img/work/penguin/penguin.png), url(/assets/img/work/penguin/orange-bg.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 150% 100%, 0 0;
+        background-size: px2rem(400px), cover;
         .Showcase-primary {
             width: 70%;
         }
@@ -181,19 +182,19 @@
 }
 @media screen and (min-width: px2em(780px)) {
     .Showcase--featuredPenguin {
-        background-size: px2rem(500px);
+        background-size: px2rem(500px), cover;
     }
 }
 @media screen and (min-width: px2em(950px)) {
     .Showcase--featuredPenguin {
-        background-position: 125% 100%;
-        background-size: px2rem(580px);
+        background-position: 125% 100%, 0 0;
+        background-size: px2rem(580px), cover;
     }
 }
 @media screen and (min-width: px2em(1200px)) {
     .Showcase--featuredPenguin {
-        background-position: 100% 100%;
-        background-size: px2rem(650px);
+        background-position: 100% 100%, 0 0;
+        background-size: px2rem(650px), cover;
     }
 }
 
