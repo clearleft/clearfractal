@@ -1,10 +1,14 @@
+
 'use strict';
+
+const faker = require('faker');
+
 module.exports = {
     "status": "wip",
     "context": {
         "imageSrc": "/assets/img/team/james-g.jpg",
-        "indexCardName": "Tea Ivanova",
-        "indexCardInfo": "Project Manager"
+        "indexCardName": faker.name.findName(),
+        "indexCardInfo": faker.name.jobTitle()
     },
     "variants": [
         {
@@ -12,7 +16,7 @@ module.exports = {
             "context": {
                 "indexCardModifier": "--profile",
                 "imageSrc": "/assets/img/team/james-g-154.jpg",
-                "indexCardInfo": "13th Sep 2015"
+                "indexCardInfo": false
             }
         }
     ]

@@ -1,7 +1,10 @@
 <a href="#" class="IndexCard{% if indexCardModifier %} IndexCard{{indexCardModifier}}{% endif %}">
+
     <img class="IndexCard-image" src="{{imageSrc}}" alt="">
+
     <div class="IndexCard-details">
         <p class="IndexCard-name">{{indexCardName}}</p>
         {% if indexCardInfo %}<span class="IndexCard-info">{{indexCardInfo}}</span>{% endif %}
     </div><!--/.IndexCard-details-->
+
 </a><!--/.IndexCard-->

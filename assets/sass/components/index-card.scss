@@ -1,88 +1,46 @@
 .IndexCard {
-    font-family: $font-secondary;
-    color: $white-grey;
     display: inline-block;
-    position: relative;
-    line-height: 1;
-    border: #DAE1E8 solid 0.5px;
-    &:after {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    &:hover {
-        color: $white-grey;;
-    }
-}
-.IndexCard:hover:after {
-    background-color: $jet-grey;
-    opacity: 0.5;
+    font-family: $font-secondary;
+    border: 1px solid $shadow-grey;
 }
 .IndexCard-details {
-    position: absolute;
-    bottom: px2rem(20px);
-    left: px2rem(20px);
-    width: 82%;
-    z-index: 1;
-    display: none;
-}
-.IndexCard:hover .IndexCard-details {
-    display: block;
+    background-color: #fff;
+    border-top: 1px solid $shadow-grey;
+    padding: px2rem(16px);
 }
 .IndexCard-image {
-    max-width: 100%;
     display: block;
+    max-width: 100%;
 }
 .IndexCard-name {
-    -webkit-font-smoothing: antialiased;
     @include font(22px, 17px);
-    color: $white-grey;
+    color: $jet-grey;
     font-weight: 700;
     line-height: 1;
-    letter-spacing: -0.5px;
-    margin: 0 0 px2rem(8px) 0;
+    letter-spacing: -0.3px;
+    margin: 0;
 }
 .IndexCard-info {
+    color: $mid-grey;
+    display: block;
     @include font(12px, 14px);
-    text-transform: uppercase;
     letter-spacing: px2rem(1px);
+    margin-top: px2rem(8px);
+    text-transform: uppercase;
 }
+
 .IndexCard--profile {
+    border: none;
     margin-bottom: 2rem;
+
     .IndexCard-details {
-        padding: px2rem(12px);
-        text-transform: uppercase;
+        border: none;
         display: block;
-        position: absolute;
-        left: px2rem(16px);
-        bottom: px2em(-20px);
-        background-color: #FFFFFF;
-        border: 0.5px solid #E2EBF1;
-        width: 98%;
+        text-transform: uppercase;
     }
     .IndexCard-name {
-        color: $jet-grey;
-        @include font(18px, 22px);
-    }
-    .IndexCard-info {
-        margin: 0;
-        color: $jet-grey;
-        text-transform: none;
-        font-weight: 500;
-        letter-spacing: 0;
-    }
-    .IndexCard-image {
-        border: 1px solid #E2EBF1;
-    }
-}
-@media screen and (min-width: px2em(640px)) {
-    .IndexCard-name {
-        @include font(30px, 30px);
-    }
-    .IndexCard-info {
-        @include font(14px, 17px);
+        color: $mid-grey;
+        @include font(14px, 14px);
+        letter-spacing: px2rem(1px);
     }
 }
