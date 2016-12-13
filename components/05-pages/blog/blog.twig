@@ -1,10 +1,25 @@
+<div class="Background">{% include '@site-header' %}</div>
 
-{% include '@site-header' %}
+<main>
 
-    <main>
+    <div class="Background" style="padding-bottom: 15rem">
+        {% include '@masthead' %}
+    </div>
 
-        Articles here.
+    <div class="BlogGrid">
 
-    </main>
+        {% include '@featured-card' with { featuredCardTitle: 'Jon smells like cabbages', featuredCardCategory: 'Process', indexCardModifier: "--profile", indexCardInfo: false } %}
+
+        <div class="BlogGrid-container">
+            {% for post in posts %}
+            <div class="BlogGrid-item">
+                {% include '@card' with { cardTitle: post.cardTitle, cardCategory: post.cardCategory, cardDescription: post.cardDescription, indexCardModifier: "--profile", indexCardInfo: false } %}
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+</main>
 
 {% include '@site-footer' %}
