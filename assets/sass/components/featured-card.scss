@@ -1,0 +1,48 @@
+
+.FeaturedCard {
+    padding: px2rem(48px);
+    box-shadow: 0 1px 12px rgba(100,100,100,1);
+}
+.FeaturedCard-title {
+    font-family: $font-statement;
+    @include font(32px, 36px);
+    margin: 0;
+}
+.FeaturedCard-category {
+    font-family: $font-secondary;
+    @include font(14px, 17px);
+    margin: px2rem(8px) 0 px2rem(16px) 0;
+    color: $mid-grey;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+@media only screen and (min-width: px2em(480px)) {
+    .FeaturedCard {
+        padding: px2rem(85px);
+    }
+    .FeaturedCard-title {
+        @include font(48px, 56px);
+        letter-spacing: -1px;
+    }
+}
+
+@media only screen and (min-width: px2em(640px)) {
+    .FeaturedCard-title {
+        @include font(68px, 75px);
+        letter-spacing: -1.5px;
+    }
+}
+
+@media only screen and (min-width: px2em(860px)) {
+    .FeaturedCard {
+        display: flex;
+    }
+    .FeaturedCard-primary {
+        flex: 1;
+    }
+    .FeaturedCard-secondary {
+        flex: 0 px2rem(160px);
+    }
+}

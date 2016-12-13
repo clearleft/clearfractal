@@ -1,0 +1,14 @@
+
+<article class="FeaturedCard">
+    <div class="FeaturedCard-primary">
+        <header>
+            <h3 class="FeaturedCard-title">{{featuredCardTitle}}</h3>
+        </header>
+        <div class="FeaturedCard-category">{{featuredCardCategory}}, featured</div>
+    </div>
+    <div class="FeaturedCard-secondary">
+        {% if indexCard %}
+            {% include '@index-card' %}
+        {% endif %}
+    </div>
+</article>
