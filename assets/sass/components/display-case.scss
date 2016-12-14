@@ -1,0 +1,18 @@
+.DisplayCase {
+    position: relative;
+    margin-top: px2rem(300px);
+    padding-top: px2rem(400px);
+}
+.DisplayCase--ch4 {
+    background-color: #F2F7FB;
+    box-shadow: 0 -2px 0 0 #DAE1E8, 0 2px 0 0 #DAE1E8;
+    background-image: url(/assets/img/work/ch4/logo-background.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.DisplayCase-headerImage {
+    position: absolute;
+    top: -17rem;
+    transform: translateX(-50%);
+    left: 50%;
+}
