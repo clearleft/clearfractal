@@ -21,7 +21,7 @@ module.exports = {
         "quoteAvatarSrc": "/assets/img/work/ch4/anna-doble.jpg",
         "quoteAvatarAlt": "@quote.quoteAvatarAlt",
         "quoteText": "@quote.quoteText",
-        "quoteAuthor": "@quoteAuthor",
+        "quoteAuthor": "@quote.quoteAuthor",
         "displayCaseModifier": "@display-case--channel-4.displayCaseModifier",
         "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
         "socialLinks": "@social-media.socialLinks"
