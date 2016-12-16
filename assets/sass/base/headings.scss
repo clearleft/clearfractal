@@ -43,6 +43,9 @@
     }
 }
 @media screen and (min-width: px2em(500px)) {
+    .Heading {
+        margin-bottom: px2rem(16px);
+    }
     .Heading--main {
         @include font(90px, 88px);
     }

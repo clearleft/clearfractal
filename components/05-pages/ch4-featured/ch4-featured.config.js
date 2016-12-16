@@ -18,6 +18,11 @@ module.exports = {
         "imageBlockCaption": "@image-block.imageBlockCaption",
         "textBlockText": "@text-block.textBlockText",
         "textBlockTitle": "@text-block.textBlockTitle",
+        "quoteAvatarSrc": "/assets/img/work/ch4/anna-doble.jpg",
+        "quoteAvatarAlt": "@quote.quoteAvatarAlt",
+        "quoteText": "@quote.quoteText",
+        "quoteAuthor": "@quote.quoteAuthor",
+        "displayCaseModifier": "@display-case--channel-4.displayCaseModifier",
         "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
         "socialLinks": "@social-media.socialLinks"
     }
