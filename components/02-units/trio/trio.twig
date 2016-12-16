@@ -1,0 +1,12 @@
+<div class="Trio{% if trioModifier %} Trio{{trioModifier}}{% endif %}">
+    <h2 class="Heading Heading--main">{{trioHeading}}</h2>
+    <div class="Trio-collection">
+        {% for trioItem in trioItems %}
+        <div class="Trio-item">
+            <img class="Trio-image" src="{{trioItem.imageSrc}}" alt="">
+            <h3 class="Heading Heading--small">{{trioItem.heading}}</h3>
+            <p>{{trioItem.text}}</p>
+        </div><!--/.Trio-item-->
+        {% endfor %}
+    </div><!--/.Trio-collection-->
+</div><!--/.Trio-->
