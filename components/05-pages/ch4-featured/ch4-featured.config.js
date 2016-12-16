@@ -23,6 +23,9 @@ module.exports = {
         "quoteText": "@quote.quoteText",
         "quoteAuthor": "@quote.quoteAuthor",
         "displayCaseModifier": "@display-case--channel-4.displayCaseModifier",
+        "trioItems": "@trio.trioItems",
+        "trioHeading": "@trio.trioHeading",
+        "trioModifier": "--stacked",
         "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
         "socialLinks": "@social-media.socialLinks"
     }
