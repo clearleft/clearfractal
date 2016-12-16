@@ -2,10 +2,12 @@
     <h2 class="Trio-title Heading Heading--main">{{trioHeading}}</h2>
     <div class="Trio-collection">
         {% for trioItem in trioItems %}
-        <div class="Trio-item">
+        <div class="Trio-item{% if trioItem.trioItemModifier %} Trio-item{{trioItem.trioItemModifier}}{% endif %}">
             <img class="Trio-image" src="{{trioItem.imageSrc}}" alt="">
-            <h3 class="Heading Heading--small">{{trioItem.heading}}</h3>
-            <p>{{trioItem.text}}</p>
+            <div class="Trio-description">
+                <h3 class="Heading Heading--small">{{trioItem.heading}}</h3>
+                <p>{{trioItem.text}}</p>
+            </div>
         </div><!--/.Trio-item-->
         {% endfor %}
     </div><!--/.Trio-collection-->
