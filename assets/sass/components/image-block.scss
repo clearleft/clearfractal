@@ -1,7 +1,6 @@
 .ImageBlock {
     padding: px2rem(16px);
     display: table;
-    max-width: px2em(1040px);
     margin: 0 auto;
 }
 .ImageBlock-item {
@@ -22,5 +21,6 @@
     .ImageBlock {
         padding-top: px2rem(32px);
         padding-bottom: px2rem(32px);
+        max-width: px2em(1040px);
     }
 }

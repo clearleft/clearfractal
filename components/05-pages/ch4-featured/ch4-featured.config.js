@@ -23,9 +23,13 @@ module.exports = {
         "quoteText": "@quote.quoteText",
         "quoteAuthor": "@quote.quoteAuthor",
         "displayCaseModifier": "@display-case--channel-4.displayCaseModifier",
-        "trioItems": "@trio.trioItems",
+        "trioItems": [
+            { "heading": "Change in behaviour.", "imageSrc": "/assets/img/icons/heart-speech.svg", "text": "Radically improve existing products and services, or create them from scratch. Optimise a key interaction to get big results, give your website a new lease of life, or work with the team to conceive, create and build on an entirely new idea." },
+            { "trioItemModifier": "--rebel", "heading": "Get clear on your strategy", "imageSrc": "/assets/img/icons/heart-speech.svg", "text": "You might need a targeted intervention, to unpick a thorny problem, or a fresh perspective on your process. Our strategists work with you to research and develop an appropriate digital strategy that integrates with your organisation." },
+            { "heading": "Transform your digital culture", "imageSrc": "/assets/img/icons/heart-speech.svg", "text": "Upskill your team, develop your processes, integrate design thinking and introduce new habits. By working closely with the Clearleft team as part of your in-house process, or in a bespoke workshop setting, you get an external perspective that’s directly relevant to your needs." }
+        ],
         "trioHeading": "@trio.trioHeading",
-        "trioModifier": "--stacked",
+        "trioModifier": "--stacked Trio--channel4",
         "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
         "socialLinks": "@social-media.socialLinks"
     }

@@ -13,5 +13,11 @@ module.exports = {
         "context": {
             "trioModifier": "--stacked"
         }
+    },
+    {
+        "name": "channel4",
+        "context": {
+            "trioModifier": "--channel4"
+        }
     }]
 }
