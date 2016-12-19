@@ -30,6 +30,7 @@ module.exports = {
         ],
         "trioHeading": "@trio.trioHeading",
         "trioModifier": "--stacked Trio--channel4",
+        "signpostItems": "@signpost.signpostItems",
         "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
         "socialLinks": "@social-media.socialLinks"
     }

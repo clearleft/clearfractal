@@ -1,0 +1,51 @@
+.Signpost-link {
+    border-bottom: none;
+    display: block;
+    @include font(18px, 23px);
+}
+.Signpost-link--prev:before {
+    content: '';
+    display: inline-block;
+    background-image: url(/assets/img/icons/prev-arrow.svg);
+    background-repeat: no-repeat;
+    width: px2rem(16px);
+    height: px2rem(12px);
+    margin-right: px2rem(16px);
+}
+.Signpost-link--next:after {
+    content: '';
+    display: inline-block;
+    background-image: url(/assets/img/icons/next-arrow.svg);
+    background-repeat: no-repeat;
+    width: px2rem(16px);
+    height: px2rem(12px);
+    margin-left: px2rem(16px);
+}
+.Signpost-item {
+    margin-bottom: px2rem(16px);
+}
+@media screen and (min-width: px2rem(600px)) {
+    .Signpost {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: px2em(1040px);
+        margin: 0 auto;
+        padding: px2rem(48px) px2rem(16px);
+    }
+    .Signpost-item {
+        margin-bottom: 0;
+    }
+    .Signpost-link {
+        @include font(22px, 27px);
+    }
+    .Signpost-link--next {
+        text-align: right;
+    }
+    .Signpost-prevContext {
+        margin-left: px2rem(32px);
+    }
+    .Signpost-nextContext {
+        margin-right: px2rem(32px);
+    }
+}

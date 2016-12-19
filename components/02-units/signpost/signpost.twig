@@ -1,0 +1,8 @@
+<div class="Signpost">
+    {% for signpostItem in signpostItems %}
+    <div class="Signpost-item">
+        <a href="" class="Signpost-link {% if signpostItem.linkModifier %}{{signpostItem.linkModifier}}{% endif %}">{{signpostItem.link}}</a>
+        <span class="Signpost-prevContext Heading Heading--context">{{signpostItem.context}}</span>
+    </div><!--/.Signpost-->
+    {% endfor %}
+</div><!--/.Signpost-->
