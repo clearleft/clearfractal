@@ -17,10 +17,16 @@
         text-align: right;
     }
 }
+.ImageBlock--short {
+    padding-bottom: 0;
+}
 @media screen and (min-width: px2em(500px)) {
     .ImageBlock {
         padding-top: px2rem(32px);
         padding-bottom: px2rem(32px);
         max-width: px2em(1040px);
+    }
+    .ImageBlock--short {
+        padding-bottom: 0;
     }
 }

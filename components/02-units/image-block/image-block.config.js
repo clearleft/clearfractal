@@ -13,5 +13,13 @@ module.exports = {
             "imageBlockModifier": "--rightCaption",
             "imageBlockCaption": "Sketching from lo-fi to hi-fi"
         }
+    },
+    {
+        "name": "Short",
+        "context": {
+            "imageBlockSrc": "/assets/img/work/ch4/ch4-team.png",
+            "imageBlockModifier": "--short",
+            "imageBlockCaption": false
+        }
     }]
 }
