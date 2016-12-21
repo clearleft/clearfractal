@@ -1,10 +1,21 @@
 .TextBlock {
-    max-width: px2em(460px);
-    padding: px2rem(16px);
+    max-width: px2em(480px);
+    padding: 0 px2rem(16px) px2rem(16px);
     margin: 0 auto;
+}
+@media screen and (min-width: px2em(360px)) {
+    .TextBlock-author {
+        float: left;
+        margin-right: px2rem(16px);
+    }
 }
 @media screen and (min-width: px2em(500px)) {
     .TextBlock {
         padding-bottom: px2rem(16px);
+    }
+}
+@media screen and (min-width: px2rem(700px)) {
+    .TextBlock-author {
+        margin-left: px2rem(-136px);
     }
 }

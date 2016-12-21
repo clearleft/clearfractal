@@ -15,14 +15,18 @@
     h2 {
         @include font(30px, 35px);
         letter-spacing: px2rem(-0.43px);
-        margin-top: px2rem(32px);
+        margin-top: px2rem(8px);
+    }
+    p {
+        margin-bottom: px2rem(16px);
     }
 }
 @media screen and (min-width: px2em(500px)) {
     .Prose {
         h2 {
-            @include font(43px, 49px);
+            @include font(43px, 48px);
             letter-spacing: px2rem(-0.64px);
+            margin-top: px2rem(32px);
         }
     }
 }
