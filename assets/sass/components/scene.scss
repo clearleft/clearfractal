@@ -1,8 +1,19 @@
 
 .Scene {
-    max-width: px2em(760px);
+    max-width: px2em(700px);
     margin: 0 auto;
     padding: px2rem(16px);
+}
+.Scene--featured {
+    max-width: px2em(760px);
+}
+.Scene-heading {
+    font-family: $font-secondary;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    @include font(30px, 35px);
+    letter-spacing: px2rem(-0.43px);
+    margin-top: 0;
 }
 @media screen and (min-width: px2em(700px)) {
     .Scene {
@@ -11,26 +22,35 @@
         padding-top: px2rem(64px);
         padding-bottom: px2rem(32px);
     }
+    .Scene-heading {
+        @include font(43px, 49px);
+        letter-spacing: px2rem(-0.64px);
+    }
     .Scene-main {
         padding-left: px2rem(30px);
         padding-right: px2rem(30px);
-        width: 66%;
+        width: 60%;
     }
     .Scene-side {
         padding-left: px2rem(30px);
         padding-right: px2rem(30px);
-        width: 34%;
+        width: 40%;
     }
     .Scene--shuffle .Scene-side {
         order: 2;
     }
+    .Scene--featured {
+        .Scene-main {
+            width: 66%;
+        }
+        .Scene-side {
+            width: 34%;
+        }
+    }
 }
 @media screen and (min-width: px2rem(900px)) {
-    .Scene-heading {
+    .Scene--featured .Scene-heading {
         margin-left: px2rem(-52px);
         max-width: 90%;
-    }
-    .Scene {
-        /*margin-top: px2rem(36px);*/
     }
 }

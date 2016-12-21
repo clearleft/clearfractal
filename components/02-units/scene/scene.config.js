@@ -4,9 +4,15 @@ module.exports = {
     "context": {
     },
     "variants": [{
-        "name": "shuffle",
+        "name": "Shuffle",
         "context": {
             "sceneModifier": "--shuffle"
+        }
+    },
+    {
+        "name": "Featured",
+        "context": {
+            "sceneModifier": "--featured"
         }
     }]
 }

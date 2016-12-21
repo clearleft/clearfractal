@@ -11,7 +11,7 @@ module.exports = {
         "voiceModifier": "--tall",
         "voiceDescription": "@voice.voiceDescription",
         "voiceCite": "@voice.voiceCite",
-        "sceneModifier": "@scene--shuffle.sceneModifier",
+        "sceneModifier": "--shuffle Scene--featured",
         "imageBlockSrc": "@image-block.imageBlockSrc",
         "imageBlockAlt": "@image-block.imageBlockAlt",
         "imageBlockModifier": "@image-block.imageBlockModifier",
