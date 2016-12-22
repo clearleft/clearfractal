@@ -15,9 +15,27 @@ module.exports = {
         }
     },
     {
+        "name": "inverted",
+        "context": {
+            "trioModifier": "--inverted"
+        }
+    },
+    {
         "name": "channel4",
         "context": {
-            "trioModifier": "--channel4"
+            "trioModifier": "--channel4 Trio--inverted"
+        }
+    },
+    {
+        "name": "penguin",
+        "context": {
+            "trioModifier": "--penguin Trio--inverted"
+        }
+    },
+    {
+        "name": "evo",
+        "context": {
+            "trioModifier": "--evo Trio--inverted Trio--stacked"
         }
     }]
 }
