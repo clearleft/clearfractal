@@ -20,6 +20,26 @@
 .Trio-title {
     margin: px2rem(16px);
 }
+/*Stats are currently on the Evo variation*/
+.Trio-stats {
+    padding: px2rem(16px);
+}
+.Trio-statsHeading {
+    @include font(25px, 35px);
+    font-weight: 700;
+    font-family: $font-secondary;
+    margin-top: 0;
+    margin-bottom: px2rem(16px);
+}
+.Trio-statsFigure {
+    font-family: $font-statement;
+    @include font(30px, 42px);
+}
+.Trio-statsSupporting {
+    font-family: $font-secondary;
+    @include font(14px, 23px);
+    width: 90%;
+}
 /*Invert text colours to white */
 .Trio--inverted {
     background-color: $jet-grey;
@@ -41,6 +61,18 @@
 /*Trio for the featued Evo case study */
 .Trio--evo {
     background-color: #050505;
+    .Trio-statsFigure {
+        color: #957F44;
+    }
+}
+@media screen and (min-width: px2rem(500px)) {
+    .Trio-statsHeading {
+        @include font(43px, 50px);
+        margin-bottom: px2rem(24px);
+    }
+    .Trio-statsFigure {
+        @include font(50px, 60px);
+    }
 }
 @media screen and (min-width: px2rem(720px)) {
     .Trio {
@@ -56,6 +88,17 @@
         width: 33.3%;
         padding: px2rem(28px);
     }
+    .Trio-stats {
+        margin-left: px2rem(80px);
+    }
+    .Trio-statsFigure {
+        @include font(90px, 80px);
+        margin-top: px2rem(16px);
+        margin-bottom: px2rem(16px);
+    }
+    .Trio-statsSupporting {
+        @include font(17px, 29px);
+    }
     .Trio-item--rebel {
         margin-top: px2rem(80px);
     }
@@ -63,9 +106,13 @@
         flex-direction: column;
         .Trio-item {
             display: flex;
-            margin-top: 0;
             width: 90%;
+            margin-top: 0;
+            max-width: px2rem(700px);
         }
+        /*.Trio-description {
+            max-width: px2rem(465px);
+        }*/
         .Trio-image {
             margin-right: px2rem(24px);
         }

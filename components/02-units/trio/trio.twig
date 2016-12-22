@@ -1,6 +1,21 @@
 <div class="Trio{% if trioModifier %} Trio{{trioModifier}}{% endif %}">
     <div class="Trio-wrapper">
         <h2 class="Trio-title Heading Heading--main">{{trioHeading}}</h2>
+        {% if trioModifier == "--evo Trio--inverted Trio--stacked" %}
+            <div class="Trio-stats">
+                <h3 class="Trio-statsHeading">Apple's “Best Newsstand App of 2013”</h3>
+                <div class="Cols">
+                    <div class="Cols-half">
+                        <div class="Trio-statsFigure">97,000</div>
+                        <p class="Trio-statsSupporting">New downloads in first 4 months of launch</p>
+                    </div><!--/.Cols-half-->
+                    <div class="Cols-half">
+                        <div class="Trio-statsFigure">120%</div>
+                        <p class="Trio-statsSupporting">New downloads in first 4 months of launch</p>
+                    </div><!--/.Cols-half-->
+                </div><!--/.Cols-->
+            </div>
+        {% endif %}
         <div class="Trio-collection">
             {% for trioItem in trioItems %}
             <div class="Trio-item{% if trioItem.trioItemModifier %} Trio-item{{trioItem.trioItemModifier}}{% endif %}">
