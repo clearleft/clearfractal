@@ -1,10 +1,43 @@
 
-{% include '@site-header' %}
+<div class="Background">{% include '@site-header' %}</div>
 
     <main>
+        
+        <div class="Background">{% include '@masthead' %}</div>
 
-        {% include '@masthead' %}
-
+        <div class="Work">
+            <div class="Work-featured">
+            {% include '@showcase--work-page-evo' with {
+            showcaseModifier: '--featuredEvo Showcase--workEvo', 
+            showcaseTitle: 'Inject energy.', 
+            showcaseText: 'How do you give a magazine a huge boost to increase readership? This is the story of how we made Apple’s “Best Newsstand App” with 97,000 new downloads in 4 months.',
+            showcaseLogo: '/assets/img/work/evo/evo-logo.svg', 
+            showcaseImage: '/assets/img/work/evo/evo-landing.png'
+            } %}
+            </div>
+            <div class="Work-grid">
+                <div class="Work-gridItem">
+                    <div class="Card Card--Work">
+                        <p>Royal Borough of Kensington and Chelsea</p>
+                    </div>
+                </div>
+                <div class="Work-gridItem">
+                    <div class="Card Card--Work">
+                        <p>Matter</p>
+                    </div>
+                </div>
+                <div class="Work-gridItem">
+                    <div class="Card Card--Work">
+                        <p>Royal Borough of Kensington and Chelsea</p>
+                    </div>
+                </div>
+                <div class="Work-gridItem">
+                    <div class="Card Card--Work">
+                        <p>Royal Borough of Kensington and Chelsea</p>
+                    </div>
+                </div>
+            </div><!--/.Work-grid-->
+        </div>
     </main>
 
 {% include '@site-footer' %}

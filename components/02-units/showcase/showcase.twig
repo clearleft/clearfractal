@@ -1,8 +1,12 @@
 <div class="Showcase{% if showcaseModifier %} Showcase{{showcaseModifier}}{% endif %}">
+    {% if showcaseModifier != "--featuredEvo Showcase--workEvo" %}
     {% include '@site-header' %}
+    {% endif %}
     <div class="Showcase-wrapper">
         <div class="Showcase-primary">
+            {% if showcaseModifier != "--featuredEvo Showcase--workEvo" %}
             {% include '@breadcrumb' %}
+            {% endif %}
             <h1 class="Showcase-title">{{showcaseTitle}}</h1>
             <div class="Showcase-description Lead Bar">{{showcaseText}}</div>
         </div>
