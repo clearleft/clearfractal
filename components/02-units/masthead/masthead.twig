@@ -1,7 +1,7 @@
 <div class="Masthead{% if mastheadModifier %} Masthead{{mastheadModifier}}{% endif %}">
     <div class="Masthead-primary">
         {% if mastheadBreadcrumb %} {% include '@breadcrumb' %}{% endif %}
-        <h1 class="{% if (mastheadModifier == '--combo') or (mastheadModifier == '--tall') or (mastheadModifier == '--combo Masthead--tall') %} Heading Heading--secondary{% else %} Heading Heading--main{% endif %}">{{mastheadTitle}}</h1>
+        <h1 class="{% if (mastheadModifier == '--combo') or (mastheadModifier == '--combo Masthead--tall') %} Heading Heading--secondary{% else %} Heading Heading--main{% endif %}">{{mastheadTitle}}</h1>
         {% if (mastheadModifier == '--combo') or (mastheadModifier == '--combo Masthead--tall') %}<p class="Masthead-sub Heading Heading--context">Senior UX Designer</p>{% endif %}
     </div>
     {% if mastheadSecondary %}
