@@ -3,6 +3,7 @@ module.exports = {
     "status": "wip",
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
+        "primaryNavModifier": "@primary-navigation--inverted.primaryNavModifier",
         "showcaseModifier": "--featuredCh4",
         "showcaseImage": "/assets/img/work/ch4/sling.png",
         "showcaseLogo": "/assets/img/work/ch4/ch4-logo.svg",
@@ -29,7 +30,7 @@ module.exports = {
             { "heading": "Transform your digital culture", "imageSrc": "/assets/img/icons/heart-speech.svg", "text": "Upskill your team, develop your processes, integrate design thinking and introduce new habits. By working closely with the Clearleft team as part of your in-house process, or in a bespoke workshop setting, you get an external perspective that’s directly relevant to your needs." }
         ],
         "trioHeading": "@trio.trioHeading",
-        "trioModifier": "--stacked Trio--channel4",
+        "trioModifier": "--stacked Trio--inverted Trio--channel4",
         "signpostItems": "@signpost.signpostItems",
         "helloHeading": "@hello.helloHeading",
         "helloBody": "@hello.helloBody",

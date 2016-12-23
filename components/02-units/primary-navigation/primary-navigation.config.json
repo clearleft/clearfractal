@@ -9,5 +9,11 @@
             { "title": "Thinks", "url": "#" },
             { "title": "Contact", "url": "#" }
         ]
-    }
+    },
+    "variants": [{
+        "name": "inverted",
+        "context": {
+            "primaryNavModifier": "--inverted"
+        }
+    }]
 }
