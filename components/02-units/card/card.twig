@@ -7,9 +7,11 @@
             <h3 class="Card-title">{{ cardTitle }}</h3>
         </header>
 
-        <div class="Card-category">{{ cardCategory }}</div>
+        {% if cardCategory %}<div class="Card-category">{{ cardCategory }}</div>{% endif %}
 
-        <p class="Card-description">{{ cardDescription }}</p>
+        {% if cardDescription %}<p class="Card-description">{{ cardDescription }}</p>{% endif %}
+
+        {% if cardModifier == "--vibrant" %} <a href="" class="MegaLink">Read the case study</a> {% endif %}
 
         {% if indexCard %}
             {% include '@index-card' %}

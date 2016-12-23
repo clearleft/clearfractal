@@ -16,28 +16,15 @@
             } %}
             </div>
             <div class="Work-grid">
+                {% for post in posts %}
                 <div class="Work-gridItem">
-                    <div class="Card Card--Work">
-                        <p>Royal Borough of Kensington and Chelsea</p>
-                    </div>
+                    {% include '@card' with { cardTitle: post.cardTitle, cardModifier: '--vibrant' } %}
                 </div>
-                <div class="Work-gridItem">
-                    <div class="Card Card--Work">
-                        <p>Matter</p>
-                    </div>
-                </div>
-                <div class="Work-gridItem">
-                    <div class="Card Card--Work">
-                        <p>Royal Borough of Kensington and Chelsea</p>
-                    </div>
-                </div>
-                <div class="Work-gridItem">
-                    <div class="Card Card--Work">
-                        <p>Royal Borough of Kensington and Chelsea</p>
-                    </div>
-                </div>
+                {% endfor %}
             </div><!--/.Work-grid-->
         </div>
+
+        {% include '@hello' %}
     </main>
 
 {% include '@site-footer' %}

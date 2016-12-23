@@ -14,5 +14,14 @@ module.exports = {
             "cardTitle": "Article Title Goes here",
             "cardCategory": "Tiny Lesson"
         }
+    },
+    {
+        "name": "Work",
+        "context": {
+            "cardModifier": "--work",
+            "cardTitle": "Royal Borough of Kensington and Chelsea",
+            "cardCategory": false,
+            "cardDescription": false
+        }
     }]
 }
