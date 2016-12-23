@@ -16,9 +16,9 @@ module.exports = {
         }
     },
     {
-        "name": "Work",
+        "name": "Vibrant",
         "context": {
-            "cardModifier": "--work",
+            "cardModifier": "--vibrant",
             "cardTitle": "Royal Borough of Kensington and Chelsea",
             "cardCategory": false,
             "cardDescription": false
