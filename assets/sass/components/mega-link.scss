@@ -11,3 +11,6 @@
         bottom: px2rem(6px);
     }
 }
+.MegaLink--super {
+    @include font(22px, 27px);
+}

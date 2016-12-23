@@ -1,7 +1,13 @@
 module.exports = {
     "status": "wip",
     "context": {
-        "linkURL": "",
-        "linkText": "A link to somewhere"
-    }
+        "megaLinkURL": "",
+        "megaLinkText": "A link to somewhere"
+    },
+    "variants": [{
+        "name": "Super",
+        "context": {
+            "megaLinkModifier": "--super"
+        }
+    }]
 }

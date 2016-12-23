@@ -20,6 +20,8 @@ module.exports = {
         "showcaseLogo": "/assets/img/work/evo/evo-logo.svg",
         "showcaseImage": "/assets/img/work/evo/evo-landing.png",
         "posts": posts,
+        "megaLinkText": "@mega-link.megaLinkText",
+        "megaLinkModifier": "@mega-link--super.megaLinkModifier",
         "helloHeading": "@hello.helloHeading",
         "helloBody": "@hello.helloBody",
         "inputLabel": "Feed your curiosity.",
