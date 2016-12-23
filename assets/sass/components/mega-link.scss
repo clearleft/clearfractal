@@ -1,0 +1,13 @@
+.MegaLink {
+    position: relative;
+    &:after {
+        content: '';
+        background-image: url(/assets/img/icons/next-arrow.svg);
+        background-repeat: no-repeat;
+        width: px2rem(16px);
+        height: px2rem(12px);
+        position: absolute;
+        right: px2rem(-28px);
+        bottom: px2rem(6px);
+    }
+}
