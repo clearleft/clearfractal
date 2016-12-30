@@ -1,1 +1,4 @@
-<a href="" class="Breadcrumb">About Us</a>
+<div class="Breadcrumb{% if breadcrumbModifier %} Breadcrumb{{breadcrumbModifier}}{% endif %}">
+    <a href="" class="Breadcrumb-item{% if segmentOne %} Breadcrumb-item--first{% endif %}">{{segmentOne}}</a>
+    {% if segmentTwo %} <span class="Breadcrumb-separator">/</span> <a class="Breadcrumb-item" href="">{{segmentTwo}}</a>{% endif %}
+</div>

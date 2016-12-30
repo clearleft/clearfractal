@@ -4,6 +4,9 @@ module.exports = {
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
         "primaryNavModifier": "@primary-navigation--inverted.primaryNavModifier",
+        "segmentOne": "Our Work",
+        "segmentTwo": "Channel 4",
+        "breadcrumbModifier": "--inverted",
         "showcaseModifier": "--featuredCh4",
         "showcaseImage": "/assets/img/work/ch4/sling.png",
         "showcaseLogo": "/assets/img/work/ch4/ch4-logo.svg",

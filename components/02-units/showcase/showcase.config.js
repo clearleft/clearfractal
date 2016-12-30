@@ -7,7 +7,10 @@ module.exports = {
         "showcaseText": "Clearleft worked with the Royal Borough of Kensington and Chelsea to fundamentally change their approach to digital publishing, resulting in hugely increased user satisfaction and a much easier internal workflow.",
         "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
         "showcaseImage": "/assets/img/work/rbkc/landing.png",
-        "socialLinks": "@social-media.socialLinks"
+        "socialLinks": "@social-media.socialLinks",
+        "breadcrumbModifier": "--inverted",
+        "segmentOne": "Client Stories",
+        "segmentTwo": "Royal borough of kensington and chelsea"
     },
     "variants": [{
         "name": "Featured Channel4",

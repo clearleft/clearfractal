@@ -1,10 +1,22 @@
-.Breadcrumb {
+.Breadcrumb-item {
     border-bottom: none;
     text-transform: uppercase;
     @include font(14px);
     font-weight: 700;
     letter-spacing: px2rem(1.75px);
+    color: $jet-grey;
+    opacity: 0.5;
 }
-.Breadcrumb:before {
+.Breadcrumb-item--first {
+    opacity: 1;
+}
+.Breadcrumb-separator {
+    opacity: 0.5;
+}
+.Breadcrumb--inverted .Breadcrumb-item {
+    color: #fff;
+}
+.Breadcrumb-item--first:before {
     content: "←";
+    color: currentColor;
 }

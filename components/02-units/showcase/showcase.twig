@@ -3,10 +3,10 @@
     {% include '@site-header' %}
     {% endif %}
     <div class="Showcase-wrapper">
+        {% if showcaseModifier != "--featuredEvo Showcase--workEvo" %}
+        {% include '@breadcrumb' %}
+        {% endif %}
         <div class="Showcase-primary">
-            {% if showcaseModifier != "--featuredEvo Showcase--workEvo" %}
-            {% include '@breadcrumb' %}
-            {% endif %}
             <h1 class="Showcase-title">{{showcaseTitle}}</h1>
             <div class="Showcase-description Lead Bar">{{showcaseText}}</div>
         </div>
