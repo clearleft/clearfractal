@@ -3,6 +3,7 @@ module.exports = {
     "status": "wip",
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
+        "primaryNavModifier": "@primary-navigation--inverted.primaryNavModifier",
         "showcaseImage": "@showcase.showcaseImage",
         "showcaseTitle": "@showcase.showcaseTitle",
         "showcaseText": "@showcase.showcaseText",
