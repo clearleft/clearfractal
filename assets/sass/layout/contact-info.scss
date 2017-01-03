@@ -1,49 +1,49 @@
-.ContactPage {
+.ContactInfo {
     margin: 0 auto;
     max-width: px2em(1040px);
 }
-.ContactPage-info {
+.ContactInfo-info {
     margin-bottom: px2rem(-50px);
     padding: px2rem(16px);
     position: relative;
     z-index: 0;
 }
-.ContactPage-title {
+.ContactInfo-title {
     margin-bottom: px2rem(20px);
 }
-.ContactPage-wrapper {
+.ContactInfo-wrapper {
     position: relative;
     line-height: 0;
     margin-bottom: px2rem(42px);
 }
 @media screen and (min-width: px2em(500px)) {
-    .ContactPage-info {
+    .ContactInfo-info {
         width: 80%;
         margin-bottom: px2rem(-200px);
     }
 }
 @media screen and (min-width: px2em(680px)) {
-    .ContactPage-title {
+    .ContactInfo-title {
         margin-bottom: px2rem(40px);
         max-width: px2rem(80px);
     }
-    .ContactPage-info {
+    .ContactInfo-info {
         margin-bottom: px2rem(-160px);
         width: 75%;
     }
 }
 @media screen and (min-width: px2em(900px)) {
-    .ContactPage {
+    .ContactInfo {
         padding: 0 px2rem(16px);
     }
-    .ContactPage-info {
+    .ContactInfo-info {
         position: absolute;
         z-index: 1;
         width: 50%;
         top: px2rem(60px);
         left: px2rem(80px);
     }
-    .ContactPage-title {
+    .ContactInfo-title {
         margin-bottom: px2rem(40px);
         max-width: px2rem(80px);
     }
