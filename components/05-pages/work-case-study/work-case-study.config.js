@@ -4,6 +4,9 @@ module.exports = {
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
         "primaryNavModifier": "@primary-navigation--inverted.primaryNavModifier",
+        "segmentOne": "Client stories",
+        "segmentTwo": "Royal borough of kensington and chelsea",
+        "breadcrumbModifier": "--inverted",
         "showcaseImage": "@showcase.showcaseImage",
         "showcaseTitle": "@showcase.showcaseTitle",
         "showcaseText": "@showcase.showcaseText",
