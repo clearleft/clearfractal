@@ -1,0 +1,21 @@
+.ContactCard {
+    margin-top: px2rem(24px);
+    @include font(16px);
+    max-width: px2em(420px);
+    color: $dark-grey;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: px2rem(16px);
+}
+@media screen and (min-width: px2em(520px)) {
+    .ContactCard {
+        display: flex;
+        @include font(17px);
+        line-height: px2rem(30px);
+    }
+    .ContactCard-item {
+        flex-basis: 50%;
+    }
+    .Contact-group {
+        margin-top: px2rem(-6px);
+    }
+}
