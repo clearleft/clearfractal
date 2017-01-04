@@ -24,6 +24,7 @@
 .Modal-close {
     position: absolute;
     border-bottom: none;
+    font-weight: normal;
     top: px2rem(-23px);
     right: 0;
     color: #ffffff;
@@ -33,7 +34,6 @@
 @media screen and (min-width: px2rem(700px)) {
     .Modal-container {
         padding: px2rem(48px);
-        width: auto;
-        max-width: px2em(600px);
+        width: px2em(600px);
     }
 }
