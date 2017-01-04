@@ -14,3 +14,12 @@
 .MegaLink--super {
     @include font(22px, 27px);
 }
+.MegaLink--giant {
+    @include font(22px, 17px);
+}
+
+@media screen and (min-width: px2em(580px)) {
+    .MegaLink--giant {
+        @include font(40px, 27px);
+    }
+}

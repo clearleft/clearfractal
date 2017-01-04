@@ -1,16 +1,17 @@
 .ContactCard {
     margin-top: px2rem(24px);
-    @include font(16px);
+    @include font(16px, 28px);
     max-width: px2em(420px);
     color: $dark-grey;
     -webkit-font-smoothing: antialiased;
-    margin-bottom: px2rem(16px);
+    margin-bottom: px2rem(24px);
 }
-@media screen and (min-width: px2em(520px)) {
+@media screen and (min-width: px2em(580px)) {
     .ContactCard {
         display: flex;
-        @include font(17px);
-        line-height: px2rem(30px);
+        @include font(17px, 30px);
+        margin-top: px2rem(30px);
+        margin-bottom: px2rem(30px);
     }
     .ContactCard-item {
         flex-basis: 50%;

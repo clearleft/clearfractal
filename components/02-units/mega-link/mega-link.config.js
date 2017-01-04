@@ -9,5 +9,11 @@ module.exports = {
         "context": {
             "megaLinkModifier": "--super"
         }
+    },
+    {
+        "name": "Giant",
+        "context": {
+            "megaLinkModifier": "--giant"
+        }
     }]
 }
