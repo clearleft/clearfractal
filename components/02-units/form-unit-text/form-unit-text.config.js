@@ -2,6 +2,6 @@ module.exports = {
     "status": "wip",
     "context": {
         "formUnitID": "ID2",
-        "formUnitLabel": "A label goes here"   
+        "formUnitLabel": "A label goes here"
     }
 }

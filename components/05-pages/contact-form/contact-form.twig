@@ -7,8 +7,13 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, nobis?
     </div>
     <form class="Form">
-        {% include '@input-group' %}
-        {% include '@input-group' %}
+        <div class="Form-items">
+            {% include '@form-unit-email' %}
+            {% include '@form-unit-email' %}
+            {% include '@form-unit-textarea' %}
+        </div>
+        <div class="Form-end">
+            <button class="MegaLink MegaLink--giant MegaLink--button">Send away!</button>
+        </div>
     </form>
-    <button class="MegaLink MegaLink--giant MegaLink--button">Send away!</button>
 </div><!--/.Modal-container-->
