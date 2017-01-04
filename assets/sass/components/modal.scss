@@ -23,9 +23,12 @@
 }
 .Modal-close {
     position: absolute;
-    top: px2rem(-35px);
+    border-bottom: none;
+    top: px2rem(-23px);
     right: 0;
     color: #ffffff;
+    text-transform: uppercase;
+    @include font(14px, 17px);
 }
 @media screen and (min-width: px2rem(700px)) {
     .Modal-container {
