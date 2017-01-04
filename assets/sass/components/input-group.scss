@@ -1,33 +1,36 @@
 
 .InputGroup {
-    margin-bottom: px2rem(8px);
+    margin-bottom: px2rem(4px);
     max-width: 28rem;
 }
 .InputGroup-field {
     background: #fff;
     border: 0;
-    font-family: $font-secondary;
+    font-family: $font-main;
+    -webkit-font-smoothing: antialiased;
     @include font(14px);
     padding: px2rem(8px) px2rem(10px);
     border-radius: px2rem(5px);
     border: 1px solid $shadow-grey;
+    width: 100%;
 }
 .InputGroup-submit {
     border-top-right-radius: px2rem(5px);
     border-bottom-right-radius: px2rem(5px);
     color: #ffffff;
     background-color: $clearleft-red;
-    padding: px2rem(6px) px2rem(8px);
+    padding: px2rem(6px) px2rem(6px);
     font-family: $font-secondary;
     font-weight: 700;
     @include font(14px);
 }
 .InputGroup-label {
-    @include font(16px);
+    @include font(16px, 22px);
+    font-weight: 700;
+    font-family: $font-secondary;
     display: block;
     flex-basis: 100%;
     margin-bottom: px2rem(10px);
-    font-weight: 700;
     -webkit-font-smoothing: antialiased;
 }
 .InputGroup--combo {
@@ -48,7 +51,10 @@
         @include font(16px);
     }
     .InputGroup-submit {
-        padding: px2rem(12px) px2rem(32px);
+        padding: px2rem(12px) px2rem(18px);
         @include font(17px);
+    }
+    .InputGroup-label {
+        @include font(22px, 28px);
     }
 }

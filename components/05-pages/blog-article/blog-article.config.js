@@ -10,6 +10,7 @@ module.exports = {
 
         "inputLabel": "@input-group.inputLabel",
         "siteFooterSmall": "@site-footer.siteFooterSmall",
+        "inputGroupSubmit": "Get the Clearletter",
 
         "indexCardModifier": "--profile",
         "imageSrc": "/assets/img/team/james-g.jpg",

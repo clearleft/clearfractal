@@ -2,7 +2,7 @@
 .Button {
     color: $clearleft-blue;
     display: inline-block;
-    border-bottom: none;
+    border-bottom: 0;
     background-color: #fff;
     border-radius: px2rem(24px);
     padding: px2rem(12px) px2rem(24px);

@@ -26,6 +26,7 @@ module.exports = {
         "indexCardInfo": "Project Manager",
 
         "inputLabel": "@input-group.inputLabel",
+        "inputGroupSubmit": "Get the Clearletter",
         "siteFooterSmall": "@site-footer.siteFooterSmall"
     }
 }

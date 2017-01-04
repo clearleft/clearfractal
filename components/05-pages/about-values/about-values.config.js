@@ -15,6 +15,7 @@ module.exports = {
         "chapters": "@chapters.chapters",
         "inputLabel": "@input-group.inputLabel",
         "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
-        "socialLinks": "@social-media.socialLinks"
+        "socialLinks": "@social-media.socialLinks",
+        "inputGroupSubmit": "Get the Clearletter"
     }
 };

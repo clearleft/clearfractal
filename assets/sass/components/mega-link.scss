@@ -1,5 +1,6 @@
 .MegaLink {
     position: relative;
+    font-family: $font-secondary;
     &:after {
         content: '';
         background-image: url(/assets/img/icons/next-arrow.svg);
@@ -17,8 +18,15 @@
 .MegaLink--giant {
     @include font(22px, 17px);
 }
+.MegaLink--button {
+    color: $clearleft-blue;
+    border-bottom: $clearleft-red px2rem(2px) solid;
+    font-weight: 700;
+    padding-left: 0;
+    background: transparent;
+}
 
-@media screen and (min-width: px2em(580px)) {
+@media screen and (min-width: px2em(600px)) {
     .MegaLink--giant {
         @include font(40px, 27px);
     }

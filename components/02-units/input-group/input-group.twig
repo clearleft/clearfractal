@@ -1,14 +1,7 @@
-{% if inputModifier == '--combo' %}
 <div class="InputGroup">
     <label class="InputGroup-label" for="{{inputID}}">{{inputLabel}}</label>
-    <div class="InputGroup{% if inputModifier %} InputGroup{{inputModifier}}{% endif %}">
+    <div class="InputGroup--combo">
         <input class="InputGroup-field" type="email" placeholder="E.g. example@domain.com" id="{{inputID}}" />
-        <button class="InputGroup-submit">Sign up</button>
+        <button class="InputGroup-submit">{{inputGroupSubmit}}</button>
     </div><!--/.InputGroup-->
 </div><!--/.InputGroup-->
-{% else %}
-<div class="InputGroup{% if inputModifier %} InputGroup{{inputModifier}}{% endif %}">
-    <label class="InputGroup-label" for="{{inputID}}">{{inputLabel}}</label>
-    <input class="InputGroup-field" type="email" placeholder="E.g. example@domain.com" id="{{inputID}}" />
-</div><!--/.InputGroup-->
-{% endif %}
