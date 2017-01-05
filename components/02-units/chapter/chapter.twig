@@ -1,12 +1,16 @@
 {% for chapter in chapters %}
 <div class="Chapter">
     <div class="Chapter-space Chapter-space--primary">
-        <h2 class="Chapter-title">{{chapter.title}}</h2>
-        <p>{{chapter.paraOne}}</p>
-        <p>{{chapter.paraTwo}}</p>
+        <div class="Prose">
+        {{chapter.primaryContent}}
+        </div>
     </div><!--/.Chapter-primary-->
     <div class="Chapter-space Chapter-space--secondary">
-        <img class="Chapter-image" src="{{chapter.imageSVG}}" onerror="this.src='{{chapter.imagePNG}}'; this.onerror=null;" alt="">
+        {% if chapter.srcSVG %}
+        <img class="Chapter-image" src="{{chapter.srcSVG}}" onerror="this.src='{{chapter.image}}'; this.onerror=null;" alt="{{chapter.srcAlt}}">
+        {% else %}
+        <img class="Chapter-image" src="{{chapter.src}}" alt="{{chapter.srcAlt}}">
+        {% endif %}
     </div><!--/.Chapter-secondary-->
 </div><!--/.Chapter-->
 {% endfor %}
