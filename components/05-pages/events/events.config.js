@@ -8,8 +8,9 @@ module.exports = {
         "mastheadTitle": "An interesting heading about events",
         "leadText": "@lead.leadText",
         "pageLeadSecondary": true,
-        "bannerCaption": "Mission Accomplished",
-        "bannerHeadline": "Out Past Events",
+        "bannerCaption": "Missions Accomplished",
+        "bannerHeadline": "Our Past Events",
+        "bannerModifier": "--inverted",
 
         "chapters": [
         {

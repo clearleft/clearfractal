@@ -13,5 +13,11 @@ module.exports = {
             "bannerHeadline": "Come grow with us",
             "bannerBody" :"We care deeply about our work and always aim to do the right thing. If that sounds up your street then let’s chat."
         }
+    },
+    {
+        "name": "notice",
+        "context": {
+            "bannerModifier": "--inverted"
+        }
     }]
 }

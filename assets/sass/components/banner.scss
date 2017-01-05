@@ -1,3 +1,10 @@
+.Banner--inverted {
+    .Banner-caption,
+    .Banner-headline,
+    .Banner-body {
+        color: #ffffff;
+    }
+}
 .Banner-content {
     max-width: px2rem(1160px);
     margin-left: auto;
@@ -16,6 +23,8 @@
     font-weight: 700;
     letter-spacing: px2rem(1px);
     text-transform: uppercase;
+    margin-bottom: px2rem(16px);
+    -webkit-font-smoothing: antialiased;
 }
 .Banner-headline {
     @include font(35px, 45px);
