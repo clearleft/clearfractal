@@ -9,7 +9,7 @@
         height: px2rem(12px);
         position: absolute;
         right: px2rem(-20px);
-        bottom: px2rem(10px);
+        bottom: px2rem(5px);
     }
 }
 .MegaLink--super {
@@ -24,6 +24,9 @@
     font-weight: 700;
     padding-left: 0;
     background: transparent;
+    &:after {
+        bottom: px2rem(10px);
+    }
 }
 
 @media screen and (min-width: px2em(600px)) {

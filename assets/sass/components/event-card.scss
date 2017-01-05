@@ -1,0 +1,23 @@
+.EventCard-context {
+    margin-top: 0;
+    margin-bottom: px2rem(30px);
+}
+.EventCard-image {
+    margin-bottom: px2rem(20px);
+}
+.EventCard-links {
+    display: flex;
+    margin-top: px2rem(16px);
+    margin-bottom: px2rem(16px);
+}
+.EventCard-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: px2rem(10px);
+}
+.EventCard-listItem {
+    display: inline-block;
+    margin-right: px2rem(8px);
+    @include font(14px);
+    list-style: none;
+}
