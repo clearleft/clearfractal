@@ -5,17 +5,25 @@
     <div class="BgBlue">{% include '@masthead' %}</div>
 
     <div class="BgBlue">{% include '@page-lead' %}</div>
+    
     <div class="GreenDots">
+        {% for chapter in chapters %}
+            {% set prose %}
+            {% include '@event-card' with chapter %}
+            {% endset %}
+            {% include '@chapter' with chapter %}
+        {% endfor %}
+    </div>
 
-        <div class="Chapter">
-            <div class="Chapter-space Chapter-space--primary">
-                
-            </div>
-            <!--/.Chapter-primary-->
-            <div class="Chapter-space Chapter-space--secondary">
-                <img class="Chapter-image" src="/assets/img/events/uxlondon-break.jpg" alt="UX London break time">
-            </div>
-            <!--/.Chapter-secondary-->
+    <div class="BgBlue">
+        <div class="Extension">
+        {% include '@banner' %}
+            {% for pastEvent in pastEvents %}
+                {% set prose %}
+                {% include '@event-card' with pastEvent %}
+                {% endset %}
+                {% include '@chapter' with pastEvent %}
+            {% endfor %}
         </div>
     </div>
 

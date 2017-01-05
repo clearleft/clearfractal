@@ -14,5 +14,11 @@ module.exports = {
             { "item": "2014", "itemUrl": "#" },
             { "item": "2013", "itemUrl": "#" }
         ]
-    }
+    },
+    "variants": [{
+        "name": "Inverted",
+        "context": {
+            "eventCardModifier": "--inverted",
+        }
+    }]
 }

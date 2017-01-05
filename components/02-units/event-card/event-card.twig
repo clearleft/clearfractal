@@ -1,11 +1,11 @@
-<div class="EventCard">
-    <p class="EventCard-context Heading Heading--context">{{eventCardContext}}</p>
+<div class="EventCard{% if eventCardModifier %} EventCard{{eventCardModifier}}{% endif %}">
+    <p class="EventCard-context ">{{eventCardContext}}</p>
     <img class="EventCard-image" src="{{eventCardSrc}}" alt="{{eventCardAlt}}">
     <div class="EventCard-description">
         {{eventCardDescription}}
     </div><!--/.EventCard-links-->
     <div class="EventCard-links">
-        <p class="Heading Heading--context">{{eventCardListTitle}}</p>
+        <p class="EventCard-context">{{eventCardListTitle}}</p>
         <ul class="EventCard-list">
         {% for pastVersion in pastVersions %}
             <li class="EventCard-listItem "><a href="{{pastVersion.itemUrl}}">{{pastVersion.item}}</a></li>

@@ -1,6 +1,11 @@
 .EventCard-context {
     margin-top: 0;
     margin-bottom: px2rem(30px);
+    @include font(14px, 17px);
+    text-transform: uppercase;
+    color: $dark-grey;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 .EventCard-image {
     margin-bottom: px2rem(20px);
@@ -20,4 +25,7 @@
     margin-right: px2rem(8px);
     @include font(14px);
     list-style: none;
+}
+.EventCard--inverted * {
+    color: #fff;
 }

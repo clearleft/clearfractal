@@ -3,8 +3,11 @@
     padding: px2rem(24px) px2rem(16px);
     max-width: px2em(1040px);
     margin: 0 auto;
-    background-color: #ffffff;
-    border-bottom: solid px2rem(2px) $shadow-grey;
+    background-color: transparent;
+    
+    &--encased {
+        border-bottom: solid px2rem(2px) $shadow-grey;
+    }
 }
 .Chapter:last-child {
     margin-bottom: px2rem(84px);
