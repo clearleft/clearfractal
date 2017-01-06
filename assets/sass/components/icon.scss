@@ -1,5 +1,4 @@
 .Icon {
-
     &:before {
         content: '';
         width: px2rem(16px);
@@ -8,7 +7,6 @@
         display: inline-block;
         margin-right: px2rem(6px);
     }
-
     &--close:before {
         background-image: url(/assets/img/icons/close.svg);
     }

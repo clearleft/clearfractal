@@ -1,0 +1,71 @@
+.Pagination {
+    overflow: hidden;
+}
+.Pagination-list {
+    list-style: none;
+    padding: 0;
+    margin-top: px2rem(6px);
+    margin-bottom: px2rem(6px);
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+}
+.Pagination-item {
+    color: $light-grey;
+    border-bottom: none;
+    @include font(20px);
+    padding: px2rem(10px);
+    margin-left: px2rem(6px);
+    margin-right: px2rem(6px);
+    &--current {
+        color: $dark-grey;
+    }
+}
+.Pagination-move {
+    position: relative;
+    &--prev {
+        padding-left: px2rem(24px);
+    }
+    &--next {
+        padding-right: px2rem(24px);
+    }
+    &--next:after {
+        content: '';
+        position: absolute;
+        top: px2rem(8px);
+        right: 0;
+        background-image: url(/assets/img/icons/next-arrow.svg);
+        background-repeat: no-repeat;
+        width: px2rem(16px);
+        height: px2rem(12px);
+        margin-right: 0;
+    }
+    &--prev:before {
+        content: '';
+        position: absolute;
+        top: px2rem(8px);
+        background-image: url(/assets/img/icons/prev-arrow.svg);
+        background-repeat: no-repeat;
+        width: px2rem(16px);
+        height: px2rem(12px);
+        margin-left: px2rem(-24px);
+    }
+}
+
+@media screen and (min-width: px2rem(600px)) {
+    .Pagination {
+        display: flex;
+        align-items: center;
+    }
+    .Pagination-list {
+        justify-content: center;
+    }
+    .Pagination-move {
+        @include font(30px);
+        justify-content: center;
+        line-height: 1;
+    }
+    .Pagination-item {
+        @include font(30px);
+    }
+}
