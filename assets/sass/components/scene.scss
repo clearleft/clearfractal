@@ -7,6 +7,20 @@
 .Scene--featured {
     max-width: px2em(760px);
 }
+.Scene--wide {
+    max-width: px2rem(900px);
+    .Scene-main,
+    .Scene-side {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .Scene-side {
+        width: 30%;
+    }
+    .Scene-main {
+        width: 70%;
+    }
+}
 .Scene-heading {
     font-family: $font-secondary;
     font-weight: 700;

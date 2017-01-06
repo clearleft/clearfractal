@@ -14,5 +14,11 @@ module.exports = {
         "context": {
             "sceneModifier": "--featured"
         }
+    },
+    {
+        "name": "Wide",
+        "context": {
+            "sceneModifier": "--wide"
+        }
     }]
 }
