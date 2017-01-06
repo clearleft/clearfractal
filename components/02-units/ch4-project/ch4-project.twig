@@ -1,0 +1,31 @@
+<div class="Ch4Project{%if Ch4Modifier %} Ch4Project{{Ch4Modifier}}{% endif %}">
+    <div class="Ch4Project-wrapper">
+        {% if Ch4MainSrc %}
+        <img aria-hidden="true" class="Ch4Project-image" src="{{ch4MainSrc}}" alt="{{ch4MainAlt}}">
+        {% endif %}
+        <div class="Ch4Project-primary">
+            {% if ch4Context %}
+            <p class="Heading Heading--context Heading--inverted">{{ch4Context}}</p>
+            {% endif %}
+            
+            <h1 class="Ch4Project-title">{{ch4Title}}</h1>
+            
+            {% if ch4Description %}
+            
+            <div class="Ch4Project-description Lead Bar">
+                {{ch4Description}}
+            </div><!--/.Ch4Project-description Lead Bar-->
+            {% endif %}
+            
+            {% if Ch4LogoSrc %}
+            <img class="Ch4Project-logo" src="{{Ch4LogoSrc}}" alt="{{ch4LogoAlt}}">
+            {% endif %}
+            
+            {% if ch4Link %}
+            <div class="Ch4Project-extension">
+                <a class="MegaLink MegaLink--inverted" href="{{Ch4LinkUrl}}">{{ch4Link}}</a>
+            </div><!--/.Ch4Project-extension-->
+            {% endif %}
+        </div><!--./.Ch4Project-primary-->
+    </div><!--/.Ch4Project-wrapper-->
+</div><!--./Ch4Project-->
