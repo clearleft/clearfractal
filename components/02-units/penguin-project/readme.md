@@ -1,0 +1,1 @@
+The penguin project component outlines a featured project and uses some bespoke styles. The default version is used in a project listing and the Stage variant is used on the featured page as a masthead.

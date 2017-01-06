@@ -57,6 +57,13 @@
         background-position: 140% 100%;
     }
 }
+@media screen and (min-height: px2em(500px)) {
+    .PenguinProject--stage .PenguinProject-wrapper {
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+    }
+}
 @media screen and (min-width: px2em(800px)) {
     .PenguinProject--stage .PenguinProject-wrapper {
         background-position: 130% 100%;
