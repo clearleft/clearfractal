@@ -1,0 +1,18 @@
+<div class="PenguinProject{%if penguinModifier %} PenguinProject{{penguinModifier}}{% endif %}">
+    <div class="PenguinProject-wrapper">
+        <div class="PenguinProject-primary">
+            {% if penguinContext %}<p class="Heading Heading--context Heading--inverted">{{penguinContext}}</p>{% endif %}
+            <h1 class="PenguinProject-title">{{penguinTitle}}</h1>
+            {% if penguinDescription %}<div class="PenguinProject-description Lead Bar">
+                {{penguinDescription}}
+            </div><!--/.PenguinProject-description Lead Bar-->
+            {% endif %}
+            <img class="PenguinProject-logo" src="{{penguinLogo}}" alt="{{penguinLogoAlt}}">
+            {% if penguinLink %}
+            <div class="PenguinProject-extension">
+                <a class="MegaLink MegaLink--inverted" href="{{penguinLinkUrl}}">{{penguinLink}}</a>
+            </div><!--/.PenguinProject-extension-->
+            {% endif %}
+        </div><!--./.PenguinProject-primary-->
+    </div><!--/.PenguinProject-wrapper-->
+</div><!--./PenguinProject-->

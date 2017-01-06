@@ -28,7 +28,9 @@
         bottom: px2rem(10px);
     }
 }
-
+.MegaLink--inverted {
+    color: #ffffff;
+}
 @media screen and (min-width: px2em(600px)) {
     .MegaLink--giant {
         @include font(40px, 27px);
