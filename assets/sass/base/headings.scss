@@ -34,6 +34,9 @@
     font-weight: 700;
     letter-spacing: 1px;
 }
+.Heading--inverted {
+    color: #ffffff;
+}
 @media screen and (min-width: px2em(300px)) {
     .Heading--main {
         @include font(60px, 54px);
