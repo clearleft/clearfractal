@@ -12,6 +12,14 @@ module.exports = {
         "penguinLink": "How do you bring more than 700 brands together into one website?",
         "penguinLinkUrl": "#",
 
+        /*Ch4 Project feature*/
+        "ch4Modifier": "--stage",
+        "ch4Context": "ch4 random house publishing company",
+        "ch4Title": "Create a new universe.",
+        "ch4Link": "How do you bring more than 700 brands together into one website?",
+        "ch4LinkUrl": "#",
+        "ch4MainSrc": "/assets/img/work/ch4/sling.png",
+
         /*Footer*/
         "inputLabel": "Feed your curiosity.",
         "inputGroupSubmit": "Get the Clearletter",

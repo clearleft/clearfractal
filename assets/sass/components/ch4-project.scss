@@ -11,12 +11,9 @@
     padding: px2rem(16px);
     -webkit-font-smoothing: antialiased;
 }
-.Ch4Project-image {
-    width: 52%;
-    right: px2rem(-32px);
-    top: 0;
-    position: absolute;
-    z-index: -1;
+.Ch4Project-secondary {
+    max-width: 70%;
+    margin-top: px2rem(16px);
 }
 .Ch4Project-title {
     font-family: $font-statement;
@@ -27,39 +24,51 @@
 .Ch4Project-extension {
     max-width: px2rem(400px);
 }
-.Ch4Project-primary {
-    max-width: px2rem(620px);
-}
 .Ch4Project-description {
     max-width: px2rem(530px);
 }
-.Ch4Project-image {
-    text-align: center;
-    margin: px2rem(48px) auto 0 auto;
-    display: block;
-}
-.Ch4Project-logo {
+/*.Ch4Project-logo {
     margin-top: px2rem(32px);
     margin-bottom: px2rem(32px);
-}
+}*/
 @media screen and (min-width: px2em(520px)) {
     .Ch4Project-title {
         letter-spacing: px2rem(-1.45px);
         @include font(72px, 77px);
     }
+    .Ch4Project-secondary {
+        width: 30%;
+    }
 }
 @media screen and (min-width: px2em(700px)) {
     .Ch4Project-wrapper {
         padding: px2rem(48px) px2rem(24px) px2rem(32px) px2rem(24px);
+        display: flex;
     }
     .Ch4Project-primary {
         width: 70%;
+        order: 2;
+        padding-left: px2rem(24px);
+    }
+    .Ch4Project-secondary {
+        margin-top: 0;
+        width: 30%;
+        order: 1;
+        padding-right: px2rem(24px);
     }
     .Ch4Project--stage .Ch4Project-wrapper {
         background-position: 140% 100%;
     }
 }
-@media screen and (min-height: px2em(500px)) {
+@media screen and (min-width: px2em(800px)) {
+    .Ch4Project-primary {
+        width: 65%;
+    }
+    .Ch4Project-secondary {
+        width: 35%;
+    }
+}
+/*@media screen and (min-height: px2em(500px)) {
     .Ch4Project--stage .Ch4Project-wrapper {
         min-height: 90vh;
         display: flex;
@@ -84,4 +93,4 @@
         background-size: px2rem(600px);
         max-width: px2em(980px);
     }
-}
+}*/

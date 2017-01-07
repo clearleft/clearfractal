@@ -14,11 +14,22 @@ module.exports = {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
         "mastheadTitle": "Advancing the practice of design",
         "mastheadModifier": "--tall",
-        "showcaseModifier": "--featuredEvo --workEvo",
-        "showcaseTitle": "Inject energy.",
-        "showcaseText": "How do you give a magazine a huge boost to increase readership? This is the story of how we made Apple’s “Best Newsstand App” with 97,000 new downloads in 4 months.",
-        "showcaseLogo": "/assets/img/work/evo/evo-logo.svg",
-        "showcaseImage": "/assets/img/work/evo/evo-landing.png",
+        
+        /*Penguin feature*/
+        "penguinModifier": "--stage",
+        "penguinContext": "Penguin random house publishing company",
+        "penguinTitle": "Create a new universe.",
+        "penguinLink": "How do you bring more than 700 brands together into one website?",
+        "penguinLinkUrl": "#",
+
+        /*Ch4 Project feature*/
+        "ch4Modifier": "--stage",
+        "ch4Context": "ch4 random house publishing company",
+        "ch4Title": "Create a new universe.",
+        "ch4Link": "How do you bring more than 700 brands together into one website?",
+        "ch4LinkUrl": "#",
+        "ch4MainSrc": "/assets/img/work/ch4/sling.png",
+
         "posts": posts,
         "megaLinkText": "@mega-link.megaLinkText",
         "megaLinkModifier": "@mega-link--super.megaLinkModifier",
