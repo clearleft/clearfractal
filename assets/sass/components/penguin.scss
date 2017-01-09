@@ -56,11 +56,9 @@
         background-position: 140% 100%;
     }
 }
-@media screen and (min-height: px2em(500px)) {
+@media screen and (min-height: px2em(500px)) and (min-width: px2em(700px)) {
     .PenguinProject--stage .PenguinProject-wrapper {
-        min-height: 90vh;
-        display: flex;
-        align-items: center;
+        min-height: 50vh;
     }
 }
 @media screen and (min-width: px2em(800px)) {
@@ -75,10 +73,17 @@
         background-position: 100% 100%;
     }
 }
-
+@media screen and (min-width: px2em(920px)) {
+    .PenguinProject--stage {
+        .PenguinProject-wrapper {
+            min-height: 60vh;
+        }
+    }
+}
 @media screen and (min-width: px2em(1050px)) {
     .PenguinProject--stage .PenguinProject-wrapper {
-        background-size: px2rem(600px);
+        background-size: px2rem(680px);
+        background-position-x: 138%;
         max-width: px2em(980px);
     }
 }

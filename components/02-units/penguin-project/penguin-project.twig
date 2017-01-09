@@ -1,5 +1,13 @@
 <div class="PenguinProject{%if penguinModifier %} PenguinProject{{penguinModifier}}{% endif %}">
+    {% if "--stage" in penguinModifier %}
+    {% include '@site-header' %}
+    {% endif %}
     <div class="PenguinProject-wrapper">
+        <div class="Ch4Project-breadcrumb">
+        {% if "--stage" in penguinModifier %}
+        {% include '@breadcrumb' %}
+        {% endif %}
+        </div><!--/.Ch4Project-breadcrumb-->
         <div class="PenguinProject-primary">
             {% if penguinContext %}<p class="Heading Heading--context Heading--inverted">{{penguinContext}}</p>{% endif %}
             <h1 class="PenguinProject-title">{{penguinTitle}}</h1>
