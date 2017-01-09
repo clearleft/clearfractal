@@ -1,6 +1,13 @@
 <div class="Ch4Project{%if ch4Modifier %} Ch4Project{{ch4Modifier}}{% endif %}">
-    
+    {% if "--stage" in ch4Modifier %}
+    {% include '@site-header' %}
+    {% endif %}
     <div class="Ch4Project-wrapper">
+        <div class="Ch4Project-breadcrumb">
+        {% if "--stage" in ch4Modifier %}
+        {% include '@breadcrumb' %}
+        {% endif %}
+        </div><!--/.Ch4Project-breadcrumb-->
         <div class="Ch4Project-primary">
             {% if ch4Context %}
             <p class="Heading Heading--context Heading--inverted">{{ch4Context}}</p>
@@ -34,7 +41,7 @@
 
     {% if "--stage" in ch4Modifier %}
     <div class="Ch4Project-skew" aria-hidden="true">
-        <div class="Showcase-middle" aria-hidden="true"></div>
+        <div class="Ch4Project-middle" aria-hidden="true"></div>
     </div><!--/.Ch4Project-skew-->
     {% endif %}
 </div><!--./Ch4Project-->

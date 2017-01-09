@@ -22,7 +22,14 @@ module.exports = {
             "ch4Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dignissimos recusandae eaque cupiditate, ad quia unde porro illo. Minima, ad.",
             "ch4LogoSrc": "/assets/img/work/ch4/ch4-logo.svg",
             "ch4LogoAlt": "ch4 logo",
-            "ch4Link": ""
+            "ch4Link": "",
+            "ch4Context": false,
+            "primaryNavlinks": "@primary-navigation.primaryNavlinks",
+            "primaryNavModifier": "@primary-navigation--inverted.primaryNavModifier",
+            "logoModifier": "--inverted",
+            "segmentOne": "Our Work",
+            "segmentTwo": "Channel 4",
+            "breadcrumbModifier": "--inverted"
         }
     }]
 };
