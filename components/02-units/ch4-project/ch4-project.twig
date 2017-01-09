@@ -1,4 +1,5 @@
 <div class="Ch4Project{%if ch4Modifier %} Ch4Project{{ch4Modifier}}{% endif %}">
+    
     <div class="Ch4Project-wrapper">
         <div class="Ch4Project-primary">
             {% if ch4Context %}
@@ -13,8 +14,8 @@
             </div><!--/.Ch4Project-description Lead Bar-->
             {% endif %}
             
-            {% if Ch4LogoSrc %}
-            <img class="Ch4Project-logo" src="{{Ch4LogoSrc}}" alt="{{ch4LogoAlt}}">
+            {% if ch4LogoSrc %}
+            <img class="Ch4Project-logo" src="{{ch4LogoSrc}}" alt="{{ch4LogoAlt}}">
             {% endif %}
             
             {% if ch4Link %}
@@ -29,6 +30,11 @@
             <img class="Ch4Project-image" src="{{ch4MainSrc}}" alt="{{ch4MainAlt}}">
         </div>
         {% endif %}
-
     </div><!--/.Ch4Project-wrapper-->
+
+    {% if "--stage" in ch4Modifier %}
+    <div class="Ch4Project-skew" aria-hidden="true">
+        <div class="Showcase-middle" aria-hidden="true"></div>
+    </div><!--/.Ch4Project-skew-->
+    {% endif %}
 </div><!--./Ch4Project-->

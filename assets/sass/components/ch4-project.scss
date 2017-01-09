@@ -1,3 +1,4 @@
+/*Default*/
 .Ch4Project {
     overflow: hidden;
     position: relative;
@@ -10,6 +11,8 @@
     margin: 0 auto;
     padding: px2rem(16px);
     -webkit-font-smoothing: antialiased;
+    position: relative;
+    z-index: 1;
 }
 .Ch4Project-secondary {
     max-width: 70%;
@@ -27,10 +30,12 @@
 .Ch4Project-description {
     max-width: px2rem(530px);
 }
-/*.Ch4Project-logo {
-    margin-top: px2rem(32px);
-    margin-bottom: px2rem(32px);
-}*/
+
+.Ch4Project-logo {
+    margin-top: px2rem(-80px);
+    max-height: px2rem(80px);
+}
+
 @media screen and (min-width: px2em(520px)) {
     .Ch4Project-title {
         letter-spacing: px2rem(-1.45px);
@@ -56,10 +61,8 @@
         order: 1;
         padding-right: px2rem(24px);
     }
-    .Ch4Project--stage .Ch4Project-wrapper {
-        background-position: 140% 100%;
-    }
 }
+
 @media screen and (min-width: px2em(800px)) {
     .Ch4Project-primary {
         width: 65%;
@@ -68,50 +71,100 @@
         width: 35%;
     }
 }
+
+
+/*--tall variation*/
+@media screen and (min-width: px2em(700px)) {
+    .Ch4Project--tall {
+        background-color: #7123A8;
+        background-image: radial-gradient(59% 81%, #7123A8 63%, #4D1574 100%);
+        .Ch4Project-wrapper {
+            background-position: 140% 100%;
+        }
+    }
+}
 @media screen and (min-height: px2em(500px)) and (min-width: px2em(700px)) {
-    .Ch4Project--stage .Ch4Project-wrapper {
+    .Ch4Project--tall .Ch4Project-wrapper {
         min-height: 70vh;
-        display: flex;
         align-items: center;
     }
 }
 @media screen and (min-width: px2em(700px)) {
-    .Ch4Project--stage .Ch4Project-wrapper {
-        position: relative;
+    .Ch4Project--tall {
+        .Ch4Project-wrapper {
+            position: relative;
+        }
+        .Ch4Project-image {
+            position: absolute;
+            top: px2rem(50px);
+            left: px2rem(-60px);
+            max-width: px2rem(350px);
+        }
+        .Ch4Project-primary {
+            width: 65%;
+        }
+        .Ch4Project-secondary {
+            width: 35%;
+        }
     }
-    .Ch4Project--stage .Ch4Project-image {
-        position: absolute;
-        top: px2rem(40px);
-        left: px2rem(-110px);
+}
+@media screen and (min-width: px2em(900px)) {
+    .Ch4Project--tall .Ch4Project-image {
         max-width: px2rem(430px);
+        left: px2rem(-80px);
     }
-    .Ch4Project--stage .Ch4Project-primary {
-        width: 55%;
+}
+
+/* --stage variation */
+.Ch4Project--stage .Ch4Project-skew {
+    background: #380F55;
+    position: relative;
+    z-index: 0;
+    margin-top: px2rem(-32px);
+    margin-bottom: px2rem(64px);
+    &:before,
+    &:after {
+        background: inherit;
+        content: '';
+        height: px2rem(64px);
+        left: 0;
+        position: absolute;
+        right: 0;
     }
-    .Ch4Project--stage .Ch4Project-secondary {
-        width: 45%;
+    &:before {
+        transform: skewY(-6deg);
+        transform-origin: -63%;
     }
 }
 @media screen and (min-width: px2em(700px)) {
+    .Ch4Project--stage .Ch4Project-primary {
+        order: 1;
+    }
+    .Ch4Project--stage .Ch4Project-secondary {
+        order: 2;
+    }
     .Ch4Project--stage .Ch4Project-image {
-        max-width: none;
+        right: 0;
+        left: auto;
     }
 }
+
+
 /*@media screen and (min-width: px2em(800px)) {
-    .Ch4Project--stage .Ch4Project-wrapper {
+    .Ch4Project--tall .Ch4Project-wrapper {
         background-position: 130% 100%;
         background-size: px2rem(500px);
     }
 }
 @media screen and (min-width: px2em(900px)) {
     .Ch4Project-wrapper,
-    .Ch4Project--stage .Ch4Project-wrapper {
+    .Ch4Project--tall .Ch4Project-wrapper {
         background-position: 100% 100%;
     }
 }
 
 @media screen and (min-width: px2em(1050px)) {
-    .Ch4Project--stage .Ch4Project-wrapper {
+    .Ch4Project--tall .Ch4Project-wrapper {
         background-size: px2rem(600px);
         max-width: px2em(980px);
     }
