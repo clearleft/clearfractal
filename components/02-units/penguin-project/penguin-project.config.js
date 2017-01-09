@@ -7,8 +7,17 @@ module.exports = {
         "penguinLinkUrl": "#"
     },
     "variants": [{
-        "name": "Stage",
-        /*The Stage variation is taller */
+        "name": "Work page feature",
+        "context": {
+            "penguinModifier": "--stage",
+            "penguinContext": "Penguin random house publishing company",
+            "penguinTitle": "Create a new universe.",
+            "penguinLink": "How do you bring more than 700 brands together into one website?",
+            "penguinLinkUrl": "#"
+        }
+    },
+    {
+        "name": "Main stage case study",
         "context": {
             "penguinModifier": "--stage",
             "penguinDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dignissimos recusandae eaque cupiditate, ad quia unde porro illo. Minima, ad.",

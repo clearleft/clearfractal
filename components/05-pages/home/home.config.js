@@ -13,7 +13,6 @@ module.exports = {
         "penguinLinkUrl": "#",
 
         /*Ch4 Project feature*/
-        "ch4Modifier": "--stage",
         "ch4Context": "ch4 random house publishing company",
         "ch4Title": "Create a new universe.",
         "ch4Link": "How do you bring more than 700 brands together into one website?",

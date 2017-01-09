@@ -10,8 +10,13 @@ module.exports = {
         "ch4MainSrc": "/assets/img/work/ch4/sling.png"
     },
     "variants": [{
-        "name": "Stage",
-        /*The Stage variation is taller */
+        "name": "Work page listing",
+        "context": {
+            "ch4Modifier": "--stage"
+        }
+    },
+    {
+        "name": "Main stage case study",
         "context": {
             "ch4Modifier": "--stage",
             "ch4Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dignissimos recusandae eaque cupiditate, ad quia unde porro illo. Minima, ad.",
