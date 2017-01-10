@@ -1,10 +1,8 @@
 
 .Metadata {
-    margin-top: 0;
+    margin-top: px2rem(8px);
     -webkit-font-smoothing: antialiased;
-}
-.Metadata-group {
-    margin: 0 px2rem(16px) px2rem(24px) 0;
+    margin: px2rem(16px) px2rem(16px) px2rem(24px) 0;
 }
 .Metadata-heading {
     @include font(13px, 16px);

@@ -1,6 +1,6 @@
 <dl class="Metadata">
-    <div class="Metadata-group">
-        <dt class="Metadata-heading">{{metadataItem}}</dt>
-        <dd class="Metadata-description">{{metadataDescription}}</dd>
-    </div><!--/.MetaData-->
+    <dt class="Metadata-heading">{{metadataHeading}}</dt>
+    {% for item in items %}
+    <dd class="Metadata-description{% if metadataPill %} Pill{% endif %}">{{item.metadata}}</dd>
+    {% endfor %}
 </dl><!--/.MetaData-->

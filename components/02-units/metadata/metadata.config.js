@@ -1,9 +1,21 @@
-'use strict';
+var items = [];
+const faker = require('faker');
+for(var i = 1; i < 5; i++){
+    items.push({
+        metadata: faker.name.findName() + ", " + faker.name.jobTitle()
+    });
+}
+
 module.exports = {
     "status": "wip",
-    "collated": true,
     "context": {
-        "metadataItem": "Price",
-        "metadataDescription": "£2500"
-    }
+        "metadataHeading": "Our team",
+        "items": items
+    },
+    "variants": [{
+        "name": "pill style",
+        "context": {
+            "metadataPill": true
+        }
+    }]
 }
