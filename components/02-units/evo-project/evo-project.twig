@@ -1,0 +1,47 @@
+<div class="EvoProject{%if evoModifier %} EvoProject{{evoModifier}}{% endif %}">
+    {% if "--stage" in evoModifier %}
+    {% include '@site-header' %}
+    {% endif %}
+    <div class="EvoProject-wrapper">
+        <div class="EvoProject-breadcrumb">
+        {% if "--stage" in evoModifier %}
+        {% include '@breadcrumb' %}
+        {% endif %}
+        </div><!--/.EvoProject-breadcrumb-->
+        <div class="EvoProject-primary">
+            {% if evoContext %}
+            <p class="Heading Heading--context Heading--inverted">{{evoContext}}</p>
+            {% endif %}
+
+            <h1 class="EvoProject-title">{{evoTitle}}</h1>
+
+            {% if evoDescription %}
+            <div class="EvoProject-description Lead Bar">
+                {{evoDescription}}
+            </div><!--/.EvoProject-description Lead Bar-->
+            {% endif %}
+            
+            {% if evoLogoSrc %}
+            <img class="EvoProject-logo" src="{{evoLogoSrc}}" alt="{{evoLogoAlt}}">
+            {% endif %}
+            
+            {% if evoLink %}
+            <div class="EvoProject-extension">
+                <a class="MegaLink MegaLink--inverted" href="{{evoLinkUrl}}">{{evoLink}}</a>
+            </div><!--/.EvoProject-extension-->
+            {% endif %}
+        </div><!--./.EvoProject-primary-->
+
+        <!-- {% if evoMainSrc %}
+        <div class="EvoProject-secondary">
+            <img class="EvoProject-image" src="{{evoMainSrc}}" alt="{{evoMainAlt}}">
+        </div>
+        {% endif %} -->
+    </div><!--/.EvoProject-wrapper-->
+
+    {% if "--stage" in evoModifier %}
+    <div class="EvoProject-skew" aria-hidden="true">
+        <div class="EvoProject-middle" aria-hidden="true"></div>
+    </div><!--/.EvoProject-skew-->
+    {% endif %}
+</div><!--./EvoProject-->

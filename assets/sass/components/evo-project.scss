@@ -1,0 +1,297 @@
+/*Default*/
+.EvoProject {
+    background-color: #000000;
+    position: relative;
+}
+.EvoProject-wrapper {
+    max-width: px2em(900px);
+    margin: 0 auto;
+    padding: px2rem(16px);
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    z-index: 1;
+}
+/*.EvoProject-secondary {
+    max-width: 70%;
+    margin-top: px2rem(16px);
+}*/
+.EvoProject-title {
+    font-family: $font-statement;
+    @include font(40px, 45px);
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: px2rem(24px);
+}
+.EvoProject-extension {
+    max-width: px2rem(400px);
+}
+.EvoProject-description {
+    max-width: px2em(350px);
+}
+.EvoProject-image {
+    max-width: px2rem(70px);
+}
+
+@media screen and (min-width: px2em(500px)) {
+    .EvoProject-title {
+        letter-spacing: px2rem(-1.45px);
+        @include font(72px, 77px);
+    }
+    /*.EvoProject-secondary {
+        width: 30%;
+    }*/
+    .EvoProject-image {
+        max-width: px2rem(140px);
+    }
+}
+@media screen and (min-width: px2em(700px)) {
+    .EvoProject-wrapper {
+        padding: px2rem(32px) px2rem(24px) px2rem(48px) px2rem(24px);
+        display: flex;
+    }
+    .EvoProject-primary {
+        width: 70%;
+        order: 2;
+        padding-left: px2rem(24px);
+    }
+    /*.EvoProject-secondary {
+        margin-top: 0;
+        width: 30%;
+        order: 1;
+        padding-right: px2rem(24px);
+    }*/
+    .EvoProject-image {
+        max-width: px2rem(200px);
+    }
+}
+@media screen and (min-width: px2em(800px)) {
+    .EvoProject-primary {
+        width: 65%;
+    }
+    /*.EvoProject-secondary {
+        width: 35%;
+    }*/
+    .EvoProject-image {
+        max-width: px2rem(280px);
+    }
+}
+
+/*--tall variation*/
+@media screen and (min-width: px2em(700px)) {
+    .EvoProject--tall {
+        background-color: #7123A8;
+        background-image: radial-gradient(59% 81%, #7123A8 63%, #4D1574 100%);
+        .EvoProject-wrapper {
+            background-position: 140% 100%;
+        }
+    }
+}
+@media screen and (min-height: px2em(500px)) and (min-width: px2em(700px)) {
+    .EvoProject--tall .EvoProject-wrapper {
+        min-height: 75vh;
+        align-items: center;
+    }
+}
+@media screen and (min-width: px2em(700px)) {
+    .EvoProject--tall {
+        .EvoProject-wrapper {
+            position: relative;
+        }
+        .EvoProject-image {
+            position: absolute;
+            top: px2rem(50px);
+            left: px2rem(-60px);
+            max-width: px2em(350px);
+        }
+        .EvoProject-primary {
+            width: 65%;
+        }
+        /*.EvoProject-secondary {
+            width: 35%;
+        }*/
+    }
+}
+@media screen and (min-width: px2em(950px)) {
+    .EvoProject--tall {
+        .EvoProject-image {
+            max-width: px2rem(370px);
+            left: px2rem(-20px);
+        }
+    }
+}
+
+/* --stage variation */
+/*.EvoProject--stage {
+    margin-bottom: px2rem(112px);
+    .EvoProject-skew {
+        background: #380F55;
+        position: relative;
+        z-index: 0;
+        margin-top: px2rem(-42px);
+        margin-bottom: px2rem(64px);
+        &:before,
+        &:after {
+            background: inherit;
+            content: '';
+            height: px2rem(95px);
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: px2rem(16px);
+        }
+        &:before {
+            transform: skewY(-6deg);
+            transform-origin: -63%;
+        }
+    }
+    .EvoProject-image {
+        max-width: px2em(150px);
+    }
+    .EvoProject-logo {
+        max-height: px2rem(120px);
+        margin-top: px2rem(-52px);
+    }
+}
+@media screen and (min-width: px2em(330px)) {
+    .EvoProject--stage .EvoProject-skew:before {
+        transform-origin: -58%;
+        height: px2rem(118px);
+    }
+}
+@media screen and (min-width: px2em(500px)) {
+    .EvoProject--stage {
+        .EvoProject-image {
+            max-width: px2em(180px);
+            top: auto;
+            bottom: px2rem(100px);
+            position: absolute;
+            right: 0;
+            bottom: -62px;
+            z-index: -1;
+        }
+    }
+}
+@media screen and (min-width: px2em(700px)) {
+    .EvoProject--stage {
+        .EvoProject-breadcrumb {
+            padding: 0 px2rem(24px);
+        }
+        .EvoProject-wrapper {
+            display: block;
+        }
+        .EvoProject-image {
+            right: 0;
+            left: auto;
+            max-width: px2rem(278px);
+        }
+        .EvoProject-middle {
+            position: absolute;
+            width: 100%;
+            height: 9rem;
+            background-color: #380F55;
+        }
+        .EvoProject-skew {
+            margin-top: px2rem(-120px);
+        }
+    }
+}
+@media screen and (min-width: px2em(800px)) {
+    .EvoProject--stage {
+        margin-bottom: px2rem(128px);
+        .EvoProject-wrapper {
+            padding: px2rem(32px) px2rem(24px) 0 px2rem(24px);
+        }
+        .EvoProject-skew {
+            &:before {
+                height: 12rem;
+            }
+            &:after {
+                transform: skewY(-4deg);
+                transform-origin: 100%;
+            }
+        }
+        .EvoProject-middle {
+            height: 12rem;
+        }
+    }
+}
+@media screen and (min-width: px2em(920px)) {
+    .EvoProject--stage {
+        .EvoProject-logo {
+            max-height: px2em(165px);
+            margin-top: px2rem(-130px);
+            margin-left: px2rem(-30px);
+        }
+        .EvoProject-image {
+            max-width: px2em(340px);
+        }
+        .EvoProject-wrapper {
+            min-height: 60vh;
+        }
+    }
+}
+@media screen and (min-width: px2em(1100px)) {
+    .EvoProject--stage {
+        .EvoProject-skew {
+            margin-bottom: px2rem(64px);
+            &:before {
+                height: 11rem;
+            }
+            &:after {
+                margin-top: -5rem;
+            }
+        }
+        .EvoProject-middle {
+            height: 13rem;
+            top: -4rem;
+            transform: skewY(-3deg);
+            transform-origin: 90%;
+        }
+        .EvoProject-logo {
+            max-height: px2rem(230px);
+        }
+        .EvoProject-image {
+            max-width: none;
+            width: px2rem(500px);
+            right: px2rem(-100px);
+        }
+    }
+}
+@media screen and (min-width: px2em(1200px)) {
+    .EvoProject--stage {
+        .EvoProject-skew:before {
+            margin-top: 2rem;
+        }
+        .EvoProject-image {
+            max-width: none;
+            width: px2rem(580px);
+            bottom: px2rem(-100px);
+            right: px2rem(-80px);
+        }
+    }
+}*/
+/*@media screen and (min-width: px2em(1800px)) {
+    .EvoProject--stage {
+        .EvoProject-wrapper {
+            padding-bottom: px2rem(16px);
+            &:after {
+                content: '';
+                width: 150%;
+                height: px2rem(64px);
+                transform: skewY(2deg);
+                position: absolute;
+                bottom: px2rem(-20px);
+                left: 0;
+                right: 0;
+                background: black;
+                z-index: -1;
+            }
+        }
+        .EvoProject-skew:after {
+            margin-top: -8rem;
+        }
+        .EvoProject-skew:before {
+            height: px2rem(280px);
+        }
+    }
+}*/
