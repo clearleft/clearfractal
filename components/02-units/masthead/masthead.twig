@@ -1,4 +1,5 @@
 <div class="Masthead{% if mastheadModifier %} Masthead{{mastheadModifier}}{% endif %}">
+    {% include '@next-prev' %}
     <div class="Masthead-primary">
         {% if mastheadBreadcrumb %} {% include '@breadcrumb' %}{% endif %}
         <h1 class="{% if (mastheadModifier == '--combo') or (mastheadModifier == '--combo Masthead--tall') %} Heading Heading--secondary{% else %} Heading Heading--main{% endif %}{% if mastheadHeadingModifer %} Heading{{mastheadHeadingModifer}}{% endif %}
@@ -9,7 +10,6 @@
     <div class="Masthead-secondary">
         <div class="Heading Heading--context">{{mastheadSecondaryHeading}}</div>
         <a class="Masthead-link" href="#">{{mastheadSecondaryLink}}</a>
-        <a class="Masthead-exit" href="#"><img src="/assets/img/circle-arrow.svg" alt=""></a>
     </div><!--/.Masthead-secondary-->
     {% endif %}
 </div><!--/.Masthead-->
