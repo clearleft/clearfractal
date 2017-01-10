@@ -1,11 +1,14 @@
 .InfoBlock {
+    list-style: none;
+    margin-bottom: px2rem(24px);
+}
+.InfoBlock-link {
     border-bottom: none;
     display: flex;
     align-items: flex-start;
     font-family: $font-secondary;
     font-weight: 700;
     line-height: px2rem(24px);
-    margin-bottom: px2rem(16px);
 }
 .InfoBlock-image {
     margin-right: px2rem(16px);

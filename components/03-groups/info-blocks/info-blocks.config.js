@@ -2,16 +2,48 @@
 module.exports = {
     "status": "wip",
     "context": {
-        "imageBlockContents": [
-            { "title": "Web Accessibility: Web Standards and Regulatory Compliance", "sub": "published by Friends of Ed", "url": "#", "src": "https://www.fillmurray.com/60/72" },
-            { "title": "HTML5 for Web Designers", "sub": "published by Friends of Ed", "url": "#", "src": "https://www.fillmurray.com/60/72" },
-            { "title": "Web Accessibility: Web Standards and Regulatory Compliance", "sub": "published by Friends of Ed", "url": "#", "src": "https://www.fillmurray.com/60/72" },
-            { "title": "HTML5 for Web Designers", "sub": "published by Friends of Ed", "url": "#", "src": "https://www.fillmurray.com/60/72" }
+
+        books: [
+            {
+                "infoBlockTitle": "Web Accessibility: Web Standards and Regulatory Compliance",
+                "infoBlockSub": "published by Friends of Ed",
+                "infoBlockUrl": "#",
+                "infoBlockSrc": "https://www.fillmurray.com/60/72"
+            },
+            {
+                "infoBlockTitle": "Web Accessibility: Web Standards and Regulatory Compliance",
+                "infoBlockSub": "published by Friends of Ed",
+                "infoBlockUrl": "#",
+                "infoBlockSrc": "https://www.fillmurray.com/60/72"
+            },
+            {
+                "infoBlockTitle": "Web Accessibility: Web Standards and Regulatory Compliance",
+                "infoBlockSub": "published by Friends of Ed",
+                "infoBlockUrl": "#",
+                "infoBlockSrc": "https://www.fillmurray.com/60/72"
+            }
         ],
-        "noImageBlock": [
-            { "title": "Web Accessibility: Web Standards and Regulatory Compliance", "sub": "published by Friends of Ed", "url": "#"},
-            { "title": "HTML5 for Web Designers", "sub": "published by Friends of Ed", "url": "#"},
-            { "title": "Web Accessibility: Web Standards and Regulatory Compliance", "sub": "published by Friends of Ed", "url": "#"}
-        ]   
+
+        talks: [
+            {
+                "infoBlockTitle": "Web Accessibility: Web Standards and Regulatory Compliance",
+                "infoBlockSub": "published by Friends of Ed",
+                "infoBlockUrl": "#",
+                "infoBlockSrc": false
+            },
+            {
+                "infoBlockTitle": "Web Accessibility: Web Standards and Regulatory Compliance",
+                "infoBlockSub": "published by Friends of Ed",
+                "infoBlockUrl": "#",
+                "infoBlockSrc": false
+            },
+            {
+                "infoBlockTitle": "Web Accessibility: Web Standards and Regulatory Compliance",
+                "infoBlockSub": "published by Friends of Ed",
+                "infoBlockUrl": "#",
+                "infoBlockSrc": false
+            }
+        ]
+
     }
 }
