@@ -11,10 +11,6 @@
     position: relative;
     z-index: 1;
 }
-/*.EvoProject-secondary {
-    max-width: 70%;
-    margin-top: px2rem(16px);
-}*/
 .EvoProject-title {
     font-family: $font-statement;
     @include font(40px, 45px);
@@ -37,9 +33,6 @@
         letter-spacing: px2rem(-1.45px);
         @include font(72px, 77px);
     }
-    /*.EvoProject-secondary {
-        width: 30%;
-    }*/
     .EvoProject-image {
         max-width: px2rem(140px);
     }
@@ -47,19 +40,17 @@
 @media screen and (min-width: px2em(700px)) {
     .EvoProject-wrapper {
         padding: px2rem(32px) px2rem(24px) px2rem(48px) px2rem(24px);
-        display: flex;
+        overflow: hidden;
+        background-image: url(/assets/img/work/evo/evo-landing.png);
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+        background-size: px2rem(350px);
     }
     .EvoProject-primary {
         width: 70%;
-        order: 2;
+        float: right;
         padding-left: px2rem(24px);
     }
-    /*.EvoProject-secondary {
-        margin-top: 0;
-        width: 30%;
-        order: 1;
-        padding-right: px2rem(24px);
-    }*/
     .EvoProject-image {
         max-width: px2rem(200px);
     }
@@ -68,9 +59,6 @@
     .EvoProject-primary {
         width: 65%;
     }
-    /*.EvoProject-secondary {
-        width: 35%;
-    }*/
     .EvoProject-image {
         max-width: px2rem(280px);
     }
@@ -79,17 +67,18 @@
 /*--tall variation*/
 @media screen and (min-width: px2em(700px)) {
     .EvoProject--tall {
-        background-color: #7123A8;
-        background-image: radial-gradient(59% 81%, #7123A8 63%, #4D1574 100%);
+        background-image: radial-gradient(42% 45%, #3F3F3F 34%, #333333 45%, #000000 98%);
         .EvoProject-wrapper {
             background-position: 140% 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
         }
     }
 }
 @media screen and (min-height: px2em(500px)) and (min-width: px2em(700px)) {
     .EvoProject--tall .EvoProject-wrapper {
         min-height: 75vh;
-        align-items: center;
     }
 }
 @media screen and (min-width: px2em(700px)) {

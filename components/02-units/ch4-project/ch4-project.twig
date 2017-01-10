@@ -3,11 +3,13 @@
     {% include '@site-header' %}
     {% endif %}
     <div class="Ch4Project-wrapper">
-        <div class="Ch4Project-breadcrumb">
+
         {% if "--stage" in ch4Modifier %}
-        {% include '@breadcrumb' %}
-        {% endif %}
+        <div class="Ch4Project-breadcrumb">
+            {% include '@breadcrumb' %}
         </div><!--/.Ch4Project-breadcrumb-->
+        {% endif %}
+        
         <div class="Ch4Project-primary">
             {% if ch4Context %}
             <p class="Heading Heading--context Heading--inverted">{{ch4Context}}</p>

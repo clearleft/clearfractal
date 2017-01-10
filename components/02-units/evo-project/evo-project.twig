@@ -2,12 +2,15 @@
     {% if "--stage" in evoModifier %}
     {% include '@site-header' %}
     {% endif %}
+
     <div class="EvoProject-wrapper">
-        <div class="EvoProject-breadcrumb">
+
         {% if "--stage" in evoModifier %}
-        {% include '@breadcrumb' %}
-        {% endif %}
+        <div class="EvoProject-breadcrumb">
+            {% include '@breadcrumb' %}
         </div><!--/.EvoProject-breadcrumb-->
+        {% endif %}
+        
         <div class="EvoProject-primary">
             {% if evoContext %}
             <p class="Heading Heading--context Heading--inverted">{{evoContext}}</p>
@@ -32,11 +35,6 @@
             {% endif %}
         </div><!--./.EvoProject-primary-->
 
-        <!-- {% if evoMainSrc %}
-        <div class="EvoProject-secondary">
-            <img class="EvoProject-image" src="{{evoMainSrc}}" alt="{{evoMainAlt}}">
-        </div>
-        {% endif %} -->
     </div><!--/.EvoProject-wrapper-->
 
     {% if "--stage" in evoModifier %}
