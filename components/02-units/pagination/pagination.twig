@@ -1,13 +1,9 @@
 <div class="Pagination">
-    <a class="Pagination-move Pagination-move--prev" href="">Prev</a>
+    <a class="Pagination-move Pagination-move--prev" href="{{pagePrevUrl}}">Prev</a>
     <ol class="Pagination-list">
-        <li><a class="Pagination-item Pagination-item--current" href="">1</a></li>
-        <li><a class="Pagination-item" href="">2</a></li>
-        <li><a class="Pagination-item" href="">3</a></li>
-        <li><a class="Pagination-item" href="">4</a></li>
-        <li class="unavailable"><a class="Pagination-item" href="">&hellip;</a></li>
-        <li><a class="Pagination-item" href="">12</a></li>
-        <li><a class="Pagination-item" href="">13</a></li>
+    {% for item in items %}
+        <li><a class="Pagination-item{% if item.pageNumber == '1' %} Pagination-item--current{% endif %}" href="">{{item.pageNumber}}</a></li>
+    {% endfor %}
     </ol><!--/.Pagination-list-->
-    <a class="Pagination-move Pagination-move--next" href="">Next</a>
+    <a class="Pagination-move Pagination-move--next" href="{{pageNextUrl}}">Next</a>
 </div><!--/.Pagination-->
