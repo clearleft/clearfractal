@@ -8,7 +8,7 @@
     
     <div class="GreenDots">
         {% for chapter in chapters %}
-            {% set prose %}
+            {% set chapterProse %}
             {% include '@event-card' with chapter %}
             {% endset %}
             {% include '@chapter' with chapter %}
@@ -19,7 +19,7 @@
         <div class="Extension">
         {% include '@banner' %}
             {% for pastEvent in pastEvents %}
-                {% set prose %}
+                {% set chapterProse %}
                 {% include '@event-card' with pastEvent %}
                 {% endset %}
                 {% include '@chapter' with pastEvent %}

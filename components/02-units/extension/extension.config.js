@@ -1,4 +1,7 @@
 'use strict';
 module.exports = {
-    "status": "wip"
+    "status": "wip",
+    "context": {
+        "extensionTeamMember": "Name"
+    }
 }

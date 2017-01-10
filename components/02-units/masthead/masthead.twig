@@ -4,7 +4,7 @@
         <h1 class="{% if (mastheadModifier == '--combo') or (mastheadModifier == '--combo Masthead--tall') %} Heading Heading--secondary{% else %} Heading Heading--main{% endif %}{% if mastheadHeadingModifer %} Heading{{mastheadHeadingModifer}}{% endif %}
         ">{{mastheadTitle}}</h1>
         {% if (mastheadModifier == '--combo') or (mastheadModifier == '--combo Masthead--tall') %}<p class="Masthead-sub Heading Heading--context">Senior UX Designer</p>{% endif %}
-    </div>
+    </div><!--/.Masthead-primary-->
     {% if mastheadSecondary %}
     <div class="Masthead-secondary">
         <div class="Heading Heading--context">{{mastheadSecondaryHeading}}</div>

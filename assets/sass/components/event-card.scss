@@ -1,6 +1,5 @@
 .EventCard-context {
-    margin-top: 0;
-    margin-bottom: px2rem(30px);
+    margin-top: px2rem(8px);
     @include font(14px, 17px);
     text-transform: uppercase;
     color: $dark-grey;
@@ -9,6 +8,7 @@
 }
 .EventCard-image {
     margin-bottom: px2rem(20px);
+    margin-top: px2rem(20px);
 }
 .EventCard-links {
     display: flex;

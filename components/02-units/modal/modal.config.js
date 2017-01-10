@@ -1,3 +1,6 @@
 module.exports = {
-    "status": "wip"
+    "status": "wip",
+    "context": {
+        "modalContent": "Some content"
+    }
 }

@@ -1,4 +1,3 @@
-'use strict';
 module.exports = {
     "status": "wip",
     "context": {
@@ -15,7 +14,7 @@ module.exports = {
         }
     },
     {
-        "name": "notice",
+        "name": "inverted",
         "context": {
             "bannerModifier": "--inverted"
         }

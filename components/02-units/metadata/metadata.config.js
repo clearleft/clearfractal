@@ -3,9 +3,7 @@ module.exports = {
     "status": "wip",
     "collated": true,
     "context": {
-        "metadata": [{
-            "item": "Price",
-            "description": "£2500"
-        }]
+        "metadataItem": "Price",
+        "metadataDescription": "£2500"
     }
 }
