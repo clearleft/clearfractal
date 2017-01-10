@@ -8,9 +8,13 @@ module.exports = {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
         "mastheadTitle": "UX Design and Service Design are growing ever closer",
 
-        "inputLabel": "@input-group.inputLabel",
+        /*Footer*/
+        "footerLinks": "@site-footer.footerLinks",
+        "socialLinks": "@site-footer.socialLinks",
+        "inputGroupLabel": "@site-footer.inputGroupLabel",
+        "inputGroupSubmit": "@site-footer.inputGroupSubmit",
+        "inputModifier": '--combo',
         "siteFooterSmall": "@site-footer.siteFooterSmall",
-        "inputGroupSubmit": "Get the Clearletter",
 
         "indexCardModifier": "--profile",
         "imageSrc": "/assets/img/team/james-g.jpg",

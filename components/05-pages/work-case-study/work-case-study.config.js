@@ -2,12 +2,16 @@
 module.exports = {
     "status": "wip",
     "context": {
+        /*Header items*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
         "primaryNavModifier": "@primary-navigation--inverted.primaryNavModifier",
         "logoModifier": "--inverted",
         "segmentOne": "Client stories",
         "segmentTwo": "Royal borough of kensington and chelsea",
         "breadcrumbModifier": "--inverted",
+
+        /*Showcase content*/
+        "showcaseModifier": "--blue",
         "showcaseImage": "@showcase.showcaseImage",
         "showcaseTitle": "@showcase.showcaseTitle",
         "showcaseText": "@showcase.showcaseText",
@@ -29,8 +33,13 @@ module.exports = {
         "signpostItems": "@signpost.signpostItems",
         "helloHeading": "@hello.helloHeading",
         "helloBody": "@hello.helloBody",
-        "inputLabel": "Feed your curiosity.",
-        "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
-        "socialLinks": "@social-media.socialLinks"
+        
+        /*Footer*/
+        "footerLinks": "@site-footer.footerLinks",
+        "socialLinks": "@site-footer.socialLinks",
+        "inputGroupLabel": "@site-footer.inputGroupLabel",
+        "inputGroupSubmit": "@site-footer.inputGroupSubmit",
+        "inputModifier": '--combo',
+        "siteFooterSmall": "@site-footer.siteFooterSmall"
     }
 };

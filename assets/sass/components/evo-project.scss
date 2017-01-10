@@ -2,6 +2,7 @@
 .EvoProject {
     background-color: #000000;
     position: relative;
+    background-image: radial-gradient(42% 45%, #3F3F3F 34%, #333333 45%, #000000 98%);
 }
 .EvoProject-wrapper {
     max-width: px2em(900px);
@@ -24,18 +25,18 @@
 .EvoProject-description {
     max-width: px2em(350px);
 }
-.EvoProject-image {
+/*.EvoProject-image {
     max-width: px2rem(70px);
-}
+}*/
 
 @media screen and (min-width: px2em(500px)) {
     .EvoProject-title {
         letter-spacing: px2rem(-1.45px);
         @include font(72px, 77px);
     }
-    .EvoProject-image {
+    /*.EvoProject-image {
         max-width: px2rem(140px);
-    }
+    }*/
 }
 @media screen and (min-width: px2em(700px)) {
     .EvoProject-wrapper {
@@ -51,25 +52,26 @@
         float: right;
         padding-left: px2rem(24px);
     }
-    .EvoProject-image {
+    /*.EvoProject-image {
         max-width: px2rem(200px);
-    }
+    }*/
 }
 @media screen and (min-width: px2em(800px)) {
     .EvoProject-primary {
         width: 65%;
     }
-    .EvoProject-image {
+    /*.EvoProject-image {
         max-width: px2rem(280px);
-    }
+    }*/
 }
 
 /*--tall variation*/
 @media screen and (min-width: px2em(700px)) {
     .EvoProject--tall {
-        background-image: radial-gradient(42% 45%, #3F3F3F 34%, #333333 45%, #000000 98%);
+        /*background-image: radial-gradient(42% 45%, #3F3F3F 34%, #333333 45%, #000000 98%);*/
         .EvoProject-wrapper {
-            background-position: 140% 100%;
+            background-position: 100% 100%;
+            background-size: px2rem(420px);
             display: flex;
             align-items: center;
             justify-content: flex-end;
@@ -77,27 +79,27 @@
     }
 }
 @media screen and (min-height: px2em(500px)) and (min-width: px2em(700px)) {
-    .EvoProject--tall .EvoProject-wrapper {
-        min-height: 75vh;
+    .EvoProject--tall {
+        .EvoProject-wrapper {
+            min-height: 75vh;
+        }
     }
 }
 @media screen and (min-width: px2em(700px)) {
     .EvoProject--tall {
         .EvoProject-wrapper {
             position: relative;
+            justify-content: flex-start;
         }
-        .EvoProject-image {
+        /*.EvoProject-image {
             position: absolute;
             top: px2rem(50px);
             left: px2rem(-60px);
             max-width: px2em(350px);
-        }
+        }*/
         .EvoProject-primary {
             width: 65%;
         }
-        /*.EvoProject-secondary {
-            width: 35%;
-        }*/
     }
 }
 @media screen and (min-width: px2em(950px)) {
@@ -110,6 +112,23 @@
 }
 
 /* --stage variation */
+.EvoProject--stage {
+    overflow: hidden;
+    .EvoProject-wrapper {
+
+    }
+}
+@media screen and (min-width: px2em(700px)) {
+    .EvoProject--stage {
+        .EvoProject-wrapper {
+            background-size: px2rem(400px);
+            background-position: 100% 100%;
+        }
+        .EvoProject-primary {
+            float: left;
+        }
+    }
+}
 /*.EvoProject--stage {
     margin-bottom: px2rem(112px);
     .EvoProject-skew {

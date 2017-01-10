@@ -25,8 +25,12 @@ module.exports = {
         "indexCardName": "Tea Ivanova",
         "indexCardInfo": "Project Manager",
 
-        "inputLabel": "@input-group.inputLabel",
-        "inputGroupSubmit": "Get the Clearletter",
+        /*Footer*/
+        "footerLinks": "@site-footer.footerLinks",
+        "socialLinks": "@site-footer.socialLinks",
+        "inputGroupLabel": "@site-footer.inputGroupLabel",
+        "inputGroupSubmit": "@site-footer.inputGroupSubmit",
+        "inputModifier": '--combo',
         "siteFooterSmall": "@site-footer.siteFooterSmall"
     }
 }

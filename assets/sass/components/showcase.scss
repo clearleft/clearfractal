@@ -1,12 +1,7 @@
-/*
-** The showcase component is the landing section of case studies.
-** There are three featured case studies called: --featuredCh4, --featuredRBKC, --featuredEvo 
-*/
 
-/*Showcase default*/
-.Showcase {
-    color: #fff;
+.Showcase--blue {
     background-color: #325E94;
+    color: #fff;
 }
 .Showcase-title {
     font-family: $font-statement;
@@ -43,7 +38,7 @@
 }
 
 /*Feaured Channel 4 case study = --featuredCh4*/
-.Showcase--featuredCh4 {
+/*.Showcase--featuredCh4 {
     background-color: #7123A8;
     background-image: radial-gradient(59% 81%, #7123A8 63%, #4D1574 100%);
     .Showcase-image {
@@ -158,9 +153,9 @@
         margin-top: 2rem;
     }
 }
-
+*/
 /*Feaured Penguin case study = --featuredPenguin*/
-.Showcase--featuredPenguin {
+/*.Showcase--featuredPenguin {
     background-color: #FF6600;
     background-image: url(/assets/img/work/penguin/orange-bg.jpg);
     overflow: hidden;
@@ -196,10 +191,10 @@
         background-position: 100% 100%, 0 0;
         background-size: px2rem(650px), cover;
     }
-}
+}*/
 
 /*Feaured Evo case study = --featuredEvo*/
-.Showcase--featuredEvo {
+/*.Showcase--featuredEvo {
     background-color: #000000;
     position: relative;
     .Showcase-wrapper {
@@ -262,4 +257,4 @@
     .Showcase--featuredEvo {
         background-position: 100% 300%;
     }
-}
+}*/

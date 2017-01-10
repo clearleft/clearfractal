@@ -17,10 +17,11 @@ module.exports = {
         "name": "Combo",
         "context": {
             "mastheadTitle": "Hana Stevenson",
-            "mastheadSecondary": "true",
+            "mastheadSecondary": true,
             "mastheadModifier": "--combo",
             "mastheadSecondaryHeading": "Catch Hana speaking at:",
-            "mastheadSecondaryLink": "Beyond Tellerrand 2016"
+            "mastheadSecondaryLink": "Beyond Tellerrand 2016",
+            "nextPrev": true
         }
     },
     {

@@ -2,25 +2,25 @@
 <footer class="SiteFooter">
     <div class="SiteFooter-container Cols">
         <div class="Cols-half Cols-item">
-            {% include '@input-group' with {inputModifier: '--combo'} %}
+            {% include '@input-group' %}
             <small class="Heading Heading--context">We never spam!</small>
-        </div>
+        </div><!--/.SiteFooter-container-->
         <div class="Cols-half Cols-item">
             <nav class="SiteFooter-navigation">
                 <ul class="SiteFooter-navigationLinks">
-                    {% for primaryNavlink in primaryNavlinks %}
-                    <li class="SiteFooter-navigationItem"><a href="#" class="SiteFooter-navigationLink">{{ primaryNavlink.title }}</a></li>
+                    {% for footerLink in footerLinks %}
+                    <li class="SiteFooter-navigationItem"><a href="{{ footerLink.url }}" class="SiteFooter-navigationLink">{{ footerLink.title }}</a></li>
                     {% endfor %}
-                </ul>
+                </ul><!--/.SiteFooter-navigationLinks-->
                 <ul class="SiteFooter-icons">
-                    <li class="SiteFooter-icon"><a class="SiteFooter-iconLink" href="#"><img src="http://fillmurray.com/30/30" alt=""></a></li>
-                    <li class="SiteFooter-icon"><a class="SiteFooter-iconLink" href="#"><img src="http://fillmurray.com/30/30" alt=""></a></li>
-                    <li class="SiteFooter-icon"><a class="SiteFooter-iconLink" href="#"><img src="http://fillmurray.com/30/30" alt=""></a></li>
-                </ul>
+                    {% for socialLink in socialLinks %}
+                    <li class="SiteFooter-icon"><a class="SiteFooter-iconLink" href="{{ socialLink.url }}"><img src="{{socialLink.imgSrc}}" alt=""></a></li>
+                    {% endfor %}
+                </ul><!--/.SiteFooter-icons-->
             </nav>
         </div><!--/.Cols-half-->
         <div class="Cols-item SiteFooter-small">
             {{siteFooterSmall}}
-        </div>
+        </div><!--/.SiteFooter-small-->
     </div><!--/.Cols-->
 </footer><!--/.SiteFooter-->

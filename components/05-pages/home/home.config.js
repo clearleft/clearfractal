@@ -20,9 +20,11 @@ module.exports = {
         "ch4MainSrc": "/assets/img/work/ch4/sling.png",
 
         /*Footer*/
-        "inputLabel": "Feed your curiosity.",
-        "inputGroupSubmit": "Get the Clearletter",
-        "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
-        "socialLinks": "@social-media.socialLinks"
+        "footerLinks": "@site-footer.footerLinks",
+        "socialLinks": "@site-footer.socialLinks",
+        "inputGroupLabel": "@site-footer.inputGroupLabel",
+        "inputGroupSubmit": "@site-footer.inputGroupSubmit",
+        "inputModifier": '--combo',
+        "siteFooterSmall": "@site-footer.siteFooterSmall"
     }
 }

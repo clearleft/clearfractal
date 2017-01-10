@@ -61,12 +61,15 @@ module.exports = {
             "eventCardUrl": "",
             "eventCardLink": "Visit Leading Design",
             "eventCardDescription": "<p>We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.</p>",
-            "eventCardListTitle": "Visit past versions:"
+            "eventCardListTitle": "Visit past versions:",
         }],
 
-        "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
-        "inputLabel": "@input-group.inputLabel",
-        "inputGroupSubmit": "Get the Clearletter",
-        "bannerBody": "@banner--notice.bannerBody"
+        /*Footer*/
+        "footerLinks": "@site-footer.footerLinks",
+        "socialLinks": "@site-footer.socialLinks",
+        "inputGroupLabel": "@site-footer.inputGroupLabel",
+        "inputGroupSubmit": "@site-footer.inputGroupSubmit",
+        "inputModifier": '--combo',
+        "siteFooterSmall": "@site-footer.siteFooterSmall"
     }
 };

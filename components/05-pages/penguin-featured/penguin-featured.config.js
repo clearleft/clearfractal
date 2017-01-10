@@ -27,9 +27,13 @@ module.exports = {
         "signpostItems": "@signpost.signpostItems",
         "helloHeading": "@hello.helloHeading",
         "helloBody": "@hello.helloBody",
-        "inputLabel": "Feed your curiosity.",
-        "inputGroupSubmit": "Get the Clearletter",
-        "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
-        "socialLinks": "@social-media.socialLinks"
+        
+        /*Footer*/
+        "footerLinks": "@site-footer.footerLinks",
+        "socialLinks": "@site-footer.socialLinks",
+        "inputGroupLabel": "@site-footer.inputGroupLabel",
+        "inputGroupSubmit": "@site-footer.inputGroupSubmit",
+        "inputModifier": '--combo',
+        "siteFooterSmall": "@site-footer.siteFooterSmall"
     }
 };

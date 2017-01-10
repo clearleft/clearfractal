@@ -14,9 +14,13 @@ module.exports = {
         "leadText": "Andy has been involved in digital in one form or another since 1999. Originally a front-end developer and visual designer, he naturally migrated towards the world of UX with a covert desire to seed the importance of design (with a big D) earlier in the conception and planning of projects.",
         "chapters": "@chapters-values.chapters",
         "chapterModifier": "@chapters-values.chapterModifier",
-        "inputLabel": "@input-group.inputLabel",
-        "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
-        "socialLinks": "@social-media.socialLinks",
-        "inputGroupSubmit": "Get the Clearletter"
+        
+        /*Footer*/
+        "footerLinks": "@site-footer.footerLinks",
+        "socialLinks": "@site-footer.socialLinks",
+        "inputGroupLabel": "@site-footer.inputGroupLabel",
+        "inputGroupSubmit": "@site-footer.inputGroupSubmit",
+        "inputModifier": '--combo',
+        "siteFooterSmall": "@site-footer.siteFooterSmall"
     }
 };

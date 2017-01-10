@@ -6,7 +6,15 @@ module.exports = {
         "primaryNavModifier": "@primary-navigation.primaryNavModifier",
         "leadText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sapiente molestiae sed? Consectetur illo repellat dolorum assumenda, voluptatum explicabo architecto?",
         "leadModifier": "--wrapper Bar",
-        "inputLabel": "Feed your curiosity.",
-        "inputGroupSubmit": "Get the Clearletter"
+        "mapSrc": "@map.mapSrc",
+        "mapSrcAlt": "@map.mapSrcAlt",
+        
+        /*Footer*/
+        "footerLinks": "@site-footer.footerLinks",
+        "socialLinks": "@site-footer.socialLinks",
+        "inputGroupLabel": "@site-footer.inputGroupLabel",
+        "inputGroupSubmit": "@site-footer.inputGroupSubmit",
+        "inputModifier": '--combo',
+        "siteFooterSmall": "@site-footer.siteFooterSmall"
     }
 }

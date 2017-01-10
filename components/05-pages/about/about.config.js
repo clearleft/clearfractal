@@ -21,9 +21,16 @@ module.exports = {
         "leadText": "@lead.leadText",
         "pageLeadSecondary": true,
         "persons": persons,
-        "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
-        "inputLabel": "@input-group.inputLabel",
-        "inputGroupSubmit": "Get the Clearletter",
-        "bannerBody": "@banner--notice.bannerBody"
+
+        /*Banner*/
+        "bannerBody": "@banner--notice.bannerBody",
+
+        /*Footer*/
+        "footerLinks": "@site-footer.footerLinks",
+        "socialLinks": "@site-footer.socialLinks",
+        "inputGroupLabel": "@site-footer.inputGroupLabel",
+        "inputGroupSubmit": "@site-footer.inputGroupSubmit",
+        "inputModifier": '--combo',
+        "siteFooterSmall": "@site-footer.siteFooterSmall"
     }
 };

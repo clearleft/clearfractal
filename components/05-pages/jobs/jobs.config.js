@@ -16,9 +16,12 @@ module.exports = {
 
         "sceneModifier": "--wide",
 
-        "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved.",
-        "inputLabel": "@input-group.inputLabel",
-        "inputGroupSubmit": "Get the Clearletter",
-        "bannerBody": "@banner--notice.bannerBody"
+        /*Footer*/
+        "footerLinks": "@site-footer.footerLinks",
+        "socialLinks": "@site-footer.socialLinks",
+        "inputGroupLabel": "@site-footer.inputGroupLabel",
+        "inputGroupSubmit": "@site-footer.inputGroupSubmit",
+        "inputModifier": '--combo',
+        "siteFooterSmall": "@site-footer.siteFooterSmall"
     }
 };
