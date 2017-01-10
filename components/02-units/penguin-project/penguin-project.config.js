@@ -9,7 +9,7 @@ module.exports = {
     "variants": [{
         "name": "Work page feature",
         "context": {
-            "penguinModifier": "--stage",
+            "penguinModifier": "--tall",
             "penguinContext": "Penguin random house publishing company",
             "penguinTitle": "Create a new universe.",
             "penguinLink": "How do you bring more than 700 brands together into one website?",

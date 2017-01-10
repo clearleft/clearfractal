@@ -16,7 +16,7 @@ module.exports = {
         "mastheadModifier": "--tall",
         
         /*Penguin feature*/
-        "penguinModifier": "--stage",
+        "penguinModifier": "--tall",
         "penguinContext": "Penguin random house publishing company",
         "penguinTitle": "Create a new universe.",
         "penguinLink": "How do you bring more than 700 brands together into one website?",
