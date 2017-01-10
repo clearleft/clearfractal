@@ -11,7 +11,11 @@ module.exports = {
         "showcaseImage": "@showcase.showcaseImage",
         "showcaseTitle": "@showcase.showcaseTitle",
         "showcaseText": "@showcase.showcaseText",
+
+        /*Scene*/
+        "metas": "@scene.metas",
         "sceneModifier": "@scene--shuffle.sceneModifier",
+        
         "imageBlockSrc": "@image-block.imageBlockSrc",
         "imageBlockAlt": "@image-block.imageBlockAlt",
         "imageBlockModifier": "@image-block.imageBlockModifier",
