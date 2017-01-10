@@ -18,7 +18,7 @@ module.exports = {
     {
         "name": "Main stage case study",
         "context": {
-            "ch4Modifier": "--tall Ch4Project--stage",
+            "ch4Modifier": "--stage",
             "ch4Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dignissimos recusandae eaque cupiditate, ad quia unde porro illo. Minima, ad.",
             "ch4LogoSrc": "/assets/img/work/ch4/ch4-logo.svg",
             "ch4LogoAlt": "ch4 logo",

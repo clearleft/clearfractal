@@ -7,7 +7,7 @@
 .Ch4Project-wrapper {
     max-width: px2em(900px);
     margin: 0 auto;
-    padding: px2rem(24px) px2rem(16px) 0 px2rem(16px);
+    padding: px2rem(16px);
     -webkit-font-smoothing: antialiased;
     position: relative;
     z-index: 1;
@@ -28,6 +28,9 @@
 .Ch4Project-description {
     max-width: px2em(350px);
 }
+.Ch4Project-image {
+    max-width: px2rem(70px);
+}
 
 @media screen and (min-width: px2em(500px)) {
     .Ch4Project-title {
@@ -37,10 +40,13 @@
     .Ch4Project-secondary {
         width: 30%;
     }
+    .Ch4Project-image {
+        max-width: px2rem(140px);
+    }
 }
 @media screen and (min-width: px2em(700px)) {
     .Ch4Project-wrapper {
-        padding: px2rem(48px) px2rem(24px) px2rem(32px) px2rem(24px);
+        padding: px2rem(32px) px2rem(24px) px2rem(48px) px2rem(24px);
         display: flex;
     }
     .Ch4Project-primary {
@@ -54,6 +60,9 @@
         order: 1;
         padding-right: px2rem(24px);
     }
+    .Ch4Project-image {
+        max-width: px2rem(200px);
+    }
 }
 @media screen and (min-width: px2em(800px)) {
     .Ch4Project-primary {
@@ -61,6 +70,9 @@
     }
     .Ch4Project-secondary {
         width: 35%;
+    }
+    .Ch4Project-image {
+        max-width: px2rem(280px);
     }
 }
 
@@ -76,7 +88,7 @@
 }
 @media screen and (min-height: px2em(500px)) and (min-width: px2em(700px)) {
     .Ch4Project--tall .Ch4Project-wrapper {
-        min-height: 50vh;
+        min-height: 75vh;
         align-items: center;
     }
 }
@@ -102,8 +114,8 @@
 @media screen and (min-width: px2em(950px)) {
     .Ch4Project--tall {
         .Ch4Project-image {
-            max-width: px2rem(430px);
-            left: px2rem(-80px);
+            max-width: px2rem(370px);
+            left: px2rem(-20px);
         }
     }
 }
@@ -149,8 +161,13 @@
 @media screen and (min-width: px2em(500px)) {
     .Ch4Project--stage {
         .Ch4Project-image {
-            max-width: px2em(220px);
-            top: px2rem(150px);
+            max-width: px2em(180px);
+            top: auto;
+            bottom: px2rem(100px);
+            position: absolute;
+            right: 0;
+            bottom: -62px;
+            z-index: -1;
         }
     }
 }
@@ -182,7 +199,7 @@
     .Ch4Project--stage {
         margin-bottom: px2rem(128px);
         .Ch4Project-wrapper {
-            padding: px2rem(50px) px2rem(24px) 0 px2rem(24px);
+            padding: px2rem(32px) px2rem(24px) 0 px2rem(24px);
         }
         .Ch4Project-skew {
             &:before {
@@ -231,7 +248,7 @@
             transform-origin: 90%;
         }
         .Ch4Project-logo {
-            max-height: none;
+            max-height: px2rem(230px);
         }
         .Ch4Project-image {
             max-width: none;
@@ -240,15 +257,16 @@
         }
     }
 }
-@media screen and (min-width: px2em(1400px)) {
+@media screen and (min-width: px2em(1200px)) {
     .Ch4Project--stage {
         .Ch4Project-skew:before {
             margin-top: 2rem;
         }
         .Ch4Project-image {
             max-width: none;
-            width: px2rem(620px);
-            right: px2rem(-180px);
+            width: px2rem(580px);
+            bottom: px2rem(-100px);
+            right: px2rem(-80px);
         }
     }
 }

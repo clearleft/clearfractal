@@ -10,7 +10,7 @@ module.exports = {
         "breadcrumbModifier": "--inverted",
 
         /*Ch4 Project feature*/
-        "ch4Modifier": "--tall Ch4Project--stage",
+        "ch4Modifier": "--stage",
         "ch4Context": false,
         "ch4Title": "Create a new universe.",
         "ch4MainSrc": "/assets/img/work/ch4/sling.png",
