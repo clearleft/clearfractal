@@ -1,21 +1,37 @@
 <div class="Masthead{% if mastheadModifier %} Masthead{{mastheadModifier}}{% endif %}">
     
-    {% if nextPrev %}
-    {% include '@next-prev' %}
+    
+
+    {% if "--arrows" in mastheadModifier or "--combo" in mastheadModifier %}
+
+    <div class="Masthead-secondary">
+        {% include '@next-prev' %}
+    </div><!--/.Masthead-secondary-->
+
     {% endif %}
 
     <div class="Masthead-primary">
+        
         {% if mastheadBreadcrumb %} {% include '@breadcrumb' %}{% endif %}
-        <h1 class="{% if (mastheadModifier == '--combo') or (mastheadModifier == '--combo Masthead--tall') %} Heading Heading--secondary{% else %} Heading Heading--main{% endif %}{% if mastheadHeadingModifer %} Heading{{mastheadHeadingModifer}}{% endif %}
-        ">{{mastheadTitle}}</h1>
-        {% if (mastheadModifier == '--combo') or (mastheadModifier == '--combo Masthead--tall') %}<p class="Masthead-sub Heading Heading--context">{{mastheadSub}}</p>{% endif %}
+
+        {% if mastheadContext %} 
+        <div class="Masthead-context">
+            <p class="Heading Heading--context{% if mastheadHeadingModifer %} Heading{{mastheadHeadingModifer}}{% endif %}">Topic</p>
+        </div>
+        {% endif %}
+        
+        <h1 class="Heading{% if '--arrows' in mastheadModifier or '--combo' in mastheadModifier %} Heading--secondary{% else %} Heading--main{% endif %}{% if mastheadHeadingModifer %} Heading{{mastheadHeadingModifer}}{% endif %}">{{mastheadTitle}}</h1>
+        
+        {% if mastheadSub %}<p class="Masthead-sub Heading Heading--context{% if mastheadHeadingModifer %} Heading{{mastheadHeadingModifer}}{% endif %}">{{mastheadSub}}</p>{% endif %}
+    
     </div><!--/.Masthead-primary-->
 
-    {% if mastheadSecondary %}
-    <div class="Masthead-secondary">
-        <div class="Heading Heading--context">{{mastheadSecondaryHeading}}</div>
-        <a class="Masthead-link" href="#">{{mastheadSecondaryLink}}</a>
+    {% if "--combo" in mastheadModifier %}
+
+    <div class="Masthead-third">
+        Huidfs
     </div><!--/.Masthead-secondary-->
+
     {% endif %}
 
 </div><!--/.Masthead-->

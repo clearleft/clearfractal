@@ -2,7 +2,7 @@
     padding: px2rem(16px);
     margin-top: px2rem(16px);
 }
-.LayoutAlternate--weave {
+.LayoutAlternate--chimney {
     margin-top: px2rem(-84px);
 }
 .LayoutAlternate-image {
@@ -63,7 +63,7 @@
     }
 }
 @media screen and (min-width: px2em(750px)) {
-    .LayoutAlternate--weave {
+    .LayoutAlternate--chimney {
         margin-top: px2rem(-42px);
     }
     .LayoutAlernate-item--leadPrimary {
@@ -71,9 +71,6 @@
     }
 }
 @media screen and (min-width: px2em(900px)) {
-    .LayoutAlternate--weave {
-        margin-top: px2rem(-132px);
-    }
     .LayoutAlternate-item {
         padding-left: px2rem(64px);
         padding-right: px2rem(64px);
@@ -84,5 +81,10 @@
     .LayoutAlernate-item--leadSecondary,
     .LayoutAlernate-item--leadPrimary {
         padding: 0;
+    }
+}
+@media screen and (min-width: px2em(900px)) {
+    .LayoutAlternate--chimney {
+        margin-top: px2rem(-70px);
     }
 }

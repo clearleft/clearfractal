@@ -1,7 +1,7 @@
 
 .BlogGrid {
     background-color: #fff;
-    margin: -12rem auto 2rem auto;
+    margin: px2rem(-30px) auto px2rem(24px) auto;
     max-width: px2em(1080px);
 }
 .BlogGrid-container {
@@ -12,9 +12,12 @@
 }
 
 @media screen and (min-width: px2em(700px)) {
-    .BlogGrid-item {
-        flex: 50%;
-        padding: px2rem(24px);
+    .BlogGrid  {
+        margin: px2rem(-80px) auto px2rem(24px) auto;
+        .BlogGrid-item {
+            flex: 50%;
+            padding: px2rem(24px);
+        }
     }
 }
 @media screen and (min-width: px2em(900px)) {

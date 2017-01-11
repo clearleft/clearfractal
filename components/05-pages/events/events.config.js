@@ -6,10 +6,13 @@ module.exports = {
         "logoModifier": "--inverted",
         "propositionLogos": "@proposition.propositionLogos",
         "signpostTitle": "@proposition.signpostTitle",
-        "mastheadTitle": "An interesting heading about events",
+       
+        /*Masthead*/
         "mastheadHeadingModifer": "--inverted",
+        "mastheadContext": true,
+        "mastheadTitle": "Some events title",
+
         "leadText": "@lead.leadText",
-        "pageLeadSecondary": true,
         "bannerCaption": "Missions Accomplished",
         "bannerHeadline": "Our Past Events",
         "bannerModifier": "--inverted",

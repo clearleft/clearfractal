@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-arrow-circle-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="About" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.300000012">
+        <g id="About/Team-member2" transform="translate(-888.000000, -212.000000)">
+            <g id="icon-arrow-circle-left" transform="translate(906.500000, 230.500000) scale(-1, 1) translate(-906.500000, -230.500000) translate(889.000000, 213.000000)">
+                <path d="M18.292,12.0736635 C17.819,11.8386635 17.267,12.1956635 17.29,12.7236635 C17.368,14.5846635 18.588,15.1866635 18.665,16.2156635 C16.671,15.9886635 15.571,16.0356635 12.39,15.7786635 C11.639,15.7186635 11,16.3116635 11,17.0656635 L11,19.2306635 C11,19.9046635 11.517,20.4646635 12.189,20.5176635 C15.37,20.7666635 17.116,19.8426635 19.027,19.5516635 C18.929,20.7026635 17.511,21.3686635 17.373,23.2256635 C17.332,23.7806635 17.928,24.1496635 18.411,23.8726635 L25.981,18.0706635 C26.462,17.7946635 26.441,17.0936635 25.944,16.8466635 L18.292,12.0736635 Z" id="Fill-1" fill="#505050"></path>
+                <circle id="Oval-6" stroke="#505050" stroke-width="2" cx="17.5" cy="17.5" r="17.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

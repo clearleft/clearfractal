@@ -18,7 +18,7 @@ module.exports = {
         /*Header*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
         "mastheadTitle": "Show me every post",
-        "mastheadModifier": "--mega",
+        "mastheadModifier": "--chimney",
 
         /*Featured*/
         "featuredCardTitle": "Jon smells like cabbages",

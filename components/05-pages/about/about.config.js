@@ -20,6 +20,7 @@ module.exports = {
         "mastheadTitle": "Advancing the practice of design",
         "leadText": "@lead.leadText",
         "pageLeadSecondary": true,
+        "pageLeadSecondary": false,
         "persons": persons,
 
         /*Banner*/

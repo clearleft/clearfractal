@@ -1,11 +1,17 @@
 module.exports = {
     "status": "wip",
     "context": {
+        /*Header and masthead*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
         "primaryNavModifier": "@primary-navigation--inverted.primaryNavModifier",
         "logoModifier": "--inverted",
-        "propositionLogos": "@proposition.propositionLogos",
-        "signpostTitle": "@proposition.signpostTitle",
+        "mastheadBreadcrumb": true,
+        "breadcrumbModifier": "--inverted",
+        "segmentOne": "About us",
+        "segmentTwo": "Values",
+
+        // "propositionLogos": "@proposition.propositionLogos",
+        // "signpostTitle": "@proposition.signpostTitle",
         "mastheadTitle": "An interesting heading about events",
         "mastheadHeadingModifer": "--inverted",
         "leadText": "@lead.leadText",

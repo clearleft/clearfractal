@@ -1,50 +1,52 @@
-'use strict';
 module.exports = {
     "status": "wip",
     "context": {
-        "mastheadTitle": "Dedicated to advancing the practice of design",
-        "mastheadSecondary": "",
+        "mastheadTitle": "Dedicated to advancing the practice of design"
     },
     "variants": [{
-        "name": "Streak",
+        "name": "arrows",
         "context": {
-            "mastheadTitle": "Hana Stevenson",
-            "mastheadModifier": "--streak",
-            "mastheadSecondaryHeading": "Catch Hana speaking at:"
+            "mastheadModifier": "--arrows"
         }
     },
     {
-        "name": "Combo",
+        "name": "combo",
         "context": {
-            "mastheadTitle": "Hana Stevenson",
-            "mastheadSecondary": true,
-            "mastheadModifier": "--combo",
-            "mastheadSecondaryHeading": "Catch Hana speaking at:",
-            "mastheadSecondaryLink": "Beyond Tellerrand 2016",
-            "nextPrev": true
+            "mastheadModifier": "--combo"
         }
     },
     {
-        "name": "tall",
+        "name": "chimney",
         "context": {
-            "mastheadTitle": "Hana Stevenson",
-            "mastheadSecondary": "true",
-            "mastheadModifier": "--tall",
-            "mastheadSecondaryHeading": "Catch Hana speaking at:",
-            "mastheadSecondaryLink": "Beyond Tellerrand 2016"
+            "mastheadModifier": "--chimney"
         }
     },
     {
-        "name": "blog",
+        "name": "breadcrumb",
         "context": {
-            "mastheadModifier": "--mega"
+            "mastheadBreadcrumb": true,
+            "breadcrumbModifier": false,
+            "segmentOne": "About us",
+            "segmentTwo": "Values"
         }
     },
     {
-        "name": "With breadcrumb",
+        "name": "context heading",
         "context": {
-            "mastheadTitle": "Hana Stevenson",
-            "mastheadBreadcrumb": true
+            "mastheadContext": true,
+            "breadcrumbModifier": false,
+            "segmentOne": "About us",
+            "segmentTwo": "Values"
+        }
+    },
+    {
+        "name": "inverted",
+        "context": {
+            "mastheadHeadingModifer": "--inverted",
+            "mastheadContext": true,
+            "breadcrumbModifier": false,
+            "segmentOne": "About us",
+            "segmentTwo": "Values"
         }
     }]
 };

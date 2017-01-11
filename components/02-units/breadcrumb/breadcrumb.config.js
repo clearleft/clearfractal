@@ -15,5 +15,11 @@ module.exports = {
             "breadcrumbModifier": false,
             "segmentTwo": "Values"
         }
+    },
+    {
+        "name": "Inverted",
+        "context": {
+            "breadcrumbModifier": "--inverted"
+        }
     }]
 }
