@@ -2,15 +2,23 @@
 .BlogGrid {
     background-color: #fff;
     margin: -12rem auto 2rem auto;
-    max-width: px2rem(1280px);
+    max-width: px2em(1080px);
 }
 .BlogGrid-container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-    padding: 1.5rem 5.3rem;
+    padding: px2rem(16px);
 }
-.BlogGrid-item {
-    flex: 50%;
-    padding: 1rem;
+
+@media screen and (min-width: px2em(700px)) {
+    .BlogGrid-item {
+        flex: 50%;
+        padding: px2rem(24px);
+    }
+}
+@media screen and (min-width: px2em(900px)) {
+    .BlogGrid-item {
+        padding: px2rem(48px);
+    }
 }

@@ -21,6 +21,9 @@
 .Masthead--tall {
     padding-bottom: px2rem(80px);
 }
+.Masthead--mega {
+    padding-bottom: px2rem(220px);
+}
 @media screen and (min-width: px2em(500px)) {
     .Masthead-exit {
         position: absolute;
@@ -70,6 +73,10 @@
     .Masthead--tall {
         padding-bottom: px2rem(50px);
     }
+    .Masthead--mega {
+        padding-bottom: px2rem(220px);
+    }
+
 }
 @media screen and (min-width: px2em(800px)) {
     .Masthead--combo .Masthead-primary {
@@ -80,5 +87,8 @@
 @media screen and (min-width: px2em(900px)) {
     .Masthead--tall {
         padding-bottom: px2rem(130px);
+    }
+    .Masthead--mega {
+        padding-bottom: px2rem(240px);
     }
 }

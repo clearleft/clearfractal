@@ -15,15 +15,31 @@ module.exports = {
     "title": "Blog",
     "status": "wip",
     "context": {
+        /*Header*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
         "mastheadTitle": "Show me every post",
+        "mastheadModifier": "--mega",
 
+        /*Featured*/
+        "featuredCardTitle": "Jon smells like cabbages",
+        "featuredCardCategory": "Process",
+        "authorImage": "@author.authorImage",
+        "authorName": "@author.authorName",
+
+        /*Blog posts*/
         "posts": posts,
+        "cardTitle": "@card.cardTitle",
+        "cardCategory": "@card.cardCategory",
+        "cardDescription": "@card.cardDescription",
+        "cardModifier": "--image",
 
-        "indexCard": true,
-        "imageSrc": "/assets/img/team/james-g.jpg",
-        "indexCardName": "Tea Ivanova",
-        "indexCardInfo": "Project Manager",
+        /*Pagination*/
+        "items": "@pagination.items",
+
+        // "indexCard": true,
+        // "imageSrc": "/assets/img/team/james-g.jpg",
+        // "indexCardName": "Tea Ivanova",
+        // "indexCardInfo": "Project Manager",
 
         /*Footer*/
         "footerLinks": "@site-footer.footerLinks",

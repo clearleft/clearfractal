@@ -2,23 +2,25 @@
 
 <main>
 
-    <div class="Background" style="padding-bottom: 15rem">
+    <div class="Background">
         {% include '@masthead' %}
     </div>
 
     <div class="BlogGrid">
-
-        {% include '@featured-card' with { featuredCardTitle: 'Jon smells like cabbages', featuredCardCategory: 'Process', indexCardModifier: "--profile", indexCardInfo: false } %}
+    
+        {% include '@featured-card' %}
 
         <div class="BlogGrid-container">
             {% for post in posts %}
             <div class="BlogGrid-item">
-                {% include '@card' with { cardTitle: post.cardTitle, cardCategory: post.cardCategory, cardDescription: post.cardDescription, indexCardModifier: "--profile", indexCardInfo: false } %}
+                {% include '@card' %}
             </div>
             {% endfor %}
-        </div>
+        </div><!--/.Blog-container-->
 
-    </div>
+    </div><!--/.Blog-grid-->
+    
+    {% include '@pagination' %}
 
 </main>
 

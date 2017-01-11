@@ -4,9 +4,8 @@ module.exports = {
     "context": {
         "featuredCardTitle": "Misconceptions about “Agile”",
         "featuredCardCategory": "Process",
-        "indexCard": true,
-        "imageSrc": "/assets/img/team/james-g.jpg",
-        "indexCardName": "Tea Ivanova",
-        "indexCardInfo": "Project Manager"
+        // "author": true,
+        "authorImage": "/assets/img/authors/lg/edv.png",
+        "authorName": "Ellen DeVries"
     }
 }

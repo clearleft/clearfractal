@@ -2,7 +2,6 @@
 module.exports = {
     "status": "wip",
     "context": {
-        "imageSrc": "@index-card.imageSrc",
         "cardTitle": "Article Title Goes here",
         "cardCategory": "Opinion",
         "cardDescription": "In my previous article, I wrote about some of the misconceptions with “agile” that I see in organisations."
@@ -22,6 +21,15 @@ module.exports = {
             "cardTitle": "Royal Borough of Kensington and Chelsea",
             "cardCategory": false,
             "cardDescription": false
+        }
+    },
+    {
+        "name": "With author",
+        "context": {
+            "cardModifier": "--image",
+            "cardTitle": "Royal Borough of Kensington and Chelsea",
+            "authorImage": "/assets/img/authors/sm/edv.png",
+            "authorName": "Ellen DeVries"
         }
     }]
 }

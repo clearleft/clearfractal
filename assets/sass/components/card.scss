@@ -47,3 +47,6 @@
     @include font(18px, 32px);
     margin: 0 0 px2rem(16px) 0;
 }
+.Card--image .Card-author {
+    max-width: px2rem(97px);
+}

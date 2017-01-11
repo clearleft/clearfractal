@@ -5,9 +5,9 @@
         </header>
         <div class="FeaturedCard-category">{{featuredCardCategory}}, featured</div>
     </div><!--/.Featured-primary-->
+    {% if authorImage %}
     <div class="FeaturedCard-secondary">
-        {% if indexCard %}
-            {% include '@index-card' %}
-        {% endif %}
+            {% include '@author' %}
     </div><!--/.Featured-secondary-->
+    {% endif %}
 </article><!--/.Featured-card-->

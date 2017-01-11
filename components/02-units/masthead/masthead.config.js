@@ -35,6 +35,12 @@ module.exports = {
         }
     },
     {
+        "name": "blog",
+        "context": {
+            "mastheadModifier": "--mega"
+        }
+    },
+    {
         "name": "With breadcrumb",
         "context": {
             "mastheadTitle": "Hana Stevenson",

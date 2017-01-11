@@ -1,5 +1,8 @@
 .Pagination {
     overflow: hidden;
+    margin: 0 auto;
+    max-width: px2em(1040px);
+    padding: 0 px2rem(24px) px2rem(48px) px2rem(24px);
 }
 .Pagination-list {
     list-style: none;
