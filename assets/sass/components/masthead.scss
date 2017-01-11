@@ -102,6 +102,9 @@
     padding: px2em(16px) px2em(16px) 0 px2em(16px);
     position: relative;
 }
+.Masthead-third {
+    padding: 0 px2em(16px) px2em(16px) px2em(16px);
+}
 @media screen and (min-width: px2em(850px)) {
     .Masthead {
         max-width: px2em(980px);
@@ -117,6 +120,10 @@
     .Masthead-secondary {
         order: 2;
         width: 28%;
+    }
+    .Masthead--greenStreak {
+        background-image: url('/assets/img/streakyblob.png');
+        background-repeat: no-repeat;
     }
 }
 /*Masthead--arrows*/
@@ -137,5 +144,25 @@
 @media screen and (min-width: px2em(800px)) {
     .Masthead--chimney {
         padding-bottom: px2rem(100px);
+    }
+}
+
+/*Masthead--combo*/
+@media screen and (min-width: px2em(850px)) {
+    .Masthead--combo {
+        .Masthead-third {
+            order: 2;
+            width: 25%;
+            padding-top: px2rem(35px);
+        }
+        .Masthead-primary {
+            width: 50%;
+        }
+        .Masthead-secondary {
+            order: 3;
+            text-align: right;
+            width: 25%;
+            padding-top: px2rem(35px);
+        }
     }
 }

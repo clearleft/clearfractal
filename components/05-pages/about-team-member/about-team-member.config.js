@@ -9,11 +9,12 @@ module.exports = {
         /*Header and masthead*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
         "mastheadSecondary": "true",
-        "mastheadModifier": "--arrows Masthead--chimney",
+        "mastheadModifier": "--chimney Masthead--combo",
         "mastheadTitle": "Andy Thornton",
         "mastheadSecondaryHeading": "Catch Andy speaking at:",
         "mastheadSub": "Senor UX Designer",
         "mastheadSecondaryLink": "Beyond Tellerrand 2016",
+        "mastheadThird": `<a href="">See Andy speak at Beyond Tellerrand</a>`,
         "nextPrev": true,
 
         /*Lead*/

@@ -12,7 +12,11 @@ module.exports = {
     {
         "name": "combo",
         "context": {
-            "mastheadModifier": "--combo"
+            "mastheadModifier": "--combo",
+            "mastheadTitle": "Graham Smith",
+            "mastheadThird": `
+            <a href="">See Andy speak at Beyond Tellerrand</a>
+            `
         }
     },
     {
@@ -47,6 +51,13 @@ module.exports = {
             "breadcrumbModifier": false,
             "segmentOne": "About us",
             "segmentTwo": "Values"
+        }
+    },
+    {
+        "name": "background image",
+        "context": {
+            "mastheadModifier": "--arrows Masthead--greenStreak",
+            "mastheadImage": true
         }
     }]
 };

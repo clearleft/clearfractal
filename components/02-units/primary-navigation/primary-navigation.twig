@@ -2,7 +2,7 @@
 <nav class="PrimaryNavigation {%if primaryNavModifier %} PrimaryNavigation{{primaryNavModifier}}{% endif %}">
     <ul class="PrimaryNavigation-list">
         {% for primaryNavlink in primaryNavlinks %}
-        <li class="PrimaryNavigation-listItem"><a href="#" class="PrimaryNavigation-link{% if primaryNavlink.primaryActive %} is-active {% endif %}">{{ primaryNavlink.title }}</a></li>
+        <li class="PrimaryNavigation-listItem"><a href="{{primaryNavlink.url}}" class="PrimaryNavigation-link{% if primaryNavlink.primaryActive %} is-active {% endif %}">{{ primaryNavlink.title }}</a></li>
         {% endfor %}
     </ul>
 </nav>

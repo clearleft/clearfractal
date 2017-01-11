@@ -8,7 +8,7 @@ module.exports = {
         "signpostTitle": "@proposition.signpostTitle",
        
         /*Masthead*/
-        "mastheadHeadingModifer": "--inverted",
+        "mastheadHeadingModifer": "--inverted Masthead--chimney",
         "mastheadContext": true,
         "mastheadTitle": "Some events title",
 

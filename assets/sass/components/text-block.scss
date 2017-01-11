@@ -16,7 +16,8 @@
 }
 @media screen and (min-width: px2em(500px)) {
     .TextBlock {
-        padding-bottom: px2rem(16px);
+        padding-bottom: px2rem(8px);
+        padding-top: px2rem(8px);
     }
 }
 @media screen and (min-width: px2rem(700px)) {

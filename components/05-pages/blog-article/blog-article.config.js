@@ -10,6 +10,8 @@ module.exports = {
         "mastheadSub": "Process, Featured",
         "mastheadSecondary": true,
         "mastheadBreadcrumb": true,
+        "mastheadModifier": "--arrows Masthead--greenStreak Masthead--chimney",
+        "mastheadImage": true,
 
         /*Intro*/
         "textBlockModifier": "--author",

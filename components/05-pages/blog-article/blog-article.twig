@@ -7,31 +7,20 @@
         <div class="ba-masthead">
             {% include '@masthead' %}
         </div>
-        
-        <div class="Lead Lead--wrapper Bar">
-            {{pageLead}}
-        </div>
 
     </div>
 
-   <!--  <div class="Container">
+    <div class="BlogArticle">
 
-
-        <div class="BlogArticle">
-
-                {#{% include '@index-card' %}#}
-
-                <div class="Lead Lead--wrapper Bar" style="margin-bottom: 3rem">
-                    {{pageLead}}
-                </div>
-
-
-                {% include '@text-block' %}
-                {% include '@text-block' with {textBlockModifier: ''} %}
-
+        <div class="Lead Lead--wrapper Bar">
+            {{pageLead}}
         </div>
+        
+        {% include '@text-block' %}
+        {% include '@text-block' with {textBlockModifier: ''} %}
 
-    </div> -->
+    </div>
+
 
 </main>
 
