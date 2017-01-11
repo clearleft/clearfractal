@@ -30,18 +30,28 @@ module.exports = {
         "ch4LogoSrc": "/assets/img/work/ch4/ch4-logo.svg",
         "ch4LogoAlt": "ch4 logo",
 
-        // "showcaseModifier": "--featuredCh4",
-        // "showcaseImage": "/assets/img/work/ch4/sling.png",
-        // "showcaseLogo": "/assets/img/work/ch4/ch4-logo.svg",
-        // "showcaseTitle": "Take on Goliath.",
-        // "showcaseText": "How could our small team make any impact on the giant eco-system of content in Channel 4’s News Room? This is a story of how small changes make a big difference.",
-        
+        /*Images and text*/
         "imageBlockSrc": "@image-block.imageBlockSrc",
         "imageBlockAlt": "@image-block.imageBlockAlt",
         "imageBlockModifier": "@image-block.imageBlockModifier",
         "imageBlockCaption": "@image-block.imageBlockCaption",
-        "textBlockText": "@text-block.textBlockText",
-        "textBlockTitle": "@text-block.textBlockTitle",
+        "textBlockProse": `
+        <h2>Misconception 1: Transitioning to “Agile” will solve our problems.</h2>
+        <p>The agile manifesto was born out of a frustration with traditionally managed projects. 
+        But I don’t think it solved the problem. It actually created another one. I’ve seen teams and 
+        organisations go from waterfall, which reduces their ability to compete in the market and 
+        deliver value, to dysfunction and paralysis when implementing agile.</p>
+        <p>That’s largely due to the various interpretations of the manifesto borne of misunderstanding. 
+        Bottom-up as well as top-down support is needed in order for a successful agile transformation to take 
+        place in any organisation.</p>
+        <p>The agile manifesto was born out of a frustration with traditionally managed projects. 
+        But I don’t think it solved the problem. It actually created another one. I’ve seen teams and 
+        organisations go from waterfall, which reduces their ability to compete in the market and 
+        deliver value, to dysfunction and paralysis when implementing agile.</p>
+        <p>That’s largely due to the various interpretations of the manifesto borne of misunderstanding. 
+        Bottom-up as well as top-down support is needed in order for a successful agile transformation to take 
+        place in any organisation.</p>
+        `,
         
         /*Quote*/
         "quoteAvatarSrc": "/assets/img/work/ch4/anna-doble.jpg",
