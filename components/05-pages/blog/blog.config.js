@@ -36,11 +36,6 @@ module.exports = {
         /*Pagination*/
         "items": "@pagination.items",
 
-        // "indexCard": true,
-        // "imageSrc": "/assets/img/team/james-g.jpg",
-        // "indexCardName": "Tea Ivanova",
-        // "indexCardInfo": "Project Manager",
-
         /*Footer*/
         "footerLinks": "@site-footer.footerLinks",
         "socialLinks": "@site-footer.socialLinks",

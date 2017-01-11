@@ -11,19 +11,17 @@
 
         <div class="BlogArticle">
 
-            <div class="BlogArticle-primary">
-                {% include '@index-card' %}
-            </div>
+            <!-- <div class="BlogArticle-primary"> -->
+                {#{% include '@index-card' %}#}
+            <!-- </div> -->
 
-            <div class="BlogArticle-secondary">
                 <div class="Lead Lead--wrapper Bar" style="margin-bottom: 3rem">
                     {{pageLead}}
                 </div>
 
-                <div class="Prose">
-                    {{blogContent}}
-                </div>
-            </div>
+
+                {% include '@text-block' %}
+                {% include '@text-block' with {textBlockModifier: ''} %}
 
         </div>
 

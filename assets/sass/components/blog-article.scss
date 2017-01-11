@@ -1,6 +1,6 @@
 
 .BlogArticle {
-    max-width: px2rem(480px);
+    max-width: px2rem(680px);
     margin: -12rem auto 0 auto;
 }
 
@@ -8,10 +8,10 @@
     .BlogArticle {
         position: relative;
     }
-    .BlogArticle-primary {
+    /*.BlogArticle-primary {
         position: absolute;
         top: px2rem(220px);
         left: -11rem;
         width: 8rem;
-    }
+    }*/
 }
