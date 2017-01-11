@@ -8,7 +8,7 @@
         {% if mastheadBreadcrumb %} {% include '@breadcrumb' %}{% endif %}
         <h1 class="{% if (mastheadModifier == '--combo') or (mastheadModifier == '--combo Masthead--tall') %} Heading Heading--secondary{% else %} Heading Heading--main{% endif %}{% if mastheadHeadingModifer %} Heading{{mastheadHeadingModifer}}{% endif %}
         ">{{mastheadTitle}}</h1>
-        {% if (mastheadModifier == '--combo') or (mastheadModifier == '--combo Masthead--tall') %}<p class="Masthead-sub Heading Heading--context">Senior UX Designer</p>{% endif %}
+        {% if (mastheadModifier == '--combo') or (mastheadModifier == '--combo Masthead--tall') %}<p class="Masthead-sub Heading Heading--context">{{mastheadSub}}</p>{% endif %}
     </div><!--/.Masthead-primary-->
 
     {% if mastheadSecondary %}

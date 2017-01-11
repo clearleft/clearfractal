@@ -1,0 +1,10 @@
+<div class="Masthead{% if mastheadModifier %} Masthead{{mastheadModifier}}{% endif %}">
+    <div class="Masthead-primary">
+        <h1 class="Heading Heading--main">{{mastheadTitle}}</h1>
+    </div><!--/.Masthead-primary-->
+    <div class="Masthead-secondary">
+        {% if mastheadModifier == "--arrows" %}
+        {% include '@next-prev' %}
+        {% endif %}
+    </div><!--/.Masthead-secondary-->
+</div><!--/.Masthead-->

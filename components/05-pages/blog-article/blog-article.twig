@@ -2,18 +2,24 @@
 
 <main>
 
-    <div class="Background" style="padding-bottom: 15rem">
-        {% include '@masthead' %}
+    <div class="Background ba">
+
+        <div class="ba-masthead">
+            {% include '@masthead' %}
+        </div>
+        
+        <div class="Lead Lead--wrapper Bar">
+            {{pageLead}}
+        </div>
+
     </div>
 
-    <div class="Container">
+   <!--  <div class="Container">
 
 
         <div class="BlogArticle">
 
-            <!-- <div class="BlogArticle-primary"> -->
                 {#{% include '@index-card' %}#}
-            <!-- </div> -->
 
                 <div class="Lead Lead--wrapper Bar" style="margin-bottom: 3rem">
                     {{pageLead}}
@@ -25,7 +31,7 @@
 
         </div>
 
-    </div>
+    </div> -->
 
 </main>
 

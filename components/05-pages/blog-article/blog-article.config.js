@@ -7,6 +7,9 @@ module.exports = {
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
         "mastheadTitle": "UX Design and Service Design are growing ever closer",
+        "mastheadSub": "Process, Featured",
+        "mastheadSecondary": true,
+        "mastheadBreadcrumb": true,
 
         /*Intro*/
         "textBlockModifier": "--author",
