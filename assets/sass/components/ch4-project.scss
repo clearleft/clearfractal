@@ -1,4 +1,6 @@
-/*Default*/
+/*This file containes styles for the featured project header, listing and display case*/
+
+/*Featured project listing and header*/
 .Ch4Project {
     position: relative;
     color: #ffffff;
@@ -31,7 +33,6 @@
 .Ch4Project-image {
     max-width: px2rem(70px);
 }
-
 @media screen and (min-width: px2em(500px)) {
     .Ch4Project-title {
         letter-spacing: px2rem(-1.45px);
@@ -75,7 +76,6 @@
         max-width: px2rem(280px);
     }
 }
-
 /*--tall variation*/
 @media screen and (min-width: px2em(700px)) {
     .Ch4Project--tall {
@@ -118,7 +118,6 @@
         }
     }
 }
-
 /* --stage variation */
 .Ch4Project--stage {
     margin-bottom: px2rem(112px);
@@ -275,5 +274,32 @@
     }
     .Ch4Project--stage .Ch4Project-skew:before {
         height: px2rem(280px);
+    }
+}
+
+/*Display case*/
+.Ch4DisplayCase {
+    position: relative;
+    background-color: #F2F7FB;
+    box-shadow: 0 -2px 0 0 #DAE1E8, 0 2px 0 0 #DAE1E8;
+    background-image: url(/assets/img/work/ch4/display-case/logo-background.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.Ch4DisplayCase-wrapper {
+    margin: 0 auto;
+    margin-top: 18rem;
+    max-width: 65rem;
+    background-image: url(/assets/img/work/ch4/display-case/dots.svg);
+    background-repeat: no-repeat;
+    background-position: 100% -1px;
+    padding-bottom: 1rem;
+}
+.Ch4DisplayCase-chimney {
+    margin-top: -17rem;
+}
+@media screen and (min-width: px2em(600px)) {
+    .Ch4DisplayCase-wrapper {
+        margin-top: 19rem;
     }
 }

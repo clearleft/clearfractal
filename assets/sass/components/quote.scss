@@ -1,7 +1,7 @@
 .Quote {
     max-width: px2rem(700px);
     position: relative;
-    margin: 0 auto;
+    margin: px2rem(40px) auto px2rem(20px) auto;
     padding: px2rem(16px);
     &:before {
         background-image: url(/assets/img/quote-open.svg);

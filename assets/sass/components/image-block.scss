@@ -1,5 +1,5 @@
 .ImageBlock {
-    padding: px2rem(16px);
+    padding: px2rem(8px) px2rem(16px);
     display: table;
     margin: 0 auto;
 }
@@ -24,7 +24,6 @@
     .ImageBlock {
         padding-top: px2rem(32px);
         padding-bottom: px2rem(32px);
-        max-width: px2em(1040px);
     }
     .ImageBlock--short {
         padding-bottom: 0;
