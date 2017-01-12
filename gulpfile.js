@@ -8,36 +8,36 @@
 
  const CONFIG = {
     css: {
-        src:                ['assets/sass/build.scss'],
-        dest:               'public/assets/css/all.css',
+        src:                [__dirname+'/assets/sass/build.scss'],
+        dest:               '/public/assets/css/all.css',
         autoprefix:         ['> 1%', 'last 2 versions'],
-        clean:              ['public/assets/css/*'],
-        watch:              'assets/sass/**/*.scss'
+        clean:              ['/public/assets/css/*'],
+        watch:              __dirname+'/assets/sass/**/*.scss'
     },
 
     images: {
-        src:                'assets/img',
-        dest:               'public/assets/img',
+        src:                __dirname+'/assets/img',
+        dest:               '/public/assets/img',
         optimise:           ['**/*.{png,jpg,jpeg,gif,svg}'],
         copy:               ['**/*.svg'],
-        clean:              ['public/assets/img/*'],
+        clean:              ['/public/assets/img/*'],
         optimizationLevel:  3,
-        watch:              ['assets/img/**/*.{png,jpg,jpeg,gif,svg}']
+        watch:              [__dirname+'/assets/img/**/*.{png,jpg,jpeg,gif,svg}']
     },
 
     fonts: {
-        src:                'assets/fonts',
-        dest:               'public/assets/fonts',
+        src:                __dirname+'/assets/fonts',
+        dest:               '/public/assets/fonts',
         copy:               ['**/*.{eot,ttf,woff,woff2}'],
-        clean:              ['public/assets/fonts/*'],
-        watch:              ['assets/fonts/**/*.{eot,ttf,woff,woff2}']
+        clean:              ['/public/assets/fonts/*'],
+        watch:              [__dirname+'/assets/fonts/**/*.{eot,ttf,woff,woff2}']
     },
 
     scripts: {
-        src:                ['assets/js/main.js'],
-        dest:               'public/assets/js/main.js',
-        clean:              ['public/assets/js/*'],
-        watch:              ['assets/js/**/*.js']
+        src:                [__dirname+'/assets/js/main.js'],
+        dest:               '/public/assets/js/main.js',
+        clean:              ['/public/assets/js/*'],
+        watch:              [__dirname+'/assets/js/**/*.js']
     }
 }
 
@@ -98,7 +98,9 @@ const CSSProcessors = [
     autoprefixer( { browsers: CONFIG.css.autoprefix } )
 ];
 
-gulp.task('sass:lint', () => {
+
+
+function sassLint() {
     return gulp.src( 'assets/sass/**/*' )
         // lint
         .pipe(stylelint({
@@ -106,16 +108,18 @@ gulp.task('sass:lint', () => {
                 { formatter: 'string', console: true }
             ]
         }));
-});
+}
 
-gulp.task('sass:build', () => {
+function sassBuild(prefix) {
 
-    let { fileName, path } = SplitParts(CONFIG.css.dest);
+    return function() {
 
-    // delete all build files + folders
-    del( CONFIG.css.clean );
+        let { fileName, path } = SplitParts(CONFIG.css.dest);
 
-    return gulp.src( CONFIG.css.src )
+        // delete all build files + folders
+        del( (prefix || __dirname) + CONFIG.css.clean );
+
+        return gulp.src( CONFIG.css.src )
 
         .pipe(sourcemaps.init())
 
@@ -137,8 +141,13 @@ gulp.task('sass:build', () => {
         .pipe(sourcemaps.write('.'))
 
         // output
-        .pipe( gulp.dest( path ) );
-});
+        .pipe( gulp.dest( (prefix || __dirname) + path ) );
+    }
+
+}
+
+gulp.task('sass:lint', sassLint);
+gulp.task('sass:build', sassBuild());
 
 gulp.task('sass', gulp.series('sass:lint', 'sass:build'));
 
@@ -149,26 +158,31 @@ gulp.task('sass', gulp.series('sass:lint', 'sass:build'));
     - Delete source directory (in development mode)
  ******************************************************************************/
 
-gulp.task('images', () => {
+function images(prefix) {
 
-    // delete all build files + folders
-    del( CONFIG.images.clean );
+    return () => {
 
-    return gulp.src( CONFIG.images.src + '/' + CONFIG.images.optimise )
+        // delete all build files + folders
+        del( (prefix || __dirname) + CONFIG.images.clean );
 
-        // image minification
-        // all files are piped through this package. Remove this pipe if you simply want to copy files without being minified.
-        // .pipe(imagemin({
-        //     progressive: true,
-        //     svgoPlugins: [
-        //         { removeViewBox: false },
-        //         { removeUselessStrokeAndFill: false }
-        //     ],
-        // }))
+        return gulp.src( CONFIG.images.src + '/' + CONFIG.images.optimise )
 
-        // output to dest folder
-        .pipe( gulp.dest( CONFIG.images.dest ) );
-});
+            // image minification
+            // all files are piped through this package. Remove this pipe if you simply want to copy files without being minified.
+            // .pipe(imagemin({
+            //     progressive: true,
+            //     svgoPlugins: [
+            //         { removeViewBox: false },
+            //         { removeUselessStrokeAndFill: false }
+            //     ],
+            // }))
+
+            // output to dest folder
+            .pipe( gulp.dest( (prefix || __dirname) + CONFIG.images.dest ) );
+    }
+}
+
+gulp.task('images', images());
 
 
 /******************************************************************************
@@ -177,16 +191,21 @@ gulp.task('images', () => {
     - Copy font files
  ******************************************************************************/
 
-gulp.task('fonts', () => {
+function fonts(prefix) {
 
-    // delete all build files + folders
-    del( CONFIG.fonts.clean );
+    return () => {
 
-    return gulp.src( CONFIG.fonts.src + '/' + CONFIG.fonts.copy )
+        // delete all build files + folders
+        del( (prefix || __dirname) + CONFIG.fonts.clean );
 
-        // output to dest folder
-        .pipe( gulp.dest( CONFIG.fonts.dest ) );
-});
+        return gulp.src( CONFIG.fonts.src + '/' + CONFIG.fonts.copy )
+
+            // output to dest folder
+            .pipe( gulp.dest( (prefix || __dirname) + CONFIG.fonts.dest  ) );
+    }
+}
+
+gulp.task('fonts', fonts());
 
 
 /******************************************************************************
@@ -195,24 +214,34 @@ gulp.task('fonts', () => {
     - Copies files over to build folder
  ******************************************************************************/
 
- gulp.task('scripts', () => {
+function scripts(prefix) {
 
-     let { fileName, path } = SplitParts(CONFIG.scripts.dest);
+    return () => {
 
-     // delete all previously compiled files + folders
-     del( CONFIG.scripts.clean );
+         let { fileName, path } = SplitParts(CONFIG.scripts.dest);
 
-     return gulp.src( CONFIG.scripts.src )
+         // delete all previously compiled files + folders
+         del( (prefix || __dirname) + CONFIG.scripts.clean );
 
-        // write sourcemap
-        // .pipe(sourcemaps.write('.'))
+         return gulp.src( CONFIG.scripts.src )
 
-        // output
-        .pipe( rename( fileName ) )
-        .pipe( gulp.dest( path ) );
-});
+            // write sourcemap
+            // .pipe(sourcemaps.write('.'))
 
+            // output
+            .pipe( rename( fileName ) )
+            .pipe( gulp.dest( (prefix || __dirname) + path ) );
+    }
+}
 
+gulp.task('scripts', scripts());
+
+////
+
+function build(dest) {
+
+    return gulp.series(sassBuild(dest), images(dest), fonts(dest), scripts(dest))
+}
 
 /** Watch **/
 
@@ -228,3 +257,5 @@ gulp.task('default', gulp.parallel('fonts', 'sass', 'images', 'scripts'));
 
 gulp.task('watch:build', gulp.parallel('sass:watch', 'images:watch', 'fonts:watch', 'scripts:watch'));
 gulp.task('watch', gulp.series('default', 'watch:build') );
+
+module.exports = { build };
