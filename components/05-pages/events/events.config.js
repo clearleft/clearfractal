@@ -8,9 +8,21 @@ module.exports = {
         "signpostTitle": "@proposition.signpostTitle",
        
         /*Masthead*/
-        "mastheadHeadingModifer": "--inverted Masthead--chimney",
+        "mastheadHeadingModifer": "--inverted",
         "mastheadContext": true,
         "mastheadTitle": "Some events title",
+        "pageLeadModifier": "--pinch",
+        "pageLeadSecondary": true,
+        listItems: [
+        {
+            "listItem": `<a href="#">11 yrs old and growing. What’s our story?</a>`
+        },
+        {
+            "listItem": `<a href="#">We’re hiring. Is there a job for you?</a>`
+        },
+        {
+            "listItem": `<a href="#">11 yrs old and growing. What’s our story?</a>`
+        }],
 
         "leadText": "@lead.leadText",
         "bannerCaption": "Missions Accomplished",

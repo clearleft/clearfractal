@@ -10,12 +10,24 @@ module.exports = {
         "segmentOne": "About us",
         "segmentTwo": "Values",
 
-        // "propositionLogos": "@proposition.propositionLogos",
-        // "signpostTitle": "@proposition.signpostTitle",
         "mastheadTitle": "An interesting heading about events",
         "mastheadHeadingModifer": "--inverted",
+
+        /*Page lead*/
         "leadText": "@lead.leadText",
         "pageLeadSecondary": true,
+        "pageLeadMofifier": "--pinch",
+        listItems: [
+        {
+            "listItem": `<a href="#">11 yrs old and growing. What’s our story?</a>`
+        },
+        {
+            "listItem": `<a href="#">We’re hiring. Is there a job for you?</a>`
+        },
+        {
+            "listItem": `<a href="#">11 yrs old and growing. What’s our story?</a>`
+        }],
+
         "bannerCaption": "Missions Accomplished",
         "bannerHeadline": "Our Past Events",
         "bannerModifier": "--inverted",

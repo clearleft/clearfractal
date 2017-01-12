@@ -8,7 +8,7 @@ module.exports = {
     "context": {
         /*Heading*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "mastheadModifier": "--streak Masthead--chimney",
+        "mastheadModifier": "--streak",
 
         /*Masthead*/
         "mastheadTitle": "What we stand for &amp; believe in",
@@ -19,7 +19,7 @@ module.exports = {
         
         /*Lead*/
         "pageLeadModifier": "--pinch",
-        "leadText": "Andy has been involved in digital in one form or another since 1999. Originally a front-end developer and visual designer, he naturally migrated towards the world of UX with a covert desire to seed the importance of design (with a big D) earlier in the conception and planning of projects.",
+        "leadText": "Every team has a distinct culture, whether it’s clearly defined or not. As we grow and change, our values help us maintain the essence of that culture. They are what we strive for and guide us in our work. If you’re new to us, they give you an insight into the work we’ll do together.",
         "chapters": "@chapters-values.chapters",
         "chapterModifier": "@chapters-values.chapterModifier",
         

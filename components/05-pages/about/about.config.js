@@ -18,10 +18,20 @@ module.exports = {
         "propositionLogos": "@proposition.propositionLogos",
         "signpostTitle": "@proposition.signpostTitle",
         "mastheadTitle": "Advancing the practice of design",
+        "mastheadMidifier": "--chimney",
         "leadText": "@lead.leadText",
         "pageLeadSecondary": true,
-        "pageLeadSecondary": false,
         "persons": persons,
+        listItems: [
+        {
+            "listItem": `<a href="#">11 yrs old and growing. What’s our story?</a>`
+        },
+        {
+            "listItem": `<a href="#">We’re hiring. Is there a job for you?</a>`
+        },
+        {
+            "listItem": `<a href="#">11 yrs old and growing. What’s our story?</a>`
+        }],
 
         /*Banner*/
         "bannerBody": "@banner--notice.bannerBody",

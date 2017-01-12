@@ -1,14 +1,14 @@
 .List {
     display: inline-block;
     padding-left: 0;
-    margin: px2rem(16px) 0;
+    margin: px2rem(8px) 0;
 }
 .List--inline .List-item {
     display: inline-block;
 }
 .List-item {
     list-style: none;
-    margin-bottom: px2rem(16px);
+    margin-bottom: px2rem(8px);
     font-weight: 700;
     -webkit-font-smoothing: antialiased;
 }
