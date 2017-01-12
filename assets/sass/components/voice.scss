@@ -1,5 +1,5 @@
 .Voice {
-    margin: 0 auto;
+    margin: px2rem(40px) auto 0 auto;
     max-width: px2em(900px);
     padding: px2rem(32px) px2rem(16px);
 }
@@ -46,6 +46,6 @@
     }
     .Voice--tall {
         padding-top: px2rem(145px);
-        margin-top: px2rem(-65px);
+        /*margin-top: px2rem(-65px);*/
     }
 }

@@ -120,7 +120,7 @@
 }
 /* --stage variation */
 .Ch4Project--stage {
-    margin-bottom: px2rem(112px);
+    margin-bottom: px2rem(110px);
     .Ch4Project-skew {
         background: #380F55;
         position: relative;
@@ -171,6 +171,7 @@
 }
 @media screen and (min-width: px2em(700px)) {
     .Ch4Project--stage {
+        margin-bottom: px2rem(140px);
         .Ch4Project-breadcrumb {
             padding: 0 px2rem(24px);
         }
@@ -195,7 +196,7 @@
 }
 @media screen and (min-width: px2em(800px)) {
     .Ch4Project--stage {
-        margin-bottom: px2rem(128px);
+        margin-bottom: px2rem(100px);
         .Ch4Project-wrapper {
             padding: px2rem(32px) px2rem(24px) 0 px2rem(24px);
         }
@@ -224,7 +225,7 @@
             max-width: px2em(340px);
         }
         .Ch4Project-wrapper {
-            min-height: 60vh;
+            min-height: 50vh;
         }
     }
 }
