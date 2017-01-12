@@ -8,7 +8,7 @@ module.exports = {
     "context": {
         /*Heading*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "mastheadModifier": "--streak",
+        "mastheadModifier": "--streak Masthead--chimney",
 
         /*Masthead*/
         "mastheadTitle": "What we stand for &amp; believe in",

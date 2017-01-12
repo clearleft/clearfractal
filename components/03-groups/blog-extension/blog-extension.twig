@@ -5,12 +5,11 @@
         </div><!--/.Extension-headline-->
         <div class="Extension-items">
             <div class="Cols">
+            {% for card in cards %}
                 <div class="Cols-half Cols-item">
-                    {% include '@card' %}
+                    {% include '@card' with card %}
                 </div><!--/.Cols-half-->
-                <div class="Cols-half Cols-item">
-                    {% include '@card' %}
-                </div><!--/.Cols-half-->
+            {% endfor %}
             </div><!--/.Cols-->
         </div><!--/.Extension-items-->
     </div><!--/.Extension-->

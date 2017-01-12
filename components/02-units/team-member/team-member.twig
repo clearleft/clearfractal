@@ -1,0 +1,43 @@
+<div class="LayoutAlternate LayoutAlternate--chimney Prose">
+    <div class="LayoutAlternate-left LayoutAlternate-item LayoutAlernate-item--leadPrimary">
+        {% include '@lead' with {leadModifier: '--wrapper Bar'} %}
+    </div>
+    <div class="LayoutAlternate-right LayoutAlternate-item LayoutAlernate-item--leadSecondary">
+        <img class="LayoutAlternate-image" src="/assets/img/team/andy-t-lg.jpg" alt="Andy Thornton"> 
+        <div class="LayoutAlternate-solo">
+            <p class="Heading Heading--context">Find Andy on:</p>
+            {% include '@social-media' %}
+        </div>
+    </div>
+    <div class="LayoutAlternate-left LayoutAlternate-item">
+        {{personIntroLeft}}
+    </div>
+    <div class="LayoutAlternate-right LayoutAlternate-item">
+        <h2>Away from the office</h2>
+        {{personInterests}}
+    </div>
+</div>
+<div class="LayoutAlternate">
+   {% if books %}
+    <div class="LayoutAlternate-item"><h2 class="Heading Heading--small Bar">More from Andy</h2></div>
+    <div class="LayoutAlternate-left LayoutAlternate-item">
+        <h3 class="Heading Heading--body Heading--vibrant">Published books</h3>
+        <ul>
+        {% for book in books %}
+        {% include '@info-block' with book %}
+        {% endfor %}
+        </ul>
+    </div><!--/.Layout-alternate-item-->
+    {% endif %}
+    
+    {% if talks %}
+    <div class="LayoutAlternate-left LayoutAlternate-item">
+        <h3 class="Heading Heading--body Heading--vibrant">Previous talks</h3>
+        <ul>
+        {% for talk in talks %}
+        {% include '@info-block' with talk %}
+        {% endfor %}
+        </ul>
+    </div><!--/.Layout-alternate-item-->
+    {% endif %}
+</div><!--/.LayoutAlternate-->
