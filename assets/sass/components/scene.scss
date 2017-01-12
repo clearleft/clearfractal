@@ -1,6 +1,5 @@
 
 .Scene {
-    max-width: px2em(700px);
     margin: 0 auto;
     padding: px2rem(16px);
 }
@@ -41,13 +40,11 @@
         letter-spacing: px2rem(-0.64px);
     }
     .Scene-main {
-        padding-left: px2rem(30px);
-        padding-right: px2rem(30px);
+        padding-right: px2rem(20px);
         width: 60%;
     }
     .Scene-side {
-        padding-left: px2rem(30px);
-        padding-right: px2rem(30px);
+        padding-left: px2rem(20px);
         width: 40%;
     }
     .Scene--shuffle .Scene-side {
@@ -62,9 +59,36 @@
         }
     }
 }
+@media screen and (min-width: px2rem(800px)) {
+    .Scene {
+        max-width: 31em;
+    }
+    .Scene.Scene--featured {
+        max-width: 45em;
+    }
+}
 @media screen and (min-width: px2rem(900px)) {
-    .Scene--featured .Scene-heading {
+    .Scene.Scene--featured {
+        .Scene-heading {
+            max-width: 90%;
+        }
+        .Scene-main {
+            padding-right: px2rem(25px);
+        }
+        .Scene-side {
+            padding-left: px2rem(25px);
+        }
+    }
+}
+@media screen and (min-width: px2em(1000px)) {
+    .Scene {
+        max-width: 48em;
+        padding-left: 10.5rem;
+    }
+    .Scene.Scene--featured {
+        max-width: 62em;
+    }
+    .Scene-heading {
         margin-left: px2rem(-52px);
-        max-width: 90%;
     }
 }

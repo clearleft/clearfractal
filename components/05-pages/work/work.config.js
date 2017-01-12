@@ -13,7 +13,7 @@ module.exports = {
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
         "mastheadTitle": "Advancing the practice of design",
-        "mastheadModifier": "--tall",
+        "mastheadModifier": "--chimney",
         
         /*Penguin feature*/
         "penguinModifier": "--tall",
