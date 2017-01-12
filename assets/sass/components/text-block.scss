@@ -11,17 +11,13 @@
     .TextBlock-author {
         float: left;
         margin-right: px2rem(16px);
+        margin-top: px2rem(24px);
     }
 }
 @media screen and (min-width: px2em(500px)) {
     .TextBlock {
         padding-bottom: px2rem(8px);
-        padding-top: px2rem(8px);
-    }
-}
-@media screen and (min-width: px2rem(700px)) {
-    .TextBlock-author {
-        margin-left: px2rem(-136px);
+        padding-top: px2rem(10px);
     }
 }
 @media screen and (min-width: px2rem(800px)) {
@@ -30,5 +26,8 @@
     }
     .TextBlock--wide {
         max-width: px2rem(825px);
+    }
+    .TextBlock-author {
+        margin-left: px2rem(-130px);
     }
 }

@@ -1,5 +1,5 @@
 .Voice {
-    margin: px2rem(40px) auto 0 auto;
+    margin: 0 auto;
     max-width: px2em(900px);
     padding: px2rem(32px) px2rem(16px);
 }
@@ -22,7 +22,7 @@
     .Voice {
         display: flex;
         flex-wrap: wrap;
-        padding: px2rem(35px) px2rem(8px);
+        padding: px2rem(50px) px2rem(8px);
     }
     .Voice-person {
         float: none;

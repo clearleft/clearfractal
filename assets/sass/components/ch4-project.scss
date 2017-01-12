@@ -289,7 +289,7 @@
 }
 .Ch4DisplayCase-wrapper {
     margin: 0 auto;
-    margin-top: 18rem;
+    margin-top: 12rem;
     max-width: 65rem;
     background-image: url(/assets/img/work/ch4/display-case/dots.svg);
     background-repeat: no-repeat;
@@ -297,10 +297,21 @@
     padding-bottom: 1rem;
 }
 .Ch4DisplayCase-chimney {
-    margin-top: -17rem;
+    margin-top: -10rem;
 }
 @media screen and (min-width: px2em(600px)) {
     .Ch4DisplayCase-wrapper {
-        margin-top: 19rem;
+        margin-top: 13rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media screen and (min-width: px2em(900px)) {
+    .Ch4DisplayCase-wrapper {
+        margin-top: 16rem;
+    }
+    .Ch4DisplayCase-chimney {
+        margin-top: -13rem;
     }
 }

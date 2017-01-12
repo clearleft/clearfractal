@@ -1,5 +1,5 @@
 .Quote {
-    max-width: px2rem(700px);
+    max-width: px2rem(720px);
     position: relative;
     margin: px2rem(40px) auto px2rem(20px) auto;
     padding: px2rem(16px);
@@ -17,7 +17,7 @@
 }
 .Quote-citation {
     text-transform: uppercase;
-    color: $mid-grey;
+    color: $jet-grey;
     @include font(13px, 16px);
     font-family: $font-secondary;
     font-weight: 700;
@@ -31,11 +31,17 @@
     border: px2rem(2px) solid #1E6B9C;
     margin-right: px2rem(16px);
 }
+.Quote-job {
+    display: block;
+    text-indent: px2rem(1px);
+    margin-top: px2rem(4px);
+    color: $mid-grey;
+}
 @media screen and (min-width: px2em(500px)) {
     .Quote {
-        margin-top: px2rem(70px);
-        padding-bottom: px2rem(32px);
-        padding-top: px2rem(24px);
+        margin-top: px2rem(80px);
+        padding-bottom: px2rem(35px);
+        padding-top: px2rem(28px);
         &:before {
             top: px2rem(-48px);
             background-size: 100%;
