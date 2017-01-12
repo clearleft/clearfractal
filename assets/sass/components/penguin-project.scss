@@ -119,3 +119,28 @@
         }
     }
 }
+
+/*Dipsplay case*/
+.PenguinDisplayCase {
+    position: relative;
+    background-color: #FCF9F2;
+    box-shadow: 0 -2px 0 0 #E5DECF, 0 2px 0 0 #E5DECF;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.PenguinDisplayCase-wrapper {
+    margin: 0 auto;
+    margin-top: 18rem;
+    max-width: 65rem;
+    background-repeat: no-repeat;
+    background-position: 100% -1px;
+    padding-bottom: 1rem;
+}
+.PenguinDisplayCase-chimney {
+    margin-top: -17rem;
+}
+@media screen and (min-width: px2em(600px)) {
+    .PenguinDisplayCase-wrapper {
+        margin-top: 19rem;
+    }
+}
