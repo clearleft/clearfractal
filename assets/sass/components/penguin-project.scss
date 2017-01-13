@@ -97,7 +97,7 @@
 @media screen and (min-height: px2em(400px)) and (min-width: px2em(700px)) {
     .PenguinProject--stage {
         .PenguinProject-wrapper {
-            min-height: 60vh;
+            min-height: 58vh;
             padding: px2rem(32px) px2rem(24px) 0 px2rem(24px);
         }
     }
@@ -114,6 +114,7 @@
     .PenguinProject--stage {
         .PenguinProject-wrapper {
             background-size: px2rem(600px);
+            padding-bottom: px2rem(80px);
         }
     }
 }

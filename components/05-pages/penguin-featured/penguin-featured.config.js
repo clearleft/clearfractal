@@ -6,7 +6,7 @@ module.exports = {
         "penguinTitle": "Create a new universe.",
         "penguinModifier": "--stage",
         "penguinContext": false,
-        "penguinDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dignissimos recusandae eaque cupiditate, ad quia unde porro illo. Minima, ad.",
+        "penguinDescription": "How do you bring thousands of authors, publishing brands, imprints and marketing teams together into one website? This is the story of how we led Penguin Random House through digital transformation.",
         "penguinLogo": "/assets/img/work/penguin/penguin-logo.svg",
         "penguinLogoAlt": "Penguin logo",
         "penguinLink": "",
@@ -33,6 +33,15 @@ module.exports = {
         /*Scene*/
         "metas": "@scene.metas",
         "sceneModifier": "--shuffle Scene--featured",
+        "sceneProse": `
+        <p>As formerly separate companies, Penguin and Random House each had their own websites. Then they merged. Collectively, the two brands managed over 700 other websites, 
+        distributed across 6 publishing houses and over 40 imprints. Each website individually focussed on authors, books, series, and characters. 
+        Few of those 700 sites had significant levels of traffic, and commissioning new sites and marketing micro-sites with external agencies was getting expensive.</p>
+        <p>Penguin.co.uk was to become their new consumer-facing brand; it has 100% market recognition and the biggest catalogue in the world. 
+        Penguin Random House wanted to expand the brand beyond classics. People also don’t know that it’s related to two other strong brands, Puffin and Ladybird. 
+        How could we change the perception of Penguin and its related brands, and bring the brands together without diluting their identities? This brief became one of our biggest, most challenging projects.</p>
+        `,
+        "sceneHeading": "The challenge for Penguin Random House",
 
         /*Content*/
         "imageBlockSrc": "/assets/img/work/penguin/display-case/co-design-session.jpg",
