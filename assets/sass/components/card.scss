@@ -33,6 +33,10 @@
     font-weight: 700;
     margin: 0 0 px2rem(24px) 0;
 }
+.Card-link {
+    border-bottom: none;
+    color: $jet-grey;
+}
 .Card-category {
     font-family: $font-secondary;
     @include font(14px, 17px);

@@ -2,7 +2,7 @@
     {% if cardModifier != "--tiny-lesson" %}<div class="Bar"></div>{% endif %}
     <div class="Card-primary">
         <header>
-            <h3 class="Card-title">{{ cardTitle }}</h3>
+            <a href="{{cardUrl}}" class="Card-link"><h3 class="Card-title">{{ cardTitle }}</h3></a>
         </header>
         {% if cardCategory %}<div class="Card-category">{{ cardCategory }}</div>{% endif %}
         {% if cardDescription %}<p class="Card-description">{{ cardDescription }}</p>{% endif %}
