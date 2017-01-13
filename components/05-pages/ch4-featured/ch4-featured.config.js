@@ -69,7 +69,7 @@ module.exports = {
             { "heading": "Transform your digital culture", "imageSrc": "/assets/img/icons/heart-speech.svg", "text": "Upskill your team, develop your processes, integrate design thinking and introduce new habits. By working closely with the Clearleft team as part of your in-house process, or in a bespoke workshop setting, you get an external perspective that’s directly relevant to your needs." }
         ],
         "trioHeading": "@trio.trioHeading",
-        "trioModifier": "--stacked Trio--inverted Trio--channel4",
+        "trioModifier": "--stacked Trio--inverted Trio--channel4 Trio--chimney",
         
         /*Signpost (next and prev case studies)*/
         "signpostItems": "@signpost.signpostItems",

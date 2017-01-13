@@ -61,6 +61,13 @@
         }
     }
 }
+@media screen and (min-height: px2em(900px)) and (min-width: px2em(700px)) {
+    .EvoProject--tall {
+        .EvoProject-wrapper {
+            min-height: 55vh;
+        }
+    }
+}
 @media screen and (min-width: px2em(700px)) {
     .PenguinProject--tall {
         .PenguinProject-wrapper {
@@ -130,7 +137,7 @@
 .PenguinDisplayCase-wrapper {
     margin: 0 auto;
     margin-top: 18rem;
-    max-width: 55rem;
+    max-width: 53rem;
     background-repeat: no-repeat;
     background-position: 100% -1px;
     padding-bottom: 1rem;

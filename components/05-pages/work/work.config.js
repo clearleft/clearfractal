@@ -30,6 +30,14 @@ module.exports = {
         "ch4LinkUrl": "#",
         "ch4MainSrc": "/assets/img/work/ch4/sling.png",
 
+        /*Evo project feature*/
+        "evoContext": "Evo random house publishing company",
+        "evoTitle": "Create a new universe.",
+        "evoLink": "How do you bring more than 700 brands together into one website?",
+        "evoLinkUrl": "#",
+        "evoModifier": "--tall",
+        "evoMainSrc": "/assets/img/work/evo/sling.png",
+
         "posts": posts,
         "megaLinkText": "@mega-link.megaLinkText",
         "megaLinkModifier": "@mega-link--super.megaLinkModifier",

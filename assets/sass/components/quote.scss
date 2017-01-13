@@ -1,5 +1,5 @@
 .Quote {
-    max-width: px2rem(720px);
+    max-width: px2rem(680px);
     position: relative;
     margin: px2rem(40px) auto px2rem(20px) auto;
     padding: px2rem(16px);
@@ -40,8 +40,8 @@
 @media screen and (min-width: px2em(500px)) {
     .Quote {
         margin-top: px2rem(80px);
-        padding-bottom: px2rem(35px);
-        padding-top: px2rem(28px);
+        padding-bottom: px2rem(25px);
+        padding-top: px2rem(10px);
         &:before {
             top: px2rem(-48px);
             background-size: 100%;

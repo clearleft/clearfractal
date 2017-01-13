@@ -42,6 +42,9 @@ module.exports = {
         <h2>How do you create a single strategy for stakeholders who may also be competitors?</h2>
         <p>Penguin Random House believed that the new Penguin website could help people discover the book they wanted to read next. At Clearleft, we love a good provocation to get theories and opinions out on the table; during one of our early workshops we asked a question of the stakeholders:</p>
         `,
+        "trioHeading": "The Results",
+        "trioItems": "@trio.trioItems",
+        "trioModifier": "--penguin Trio--inverted",
 
         /*Quote*/
         "quoteAvatarSrc": "/assets/img/work/ch4/anna-doble.jpg",

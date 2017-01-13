@@ -1,11 +1,14 @@
 .Work {
     max-width: px2rem(1180px);
-    margin: px2rem(-80px) auto 0;
+    margin: px2rem(-40px) auto 0;
 }
 .Work-gridItem {
     padding: px2rem(16px);
 }
 @media screen and (min-width: px2rem(500px)) {
+    .Work {
+        margin-top: px2rem(-75px);
+    }
     .Work-grid {
         padding: px2rem(16px);
         display: flex;

@@ -7,7 +7,7 @@
 .EvoProject-wrapper {
     max-width: px2em(900px);
     margin: 0 auto;
-    padding: px2rem(16px);
+    padding: px2rem(24px) px2rem(16px);
     -webkit-font-smoothing: antialiased;
     position: relative;
     z-index: 1;
@@ -25,80 +25,85 @@
 .EvoProject-description {
     max-width: px2em(350px);
 }
-/*.EvoProject-image {
-    max-width: px2rem(70px);
-}*/
 
 @media screen and (min-width: px2em(500px)) {
     .EvoProject-title {
         letter-spacing: px2rem(-1.45px);
         @include font(72px, 77px);
     }
-    /*.EvoProject-image {
-        max-width: px2rem(140px);
-    }*/
 }
 @media screen and (min-width: px2em(700px)) {
     .EvoProject-wrapper {
-        padding: px2rem(32px) px2rem(24px) px2rem(48px) px2rem(24px);
+        padding: px2rem(35px) px2rem(24px) px2rem(48px) px2rem(24px);
         overflow: hidden;
-        background-image: url(/assets/img/work/evo/evo-landing.png);
+        background-image: url(/assets/img/work/evo/evo-mag-stack.png);
         background-repeat: no-repeat;
-        background-position: 0 100%;
-        background-size: px2rem(350px);
+        background-position: -30% 130%;
+        background-size: px2rem(400px);
     }
     .EvoProject-primary {
         width: 70%;
         float: right;
         padding-left: px2rem(24px);
     }
-    /*.EvoProject-image {
-        max-width: px2rem(200px);
-    }*/
 }
 @media screen and (min-width: px2em(800px)) {
-    .EvoProject-primary {
-        width: 65%;
+    .EvoProject-wrapper {
+        background-position: -30% 140%;
+        background-size: px2rem(500px);
     }
-    /*.EvoProject-image {
-        max-width: px2rem(280px);
-    }*/
+    .EvoProject-primary {
+        width: 60%;
+    }
+}
+@media screen and (min-width: px2em(970px)) {
+    .EvoProject-wrapper {
+        background-position: 0 140%;
+    }
 }
 
 /*--tall variation*/
 @media screen and (min-width: px2em(700px)) {
     .EvoProject--tall {
-        /*background-image: radial-gradient(42% 45%, #3F3F3F 34%, #333333 45%, #000000 98%);*/
         .EvoProject-wrapper {
-            background-position: 100% 100%;
-            background-size: px2rem(420px);
+            background-position: 130% 120%;
+            background-size: px2rem(400px);
             display: flex;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: flex-start;
+        }
+        .EvoProject-extension {
+            max-width: px2rem(300px);
+        }
+    }
+}
+@media screen and (min-width: px2em(820px)) {
+    .EvoProject--tall {
+        .EvoProject-wrapper {
+            background-position: 130% 120%;
+            background-size: px2rem(470px);
+        }
+    }
+}
+@media screen and (min-width: px2em(900px)) {
+    .EvoProject--tall {
+        .EvoProject-wrapper {
+            background-position: 160% 155%;
+            background-size: px2rem(630px);
         }
     }
 }
 @media screen and (min-height: px2em(500px)) and (min-width: px2em(700px)) {
     .EvoProject--tall {
         .EvoProject-wrapper {
-            min-height: 75vh;
+            min-height: 70vh;
         }
     }
 }
-@media screen and (min-width: px2em(700px)) {
+@media screen and (min-height: px2em(900px)) and (min-width: px2em(700px)) {
     .EvoProject--tall {
         .EvoProject-wrapper {
-            position: relative;
-            justify-content: flex-start;
-        }
-        /*.EvoProject-image {
-            position: absolute;
-            top: px2rem(50px);
-            left: px2rem(-60px);
-            max-width: px2em(350px);
-        }*/
-        .EvoProject-primary {
-            width: 65%;
+            min-height: 55vh;
         }
     }
 }
@@ -107,6 +112,17 @@
         .EvoProject-image {
             max-width: px2rem(370px);
             left: px2rem(-20px);
+        }
+    }
+}
+@media screen and (min-width: px2em(950px)) {
+    .EvoProject--tall {
+        background-image: url(/assets/img/work/evo/evo-mag-stack.png);
+        background-repeat: no-repeat;
+        background-position: 130% -10%;
+        background-size: px2rem(700px);
+        .EvoProject-wrapper {
+            background-image: none;
         }
     }
 }

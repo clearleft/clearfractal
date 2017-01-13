@@ -91,6 +91,13 @@
         align-items: center;
     }
 }
+@media screen and (min-height: px2em(900px)) and (min-width: px2em(700px)) {
+    .EvoProject--tall {
+        .EvoProject-wrapper {
+            min-height: 55vh;
+        }
+    }
+}
 @media screen and (min-width: px2em(700px)) {
     .Ch4Project--tall {
         .Ch4Project-wrapper {
@@ -302,6 +309,7 @@
 @media screen and (min-width: px2em(600px)) {
     .Ch4DisplayCase-wrapper {
         margin-top: 13rem;
+        margin-bottom: px2rem(58px);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
