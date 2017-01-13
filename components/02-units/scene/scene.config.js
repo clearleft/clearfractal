@@ -39,13 +39,7 @@ module.exports = {
     },
 
     "variants": [{
-        "name": "Featured",
-        "context": {
-            "sceneModifier": "--featured"
-        }
-    },
-    {
-        "name": "Wide",
+        "name": "Basic",
         "context": {
             "sceneModifier": "--basic"
         }
