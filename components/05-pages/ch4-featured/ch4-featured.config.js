@@ -25,8 +25,8 @@ module.exports = {
         "ch4Modifier": "--stage",
         "ch4Context": false,
         "ch4Title": "Create a new universe.",
-        "ch4MainSrc": "/assets/img/work/ch4/sling.png",
-        "ch4Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dignissimos recusandae eaque cupiditate, ad quia unde porro illo. Minima, ad.",
+        "ch4MainSrc": "/assets/img/work/ch4/c4-mag-glass.png",
+        "ch4Description": "How could our small team make any impact on the giant eco-system of content in Channel 4’s News Room? This is a story of how small changes make a big difference.",
         "ch4LogoSrc": "/assets/img/work/ch4/ch4-logo.svg",
         "ch4LogoAlt": "ch4 logo",
 

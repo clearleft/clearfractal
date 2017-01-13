@@ -4,7 +4,7 @@
 .Ch4Project {
     position: relative;
     color: #ffffff;
-    background-color: #7123A8;
+    background-color: #570F83;
 }
 .Ch4Project-wrapper {
     max-width: px2em(900px);
@@ -23,31 +23,45 @@
     @include font(40px, 45px);
     font-weight: 700;
     margin-top: px2rem(24px);
+    max-width: px2rem(400px);
 }
 .Ch4Project-extension {
-    max-width: px2rem(400px);
+    max-width: px2rem(320px);
 }
 .Ch4Project-description {
     max-width: px2em(350px);
 }
 .Ch4Project-image {
     max-width: px2rem(70px);
+    position: absolute;
+    right: px2rem(30px);
+    bottom: px2rem(100px);
 }
 @media screen and (min-width: px2em(500px)) {
-    .Ch4Project-title {
-        letter-spacing: px2rem(-1.45px);
-        @include font(72px, 77px);
-    }
     .Ch4Project-secondary {
         width: 30%;
     }
     .Ch4Project-image {
-        max-width: px2rem(140px);
+        max-width: px2rem(120px);
+        bottom: px2rem(34px);
+    }
+    .Ch4Project-title {
+        max-width: none;
+    }
+    .Ch4Project-wrapper {
+        padding-top: px2rem(40px);
+        padding-bottom: px2rem(40px);
+    }
+}
+@media screen and (min-width: px2em(550px)) {
+    .Ch4Project-title {
+        letter-spacing: px2rem(-1.45px);
+        @include font(72px, 77px);
     }
 }
 @media screen and (min-width: px2em(700px)) {
     .Ch4Project-wrapper {
-        padding: px2rem(32px) px2rem(24px) px2rem(48px) px2rem(24px);
+        padding: px2rem(32px) px2rem(24px) px2rem(40px) px2rem(24px);
         display: flex;
     }
     .Ch4Project-primary {
@@ -63,6 +77,8 @@
     }
     .Ch4Project-image {
         max-width: px2rem(200px);
+        left: px2rem(20px);
+        right: auto;
     }
 }
 @media screen and (min-width: px2em(800px)) {
@@ -73,34 +89,42 @@
         width: 35%;
     }
     .Ch4Project-image {
-        max-width: px2rem(280px);
+        max-width: px2rem(250px);
+        bottom: 0;
+        left: px2rem(70px);
     }
 }
 /*--tall variation*/
-@media screen and (min-width: px2em(700px)) {
+@media screen and (min-width: px2em(550px)) {
     .Ch4Project--tall {
-        background-image: radial-gradient(59% 81%, #7123A8 63%, #4D1574 100%);
-        .Ch4Project-wrapper {
-            background-position: 140% 100%;
+        .Ch4Project-image {
+            max-width: px2rem(225px);
         }
     }
 }
-@media screen and (min-height: px2em(900px)) and (min-width: px2em(700px)) {
+@media screen and (min-height: px2em(500px)) and (min-width: px2em(700px)) {
     .Ch4Project--tall .Ch4Project-wrapper {
-        min-height: 40vh;
+        min-height: 70vh;
+        align-items: center;
+    }
+}
+@media screen and (min-height: px2em(880px)) and (min-width: px2em(700px)) {
+    .Ch4Project--tall .Ch4Project-wrapper {
+        min-height: 47vh;
         align-items: center;
     }
 }
 @media screen and (min-width: px2em(700px)) {
     .Ch4Project--tall {
+        /*background-image: radial-gradient(59% 81%, #7123A8 63%, #4D1574 100%);*/
         .Ch4Project-wrapper {
             position: relative;
         }
         .Ch4Project-image {
             position: absolute;
-            top: px2rem(50px);
-            left: px2rem(-60px);
-            max-width: px2em(350px);
+            top: px2rem(70px);
+            left: px2rem(10px);
+            max-width: px2em(260px);
         }
         .Ch4Project-primary {
             width: 65%;
@@ -113,8 +137,7 @@
 @media screen and (min-width: px2em(950px)) {
     .Ch4Project--tall {
         .Ch4Project-image {
-            max-width: px2rem(370px);
-            left: px2rem(-20px);
+            max-width: px2rem(335px);
         }
     }
 }
@@ -143,7 +166,8 @@
         }
     }
     .Ch4Project-image {
-        max-width: px2em(150px);
+        max-width: px2em(110px);
+        bottom: px2rem(-30px);
     }
     .Ch4Project-logo {
         max-height: px2rem(120px);
@@ -164,8 +188,15 @@
             bottom: px2rem(100px);
             position: absolute;
             right: 0;
-            bottom: -62px;
+            bottom: px2rem(-62px);
             z-index: -1;
+        }
+    }
+}
+@media screen and (min-width: px2em(500px)) {
+    .Ch4Project--stage {
+        .Ch4Project-image {
+            bottom: px2rem(12px);
         }
     }
 }
@@ -212,17 +243,23 @@
         .Ch4Project-middle {
             height: 12rem;
         }
+        .Ch4Project-image {
+            right: px2rem(30px);
+            bottom: px2rem(-40px);
+            max-width: px2rem(280px);
+        }
     }
 }
-@media screen and (min-width: px2em(920px)) {
+@media screen and (min-width: px2em(900px)) {
     .Ch4Project--stage {
         .Ch4Project-logo {
             max-height: px2em(165px);
-            margin-top: px2rem(-130px);
+            margin-top: px2rem(-100px);
             margin-left: px2rem(-30px);
         }
         .Ch4Project-image {
-            max-width: px2em(340px);
+            max-width: px2em(320px);
+            bottom: px2rem(-90px);
         }
         .Ch4Project-wrapper {
             min-height: 50vh;
@@ -250,9 +287,9 @@
             max-height: px2rem(230px);
         }
         .Ch4Project-image {
-            max-width: none;
-            width: px2rem(500px);
-            right: px2rem(-100px);
+            max-width: px2rem(440px);
+            right: px2rem(70px);
+            bottom: px2rem(-130px);
         }
     }
 }
@@ -260,12 +297,6 @@
     .Ch4Project--stage {
         .Ch4Project-skew:before {
             margin-top: 2rem;
-        }
-        .Ch4Project-image {
-            max-width: none;
-            width: px2rem(580px);
-            bottom: px2rem(-100px);
-            right: px2rem(-80px);
         }
     }
 }

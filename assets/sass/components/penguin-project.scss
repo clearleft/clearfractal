@@ -17,7 +17,7 @@
     margin-top: px2rem(24px);
 }
 .PenguinProject-extension {
-    max-width: px2rem(400px);
+    max-width: px2rem(300px);
 }
 .PenguinProject-primary {
     max-width: px2rem(620px);
@@ -68,11 +68,16 @@
         }
     }
 }
-@media screen and (min-height: px2em(900px)) and (min-width: px2em(800px)) {
-    .PenguinProject--tall {
-        .PenguinProject-wrapper {
-            min-height: 47vh;
-        }
+@media screen and (min-height: px2em(500px)) and (min-width: px2em(700px)) {
+    .PenguinProject--tall .PenguinProject-wrapper {
+        min-height: 70vh;
+        align-items: center;
+    }
+}
+@media screen and (min-height: px2em(880px)) and (min-width: px2em(700px)) {
+    .PenguinProject--tall .PenguinProject-wrapper {
+        min-height: 47vh;
+        align-items: center;
     }
 }
 @media screen and (min-width: px2em(800px)) {

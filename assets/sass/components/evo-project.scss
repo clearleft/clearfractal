@@ -21,7 +21,7 @@
     margin-top: px2rem(24px);
 }
 .EvoProject-extension {
-    max-width: px2rem(400px);
+    max-width: px2rem(350px);
 }
 .EvoProject-description {
     max-width: px2em(350px);
@@ -132,6 +132,18 @@
         }
     }
 }
+@media screen and (min-height: px2em(500px)) and (min-width: px2em(700px)) {
+    .EvoProject--tall .EvoProject-wrapper {
+        min-height: 70vh;
+        align-items: center;
+    }
+}
+@media screen and (min-height: px2em(880px)) and (min-width: px2em(700px)) {
+    .EvoProject--tall .EvoProject-wrapper {
+        min-height: 47vh;
+        align-items: center;
+    }
+}
 @media screen and (min-width: px2em(820px)) {
     .EvoProject--tall {
         .EvoProject-wrapper {
@@ -142,11 +154,11 @@
         }
     }
 }
-@media screen and (min-width: px2em(950px)) {
+@media screen and (min-height: px2em(880px)) and (min-width: px2em(950px)) {
     .EvoProject--tall {
         background: url(/assets/img/work/evo/evo-mag-stack.png), radial-gradient(42% 45%, #3F3F3F 34%, #333333 45%, #000000 98%);
         background-size: px2rem(600px), cover;
-        background-position: 105% 150%, 0 0;
+        background-position: 100% -60%, 0 0;
         background-repeat: no-repeat;
         .EvoProject-wrapper {
             background-image: none;

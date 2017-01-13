@@ -28,7 +28,7 @@ module.exports = {
         "ch4Title": "Create a new universe.",
         "ch4Link": "How do you bring more than 700 brands together into one website?",
         "ch4LinkUrl": "#",
-        "ch4MainSrc": "/assets/img/work/ch4/sling.png",
+        "ch4MainSrc": "/assets/img/work/ch4/c4-mag-glass.png",
 
         /*Evo project feature*/
         "evoContext": "Evo random house publishing company",
