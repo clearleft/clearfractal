@@ -59,5 +59,12 @@ module.exports = {
             "mastheadModifier": "--arrows Masthead--greenStreak",
             "mastheadImage": true
         }
+    },
+    {
+        "name": "full",
+        "context": {
+            "mastheadModifier": "--full",
+            "mastheadImpact": true,
+        }
     }]
 };

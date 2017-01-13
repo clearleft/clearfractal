@@ -2,6 +2,17 @@
 module.exports = {
     "status": "wip",
     "context": {
+        /*Header*/
+        "primaryNavlinks": "@primary-navigation.primaryNavlinks",
+        "primaryNavModifier": "@primary-navigation--inverted.primaryNavModifier",
+        "logoModifier": "--inverted",
+
+        /*Masthead*/
+        "mastheadTitle": "What can design do for you?",
+        "mastheadModifier": "--full",
+        "mastheadHeadingModifer": "--inverted",
+        "mastheadImpact": true,
+
         "trioItems": "@trio.trioItems",
         "helloHeading": "@hello.helloHeading",
         "helloBody": "@hello.helloBody",
