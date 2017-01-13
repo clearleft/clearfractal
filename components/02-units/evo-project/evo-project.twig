@@ -23,16 +23,17 @@
                 {{evoDescription}}
             </div><!--/.EvoProject-description Lead Bar-->
             {% endif %}
-            
-            {% if evoLogoSrc %}
-            <img class="EvoProject-logo" src="{{evoLogoSrc}}" alt="{{evoLogoAlt}}">
-            {% endif %}
-            
+
             {% if evoLink %}
             <div class="EvoProject-extension">
                 <a class="MegaLink MegaLink--inverted" href="{{evoLinkUrl}}">{{evoLink}}</a>
             </div><!--/.EvoProject-extension-->
             {% endif %}
+            
+            {% if evoLogoSrc %}
+            <img class="EvoProject-logo" src="{{evoLogoSrc}}" alt="{{evoLogoAlt}}">
+            {% endif %}
+            
         </div><!--./.EvoProject-primary-->
 
     </div><!--/.EvoProject-wrapper-->

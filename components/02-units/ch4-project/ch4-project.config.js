@@ -7,7 +7,7 @@ module.exports = {
         "ch4LinkUrl": "#",
         "ch4LogoSrc": false,
         "ch4LogoAlt": false,
-        "ch4MainSrc": "/assets/img/work/ch4/sling.png"
+        "ch4MainSrc": "/assets/img/work/ch4/c4-mag-glass.png"
     },
     "variants": [{
         "name": "Work page listing",
