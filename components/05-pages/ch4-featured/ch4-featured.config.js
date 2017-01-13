@@ -19,7 +19,6 @@ module.exports = {
 
         /*Scene*/
         "metas": "@scene.metas",
-        "sceneModifier": "--shuffle Scene--featured",
         "sceneHeading": "The challenge for the Channel 4 News Room",
         "sceneProse": `
         <p>We had worked with Channel 4 News before, designing their mobile apps and refreshing their website, but this was the biggest challenge yet. 

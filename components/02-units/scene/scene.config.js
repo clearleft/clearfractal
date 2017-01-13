@@ -39,12 +39,6 @@ module.exports = {
     },
 
     "variants": [{
-        "name": "Shuffle",
-        "context": {
-            "sceneModifier": "--shuffle"
-        }
-    },
-    {
         "name": "Featured",
         "context": {
             "sceneModifier": "--featured"
@@ -53,7 +47,7 @@ module.exports = {
     {
         "name": "Wide",
         "context": {
-            "sceneModifier": "--wide"
+            "sceneModifier": "--basic"
         }
     }]
 }

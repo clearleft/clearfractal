@@ -1,7 +1,7 @@
 
 .Metadata {
+    font-family: $font-secondary;
     margin-top: px2rem(8px);
-    -webkit-font-smoothing: antialiased;
     margin: px2rem(16px) px2rem(16px) px2rem(24px) 0;
 }
 .Metadata-heading {
@@ -13,8 +13,8 @@
     margin-bottom: px2rem(4px);
 }
 .Metadata-description {
-    font-family: $font-secondary;
     @include font(14px, 22px);
+    -webkit-font-smoothing: antialiased;
     color: #777777;
     margin: 0;
     -webkit-font-smoothing: antialiased;

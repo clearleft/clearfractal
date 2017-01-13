@@ -8,7 +8,9 @@
         <h2 class="Scene-heading">{{sceneHeading}}</h2>
         <div class="Prose">
             {{sceneProse}}
-            <a class="Anchor" href="#results">Go straight to results &#8595;</a>
         </div>
+        {% if "--basic" not in sceneModifier %}
+        <a class="Anchor" href="#results">Go straight to results &#8595;</a>
+        {% endif %}
     </div><!--/.Scene-main-->
 </div><!--/.Scene-->

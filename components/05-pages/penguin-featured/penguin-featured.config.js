@@ -32,7 +32,6 @@ module.exports = {
 
         /*Scene*/
         "metas": "@scene.metas",
-        "sceneModifier": "--shuffle Scene--featured",
         "sceneProse": `
         <p>As formerly separate companies, Penguin and Random House each had their own websites. Then they merged. Collectively, the two brands managed over 700 other websites, 
         distributed across 6 publishing houses and over 40 imprints. Each website individually focussed on authors, books, series, and characters. 

@@ -25,7 +25,6 @@ module.exports = {
 
         /*Scene*/
         "metas": "@scene.metas",
-        "sceneModifier": "--shuffle Scene--featured",
         "sceneHeading": "The challenge for Evo Magazine",
         "sceneProse": `
             <p>Evo’s existing app was well-regarded and had a loyal fan base, but its traditional, page-turn format wasn’t allowing that fan base to grow. 
