@@ -2,7 +2,7 @@ module.exports = {
     "status": "wip",
     "context": {
         "evoContext": "Evo random house publishing company",
-        "evoTitle": "Create a new universe.",
+        "evoTitle": "Inject Energy.",
         "evoLink": "How do you bring more than 700 brands together into one website?",
         "evoLinkUrl": "#",
         "evoLogoSrc": false,

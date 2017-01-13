@@ -29,19 +29,19 @@
     margin-top: px2rem(32px);
     margin-bottom: px2rem(32px);
 }
-@media screen and (min-width: px2em(520px)) {
+@media screen and (min-width: px2em(550px)) {
     .PenguinProject-title {
         letter-spacing: px2rem(-1.45px);
         @include font(72px, 77px);
     }
 }
-@media screen and (min-width: px2em(700px)) {
+@media screen and (min-width: px2em(500px)) {
     .PenguinProject-wrapper {
         padding: px2rem(32px) px2rem(24px) px2rem(48px) px2rem(24px);
         background-image: url(/assets/img/work/penguin/penguin.png);
         background-repeat: no-repeat;
-        background-position: 150% 100%;
-        background-size: px2rem(380px);
+        background-position: 130% 100%;
+        background-size: px2rem(250px);
     }
     .PenguinProject-primary {
         width: 70%;
@@ -54,26 +54,19 @@
 }
 
 /*--tall variation*/
-@media screen and (min-height: px2em(500px)) and (min-width: px2em(700px)) {
-    .PenguinProject--tall {
-        .PenguinProject-wrapper {
-            min-height: 75vh;
-        }
-    }
-}
-@media screen and (min-height: px2em(900px)) and (min-width: px2em(700px)) {
-    .EvoProject--tall {
-        .EvoProject-wrapper {
-            min-height: 55vh;
-        }
-    }
-}
 @media screen and (min-width: px2em(700px)) {
     .PenguinProject--tall {
         .PenguinProject-wrapper {
             display: flex;
             align-items: center;
             background-size: px2rem(460px);
+        }
+    }
+}
+@media screen and (min-height: px2em(900px)) and (min-width: px2em(800px)) {
+    .PenguinProject--tall {
+        .PenguinProject-wrapper {
+            min-height: 47vh;
         }
     }
 }

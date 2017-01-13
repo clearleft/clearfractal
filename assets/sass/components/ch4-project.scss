@@ -85,17 +85,10 @@
         }
     }
 }
-@media screen and (min-height: px2em(500px)) and (min-width: px2em(700px)) {
-    .Ch4Project--tall .Ch4Project-wrapper {
-        min-height: 75vh;
-        align-items: center;
-    }
-}
 @media screen and (min-height: px2em(900px)) and (min-width: px2em(700px)) {
-    .EvoProject--tall {
-        .EvoProject-wrapper {
-            min-height: 55vh;
-        }
+    .Ch4Project--tall .Ch4Project-wrapper {
+        min-height: 40vh;
+        align-items: center;
     }
 }
 @media screen and (min-width: px2em(700px)) {

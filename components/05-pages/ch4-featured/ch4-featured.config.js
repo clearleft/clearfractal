@@ -59,9 +59,6 @@ module.exports = {
         "quoteText": "@quote.quoteText",
         "quoteAuthor": "@quote.quoteAuthor",
         
-        /*Display case*/
-        "displayCaseModifier": "@display-case--channel-4.displayCaseModifier",
-        
         /*Trio*/
         "trioItems": [
             { "heading": "Change in behaviour.", "imageSrc": "/assets/img/icons/heart-speech.svg", "text": "Radically improve existing products and services, or create them from scratch. Optimise a key interaction to get big results, give your website a new lease of life, or work with the team to conceive, create and build on an entirely new idea." },

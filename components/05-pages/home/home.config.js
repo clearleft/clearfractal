@@ -21,10 +21,10 @@ module.exports = {
 
         /*Evo Project feature*/
         "evoContext": "Evo random house publishing company",
-        "evoTitle": "Create a new universe.",
+        "evoTitle": "@evo-project.evoTitle",
         "evoLink": "How do you bring more than 700 brands together into one website?",
         "evoLinkUrl": "#",
-        "evoMainSrc": "@evoProject.evoMainSrc",
+        "evoMainSrc": "/assets/img/work/evo/evo-mag-stack.png",
 
         /*Footer*/
         "footerLinks": "@site-footer.footerLinks",
