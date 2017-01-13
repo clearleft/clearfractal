@@ -16,7 +16,7 @@ module.exports = {
         /*Page lead*/
         "leadText": "@lead.leadText",
         "pageLeadSecondary": true,
-        "pageLeadMofifier": "--pinch",
+        "pageLeadModifier": "--pinch",
         listItems: [
         {
             "listItem": `<a href="#">11 yrs old and growing. What’s our story?</a>`

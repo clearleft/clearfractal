@@ -21,6 +21,18 @@
             <div class="Work-featured">
                 {% include '@ch4-project' %}
             </div>
+
+            <div class="Work-grid">
+            {% for post in posts %}
+                <div class="Work-gridItem">
+                    {% include '@card' with { cardTitle: post.cardTitle, cardModifier: '--vibrant' } %}
+                </div>
+                {% endfor %}
+            </div><!--/.Work-grid-->
+            
+            <div class="Work-featured">
+                {% include '@evo-project' %}
+            </div>
         </div>
 
         {% include '@megalink-banner' %}

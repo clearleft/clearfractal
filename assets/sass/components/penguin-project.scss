@@ -61,6 +61,13 @@
         }
     }
 }
+@media screen and (min-height: px2em(900px)) and (min-width: px2em(700px)) {
+    .EvoProject--tall {
+        .EvoProject-wrapper {
+            min-height: 55vh;
+        }
+    }
+}
 @media screen and (min-width: px2em(700px)) {
     .PenguinProject--tall {
         .PenguinProject-wrapper {
@@ -103,7 +110,6 @@
 @media screen and (min-height: px2em(400px)) and (min-width: px2em(920px)) {
     .PenguinProject--stage {
         .PenguinProject-wrapper {
-            min-height: 80vh;
             background-size: px2rem(600px);
         }
     }
@@ -111,11 +117,62 @@
 @media screen and (min-width: px2em(1200px)) {
     .PenguinProject--stage {
         background-image: url(/assets/img/work/penguin/penguin.png), url(/assets/img/work/penguin/orange-bg.jpg);
-        background-position: 120% 100%, 0 0;
+        background-position: 100% 100%, 0 0;
         background-size: px2rem(700px), cover;
         background-repeat: no-repeat;
         .PenguinProject-wrapper {
             background-image: none;
         }
+    }
+}
+
+/*Dipsplay case*/
+.PenguinDisplayCase {
+    position: relative;
+    background-color: #FCF9F2;
+    box-shadow: 0 -2px 0 0 #E5DECF, 0 2px 0 0 #E5DECF;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.PenguinDisplayCase-wrapper {
+    margin: 0 auto;
+    margin-top: 18rem;
+    max-width: 53rem;
+    background-repeat: no-repeat;
+    background-position: 100% -1px;
+    padding-bottom: 1rem;
+}
+.PenguinDisplayCase-chimney {
+    margin-top: -17rem;
+    margin-bottom: px2rem(10px);
+}
+.PenguinDisplayFont {
+    padding: px2rem(20px);
+    background-color: #ffffff;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
+    border-radius: 10px;
+    width: 47%;
+    display: inline-block;
+    float: left;
+    margin-bottom: px2rem(40px);
+    margin-top: px2rem(20px);
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: px2rem(10px);
+        max-height: px2rem(100px);
+    }
+    &--left {
+        margin-right: 1.5%;
+    }
+    &--right {
+        margin-left: 1.5%;
+    }
+}
+@media screen and (min-width: px2em(600px)) {
+    .PenguinDisplayCase-wrapper {
+        margin-top: 20rem;
     }
 }
