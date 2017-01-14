@@ -23,6 +23,7 @@
     }
 }
 
+/* Positioning and display styles should only be applied when JavaScript is available */
 .hasJS .Selector {
     position: relative;
 }
