@@ -25,6 +25,14 @@ module.exports = {
                     "listItem": `<a href="#">11 yrs old and growing. What’s our story?</a>`
                 }]
             }
+        },
+        {
+            "name": "image",
+            "context": {
+                "pageLeadModifier": "--image",
+                "pageLeadAlt": "Ideas",
+                "pageLeadSrc": "/assets/img/blog-header.jpg"
+            }
         }
     ]
 };

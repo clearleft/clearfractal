@@ -18,7 +18,17 @@ module.exports = {
 
         /*Scene*/
         "metas": "@scene.metas",
-        "sceneModifier": "@scene--shuffle.sceneModifier",
+        "sceneHeading": "The Project",
+        "sceneModifier": "--basic",
+        "sceneProse": `<p>One year later, what the Council ended up with was a fundamentally changed, fully
+        responsive website, redesigned from the inside outwards. It now puts the needs of residents
+        first (with a vastly improved satisfaction rating), while also making life easier for the 100+ 
+        council staff who publish and edit the website.</p>
+        <h2>The Method</h2>
+        <ul>
+        <li>Planning a pilot scheme</li>
+        <li>Extensive user research including public workshops with residents and council experts</li>
+        `,
         
         /*Content*/
         "imageBlockSrc": "@image-block.imageBlockSrc",

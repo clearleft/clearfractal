@@ -5,6 +5,11 @@
     margin-top: px2rem(8px);
     -webkit-font-smoothing: antialiased;
 }
+.Heading--impact {
+    @include font(48px, 40px);
+    font-family: $font-statement;
+    letter-spacing: -1.95px;
+}
 .Heading--main {
     @include font(36px, 43px);
     font-family: $font-statement;
@@ -38,6 +43,12 @@
     color: #ffffff;
 }
 @media screen and (min-width: px2em(300px)) {
+    .Heading--impact {
+        font-size: calc( 60px + (190 - 60) * ( (100vw - 300px) / ( 1200 - 300) ));
+        // Fluid font size ranging from 60 to 190 pixels
+        // if the window is more than 300 pixels wide
+        // and the window is less than 1200 pixels wide
+    }
     .Heading--main {
         @include font(60px, 54px);
     }
@@ -66,5 +77,10 @@
     .Heading--body {
         @include font(22px, 28px);
         font-weight: 700;
+    }
+}
+@media screen and (min-width: px2em(1200px)) {
+    .Heading--impact {
+        @include font(190px, 160px);
     }
 }

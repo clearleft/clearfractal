@@ -4,6 +4,7 @@ module.exports = {
     "context": {
         "cardTitle": "Article Title Goes here",
         "cardCategory": "Opinion",
+        "cardUrl": "card.url",
         "cardDescription": "In my previous article, I wrote about some of the misconceptions with “agile” that I see in organisations."
     },
     "variants": [{

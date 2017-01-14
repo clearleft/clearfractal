@@ -1,3 +1,6 @@
+.EventCard {
+    margin-bottom: px2rem(16px);
+}
 .EventCard-context {
     margin-top: px2rem(8px);
     @include font(14px, 17px);
@@ -5,27 +8,24 @@
     color: $dark-grey;
     font-weight: 700;
     letter-spacing: 1px;
+    font-family: $font-secondary;
 }
 .EventCard-image {
     margin-bottom: px2rem(20px);
     margin-top: px2rem(20px);
 }
-.EventCard-links {
-    display: flex;
-    margin-top: px2rem(16px);
-    margin-bottom: px2rem(16px);
-}
 .EventCard-list {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: px2rem(10px);
+    margin: 0;
 }
 .EventCard-listItem {
     display: inline-block;
-    margin-right: px2rem(8px);
-    @include font(14px);
     list-style: none;
 }
 .EventCard--inverted * {
     color: #fff;
+}
+.EventsCard-link {
+    margin-top: px2rem(16px);
+    margin-bottom: px2rem(16px);
+    display: inline-block;
 }

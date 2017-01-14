@@ -26,8 +26,20 @@
         margin-bottom: px2rem(-100px);
     }
 }
+.PageLead--image .PageLead-primary {
+    width: auto;
+    flex-basis: auto;
+    margin: px2rem(-48px) auto px2rem(24px);
+}
+
 .PageLead-image {
     border: $light-grey solid 0.5px;
+}
+@media screen and (min-width: px2em(700px)) {
+    .PageLead--image .PageLead-primary {
+        margin-top: px2rem(-90px);
+        margin-bottom: 0;
+    }
 }
 @media screen and (min-width: px2em(800px)) {
     .PageLead {

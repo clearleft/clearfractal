@@ -29,9 +29,13 @@
 }
 .Card-title {
     font-family: $font-secondary;
-    @include font(42px, 54px);
+    @include font(32px, 44px);
     font-weight: 700;
     margin: 0 0 px2rem(24px) 0;
+}
+.Card-link {
+    border-bottom: none;
+    color: $jet-grey;
 }
 .Card-category {
     font-family: $font-secondary;
@@ -49,4 +53,9 @@
 }
 .Card--image .Card-author {
     max-width: px2rem(97px);
+}
+@media screen and (min-width: px2em(700px)) {
+    .Card-title {
+        @include font(42px, 54px);
+    }
 }

@@ -30,6 +30,7 @@
     .Chapter {
         display: flex;
         flex-wrap: wrap;
+        align-items: flex-start;
         padding: px2rem(24px);
     }
     .Chapter-title {
@@ -37,6 +38,12 @@
     }
     .Chapter-space {
         width: 50%;
+    }
+    .Chapter:nth-child(odd) .Chapter-space--primary {
+        order: 2;
+    }
+    .Chapter-image {
+        padding: px2rem(8px) px2rem(16px);
     }
 }
 @media screen and (min-width: px2em(800px)) {
@@ -55,11 +62,7 @@
     .Chapter-label {
         padding: px2rem(24px) 0 px2rem(16px) px2rem(16px);
     }
-    .Chapter-space--secondary {
-        display: flex;
-        justify-content: center;
-    }
-    .Chapter:nth-child(odd) .Chapter-space--primary {
-        order: 2;
+    .Chapter-image {
+        padding: 0;
     }
 }

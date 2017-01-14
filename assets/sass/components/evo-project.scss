@@ -190,8 +190,12 @@
             background-position: 160% 120%;
             background-repeat: no-repeat;
             background-size: px2rem(400px);
+            padding-top: px2rem(50px);
         }
-        
+        .EvoProject-title {
+            padding-top: px2rem(30px);
+            padding-bottom: px2rem(20px);
+        }
     }
 }
 @media screen and (min-width: px2em(720px)) {
@@ -246,6 +250,7 @@
         background-repeat: no-repeat;
         .EvoProject-wrapper {
             background-image: none;
+            padding-bottom: px2rem(120px);
         }
     }
 }
@@ -271,5 +276,51 @@
     .EvoProject--stage {
         background-size: px2rem(770px), cover;
         background-position: 80% 260%, 0 0;
+    }
+}
+
+/*Display case*/
+.EvoDisplayCase {
+    position: relative;
+    background-color: #EAE5D9;
+    .TextBlock {
+        max-width: px2rem(620px);
+    }
+}
+.EvoDisplayCase-wrapper {
+    margin: 0 auto;
+    margin-top: 6rem;
+    max-width: 65rem;
+    padding-bottom: px2rem(16px);
+}
+.EvoDisplayCase-chimney {
+    margin-top: -5rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media screen and (min-width: px2em(600px)) {
+    .EvoDisplayCase-wrapper {
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .EvoDisplayCase-chimney {
+        margin-top: -8rem;
+    }
+}
+@media screen and (min-width: px2em(900px)) {
+    .EvoDisplayCase-wrapper {
+        margin-top: 18rem;
+        padding-bottom: px2rem(64px);
+    }
+    .EvoDisplayCase-chimney {
+        margin-top: -16rem;
+        max-width: px2rem(800px);
+    }
+    .EvoDisplayCase .ImageBlock {
+        margin-top: px2rem(20px);
+        margin-bottom: px2rem(20px);
     }
 }
