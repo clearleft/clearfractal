@@ -39,7 +39,13 @@ module.exports = {
             "eventCardUrl": "",
             "eventCardLink": "Visit UX London",
             "eventCardDescription": "<p>We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.</p>",
-            "eventCardListTitle": "Visit past versions:"
+            "eventCardListTitle": "Visit past versions:",
+            "pastVersions": [
+                { "item": "2016", "itemUrl": "#" },
+                { "item": "2015", "itemUrl": "#" },
+                { "item": "2014", "itemUrl": "#" },
+                { "item": "2013", "itemUrl": "#" }
+            ],
         },
         {
             "src": "/assets/img/events/leading-design-audience.jpg",
@@ -50,7 +56,13 @@ module.exports = {
             "eventCardUrl": "",
             "eventCardLink": "Visit Leading Design",
             "eventCardDescription": "<p>We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.</p>",
-            "eventCardListTitle": "Visit past versions:"
+            "eventCardListTitle": "Visit past versions:",
+            "pastVersions": [
+                { "item": "2016", "itemUrl": "#" },
+                { "item": "2015", "itemUrl": "#" },
+                { "item": "2014", "itemUrl": "#" },
+                { "item": "2013", "itemUrl": "#" }
+            ],
         }],
 
         "pastEvents": [
