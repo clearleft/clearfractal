@@ -1,5 +1,5 @@
 <div class="Masthead{% if mastheadModifier %} Masthead{{mastheadModifier}}{% endif %}">
-    
+
     {% if "--arrows" in mastheadModifier or "--combo" in mastheadModifier %}
 
     <div class="Masthead-secondary">
@@ -8,27 +8,35 @@
 
     {% endif %}
 
+    {% if mastheadImpact %}
+
+    <h1 class="Heading Heading--impact{% if mastheadHeadingModifer %} Heading{{mastheadHeadingModifer}}{% endif %}">{{mastheadTitle}}</h1>
+
+    {% else %}
+
     <div class="Masthead-primary">
-        
+
         {% if mastheadBreadcrumb %} {% include '@breadcrumb' %}{% endif %}
 
-        {% if mastheadContext %} 
+        {% if mastheadContext %}
         <div class="Masthead-context">
             <p class="Heading Heading--context{% if mastheadHeadingModifer %} Heading{{mastheadHeadingModifer}}{% endif %}">Topic</p>
         </div>
         {% endif %}
-        
+
         <h1 class="Heading{% if '--arrows' in mastheadModifier or '--combo' in mastheadModifier %} Heading--secondary{% else %} Heading--main{% endif %}{% if mastheadHeadingModifer %} Heading{{mastheadHeadingModifer}}{% endif %}">{{mastheadTitle}}</h1>
-        
+
         {% if mastheadSub %}<p class="Masthead-sub Heading Heading--context{% if mastheadHeadingModifer %} Heading{{mastheadHeadingModifer}}{% endif %}">{{mastheadSub}}</p>{% endif %}
-    
+
     </div><!--/.Masthead-primary-->
+
+    {% endif %}
 
     {% if "--combo" in mastheadModifier %}
 
     <div class="Masthead-third">
         {{mastheadThird}}
-    </div><!--/.Masthead-secondary-->
+    </div><!--/.Masthead-third-->
 
     {% endif %}
 
