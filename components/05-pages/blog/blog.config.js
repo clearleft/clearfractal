@@ -17,8 +17,9 @@ module.exports = {
     "context": {
         /*Header*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "mastheadTitle": "Show me every post",
+        "mastheadTitle": "Show me",
         "mastheadModifier": "--chimney",
+        "mastheadHasSelector": true,
 
         /*Featured*/
         "featuredCardTitle": "Jon smells like cabbages",
