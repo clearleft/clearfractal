@@ -1,6 +1,10 @@
 <div class="PageLead {% if pageLeadModifier %}PageLead{{pageLeadModifier}} {% endif %}">
     <div class="PageLead-primary">
+    {% if "--image" in pageLeadModifier %}
+        <img src="{{pageLeadSrc}}" alt="{{pageLeadAlt}}">
+    {% else %}
         {% include '@lead' with {leadModifier: '--wrapper Bar'} %}
+    {% endif %}
     </div>
     {% if pageLeadSecondary %}
     <div class="PageLead-secondary">

@@ -105,9 +105,21 @@
 .Masthead-third {
     padding: 0 px2em(16px) px2em(16px) px2em(16px);
 }
+.Masthead--greenStreak {
+    background-image: url('/assets/img/streaks/streakyblob-green.png');
+    background-repeat: no-repeat;
+    background-size: 160px;
+    background-position: 0 20%;
+}
+.Masthead--blueStreak {
+    background-image: url('/assets/img/streaks/streakyblob-blue.png');
+    background-repeat: no-repeat;
+    background-size: 160px;
+    background-position: 0 20%;
+}
 @media screen and (min-width: px2em(850px)) {
     .Masthead {
-        max-width: px2em(980px);
+        max-width: px2em(930px);
         margin: auto;
         display: flex;
         flex-wrap: wrap;
@@ -121,13 +133,10 @@
         order: 2;
         width: 28%;
     }
+    .Masthead--blueStreak,
     .Masthead--greenStreak {
-        background-image: url('/assets/img/streakyblob-green.png');
-        background-repeat: no-repeat;
-    }
-    .Masthead--blueStreak {
-        background-image: url('/assets/img/streakyblob-blue.png');
-        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: 0 0;
     }
 }
 /*Masthead--arrows*/
