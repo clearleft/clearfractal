@@ -317,6 +317,9 @@
     background-image: url(/assets/img/work/ch4/display-case/logo-background.png);
     background-repeat: no-repeat;
     background-position: bottom right;
+    .TextBlock {
+        max-width: px2rem(620px);
+    }
 }
 .Ch4DisplayCase-wrapper {
     margin: 0 auto;

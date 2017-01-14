@@ -122,7 +122,11 @@
         width: 28%;
     }
     .Masthead--greenStreak {
-        background-image: url('/assets/img/streakyblob.png');
+        background-image: url('/assets/img/streakyblob-green.png');
+        background-repeat: no-repeat;
+    }
+    .Masthead--blueStreak {
+        background-image: url('/assets/img/streakyblob-blue.png');
         background-repeat: no-repeat;
     }
 }

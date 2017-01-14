@@ -283,6 +283,9 @@
 .EvoDisplayCase {
     position: relative;
     background-color: #EAE5D9;
+    .TextBlock {
+        max-width: px2rem(620px);
+    }
 }
 .EvoDisplayCase-wrapper {
     margin: 0 auto;
