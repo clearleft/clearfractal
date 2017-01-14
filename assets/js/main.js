@@ -9,21 +9,21 @@ Show and hide content with aria-controls buttons
     }
     var toggleID;
     var togglecontent;
-    var target;
+    var trigger;
     function toggle(ev) {
         ev = ev || win.event;
-        target = ev.target;
-        if (target.hasAttribute('aria-controls')) {
-            toggleID = target.getAttribute('aria-controls');
+        trigger = ev.target;
+        if (trigger.hasAttribute('aria-controls')) {
+            toggleID = trigger.getAttribute('aria-controls');
             if (doc.getElementById(toggleID)) {
                 ev.preventDefault();
                 togglecontent = doc.getElementById(toggleID);
                 if (togglecontent.getAttribute('aria-hidden') == 'true') {
                     togglecontent.setAttribute('aria-hidden', 'false');
-                    target.setAttribute('aria-expanded', 'true');
+                    trigger.setAttribute('aria-expanded', 'true');
                 } else {
                     togglecontent.setAttribute('aria-hidden', 'true');
-                    target.setAttribute('aria-expanded', 'false');
+                    trigger.setAttribute('aria-expanded', 'false');
                 }
             }
         }
