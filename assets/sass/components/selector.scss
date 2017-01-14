@@ -5,6 +5,22 @@
     &:focus {
         color: $mid-grey;
     }
+    &::after {
+        content: '';
+        display: inline-block;
+        margin-left: px2rem(21px);
+        max-width: px2rem(21px);
+        width: 1em;
+        height: 1em;
+        background-image: url('/assets/img/icons/icon-select-down.svg');
+        background-repeat: no-repeat;
+        background-position: 0 75%;
+    }
+}
+.Selector-trigger[aria-expanded="true"] {
+    &::after {
+        background-image: url('/assets/img/icons/icon-select-up.svg');
+    }
 }
 
 .hasJS .Selector {
