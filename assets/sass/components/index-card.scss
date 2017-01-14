@@ -11,6 +11,7 @@
 .IndexCard-image {
     display: block;
     max-width: 100%;
+    min-height: px2rem(50px);
 }
 .IndexCard-name {
     @include font(22px, 17px);

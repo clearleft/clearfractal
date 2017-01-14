@@ -97,7 +97,7 @@
 @media screen and (min-height: px2em(400px)) and (min-width: px2em(700px)) {
     .PenguinProject--stage {
         .PenguinProject-wrapper {
-            min-height: 60vh;
+            min-height: 58vh;
             padding: px2rem(32px) px2rem(24px) 0 px2rem(24px);
         }
     }
@@ -114,6 +114,7 @@
     .PenguinProject--stage {
         .PenguinProject-wrapper {
             background-size: px2rem(600px);
+            padding-bottom: px2rem(40px);
         }
     }
 }
@@ -136,6 +137,9 @@
     box-shadow: 0 -2px 0 0 #E5DECF, 0 2px 0 0 #E5DECF;
     background-repeat: no-repeat;
     background-position: bottom right;
+    .TextBlock {
+        max-width: px2rem(620px);
+    }
 }
 .PenguinDisplayCase-wrapper {
     margin: 0 auto;
@@ -177,5 +181,6 @@
 @media screen and (min-width: px2em(600px)) {
     .PenguinDisplayCase-wrapper {
         margin-top: 20rem;
+        padding-bottom: px2rem(40px);
     }
 }

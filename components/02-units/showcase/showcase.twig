@@ -1,5 +1,5 @@
 
-<div class="Showcase{% if showcaseModifier %} Showcase{{showcaseModifier}}{% endif %}">
+<div class="Showcase{% if showcaseModifier %} Showcase{{showcaseModifier}}{% endif %}" {% if showcaseMiscStyles %}style="{{showcaseMiscStyles}}"{% endif %}>
     {% if showcaseModifier != "--featuredEvo Showcase--workEvo" %}
     {% include '@site-header' %}
     {% endif %}

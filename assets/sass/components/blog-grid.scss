@@ -8,7 +8,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     padding: px2rem(16px);
+    max-width: px2em(900px);
 }
 
 @media screen and (min-width: px2em(700px)) {

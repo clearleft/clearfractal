@@ -8,6 +8,14 @@ module.exports = {
         "leadModifier": "--wrapper Bar",
         "mapSrc": "@map.mapSrc",
         "mapSrcAlt": "@map.mapSrcAlt",
+
+        /*Contact info*/
+        "contactStreet": "68 Middle Street",
+        "contactTown": "Brighton",
+        "contactPostcode": "BN1 1AL",
+        "contactEmail": "info@clearleft.com",
+        "contactTel": "+44 (0)845 838 6163",
+        "contactVcardLink": "#",
         
         /*Footer*/
         "footerLinks": "@site-footer.footerLinks",

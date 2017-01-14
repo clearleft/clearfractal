@@ -19,12 +19,21 @@ module.exports = {
 
         /*Scene*/
         "metas": "@scene.metas",
-        "sceneModifier": "--shuffle Scene--featured",
+        "sceneHeading": "The challenge for the Channel 4 News Room",
+        "sceneProse": `
+        <p>We had worked with Channel 4 News before, designing their mobile apps and refreshing their website, but this was the biggest challenge yet. 
+        We needed to find tiny ways to make big changes to a vast eco-system of content production to make it more suitable for mobile consumption. 
+        Not only did the new website need to adapt to many devices and screen sizes, it needed to adapt to the fast-paced way the news itself gets 
+        produced.</p>
+        <p>Channel 4 and ITN work together to deliver the news, which means there are lots of people involved at each stage. They have an enormous responsibility to the 
+        public but their online strategy didn’t reflect the many ways in which news is captured and consumed. The Channel 4 news team have a passion 
+        for the power of journalism, so together we set out to design a way to convey that passion on the web.</p>
+        `,
 
         /*Ch4 Project feature*/
         "ch4Modifier": "--stage",
         "ch4Context": false,
-        "ch4Title": "Create a new universe.",
+        "ch4Title": "Focus on the intelligent story.",
         "ch4MainSrc": "/assets/img/work/ch4/c4-mag-glass.png",
         "ch4Description": "How could our small team make any impact on the giant eco-system of content in Channel 4’s News Room? This is a story of how small changes make a big difference.",
         "ch4LogoSrc": "/assets/img/work/ch4/ch4-logo.svg",
