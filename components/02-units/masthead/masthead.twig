@@ -26,7 +26,7 @@
 
         <h1 class="Heading{% if '--arrows' in mastheadModifier or '--combo' in mastheadModifier %} Heading--secondary{% else %} Heading--main{% endif %}{% if mastheadHeadingModifer %} Heading{{mastheadHeadingModifer}}{% endif %}">{{mastheadTitle}}</h1>
 
-        {% if mastheadHasSelector %}{% include '@selector--posts' %}{% endif %}
+        {% if mastheadHasSelector %}{% include '@selector--categories' %}{% endif %}
 
         {% if mastheadSub %}<p class="Masthead-sub Heading Heading--context{% if mastheadHeadingModifer %} Heading{{mastheadHeadingModifer}}{% endif %}">{{mastheadSub}}</p>{% endif %}
 

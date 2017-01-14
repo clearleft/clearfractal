@@ -7,9 +7,9 @@ module.exports = {
         "targetContent": "<p>Target content.</p>"
     },
     "variants": [{
-        "name": "posts",
+        "name": "categories",
         "context": {
-            "selectorID": "typesofpost",
+            "selectorID": "categories",
             "triggerContent": "all posts",
             "triggerClass": "Heading Heading--main",
             "targetClass": "Container BgGreen inverted",
