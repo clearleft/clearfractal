@@ -1,0 +1,10 @@
+<div class="Selector">
+    <a aria-controls="{{ selectorID }}" aria-expanded="false" class="Selector-trigger{% if triggerClass %} {{ triggerClass }}{% endif %}" href="#{{ selectorID }}">{{ triggerContent }}</a>
+    <div aria-hidden="true" class="Selector-target{% if targetClass %} {{ targetClass }}{% endif %}" id="{{ selectorID }}">
+{% if listContext %}
+{% include '@link-list' with listContext %}
+{% else %}
+{{ targetContent }}
+{% endif %}
+    </div><!--/.Selector-target-->
+</div><!--/.Selector-->
