@@ -20,6 +20,7 @@ module.exports = {
         "nextPrev": true,
 
         /*Lead*/
+        "leadModifier": "@team-member.leadModifier",
         "leadText": "Andy has been involved in digital in one form or another since 1999. Originally a front-end developer and visual designer, he naturally migrated towards the world of UX with a covert desire to seed the importance of design (with a big D) earlier in the conception and planning of projects.",
         "openContext": "@card.openContext",
         "cardTitle": "@card.cardTitle",

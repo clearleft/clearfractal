@@ -9,11 +9,12 @@
     </div>
 
     <div class="BlogArticle">
-        <div class="BlogArticle-intro Lead Lead--wrapper Bar">
-            {{pageLead}}
-        </div>
-        
+        <div class="BlogArticle-intro">
+            {% include '@lead' %}
+        </div><!--/.BlogArticle-intro-->
+
         {% include '@text-block' %}
+
         {% include '@text-block' with {textBlockModifier: ''} %}
 
     </div>

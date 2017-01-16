@@ -13,6 +13,8 @@ module.exports = {
         "mastheadBreadcrumb": true,
         "mastheadModifier": "--arrows Masthead--greenStreak Masthead--chimney",
         "mastheadImage": true,
+        "leadModifier": "--wrapper Bar Bar--green",
+        "leadText": "@lead.leadText",
 
         /*Intro*/
         "textBlockModifier": "--author",

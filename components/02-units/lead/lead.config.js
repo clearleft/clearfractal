@@ -2,7 +2,8 @@
 module.exports = {
     "status": "wip",
     "context": {
-        "leadText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sapiente molestiae sed? Consectetur illo repellat dolorum assumenda, voluptatum explicabo architecto?"
+        "leadText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sapiente molestiae sed? Consectetur illo repellat dolorum assumenda, voluptatum explicabo architecto?",
+        "leadModifier": false
     },
     "variants": [
     {

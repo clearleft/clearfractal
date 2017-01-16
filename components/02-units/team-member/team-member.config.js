@@ -4,6 +4,7 @@ module.exports = {
     "context": {
         /*About person*/
         "leadText": "@lead.leadText",
+        "leadModifier": "--wrapper Bar Bar--yellow",
         "personIntroLeft": `
         <p>Before joining Clearleft he worked as a freelance Experience Design Consultant helping Whitbread shape the service design of Hub hotels.</p>
         <p>Prior to that Andy’s career at POSSIBLE and Fortune Cookie saw him providing both strategic UX leadership and hands-on human-centred design skills across a broad range of clients such as British Gas, Pearson, UEFA, Legal &amp; General, Camden Council, Royal Horticultural Society (RHS) and Royal Institution of Chartered Surveyors (RICS).</p>

@@ -6,3 +6,25 @@
     height: px2rem(10px);
     background-color: currentColor;
 }
+/*Bar colours*/
+.Bar--inverted:before {
+    background-color: #ffffff;
+}
+.Bar--purple:before {
+    background-color: $brand-plum;
+}
+.Bar--red:before {
+    background-color: $clearleft-red;
+}
+.Bar--blue:before {
+    background-color: $mid-blue;
+}
+.Bar--yellow:before {
+    background-color: $yellow;
+}
+.Bar--lightBlue:before {
+    background-color: $light-blue;
+}
+.Bar--green:before {
+    background-color: $brand-green;
+}
