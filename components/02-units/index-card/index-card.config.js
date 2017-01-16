@@ -8,7 +8,8 @@ module.exports = {
     "context": {
         "imageSrc": "/assets/img/team/james-g.jpg",
         "indexCardName": faker.name.findName(),
-        "indexCardInfo": faker.name.jobTitle()
+        "indexCardInfo": faker.name.jobTitle(),
+        "indexCardUrl": "#"
     },
     "variants": [
         {
