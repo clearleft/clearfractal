@@ -17,8 +17,38 @@ module.exports = {
     "context": {
         /*Header*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "mastheadTitle": "Show me every post",
+        "mastheadTitle": "Show me",
         "mastheadModifier": "--chimney",
+        "mastheadHasSelector": true,
+        "selectorID": "categories",
+        "triggerContent": "all posts",
+        "triggerClass": "Heading Heading--main",
+        "targetClass": "Container BgGreen",
+        "listContext": {
+            "listClass": "",
+            "listItemClass": "Heading Heading--secondary",
+            "linkClass": "",
+            "listItems": [{
+                "url": "#",
+                "content": "opinions"
+            },
+            {
+                "url": "#",
+                "content": "announcements"
+            },
+            {
+                "url": "#",
+                "content": "podcasts"
+            },
+            {
+                "url": "#",
+                "content": "tiny lessons"
+            },
+            {
+                "url": "#",
+                "content": "all posts"
+            }]
+        },
 
         /*Featured*/
         "featuredCardTitle": "Jon smells like cabbages",

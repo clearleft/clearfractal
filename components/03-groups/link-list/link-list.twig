@@ -1,0 +1,7 @@
+<ul class="List{% if listClass %} {{ listClass }}{% endif %}">
+{% for item in listItems %}
+<li class="List-item{% if listItemClass %} {{ listItemClass }}{% endif %}">
+<a{% if linkClass %} class="{{ linkClass }}"{% endif%} href="{{ item.url }}">{{ item.content }}</a>
+</li>
+{% endfor %}
+</ul>

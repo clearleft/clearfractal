@@ -1,0 +1,38 @@
+.Selector-trigger {
+    border-bottom: none;
+    color: $light-grey;
+    &:hover,
+    &:focus {
+        color: $mid-grey;
+    }
+    &::after {
+        content: '';
+        display: inline-block;
+        margin-left: px2rem(21px);
+        max-width: px2rem(21px);
+        width: 1em;
+        height: 1em;
+        background-image: url('/assets/img/icons/icon-select-down.svg');
+        background-repeat: no-repeat;
+        background-position: 0 75%;
+    }
+}
+.Selector-trigger[aria-expanded="true"] {
+    &::after {
+        background-image: url('/assets/img/icons/icon-select-up.svg');
+    }
+}
+
+/* Positioning and display styles should only be applied when JavaScript is available */
+.hasJS .Selector {
+    position: relative;
+}
+.hasJS .Selector-target {
+    position: absolute;
+}
+.hasJS .Selector-target[aria-hidden="true"] {
+    display: none;
+}
+.hasJS .Selector-target[aria-hidden="false"] {
+    display: block;
+}
