@@ -9,6 +9,10 @@
     @include font(32px, 36px);
     margin: 0 0 px2rem(18px) 0;
 }
+.FeaturedCard-link {
+    color: inherit;
+    border-bottom: none;
+}
 .FeaturedCard-category {
     font-family: $font-secondary;
     @include font(14px, 17px);
