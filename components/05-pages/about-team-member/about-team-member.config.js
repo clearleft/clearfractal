@@ -8,6 +8,8 @@ module.exports = {
     "context": {
         /*Header and masthead*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
+        "primaryNavModifier": "--yellow",
+        "logoModifier": "--yellow",
         "mastheadSecondary": "true",
         "mastheadModifier": "--chimney Masthead--combo",
         "mastheadTitle": "Andy Thornton",

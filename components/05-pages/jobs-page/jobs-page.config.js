@@ -3,8 +3,8 @@ module.exports = {
     "context": {
         /*Header and masthead*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "primaryNavModifier": "@primary-navigation--inverted.primaryNavModifier",
-        "logoModifier": "--inverted",
+        "primaryNavModifier": "--inverted PrimaryNavigation--lightBlue",
+        "logoModifier": "--inverted Logo--lightBlue",
         "mastheadBreadcrumb": true,
         "breadcrumbModifier": "--inverted",
         "segmentOne": "About us",

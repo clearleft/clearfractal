@@ -12,6 +12,8 @@ module.exports = {
     "status": "wip",
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
+        "primaryNavModifier": "--lightBlue",
+        "logoModifier": "--lightBlue",
         "mastheadTitle": "Advancing the practice of design",
         "mastheadModifier": "--chimney",
         

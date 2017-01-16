@@ -13,8 +13,8 @@ module.exports = {
 
         /*Header*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "primaryNavModifier": "@primary-navigation--inverted.primaryNavModifier",
-        "logoModifier": "--inverted",
+        "primaryNavModifier": "--inverted PrimaryNavigation--lightBlue",
+        "logoModifier": "--inverted Logo--lightBlue",
         "segmentOne": "Our Work",
         "segmentTwo": "Channel 4",
         "breadcrumbModifier": "--inverted",

@@ -2,8 +2,8 @@ module.exports = {
     "status": "wip",
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "primaryNavModifier": "@primary-navigation--inverted.primaryNavModifier",
-        "logoModifier": "--inverted",
+        "primaryNavModifier": "--inverted PrimaryNavigation--red",
+        "logoModifier": "--inverted Logo--red",
         "propositionLogos": "@proposition.propositionLogos",
         "signpostTitle": "@proposition.signpostTitle",
        

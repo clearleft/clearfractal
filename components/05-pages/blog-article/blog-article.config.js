@@ -5,6 +5,8 @@ module.exports = {
     "status": "wip",
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
+        "primaryNavModifier": "--yellow",
+        "logoModifier": "--yellow",
         "mastheadTitle": "UX Design and Service Design are growing ever closer",
         "mastheadSub": "Process, Featured",
         "mastheadSecondary": true,
