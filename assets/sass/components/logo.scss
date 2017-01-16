@@ -1,3 +1,21 @@
 .Logo {
     border-bottom: none;
 }
+.Logo--inverted .Logo-text {
+    fill: #ffffff;
+}
+.Logo--purple .Logo-streak {
+    fill: $brand-plum;
+}
+.Logo--red .Logo-streak {
+    fill: $clearleft-red;
+}
+.Logo--blue .Logo-streak {
+    fill: $mid-blue;
+}
+.Logo--yellow .Logo-streak {
+    fill: $yellow;
+}
+.Logo--lightBlue .Logo-streak {
+    fill: $light-blue;
+}
