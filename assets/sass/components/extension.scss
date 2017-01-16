@@ -14,9 +14,12 @@
     content: "";
     width: px2rem(71px);
     height: px2rem(71px);
-    background: url(/assets/img/lightbulb.svg) no-repeat center;
+    background: url(/assets/img/icons/icon-lightbulb.svg) no-repeat center;
     position: absolute;
     top: px2rem(-32px);
     left: calc(50% - 35px);
     margin-bottom: px2rem(32px);
+}
+.Extension--clock:before {
+    background: url(/assets/img/icons/icon-clock.svg) no-repeat center;
 }
