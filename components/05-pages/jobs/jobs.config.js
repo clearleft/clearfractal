@@ -9,12 +9,13 @@ module.exports = {
         "breadcrumbModifier": "--inverted",
         "segmentOne": "About us",
         "segmentTwo": "Values",
-
-        "mastheadTitle": "An interesting heading about events",
+        "mastheadTitle": "Come and work with us",
         "mastheadHeadingModifer": "--inverted",
 
-        /*Page lead*/
-        "leadText": "@lead.leadText",
+        /*Page lead and header image*/
+        "leadText": `We’re a concentrated mix of design thinkers, inventors, creative technologists and digital champions. 
+        All of the team are client facing and love helping our partners achieve their business goals though beautifully intuitive interfaces.
+        `,
         "pageLeadSecondary": true,
         "pageLeadModifier": "--pinch",
         listItems: [
@@ -27,12 +28,19 @@ module.exports = {
         {
             "listItem": `<a href="#">11 yrs old and growing. What’s our story?</a>`
         }],
+        "headerImageSrc": "/assets/img/jobs/header.jpg",
+        "headerImageAlt": "A desk",
 
+        /*Jobs content*/
+        "textBlockProse": `
+        <p>It’s demanding but rewarding work. You’ll be supported and surrounded by a wonderful group of smart, friendly and engaging people, 
+        and there’s very rarely any working into the evenings and the weekends. We really do want this to be the best place you’ve worked and the best job you’ve had. </p>
+        `,
+
+        /*Banner*/
         "bannerCaption": "Missions Accomplished",
         "bannerHeadline": "Our Past Events",
         "bannerModifier": "--inverted",
-
-        "sceneModifier": "--wide",
 
         /*Footer*/
         "footerLinks": "@site-footer.footerLinks",

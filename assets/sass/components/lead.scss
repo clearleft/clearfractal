@@ -1,6 +1,5 @@
 .Lead {
     @include font(18px, 28px);
-    margin-bottom: px2rem(16px);
 }
 .Lead--wrapper {
     background-color: #FFFFFF;
@@ -13,6 +12,7 @@
     }
     .Lead--wrapper {
         padding: px2rem(32px) px2rem(32px) px2rem(38px) px2rem(32px);
+        margin-bottom: px2rem(16px);
     }
     .Lead-content {
         width: 95%;
