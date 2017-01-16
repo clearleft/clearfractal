@@ -5,6 +5,10 @@
     margin-top: px2rem(8px);
     -webkit-font-smoothing: antialiased;
 }
+a.Heading,
+.Heading a {
+    border-bottom: none;
+}
 .Heading--impact {
     @include font(48px, 40px);
     font-family: $font-statement;
