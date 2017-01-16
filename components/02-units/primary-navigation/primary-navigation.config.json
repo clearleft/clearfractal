@@ -2,18 +2,47 @@
     "status": "wip",
     "context": {
         "primaryNavlinks": [
-            { "title": "About Us", "url": "#", "primaryActive": true },
-            { "title": "Our Work", "url": "#" },
-            { "title": "Our Approach", "url": "#" },
-            { "title": "Our Events", "url": "#" },
-            { "title": "Thinks", "url": "#" },
-            { "title": "Contact", "url": "#" }
+            { "title": "Case Studies", "url": "#", "primaryActive": true },
+            { "title": "Team", "url": "#"  },
+            { "title": "Posts", "url": "#" },
+            { "title": "Events", "url": "#" },
+            { "title": "Contact", "url": "#"}
         ]
     },
     "variants": [{
         "name": "inverted",
         "context": {
             "primaryNavModifier": "--inverted"
+        }
+    },
+    {
+        "name": "purple",
+        "context": {
+            "primaryNavModifier": "--purple"
+        }
+    },
+    {
+        "name": "red",
+        "context": {
+            "primaryNavModifier": "--red"
+        }
+    },
+    {
+        "name": "blue",
+        "context": {
+            "primaryNavModifier": "--blue"
+        }
+    },
+    {
+        "name": "yellow",
+        "context": {
+            "primaryNavModifier": "--yellow"
+        }
+    },
+    {
+        "name": "light blue",
+        "context": {
+            "primaryNavModifier": "--lightBlue"
         }
     }]
 }

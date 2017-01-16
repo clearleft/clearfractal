@@ -37,7 +37,7 @@ module.exports = {
     {
         "name": "context heading",
         "context": {
-            "mastheadContext": true,
+            "mastheadContext": "topic",
             "breadcrumbModifier": false,
             "segmentOne": "About us",
             "segmentTwo": "Values"

@@ -13,7 +13,9 @@
     font-weight: 700;
     border-bottom: none;
     &.is-active {
-        background: url(../img/small-streak.svg) center bottom no-repeat;
+        background-image: url(../img/streaks/nav-streak-green.svg);
+        background-position: bottom center;
+        background-repeat: no-repeat;
     }
 }
 .PrimaryNavigation--inverted {
@@ -21,6 +23,22 @@
     .PrimaryNavigation-link {
         color: #fff;
     }
+}
+/*Streak colours*/
+.PrimaryNavigation--purple .PrimaryNavigation-link.is-active {
+    background-image: url(../img/streaks/nav-streak-purple.svg);
+}
+.PrimaryNavigation--red .PrimaryNavigation-link.is-active {
+    background-image: url(../img/streaks/nav-streak-red.svg);
+}
+.PrimaryNavigation--blue .PrimaryNavigation-link.is-active {
+    background-image: url(../img/streaks/nav-streak-blue.svg);
+}
+.PrimaryNavigation--yellow .PrimaryNavigation-link.is-active {
+    background-image: url(../img/streaks/nav-streak-yellow.svg);
+}
+.PrimaryNavigation--lightBlue .PrimaryNavigation-link.is-active {
+    background-image: url(../img/streaks/nav-streak-light-blue.svg);
 }
 
 @media only screen and (min-width: px2em(900px)) {

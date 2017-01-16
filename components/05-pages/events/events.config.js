@@ -9,7 +9,6 @@ module.exports = {
        
         /*Masthead*/
         "mastheadHeadingModifer": "--inverted",
-        "mastheadContext": true,
         "mastheadTitle": "Some events title",
         "pageLeadModifier": "--pinch",
         "pageLeadSecondary": true,
