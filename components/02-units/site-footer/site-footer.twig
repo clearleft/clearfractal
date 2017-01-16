@@ -14,7 +14,7 @@
                 </ul><!--/.SiteFooter-navigationLinks-->
                 <ul class="SiteFooter-icons">
                     {% for socialLink in socialLinks %}
-                    <li class="SiteFooter-icon"><a class="SiteFooter-iconLink" href="{{ socialLink.url }}"><img src="{{socialLink.imgSrc}}" alt=""></a></li>
+                    <li class="SiteFooter-icon"><a class="SiteFooter-iconLink" href="{{ socialLink.url }}"><img src="{{socialLink.imgSrc}}" alt="socialLink.imgAlt"></a></li>
                     {% endfor %}
                 </ul><!--/.SiteFooter-icons-->
             </nav>

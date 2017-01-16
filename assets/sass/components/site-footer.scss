@@ -31,9 +31,12 @@
 .SiteFooter-icons {
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
+    margin: 0;
 }
 .SiteFooter-icon {
     list-style: none;
+    padding: px2rem(5px);
     margin-bottom: px2rem(8px);
     margin-right: px2rem(8px);
 }
@@ -67,8 +70,7 @@
         margin-top: px2rem(32px);
     }
     .SiteFooter-icons {
-        margin: px2rem(8px) 0 0 px2rem(16px);
-        display: block;
+        max-width: px2rem(100px);
     }
     .SiteFooter-icon {
         margin-bottom: 0;
