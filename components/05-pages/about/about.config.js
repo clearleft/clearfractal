@@ -2,7 +2,7 @@
 const faker     = require('faker');
 const persons   = [];
 var imageSrc = ["/assets/img/team/james-g.jpg", "/assets/img/team/ben-w.jpg", "/assets/img/team/ellen.jpg", "/assets/img/team/hana.jpg", "/assets/img/team/charlotte.jpg", "/assets/img/team/andy-t.jpg"];
-for(var i = 0; i < 26; i++){
+for(var i = 0; i < 25; i++){
     var number = Math.floor((Math.random() * 5) + 1);
     persons.push({
         indexCardName: faker.name.findName(),
@@ -38,7 +38,7 @@ module.exports = {
         "bannerCaption": "Are you the one?",
         "bannerHeadline": "Join us",
         "bannerLink": "Check out our open vacancies",
-        "bannerBody": "We care deeply about our work and always aim to do the right thing. If that sounds up your street then let’s chat.",
+        "bannerBody": "@banner--decoration.bannerBody",
 
         /*Footer*/
         "footerLinks": "@site-footer.footerLinks",
