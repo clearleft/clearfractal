@@ -3,6 +3,9 @@ module.exports = {
     "status": "wip",
     "context": {
         /*About person*/
+        "personFirstName": "Andy",
+        "personSurname": "Thornton",
+        "personImage": "/assets/img/team/andy-t-lg.jpg",
         "leadText": "@lead.leadText",
         "leadModifier": "--wrapper Bar Bar--yellow",
         "personIntroLeft": `
@@ -15,12 +18,9 @@ module.exports = {
         "personInterests": `
         <p>Andy describes himself as a bit of a social recluse who enjoys getting away from civilisation as much as feasibly possible. His once deep love of the world of glitchy electronica has faded somewhat with age, but he still tries to get out to a couple of gigs now and again.</p>
         `,
-        
-        "socialLinks": [
-            { "src": "http://fillmurray.com/30/30", "url": "#" },
-            { "src": "http://fillmurray.com/30/30", "url": "#" },
-            { "src": "http://fillmurray.com/30/30", "url": "#" }
-        ],
+
+        "socialLinks": "@social-media--dark.socialLinks",
+        "socialMediaModifier": "--dark",
         
         books: [
             {

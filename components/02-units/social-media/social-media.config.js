@@ -4,9 +4,18 @@ module.exports = {
     "status": "wip",
     "context": {
         "socialLinks": [
-            { "src": "http://fillmurray.com/30/30", "url": "#" },
-            { "src": "http://fillmurray.com/30/30", "url": "#" },
-            { "src": "http://fillmurray.com/30/30", "url": "#" }
+            { "src": "/assets/img/icons/icon-github-dark.svg", "url": "#", "alt": "On Github" },
+            { "src": "/assets/img/icons/icon-instagram-dark.svg", "url": "#", "alt": "On Instagram" },
+            { "src": "/assets/img/icons/icon-linkedin-dark.svg", "url": "#", "alt": "On LinkedIn" },
+            { "src": "/assets/img/icons/icon-medium-dark.svg", "url": "#", "alt": "On Medium" },
+            { "src": "/assets/img/icons/icon-flickr-dark.svg", "url": "#", "alt": "On Flickr" }
+
         ]
-    }
-}
+    },
+    "variants": [{
+        "name": "dark",
+        "context": {
+            "socialMediaModifier": "--dark"
+        }
+    }]
+};

@@ -12,3 +12,15 @@
 .SocialMedia-link {
     border: none;
 }
+.SocialMedia--dark {
+    .SocialMedia-link {
+        background-color: $clearleft-blue;
+        border-radius: px2rem(4px);
+        width: px2rem(27px);
+        height: px2rem(27px);
+        padding: px2rem(2px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
