@@ -3,12 +3,12 @@
 module.exports = {
     "status": "wip",
     "context": {
-        "socialLinks": [
-            { "src": "/assets/img/icons/icon-github-dark.svg", "url": "#", "alt": "On Github" },
-            { "src": "/assets/img/icons/icon-instagram-dark.svg", "url": "#", "alt": "On Instagram" },
-            { "src": "/assets/img/icons/icon-linkedin-dark.svg", "url": "#", "alt": "On LinkedIn" },
-            { "src": "/assets/img/icons/icon-medium-dark.svg", "url": "#", "alt": "On Medium" },
-            { "src": "/assets/img/icons/icon-flickr-dark.svg", "url": "#", "alt": "On Flickr" }
+        "socialMediaLinks": [
+            { "src": "/assets/img/icons/icon-github.svg", "url": "#", "alt": "On Github" },
+            { "src": "/assets/img/icons/icon-instagram.svg", "url": "#", "alt": "On Instagram" },
+            { "src": "/assets/img/icons/icon-linkedin.svg", "url": "#", "alt": "On LinkedIn" },
+            { "src": "/assets/img/icons/icon-medium.svg", "url": "#", "alt": "On Medium" },
+            { "src": "/assets/img/icons/icon-flickr.svg", "url": "#", "alt": "On Flickr" }
 
         ]
     },

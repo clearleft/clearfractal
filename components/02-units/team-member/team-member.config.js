@@ -19,7 +19,7 @@ module.exports = {
         <p>Andy describes himself as a bit of a social recluse who enjoys getting away from civilisation as much as feasibly possible. His once deep love of the world of glitchy electronica has faded somewhat with age, but he still tries to get out to a couple of gigs now and again.</p>
         `,
 
-        "socialLinks": "@social-media--dark.socialLinks",
+        "socialMediaLinks": "@social-media.socialMediaLinks",
         "socialMediaModifier": "--dark",
         
         books: [

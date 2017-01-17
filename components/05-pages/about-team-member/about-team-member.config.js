@@ -28,11 +28,11 @@ module.exports = {
         "cardDescription": "In my previous article, I wrote about some of the misconceptions with “agile” that I see in organisations. This article will focus on one of them specifically – the common (mis)understanding that [...]",
         
         /*About team member*/
-        "socialLinks": [
-            { "src": "http://fillmurray.com/30/30", "url": "#" },
-            { "src": "http://fillmurray.com/30/30", "url": "#" },
-            { "src": "http://fillmurray.com/30/30", "url": "#" }
-        ],
+        "personFirstName": "Andy",
+        "personSurname": "Thornton",
+        "personImage": "/assets/img/team/andy-t-lg.jpg",
+        "socialMediaLinks": "@social-media.socialMediaLinks",
+        "socialMediaModifier": "--dark",
 
         "personIntroLeft": `
         <p>Before joining Clearleft he worked as a freelance Experience Design Consultant helping Whitbread shape the service design of Hub hotels.</p>

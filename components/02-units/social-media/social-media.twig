@@ -1,5 +1,5 @@
 <ul class="SocialMedia{% if socialMediaModifier %} SocialMedia{{socialMediaModifier}}{% endif %}">
-    {% for socialLink in socialLinks %}
-    <li class="SocialMedia-item"><a href="{{socialLink.url}}" class="SocialMedia-link"><img src="{{socialLink.src}}" alt="{{socialLink.alt}}"></a></li>
+    {% for socialMediaLink in socialMediaLinks %}
+    <li class="SocialMedia-item"><a href="{{socialMediaLink.url}}" class="SocialMedia-link"><img src="{{socialMediaLink.src}}" alt="{{socialMediaLink.alt}}"></a></li>
     {% endfor %}
 </ul><!--/.SocialMedia-->
