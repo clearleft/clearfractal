@@ -20,6 +20,7 @@
     .TeamGrid {
         max-width: px2rem(720px);
         padding-left: px2em(80px);
+        margin-bottom: px2rem(16px);
     }
     .TeamGrid-item:nth-child(6n+4) {
         margin-left: px2em(-80px);
@@ -47,9 +48,16 @@
         margin-top: px2rem(-16px);
     }
     .TeamGrid-item {
-        width: 20%;
+        .IndexCard,
+        .IndexCard-profile,
+        .IndexCard-image {
+            width: 100%;
+        }
     }
-    .TeamGrid-item:nth-child(8n+5) {
+    /*.TeamGrid-item {
+        width: 20%;
+    }*/
+    /*.TeamGrid-item:nth-child(8n+5) {
         margin-left: 0;
     }
     .TeamGrid-item:nth-child(6n+4) {
@@ -57,7 +65,7 @@
     }
     .TeamGrid-item:nth-child(10n+6) {
         margin-left: px2em(-105px);
-    }
+    }*/
 }
 @media only screen and (min-width: px2em(1360px)) {
     .TeamGrid {
