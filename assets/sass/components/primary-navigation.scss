@@ -5,8 +5,10 @@
     padding: 0;
     margin: 0;
 }
-.PrimaryNavigation-link {
+.PrimaryNavigation-listItem {
     display: inline-flex;
+}
+.PrimaryNavigation-link {
     padding: px2rem(8px);
     color: #333;
     @include font(15px, 18px);
