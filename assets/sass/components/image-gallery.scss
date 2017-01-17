@@ -1,12 +1,12 @@
 .ImageGallery {
     max-width: px2em(940px);
-    margin: 0 auto px2rem(64px) auto;
+    margin: px2rem(16px) auto px2rem(64px) auto;
 }
 .ImageGallery-image {
     width: 100%;
     vertical-align: bottom;
     float: left;
-    padding: 0.5rem;
+    padding: 0.35rem;
 }
 @media screen and (min-width: px2em(300px)) {
     .ImageGallery {
@@ -48,10 +48,16 @@
     .ImageGallery-group {
         width: 50%;
     }
+    .ImageGallery-image {
+        padding: 0.3rem;
+    }
 }
 @media only screen and (min-width: px2em(980px)) {
     .ImageGallery {
         max-width: px2em(940px);
+    }
+    .ImageGallery-image {
+        padding: 0.4rem;
     }
 }
 @media only screen and (min-width: px2em(1200px)) {
