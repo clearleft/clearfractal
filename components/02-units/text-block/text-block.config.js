@@ -21,5 +21,19 @@ module.exports = {
             "authorImage": "@author.authorImage",
             "authorName": "@author.authorName"
         }
+    },
+    {
+        "name": "Author and Lead",
+        "context": {
+            "textBlockModifier": "--author Bar Lead",
+            "authorImage": "@author.authorImage",
+            "authorName": "@author.authorName",
+            "textBlockProse": `
+            <p>The agile manifesto was born out of a frustration with traditionally managed projects. 
+            But I don’t think it solved the problem. It actually created another one. I’ve seen teams and 
+            organisations go from waterfall, which reduces their ability to compete in the market and 
+            deliver value, to dysfunction and paralysis when implementing agile.</p>
+            `
+        }
     }]
 }

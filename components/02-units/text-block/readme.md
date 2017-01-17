@@ -1,0 +1,1 @@
+The Textblock component is a content block used for writing prose, most often in blog posts and case studies. The variation which includes the Lead class should be used as the introduction to a section or page.
