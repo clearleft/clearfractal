@@ -1,21 +1,28 @@
 .ImageGallery {
     max-width: px2em(940px);
     margin: px2rem(16px) auto px2rem(64px) auto;
+    overflow: hidden;
 }
 .ImageGallery-image {
     width: 100%;
     vertical-align: bottom;
     float: left;
-    padding: 0.35rem;
+    overflow: hidden;
+    /*display: inline-block;*/
+    /*padding: 0.35rem;*/
+    img {
+        float: left;
+    }
 }
 @media screen and (min-width: px2em(300px)) {
     .ImageGallery {
-        display: flex;
-        flex-wrap: wrap;
+        /*display: flex;
+        flex-wrap: wrap;*/
     }
     .ImageGallery-group {
-        display: flex;
-        align-items: flex-start;
+        float: left;
+        /*display: flex;
+        align-items: flex-start;*/
         width: 100%;
         &--wide .ImageGallery-image {
             width: 100%;
@@ -25,8 +32,8 @@
         }
     }
     .ImageGallery-group--quad {
-        display: flex;
-        flex-direction: column;
+        /*display: flex;
+        flex-direction: column;*/
     }
     .ImageGallery-quadRow {
         width: 100%;
@@ -49,7 +56,7 @@
         width: 50%;
     }
     .ImageGallery-image {
-        padding: 0.3rem;
+        /*padding: 0.3rem;*/
     }
 }
 @media only screen and (min-width: px2em(980px)) {
@@ -57,7 +64,7 @@
         max-width: px2em(940px);
     }
     .ImageGallery-image {
-        padding: 0.4rem;
+        /*padding: 0.4rem;*/
     }
 }
 @media only screen and (min-width: px2em(1200px)) {
