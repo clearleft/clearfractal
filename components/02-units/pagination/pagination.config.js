@@ -10,6 +10,7 @@ module.exports = {
     "context": {
         "items": items,
         "pagePrevUrl": "#",
-        "pageNextUrl": "#"
+        "pageNextUrl": "#",
+        "currentPagePUrl": "#"
     }
 }
