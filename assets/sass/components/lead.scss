@@ -6,6 +6,9 @@
     border: px2rem(1px) solid #E2EBF1;
     padding: px2rem(20px) px2rem(24px) px2rem(16px) px2rem(24px);
 }
+.Lead--inverted {
+    color: #ffffff;
+}
 @media screen and (min-width: px2em(520px)) {
     .Lead {
         @include font(20px, 34px);

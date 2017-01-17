@@ -9,7 +9,13 @@ module.exports = {
     {
         "name": "wrapper",
         "context": {
-            "leadModifier": "--wrapper"  
+            "leadModifier": "--wrapper"
+        }
+    },
+    {
+        "name": "inverted",
+        "context": {
+            "leadModifier": "--inverted"  
         }
     }]
 }
