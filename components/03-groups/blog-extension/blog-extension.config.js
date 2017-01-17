@@ -3,6 +3,7 @@
 module.exports = {
     "status": "wip",
     "context": {
+        "personFirstName": "Andy",
         cards: [
         {
             "cardCategory": "@card.cardCategory",
