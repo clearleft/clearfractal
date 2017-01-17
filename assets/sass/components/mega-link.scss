@@ -17,6 +17,13 @@
 }
 .MegaLink--giant {
     @include font(22px, 17px);
+    &:after {
+        bottom: px2rem(5px);
+        right: px2rem(-30px);
+        width: px2rem(24px);
+        height: px2rem(24px);
+        background-size: px2rem(24px);
+    }
 }
 .MegaLink--button {
     color: $clearleft-blue;

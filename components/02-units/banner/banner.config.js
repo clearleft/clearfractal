@@ -2,7 +2,8 @@ module.exports = {
     "status": "wip",
     "context": {
         "bannerCaption": "Take a peek into Middle Street",
-        "bannerHeadline": "Our Studio"
+        "bannerHeadline": "Our Studio",
+        "bannerBody": ""
     },
     "variants": [{
         "name": "notice",
@@ -17,6 +18,15 @@ module.exports = {
         "name": "inverted",
         "context": {
             "bannerModifier": "--inverted"
+        }
+    },
+    {
+        "name": "decoration",
+        "context": {
+            "bannerModifier": "--decorated",
+            "bannerBody":`<p>We're a team of makers, thinkers, organisers and digital explorers.<br>We're always actively seeking out new skills, challenges and opportunities.</p>
+            `,
+            "bannerLink": "Check out our open vacancies"
         }
     }]
 }

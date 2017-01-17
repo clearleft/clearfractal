@@ -34,7 +34,11 @@ module.exports = {
         }],
 
         /*Banner*/
-        "bannerBody": "@banner--notice.bannerBody",
+        "bannerModifier": "--decorated",
+        "bannerCaption": "Are you the one?",
+        "bannerHeadline": "Join us",
+        "bannerLink": "Check out our open vacancies",
+        "bannerBody": "We care deeply about our work and always aim to do the right thing. If that sounds up your street then let’s chat.",
 
         /*Footer*/
         "footerLinks": "@site-footer.footerLinks",

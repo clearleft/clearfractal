@@ -34,11 +34,24 @@
 .Banner-body {
     max-width: px2rem(600px);
 }
+.Banner-link {
+    margin-top: px2rem(16px);
+}
 .Banner--notice {
     background-color: $white-grey;
 }
 .Banner--notice .Banner-caption {
     color: #1E6B9C;
+}
+.Banner--decorated {
+    background-image: url('/assets/img/studio/studio-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    .Banner-caption,
+    .Banner-link {
+        color: #ffffff;
+    }
 }
 @media only screen and (min-width: px2em(600px)) {
     .Banner-headline {
