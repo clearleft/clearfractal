@@ -16,7 +16,7 @@
 
 @media screen and (min-width: px2em(700px)) {
     .BlogGrid  {
-        margin: px2rem(-80px) auto px2rem(24px) auto;
+        margin: px2rem(-50px) auto px2rem(24px) auto;
         .BlogGrid-item {
             flex: 50%;
             padding: px2rem(24px);
@@ -26,5 +26,8 @@
 @media screen and (min-width: px2em(900px)) {
     .BlogGrid-item {
         padding: px2rem(48px);
+    }
+    .BlogGrid  {
+        margin: px2rem(-70px) auto px2rem(24px) auto;
     }
 }
