@@ -6,7 +6,7 @@
         </header>
         {% if cardCategory %}<div class="Card-category">{{ cardCategory }}</div>{% endif %}
         {% if cardDescription %}<p class="Card-description">{{ cardDescription }}</p>{% endif %}
-        {% if cardModifier == "--vibrant" %} <a href="" class="MegaLink">Read the case study</a> {% endif %}
+        {% if cardModifier == "--vibrant" %} <a href="{{cardLink}}" class="MegaLink">Read the case study</a> {% endif %}
         <div class="Card-author">
         {% if authorImage %}
             {% include '@author' %}
