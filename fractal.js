@@ -64,23 +64,3 @@ fractal.cli.command('pathmap', function(opts, done){
     exportPaths();
     done();
 });
-
-
-// fractal.js
-fractal.components.set('statuses', {
-    wip: {
-        label: "WIP",
-        description: "Still working on it.",
-        color: '#F00'
-    },
-    ready: {
-        label: "Ready",
-        description: "Ready for use.",
-        color: "green"
-    },
-    removed: {
-        label: "Removed",
-        description: "A pattern which has been removed from the design, but may come back.",
-        color: "green"
-    }
-});
