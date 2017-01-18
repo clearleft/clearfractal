@@ -13,6 +13,10 @@ module.exports = {
         "mastheadHeadingModifer": "--inverted",
         "mastheadImpact": true,
 
+        /*Intro*/
+        "introBarClass": "Bar Bar--green",
+        "introText": "We’re here to see you through changes in your digital presence and practices.",
+
         "trioItems": "@trio.trioItems",
         "helloHeading": "@hello.helloHeading",
         "helloBody": "@hello.helloBody",
