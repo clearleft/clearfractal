@@ -12,8 +12,10 @@
     font-weight: 700;
     -webkit-font-smoothing: antialiased;
 }
-.List--tall .List-item {
-    margin-top: px2rem(10px);
-    margin-bottom: px2rem(10px);
-    display: inline-block;
+@media screen and (min-height: px2em(700px)) {
+    .List--tall .List-item {
+        margin-top: px2rem(10px);
+        margin-bottom: px2rem(10px);
+        display: inline-block;
+    }
 }
