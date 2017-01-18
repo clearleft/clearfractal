@@ -1,9 +1,10 @@
 .GreenDots {
     background: url(/assets/img/green-dots.svg) 80% -14rem no-repeat;
-    padding-top: px2rem(125px);
+    padding-top: px2rem(16px);
 }
 @media screen and (min-width: px2em(800px)) {
     .GreenDots {
         background-position-x: 70%;
+        padding-top: px2rem(125px);
     }
 }
