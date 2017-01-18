@@ -15,7 +15,6 @@ module.exports = {
     "status": "wip",
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "propositionLogos": "@proposition.propositionLogos",
         "signpostTitle": "@proposition.signpostTitle",
         "mastheadTitle": "Advancing the practice of design",
         "mastheadMidifier": "--chimney",
