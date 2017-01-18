@@ -13,8 +13,6 @@
 }
 .Trio-image {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: px2rem(20px);
 }
 .Trio-title {
@@ -78,6 +76,10 @@
     .Trio {
         padding-top: px2rem(32px);
         padding-bottom: px2rem(32px);
+    }
+    .Trio-image {
+        margin-left: auto;
+        margin-right: auto;
     }
     .Trio-collection {
         display: flex;

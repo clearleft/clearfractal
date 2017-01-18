@@ -1,0 +1,23 @@
+.Intro {
+    margin: 0 auto;
+    max-width: px2em(800px);
+    background-image: url(/assets/img/dots/grey-dots-intro.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: px2rem(24px);
+}
+.Intro-text {
+    font-family: $font-statement;
+    @include font(48px, 52px);
+    margin-bottom: 0;
+    margin-top: px2rem(32px);
+}
+@media screen and (min-width: 600px) {
+    .Intro {
+        padding-top: px2rem(64px);
+    }
+    .Intro-text {
+        font-family: $font-statement;
+        @include font(68px, 75px);
+    }
+}
