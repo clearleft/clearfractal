@@ -5,6 +5,7 @@
             <a href="{{cardUrl}}" class="Card-link"><h3 class="Card-title">{{ cardTitle }}</h3></a>
         </header>
         {% if cardCategory %}<div class="Card-category">{{ cardCategory }}</div>{% endif %}
+        {% if cardMeta %}<div class="Card-meta">{{ cardMeta }}</div>{% endif %}
         {% if cardDescription %}<p class="Card-description">{{ cardDescription }}</p>{% endif %}
         {% if cardModifier == "--vibrant" %} <a href="{{cardLink}}" class="MegaLink">Read the case study</a> {% endif %}
         <div class="Card-author">

@@ -45,6 +45,15 @@
     font-weight: 700;
     letter-spacing: 1px;
 }
+.Card-meta {
+    color: $light-grey;
+    font-family: $font-secondary;
+    @include font(14px, 17px);
+    margin: 0 0 px2rem(16px) 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
 .Card-description {
     color: #505050;
     @include font(18px, 32px);
