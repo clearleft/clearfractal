@@ -87,6 +87,7 @@
         margin-top: px2rem(32px);
     }
     .Trio-item {
+        flex: 0 1 auto;
         width: 33.3%;
         padding: px2rem(28px);
     }
@@ -105,21 +106,28 @@
         margin-top: px2rem(80px);
     }
     .Trio--stacked {
-        flex-direction: column;
+        .Trio-collection {
+            flex-direction: column;
+            margin-left: px2rem(16px);
+        }
         .Trio-item {
-            display: flex;
             width: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             margin-top: 0;
             max-width: px2rem(700px);
-        }
-        .Trio-image {
-            margin-right: px2rem(24px);
         }
         .Trio-item--rebel {
             margin-left: px2rem(80px);
         }
-        .Trio-collection {
-            margin-left: px2rem(16px);
+        .Trio-image {
+            margin-right: px2rem(24px);
+            margin-left: 0;
+        }
+        .Trio-description {
+            flex: 0 1 auto;
+            max-width: 100%;
         }
     }
 }
