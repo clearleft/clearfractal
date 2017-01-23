@@ -11,7 +11,7 @@
         margin-right: auto;
     }
     .Cols-half {
-        flex-basis: auto;
+        flex: 0 1 auto;
         width: 50%;
     }
 }
