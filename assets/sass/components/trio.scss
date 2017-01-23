@@ -105,9 +105,13 @@
         margin-top: px2rem(80px);
     }
     .Trio--stacked {
-        flex-direction: column;
+        .Trio-collection {
+            flex-direction: column;
+            margin-left: px2rem(16px);
+        }
         .Trio-item {
             display: flex;
+            align-items: center;
             width: 90%;
             margin-top: 0;
             max-width: px2rem(700px);
@@ -117,9 +121,6 @@
         }
         .Trio-item--rebel {
             margin-left: px2rem(80px);
-        }
-        .Trio-collection {
-            margin-left: px2rem(16px);
         }
     }
 }
