@@ -5,13 +5,7 @@
     box-shadow: 0 8px 10px rgba(50,50,50,0.3);
 }
 .FeaturedCard-title {
-    font-family: $font-statement;
-    @include font(32px, 36px);
     margin: 0 0 px2rem(18px) 0;
-}
-.FeaturedCard-link {
-    color: inherit;
-    border-bottom: none;
 }
 .FeaturedCard-category {
     font-family: $font-secondary;
@@ -30,10 +24,6 @@
     .FeaturedCard {
         padding: px2rem(24px);
     }
-    .FeaturedCard-title {
-        @include font(48px, 56px);
-        letter-spacing: -1px;
-    }
     .FeaturedCard {
         display: flex;
     }
@@ -45,12 +35,6 @@
     }
 }
 
-@media only screen and (min-width: px2em(640px)) {
-    .FeaturedCard-title {
-        @include font(68px, 75px);
-        letter-spacing: -1.5px;
-    }
-}
 @media only screen and (min-width: px2em(800px)) {
     .FeaturedCard {
         padding: px2rem(85px);
