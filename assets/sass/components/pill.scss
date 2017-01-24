@@ -9,4 +9,5 @@
     font-family: $font-secondary;
     @include font(14px);
     display: inline-block;
+    white-space: nowrap;
 }
