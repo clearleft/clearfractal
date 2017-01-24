@@ -9,7 +9,7 @@
 .Signpost-link--prev:before {
     content: '';
     display: inline-block;
-    background-image: url(/assets/img/icons/icon-arrow-left.svg);
+    background-image: url('/assets/img/icons/icon-arrow-left.svg');
     background-repeat: no-repeat;
     width: px2rem(16px);
     height: px2rem(12px);
@@ -18,7 +18,7 @@
 .Signpost-link--next:after {
     content: '';
     display: inline-block;
-    background-image: url(/assets/img/icons/icon-arrow-right.svg);
+    background-image: url('/assets/img/icons/icon-arrow-right.svg');
     background-repeat: no-repeat;
     width: px2rem(16px);
     height: px2rem(12px);
