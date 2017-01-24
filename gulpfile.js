@@ -34,7 +34,12 @@
     },
 
     scripts: {
-        src:                [__dirname+'/assets/js/main.js'],
+        src:                [
+                                __dirname+'/assets/js/engine/clearcore.js',
+                                __dirname+'/assets/js/engine/!(clearcore).js',
+                                __dirname+'/assets/js/components/*',
+                                __dirname+'/assets/js/main.js'
+                            ],
         dest:               '/public/assets/js/main.js',
         clean:              ['/public/assets/js/*'],
         watch:              [__dirname+'/assets/js/**/*.js']
@@ -49,6 +54,7 @@
 
 const autoprefixer  = require('autoprefixer');
 const del           = require('del');
+const concat        = require('gulp-concat');
 const gulp          = require('gulp');
 const postcss       = require('gulp-postcss');
 const rename        = require('gulp-rename');
@@ -227,6 +233,8 @@ function scripts(prefix) {
 
             // write sourcemap
             // .pipe(sourcemaps.write('.'))
+
+            .pipe(concat('build.js'))
 
             // output
             .pipe( rename( fileName ) )
