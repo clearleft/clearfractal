@@ -1,11 +1,4 @@
-.Showcase--blue {
-    background-color: #325E94;
-    color: #fff;
-}
 .Showcase-title {
-    font-family: $font-statement;
-    @include font(40px, 45px);
-    font-weight: 700;
     margin-top: px2rem(30px);
 }
 .Showcase-wrapper {
@@ -29,9 +22,11 @@
     margin-top: px2rem(32px);
     margin-bottom: px2rem(32px);
 }
-@media screen and (min-width: px2em(520px)) {
+
+.Showcase--blue {
+    background-color: #325E94;
+    color: #fff;
     .Showcase-title {
-        letter-spacing: px2rem(-1.45px);
-        @include font(72px, 77px);
+        color: #fff;
     }
 }
