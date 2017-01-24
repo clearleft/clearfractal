@@ -11,9 +11,6 @@
     margin: 0 auto;
 }
 .Hello-title {
-    font-family: $font-secondary;
-    @include font(26px, 36px);
-    font-weight: 700;
     margin-top: px2rem(16px);
     margin-bottom: px2rem(20px);
 }
@@ -22,9 +19,6 @@
         padding: px2rem(38px) px2rem(32px) px2rem(72px) px2rem(32px);
         background-image: url('/assets/img/darkgrey-dots-corner.svg'), url('/assets/img/peeks/hi.png');
         background-position: 100% 0, 0 65%;
-    }
-    .Hello-title {
-        @include font(32px, 42px);
     }
     .Hello-body {
         margin-left: px2rem(38px);
