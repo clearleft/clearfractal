@@ -10,13 +10,13 @@
             {% include '@breadcrumb' %}
         </div><!--/.EvoProject-breadcrumb-->
         {% endif %}
-        
+
         <div class="EvoProject-primary">
             {% if evoContext %}
             <p class="Heading Heading--context Heading--inverted">{{evoContext}}</p>
             {% endif %}
 
-            <h1 class="EvoProject-title">{{evoTitle}}</h1>
+            <h1 class="EvoProject-title Heading Heading--secondary Heading--inverted">{{evoTitle}}</h1>
 
             {% if evoDescription %}
             <div class="EvoProject-description Lead Bar">
@@ -29,11 +29,11 @@
                 <a class="MegaLink MegaLink--inverted" href="{{evoLinkUrl}}">{{evoLink}}</a>
             </div><!--/.EvoProject-extension-->
             {% endif %}
-            
+
             {% if evoLogoSrc %}
             <img class="EvoProject-logo" src="{{evoLogoSrc}}" alt="{{evoLogoAlt}}">
             {% endif %}
-            
+
         </div><!--./.EvoProject-primary-->
 
     </div><!--/.EvoProject-wrapper-->
