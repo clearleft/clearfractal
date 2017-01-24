@@ -32,7 +32,7 @@
     .EvoProject-wrapper {
         padding: px2rem(40px) px2rem(24px) px2rem(52px) px2rem(24px);
         overflow: hidden;
-        background-image: url(/assets/img/work/evo/evo-mag-stack.png);
+        background-image: url('/assets/img/work/evo/evo-mag-stack.png');
         background-repeat: no-repeat;
         background-position: -50% 80%;
         background-size: px2rem(300px);
@@ -155,7 +155,7 @@
 }
 @media screen and (min-height: px2em(880px)) and (min-width: px2em(950px)) {
     .EvoProject--tall {
-        background: url(/assets/img/work/evo/evo-mag-stack.png), radial-gradient(42% 45%, #3F3F3F 34%, #333333 45%, #000000 98%);
+        background: url('/assets/img/work/evo/evo-mag-stack.png'), radial-gradient(42% 45%, #3F3F3F 34%, #333333 45%, #000000 98%);
         background-size: px2rem(600px), cover;
         background-position: 100% -60%, 0 0;
         background-repeat: no-repeat;
@@ -185,7 +185,7 @@
 @media screen and (min-width: px2em(650px)) {
     .EvoProject--stage {
         .EvoProject-wrapper {
-            background: url(/assets/img/work/evo/evo-mag-stack.png);
+            background: url('/assets/img/work/evo/evo-mag-stack.png');
             background-position: 160% 120%;
             background-repeat: no-repeat;
             background-size: px2rem(400px);
@@ -243,7 +243,7 @@
 }*/
 @media screen and (min-width: px2em(1020px)) {
     .EvoProject--stage {
-        background: url(/assets/img/work/evo/evo-mag-stack.png), radial-gradient(42% 45%, #3F3F3F 34%, #333333 45%, #000000 98%);
+        background: url('/assets/img/work/evo/evo-mag-stack.png'), radial-gradient(42% 45%, #3F3F3F 34%, #333333 45%, #000000 98%);
         background-size: px2rem(620px), cover;
         background-position: 105% 150%, 0 0;
         background-repeat: no-repeat;

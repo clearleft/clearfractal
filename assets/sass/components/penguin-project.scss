@@ -1,6 +1,6 @@
 .PenguinProject {
     background-color: #FF6600;
-    background-image: url(/assets/img/work/penguin/orange-bg.jpg);
+    background-image: url('/assets/img/work/penguin/orange-bg.jpg');
     background-size: cover;
     color: #ffffff;
 }
@@ -38,7 +38,7 @@
 @media screen and (min-width: px2em(500px)) {
     .PenguinProject-wrapper {
         padding: px2rem(32px) px2rem(24px) px2rem(48px) px2rem(24px);
-        background-image: url(/assets/img/work/penguin/penguin.png);
+        background-image: url('/assets/img/work/penguin/penguin.png');
         background-repeat: no-repeat;
         background-position: 120% 100%;
         background-size: px2rem(280px);
@@ -120,7 +120,7 @@
 }
 @media screen and (min-width: px2em(1200px)) {
     .PenguinProject--stage {
-        background-image: url(/assets/img/work/penguin/penguin.png), url(/assets/img/work/penguin/orange-bg.jpg);
+        background-image: url('/assets/img/work/penguin/penguin.png'), url('/assets/img/work/penguin/orange-bg.jpg');
         background-position: 100% 100%, 0 0;
         background-size: px2rem(700px), cover;
         background-repeat: no-repeat;

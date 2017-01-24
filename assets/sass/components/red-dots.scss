@@ -1,9 +1,9 @@
 /*Need the correct image exported from Sketch*/
 .RedDots {
-    background: url(/assets/img/red-dots-semi-circle.svg) 100% 50% no-repeat;
+    background: url('/assets/img/red-dots-semi-circle.svg') 100% 50% no-repeat;
 }
 @media screen and (min-width: px2em(1600px)) {
     .RedDots {
-        background: url(/assets/img/red-dots-semi-circle.svg) left center no-repeat;
+        background: url('/assets/img/red-dots-semi-circle.svg') left center no-repeat;
     }
 }
