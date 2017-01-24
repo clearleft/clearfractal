@@ -24,9 +24,6 @@
     @include font(14px);
 }
 .InputGroup-label {
-    @include font(16px, 22px);
-    font-weight: 700;
-    font-family: $font-secondary;
     display: block;
     flex-basis: 100%;
     margin-bottom: px2rem(10px);
@@ -52,8 +49,5 @@
     .InputGroup-submit {
         padding: px2rem(12px) px2rem(18px);
         @include font(17px);
-    }
-    .InputGroup-label {
-        @include font(22px, 28px);
     }
 }
