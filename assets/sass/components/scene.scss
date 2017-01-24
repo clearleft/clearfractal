@@ -5,11 +5,6 @@
     max-width: px2em(760px);
 }
 .Scene-heading {
-    font-family: $font-secondary;
-    font-weight: 700;
-    -webkit-font-smoothing: antialiased;
-    @include font(30px, 35px);
-    letter-spacing: px2rem(-0.43px);
     margin-top: 0;
 }
 .Scene--basic {
@@ -19,9 +14,6 @@
     }
 }
 @media screen and (min-width: px2em(500px)) {
-    .Scene-heading {
-        @include font(43px, 49px);
-    }
     .Scene--basic {
         margin-bottom: px2rem(-25px);
     }
