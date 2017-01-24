@@ -36,9 +36,18 @@
     .ContactInfo {
         padding: 0 px2rem(16px);
     }
-    .ContactInfo-info {
+    .ContactInfo-wrapper {
+        min-height: 1040px;
+    }
+    .ContactInfo-background {
         position: absolute;
+        top: 0;
+        left: 0;
         z-index: 1;
+    }
+    .ContactInfo-info {
+        position: relative;
+        z-index: 2;
         width: 50%;
         top: px2rem(60px);
         left: px2rem(80px);
