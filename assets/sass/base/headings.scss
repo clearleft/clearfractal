@@ -6,8 +6,13 @@
     -webkit-font-smoothing: antialiased;
 }
 a.Heading,
-.Heading a {
+.Heading a,
+a .Heading {
     border-bottom: none;
+    &:hover,
+    &:focus {
+        color: $clearleft-red;
+    }
 }
 .Heading--impact {
     @include font(48px, 40px);
