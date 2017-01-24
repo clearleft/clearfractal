@@ -11,6 +11,8 @@
     line-height: px2rem(24px);
 }
 .InfoBlock-image {
+    flex-shrink: 0;
+    flex-basis: auto;
     margin-right: px2rem(16px);
     margin-bottom: px2rem(24px);
 }
