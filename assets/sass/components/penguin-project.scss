@@ -2,7 +2,7 @@
     background-color: #FF6600;
     background-image: url('/assets/img/work/penguin/orange-bg.jpg');
     background-size: cover;
-    color: #ffffff;
+    color: $Blank;
 }
 .PenguinProject-wrapper {
     max-width: px2em(900px);
@@ -146,8 +146,8 @@
 }
 .PenguinDisplayFont {
     padding: px2rem(20px);
-    background-color: #ffffff;
-    border: 2px solid #FFFFFF;
+    background-color: $Blank;
+    border: 2px solid $Blank;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
     border-radius: 10px;
     width: 47%;

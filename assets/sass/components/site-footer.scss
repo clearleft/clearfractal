@@ -1,12 +1,12 @@
 .SiteFooter {
     font-family: $font-secondary;
     background-color: #000000;
-    color: #ffffff;
+    color: $Blank;
     margin-left: auto;
     margin-right: auto;
     padding-top: px2rem(24px);
     .Heading {
-        color: #ffffff;
+        color: $Blank;
     }
 }
 .SiteFooter-container {
@@ -24,7 +24,7 @@
     font-weight: 700;
     -webkit-font-smoothing: antialiased;
     padding-bottom: px2rem(8px);
-    color: #ffffff;
+    color: $Blank;
 }
 .SiteFooter-small {
     @include font(10px, 17px);

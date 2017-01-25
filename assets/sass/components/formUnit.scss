@@ -7,7 +7,7 @@
     @include font(17px, 25px);
 }
 .FormUnit-field {
-    background: #fff;
+    background: $Blank;
     border: 0;
     font-family: $font-main;
     -webkit-font-smoothing: antialiased;

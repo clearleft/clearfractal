@@ -41,10 +41,10 @@
 /*Invert text colours to white */
 .Trio--inverted {
     background-color: $Jet-grey;
-    color: #fff;
+    color: $Blank;
     .Trio-title,
     .Trio-itemHead {
-        color: #fff;
+        color: $Blank;
     }
 }
 /*Trio for the featued Channel 4 case study */
