@@ -5,18 +5,30 @@
     background-color: $Lapis-lazuli-blue;
     a {
         color: #ffffff;
+        &:hover,
+        &:focus {
+            color: inherit;
+        }
     }
 }
 .BgPurple {
     background-color: #A9439A;
     a {
         color: #ffffff;
+        &:hover,
+        &:focus {
+            color: inherit;
+        }
     }
 }
 .BgGreen {
     background-color: $Brand-carribean-green;
     a {
         color: #ffffff;
+        &:hover,
+        &:focus {
+            color: inherit;
+        }
     }
 }
 .Background--frill {
