@@ -16,33 +16,45 @@
         }
     },
     {
-        "name": "purple",
+        "name": "plum",
         "context": {
-            "primaryNavModifier": "--purple"
+            "primaryNavModifier": "--plum"
         }
     },
     {
-        "name": "red",
+        "name": "carribean-green",
         "context": {
-            "primaryNavModifier": "--red"
+            "primaryNavModifier": "--carribean-green"
         }
     },
     {
-        "name": "blue",
+        "name": "sea-serpent-blue",
         "context": {
-            "primaryNavModifier": "--blue"
+            "primaryNavModifier": "--sea-serpent-blue"
         }
     },
     {
-        "name": "yellow",
+        "name": "orange-yellow",
         "context": {
-            "primaryNavModifier": "--yellow"
+            "primaryNavModifier": "--orange-yellow"
         }
     },
     {
-        "name": "light blue",
+        "name": "crayola-red",
         "context": {
-            "primaryNavModifier": "--lightBlue"
+            "primaryNavModifier": "--crayola-red"
+        }
+    },
+    {
+        "name": "lapis-lazuli-blue",
+        "context": {
+            "primaryNavModifier": "--lapis-lazuli-blue"
+        }
+    },
+    {
+        "name": "brandeis-blue",
+        "context": {
+            "primaryNavModifier": "--brandeis-blue"
         }
     }]
 }
