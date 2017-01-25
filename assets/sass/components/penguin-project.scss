@@ -28,7 +28,10 @@
 }
 @media screen and (min-width: px2em(500px)) {
     .PenguinProject-wrapper {
-        padding: px2rem(32px) px2rem(24px) px2rem(48px) px2rem(24px);
+        padding-top: px2rem(32px);
+        padding-bottom: px2rem(48px);
+        padding-left: px2rem(24px);
+        padding-right: px2rem(24px);
         background-image: url('/assets/img/work/penguin/penguin.png');
         background-repeat: no-repeat;
         background-position: 120% 100%;
@@ -40,6 +43,8 @@
 }
 @media screen and (min-width: px2em(700px)) {
     .PenguinProject-wrapper {
+        padding-top: px2rem(70px);
+        padding-bottom: px2rem(70px);
         background-size: px2rem(380px);
     }
 }

@@ -10,10 +10,6 @@
     margin-left: auto;
     margin-right: auto;
     padding: px2rem(30px) px2rem(16px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     text-align: center;
 }
 .Banner-caption {
@@ -26,6 +22,8 @@
     -webkit-font-smoothing: antialiased;
 }
 .Banner-body {
+    margin-left: auto;
+    margin-right: auto;
     max-width: px2rem(600px);
 }
 .Banner-link {
