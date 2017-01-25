@@ -29,12 +29,16 @@
     max-width: px2em(350px);
 }
 .Ch4Project-image {
-    max-width: px2rem(70px);
-    position: absolute;
-    right: px2rem(30px);
-    bottom: px2rem(100px);
+    display: none;
 }
 @media screen and (min-width: px2em(500px)) {
+    .Ch4Project-image {
+        display: block;
+        max-width: px2rem(70px);
+        position: absolute;
+        right: px2rem(30px);
+        bottom: px2rem(100px);
+    }
     .Ch4Project-secondary {
         width: 30%;
     }
