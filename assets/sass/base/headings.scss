@@ -58,6 +58,14 @@ a .Heading {
 .Heading--inverted {
     color: #ffffff;
 }
+a.Heading--inverted,
+.Heading--inverted a,
+a .Heading--inverted {
+    &:hover,
+    &:focus {
+        color: inherit;
+    }
+}
 @media screen and (min-width: px2em(300px)) {
     .Heading--impact {
         font-size: calc( 60px + (190 - 60) * ( (100vw - 300px) / ( 1200 - 300) ));
