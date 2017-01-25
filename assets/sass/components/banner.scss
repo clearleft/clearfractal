@@ -2,7 +2,7 @@
     .Banner-caption,
     .Banner-headline,
     .Banner-body {
-        color: #ffffff;
+        color: $Blank;
     }
 }
 .Banner-content {
@@ -19,7 +19,7 @@
 .Banner-caption {
     @include font(14px);
     font-family: $font-secondary;
-    color: #EA215A;
+    color: $Crayola-red;
     font-weight: 700;
     letter-spacing: px2rem(1px);
     text-transform: uppercase;
@@ -41,11 +41,11 @@
     background-image: url('/assets/img/studio/studio-2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    color: #ffffff;
+    color: $Blank;
     .Banner-caption,
     .Banner-headline,
     .Banner-link {
-        color: #ffffff;
+        color: $Blank;
     }
 }
 @media only screen and (min-width: px2em(600px)) {

@@ -10,7 +10,7 @@
             &:before {
                 content: '';
                 display: inline-block;
-                background: #fff url('/assets/img/tiny-lessons-logo.svg') 0 50% no-repeat;
+                background: $Blank url('/assets/img/tiny-lessons-logo.svg') 0 50% no-repeat;
                 width: 166px;
                 height: 50px;
                 margin-top: -1.6rem;
@@ -48,7 +48,7 @@
     letter-spacing: 1px;
 }
 .Card-description {
-    color: #505050;
+    color: $Dark-liver-grey;
     @include font(18px, 32px);
     margin: 0 0 px2rem(16px) 0;
 }

@@ -1,10 +1,10 @@
 .Background {
-    background-color: #F1F1F1;
+    background-color: $Anti-white-flash;
 }
 .BgBlue {
     background-color: $Lapis-lazuli-blue;
     a {
-        color: #ffffff;
+        color: $Blank;
         &:hover,
         &:focus {
             color: inherit;
@@ -12,9 +12,9 @@
     }
 }
 .BgPurple {
-    background-color: #A9439A;
+    background-color: $Brand-plum;
     a {
-        color: #ffffff;
+        color: $Blank;
         &:hover,
         &:focus {
             color: inherit;
@@ -24,7 +24,7 @@
 .BgGreen {
     background-color: $Brand-carribean-green;
     a {
-        color: #ffffff;
+        color: $Blank;
         &:hover,
         &:focus {
             color: inherit;
@@ -32,5 +32,5 @@
     }
 }
 .Background--frill {
-    box-shadow: 0 -2px 0 0 #DAE1E8, 0 2px 0 0 #DAE1E8;
+    box-shadow: 0 -2px 0 0 $Gainsboro-blue, 0 2px 0 0 $Gainsboro-blue;
 }

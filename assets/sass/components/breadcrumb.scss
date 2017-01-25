@@ -3,7 +3,7 @@
     margin-bottom: px2rem(16px);
 }
 .Breadcrumb--inverted {
-    color: #ffffff;
+    color: $Blank;
 }
 .Breadcrumb-item {
     border-bottom: none;
@@ -21,7 +21,7 @@
     opacity: 0.5;
 }
 .Breadcrumb--inverted .Breadcrumb-item {
-    color: #fff;
+    color: $Blank;
 }
 .Breadcrumb-item--first:before {
     content: "←";

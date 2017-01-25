@@ -8,10 +8,10 @@
 }
 /*Bar colours*/
 .Bar--inverted:before {
-    background-color: #ffffff;
+    background-color: $Blank;
 }
 .Bar--purple:before {
-    background-color: $brand-plum;
+    background-color: $Brand-plum;
 }
 .Bar--red:before {
     background-color: $Crayola-red;

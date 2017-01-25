@@ -2,12 +2,12 @@
     @include font(18px, 28px);
 }
 .Lead--wrapper {
-    background-color: #FFFFFF;
+    background-color: $Blank;
     border: px2rem(1px) solid #E2EBF1;
     padding: px2rem(20px) px2rem(24px) px2rem(16px) px2rem(24px);
 }
 .Lead--inverted {
-    color: #ffffff;
+    color: $Blank;
 }
 @media screen and (min-width: px2em(520px)) {
     .Lead {
