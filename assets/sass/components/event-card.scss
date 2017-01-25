@@ -20,6 +20,9 @@
 .EventCard-listItem {
     display: inline-block;
     list-style: none;
+    font-size: px2rem(16px);
+    margin: px2rem(4px) 0;
+    padding: 0 px2rem(4px);
 }
 .EventCard--inverted * {
     color: $Blank;
