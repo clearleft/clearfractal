@@ -1,30 +1,6 @@
 
 .Card {
     color: $Jet-grey;
-
-    &--tiny-lesson {
-
-        header {
-            border-top: 1px solid $Orange-yellow;
-
-            &:before {
-                content: '';
-                display: inline-block;
-                background: $Blank url('/assets/img/tiny-lessons-logo.svg') 0 50% no-repeat;
-                width: 166px;
-                height: 50px;
-                margin-top: -1.6rem;
-            }
-
-            .Card-title {
-                margin-top: px2rem(8px);
-            }
-        }
-
-    }
-    &--vibrant {
-        padding: px2rem(24px) px2rem(24px) px2rem(48px);
-    }
 }
 .Card-title {
     margin: 0 0 px2rem(24px) 0;
@@ -52,6 +28,39 @@
     @include font(18px, 32px);
     margin: 0 0 px2rem(16px) 0;
 }
+
 .Card--image .Card-author {
     max-width: px2rem(97px);
+}
+.Card--tiny-lesson {
+
+    header {
+        border-top: 1px solid $Orange-yellow;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            background: $Blank url('/assets/img/tiny-lessons-logo.svg') 0 50% no-repeat;
+            width: 166px;
+            height: 50px;
+            margin-top: -1.6rem;
+        }
+
+        .Card-title {
+            margin-top: px2rem(8px);
+        }
+    }
+
+}
+.Card--vibrant {
+    padding-top: px2rem(24px);
+    padding-bottom: px2rem(48px);
+    padding-left: px2rem(16px);
+    padding-right: px2rem(16px);
+}
+@media screen and (min-width: px2rem(500px)) {
+    .Card--vibrant {
+        padding-left: px2rem(24px);
+        padding-right: px2rem(24px);
+    }
 }
