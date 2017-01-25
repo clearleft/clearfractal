@@ -10,33 +10,45 @@ module.exports = {
         }
     },
     {
-        "name": "Purple streak",
+        "name": "Plum streak",
         "context": {
-            "logoModifier": "--purple"
+            "logoModifier": "--plum"
         }
     },
     {
-        "name": "Red streak",
+        "name": "carribean-green streak",
         "context": {
-            "logoModifier": "--red"
+            "logoModifier": "--carribean-green"
         }
     },
     {
-        "name": "Blue streak",
+        "name": "sea-serpent-blue streak",
         "context": {
-            "logoModifier": "--blue"
+            "logoModifier": "--sea-serpent-blue"
         }
     },
     {
-        "name": "Yellow streak",
+        "name": "orange-yellow streak",
         "context": {
-            "logoModifier": "--yellow"
+            "logoModifier": "--orange-yellow"
         }
     },
     {
-        "name": "Light blue streak",
+        "name": "crayola-red streak",
         "context": {
-            "logoModifier": "--lightBlue"
+            "logoModifier": "--crayola-red"
+        }
+    },
+    {
+        "name": "lapis-lazuli-blue streak",
+        "context": {
+            "logoModifier": "--lapis-lazuli-blue"
+        }
+    },
+    {
+        "name": "brandeis-blue streak",
+        "context": {
+            "logoModifier": "--brandeis-blue"
         }
     }]
 };

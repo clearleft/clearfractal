@@ -1,3 +1,4 @@
+
 .PrimaryNavigation-list {
     display: flex;
     flex-wrap: wrap;
@@ -14,10 +15,13 @@
     @include font(15px, 18px);
     font-weight: 700;
     border-bottom: none;
-    &.is-active {
-        background-image: url('/assets/img/streaks/nav-streak-green.svg');
-        background-position: bottom center;
-        background-repeat: no-repeat;
+    &.is-active::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        border-radius: 5px;
+        background-color: $Brand-carribean-green;
     }
 }
 .PrimaryNavigation--inverted {
@@ -27,20 +31,26 @@
     }
 }
 /*Streak colours*/
-.PrimaryNavigation--purple .PrimaryNavigation-link.is-active {
-    background-image: url('/assets/img/streaks/nav-streak-purple.svg');
+.PrimaryNavigation--plum .PrimaryNavigation-link.is-active::after {
+    background-color: $Brand-plum;
 }
-.PrimaryNavigation--red .PrimaryNavigation-link.is-active {
-    background-image: url('/assets/img/streaks/nav-streak-red.svg');
+.PrimaryNavigation--carribean-green .PrimaryNavigation-link.is-active::after {
+    background-color: $Brand-carribean-green;
 }
-.PrimaryNavigation--blue .PrimaryNavigation-link.is-active {
-    background-image: url('/assets/img/streaks/nav-streak-blue.svg');
+.PrimaryNavigation--sea-serpent-blue .PrimaryNavigation-link.is-active::after {
+    background-color: $Sea-serpent-blue;
 }
-.PrimaryNavigation--yellow .PrimaryNavigation-link.is-active {
-    background-image: url('/assets/img/streaks/nav-streak-yellow.svg');
+.PrimaryNavigation--orange-yellow .PrimaryNavigation-link.is-active::after {
+    background-color: $Orange-yellow;
 }
-.PrimaryNavigation--lightBlue .PrimaryNavigation-link.is-active {
-    background-image: url('/assets/img/streaks/nav-streak-light-blue.svg');
+.PrimaryNavigation--crayola-red .PrimaryNavigation-link.is-active::after {
+    background-color: $Crayola-red;
+}
+.PrimaryNavigation--lapis-lazuli-blue .PrimaryNavigation-link.is-active::after {
+    background-color: $Lapis-lazuli-blue;
+}
+.PrimaryNavigation--brandeis-blue .PrimaryNavigation-link.is-active::after {
+    background-color: $Brandeis-blue;
 }
 
 @media only screen and (min-width: px2em(900px)) {
