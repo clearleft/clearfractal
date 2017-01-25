@@ -9,19 +9,19 @@
     -webkit-font-smoothing: antialiased;
     @include font(14px);
     padding: px2rem(8px) px2rem(10px);
-    border-radius: px2rem(5px);
     border: 1px solid $Gainsboro-blue;
+    border-radius: px2rem(5px);
     width: 100%;
 }
 .InputGroup-submit {
-    border-top-right-radius: px2rem(5px);
-    border-bottom-right-radius: px2rem(5px);
+    border-radius: px2rem(5px);
     color: $Blank;
     background-color: $Crayola-red;
-    padding: px2rem(6px) px2rem(6px);
+    padding: px2rem(8px) px2rem(10px);
     font-family: $font-secondary;
     font-weight: 700;
     @include font(14px);
+    width: 100%;
 }
 .InputGroup-label {
     display: block;
@@ -30,24 +30,41 @@
     -webkit-font-smoothing: antialiased;
 }
 .InputGroup--combo {
-    display: flex;
     .InputGroup-field {
-        flex-grow: 1;
-        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        width: 50%;
     }
     .InputGroup-submit {
         border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
     }
 }
-@media screen and (min-width: px2em(350px)) {
+
+@media screen and (min-width: px2em(420px)) {
     .InputGroup-field {
         @include font(16px);
     }
     .InputGroup-submit {
         padding: px2rem(12px) px2rem(18px);
         @include font(17px);
+    }
+    .InputGroup--combo {
+        display: flex;
+        .InputGroup-field {
+            flex-grow: 1;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: px2rem(5px);
+            border-bottom-left-radius: px2rem(5px);
+            width: 50%;
+        }
+        .InputGroup-submit {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: px2rem(5px);
+            border-bottom-right-radius: px2rem(5px);
+            width: auto;
+            margin-top: 0;
+        }
     }
 }
