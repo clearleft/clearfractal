@@ -26,7 +26,10 @@
 }
 @media screen and (min-width: px2em(500px)) {
     .EvoProject-wrapper {
-        padding: px2rem(40px) px2rem(24px) px2rem(52px) px2rem(24px);
+        padding-top: px2rem(40px);
+        padding-bottom: px2rem(52px);
+        padding-left: px2rem(24px);
+        padding-right: px2rem(24px);
         overflow: hidden;
         background-image: url('/assets/img/work/evo/evo-mag-stack.png');
         background-repeat: no-repeat;

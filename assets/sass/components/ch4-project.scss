@@ -58,7 +58,10 @@
 }
 @media screen and (min-width: px2em(700px)) {
     .Ch4Project-wrapper {
-        padding: px2rem(32px) px2rem(24px) px2rem(40px) px2rem(24px);
+        padding-top: px2rem(70px);
+        padding-bottom: px2rem(70px);
+        padding-left: px2rem(24px);
+        padding-right: px2rem(24px);
         display: flex;
     }
     .Ch4Project-primary {
