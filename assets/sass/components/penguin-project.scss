@@ -11,9 +11,6 @@
     -webkit-font-smoothing: antialiased;
 }
 .PenguinProject-title {
-    font-family: $font-statement;
-    @include font(40px, 45px);
-    font-weight: 700;
     margin-top: px2rem(24px);
 }
 .PenguinProject-extension {
@@ -28,12 +25,6 @@
 .PenguinProject-logo {
     margin-top: px2rem(32px);
     margin-bottom: px2rem(32px);
-}
-@media screen and (min-width: px2em(550px)) {
-    .PenguinProject-title {
-        letter-spacing: px2rem(-1.45px);
-        @include font(72px, 77px);
-    }
 }
 @media screen and (min-width: px2em(500px)) {
     .PenguinProject-wrapper {

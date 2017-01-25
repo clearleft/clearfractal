@@ -4,37 +4,37 @@
     {% endif %}
 
     <div class="Ch4Project-wrapper">
-        
+
         {% if "--stage" in ch4Modifier %}
         <div class="Ch4Project-breadcrumb">
             {% include '@breadcrumb' %}
         </div><!--/.Ch4Project-breadcrumb-->
         {% endif %}
-       
+
         <div class="Ch4Project-primary">
-            
+
             {% if ch4Context %}
             <p class="Heading Heading--context Heading--inverted">{{ch4Context}}</p>
             {% endif %}
 
-            <h1 class="Ch4Project-title">{{ch4Title}}</h1>
+            <h1 class="Ch4Project-title Heading Heading--secondary Heading--inverted">{{ch4Title}}</h1>
 
             {% if ch4Description %}
             <div class="Ch4Project-description Lead Bar">
                 {{ch4Description}}
             </div><!--/.Ch4Project-description Lead Bar-->
             {% endif %}
-            
+
             {% if ch4LogoSrc %}
             <img class="Ch4Project-logo" src="{{ch4LogoSrc}}" alt="{{ch4LogoAlt}}">
             {% endif %}
-            
+
             {% if ch4Link %}
             <div class="Ch4Project-extension">
                 <a class="MegaLink MegaLink--inverted" href="{{Ch4LinkUrl}}">{{ch4Link}}</a>
             </div><!--/.Ch4Project-extension-->
             {% endif %}
-        
+
         </div><!--./.Ch4Project-primary-->
 
         {% if ch4MainSrc %}
@@ -50,5 +50,5 @@
         <div class="Ch4Project-middle" aria-hidden="true"></div>
     </div><!--/.Ch4Project-skew-->
     {% endif %}
-    
+
 </div><!--./Ch4Project-->
