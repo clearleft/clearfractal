@@ -12,5 +12,7 @@
         {% endfor %}
         </ul><!--/.EventCard-list-->
     </div><!--/.EventCard-links-->
+    {% if eventCardUrl %}
     <a href="{{eventCardUrl}}" class="EventsCard-link MegaLink">{{eventCardLink}}</a>
+    {% endif %}
 </div><!--/.EventCard-->
