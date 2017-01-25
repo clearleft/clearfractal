@@ -6,7 +6,7 @@
     background-color: transparent;
 
     &--encased {
-        border-bottom: solid px2rem(2px) $shadow-grey;
+        border-bottom: solid px2rem(2px) $Gainsboro-blue;
     }
 }
 .Chapter:last-child {
@@ -17,7 +17,7 @@
     font-family: $font-secondary;
     font-weight: 700;
     margin-bottom: px2rem(16px);
-    color: $jet-grey;
+    color: $Jet-grey;
     margin: 0 0 px2rem(32px) 0;
 }
 .Chapter-space {
