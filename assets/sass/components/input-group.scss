@@ -10,14 +10,14 @@
     @include font(14px);
     padding: px2rem(8px) px2rem(10px);
     border-radius: px2rem(5px);
-    border: 1px solid $shadow-grey;
+    border: 1px solid $Gainsboro-blue;
     width: 100%;
 }
 .InputGroup-submit {
     border-top-right-radius: px2rem(5px);
     border-bottom-right-radius: px2rem(5px);
     color: #ffffff;
-    background-color: $clearleft-red;
+    background-color: $Crayola-red;
     padding: px2rem(6px) px2rem(6px);
     font-family: $font-secondary;
     font-weight: 700;
