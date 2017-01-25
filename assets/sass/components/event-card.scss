@@ -1,6 +1,11 @@
 .EventCard {
     margin-bottom: px2rem(16px);
 }
+.EventCard-eventName {
+    font-family: $font-secondary;
+    font-weight: 700;
+    @include font(30px, 35px);
+}
 .EventCard-context {
     margin-top: px2rem(8px);
     @include font(14px, 17px);
