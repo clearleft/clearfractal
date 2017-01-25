@@ -21,9 +21,8 @@ h6 {
     font-weight: normal;
 }
 body {
-    @include font(16px, 26px);
+    @include font(16px, 27px);
     margin: 0;
-    line-height: px2rem(32px);
 }
 
 a {
