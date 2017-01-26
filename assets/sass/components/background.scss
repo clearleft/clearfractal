@@ -1,33 +1,40 @@
 .Background {
+    color: $Jet-grey;
     background-color: $Anti-white-flash;
 }
 .BgBlue {
+    color: $Blank;
     background-color: $Lapis-lazuli-blue;
     a {
         color: $Blank;
         &:hover,
-        &:focus {
-            color: inherit;
+        &:focus,
+        &:active {
+            color: $Gainsboro-blue;
         }
     }
 }
 .BgPurple {
+    color: $Blank;
     background-color: $Brand-plum;
     a {
         color: $Blank;
         &:hover,
-        &:focus {
-            color: inherit;
+        &:focus,
+        &:active {
+            color: $Gainsboro-blue;
         }
     }
 }
 .BgGreen {
+    color: $Blank;
     background-color: $Brand-carribean-green;
     a {
         color: $Blank;
         &:hover,
-        &:focus {
-            color: inherit;
+        &:focus,
+        &:active {
+            color: $Gainsboro-blue;
         }
     }
 }

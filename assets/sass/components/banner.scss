@@ -30,16 +30,18 @@
     margin-top: px2rem(16px);
 }
 .Banner--notice {
+    color: $Jet-grey;
     background-color: $Anti-white-flash;
 }
 .Banner--notice .Banner-caption {
-    color: #1E6B9C;
+    color: $Lapis-lazuli-blue;
 }
 .Banner--decorated {
     background-image: url('/assets/img/studio/studio-2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color: $Blank;
+    background-color: $Jet-grey;
     .Banner-caption,
     .Banner-headline,
     .Banner-link {

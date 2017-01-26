@@ -3,7 +3,8 @@
     max-width: 28rem;
 }
 .InputGroup-field {
-    background: $Blank;
+    color: $Jet-grey;
+    background-color: $Blank;
     border: 0;
     font-family: $font-main;
     -webkit-font-smoothing: antialiased;
@@ -14,9 +15,9 @@
     width: 100%;
 }
 .InputGroup-submit {
-    border-radius: px2rem(5px);
     color: $Blank;
     background-color: $Crayola-red;
+    border-radius: px2rem(5px);
     padding: px2rem(8px) px2rem(10px);
     font-family: $font-secondary;
     font-weight: 700;

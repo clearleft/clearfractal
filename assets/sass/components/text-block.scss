@@ -18,7 +18,6 @@
 @media screen and (min-width: px2em(500px)) {
     .TextBlock {
         padding-bottom: px2rem(8px);
-        /*padding-top: px2rem(10px);*/
     }
     .TextBlock--author {
         padding-bottom: 0;
@@ -28,9 +27,6 @@
     .TextBlock {
         max-width: px2rem(550px);
     }
-    /*.TextBlock--wide {
-        max-width: px2rem(825px);
-    }*/
     .TextBlock-author {
         margin-left: px2rem(-136px);
     }
