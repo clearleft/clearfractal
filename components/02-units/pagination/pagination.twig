@@ -1,9 +1,9 @@
 <div class="Pagination">
-    {% if pagePrevUrl %}<a class="Pagination-move Pagination-move--prev" href="{{pagePrevUrl}}">Prev</a>{% endif %}
+    {% if pagePrevUrl %}<a rel="prev" class="Pagination-move Pagination-move--prev" href="{{pagePrevUrl}}">Prev</a>{% endif %}
     <ol class="Pagination-list">
     {% for item in items %}
         <li><a class="Pagination-item{% if item.pageNumber == '{{currentPage}}' %} Pagination-item--current{% endif %}" href="{{currentPageUrl}}">{{item.pageNumber}}</a></li>
     {% endfor %}
     </ol><!--/.Pagination-list-->
-    {% if pageNextUrl %}<a class="Pagination-move Pagination-move--next" href="{{pageNextUrl}}">Next</a>{% endif %}
+    {% if pageNextUrl %}<a rel="next" class="Pagination-move Pagination-move--next" href="{{pageNextUrl}}">Next</a>{% endif %}
 </div><!--/.Pagination-->

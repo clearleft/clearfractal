@@ -17,6 +17,14 @@
 }
 .Lead--inverted {
     color: $Blank;
+    a {
+        color: $Blank;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $Gainsboro-blue;
+        }
+    }
 }
 @media screen and (min-width: px2em(520px)) {
     .Lead {

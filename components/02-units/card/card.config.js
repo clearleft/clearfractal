@@ -1,6 +1,6 @@
 'use strict';
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "cardTitle": "Article Title Goes here",
         "cardCategory": "Opinion",

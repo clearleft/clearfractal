@@ -1,5 +1,5 @@
-{
-    "status": "wip",
+module.exports = {
+    "status": "ready",
     "context": {
         "primaryNavlinks": [
             { "title": "Case Studies", "url": "#", "primaryActive": true },

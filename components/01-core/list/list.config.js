@@ -1,6 +1,6 @@
 'use strict';
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "listItem": "A single item in a list"
     },

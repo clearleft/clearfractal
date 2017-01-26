@@ -1,5 +1,5 @@
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "signpostItems": [
             { "link": "Create a new universe", "linkUrl": "#", "context": "Penguin Random House", "linkModifier": "Signpost-link--prev" },

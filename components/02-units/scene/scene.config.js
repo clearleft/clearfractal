@@ -1,6 +1,6 @@
 
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "sceneProse": `
             <p>We had worked with Channel 4 News before, designing their mobile apps and refreshing their website, but this was the biggest challenge yet.  We needed to find tiny ways to make big changes to a vast eco-system of content production to make it more suitable for mobile consumption. Not only did the new website need to adapt to many devices and screen sizes, it needed to adapt to the fast-paced way the news itself gets produced.</p>
@@ -35,7 +35,7 @@ module.exports = {
                     }
                ],
             }
-        ] 
+        ]
     },
 
     "variants": [{

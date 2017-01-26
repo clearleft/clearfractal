@@ -1,5 +1,5 @@
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "headerImageSrc": "/assets/img/jobs/header.jpg",
         "headerImageAlt": "A desk"
