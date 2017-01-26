@@ -1,6 +1,6 @@
 .Heading {
-    font-family: $font-secondary;
     color: $Jet-grey;
+    font-family: $font-secondary;
     margin-bottom: px2rem(8px);
     margin-top: px2rem(8px);
     -webkit-font-smoothing: antialiased;
@@ -10,8 +10,9 @@ a.Heading,
 a .Heading {
     border-bottom: none;
     &:hover,
-    &:focus {
-        color: $Crayola-red;
+    &:focus,
+    &:active {
+        color: $Dark-liver-grey;
     }
 }
 .Heading a {

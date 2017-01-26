@@ -1,8 +1,9 @@
 .ContactCard {
+    color: $Dark-liver-grey;
+    background-color: $Blank;
     margin-top: px2rem(24px);
     @include font(16px, 28px);
     max-width: px2em(420px);
-    color: $Dark-liver-grey;
     -webkit-font-smoothing: antialiased;
     margin-bottom: px2rem(24px);
 }

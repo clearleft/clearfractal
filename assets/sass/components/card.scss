@@ -1,15 +1,16 @@
 
 .Card {
     color: $Jet-grey;
+    background-color: $Blank;
 }
 .Card-title {
     margin: 0 0 px2rem(24px) 0;
 }
 .Card-category {
+    color: $mid-grey;
     font-family: $font-secondary;
     @include font(14px, 17px);
     margin: 0 0 px2rem(16px) 0;
-    color: $mid-grey;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
