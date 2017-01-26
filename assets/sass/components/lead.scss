@@ -8,6 +8,14 @@
 }
 .Lead--inverted {
     color: $Blank;
+    a {
+        color: $Brandeis-blue;
+        a:active,
+        a:hover,
+        a:focus {
+            color: $Crayola-red;
+        }
+    }
 }
 @media screen and (min-width: px2em(520px)) {
     .Lead {

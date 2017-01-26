@@ -2,7 +2,7 @@
 module.exports = {
     "status": "wip",
     "context": {
-        "leadText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sapiente molestiae sed? Consectetur illo repellat dolorum assumenda, voluptatum explicabo architecto?",
+        "leadText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sapiente molestiae sed? Consectetur illo repellat dolorum assumenda, voluptatum explicabo architecto? <a href=\"#\">Here’s a link</a>.",
         "leadModifier": false
     },
     "variants": [
@@ -15,7 +15,7 @@ module.exports = {
     {
         "name": "inverted",
         "context": {
-            "leadModifier": "--inverted"  
+            "leadModifier": "--inverted"
         }
     }]
 }
