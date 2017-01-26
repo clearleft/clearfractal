@@ -1,5 +1,5 @@
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "eventName": "UX London",
         "eventCardContext": "May 24-26 2017  laban, london",

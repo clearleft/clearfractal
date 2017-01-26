@@ -1,5 +1,5 @@
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "contactStreet": "68 Middle Street",
         "contactTown": "Brighton",

@@ -7,7 +7,7 @@ for(var i = 1; i < 5; i++){
 }
 
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "metadataHeading": "Our team",
         "items": items

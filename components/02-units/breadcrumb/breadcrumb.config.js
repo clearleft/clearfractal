@@ -1,5 +1,5 @@
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "segmentOne": "About us",
         "breadcrumbUrl": "#"
@@ -15,12 +15,6 @@ module.exports = {
         "context": {
             "breadcrumbModifier": false,
             "segmentTwo": "Values"
-        }
-    },
-    {
-        "name": "Inverted",
-        "context": {
-            "breadcrumbModifier": "--inverted"
         }
     }]
 }

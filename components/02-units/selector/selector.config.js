@@ -1,6 +1,6 @@
 
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "selectorID": "fragmentidentifier",
         "triggerContent": "trigger label",

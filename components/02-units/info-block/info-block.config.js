@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
-    "status": "wip",
-    "context": { 
+    "status": "ready",
+    "context": {
         "infoBlockTitle": "Web Accessibility: Web Standards and Regulatory Compliance",
         "infoBlockSub": "published by Friends of Ed",
         "infoBlockUrl": "#",

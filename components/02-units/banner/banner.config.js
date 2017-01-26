@@ -1,5 +1,5 @@
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "bannerCaption": "Take a peek into Middle Street",
         "bannerHeadline": "Our Studio",

@@ -1,11 +1,10 @@
 
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "featuredCardTitle": "Misconceptions about “Agile”",
         "featuredCardLink": "#",
         "featuredCardCategory": "Process",
-        // "author": true,
         "authorImage": "/assets/img/authors/lg/edv.png",
         "authorName": "Ellen DeVries"
     }

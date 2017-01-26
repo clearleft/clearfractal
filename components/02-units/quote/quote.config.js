@@ -1,6 +1,6 @@
 'use strict';
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "quoteAvatarSrc": "/assets/img/work/ch4/anna-doble.jpg",
         "quoteAvatarAlt": "James Bates",
