@@ -39,6 +39,11 @@
 }
 .MegaLink--inverted {
     color: $Blank;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $Gainsboro-blue;
+    }
 }
 @media screen and (min-width: px2em(600px)) {
     .MegaLink--giant {
