@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-youtube</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-assets" transform="translate(-6.000000, -57.000000)" fill="#FFFFFF">
+            <g id="Group-6" transform="translate(1.000000, 50.000000)">
+                <path d="M15,7.3 C5.172,7.3 5,8.174 5,15 C5,21.826 5.172,22.7 15,22.7 C24.828,22.7 25,21.826 25,15 C25,8.174 24.828,7.3 15,7.3 Z M18.205,15.334 L13.715,17.43 C13.322,17.612 13,17.408 13,16.974 L13,13.026 C13,12.593 13.322,12.388 13.715,12.57 L18.205,14.666 C18.598,14.85 18.598,15.15 18.205,15.334 Z" id="icon-youtube"></path>
+            </g>
+        </g>
+    </g>
+</svg>

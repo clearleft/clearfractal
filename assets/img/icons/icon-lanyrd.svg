@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="17px" viewBox="0 0 14 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-lanyrd</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-assets" transform="translate(-159.000000, -57.000000)" fill="#FFFFFF">
+            <g id="Group-6" transform="translate(1.000000, 0.000000)">
+                <path d="M160,57 L164,57 L164,73 L160,73 L160,57 Z M170,69 L164,69 L164,73 L170,73 L170,69 Z" id="icon-lanyrd" transform="translate(165.000000, 65.000000) rotate(-15.000000) translate(-165.000000, -65.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

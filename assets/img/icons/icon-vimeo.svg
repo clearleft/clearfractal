@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-vimeo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-assets" transform="translate(-307.000000, -7.000000)" fill="#FFFFFF">
+            <g id="Group-6" transform="translate(1.000000, 0.000000)">
+                <path d="M323.91,10.8400548 C322.904,16.6130548 317.285,21.5000548 315.595,22.6170548 C313.905,23.7320548 312.362,22.1700548 311.803,20.9860548 C311.162,19.6390548 309.244,12.3300548 308.741,11.7250548 C308.238,11.1190548 306.731,12.3300548 306.731,12.3300548 L306,11.3540548 C306,11.3540548 309.061,7.62905481 311.391,7.16305481 C313.861,6.67005481 313.857,11.0270548 314.451,13.4450548 C315.025,15.7870548 315.412,17.1250548 315.914,17.1250548 C316.416,17.1250548 317.376,15.8200548 318.426,13.8200548 C319.479,11.8160548 318.381,10.0480548 316.325,11.3060548 C317.148,6.27905481 324.916,5.07005481 323.91,10.8400548 Z" id="icon-vimeo"></path>
+            </g>
+        </g>
+    </g>
+</svg>
