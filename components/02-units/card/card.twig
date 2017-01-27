@@ -9,9 +9,7 @@
         {% if cardDescription %}<p class="Card-description">{{ cardDescription }}</p>{% endif %}
         {% if cardModifier == "--vibrant" %} <a href="{{cardLink}}" class="MegaLink">Read the case study</a> {% endif %}
         <div class="Card-author">
-        {% if authorImage %}
             {% include '@author' %}
-        {% endif %}
         </div><!--/.Card-author-->
     </div><!--/.Card-primary-->
 </article><!--/.Card-->
