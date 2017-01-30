@@ -14,10 +14,12 @@
     overflow-x: scroll;
 }
 .Pagination-item {
+    font-family: "Gilroy", "Helvetica Neue", sans-serif;
+    font-weight: 700;
     color: $light-grey;
     border-bottom: none;
     @include font(20px);
-    padding: px2rem(10px);
+    padding: px2rem(4px) px2rem(10px);
     margin-left: px2rem(6px);
     margin-right: px2rem(6px);
     &--current {
