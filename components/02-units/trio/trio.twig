@@ -1,4 +1,4 @@
-<div class="Trio{% if trioModifier %} Trio{{trioModifier}}{% endif %}"{% if trioID %} id="{{ trioID }}"{% endif %}>
+<div class="Trio{% if trioModifiers %} Trio{{ trioModifiers|join(' Trio') }}{% endif %}"{% if trioID %} id="{{ trioID }}"{% endif %}{% if trioMiscStyles %} style="{{ trioMiscStyles }}"{% endif %}>
     <div class="Trio-wrapper">
         <h2 class="Trio-title Heading Heading--main">{{trioHeading}}</h2>
         {% if trioModifier == "--evo Trio--inverted Trio--stacked" %}

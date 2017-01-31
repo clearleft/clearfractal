@@ -24,31 +24,31 @@ module.exports = {
     "variants": [{
         "name": "stacked",
         "context": {
-            "trioModifier": "--stacked"
+            "trioModifiers": ["--stacked"]
         }
     },
     {
         "name": "inverted",
         "context": {
-            "trioModifier": "--inverted"
+            "trioModifiers": ["--inverted"]
         }
     },
     {
         "name": "channel4",
         "context": {
-            "trioModifier": "--channel4 Trio--inverted"
+            "trioModifiers": ["--channel4", "--inverted"]
         }
     },
     {
         "name": "penguin",
         "context": {
-            "trioModifier": "--penguin Trio--inverted"
+            "trioModifiers": ["--penguin", "--inverted"]
         }
     },
     {
         "name": "evo",
         "context": {
-            "trioModifier": "--evo Trio--inverted Trio--stacked"
+            "trioModifiers": ["--evo", "--inverted", "--stacked"]
         }
     }]
 }
