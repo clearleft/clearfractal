@@ -14,6 +14,9 @@
     margin-top: px2rem(16px);
     margin-bottom: px2rem(20px);
 }
+.Hello-body a {
+    color: #fff;
+}
 @media screen and (min-width: px2rem(600px)) {
     .Hello {
         padding: px2rem(38px) px2rem(32px) px2rem(72px) px2rem(32px);
