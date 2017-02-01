@@ -1,7 +1,10 @@
 <div class="InputGroup">
-    <label class="InputGroup-label Heading Heading--body" for="{{inputGroupID}}">{{inputGroupLabel}}</label>
-    <div class="Input InputGroup--combo">
-        <input class="InputGroup-field" type="email" placeholder="{{inputGroupPlaceholder}}" id="{{inputGroupID}}" />
-        <button type="submit" class="InputGroup-submit">{{inputGroupSubmit}}</button>
-    </div><!--/.InputGroup-->
+    <form action="https://tinyletter.com/clearleft" method="post">
+        <input type="hidden" value="1" name="embed">
+        <label class="InputGroup-label Heading Heading--body" for="{{inputGroupID}}">{{inputGroupLabel}}</label>
+        <div class="Input InputGroup--combo">
+            <input class="InputGroup-field" type="email" name="email" placeholder="{{inputGroupPlaceholder}}" id="{{inputGroupID}}" />
+            <button type="submit" class="InputGroup-submit">{{inputGroupSubmit}}</button>
+        </div><!--/.InputGroup-->
+    </form>
 </div><!--/.InputGroup-->
