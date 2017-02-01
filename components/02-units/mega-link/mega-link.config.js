@@ -15,5 +15,11 @@ module.exports = {
         "context": {
             "megaLinkModifier": "--giant"
         }
+    },
+    {
+        "name": "Inverted",
+        "context": {
+            "megaLinkModifier": "--inverted"
+        }
     }]
 }

@@ -37,15 +37,16 @@
     color: $Lapis-lazuli-blue;
 }
 .Banner--decorated {
-    background-image: url('/assets/img/studio/studio-2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: $Crayola-red;
     color: $Blank;
-    background-color: $Jet-grey;
     .Banner-caption,
     .Banner-headline,
     .Banner-link {
         color: $Blank;
+        border-color: $Blank;
+        &:after {
+            background-image: url('/assets/img/icons/icon-arrow-right--white.svg');
+        }
     }
 }
 @media only screen and (min-width: px2em(600px)) {
