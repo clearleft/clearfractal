@@ -1,4 +1,5 @@
 .Showcase-title {
+    @include heading('secondary');
     margin-top: px2rem(30px);
 }
 .Showcase-wrapper {
@@ -28,5 +29,12 @@
     background-color: $Lapis-lazuli-blue;
     .Showcase-title {
         color: $Blank;
+    }
+}
+
+@media screen and (min-width: px2em(500px)) {
+    .Showcase-title {
+        @include heading('secondary', 'wide');
+        margin-top: px2rem(30px);
     }
 }
