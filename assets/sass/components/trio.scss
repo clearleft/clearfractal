@@ -16,16 +16,18 @@
     margin-bottom: px2rem(20px);
 }
 .Trio-title {
+    @include heading('main');
     margin: px2rem(16px);
+}
+.Trio-itemHead {
+    @include heading('small');
 }
 /*Stats are currently on the Evo variation*/
 .Trio-stats {
     padding: px2rem(16px);
 }
 .Trio-statsHeading {
-    @include font(25px, 35px);
-    font-weight: 700;
-    font-family: $font-secondary;
+    @include heading('medium');
     margin-top: 0;
     margin-bottom: px2rem(16px);
 }
@@ -64,8 +66,15 @@
     }
 }
 @media screen and (min-width: px2rem(500px)) {
+    .Trio-title {
+        @include heading('main', 'wide');
+        margin: px2rem(16px);
+    }
+    .Trio-itemHead {
+        @include heading('small', 'wide');
+    }
     .Trio-statsHeading {
-        @include font(43px, 50px);
+        @include heading('medium', 'wide');
         margin-bottom: px2rem(24px);
     }
     .Trio-statsFigure {
