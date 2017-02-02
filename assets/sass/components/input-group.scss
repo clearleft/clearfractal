@@ -25,10 +25,10 @@
     width: 100%;
 }
 .InputGroup-label {
+    @include heading('body');
     display: block;
     flex-basis: 100%;
     margin-bottom: px2rem(10px);
-    -webkit-font-smoothing: antialiased;
 }
 .InputGroup--combo {
     .InputGroup-field {
@@ -67,5 +67,11 @@
             width: auto;
             margin-top: 0;
         }
+    }
+}
+
+@media screen and (min-width: px2em(500px)) {
+    .InputGroup-label {
+        @include heading('body', 'wide');
     }
 }
