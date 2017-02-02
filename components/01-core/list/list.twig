@@ -1,3 +1,5 @@
 <ul class="List{% if listModifier %} List{{ listModifier}}{% endif %}">
-<li class="List-item">{{listItem}}</li>
+    {% for item in listItems %}
+    <li class="List-item">{{ item }}</li>
+    {% endfor %}
 </ul>
