@@ -1,10 +1,4 @@
-.Heading {
-    color: $Jet-grey;
-    font-family: $font-secondary;
-    margin-bottom: px2rem(8px);
-    margin-top: px2rem(8px);
-    -webkit-font-smoothing: antialiased;
-}
+
 a.Heading,
 .Heading a,
 a .Heading {
@@ -19,42 +13,28 @@ a .Heading {
     color: inherit;
 }
 .Heading--impact {
-    @include font(48px, 40px);
-    font-family: $font-statement;
-    letter-spacing: -1.95px;
+    @include heading('impact');
 }
 .Heading--main {
-    @include font(36px, 43px);
-    font-family: $font-statement;
-    letter-spacing: -1.29px;
+    @include heading('main');
 }
 .Heading--secondary {
-    @include font(30px, 35px);
-    letter-spacing: -0.58px;
-    font-family: $font-statement;
+    @include heading('secondary');
 }
 .Heading--medium {
-    @include font(28px, 33px);
-    font-weight: 700;
+    @include heading('medium');
 }
 .Heading--small {
-    @include font(22px, 27px);
-    font-weight: 700;
+    @include heading('small');
 }
 .Heading--bump {
-    @include font(18px, 32px);
-    font-weight: 700;
+    @include heading('bump');
 }
 .Heading--body {
-    @include font(16px, 25px);
-    font-weight: 700;
+    @include heading('body');
 }
 .Heading--context {
-    @include font(14px, 17px);
-    text-transform: uppercase;
-    color: $mid-grey;
-    font-weight: 700;
-    letter-spacing: 1px;
+    @include heading('context');
 }
 .Heading--inverted {
     color: $Blank;
@@ -69,47 +49,37 @@ a .Heading--inverted {
 }
 @media screen and (min-width: px2em(300px)) {
     .Heading--impact {
-        font-size: calc( 60px + (190 - 60) * ( (100vw - 300px) / ( 1200 - 300) ));
-        // Fluid font size ranging from 60 to 190 pixels
-        // if the window is more than 300 pixels wide
-        // and the window is less than 1200 pixels wide
+        @include heading('impact', 'inbetween');
     }
     .Heading--main {
-        @include font(60px, 54px);
+        @include heading('main', 'inbetween');
     }
     .Heading--secondary {
-        @include font(40px, 47px);
+        @include heading('secondary', 'inbetween');
     }
 }
 @media screen and (min-width: px2em(500px)) {
-    .Heading {
-        margin-bottom: px2rem(16px);
-    }
     .Heading--main {
-        @include font(90px, 84px);
+        @include heading('main', 'wide');
     }
     .Heading--secondary {
-        @include font(68px, 75px);
+        @include heading('secondary', 'wide');
     }
     .Heading--medium {
-        @include font(43px, 50px);
-        font-weight: 700;
+        @include heading('medium', 'wide');
     }
     .Heading--small {
-        @include font(35px, 40px);
-        font-weight: 700;
+        @include heading('small', 'wide');
     }
     .Heading--bump {
-        @include font(28px, 27px);
-        font-weight: 700;
+        @include heading('bump', 'wide');
     }
     .Heading--body {
-        @include font(22px, 27px);
-        font-weight: 700;
+        @include heading('body', 'wide');
     }
 }
 @media screen and (min-width: px2em(1200px)) {
     .Heading--impact {
-        @include font(190px, 160px);
+        @include heading('impact', 'wide');
     }
 }
