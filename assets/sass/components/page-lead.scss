@@ -15,7 +15,12 @@
     }
     .PageLead-secondary {
         flex-basis: 48%;
+        @include font-size(16px);
         padding: px2em(8px) px2em(32px);
+
+        .Heading {
+            margin-bottom: 0;
+        }
     }
     .PageLead-primary {
         margin-bottom: px2rem(-24px);

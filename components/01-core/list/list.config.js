@@ -2,7 +2,10 @@
 module.exports = {
     "status": "ready",
     "context": {
-        "listItem": "A single item in a list"
+        "listItems": [
+            "An item in a list",
+            "A second item in a list"
+        ]
     },
     "variants": [{
         "name": "Tall",
