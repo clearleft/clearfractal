@@ -9,6 +9,7 @@
     z-index: 0;
 }
 .ContactInfo-title {
+    @include heading('main');
     margin-bottom: px2rem(20px);
 }
 .ContactInfo-wrapper {
@@ -20,6 +21,10 @@
     .ContactInfo-info {
         width: 80%;
         margin-bottom: px2rem(-200px);
+    }
+    .ContactInfo-title {
+        @include heading('main', 'wide');
+        margin-bottom: px2rem(20px);
     }
 }
 @media screen and (min-width: px2em(680px)) {
