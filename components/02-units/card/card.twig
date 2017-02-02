@@ -2,7 +2,7 @@
     {% if cardModifier != "--tiny-lesson" %}<div class="Bar"{% if cardBarColour %} style="color:{{ cardBarColour }}"{% endif %}></div>{% endif %}
     <div class="Card-primary">
         <header>
-            <a href="{{cardUrl}}"><h3 class="Card-title Heading Heading--medium"{% if cardHeaderColour %} style="color:{{ cardHeaderColour }}"{% endif %}>{{ cardTitle }}</h3></a>
+            <a href="{{cardUrl}}"><h3 class="Card-title"{% if cardHeaderColour %} style="color:{{ cardHeaderColour }}"{% endif %}>{{ cardTitle }}</h3></a>
         </header>
         {% if cardCategory %}<div class="Card-category">{{ cardCategory }}</div>{% endif %}
         {% if cardMeta %}<div class="Card-meta">{{ cardMeta }}</div>{% endif %}
