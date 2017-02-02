@@ -5,6 +5,7 @@
     max-width: px2em(760px);
 }
 .Scene-heading {
+    @include heading('medium');
     margin-top: 0;
 }
 .Scene--basic {
@@ -14,6 +15,10 @@
     }
 }
 @media screen and (min-width: px2em(500px)) {
+    .Scene-heading {
+        @include heading('medium', 'wide');
+        margin-top: 0;
+    }
     .Scene--basic {
         margin-bottom: px2rem(-25px);
     }
