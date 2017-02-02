@@ -149,6 +149,13 @@
     margin-top: -17rem;
     margin-bottom: px2rem(10px);
 }
+.PenguinDisplayFont-wrapper {
+    display: table;
+    width: 100%;
+}
+.PenguinDisplayFont-wrapper:after {
+    content: '';
+}
 .PenguinDisplayFont {
     padding: px2rem(20px);
     background-color: $Blank;
@@ -158,7 +165,7 @@
     width: 47%;
     display: inline-block;
     float: left;
-    margin-bottom: px2rem(40px);
+    margin-bottom: px2rem(20px);
     margin-top: px2rem(20px);
     img {
         display: block;
@@ -174,6 +181,13 @@
         margin-left: 1.5%;
     }
 }
+.PenguinDisplayCase-example1 {
+    text-align: center;
+}
+.PenguinDisplayCase-example2 {
+    position: relative;
+}
+
 @media screen and (min-width: px2em(600px)) {
     .PenguinDisplayCase-wrapper {
         margin-top: 20rem;
