@@ -6,6 +6,7 @@
     box-shadow: 0 8px 10px rgba(50,50,50,0.3);
 }
 .FeaturedCard-title {
+    @include heading('secondary');
     margin: 0 0 px2rem(18px) 0;
 }
 .FeaturedCard-category {
@@ -33,6 +34,10 @@
     }
     .FeaturedCard-secondary {
         flex: 0 px2rem(160px);
+    }
+    .FeaturedCard-title {
+        @include heading('secondary', 'wide');
+        margin: 0 0 px2rem(18px) 0;
     }
 }
 
