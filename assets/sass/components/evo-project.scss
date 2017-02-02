@@ -13,6 +13,8 @@
     z-index: 1;
 }
 .EvoProject-title {
+    @include heading('medium');
+    color: $Blank;
     margin-top: px2rem(24px);
 }
 .EvoProject-extension {
@@ -40,6 +42,11 @@
         width: 70%;
         float: right;
         padding-left: px2rem(24px);
+    }
+    .EvoProject-title {
+        @include heading('medium', 'wide');
+        color: $Blank;
+        margin-top: px2rem(24px);
     }
 }
 @media screen and (min-width: px2em(600px)) {
