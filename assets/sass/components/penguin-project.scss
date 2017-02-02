@@ -11,6 +11,8 @@
     -webkit-font-smoothing: antialiased;
 }
 .PenguinProject-title {
+    @include heading('secondary');
+    color: $Blank;
     margin-top: px2rem(24px);
 }
 .PenguinProject-extension {
@@ -36,6 +38,11 @@
         background-repeat: no-repeat;
         background-position: 120% 100%;
         background-size: px2rem(280px);
+    }
+    .PenguinProject-title {
+        @include heading('secondary', 'wide');
+        color: $Blank;
+        margin-top: px2rem(24px);
     }
     .PenguinProject-primary {
         width: 70%;
