@@ -20,7 +20,7 @@
 }
 .Ch4Project-title {
     @include heading('secondary');
-    color: $Blank;
+    color: inherit;
     margin-top: px2rem(24px);
     max-width: px2rem(400px);
 }
@@ -50,7 +50,8 @@
     }
     .Ch4Project-title {
         @include heading('secondary', 'wide');
-        color: $Blank;
+        color: inherit;
+        margin-top: px2rem(24px);
         max-width: none;
     }
     .Ch4Project-wrapper {

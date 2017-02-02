@@ -14,7 +14,7 @@
 }
 .EvoProject-title {
     @include heading('medium');
-    color: $Blank;
+    color: inherit;
     margin-top: px2rem(24px);
 }
 .EvoProject-extension {
@@ -45,7 +45,7 @@
     }
     .EvoProject-title {
         @include heading('medium', 'wide');
-        color: $Blank;
+        color: inherit;
         margin-top: px2rem(24px);
     }
 }

@@ -12,7 +12,7 @@
 }
 .PenguinProject-title {
     @include heading('secondary');
-    color: $Blank;
+    color: inherit;
     margin-top: px2rem(24px);
 }
 .PenguinProject-extension {
@@ -41,7 +41,7 @@
     }
     .PenguinProject-title {
         @include heading('secondary', 'wide');
-        color: $Blank;
+        color: inherit;
         margin-top: px2rem(24px);
     }
     .PenguinProject-primary {
