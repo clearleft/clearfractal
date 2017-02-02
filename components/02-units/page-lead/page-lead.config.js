@@ -15,15 +15,12 @@ module.exports = {
             "name": "secondary",
             "context": {
                 "pageLeadSecondary": true,
-                listItems: [{
-                    "listItem": `<a href="#">11 yrs old and growing. What’s our story?</a>`
-                },
-                {
-                    "listItem": `<a href="#">11 yrs old and growing. What’s our story?</a>`
-                },
-                {
-                    "listItem": `<a href="#">11 yrs old and growing. What’s our story?</a>`
-                }]
+                "listModifier": '--tall',
+                "listItems": [
+                    `<a href="#">11 yrs old and growing. What’s our story?</a>`,
+                    `<a href="#">11 yrs old and growing. What’s our story?</a>`,
+                    `<a href="#">11 yrs old and growing. What’s our story?</a>`
+                ]
             }
         },
         {
