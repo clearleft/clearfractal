@@ -21,6 +21,9 @@
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
 }
+.Banner-headline {
+    @include heading('secondary');
+}
 .Banner-body {
     margin-left: auto;
     margin-right: auto;
@@ -51,7 +54,7 @@
 }
 @media only screen and (min-width: px2em(600px)) {
     .Banner-headline {
-        margin-bottom: px2rem(16px);
+        @include heading('secondary', 'wide');
     }
     .Banner-caption {
         margin-bottom: px2rem(16px);
