@@ -16,6 +16,7 @@
     padding-bottom: px2rem(32px);
 }
 .Proposition-title {
+    @include heading('medium');
     margin: 0 0 px2rem(32px) 0;
 }
 .Proposition-primary {
@@ -39,6 +40,12 @@
 }
 .Proposition:nth-child(even) .Proposition-primary {
     order: 2;
+}
+@media screen and (min-width: px2em(500px)) {
+    .Proposition-title {
+        @include heading('medium', 'wide');
+        margin: 0 0 px2rem(32px) 0;
+    }
 }
 @media screen and (min-width: px2em(700px)) {
     .Proposition {
