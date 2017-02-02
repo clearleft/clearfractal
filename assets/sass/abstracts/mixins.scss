@@ -146,4 +146,13 @@
         color: $mid-grey;
         letter-spacing: 1px;
     }
+    a {
+        color: inherit;
+        border-bottom: none;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $Dark-liver-grey;
+        }
+    }
 }

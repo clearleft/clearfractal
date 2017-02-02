@@ -1,6 +1,5 @@
 
 a.Heading,
-.Heading a,
 a .Heading {
     border-bottom: none;
     &:hover,
@@ -8,9 +7,6 @@ a .Heading {
     &:active {
         color: $Dark-liver-grey;
     }
-}
-.Heading a {
-    color: inherit;
 }
 .Heading--impact {
     @include heading('impact');

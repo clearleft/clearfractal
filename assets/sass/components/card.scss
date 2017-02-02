@@ -6,6 +6,14 @@
     @include heading('medium');
     margin: 0 0 px2rem(24px) 0;
 }
+a .Card-title {
+    border-bottom: none;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $Dark-liver-grey;
+    }
+}
 .Card-category {
     color: $mid-grey;
     font-family: $font-secondary;
