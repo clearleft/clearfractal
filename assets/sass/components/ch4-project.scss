@@ -19,6 +19,8 @@
     margin-top: px2rem(16px);
 }
 .Ch4Project-title {
+    @include heading('secondary');
+    color: $Blank;
     margin-top: px2rem(24px);
     max-width: px2rem(400px);
 }
@@ -47,6 +49,8 @@
         bottom: px2rem(34px);
     }
     .Ch4Project-title {
+        @include heading('secondary', 'wide');
+        color: $Blank;
         max-width: none;
     }
     .Ch4Project-wrapper {
