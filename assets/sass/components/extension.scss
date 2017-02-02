@@ -9,6 +9,9 @@
     margin-top: px2rem(64px);
     margin-bottom: px2rem(64px);
 }
+.Extension-title {
+    @include heading('small');
+}
 .Extension:before {
     display: block;
     content: "";
@@ -22,4 +25,10 @@
 }
 .Extension--clock:before {
     background: url('/assets/img/icons/icon-clock.svg') no-repeat center;
+}
+
+@media screen and (min-width: px2em(500px)) {
+    .Extension-title {
+        @include heading('small', 'wide');
+    }
 }
