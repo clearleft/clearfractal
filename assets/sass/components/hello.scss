@@ -11,11 +11,21 @@
     margin: 0 auto;
 }
 .Hello-title {
+    @include heading('medium');
+    color: inherit;
     margin-top: px2rem(16px);
     margin-bottom: px2rem(20px);
 }
 .Hello-body a {
     color: #fff;
+}
+@media screen and (min-width: px2em(500px)) {
+    .Hello-title {
+        @include heading('medium', 'wide');
+        color: inherit;
+        margin-top: px2rem(16px);
+        margin-bottom: px2rem(20px);
+    }
 }
 @media screen and (min-width: px2rem(600px)) {
     .Hello {
