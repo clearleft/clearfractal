@@ -32,3 +32,9 @@
 .EventCard--inverted * {
     color: $Blank;
 }
+
+@media screen and (min-width: px2em(720px)) {
+    .EventCard-eventName {
+        @include font(40px, 49px);
+    }
+}
