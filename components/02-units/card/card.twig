@@ -8,8 +8,10 @@
         {% if cardMeta %}<div class="Card-meta">{{ cardMeta }}</div>{% endif %}
         {% if cardDescription %}<p class="Card-description">{{ cardDescription }}</p>{% endif %}
         {% if cardModifier == "--vibrant" %} <a href="{{cardLink}}" class="MegaLink">Read the case study</a> {% endif %}
+        {% if authorImage or authorName %}
         <div class="Card-author">
             {% include '@author' %}
         </div><!--/.Card-author-->
+        {% endif %}
     </div><!--/.Card-primary-->
 </article><!--/.Card-->
