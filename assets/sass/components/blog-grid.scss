@@ -1,6 +1,7 @@
 
 .BlogGrid {
-    background-color: #fff;
+    color: $Jet-grey;
+    background-color: $Blank;
     margin: px2rem(-30px) auto px2rem(24px) auto;
     max-width: px2em(1080px);
 }
@@ -18,7 +19,8 @@
     .BlogGrid  {
         margin: px2rem(-50px) auto px2rem(24px) auto;
         .BlogGrid-item {
-            flex: 50%;
+            flex: 0 1 auto;
+            width: 50%;
             padding: px2rem(24px);
         }
     }

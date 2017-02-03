@@ -1,8 +1,8 @@
 .PenguinProject {
+    color: $Blank;
     background-color: #FF6600;
-    background-image: url(/assets/img/work/penguin/orange-bg.jpg);
+    background-image: url('/assets/img/work/penguin/orange-bg.jpg');
     background-size: cover;
-    color: #ffffff;
 }
 .PenguinProject-wrapper {
     max-width: px2em(900px);
@@ -11,9 +11,6 @@
     -webkit-font-smoothing: antialiased;
 }
 .PenguinProject-title {
-    font-family: $font-statement;
-    @include font(40px, 45px);
-    font-weight: 700;
     margin-top: px2rem(24px);
 }
 .PenguinProject-extension {
@@ -29,16 +26,13 @@
     margin-top: px2rem(32px);
     margin-bottom: px2rem(32px);
 }
-@media screen and (min-width: px2em(550px)) {
-    .PenguinProject-title {
-        letter-spacing: px2rem(-1.45px);
-        @include font(72px, 77px);
-    }
-}
 @media screen and (min-width: px2em(500px)) {
     .PenguinProject-wrapper {
-        padding: px2rem(32px) px2rem(24px) px2rem(48px) px2rem(24px);
-        background-image: url(/assets/img/work/penguin/penguin.png);
+        padding-top: px2rem(32px);
+        padding-bottom: px2rem(48px);
+        padding-left: px2rem(24px);
+        padding-right: px2rem(24px);
+        background-image: url('/assets/img/work/penguin/penguin.png');
         background-repeat: no-repeat;
         background-position: 120% 100%;
         background-size: px2rem(280px);
@@ -49,6 +43,8 @@
 }
 @media screen and (min-width: px2em(700px)) {
     .PenguinProject-wrapper {
+        padding-top: px2rem(70px);
+        padding-bottom: px2rem(70px);
         background-size: px2rem(380px);
     }
 }
@@ -120,7 +116,7 @@
 }
 @media screen and (min-width: px2em(1200px)) {
     .PenguinProject--stage {
-        background-image: url(/assets/img/work/penguin/penguin.png), url(/assets/img/work/penguin/orange-bg.jpg);
+        background-image: url('/assets/img/work/penguin/penguin.png'), url('/assets/img/work/penguin/orange-bg.jpg');
         background-position: 100% 100%, 0 0;
         background-size: px2rem(700px), cover;
         background-repeat: no-repeat;
@@ -153,16 +149,23 @@
     margin-top: -17rem;
     margin-bottom: px2rem(10px);
 }
+.PenguinDisplayFont-wrapper {
+    display: table;
+    width: 100%;
+}
+.PenguinDisplayFont-wrapper:after {
+    content: '';
+}
 .PenguinDisplayFont {
     padding: px2rem(20px);
-    background-color: #ffffff;
-    border: 2px solid #FFFFFF;
+    background-color: $Blank;
+    border: 2px solid $Blank;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
     border-radius: 10px;
     width: 47%;
     display: inline-block;
     float: left;
-    margin-bottom: px2rem(40px);
+    margin-bottom: px2rem(20px);
     margin-top: px2rem(20px);
     img {
         display: block;
@@ -178,6 +181,13 @@
         margin-left: 1.5%;
     }
 }
+.PenguinDisplayCase-example1 {
+    text-align: center;
+}
+.PenguinDisplayCase-example2 {
+    position: relative;
+}
+
 @media screen and (min-width: px2em(600px)) {
     .PenguinDisplayCase-wrapper {
         margin-top: 20rem;

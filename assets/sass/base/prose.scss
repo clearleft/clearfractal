@@ -1,6 +1,6 @@
 .Prose {
     -webkit-font-smoothing: antialiased;
-    color: $dark-grey;
+    color: $Dark-liver-grey;
     h1,
     h2,
     h3,
@@ -10,30 +10,75 @@
         font-family: $font-secondary;
         font-weight: 700;
         -webkit-font-smoothing: antialiased;
-        color: $jet-grey;
-        margin-top: 0;
+        color: $Jet-grey;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    h1 {
+        @include font(35px, 40px);
+        letter-spacing: px2rem(-0.5px);
     }
     h2 {
-        @include font(30px, 35px);
-        letter-spacing: px2rem(-0.43px);
-        margin-top: px2rem(18px);
+        @include font(35px, 40px);
+        letter-spacing: px2rem(-0.5px);
+    }
+    h3 {
+        @include font(28px, 33px);
+        letter-spacing: px2rem(-0.4px);
+    }
+    h4 {
+        @include font(22px, 27px);
+        letter-spacing: px2rem(-0.3px);
+    }
+    h5 {
+        @include font(18px, 27px);
+        letter-spacing: px2rem(-0.3px);
+    }
+    h6 {
+        @include font(16px, 27px);
+        letter-spacing: px2rem(-0.3px);
     }
     p {
         margin-bottom: px2rem(16px);
         margin-top: px2rem(16px);
     }
+    ol,
+    ul {
+        padding-left: 2rem;
+    }
     li {
-        margin-bottom: px2rem(12px);
-        margin-top: px2rem(10px);
+        margin: 0;
+    }
+    dd {
+        margin-left: 0;
+        padding-left: 2rem;
     }
 }
 @media screen and (min-width: px2em(500px)) {
     .Prose {
+        h1 {
+            @include font(43px, 50px);
+            letter-spacing: px2rem(-0.46px);
+        }
         h2 {
-            @include font(43px, 48px);
-            letter-spacing: px2rem(-0.64px);
-            margin-top: px2rem(25px);
-            margin-bottom: px2rem(30px);
+            @include font(43px, 50px);
+            letter-spacing: px2rem(-0.46px);
+        }
+        h3 {
+            @include font(35px, 40px);
+            letter-spacing: px2rem(-0.5px);
+        }
+        h4 {
+            @include font(28px, 33px);
+            letter-spacing: px2rem(-0.4px);
+        }
+        h5 {
+            @include font(22px, 27px);
+            letter-spacing: px2rem(-0.3px);
+        }
+        h6 {
+            @include font(18px, 27px);
+            letter-spacing: px2rem(-0.3px);
         }
     }
 }

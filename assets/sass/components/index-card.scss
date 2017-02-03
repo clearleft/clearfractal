@@ -1,11 +1,11 @@
 .IndexCard {
     display: inline-block;
     font-family: $font-secondary;
-    border: 1px solid $shadow-grey;
+    border: 1px solid $Gainsboro-blue;
 }
 .IndexCard-details {
-    background-color: #fff;
-    border-top: 1px solid $shadow-grey;
+    background-color: $Blank;
+    border-top: 1px solid $Gainsboro-blue;
     padding: px2rem(16px);
 }
 .IndexCard-image {
@@ -15,7 +15,7 @@
 }
 .IndexCard-name {
     @include font(22px, 17px);
-    color: $jet-grey;
+    color: $Jet-grey;
     font-weight: 700;
     line-height: 1;
     letter-spacing: -0.3px;

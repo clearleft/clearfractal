@@ -1,6 +1,6 @@
 'use strict';
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "imageBlockSrc": "/assets/img/work/ch4/ch4-team.jpg",
         "imageBlockAlt": "Channel 4 Team",

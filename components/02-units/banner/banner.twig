@@ -1,14 +1,14 @@
 <div class="Banner{% if bannerModifier %} Banner{{bannerModifier}}{% endif %}">
     <div class="Banner-content">
         <div class="Banner-caption">{{bannerCaption}}</div>
-        <div class="Banner-headline">{{bannerHeadline}}</div>
+        <h2 class="Banner-headline Heading Heading--secondary">{{bannerHeadline}}</h2>
         {% if bannerBody %}
         <div class="Banner-body">
             {{bannerBody}}
         </div><!--/.Banner-body-->
         {% endif %}
-        {% if bannerLink %}
-            <a class="Banner-link" href="{{bannerLinkUrl}}">{{bannerLink}}</a>
+        {% if megaLinkURL %}
+        {% include '@mega-link' %}
         {% endif %}
     </div><!--/.Banner-content-->
 </div><!--/.Banner-->

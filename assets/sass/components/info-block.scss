@@ -11,13 +11,18 @@
     line-height: px2rem(24px);
 }
 .InfoBlock-image {
+    flex-shrink: 0;
+    flex-basis: auto;
     margin-right: px2rem(16px);
     margin-bottom: px2rem(24px);
+}
+.InfoBlock-group {
+    flex-grow: 1;
 }
 .InfoBlock-title {
     margin-top: 0;
     margin-bottom: px2rem(4px);
-    color: $dark-grey;
+    color: $Dark-liver-grey;
     @include font(17px);
 }
 .InfoBlock-sub {

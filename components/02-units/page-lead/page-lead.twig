@@ -8,11 +8,7 @@
     </div>
     {% if pageLeadSecondary %}
     <div class="PageLead-secondary">
-        <ul class="List List--tall">
-        {% for listItem in listItems %}
-        {% include '@list' with listItem %}
-        {% endfor %}
-        </ul>
+        {% include '@list' with listItems %}
     </div>
     {% endif %}
 </div><!--/.PageLead-->

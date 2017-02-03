@@ -1,46 +1,20 @@
 
 .Card {
-    color: $jet-grey;
-
-    &--tiny-lesson {
-
-        header {
-            border-top: 1px solid $clearleft-yellow;
-
-            &:before {
-                content: '';
-                display: inline-block;
-                background: #fff url('/assets/img/tiny-lessons-logo.svg') 0 50% no-repeat;
-                width: 166px;
-                height: 50px;
-                margin-top: -1.6rem;
-            }
-
-            .Card-title {
-                margin-top: px2rem(8px);
-            }
-        }
-
-    }
-    &--vibrant {
-        padding: px2rem(24px) px2rem(24px) px2rem(48px);
-    }
+    color: $Jet-grey;
 }
 .Card-title {
-    font-family: $font-secondary;
-    @include font(32px, 44px);
+    color: $Jet-grey;
+    @include font(28px, 33px);
     font-weight: 700;
+    font-family: $font-secondary;
     margin: 0 0 px2rem(24px) 0;
-}
-.Card-link {
-    border-bottom: none;
-    color: $jet-grey;
+    -webkit-font-smoothing: antialiased;
 }
 .Card-category {
+    color: $mid-grey;
     font-family: $font-secondary;
     @include font(14px, 17px);
     margin: 0 0 px2rem(16px) 0;
-    color: $mid-grey;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
@@ -55,15 +29,54 @@
     letter-spacing: 1px;
 }
 .Card-description {
-    color: #505050;
+    color: $Dark-liver-grey;
     @include font(18px, 32px);
     margin: 0 0 px2rem(16px) 0;
 }
+
 .Card--image .Card-author {
     max-width: px2rem(97px);
 }
-@media screen and (min-width: px2em(700px)) {
+.Card--tiny-lesson {
+
+    header {
+        border-top: 1px solid $Orange-yellow;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            background: $Blank url('/assets/img/tiny-lessons-logo.svg') 0 50% no-repeat;
+            width: 166px;
+            height: 50px;
+            margin-top: -1.6rem;
+        }
+
+        .Card-title {
+            margin-top: px2rem(8px);
+        }
+    }
+
+}
+.Card--vibrant {
+    padding-top: px2rem(24px);
+    padding-bottom: px2rem(48px);
+    padding-left: px2rem(16px);
+    padding-right: px2rem(16px);
+}
+@media screen and (min-width: px2rem(500px)) {
+    .Card--vibrant {
+        padding-left: px2rem(24px);
+        padding-right: px2rem(24px);
+    }
     .Card-title {
-        @include font(42px, 54px);
+        @include font(35px, 40px);
+        letter-spacing: -0.5px;
+    }
+}
+
+@media screen and (min-width: px2rem(900px)) {
+    .Card-title {
+        @include font(43px, 50px);
+        letter-spacing: -0.46px;
     }
 }

@@ -3,7 +3,8 @@
     display: inline-block;
     margin-right: px2rem(10px);
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         opacity: 0.7;
     }
 }

@@ -4,7 +4,7 @@
 const faker = require('faker');
 
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "imageSrc": "/assets/img/team/james-g.jpg",
         "indexCardName": faker.name.findName(),

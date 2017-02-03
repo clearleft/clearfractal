@@ -1,52 +1,47 @@
-
 .InputGroup {
     margin-bottom: px2rem(4px);
     max-width: 28rem;
 }
 .InputGroup-field {
-    background: #fff;
+    color: $Jet-grey;
+    background-color: $Blank;
     border: 0;
     font-family: $font-main;
     -webkit-font-smoothing: antialiased;
     @include font(14px);
     padding: px2rem(8px) px2rem(10px);
+    border: 1px solid $Gainsboro-blue;
     border-radius: px2rem(5px);
-    border: 1px solid $shadow-grey;
     width: 100%;
 }
 .InputGroup-submit {
-    border-top-right-radius: px2rem(5px);
-    border-bottom-right-radius: px2rem(5px);
-    color: #ffffff;
-    background-color: $clearleft-red;
-    padding: px2rem(6px) px2rem(6px);
+    color: $Blank;
+    background-color: $Crayola-red;
+    border-radius: px2rem(5px);
+    padding: px2rem(8px) px2rem(10px);
     font-family: $font-secondary;
     font-weight: 700;
     @include font(14px);
+    width: 100%;
 }
 .InputGroup-label {
-    @include font(16px, 22px);
-    font-weight: 700;
-    font-family: $font-secondary;
     display: block;
     flex-basis: 100%;
     margin-bottom: px2rem(10px);
     -webkit-font-smoothing: antialiased;
 }
 .InputGroup--combo {
-    display: flex;
     .InputGroup-field {
-        flex-grow: 1;
-        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        width: 50%;
     }
     .InputGroup-submit {
         border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
     }
 }
-@media screen and (min-width: px2em(350px)) {
+
+@media screen and (min-width: px2em(420px)) {
     .InputGroup-field {
         @include font(16px);
     }
@@ -54,7 +49,23 @@
         padding: px2rem(12px) px2rem(18px);
         @include font(17px);
     }
-    .InputGroup-label {
-        @include font(22px, 28px);
+    .InputGroup--combo {
+        display: flex;
+        .InputGroup-field {
+            flex-grow: 1;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: px2rem(5px);
+            border-bottom-left-radius: px2rem(5px);
+            width: 50%;
+        }
+        .InputGroup-submit {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: px2rem(5px);
+            border-bottom-right-radius: px2rem(5px);
+            width: auto;
+            margin-top: 0;
+        }
     }
 }

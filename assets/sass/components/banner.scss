@@ -2,7 +2,7 @@
     .Banner-caption,
     .Banner-headline,
     .Banner-body {
-        color: #ffffff;
+        color: $Blank;
     }
 }
 .Banner-content {
@@ -10,50 +10,47 @@
     margin-left: auto;
     margin-right: auto;
     padding: px2rem(30px) px2rem(16px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     text-align: center;
 }
 .Banner-caption {
     @include font(14px);
     font-family: $font-secondary;
-    color: #EA215A;
+    color: $Crayola-red;
     font-weight: 700;
     letter-spacing: px2rem(1px);
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
 }
-.Banner-headline {
-    @include font(35px, 45px);
-    font-family: $font-statement;
-}
 .Banner-body {
+    margin-left: auto;
+    margin-right: auto;
     max-width: px2rem(600px);
 }
 .Banner-link {
     margin-top: px2rem(16px);
 }
 .Banner--notice {
-    background-color: $white-grey;
+    color: $Jet-grey;
+    background-color: $Anti-white-flash;
 }
 .Banner--notice .Banner-caption {
-    color: #1E6B9C;
+    color: $Lapis-lazuli-blue;
 }
 .Banner--decorated {
-    background-image: url('/assets/img/studio/studio-2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
+    background-color: $Crayola-red;
+    color: $Blank;
     .Banner-caption,
+    .Banner-headline,
     .Banner-link {
-        color: #ffffff;
+        color: $Blank;
+        border-color: $Blank;
+        &:after {
+            background-image: url('/assets/img/icons/icon-arrow-right--white.svg');
+        }
     }
 }
 @media only screen and (min-width: px2em(600px)) {
     .Banner-headline {
-        @include font(60px, 70px);
         margin-bottom: px2rem(16px);
     }
     .Banner-caption {

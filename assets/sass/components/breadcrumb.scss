@@ -1,9 +1,7 @@
 .Breadcrumb {
     width: 100%;
     margin-bottom: px2rem(16px);
-}
-.Breadcrumb--inverted {
-    color: #ffffff;
+    line-height: 1.2;
 }
 .Breadcrumb-item {
     border-bottom: none;
@@ -11,19 +9,22 @@
     @include font(14px);
     font-weight: 700;
     letter-spacing: px2rem(1.75px);
-    color: $jet-grey;
+    color: $Jet-grey;
     opacity: 0.5;
 }
 .Breadcrumb-item--first {
     opacity: 1;
 }
-.Breadcrumb-separator {
-    opacity: 0.5;
-}
-.Breadcrumb--inverted .Breadcrumb-item {
-    color: #fff;
-}
 .Breadcrumb-item--first:before {
     content: "←";
     color: currentColor;
+}
+.Breadcrumb-separator {
+    opacity: 0.5;
+}
+.Breadcrumb--inverted {
+    color: $Blank;
+    .Breadcrumb-item {
+        color: $Blank;
+    }
 }

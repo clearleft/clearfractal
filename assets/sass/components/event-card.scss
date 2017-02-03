@@ -1,11 +1,16 @@
 .EventCard {
     margin-bottom: px2rem(16px);
 }
+.EventCard-eventName {
+    font-family: $font-secondary;
+    font-weight: 700;
+    @include font(30px, 35px);
+}
 .EventCard-context {
+    color: $Dark-liver-grey;
     margin-top: px2rem(8px);
     @include font(14px, 17px);
     text-transform: uppercase;
-    color: $dark-grey;
     font-weight: 700;
     letter-spacing: 1px;
     font-family: $font-secondary;
@@ -20,7 +25,16 @@
 .EventCard-listItem {
     display: inline-block;
     list-style: none;
+    font-size: px2rem(16px);
+    margin: px2rem(4px) 0;
+    padding: 0 px2rem(4px);
 }
 .EventCard--inverted * {
-    color: #fff;
+    color: $Blank;
+}
+
+@media screen and (min-width: px2em(720px)) {
+    .EventCard-eventName {
+        @include font(40px, 49px);
+    }
 }

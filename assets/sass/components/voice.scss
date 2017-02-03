@@ -4,6 +4,7 @@
     padding: px2rem(32px) px2rem(16px);
 }
 .Voice-cite {
+    margin-top: px2rem(16px);
     margin-bottom: 0;
 }
 .Voice-description {
@@ -44,8 +45,10 @@
         @include font(22px, 33px);
         width: 65%;
     }
+    .Voice-cite {
+        margin-top: px2rem(18px);
+    }
     .Voice--tall {
         padding-top: px2rem(145px);
-        /*margin-top: px2rem(-65px);*/
     }
 }

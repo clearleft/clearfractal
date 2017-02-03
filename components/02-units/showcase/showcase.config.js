@@ -1,6 +1,6 @@
 'use strict';
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         /*Header items*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",

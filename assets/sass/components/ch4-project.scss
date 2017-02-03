@@ -3,7 +3,7 @@
 /*Featured project listing and header*/
 .Ch4Project {
     position: relative;
-    color: #ffffff;
+    color: $Blank;
     background-color: #570F83;
 }
 .Ch4Project-wrapper {
@@ -19,9 +19,6 @@
     margin-top: px2rem(16px);
 }
 .Ch4Project-title {
-    font-family: $font-statement;
-    @include font(40px, 45px);
-    font-weight: 700;
     margin-top: px2rem(24px);
     max-width: px2rem(400px);
 }
@@ -32,12 +29,16 @@
     max-width: px2em(350px);
 }
 .Ch4Project-image {
-    max-width: px2rem(70px);
-    position: absolute;
-    right: px2rem(30px);
-    bottom: px2rem(100px);
+    display: none;
 }
 @media screen and (min-width: px2em(500px)) {
+    .Ch4Project-image {
+        display: block;
+        max-width: px2rem(70px);
+        position: absolute;
+        right: px2rem(30px);
+        bottom: px2rem(100px);
+    }
     .Ch4Project-secondary {
         width: 30%;
     }
@@ -61,7 +62,10 @@
 }
 @media screen and (min-width: px2em(700px)) {
     .Ch4Project-wrapper {
-        padding: px2rem(32px) px2rem(24px) px2rem(40px) px2rem(24px);
+        padding-top: px2rem(70px);
+        padding-bottom: px2rem(70px);
+        padding-left: px2rem(24px);
+        padding-right: px2rem(24px);
         display: flex;
     }
     .Ch4Project-primary {
@@ -145,7 +149,7 @@
 .Ch4Project--stage {
     margin-bottom: px2rem(110px);
     .Ch4Project-skew {
-        background: #380F55;
+        background-color: #380F55;
         position: relative;
         z-index: 0;
         margin-top: px2rem(-42px);
@@ -313,8 +317,8 @@
 .Ch4DisplayCase {
     position: relative;
     background-color: #F2F7FB;
-    box-shadow: 0 -2px 0 0 #DAE1E8, 0 2px 0 0 #DAE1E8;
-    background-image: url(/assets/img/work/ch4/display-case/logo-background.png);
+    box-shadow: 0 -2px 0 0 $Gainsboro-blue, 0 2px 0 0 $Gainsboro-blue;
+    background-image: url('/assets/img/work/ch4/display-case/logo-background.png');
     background-repeat: no-repeat;
     background-position: bottom right;
     .TextBlock {
@@ -325,7 +329,7 @@
     margin: 0 auto;
     margin-top: 12rem;
     max-width: 65rem;
-    background-image: url(/assets/img/work/ch4/display-case/dots.svg);
+    background-image: url('/assets/img/work/ch4/display-case/dots.svg');
     background-repeat: no-repeat;
     background-position: 100% -1px;
     padding-bottom: 1rem;

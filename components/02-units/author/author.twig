@@ -1,4 +1,7 @@
 <div class="Author">
-    <img class="Author-image" src="{{authorImage}}" alt="{{authorName}}">
-    <div class="Heading Heading--context">{{authorName}}</div>
+    {% if authorImage %}
+    <img class="Author-image" src="{{ authorImage }}" alt="{{ authorName }}">
+    {% endif %}
+    <div class="Heading Heading--context">{{ authorName }}</div>
+    
 </div><!--/.Author-->

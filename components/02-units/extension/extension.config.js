@@ -1,13 +1,13 @@
 'use strict';
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "extensionTeamMember": "Name"
     },
     "variants": [{
         "name": "clock",
         "context": {
-            "extensionModifier": "--extension"
+            "extensionModifier": "--clock"
         }
     }]
 }

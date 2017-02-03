@@ -1,6 +1,6 @@
 'use strict';
 module.exports = {
-    "status": "wip",
+    "status": "ready",
     "context": {
         "cardTitle": "Article Title Goes here",
         "cardCategory": "Opinion",
@@ -23,7 +23,8 @@ module.exports = {
             "cardModifier": "--vibrant",
             "cardTitle": "Royal Borough of Kensington and Chelsea",
             "cardCategory": false,
-            "cardDescription": false
+            "cardDescription": false,
+            "cardLink": "#"
         }
     },
     {

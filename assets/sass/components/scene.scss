@@ -5,11 +5,6 @@
     max-width: px2em(760px);
 }
 .Scene-heading {
-    font-family: $font-secondary;
-    font-weight: 700;
-    -webkit-font-smoothing: antialiased;
-    @include font(30px, 35px);
-    letter-spacing: px2rem(-0.43px);
     margin-top: 0;
 }
 .Scene--basic {
@@ -19,9 +14,6 @@
     }
 }
 @media screen and (min-width: px2em(500px)) {
-    .Scene-heading {
-        @include font(43px, 49px);
-    }
     .Scene--basic {
         margin-bottom: px2rem(-25px);
     }
@@ -50,26 +42,26 @@
 }
 @media screen and (min-width: px2em(800px)) {
     .Scene {
-        max-width: 45em;
+        max-width: px2em(720px);
     }
     .Scene--basic {
-        max-width: 36em;
+        max-width: px2em(576px);
         padding-left: px2rem(70px);
         padding-bottom: 0;
     }
 }
-@media screen and (min-width: px2em(1000px)) {
+@media screen and (min-width: px2em(1290px)) {
     .Scene {
-        padding-left: 9rem;
+        max-width: px2em(896px);
+        padding-left: px2rem(144px);
         padding-bottom: px2rem(40px);
-        max-width: 56em;
     }
     .Scene-heading {
         margin-left: px2rem(-52px);
     }
     .Scene--basic {
-        max-width: px2em(628px);
-        padding-left: px2rem(98px);
+        max-width: px2em(990px);
+        padding-left: px2rem(300px);
         padding-bottom: 0;
         .Scene-heading {
             margin-left: 0;

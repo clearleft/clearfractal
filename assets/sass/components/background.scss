@@ -1,24 +1,43 @@
 .Background {
-    background-color: #F1F1F1;
+    color: $Jet-grey;
+    background-color: $Anti-white-flash;
 }
 .BgBlue {
-    background-color: $mid-blue;
+    color: $Blank;
+    background-color: $Lapis-lazuli-blue;
     a {
-        color: #ffffff;
+        color: $Blank;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $Gainsboro-blue;
+        }
     }
 }
 .BgPurple {
-    background-color: #A9439A;
+    color: $Blank;
+    background-color: $Brand-plum;
     a {
-        color: #ffffff;
+        color: $Blank;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $Gainsboro-blue;
+        }
     }
 }
 .BgGreen {
-    background-color: $accent-green;
+    color: $Blank;
+    background-color: $Brand-carribean-green;
     a {
-        color: #ffffff;
+        color: $Blank;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $Gainsboro-blue;
+        }
     }
 }
 .Background--frill {
-    box-shadow: 0 -2px 0 0 #DAE1E8, 0 2px 0 0 #DAE1E8;
+    box-shadow: 0 -2px 0 0 $Gainsboro-blue, 0 2px 0 0 $Gainsboro-blue;
 }

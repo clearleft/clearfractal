@@ -1,13 +1,22 @@
 .Heading {
+    color: $Jet-grey;
     font-family: $font-secondary;
-    color: $jet-grey;
     margin-bottom: px2rem(8px);
     margin-top: px2rem(8px);
     -webkit-font-smoothing: antialiased;
 }
 a.Heading,
-.Heading a {
+.Heading a,
+a .Heading {
     border-bottom: none;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $Dark-liver-grey;
+    }
+}
+.Heading a {
+    color: inherit;
 }
 .Heading--impact {
     @include font(48px, 40px);
@@ -25,15 +34,19 @@ a.Heading,
     font-family: $font-statement;
 }
 .Heading--medium {
-    @include font(35px, 38px);
+    @include font(28px, 33px);
     font-weight: 700;
 }
 .Heading--small {
-    @include font(26px, 31px);
+    @include font(22px, 27px);
+    font-weight: 700;
+}
+.Heading--bump {
+    @include font(18px, 32px);
     font-weight: 700;
 }
 .Heading--body {
-    @include font(20px, 25px);
+    @include font(16px, 25px);
     font-weight: 700;
 }
 .Heading--context {
@@ -44,7 +57,15 @@ a.Heading,
     letter-spacing: 1px;
 }
 .Heading--inverted {
-    color: #ffffff;
+    color: $Blank;
+}
+a.Heading--inverted,
+.Heading--inverted a,
+a .Heading--inverted {
+    &:hover,
+    &:focus {
+        color: inherit;
+    }
 }
 @media screen and (min-width: px2em(300px)) {
     .Heading--impact {
@@ -65,21 +86,25 @@ a.Heading,
         margin-bottom: px2rem(16px);
     }
     .Heading--main {
-        @include font(90px, 88px);
+        @include font(90px, 84px);
     }
     .Heading--secondary {
-        @include font(70px, 75px);
+        @include font(68px, 75px);
     }
     .Heading--medium {
-        @include font(40px, 45px);
+        @include font(43px, 50px);
         font-weight: 700;
     }
     .Heading--small {
-        @include font(33px, 35px);
+        @include font(35px, 40px);
+        font-weight: 700;
+    }
+    .Heading--bump {
+        @include font(28px, 27px);
         font-weight: 700;
     }
     .Heading--body {
-        @include font(22px, 28px);
+        @include font(22px, 27px);
         font-weight: 700;
     }
 }
