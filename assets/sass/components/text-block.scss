@@ -1,6 +1,7 @@
 .TextBlock {
     padding: 0 px2rem(16px) px2rem(16px);
     margin: 0 auto;
+    max-width: 32em;
 }
 .TextBlock-author {
     max-width: px2rem(120px);
@@ -24,9 +25,6 @@
     }
 }
 @media screen and (min-width: px2rem(800px)) {
-    .TextBlock {
-        max-width: px2rem(550px);
-    }
     .TextBlock-author {
         margin-left: px2rem(-136px);
     }
