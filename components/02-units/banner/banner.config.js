@@ -26,7 +26,7 @@ module.exports = {
             "context": {
                 "bannerModifier": "--decorated",
                 "bannerBody":`<p>We’re a team of makers, thinkers, organisers and digital explorers.<br>We’re always actively seeking out new skills, challenges and opportunities.</p>`,
-                "megaLinkURL": "sdf",
+                "megaLinkURL": "#",
                 "megaLinkText": "Check out our open vacancies",
                 "megaLinkModifier": "--inverted"
             }

@@ -1,13 +1,19 @@
 <article class="Card{% if cardModifier %} Card{{ cardModifier }}{% endif %}"{% if cardMiscStyles %} style="{{ cardMiscStyles }}"{% endif %}>
-    {% if cardModifier != "--tiny-lesson" %}<div class="Bar"{% if cardBarColour %} style="color:{{ cardBarColour }}"{% endif %}></div>{% endif %}
+    {% if cardModifier != "--tiny-lesson" %}
+        <div class="Bar"{% if cardBarColour %} style="color:{{ cardBarColour }}"{% endif %}></div>
+    {% endif %}
     <div class="Card-primary">
         <header>
-            <a href="{{cardUrl}}"><h3 class="Card-title Heading Heading--medium"{% if cardHeaderColour %} style="color:{{ cardHeaderColour }}"{% endif %}>{{ cardTitle }}</h3></a>
+            <a href="{{cardUrl}}">
+                <h3 class="Card-title"{% if cardHeaderColour %} style="color:{{ cardHeaderColour }}"{% endif %}>{{ cardTitle }}</h3>
+            </a>
         </header>
         {% if cardCategory %}<div class="Card-category">{{ cardCategory }}</div>{% endif %}
         {% if cardMeta %}<div class="Card-meta">{{ cardMeta }}</div>{% endif %}
         {% if cardDescription %}<p class="Card-description">{{ cardDescription }}</p>{% endif %}
-        {% if cardModifier == "--vibrant" %} <a href="{{cardLink}}" class="MegaLink">Read the case study</a> {% endif %}
+        {% if cardModifier == "--vibrant" and cardLink %}
+            <a href="{{ cardLink }}">Read the case study</a>
+        {% endif %}
         {% if authorImage or authorName %}
         <div class="Card-author">
             {% include '@author' %}

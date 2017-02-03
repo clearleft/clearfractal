@@ -23,7 +23,8 @@ module.exports = {
             "cardModifier": "--vibrant",
             "cardTitle": "Royal Borough of Kensington and Chelsea",
             "cardCategory": false,
-            "cardDescription": false
+            "cardDescription": false,
+            "cardLink": "#"
         }
     },
     {

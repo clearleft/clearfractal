@@ -3,7 +3,12 @@
     color: $Jet-grey;
 }
 .Card-title {
+    color: $Jet-grey;
+    @include font(28px, 33px);
+    font-weight: 700;
+    font-family: $font-secondary;
     margin: 0 0 px2rem(24px) 0;
+    -webkit-font-smoothing: antialiased;
 }
 .Card-category {
     color: $mid-grey;
@@ -62,5 +67,16 @@
     .Card--vibrant {
         padding-left: px2rem(24px);
         padding-right: px2rem(24px);
+    }
+    .Card-title {
+        @include font(35px, 40px);
+        letter-spacing: -0.5px;
+    }
+}
+
+@media screen and (min-width: px2rem(900px)) {
+    .Card-title {
+        @include font(43px, 50px);
+        letter-spacing: -0.46px;
     }
 }

@@ -1,38 +1,16 @@
 .MegaLink {
     position: relative;
     font-family: $font-secondary;
-    &:after {
-        content: '';
-        background-image: url('/assets/img/icons/icon-arrow-right.svg');
-        background-repeat: no-repeat;
-        width: px2rem(16px);
-        height: px2rem(12px);
-        position: absolute;
-        right: px2rem(-20px);
-        bottom: px2rem(5px);
-        margin-left: px2rem(20px);
-    }
 }
 .MegaLink--inverted {
     color: $Blank;
     border-color: $Blank;
-    &:after {
-        background-image: url('/assets/img/icons/icon-arrow-right--white.svg');
-    }
 }
 .MegaLink--super {
     @include font(22px, 27px);
 }
 .MegaLink--giant {
     @include font(22px, 17px);
-    &:after {
-        bottom: px2rem(5px);
-        right: px2rem(-30px);
-        width: px2rem(24px);
-        height: px2rem(24px);
-        margin-left: px2rem(30px);
-        background-size: px2rem(24px);
-    }
 }
 .MegaLink--button {
     color: $Brandeis-blue;
@@ -40,16 +18,13 @@
     font-weight: 700;
     padding-left: 0;
     background: transparent;
-    &:after {
-        bottom: px2rem(10px);
-    }
 }
 .MegaLink--inverted {
     color: $Blank;
     &:hover,
     &:focus,
     &:active {
-        color: $Gainsboro-blue;
+        color: $Blank;
     }
 }
 @media screen and (min-width: px2em(600px)) {
