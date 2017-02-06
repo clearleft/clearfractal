@@ -15,3 +15,5 @@ for (var card of document.querySelectorAll('.FeaturedCard')) {
 for (var lead of document.querySelectorAll('.Lead')) {
     new Lead( lead );
 }
+
+new Jobs( document.querySelector('.Jobs') );

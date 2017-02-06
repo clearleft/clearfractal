@@ -81,7 +81,7 @@ let ClearCore = {
      **********************************/
 
     setup() {
-        for (let i = 0; i < this._triggerList.length; i++) {
+        for (var i = 0; i < this._triggerList.length; i++) {
             this._triggerList[i].calculateTriggerPoints();
         }
     },
@@ -104,7 +104,7 @@ let ClearCore = {
         if( this._tweens.length ) {
 
             // loop through all currently running animations
-            for (let i = 0; i < this._tweens.length; i++) {
+            for (var i = 0; i < this._tweens.length; i++) {
 
                 // if the animation has not finished, update it
                 if( this._tweens[i].isAnimating() ) {
@@ -142,9 +142,9 @@ let ClearCore = {
         // collisions/triggers
         if( this._triggerList.length ) {
 
-            var offset;
-            var triggerTop;
-            var triggerBottom;
+            let offset;
+            let triggerTop;
+            let triggerBottom;
 
             for(var i = 0; i < this._triggerList.length; i++) {
 
@@ -197,7 +197,7 @@ let ClearCore = {
             this.screenDimensions = { width: window.innerWidth, height: window.innerHeight };
             this.setup();
 
-            for (let i = 0; i < this._resizeQueue.length; i++) {
+            for (var i = 0; i < this._resizeQueue.length; i++) {
                 this._resizeQueue[i]();
             }
 

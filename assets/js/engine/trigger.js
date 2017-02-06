@@ -79,8 +79,7 @@ Trigger.prototype = {
     .setTween( new Tween() )
  ******/
 
-function TriggerBox(elm, options) {
-    var options = options || {};
+function TriggerBox(elm, options={}) {
 
     this.type       = 'triggerBox';
     this._elm       = elm;
@@ -102,7 +101,7 @@ function TriggerBox(elm, options) {
 TriggerBox.prototype = {
 
     calculateTriggerPoints() {
-        var rect    = this._elm.getBoundingClientRect(); // only call once for fewer reflows
+        let rect    = this._elm.getBoundingClientRect(); // only call once for fewer reflows
         this.top    = (rect.top + ClearCore.scrollTop) |0;
         this.height = this.duration && this.duration > 0 ? this.duration : rect.height |0;
         this.bottom = this.top + this.height;
@@ -133,7 +132,7 @@ TriggerBox.prototype = {
     untrigger() {
         if( this.state != this._oldState ) {
             console.log('untriggering - ' + this.state);
-            
+
             this._triggered = false;
             this._oldState  = this.state;
             this.onExit(this);

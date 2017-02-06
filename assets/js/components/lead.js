@@ -6,12 +6,13 @@ function Lead(elm) {
     this.component  = elm;
 
     // Total distance to move the 'peek' - half the distance of the containing block
-    this.dimensions         = {};
-    this.dimensions.top     = this.component.offsetTop;
-    this.dimensions.height  = this.component.offsetHeight;
-    this.dimensions.bottom  = this.dimensions.top + this.dimensions.height;
+    this.dimensions = {
+        top:    this.component.offsetTop,
+        height: this.component.offsetHeight,
+        bottom: this.component.offsetTop + this.component.offsetHeight
+    }
 
-    this.tween = new Tween( this.component, { y: 20 }, { y: -20 }, ClearCore.screenDimensions.height, {
+    this.tween = new Tween( this.component, { y: 30 }, { y: -30 }, ClearCore.screenDimensions.height, {
         easing: 'linear',
         type: 'scroll',
         paused: true
@@ -28,8 +29,6 @@ Lead.prototype.update = function() {
         ClearCore.scrollTop < this.dimensions.bottom ) {
 
         let percentage = (( ClearCore.scrollBottom - this.dimensions.top ) / (ClearCore.screenDimensions.height + this.dimensions.height)  ) * 100;
-
-        // console.log('updating... ' + percentage);
 
         this.tween.setPosition( percentage );
         this.tween.update();

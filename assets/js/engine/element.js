@@ -15,9 +15,9 @@
 let Element = {
 
     init(elm) {
-        this._elm = elm;
-        this.x = 0;
-        this.y = 0;
+        this._elm   = elm;
+        this.x      = 0;
+        this.y      = 0;
         this.styles = [];
         this.keys   = [];
     },
@@ -29,10 +29,10 @@ let Element = {
             let setStyles   = styleAttribute.replace(/\s*/g, ''); // remove all spaces
             let stylesArray = setStyles ? setStyles.split(';') : []; // split the syles into their property:value pairs
 
-            for (let i = 0; i < stylesArray.length; i++) {
-                if( stylesArray[i].trim() != '' ) {
-                    let style = stylesArray[i].split(':');
-                    this.styles[style[0]] = style[1];
+            for (var style of stylesArray) {
+                if( style.trim() != '' ) {
+                    let [key, value] = style.split(':');
+                    this.styles[key] = value;
                 }
             }
         }
@@ -80,7 +80,7 @@ let ElementPool = {
     getElement(elm) {
         let idx = this.ElementPool.indexOf(elm);
 
-        if( idx == -1 ) {
+        if( idx === -1 ) {
             let obj = Object.create(Element);
 
             obj.init(elm);
