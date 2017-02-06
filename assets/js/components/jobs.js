@@ -23,6 +23,7 @@ function Jobs(elm) {
         }
         // otherwise show the first job in the list
         else {
+            this.jobLinks[0].classList.add('Menu-item--current');
             this.show(this.jobs[0]);
         }
     }
