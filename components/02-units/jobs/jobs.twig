@@ -5,16 +5,23 @@
             <h2 class="Heading Heading--body">Open Vacancies</h2>
             <ul class="List Menu">
                 {% for job in jobs %}
-                <li class="List-item"><a class="Menu-item {% if job.current %} Menu-item--current{% endif %}" href="{{job.url}}">{{job.job}}</a></li>
+                <li class="List-item"><a class="Menu-item {% if job.current %} Menu-item--current{% endif %}" href="{{ job.url }}">{{ job.job }}</a></li>
                 {% endfor %}
             </ul>
         </div><!--/.Jobs-section-->
+
         <div class="Jobs-section Jobs-section--main">
-            <h3 class="Heading Heading--small">{{jobTitle}}</h3>
-            <div class="Prose">
-                {{jobProse}}
+
+            {% for job in jobs %}
+            <div class="Job" id="{{ job.url|replace({'#':''}) }}">
+                <h3 class="Heading Heading--small">{{ job.job }}</h3>
+                <div class="Prose">
+                    {{ jobProse }}
+                </div>
+                <a class="MegaLink" href="{{ jobApplyUrl }}">{{ jobApplyLink }}</a>
             </div>
-            <a class="MegaLink" href="{{jobApplyUrl}}">{{jobApplyLink}}</a>
+            {% endfor %}
+
         </div><!--/.Jobs-section-->
     </div><!--/.Jobs-->
 </div><!--/.Jobs-->
