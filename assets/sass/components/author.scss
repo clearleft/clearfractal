@@ -1,10 +1,29 @@
 .Author {
     max-width: px2rem(200px);
-    padding: px2rem(8px);
+    padding: px2rem(4px);
     text-align: center;
     display: inline-block;
 }
 .Author-image {
     margin: 0 auto;
     display: block;
+}
+.Author-name {
+    color: $mid-grey;
+    font-family: $font-secondary;
+    @include font(14px, 17px);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: px2rem(8px);
+    margin-bottom: px2rem(8px);
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+}
+.Author-meta {
+    color: $light-grey;
+    font-family: $font-secondary;
+    @include font(14px, 17px);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
 }

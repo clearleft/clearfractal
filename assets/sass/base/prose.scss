@@ -53,7 +53,37 @@
         margin-left: 0;
         padding-left: 2rem;
     }
+    abbr {
+        border-bottom: 1px dotted $light-grey;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        @include font(14px, 24px);
+        width: 100%;
+    }
+    th {
+        background: #dce0d9;
+        font-weight: 400;
+        padding: 0.5rem;
+        text-align: left;
+    }
+    td {
+        border-bottom: 1px solid #dce0d9;
+        padding: 0.5rem;
+    }
 }
+
+// Should probaby live elsewhere, but not sure where yet.
+@media screen and (max-width: px2em(480px)) {
+    .Table--narrow {
+        th:last-child,
+        td:last-child {
+            display: none;
+        }
+    }
+}
+
 @media screen and (min-width: px2em(500px)) {
     .Prose {
         h1 {

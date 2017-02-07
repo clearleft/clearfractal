@@ -1,13 +1,18 @@
 <div class="EventCard{% if eventCardModifier %} EventCard{{eventCardModifier}}{% endif %}">
-    <p class="EventCard-context ">{{eventCardContext}}</p>
+    {% if eventCardContext %}
+    <p class="EventCard-context ">{{ eventCardContext }}</p>
+    {% endif %}
+
     {% if eventCardSrc %}
     <img class="EventCard-image" src="{{eventCardSrc}}" alt="{{eventCardAlt}}">
     {% else %}
     <div class="EventCard-eventName">{{ eventName }}</div>
     {% endif %}
-    <div class="EventCard-description">
-        {{eventCardDescription}}
-    </div><!--/.EventCard-links-->
+
+    <p class="EventCard-description Prose">
+        {{ eventCardDescription }}
+    </p>
+
     {% if pastVersions|length %}
     <div class="EventCard-links">
         <div class="EventCard-context EventCard-list">{{eventCardListTitle}}</div>
@@ -18,7 +23,8 @@
         </ul><!--/.EventCard-list-->
     </div><!--/.EventCard-links-->
     {% endif %}
+
     {% if eventCardUrl %}
-    <a href="{{eventCardUrl}}" class="EventsCard-link MegaLink">{{eventCardLink}}</a>
+    <a href="{{eventCardUrl}}" class="EventCard-link MegaLink">{{eventCardLink}}</a>
     {% endif %}
 </div><!--/.EventCard-->

@@ -7,9 +7,7 @@ module.exports = {
         "eventCardAlt": "UX London",
         "eventCardUrl": "",
         "eventCardLink": "Visit UX London",
-        "eventCardDescription": `
-            <p>We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.</p>
-        `,
+        "eventCardDescription": `We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
         "eventCardListTitle": "Visit past versions:",
         "pastVersions": [
             { "item": "2016", "itemUrl": "#" },

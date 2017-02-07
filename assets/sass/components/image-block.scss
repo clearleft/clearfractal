@@ -3,6 +3,10 @@
     display: table;
     margin: 0 auto;
     max-width: 100%;
+
+    img {
+        display: block;
+    }
 }
 .ImageBlock-item {
     @include font(13px, 16px);
