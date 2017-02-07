@@ -22,7 +22,6 @@ h6 {
 body {
     @include font(16px, 27px);
     margin: 0;
-    -webkit-font-smoothing: antialiased;
 }
 
 a {

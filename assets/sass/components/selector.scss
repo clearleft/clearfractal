@@ -24,6 +24,20 @@
         background-image: url('/assets/img/icons/icon-select-up.svg');
     }
 }
+.Selector-target {
+    border-radius: px2rem(5px);
+    margin: 1rem 0 0 0;
+}
+.Selector-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.Selector-listLink {
+    @include font(30px, 35px);
+    letter-spacing: -0.58px;
+    border-bottom: none;
+}
 
 /* Positioning and display styles should only be applied when JavaScript is available */
 .hasJS .Selector {
@@ -37,4 +51,18 @@
 }
 .hasJS .Selector-target[aria-hidden="false"] {
     display: block;
+}
+
+@media screen and (min-width: px2em(300px)) {
+    .Selector-listLink {
+        @include font(40px, 47px);
+    }
+}
+@media screen and (min-width: px2em(500px)) {
+    .Selector-target {
+        box-shadow: 0 2px 10px rgba(20,20,20,0.6);
+    }
+    .Selector-listLink {
+        @include font(68px, 75px);
+    }
 }
