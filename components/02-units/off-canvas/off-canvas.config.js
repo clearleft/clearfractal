@@ -3,8 +3,8 @@
 module.exports = {
     "status": "wip",
     "context": {
-        "primaryNavlinks": [
-            { "title": "Case Studies", "url": "#", "primaryActive": true },
+        "offCanvasLinks": [
+            { "title": "Case Studies", "url": "#" },
             { "title": "Team", "url": "#"  },
             { "title": "Posts", "url": "#" },
             { "title": "Events", "url": "#" },

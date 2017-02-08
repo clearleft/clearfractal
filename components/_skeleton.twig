@@ -8,9 +8,24 @@
     <link rel="stylesheet" href="/assets/css/all.css">
     <script>if(document.documentElement){document.documentElement.className='hasJS';}</script>
 </head>
+
 <body>
-{{ yield }}
-<script src="/assets/js/main.js" defer>
-</script>
+
+    {{ yield }}
+
+    <template id="offcanvas">
+        {% include '@off-canvas' with {
+            offCanvasLinks: [
+                { title: 'Home',            url: '/' },
+                { title: 'Case studies',    url: '/casestudies' },
+                { title: 'Team',            url: '/team' },
+                { title: 'Posts',           url: '/posts' },
+                { title: 'Events',          url: '/events' },
+                { title: 'Contact',         url: '/contact' }
+            ]
+        } %}
+    </template>
+    
+    <script src="/assets/js/main.js" async></script>
 </body>
 </html>

@@ -17,3 +17,4 @@ for (var lead of document.querySelectorAll('.Lead')) {
 }
 
 new Jobs( document.querySelector('.Jobs') );
+new PrimaryNavigation( document.querySelector('.PrimaryNavigation') );
