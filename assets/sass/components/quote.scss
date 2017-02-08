@@ -26,6 +26,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
+    > span {
+        display: inline-block;
+        margin-top: 0.5rem;
+    }
 }
 .Quote-avatar {
     border: px2rem(2px) solid #1E6B9C;
@@ -36,6 +41,16 @@
     text-indent: px2rem(1px);
     margin-top: px2rem(4px);
     color: $mid-grey;
+}
+@media screen and (min-width: px2em(280px)) {
+    .Quote-citation {
+        display: flex;
+
+        > span {
+            margin-top: 0;
+            flex: 1;
+        }
+    }
 }
 @media screen and (min-width: px2em(500px)) {
     .Quote {

@@ -28,4 +28,12 @@
     .TextBlock-author {
         margin-left: px2rem(-136px);
     }
+    .TextBlock--image {
+        display: flex;
+        max-width: 42em;
+
+        figure {
+            flex: 1 0 45%;
+        }
+    }
 }
