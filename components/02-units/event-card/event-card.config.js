@@ -3,7 +3,7 @@ module.exports = {
     "context": {
         "eventName": "UX London",
         "eventCardContext": "May 24-26 2017  laban, london",
-        "eventCardSrc": "/assets/img/events/uxlondon-logo.png",
+        "eventCardSrc": "https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo.svg",
         "eventCardAlt": "UX London",
         "eventCardUrl": "",
         "eventCardLink": "Visit UX London",

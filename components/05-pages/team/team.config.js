@@ -15,22 +15,16 @@ module.exports = {
     "status": "wip",
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "signpostTitle": "@proposition.signpostTitle",
-        "mastheadTitle": "Advancing the practice of design",
+        "mastheadTitle": "Know who you’re working with.",
         "mastheadMidifier": "--chimney",
         "leadText": "@lead.leadText",
         "pageLeadSecondary": true,
         "persons": persons,
-        listItems: [
-        {
-            "listItem": `<a href="#">11 yrs old and growing. What’s our story?</a>`
-        },
-        {
-            "listItem": `<a href="#">We’re hiring. Is there a job for you?</a>`
-        },
-        {
-            "listItem": `<a href="#">11 yrs old and growing. What’s our story?</a>`
-        }],
+        "listItems": [
+            `<a href="#">11 yrs old and growing. What’s our story?</a>`,
+            `<a href="#">We’re hiring. Is there a job for you?</a>`,
+            `<a href="#">11 yrs old and growing. What’s our story?</a>`
+        ],
 
         /*Banner*/
         "bannerModifier": "--decorated",

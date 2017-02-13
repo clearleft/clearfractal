@@ -12,49 +12,49 @@ module.exports = {
     "variants": [{
         "name": "inverted",
         "context": {
-            "primaryNavModifier": "--inverted"
+            "primaryNavModifiers": ["--inverted"]
         }
     },
     {
         "name": "plum",
         "context": {
-            "primaryNavModifier": "--plum"
+            "primaryNavModifiers": ["--plum"]
         }
     },
     {
         "name": "carribean-green",
         "context": {
-            "primaryNavModifier": "--carribean-green"
+            "primaryNavModifiers": ["--carribean-green"]
         }
     },
     {
         "name": "sea-serpent-blue",
         "context": {
-            "primaryNavModifier": "--sea-serpent-blue"
+            "primaryNavModifiers": ["--sea-serpent-blue"]
         }
     },
     {
         "name": "orange-yellow",
         "context": {
-            "primaryNavModifier": "--orange-yellow"
+            "primaryNavModifiers": ["--orange-yellow"]
         }
     },
     {
         "name": "crayola-red",
         "context": {
-            "primaryNavModifier": "--crayola-red"
+            "primaryNavModifiers": ["--crayola-red"]
         }
     },
     {
         "name": "lapis-lazuli-blue",
         "context": {
-            "primaryNavModifier": "--lapis-lazuli-blue"
+            "primaryNavModifiers": ["--lapis-lazuli-blue"]
         }
     },
     {
         "name": "brandeis-blue",
         "context": {
-            "primaryNavModifier": "--brandeis-blue"
+            "primaryNavModifiers": ["--brandeis-blue"]
         }
     }]
 }

@@ -8,15 +8,15 @@ module.exports = {
     "context": {
         /*Header and masthead*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "primaryNavModifier": "--yellow",
-        "logoModifier": "--yellow",
+        "primaryNavModifiers": ["--orange-yellow"],
+        "logoModifiers": ["--orange-yellow"],
         "mastheadSecondary": "true",
         "mastheadModifier": "--chimney Masthead--combo",
         "mastheadTitle": "Andy Thornton",
         "mastheadSecondaryHeading": "Catch Andy speaking at:",
         "mastheadSub": "Senor UX Designer",
         "mastheadSecondaryLink": "Beyond Tellerrand 2016",
-        "mastheadThird": `<a href="">See Andy speak at Beyond Tellerrand</a>`,
+        "mastheadThird": `<a href="#">Beyond Tellerrand 2016</a>`,
         "nextPrev": true,
 
         /*Lead*/
@@ -26,7 +26,7 @@ module.exports = {
         "cardTitle": "@card.cardTitle",
         "secondContext": "Visual design, 2 hours",
         "cardDescription": "In my previous article, I wrote about some of the misconceptions with “agile” that I see in organisations. This article will focus on one of them specifically – the common (mis)understanding that [...]",
-        
+
         /*About team member*/
         "personFirstName": "Andy",
         "personSurname": "Thornton",
@@ -63,7 +63,7 @@ module.exports = {
             "secondContext": "Visual design, 2 hours",
             "cardDescription": "In my previous article, I wrote about some of the misconceptions with “agile” that I see in organisations. This article will focus on one of them specifically – the common (mis)understanding that agile—and more recently lean start-up methods—are seen as operational [...]"
         }],
-        
+
         /*Footer*/
         "footerLinks": "@site-footer.footerLinks",
         "socialLinks": "@site-footer.socialLinks",

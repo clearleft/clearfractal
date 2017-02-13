@@ -1,10 +1,10 @@
 {% include '@ch4-project' %}
 
-<main>
-    <div class="Background">
-        {% include '@voice--tall' %}
-    </div>
+<div class="Background Background--grey">
+    {% include '@voice' %}
+</div>
 
+<main>
     {% include '@scene' %}
 
     {% include '@image-block' %}
@@ -15,11 +15,7 @@
 
     {% include '@image-block--right-caption' with {imageBlockModifier: '--rightCaption', imageBlockCaption: 'Sketching from lo-fi to hi-fi', imageBlockSrc: '/assets/img/work/ch4/sketching-lo-hi.jpg'} %}
 
-    <div class="RedDots">
-
     {% include '@text-block' %}
-        
-    </div>
 
     {% include '@ch4-display-case' %}
 
@@ -28,8 +24,8 @@
     {% include '@trio' %}
 
     {% include '@signpost' %}
-
-    {% include '@hello' %}
 </main>
+
+{% include '@hello' %}
 
 {% include '@site-footer' %}

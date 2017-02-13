@@ -1,15 +1,13 @@
-<div class="Background">{% include '@site-header' %}</div>
 
-    <main>
+<div class="Background Background--grey">
+    {% include '@site-header' %}
+    {% include '@masthead' %}
+</div>
 
-        <div class="Background">{% include '@masthead' %}</div>
+<main>
+    {% include '@team-member' %}
 
-        {# {% include '@page-lead' with {pageLeadModifier: '--loud'} %} #}
-
-        {% include '@team-member' %}
-
-        {% include '@blog-extension' %}
-
-    </main>
+    {% include '@blog-extension' %}
+</main>
 
 {% include '@site-footer' %}

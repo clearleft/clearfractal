@@ -1,25 +1,26 @@
-const faker = require('faker')
-;
+
+const faker = require('faker');
+
 module.exports = {
     "title": "Article",
     "status": "wip",
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "primaryNavModifier": "--purple",
-        "logoModifier": "--purple",
+        "primaryNavModifiers": ["--plum"],
+        "logoModifiers": ["--plum"],
         "mastheadTitle": "UX Design and Service Design are growing ever closer",
         "mastheadSub": "Process, Featured",
         "mastheadSecondary": true,
         "mastheadBreadcrumb": true,
-        "mastheadModifier": "--arrows Masthead--blueStreak Masthead--chimney",
+        "mastheadModifier": "--arrows Masthead--chimney",
         "mastheadImage": true,
 
         /*Intro*/
         "textBlockModifier": "--author Lead Bar Bar--lightBlue",
         "textBlockProse": `
-        <p>The agile manifesto was born out of a frustration with traditionally managed projects. 
-        But I don’t think it solved the problem. It actually created another one. I’ve seen teams and 
-        organisations go from waterfall, which reduces their ability to compete in the market and 
+        <p>The agile manifesto was born out of a frustration with traditionally managed projects.
+        But I don’t think it solved the problem. It actually created another one. I’ve seen teams and
+        organisations go from waterfall, which reduces their ability to compete in the market and
         deliver value, to dysfunction and paralysis when implementing agile.</p>
         `,
         "authorImage": "@author.authorImage",
@@ -41,7 +42,7 @@ module.exports = {
         "pageLeadModifier": "--image",
         "pageLeadAlt": "Ideas",
         "pageLeadSrc": "/assets/img/blog-header.jpg",
-        
+
         "blogContent": `
 
 <p>‘Tone of voice’ is not just language. &#8216;Brand&#8217; is not just imagery. And that grey corporate, strategic language is always in terrible danger of leaking through into the final product. Binding these elements together to tell an evocative story is the ultimate challenge for any website.</p>

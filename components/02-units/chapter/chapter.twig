@@ -1,9 +1,7 @@
 
 <div class="Chapter{% if chapterModifier %} Chapter{{chapterModifier}}{% endif %}">
     <div class="Chapter-space Chapter-space--primary">
-        <div class="Prose">
-            {{chapterProse}}
-        </div><!--/.Prose-->
+        {{ chapterProse }}
     </div><!--/.Chapter-primary-->
     <div class="Chapter-space Chapter-space--secondary">
         {% if srcSVG %}
@@ -13,4 +11,3 @@
         {% endif %}
     </div><!--/.Chapter-secondary-->
 </div><!--/.Chapter-->
-

@@ -1,13 +1,13 @@
-<div class="Background">{% include '@site-header' %}</div>
+
+<div class="Background Background--grey">
+    {% include '@site-header' %}
+    {% include '@masthead' %}
+</div>
 
 <main>
 
-    <div class="Background">
-        {% include '@masthead' %}
-    </div>
-
     <div class="BlogGrid">
-    
+
         {% include '@featured-card' %}
 
         <div class="BlogGrid-container">
@@ -19,7 +19,7 @@
         </div><!--/.Blog-container-->
 
     </div><!--/.Blog-grid-->
-    
+
     {% include '@pagination' %}
 
 </main>

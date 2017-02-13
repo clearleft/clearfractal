@@ -1,12 +1,13 @@
-<div class="BgBlue">{% include '@site-header' %}</div>
+
+<div class="Background Background--lapis-lazuli-blue">
+    {% include '@site-header' %}
+    {% include '@masthead' %}
+</div>
 
 <main>
+    <div class="Background Background--lapis-lazuli-blue">{% include '@page-lead' %}</div>
 
-    <div class="BgBlue">{% include '@masthead' %}</div>
-
-    <div class="BgBlue">{% include '@page-lead' %}</div>
-    
-    <div class="GreenDots">
+    <div>
         {% for chapter in chapters %}
             {% set chapterProse %}
             {% include '@event-card' with chapter %}
@@ -15,7 +16,7 @@
         {% endfor %}
     </div>
 
-    <div class="BgBlue">
+    <div class="Background Background--lapis-lazuli-blue">
         <div class="Extension Extension--clock">
         {% include '@banner' %}
             {% for pastEvent in pastEvents %}

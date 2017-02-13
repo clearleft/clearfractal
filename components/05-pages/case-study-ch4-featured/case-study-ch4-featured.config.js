@@ -3,8 +3,8 @@ module.exports = {
     "status": "wip",
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "primaryNavModifier": "--inverted PrimaryNavigation--red",
-        "logoModifier": "--inverted Logo--red",
+        "primaryNavModifiers": ["--inverted", "--crayola-red"],
+        "logoModifiers": ["--inverted", "--crayola-red"],
         "segmentOne": "Our Work",
         "segmentTwo": "Channel 4",
         "breadcrumbModifier": "--inverted",
@@ -15,7 +15,6 @@ module.exports = {
         "voiceCite": "James Box, UX Director, Team lead",
         "voicePersonSrc": "/assets/img/team/voice/graham.png",
         "voicePersonAlt": "Graham Smith",
-        "voiceModifier": "--tall",
 
         /*Scene*/
         "metas": "@scene.metas",

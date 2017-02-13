@@ -8,7 +8,7 @@ module.exports = {
         an enthusiastic body of mentors, writers, bloggers, public speakers and events organisers.</p>
         `
         ,
-        "src": "/assets/img/chapter/curiosity.png",
+        "src": "http://placehold.it/544x360",
         "srcSVG": "/assets/img/chapter/curiosity.svg",
         "srcAlt": "Feed your curiosity"
     },

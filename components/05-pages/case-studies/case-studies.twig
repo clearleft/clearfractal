@@ -1,44 +1,45 @@
 
-<div class="Background">{% include '@site-header' %}</div>
+<div class="Background Background--grey">
+    {% include '@site-header' %}
+    {% include '@masthead' %}
+</div>
 
-    <main>
+<main>
 
-        <div class="Background">{% include '@masthead' %}</div>
-
-        <div class="Work">
-            <div class="Work-featured">
-                {% include '@penguin-project' %}
-            </div>
-
-            <div class="Work-grid">
-                {% for post in posts %}
-                <div class="Work-gridItem">
-                    {% include '@card' with { cardTitle: post.cardTitle, cardModifier: '--vibrant', cardLink: 'text' } %}
-                </div>
-                {% endfor %}
-            </div><!--/.Work-grid-->
-
-            <div class="Work-featured">
-                {% include '@ch4-project' %}
-            </div>
-
-            <div class="Work-grid">
-            {% for post in posts %}
-                <div class="Work-gridItem">
-                    {% include '@card' with { cardTitle: post.cardTitle, cardModifier: '--vibrant', cardLink: 'text' } %}
-                </div>
-                {% endfor %}
-            </div><!--/.Work-grid-->
-
-            <div class="Work-featured">
-                {% include '@evo-project' %}
-            </div>
+    <div class="Work">
+        <div class="Work-featured">
+            {% include '@penguin-project' %}
         </div>
 
-        {% include '@megalink-banner' %}
+        <div class="Work-grid">
+            {% for post in posts %}
+            <div class="Work-gridItem">
+                {% include '@card' with { cardTitle: post.cardTitle, cardModifier: '--vibrant', cardLink: 'text' } %}
+            </div>
+            {% endfor %}
+        </div><!--/.Work-grid-->
 
-        {% include '@hello' %}
+        <div class="Work-featured">
+            {% include '@ch4-project' %}
+        </div>
 
-    </main>
+        <div class="Work-grid">
+        {% for post in posts %}
+            <div class="Work-gridItem">
+                {% include '@card' with { cardTitle: post.cardTitle, cardModifier: '--vibrant', cardLink: 'text' } %}
+            </div>
+            {% endfor %}
+        </div><!--/.Work-grid-->
+
+        <div class="Work-featured">
+            {% include '@evo-project' %}
+        </div>
+    </div>
+
+    {% include '@megalink-banner' %}
+
+    {% include '@hello' %}
+
+</main>
 
 {% include '@site-footer' %}

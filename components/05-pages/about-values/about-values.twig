@@ -1,13 +1,16 @@
-<div class="Background">{% include '@site-header' %}</div>
 
-    <main>
+<div class="Background--grey">
+    {% include '@site-header' %}
 
-        <div class="Background">{% include '@masthead' %}</div>
+    {% include '@masthead' %}
+</div>
 
-        <div class="Background">{% include '@page-lead' %}</div>
+<main>
 
-        <div class="GreenDots">{% include '@chapters-values' %}</div>
+    <div class="Background">{% include '@page-lead' %}</div>
 
-    </main>
+    {% include '@chapters-values' %}
+
+</main>
 
 {% include '@site-footer' %}

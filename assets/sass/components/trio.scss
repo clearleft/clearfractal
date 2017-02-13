@@ -11,10 +11,6 @@
 .Trio-item {
     padding: px2rem(16px);
 }
-.Trio-image {
-    display: block;
-    margin-bottom: px2rem(20px);
-}
 .Trio-title {
     margin: px2rem(16px);
 }
@@ -77,10 +73,6 @@
         padding-top: px2rem(32px);
         padding-bottom: px2rem(32px);
     }
-    .Trio-image {
-        margin-left: auto;
-        margin-right: auto;
-    }
     .Trio-collection {
         display: flex;
         flex-wrap: wrap;
@@ -120,10 +112,6 @@
         }
         .Trio-item--rebel {
             margin-left: px2rem(80px);
-        }
-        .Trio-image {
-            margin-right: px2rem(24px);
-            margin-left: 0;
         }
         .Trio-description {
             flex: 0 1 auto;

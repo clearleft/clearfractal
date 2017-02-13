@@ -12,11 +12,11 @@ module.exports = {
     "status": "wip",
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "primaryNavModifier": "--lightBlue",
-        "logoModifier": "--lightBlue",
-        "mastheadTitle": "Advancing the practice of design",
+        "primaryNavModifiers": ["--sea-serpent-blue"],
+        "logoModifiers": ["--sea-serpent-blue"],
+        "mastheadTitle": "Case<br>studies.",
         "mastheadModifier": "--chimney",
-        
+
         /*Penguin feature*/
         "penguinModifier": "--tall",
         "penguinContext": "Penguin random house publishing company",
@@ -47,7 +47,7 @@ module.exports = {
         "megaLinkModifier": "@mega-link--super.megaLinkModifier",
         "helloHeading": "@hello.helloHeading",
         "helloBody": "@hello.helloBody",
-        
+
         /*Footer*/
         "footerLinks": "@site-footer.footerLinks",
         "socialLinks": "@site-footer.socialLinks",

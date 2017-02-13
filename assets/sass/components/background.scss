@@ -1,7 +1,11 @@
 .Background {
+    background-color: $Blank;
+}
+.Background--grey {
     color: $Jet-grey;
     background-color: $Anti-white-flash;
 }
+.Background--lapis-lazuli-blue,
 .BgBlue {
     color: $Blank;
     background-color: $Lapis-lazuli-blue;
@@ -14,6 +18,7 @@
         }
     }
 }
+.Background--plum,
 .BgPurple {
     color: $Blank;
     background-color: $Brand-plum;
@@ -26,6 +31,7 @@
         }
     }
 }
+.Background--carribean-green,
 .BgGreen {
     color: $Blank;
     background-color: $Brand-carribean-green;

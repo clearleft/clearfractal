@@ -1,8 +1,11 @@
+
 .PenguinProject {
     color: $Blank;
     background-color: #FF6600;
-    background-image: url('/assets/img/work/penguin/orange-bg.jpg');
-    background-size: cover;
+    background-image: url('http://clearleft-v5.s3.amazonaws.com/penguin-kyle.jpg');
+    background-size: 80%;
+    background-position: 300px 50%;
+    background-repeat: no-repeat;
 }
 .PenguinProject-wrapper {
     max-width: px2em(900px);
@@ -32,10 +35,6 @@
         padding-bottom: px2rem(48px);
         padding-left: px2rem(24px);
         padding-right: px2rem(24px);
-        background-image: url('/assets/img/work/penguin/penguin.png');
-        background-repeat: no-repeat;
-        background-position: 120% 100%;
-        background-size: px2rem(280px);
     }
     .PenguinProject-primary {
         width: 70%;
@@ -45,12 +44,6 @@
     .PenguinProject-wrapper {
         padding-top: px2rem(70px);
         padding-bottom: px2rem(70px);
-        background-size: px2rem(380px);
-    }
-}
-@media screen and (min-width: px2em(900px)) {
-    .PenguinProject-wrapper {
-        background-position: 100% 100%;
     }
 }
 
@@ -76,52 +69,13 @@
         align-items: center;
     }
 }
-@media screen and (min-width: px2em(800px)) {
-    .PenguinProject--tall {
-        .PenguinProject-wrapper {
-            background-size: px2rem(500px);
-        }
-    }
-}
 
 /*--stage variation--*/
-@media screen and (min-width: px2em(800px)) {
-    .PenguinProject--stage .PenguinProject-wrapper {
-        background-position: 140% 100%;
-    }
-}
 @media screen and (min-height: px2em(400px)) and (min-width: px2em(700px)) {
     .PenguinProject--stage {
         .PenguinProject-wrapper {
             min-height: 58vh;
             padding: px2rem(32px) px2rem(24px) 0 px2rem(24px);
-        }
-    }
-}
-@media screen and (min-width: px2em(800px)) {
-    .PenguinProject--stage {
-        .PenguinProject-wrapper {
-            background-position: 120% 100%;
-            background-size: px2rem(470px);
-        }
-    }
-}
-@media screen and (min-height: px2em(400px)) and (min-width: px2em(920px)) {
-    .PenguinProject--stage {
-        .PenguinProject-wrapper {
-            background-size: px2rem(600px);
-            padding-bottom: px2rem(40px);
-        }
-    }
-}
-@media screen and (min-width: px2em(1200px)) {
-    .PenguinProject--stage {
-        background-image: url('/assets/img/work/penguin/penguin.png'), url('/assets/img/work/penguin/orange-bg.jpg');
-        background-position: 100% 100%, 0 0;
-        background-size: px2rem(700px), cover;
-        background-repeat: no-repeat;
-        .PenguinProject-wrapper {
-            background-image: none;
         }
     }
 }

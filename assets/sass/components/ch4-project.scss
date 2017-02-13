@@ -1,18 +1,16 @@
-/*This file containes styles for the featured project header, listing and display case*/
 
-/*Featured project listing and header*/
 .Ch4Project {
-    position: relative;
     color: $Blank;
-    background-color: #570F83;
+    position: relative;
+    background-color: #7A0A98;
 }
 .Ch4Project-wrapper {
     max-width: px2em(900px);
     margin: 0 auto;
     padding: px2rem(16px);
-    -webkit-font-smoothing: antialiased;
     position: relative;
     z-index: 1;
+    -webkit-font-smoothing: antialiased;
 }
 .Ch4Project-secondary {
     max-width: 70%;
@@ -28,23 +26,23 @@
 .Ch4Project-description {
     max-width: px2em(350px);
 }
-.Ch4Project-image {
-    display: none;
+@media screen and (min-width: px2em(300px)) {
+    .Ch4Project {
+        background-image: url('http://clearleft-v5.s3.amazonaws.com/channel-4-kyle.jpg');
+        background-size: 80%;
+        background-position: 50% 0%;
+        background-repeat: no-repeat;
+    }
 }
 @media screen and (min-width: px2em(500px)) {
+    .Ch4Project {
+        background-position: 300px 50%;
+    }
     .Ch4Project-image {
         display: block;
-        max-width: px2rem(70px);
-        position: absolute;
-        right: px2rem(30px);
-        bottom: px2rem(100px);
     }
     .Ch4Project-secondary {
         width: 30%;
-    }
-    .Ch4Project-image {
-        max-width: px2rem(120px);
-        bottom: px2rem(34px);
     }
     .Ch4Project-title {
         max-width: none;
@@ -70,13 +68,12 @@
     }
     .Ch4Project-primary {
         width: 70%;
-        order: 2;
-        padding-left: px2rem(24px);
+        order: 1;
     }
     .Ch4Project-secondary {
         margin-top: 0;
         width: 30%;
-        order: 1;
+        order: 2;
         padding-right: px2rem(24px);
     }
     .Ch4Project-image {
@@ -120,7 +117,6 @@
 }
 @media screen and (min-width: px2em(700px)) {
     .Ch4Project--tall {
-        /*background-image: radial-gradient(59% 81%, #7123A8 63%, #4D1574 100%);*/
         .Ch4Project-wrapper {
             position: relative;
         }
@@ -147,41 +143,9 @@
 }
 /* --stage variation */
 .Ch4Project--stage {
-    margin-bottom: px2rem(110px);
-    .Ch4Project-skew {
-        background-color: #380F55;
-        position: relative;
-        z-index: 0;
-        margin-top: px2rem(-42px);
-        margin-bottom: px2rem(64px);
-        &:before,
-        &:after {
-            background: inherit;
-            content: '';
-            height: px2rem(95px);
-            left: 0;
-            position: absolute;
-            right: 0;
-            top: px2rem(16px);
-        }
-        &:before {
-            transform: skewY(-6deg);
-            transform-origin: -63%;
-        }
-    }
-    .Ch4Project-image {
-        max-width: px2em(110px);
-        bottom: px2rem(-30px);
-    }
     .Ch4Project-logo {
         max-height: px2rem(120px);
         margin-top: px2rem(-52px);
-    }
-}
-@media screen and (min-width: px2em(330px)) {
-    .Ch4Project--stage .Ch4Project-skew:before {
-        transform-origin: -58%;
-        height: px2rem(118px);
     }
 }
 @media screen and (min-width: px2em(500px)) {
@@ -197,60 +161,28 @@
         }
     }
 }
-@media screen and (min-width: px2em(500px)) {
-    .Ch4Project--stage {
-        .Ch4Project-image {
-            bottom: px2rem(12px);
-        }
-    }
-}
 @media screen and (min-width: px2em(700px)) {
     .Ch4Project--stage {
-        margin-bottom: px2rem(140px);
         .Ch4Project-breadcrumb {
             padding: 0 px2rem(24px);
         }
         .Ch4Project-wrapper {
             display: block;
         }
-        .Ch4Project-image {
-            right: 0;
-            left: auto;
-            max-width: px2rem(278px);
-        }
         .Ch4Project-middle {
             position: absolute;
             width: 100%;
             height: 9rem;
-            background-color: #380F55;
-        }
-        .Ch4Project-skew {
-            margin-top: px2rem(-120px);
         }
     }
 }
 @media screen and (min-width: px2em(800px)) {
     .Ch4Project--stage {
-        margin-bottom: px2rem(100px);
         .Ch4Project-wrapper {
             padding: px2rem(32px) px2rem(24px) 0 px2rem(24px);
         }
-        .Ch4Project-skew {
-            &:before {
-                height: 12rem;
-            }
-            &:after {
-                transform: skewY(-4deg);
-                transform-origin: 100%;
-            }
-        }
         .Ch4Project-middle {
             height: 12rem;
-        }
-        .Ch4Project-image {
-            right: px2rem(30px);
-            bottom: px2rem(-40px);
-            max-width: px2rem(280px);
         }
     }
 }
@@ -261,10 +193,6 @@
             margin-top: px2rem(-100px);
             margin-left: px2rem(-30px);
         }
-        .Ch4Project-image {
-            max-width: px2em(320px);
-            bottom: px2rem(-90px);
-        }
         .Ch4Project-wrapper {
             min-height: 50vh;
         }
@@ -272,15 +200,6 @@
 }
 @media screen and (min-width: px2em(1100px)) {
     .Ch4Project--stage {
-        .Ch4Project-skew {
-            margin-bottom: px2rem(64px);
-            &:before {
-                height: 11rem;
-            }
-            &:after {
-                margin-top: -5rem;
-            }
-        }
         .Ch4Project-middle {
             height: 13rem;
             top: -4rem;
@@ -290,26 +209,6 @@
         .Ch4Project-logo {
             max-height: px2rem(230px);
         }
-        .Ch4Project-image {
-            max-width: px2rem(440px);
-            right: px2rem(70px);
-            bottom: px2rem(-130px);
-        }
-    }
-}
-@media screen and (min-width: px2em(1200px)) {
-    .Ch4Project--stage {
-        .Ch4Project-skew:before {
-            margin-top: 2rem;
-        }
-    }
-}
-@media screen and (min-width: px2em(1800px)) {
-    .Ch4Project--stage .Ch4Project-skew:after {
-        margin-top: -8rem;
-    }
-    .Ch4Project--stage .Ch4Project-skew:before {
-        height: px2rem(280px);
     }
 }
 

@@ -3,8 +3,8 @@ module.exports = {
     "status": "wip",
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "primaryNavModifier": "--lightBlue",
-        "logoModifier": "--lightBlue",
+        "primaryNavModifiers": ["--sea-serpent-blue"],
+        "logoModifiers": ["--sea-serpent-blue"],
         "leadText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sapiente molestiae sed? Consectetur illo repellat dolorum assumenda, voluptatum explicabo architecto?",
         "leadModifier": "--wrapper Bar",
         "mapSrc": "@map.mapSrc",
@@ -17,7 +17,7 @@ module.exports = {
         "contactEmail": "info@clearleft.com",
         "contactTel": "+44 (0)845 838 6163",
         "contactVcardLink": "#",
-        
+
         /*Footer*/
         "footerLinks": "@site-footer.footerLinks",
         "socialLinks": "@site-footer.socialLinks",

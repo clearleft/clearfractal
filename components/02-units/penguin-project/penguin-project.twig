@@ -2,12 +2,14 @@
     {% if "--stage" in penguinModifier %}
     {% include '@site-header' %}
     {% endif %}
+
     <div class="PenguinProject-wrapper">
         {% if "--stage" in penguinModifier %}
         <div class="Ch4Project-breadcrumb">
             {% include '@breadcrumb' %}
         </div><!--/.Ch4Project-breadcrumb-->
         {% endif %}
+
         <div class="PenguinProject-primary">
             {% if penguinContext %}<p class="Heading Heading--context Heading--inverted">{{penguinContext}}</p>{% endif %}
             <h1 class="PenguinProject-title Heading Heading--secondary Heading--inverted">{{penguinTitle}}</h1>
@@ -22,5 +24,10 @@
             </div><!--/.PenguinProject-extension-->
             {% endif %}
         </div><!--./.PenguinProject-primary-->
+
+        <div class="PenguinProject-secondary">
+            
+        </div>
+
     </div><!--/.PenguinProject-wrapper-->
 </div><!--./PenguinProject-->

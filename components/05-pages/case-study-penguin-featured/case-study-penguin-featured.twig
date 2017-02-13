@@ -1,9 +1,11 @@
+
 {% include '@penguin-project' %}
 
+<div class="Background Background--grey">
+    {% include '@voice' %}
+</div>
+
 <main>
-
-    <div class="Background">{% include '@voice' %}</div>
-
     {% include '@scene' %}
 
     {% include '@image-block' %}
@@ -11,7 +13,7 @@
     {% include '@text-block' %}
 
     {% include '@quote' %}
-    
+
     <div class="TextBlock Prose">
         <p>The results of the workshop with all the subsidiary brands of Penguin Random House contradicted what we had initially heard. Staff believed that the site could offer readers unique content, and better access to authors. To get strategic clarity, we worked with stakeholders to identify the top business objectives. Ones they could all get behind. With a bit of help from us, the internal team decided that the web should:</p>
         <h2>During the research we discovered:</h2>
@@ -26,8 +28,8 @@
     {% include '@trio' %}
 
     {% include '@signpost' %}
-
-    {% include '@hello' %}
 </main>
+
+{% include '@hello' %}
 
 {% include '@site-footer' %}

@@ -1,30 +1,22 @@
 .Masthead--full {
-    padding: px2em(16px) px2em(16px) px2em(24px) px2em(16px);
-    min-height: calc(100vh - 24px - 16px);
+    padding: px2rem(16px) px2rem(16px) px2rem(24px) px2rem(16px);
+    min-height: calc(100vh - 2.5rem);
 }
 .Masthead-primary {
-    padding: px2em(16px) px2em(16px) px2em(24px) px2em(16px);
+    padding: px2rem(16px) px2rem(16px) px2rem(24px) px2rem(16px);
     position: relative;
     z-index: 1;
+
+    .Heading {
+        margin: 0;
+    }
 }
 .Masthead-secondary {
-    padding: px2em(16px) px2em(16px) 0 px2em(16px);
+    padding: px2rem(16px) px2rem(16px) 0 px2rem(16px);
     position: relative;
 }
 .Masthead-third {
-    padding: 0 px2em(16px) px2em(16px) px2em(16px);
-}
-.Masthead--greenStreak {
-    background-image: url('/assets/img/streaks/streakyblob-green.png');
-    background-repeat: no-repeat;
-    background-size: 160px;
-    background-position: 0 24%;
-}
-.Masthead--blueStreak {
-    background-image: url('/assets/img/streaks/streakyblob-blue.png');
-    background-repeat: no-repeat;
-    background-size: 160px;
-    background-position: 0 24%;
+    padding: 0 px2rem(16px) px2rem(16px) px2rem(16px);
 }
 @media screen and (min-height: px2em(880px)) {
     .Masthead--full {
@@ -41,16 +33,11 @@
     }
     .Masthead-primary {
         order: 1;
-        width: 72%;
+        width: 85%;
     }
     .Masthead-secondary {
         order: 2;
-        width: 28%;
-    }
-    .Masthead--blueStreak,
-    .Masthead--greenStreak {
-        background-size: auto;
-        background-position: 0 0;
+        width: 15%;
     }
 }
 /*Masthead--arrows*/
@@ -60,6 +47,10 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            padding: 0;
+        }
+        a[rel="next"] {
+            margin-right: 0;
         }
     }
 }
@@ -77,19 +68,22 @@
 /*Masthead--combo*/
 @media screen and (min-width: px2em(850px)) {
     .Masthead--combo {
-        .Masthead-third {
-            order: 2;
-            width: 25%;
-            padding-top: px2rem(35px);
-        }
         .Masthead-primary {
-            width: 50%;
+            width: 55%;
         }
         .Masthead-secondary {
             order: 3;
             text-align: right;
-            width: 25%;
+            width: 15%;
+            padding: px2rem(35px) 0 0 0;
+        }
+        .Masthead-third {
+            order: 2;
+            width: 30%;
             padding-top: px2rem(35px);
+            .Heading--context {
+                margin: 0;
+            }
         }
     }
 }

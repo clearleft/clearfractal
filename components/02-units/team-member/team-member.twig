@@ -1,18 +1,18 @@
-<div class="LayoutAlternate LayoutAlternate--chimney Prose">
+<div class="LayoutAlternate LayoutAlternate--chimney">
     <div class="LayoutAlternate-left LayoutAlternate-item LayoutAlernate-item--leadPrimary">
         {% include '@lead' %}
     </div>
     <div class="LayoutAlternate-right LayoutAlternate-item LayoutAlernate-item--leadSecondary">
-        <img class="LayoutAlternate-image" src="{{personImage}}" alt="{{personFirstName}} {{personSurname}}"> 
+        <img class="LayoutAlternate-image" src="{{personImage}}" alt="{{personFirstName}} {{personSurname}}">
         <div class="LayoutAlternate-solo">
             <p class="Heading Heading--context">Find {{personFirstName}} on:</p>
             {% include '@social-media' %}
         </div>
     </div>
-    <div class="LayoutAlternate-left LayoutAlternate-item">
+    <div class="LayoutAlternate-left LayoutAlternate-item Prose">
         {{personIntroLeft}}
     </div>
-    <div class="LayoutAlternate-right LayoutAlternate-item">
+    <div class="LayoutAlternate-right LayoutAlternate-item Prose">
         <h2>Away from the office</h2>
         {{personInterests}}
     </div>
@@ -29,7 +29,7 @@
         </ul>
     </div><!--/.Layout-alternate-item-->
     {% endif %}
-    
+
     {% if talks %}
     <div class="LayoutAlternate-left LayoutAlternate-item">
         <h3 class="Heading Heading--body Heading--vibrant">Previous talks</h3>

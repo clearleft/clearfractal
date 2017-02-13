@@ -1,5 +1,5 @@
 
-<nav class="PrimaryNavigation{% if primaryNavModifier %} PrimaryNavigation{{ primaryNavModifier }}{% endif %}" data-component="PrimaryNavigation">
+<nav class="PrimaryNavigation{% if primaryNavModifiers %} PrimaryNavigation{{ primaryNavModifiers|join(' PrimaryNavigation') }}{% endif %}" data-component="PrimaryNavigation">
     <button class="PrimaryNavigation-menu" aria-hidden="true">Menu</button>
     <ul class="PrimaryNavigation-list">
         {% for primaryNavlink in primaryNavlinks %}

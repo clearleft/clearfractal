@@ -5,13 +5,13 @@ module.exports = {
     "status": "wip",
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "primaryNavModifier": "--yellow",
-        "logoModifier": "--yellow",
+        "primaryNavModifiers": ["--orange-yellow"],
+        "logoModifiers": ["--orange-yellow"],
         "mastheadTitle": "UX Design and Service Design are growing ever closer",
         "mastheadSub": "Process, Featured",
         "mastheadSecondary": true,
         "mastheadBreadcrumb": true,
-        "mastheadModifier": "--arrows Masthead--greenStreak Masthead--chimney",
+        "mastheadModifier": "--arrows Masthead--chimney",
         "mastheadImage": true,
         "leadModifier": "--wrapper Bar Bar--green",
         "leadText": "@lead.leadText",
@@ -19,12 +19,12 @@ module.exports = {
         /*Intro*/
         "textBlockModifier": "--author",
         "textBlockProse": `
-        <p>The agile manifesto was born out of a frustration with traditionally managed projects. 
-        But I don’t think it solved the problem. It actually created another one. I’ve seen teams and 
-        organisations go from waterfall, which reduces their ability to compete in the market and 
+        <p>The agile manifesto was born out of a frustration with traditionally managed projects.
+        But I don’t think it solved the problem. It actually created another one. I’ve seen teams and
+        organisations go from waterfall, which reduces their ability to compete in the market and
         deliver value, to dysfunction and paralysis when implementing agile.</p>
-        <p>That’s largely due to the various interpretations of the manifesto borne of misunderstanding. 
-        Bottom-up as well as top-down support is needed in order for a successful agile transformation to take 
+        <p>That’s largely due to the various interpretations of the manifesto borne of misunderstanding.
+        Bottom-up as well as top-down support is needed in order for a successful agile transformation to take
         place in any organisation.</p>
         `,
         "authorImage": "@author.authorImage",

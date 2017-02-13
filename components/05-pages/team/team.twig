@@ -1,15 +1,17 @@
-<div class="Background">{% include '@site-header' %}</div>
+
+<div class="Background Background--grey">
+    {% include '@site-header' %}
+    {% include '@masthead' %}
+</div>
 
 <main>
 
-    <div class="Background">{% include '@masthead' %}</div>
-
-    <div class="Background">{% include '@page-lead' %}</div>
+    <div class="Background Background--grey">{% include '@page-lead' %}</div>
 
     {% include '@team-grid' %}
 
     {% include '@banner' with {bannerCaption: 'Take a peek inside', bannerHeadline: 'Our Studio', bannerModifier: '', bannerBody: '', "bannerLink": ''} %}
-    
+
     {% include '@image-gallery-team' %}
 
     {% include '@banner' %}

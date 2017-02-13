@@ -4,8 +4,8 @@ module.exports = {
     "context": {
         /*Header*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "primaryNavModifier": "--inverted PrimaryNavigation--purple",
-        "logoModifier": "--inverted Logo--purple",
+        "primaryNavModifiers": ["--inverted", "--plum"],
+        "logoModifiers": ["--inverted", "--plum"],
 
         /*Masthead*/
         "mastheadTitle": "What can design do for you?",

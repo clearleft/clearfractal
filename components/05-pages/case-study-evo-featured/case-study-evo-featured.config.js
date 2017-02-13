@@ -2,8 +2,8 @@ module.exports = {
     "status": "wip",
     "context": {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "primaryNavModifier": "@primary-navigation--inverted.primaryNavModifier",
-        "logoModifier": "--inverted",
+        "primaryNavModifiers": ["--inverted"],
+        "logoModifiers": ["--inverted"],
         "segmentOne": "Our Work",
         "segmentTwo": "Channel 4",
         "breadcrumbModifier": "--inverted",

@@ -23,7 +23,7 @@ module.exports = {
         "selectorID": "categories",
         "triggerContent": "all posts",
         "triggerClass": "Heading Heading--main",
-        "targetClass": "Container BgGreen",
+        "targetClass": "Container Background--carribean-green",
         "listContext": {
             "listClass": "",
             "listItemClass": "Heading Heading--secondary",
