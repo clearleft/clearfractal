@@ -1,26 +1,10 @@
 .Logo {
     border-bottom: none;
+    display: inline-block;
 }
 .Logo--inverted .Logo-text {
     fill: $Blank;
 }
-.Logo--purple .Logo-streak {
-    fill: $Brand-plum;
-}
-.Logo--red .Logo-streak {
-    fill: $Crayola-red;
-}
-.Logo--blue .Logo-streak {
-    fill: $Lapis-lazuli-blue;
-}
-.Logo--yellow .Logo-streak {
-    fill: $Orange-yellow;
-}
-.Logo--lightBlue .Logo-streak {
-    fill: $Sea-serpent-blue;
-}
-
-/* New classes for all the brand colours which correspond to the CMS brand colour naming */
 .Logo--plum .Logo-streak {
     fill: $Brand-plum;
 }
@@ -41,4 +25,9 @@
 }
 .Logo--brandeis-blue .Logo-streak {
     fill: $Brandeis-blue;
+}
+@media only screen and (max-width: px2em(340px)) {
+    .Logo svg {
+        width: px2rem(130px);
+    }
 }

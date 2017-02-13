@@ -1,20 +1,48 @@
 
-<div class="Background Background--carribean-green">
+<div class="Impact Background--carribean-green">
     {% include '@site-header' %}
 
-    <div class="">
-        <img src="http://clearleft-v5.s3.amazonaws.com/maze.jpg" alt="" style="display: block; margin: 0 auto">
-        <h2 class="Heading Heading--main Heading--inverted" style="padding-bottom: 2rem; text-align:center;">We see you through.</h2>
-    </div>
-
+    <h2 class="Heading Heading--main Heading--inverted">We see you through.</h2>
 </div>
 
 <main>
-    {% include '@intro' %}
 
-    {% include '@trio' %}
+    <div class="Intro">
+        <h2 class="Intro-text">Let’s make a positive difference to your digital presence and the practices which support it.</h2>
+    </div>
 
-    {% include '@banner' with {bannerCaption: 'Get the lowdown', bannerHeadline: 'Client stories'} %}
+    <div class="Home-grid">
+        <div class="Home-gridItem">
+            {% include '@card' with {
+                cardModifier: '--home',
+                cardBarColour: '#00D494',
+                cardTitle: "Design or redesign products & services",
+                cardDescription: "Radically improve your existing products and services, or work with the team to conceive, create and build on an entirely new idea."
+            } %}
+        </div>
+        <div class="Home-gridItem">
+            {% include '@card' with {
+                cardModifier: '--home',
+                cardBarColour: '#00D494',
+                cardTitle: "Get your strategy clear",
+                cardDescription: "You might need a targeted intervention, to unpick a thorny problem, or a fresh perspective on your process. Our strategists work with you to research and develop your digital strategy."
+            } %}
+        </div>
+        <div class="Home-gridItem">
+            {% include '@card' with {
+                cardModifier: '--home',
+                cardBarColour: '#00D494',
+                cardTitle: "Transform your digital culture",
+                cardDescription: "Upskill your team, develop your processes, integrate design thinking and introduce new habits. Work closely with the Clearleft team to get an external perspective that helps you initiate change."
+            } %}
+        </div>
+    </div>
+
+    <div class="Banner">
+        <div class="Banner-content">
+            <a href="#" class="MegaLink MegaLink--super">Meet the team</a>
+        </div>
+    </div>
 
     {% include '@ch4-project' %}
 
@@ -22,14 +50,10 @@
 
     {% include '@evo-project' %}
 
-    <div class="Banner">
-        <div class="Banner-content">
-            <a href="" class="MegaLink MegaLink--super">See the rest of our work</a>
-        </div>
-    </div>
-
-    {% include '@hello' %}
+    {% include '@banner' with {bannerCaption: 'Latest Posts', bannerHeadline: 'Clear thinking.'} %}
 
 </main>
+
+{% include '@hello' %}
 
 {% include '@site-footer' %}

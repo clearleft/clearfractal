@@ -2,19 +2,12 @@
 .EvoProject {
     color: $Blank;
     background-color: #000;
-    background-image: url('http://clearleft-v5.s3.amazonaws.com/evo-kyle.jpg');
-    background-size: 80%;
-    background-position: 300px 50%;
-    background-repeat: no-repeat;
-    position: relative;
 }
 .EvoProject-wrapper {
     max-width: px2em(900px);
     margin: 0 auto;
     padding: px2rem(24px) px2rem(16px);
     -webkit-font-smoothing: antialiased;
-    position: relative;
-    z-index: 1;
 }
 .EvoProject-title {
     margin-top: px2rem(24px);
@@ -27,6 +20,15 @@
 }
 .EvoProject-logo {
     margin-top: px2rem(34px);
+}
+@media screen and (min-width: px2em(300px)) {
+    .EvoProject {
+        background-image: url('http://clearleft-v5.s3.amazonaws.com/evo-kyle.jpg');
+        background-size: 80%;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        padding-top: 35%;
+    }
 }
 @media screen and (min-width: px2em(500px)) {
     .EvoProject-wrapper {
@@ -41,6 +43,10 @@
     }
 }
 @media screen and (min-width: px2em(700px)) {
+    .EvoProject {
+        background-position: 300px 50%;
+        padding-top: 0;
+    }
     .EvoProject-wrapper {
         padding-top: px2rem(70px);
         padding-bottom: px2rem(70px);
@@ -145,6 +151,15 @@
         max-width: none;
     }
 }
+@media screen and (min-width: px2em(300px)) {
+    .EvoProject--stage {
+        padding-top: 0;
+        background-position: 50% 9rem;
+        .EvoProject-primary {
+            padding-top: 8rem;
+        }
+    }
+}
 @media screen and (min-width: px2em(650px)) {
     .EvoProject--stage {
         .EvoProject-wrapper {
@@ -153,6 +168,15 @@
         .EvoProject-title {
             padding-top: px2rem(30px);
             padding-bottom: px2rem(20px);
+        }
+    }
+}
+@media screen and (min-width: px2em(800px)) {
+    .EvoProject--stage {
+        background-position: 8rem 50%;
+        background-size: 120%;
+        .EvoProject-primary {
+            padding-top: 0;
         }
     }
 }

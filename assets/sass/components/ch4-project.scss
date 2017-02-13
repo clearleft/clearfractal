@@ -1,15 +1,12 @@
 
 .Ch4Project {
     color: $Blank;
-    position: relative;
     background-color: #7A0A98;
 }
 .Ch4Project-wrapper {
     max-width: px2em(900px);
     margin: 0 auto;
     padding: px2rem(16px);
-    position: relative;
-    z-index: 1;
     -webkit-font-smoothing: antialiased;
 }
 .Ch4Project-secondary {
@@ -32,15 +29,10 @@
         background-size: 80%;
         background-position: 50% 0%;
         background-repeat: no-repeat;
+        padding-top: 35%;
     }
 }
 @media screen and (min-width: px2em(500px)) {
-    .Ch4Project {
-        background-position: 300px 50%;
-    }
-    .Ch4Project-image {
-        display: block;
-    }
     .Ch4Project-secondary {
         width: 30%;
     }
@@ -59,6 +51,10 @@
     }
 }
 @media screen and (min-width: px2em(700px)) {
+    .Ch4Project {
+        background-position: 300px 50%;
+        padding-top: 0;
+    }
     .Ch4Project-wrapper {
         padding-top: px2rem(70px);
         padding-bottom: px2rem(70px);
@@ -148,16 +144,12 @@
         margin-top: px2rem(-52px);
     }
 }
-@media screen and (min-width: px2em(500px)) {
+@media screen and (min-width: px2em(300px)) {
     .Ch4Project--stage {
-        .Ch4Project-image {
-            max-width: px2em(180px);
-            top: auto;
-            bottom: px2rem(100px);
-            position: absolute;
-            right: 0;
-            bottom: px2rem(-62px);
-            z-index: -1;
+        padding-top: 0;
+        background-position: 50% 9rem;
+        .Ch4Project-primary {
+            padding-top: 8rem;
         }
     }
 }
@@ -178,8 +170,13 @@
 }
 @media screen and (min-width: px2em(800px)) {
     .Ch4Project--stage {
+        background-position: 8rem 50%;
+        background-size: 120%;
         .Ch4Project-wrapper {
             padding: px2rem(32px) px2rem(24px) 0 px2rem(24px);
+        }
+        .Ch4Project-primary {
+            padding-top: 0;
         }
         .Ch4Project-middle {
             height: 12rem;
@@ -200,6 +197,8 @@
 }
 @media screen and (min-width: px2em(1100px)) {
     .Ch4Project--stage {
+        background-position: px2rem(300px) 50%;
+        background-size: px2rem(1200px);
         .Ch4Project-middle {
             height: 13rem;
             top: -4rem;

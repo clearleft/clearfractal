@@ -34,7 +34,7 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 1rem 0 0 0;
 }
 .SiteFooter-icon {
     list-style: none;
@@ -44,6 +44,10 @@
 }
 .SiteFooter-iconLink {
     border-bottom: none;
+    display: block;
+    img {
+        display: inline-block;
+    }
 }
 @media only screen and (min-width: px2em(350px)) {
     .SiteFooter-navigationLinks {

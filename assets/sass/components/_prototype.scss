@@ -1,0 +1,65 @@
+
+.Impact {
+    position: relative;
+    background: $Brand-carribean-green url('http://clearleft-v5.s3.amazonaws.com/maze.jpg') 50% 3rem no-repeat;
+    background-size: 150%;
+    padding-bottom: 95%;
+
+    h2 {
+        position: absolute;
+        bottom: 1rem;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: px2em(430px)) {
+    .Impact {
+        padding-bottom: 80%;
+        h2 {
+            bottom: 2rem;
+        }
+    }
+}
+@media only screen and (min-width: px2em(500px)) {
+    .Impact {
+        padding-bottom: 90%;
+    }
+}
+@media only screen and (min-width: px2em(860px)) {
+    .Impact {
+        padding-bottom: 80%;
+        h2 {
+            bottom: 3rem;
+        }
+    }
+}
+@media only screen and (min-width: px2em(960px)) {
+    .Impact {
+        background-size: auto;
+        background-position: 50% 0;
+        padding-bottom: 0;
+        height: px2rem(875px);
+        h2 {
+            bottom: 4rem;
+        }
+    }
+}
+
+
+.Home-grid {
+    margin: 0 auto;
+    max-width: 64rem;
+    padding: px2rem(16px) 4%;
+}
+
+@media only screen and (min-width: px2em(800px)) {
+    .Home-grid {
+        display: flex;
+    }
+    .Home-gridItem {
+        flex: 1 0 33.33%;
+        padding-right: 2rem;
+    }
+}

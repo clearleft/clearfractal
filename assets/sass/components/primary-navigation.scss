@@ -2,13 +2,12 @@
 .PrimaryNavigation-menu {
     display: none;
     background-color: transparent;
-    border: none;
-    border-bottom: $Crayola-red px2rem(2px) solid;
-    color: $Brandeis-blue;
-    @include font(16px, 16px);
+    border: 2px solid #333;
+    border-radius: px2rem(24px);
+    @include font(14px, 16px);
     font-family: $font-secondary;
     font-weight: 700;
-    padding: 0.5rem;
+    padding: px2rem(6px) px2rem(12px);
     text-decoration: none;
 }
 .PrimaryNavigation-list {
@@ -38,6 +37,10 @@
 }
 .PrimaryNavigation--inverted {
     color: $Blank;
+    .PrimaryNavigation-menu {
+        border-color: $Blank;
+        color: $Blank;
+    }
     .PrimaryNavigation-link {
         color: $Blank;
     }
@@ -65,7 +68,7 @@
     background-color: $Brandeis-blue;
 }
 
-@media only screen and (min-width: px2em(320px)) and (max-width: px2em(719px)) {
+@media only screen and (min-width: px2em(300px)) and (max-width: px2em(719px)) {
     .PrimaryNavigation-menu {
         position: absolute;
         right: 1rem;

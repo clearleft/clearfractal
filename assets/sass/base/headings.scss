@@ -67,14 +67,6 @@ a .Heading--inverted {
         color: inherit;
     }
 }
-// @media screen and (min-width: px2em(300px)) {
-//     .Heading--main {
-//         @include font(60px, 54px);
-//     }
-//     .Heading--secondary {
-//         @include font(40px, 47px);
-//     }
-// }
 @media screen and (min-width: px2em(500px)) {
     .Heading {
         margin-bottom: px2rem(16px);

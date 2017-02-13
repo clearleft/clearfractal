@@ -57,24 +57,59 @@
     }
 
 }
+.Card--home {
+    .Card-title {
+        @include font(25px, 31px);
+        letter-spacing: -0.36px;
+    }
+}
 .Card--vibrant {
     padding-top: px2rem(24px);
     padding-bottom: px2rem(48px);
     padding-left: px2rem(16px);
     padding-right: px2rem(16px);
 }
-@media screen and (min-width: px2rem(500px)) {
-    .Card--vibrant {
-        padding-left: px2rem(24px);
-        padding-right: px2rem(24px);
-    }
+@media screen and (min-width: px2em(500px)) {
     .Card-title {
         @include font(35px, 40px);
         letter-spacing: -0.5px;
     }
+    .Card--vibrant {
+        padding-left: px2rem(24px);
+        padding-right: px2rem(24px);
+    }
+    .Card--home {
+        .Card-title {
+            @include font(25px, 31px);
+            letter-spacing: -0.36px;
+        }
+    }
 }
-
-@media screen and (min-width: px2rem(900px)) {
+@media screen and (min-width: px2em(640px)) and (max-width: px2em(799px)) {
+    .Card--home {
+        .Card-primary {
+            display: flex;
+            justify-content: space-between;
+        }
+        header {
+            flex: 1 0 50%;
+            padding-right: 1rem;
+            max-width: px2rem(260px);
+        }
+        .Card-description {
+            flex: 0 0 50%;
+        }
+    }
+}
+@media screen and (min-width: px2em(800px)) {
+    .Card--home {
+        .Card-title {
+            @include font(28px, 33px);
+            letter-spacing: -0.4px;
+        }
+    }
+}
+@media screen and (min-width: px2em(900px)) {
     .Card-title {
         @include font(43px, 50px);
         letter-spacing: -0.46px;

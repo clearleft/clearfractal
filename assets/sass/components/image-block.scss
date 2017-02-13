@@ -9,12 +9,13 @@
     }
 }
 .ImageBlock-item {
+    color: $mid-grey;
     @include font(13px, 16px);
     font-family: $font-secondary;
-    letter-spacing: px2rem(1px);
-    color: $mid-grey;
-    text-transform: uppercase;
     font-weight: 700;
+    letter-spacing: px2rem(1px);
+    margin-top: px2rem(8px);
+    text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
 }
 .ImageBlock--rightCaption {

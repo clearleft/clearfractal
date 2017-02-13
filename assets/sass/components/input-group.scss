@@ -5,40 +5,33 @@
 .InputGroup-field {
     color: $Jet-grey;
     background-color: $Blank;
-    border: 0;
-    font-family: $font-main;
-    -webkit-font-smoothing: antialiased;
-    @include font(14px);
-    padding: px2rem(8px) px2rem(10px);
     border: 1px solid $Gainsboro-blue;
-    border-radius: px2rem(5px);
+    border-radius: px2rem(2px);
+    font-family: $font-main;
+    @include font(14px);
+    padding: px2rem(10px) px2rem(8px);
     width: 100%;
+    -webkit-font-smoothing: antialiased;
 }
 .InputGroup-submit {
-    color: $Blank;
     background-color: $Crayola-red;
-    border-radius: px2rem(5px);
-    padding: px2rem(8px) px2rem(10px);
+    border-radius: px2rem(2px);
+    color: $Blank;
+    display: block;
     font-family: $font-secondary;
     font-weight: 700;
     @include font(14px);
+    margin-top: px2rem(8px);
+    padding: px2rem(10px) px2rem(8px);
+    text-align: left;
     width: 100%;
+    -webkit-font-smoothing: antialiased;
 }
 .InputGroup-label {
     display: block;
     flex-basis: 100%;
     margin-bottom: px2rem(10px);
     -webkit-font-smoothing: antialiased;
-}
-.InputGroup--combo {
-    .InputGroup-field {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-    .InputGroup-submit {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
 }
 
 @media screen and (min-width: px2em(420px)) {
