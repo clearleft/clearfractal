@@ -21,6 +21,7 @@ module.exports = {
         "inputGroupLabel": "Feed your curiosity.",
         "inputGroupSubmit": "Get the Clearletter",
         "inputModifier": '--combo',
+        "footerInputSmall": "​Every 2 weeks. It’s non-salesy. We never spam.",
         "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved."
     }
 }

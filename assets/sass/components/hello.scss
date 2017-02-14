@@ -1,8 +1,9 @@
 .Hello {
-    // background-image: url('/assets/img/darkgrey-dots-corner.svg');
+    background-image: url('http://clearleft-v5.s3.amazonaws.com/dots/texture_dots-circle-grey.png');
     background-repeat: no-repeat;
-    // background-position: 100% 0;
+    background-position: 100% 0;
     background-color: #8E3581;
+    background-size: px2rem(600px);
     color: $Blank;
     padding: px2rem(16px);
 }
@@ -20,10 +21,9 @@
 @media screen and (min-width: px2rem(600px)) {
     .Hello {
         padding: px2rem(38px) px2rem(32px) px2rem(72px) px2rem(32px);
-        // background-image: url('/assets/img/darkgrey-dots-corner.svg'), url('/assets/img/peeks/hi.png');
-        // background-position: 100% 0, 0 65%;
-        background-image: url('/assets/img/peeks/hi.png');
-        background-position: 0 65%;
+        background-image: url('http://clearleft-v5.s3.amazonaws.com/dots/texture_dots-circle-grey.png'), url('/assets/img/peeks/hi.png');
+        background-position: 100% 0, 0 65%;
+        background-size: px2rem(600px), auto;
     }
     .Hello-body {
         margin-left: px2rem(38px);
@@ -31,7 +31,6 @@
 }
 @media screen and (min-width: px2rem(900px)) {
     .Hello {
-        // background-position: 100% 0, 15% 65%;
-        background-position: 15% 65%;
+        background-position: 100% 0, 15% 65%;
     }
 }
