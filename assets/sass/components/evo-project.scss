@@ -23,7 +23,7 @@
 }
 @media screen and (min-width: px2em(300px)) {
     .EvoProject {
-        background-image: url('http://clearleft-v5.s3.amazonaws.com/evo-kyle.jpg');
+        background-image: url('http://clearleft-v5.s3.amazonaws.com/evo-kyle-full.jpg');
         background-size: 80%;
         background-position: 50% 0;
         background-repeat: no-repeat;
@@ -61,9 +61,7 @@
 
 /*--tall variation*/
 .EvoProject--tall {
-    .EvoProject-primary {
-        float: none;
-    }
+
 }
 @media screen and (min-width: px2em(500px)) {
     .EvoProject--tall {
@@ -82,27 +80,6 @@
         }
     }
 }
-@media screen and (min-width: px2em(600px)) {
-    .EvoProject--tall {
-        .EvoProject-wrapper {
-            background-size: px2rem(390px);
-        }
-    }
-}
-@media screen and (min-width: px2em(640px)) {
-    .EvoProject--tall {
-        .EvoProject-wrapper {
-            background-size: px2rem(480px);
-        }
-    }
-}
-@media screen and (min-width: px2em(700px)) {
-    .EvoProject--tall {
-        .EvoProject-wrapper {
-            background-size: px2rem(530px);
-        }
-    }
-}
 @media screen and (min-height: px2em(900px)) and (min-width: px2em(800px)) {
     .EvoProject--tall {
         .EvoProject-wrapper {
@@ -110,23 +87,8 @@
         }
     }
 }
-@media screen and (min-height: px2em(500px)) and (min-width: px2em(700px)) {
-    .EvoProject--tall .EvoProject-wrapper {
-        min-height: 70vh;
-        align-items: center;
-    }
-}
-@media screen and (min-height: px2em(880px)) and (min-width: px2em(700px)) {
-    .EvoProject--tall .EvoProject-wrapper {
-        min-height: 47vh;
-        align-items: center;
-    }
-}
 @media screen and (min-width: px2em(820px)) {
     .EvoProject--tall {
-        .EvoProject-wrapper {
-            background-position: 100% 124%;
-        }
         .EvoProject-extension {
             max-width: px2rem(330px);
         }
@@ -154,7 +116,7 @@
 @media screen and (min-width: px2em(300px)) {
     .EvoProject--stage {
         padding-top: 0;
-        background-position: 50% 9rem;
+        background-position: 50% 4rem;
         .EvoProject-primary {
             padding-top: 8rem;
         }
@@ -182,6 +144,8 @@
 }
 @media screen and (min-width: px2em(1020px)) {
     .EvoProject--stage {
+        background-position: 30vw 50%;
+        background-size: px2rem(1200px);
         .EvoProject-wrapper {
             padding-bottom: px2rem(120px);
         }

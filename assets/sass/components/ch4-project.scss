@@ -25,7 +25,7 @@
 }
 @media screen and (min-width: px2em(300px)) {
     .Ch4Project {
-        background-image: url('http://clearleft-v5.s3.amazonaws.com/channel-4-kyle.jpg');
+        background-image: url('http://clearleft-v5.s3.amazonaws.com/channel-4-kyle-full.jpg');
         background-size: 80%;
         background-position: 50% 0%;
         background-repeat: no-repeat;
@@ -153,6 +153,14 @@
         }
     }
 }
+@media screen and (min-width: px2em(500px)) {
+    .Ch4Project--stage {
+        .Ch4Project-wrapper {
+            padding-top: px2rem(16px);
+            padding-bottom: 2rem;
+        }
+    }
+}
 @media screen and (min-width: px2em(700px)) {
     .Ch4Project--stage {
         .Ch4Project-breadcrumb {
@@ -197,7 +205,7 @@
 }
 @media screen and (min-width: px2em(1100px)) {
     .Ch4Project--stage {
-        background-position: px2rem(300px) 50%;
+        background-position: 20vw 50%;
         background-size: px2rem(1200px);
         .Ch4Project-middle {
             height: 13rem;
@@ -208,6 +216,11 @@
         .Ch4Project-logo {
             max-height: px2rem(230px);
         }
+    }
+}
+@media screen and (min-width: px2em(1400px)) {
+    .Ch4Project--stage {
+        background-position: 35vw 50%;
     }
 }
 

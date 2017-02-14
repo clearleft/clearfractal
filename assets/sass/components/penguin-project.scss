@@ -27,9 +27,9 @@
 }
 @media screen and (min-width: px2em(300px)) {
     .PenguinProject {
-        background-image: url('http://clearleft-v5.s3.amazonaws.com/penguin-kyle.jpg');
+        background-image: url('http://clearleft-v5.s3.amazonaws.com/penguin-kyle-full.jpg');
         background-size: 80%;
-        background-position: 50% 0;
+        background-position: 50% -1.5rem;
         background-repeat: no-repeat;
         padding-top: 35%;
     }
@@ -47,12 +47,21 @@
 }
 @media screen and (min-width: px2em(700px)) {
     .PenguinProject {
-        background-position: 300px 50%;
+        background-position: -11rem 50%;
         padding-top: 0;
     }
     .PenguinProject-wrapper {
+        display: flex;
         padding-top: px2rem(70px);
         padding-bottom: px2rem(70px);
+    }
+    .PenguinProject-primary {
+        flex: 0 0 70%;
+        order: 2;
+    }
+    .PenguinProject-secondary {
+        flex: 1 0 30%;
+        order: 1;
     }
 }
 
@@ -83,7 +92,7 @@
 @media screen and (min-width: px2em(300px)) {
     .PenguinProject--stage {
         padding-top: 0;
-        background-position: 50% 9rem;
+        background-position: 50% 5rem;
         .PenguinProject-primary {
             padding-top: 8rem;
         }
@@ -97,6 +106,13 @@
         }
     }
 }
+@media screen and (min-width: px2em(700px)) {
+    .PenguinProject--stage {
+        .PenguinProject-wrapper {
+            display: block;
+        }
+    }
+}
 @media screen and (min-width: px2em(800px)) {
     .PenguinProject--stage {
         background-position: 8rem 50%;
@@ -106,8 +122,14 @@
         }
     }
 }
+@media screen and (min-width: px2em(1100px)) {
+    .PenguinProject--stage {
+        background-position: 30vw 50%;
+        background-size: px2rem(1200px);
+    }
+}
 
-/*Dipsplay case*/
+/*Display case*/
 .PenguinDisplayCase {
     position: relative;
     background-color: #FCF9F2;
