@@ -4,9 +4,13 @@
     {% endif %}
     <div class="Card-primary">
         <header>
-            <a href="{{cardUrl}}">
+            {% if cardUrl %}
+            <a href="{{ cardUrl }}">
                 <h3 class="Card-title"{% if cardHeaderColour %} style="color:{{ cardHeaderColour }}"{% endif %}>{{ cardTitle }}</h3>
             </a>
+            {% else %}
+            <h3 class="Card-title"{% if cardHeaderColour %} style="color:{{ cardHeaderColour }}"{% endif %}>{{ cardTitle }}</h3>
+            {% endif %}
         </header>
         {% if cardCategory %}<div class="Card-category">{{ cardCategory }}</div>{% endif %}
         {% if cardMeta %}<div class="Card-meta">{{ cardMeta }}</div>{% endif %}

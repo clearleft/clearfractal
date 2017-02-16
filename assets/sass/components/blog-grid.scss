@@ -14,6 +14,9 @@
     padding: px2rem(16px);
     max-width: px2em(980px);
 }
+.BlogGrid-item {
+    padding-bottom: px2rem(24px);
+}
 
 @media screen and (min-width: px2em(700px)) {
     .BlogGrid  {
