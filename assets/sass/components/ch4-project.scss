@@ -9,39 +9,45 @@
     padding: px2rem(16px);
     -webkit-font-smoothing: antialiased;
 }
-.Ch4Project-secondary {
-    max-width: 70%;
-    margin-top: px2rem(16px);
+.Ch4Project-question {
+    font-family: $font-secondary;
 }
 .Ch4Project-title {
     margin-top: px2rem(24px);
     max-width: px2rem(400px);
 }
-.Ch4Project-extension {
-    max-width: px2rem(320px);
-}
 .Ch4Project-description {
     max-width: px2em(350px);
 }
+.Ch4Project-logo {
+    display: block;
+    margin-top: px2rem(36px);
+    width: px2rem(54px);
+}
 @media screen and (min-width: px2em(300px)) {
     .Ch4Project {
-        background-image: url('http://clearleft-v5.s3.amazonaws.com/channel-4-kyle-full.jpg');
-        background-size: 80%;
-        background-position: 50% 0%;
+        background-image: url('http://clearleft-v5.s3.amazonaws.com/channel4-kyle-crop-sm.jpg');
+        background-position: 100% 50%;
         background-repeat: no-repeat;
-        padding-top: 35%;
+        background-size: 55%;
+    }
+    .Ch4Project-wrapper {
+        padding-right: 6rem;
+    }
+    .Ch4Project-content {
+        max-width: px2rem(540px);
     }
 }
 @media screen and (min-width: px2em(500px)) {
-    .Ch4Project-secondary {
-        width: 30%;
-    }
-    .Ch4Project-title {
-        max-width: none;
+    .Ch4Project {
+        background-size: 414px;
     }
     .Ch4Project-wrapper {
         padding-top: px2rem(40px);
         padding-bottom: px2rem(40px);
+    }
+    .Ch4Project-title {
+        max-width: none;
     }
 }
 @media screen and (min-width: px2em(550px)) {
@@ -50,106 +56,63 @@
         @include font(72px, 77px);
     }
 }
-@media screen and (min-width: px2em(700px)) {
+@media screen and (min-width: px2em(800px)) {
     .Ch4Project {
-        background-position: 300px 50%;
-        padding-top: 0;
+        background-image: url('http://clearleft-v5.s3.amazonaws.com/channel4-kyle-crop-med.jpg');
+        background-position: 100% 50%;
+        background-size: px2rem(640px);
     }
     .Ch4Project-wrapper {
-        padding-top: px2rem(70px);
-        padding-bottom: px2rem(70px);
+        padding-top: px2rem(120px);
+        padding-bottom: px2rem(80px);
         padding-left: px2rem(24px);
         padding-right: px2rem(24px);
-        display: flex;
-    }
-    .Ch4Project-primary {
-        width: 70%;
-        order: 1;
-    }
-    .Ch4Project-secondary {
-        margin-top: 0;
-        width: 30%;
-        order: 2;
-        padding-right: px2rem(24px);
-    }
-    .Ch4Project-image {
-        max-width: px2rem(200px);
-        left: px2rem(20px);
-        right: auto;
     }
 }
-@media screen and (min-width: px2em(800px)) {
-    .Ch4Project-primary {
-        width: 65%;
-    }
-    .Ch4Project-secondary {
-        width: 35%;
-    }
-    .Ch4Project-image {
-        max-width: px2rem(250px);
-        bottom: 0;
-        left: px2rem(70px);
+@media screen and (min-width: px2em(1080px)) {
+    .Ch4Project {
+        background-image: url('http://clearleft-v5.s3.amazonaws.com/channel4-kyle-full.jpg');
+        background-size: px2rem(960px);
     }
 }
-/*--tall variation*/
-@media screen and (min-width: px2em(550px)) {
-    .Ch4Project--tall {
-        .Ch4Project-image {
-            max-width: px2rem(225px);
-        }
-    }
+
+/****************************
+    Variations
+****************************/
+
+/* --short */
+
+.Ch4Project--short {
+
 }
-@media screen and (min-height: px2em(500px)) and (min-width: px2em(700px)) {
-    .Ch4Project--tall .Ch4Project-wrapper {
-        min-height: 70vh;
-        align-items: center;
-    }
+
+/* -- tall */
+
+.Ch4Project--tall {
+
 }
-@media screen and (min-height: px2em(880px)) and (min-width: px2em(700px)) {
-    .Ch4Project--tall .Ch4Project-wrapper {
-        min-height: 47vh;
-        align-items: center;
-    }
-}
-@media screen and (min-width: px2em(700px)) {
-    .Ch4Project--tall {
-        .Ch4Project-wrapper {
-            position: relative;
-        }
-        .Ch4Project-image {
-            position: absolute;
-            top: px2rem(70px);
-            left: px2rem(10px);
-            max-width: px2em(260px);
-        }
-        .Ch4Project-primary {
-            width: 65%;
-        }
-        .Ch4Project-secondary {
-            width: 35%;
-        }
-    }
-}
-@media screen and (min-width: px2em(950px)) {
-    .Ch4Project--tall {
-        .Ch4Project-image {
-            max-width: px2rem(335px);
-        }
-    }
-}
-/* --stage variation */
+
+/* --stage */
+
 .Ch4Project--stage {
-    .Ch4Project-logo {
-        max-height: px2rem(120px);
-        margin-top: px2rem(-52px);
+    .Ch4Project-wrapper {
+        padding-top: 0;
+    }
+    .Ch4Project-question {
+        display: none;
     }
 }
 @media screen and (min-width: px2em(300px)) {
     .Ch4Project--stage {
-        padding-top: 0;
-        background-position: 50% 9rem;
-        .Ch4Project-primary {
-            padding-top: 8rem;
+        background-position: 100% 9rem;
+        .Ch4Project-wrapper {
+            padding-right: 1rem;
+        }
+        .Ch4Project-title {
+            padding-right: 5rem;
+        }
+        .Ch4Project-description {
+            margin-top: 2rem;
         }
     }
 }
@@ -166,40 +129,12 @@
         .Ch4Project-breadcrumb {
             padding: 0 px2rem(24px);
         }
-        .Ch4Project-wrapper {
-            display: block;
-        }
-        .Ch4Project-middle {
-            position: absolute;
-            width: 100%;
-            height: 9rem;
-        }
     }
 }
 @media screen and (min-width: px2em(800px)) {
     .Ch4Project--stage {
-        background-position: 8rem 50%;
-        background-size: 120%;
         .Ch4Project-wrapper {
-            padding: px2rem(32px) px2rem(24px) 0 px2rem(24px);
-        }
-        .Ch4Project-primary {
-            padding-top: 0;
-        }
-        .Ch4Project-middle {
-            height: 12rem;
-        }
-    }
-}
-@media screen and (min-width: px2em(900px)) {
-    .Ch4Project--stage {
-        .Ch4Project-logo {
-            max-height: px2em(165px);
-            margin-top: px2rem(-100px);
-            margin-left: px2rem(-30px);
-        }
-        .Ch4Project-wrapper {
-            min-height: 50vh;
+            padding: px2rem(32px) px2rem(24px) 2rem px2rem(24px);
         }
     }
 }
@@ -207,15 +142,6 @@
     .Ch4Project--stage {
         background-position: 20vw 50%;
         background-size: px2rem(1200px);
-        .Ch4Project-middle {
-            height: 13rem;
-            top: -4rem;
-            transform: skewY(-3deg);
-            transform-origin: 90%;
-        }
-        .Ch4Project-logo {
-            max-height: px2rem(230px);
-        }
     }
 }
 @media screen and (min-width: px2em(1400px)) {

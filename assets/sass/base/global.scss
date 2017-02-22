@@ -9,8 +9,14 @@ html {
     color: $Jet-grey;
     font-family: $font-main;
     font-weight: normal;
+    -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS */
 }
+body {
+    @include font(16px, 26px);
+    margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -19,9 +25,21 @@ h5,
 h6 {
     font-weight: normal;
 }
-body {
-    @include font(16px, 26px);
-    margin: 0;
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figcaption,
+figure,
+main {
+    display: block;
+}
+
+template {
+    display: none;
 }
 
 a {
@@ -49,10 +67,16 @@ img {
     max-width: 100%;
     border-style: none; /*Remove the border on images inside links in IE 10-.*/
 }
-
 button {
     border: 0;
 }
+svg:not(:root) {
+    overflow: hidden;
+}
+[hidden] {
+    display: none;
+}
+
 @media screen and (min-width: px2em(800px)) {
     body {
         @include font(18px, 32px);

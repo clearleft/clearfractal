@@ -1,4 +1,5 @@
 <div class="Ch4Project{%if ch4Modifier %} Ch4Project{{ch4Modifier}}{% endif %}">
+
     {% if "--stage" in ch4Modifier %}
         {% include '@site-header' %}
     {% endif %}
@@ -8,40 +9,27 @@
         {% if "--stage" in ch4Modifier %}
         <div class="Ch4Project-breadcrumb">
             {% include '@breadcrumb' %}
-        </div><!--/.Ch4Project-breadcrumb-->
+        </div>
         {% endif %}
 
-        <div class="Ch4Project-primary">
+        <div class="Ch4Project-content">
 
-            {% if ch4Context %}
-            <p class="Heading Heading--context Heading--inverted">{{ ch4Context }}</p>
-            {% endif %}
+            <div class="Ch4Project-question">{{ ch4Question }}</div>
 
             <h1 class="Ch4Project-title Heading Heading--secondary Heading--inverted">{{ ch4Title }}</h1>
 
             {% if ch4Description %}
             <div class="Ch4Project-description Lead Bar">
-                {{ch4Description}}
-            </div><!--/.Ch4Project-description Lead Bar-->
+                {{ ch4Description }}
+            </div>
             {% endif %}
 
             {% if ch4LogoSrc %}
-            <img class="Ch4Project-logo" src="{{ch4LogoSrc}}" alt="{{ch4LogoAlt}}">
+            <img class="Ch4Project-logo" src="{{ ch4LogoSrc }}" alt="{{ ch4LogoAlt }}">
             {% endif %}
 
-            {% if ch4Link %}
-            <div class="Ch4Project-extension">
-                <a class="MegaLink MegaLink--inverted" href="{{ch4LinkUrl}}">{{ch4Link}}</a>
-            </div><!--/.Ch4Project-extension-->
-            {% endif %}
-
-        </div><!--./.Ch4Project-primary-->
-
-        {% if ch4MainSrc %}
-        <div class="Ch4Project-secondary">
         </div>
-        {% endif %}
 
-    </div><!--/.Ch4Project-wrapper-->
+    </div>
 
-</div><!--./Ch4Project-->
+</div>

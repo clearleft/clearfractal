@@ -2,47 +2,53 @@
 <div class="Impact Background--carribean-green">
     {% include '@site-header' %}
 
-    <h2 class="Heading Heading--main Heading--inverted">We see you through.</h2>
+    <h2 class="Heading Heading--main Heading--inverted">Digital design and strategy made clear.</h2>
 </div>
 
 <main>
 
-    <div class="Intro">
-        <h2 class="Intro-text">Let’s make a positive difference to your digital presence and the practices which support it.</h2>
-    </div>
+        <div style="
+        background-image: url(http://clearleft-v5.s3.amazonaws.com/dots/texture_dots-circle-green.png);
+        background-repeat: no-repeat;
+        background-position: 50% -220px;
+        background-size: 800px;
+        ">
 
-    <div class="Home-grid">
-        <div class="Home-gridItem">
-            {% include '@card' with {
-                cardModifier: '--home',
-                cardBarColour: '#00D494',
-                cardTitle: "Design or redesign products & services",
-                cardDescription: "Radically improve your existing products and services, or work with the team to conceive, create and build on an entirely new idea."
-            } %}
-        </div>
-        <div class="Home-gridItem">
-            {% include '@card' with {
-                cardModifier: '--home',
-                cardBarColour: '#00D494',
-                cardTitle: "Get your strategy clear",
-                cardDescription: "You might need a targeted intervention, to unpick a thorny problem, or a fresh perspective on your process. Our strategists work with you to research and develop your digital strategy."
-            } %}
-        </div>
-        <div class="Home-gridItem">
-            {% include '@card' with {
-                cardModifier: '--home',
-                cardBarColour: '#00D494',
-                cardTitle: "Transform your digital culture",
-                cardDescription: "Upskill your team, develop your processes, integrate design thinking and introduce new habits. Work closely with the Clearleft team to get an external perspective that helps you initiate change."
-            } %}
-        </div>
-    </div>
+            <div class="Home-grid">
+                <div class="Home-gridItem">
+                    {% include '@card' with {
+                        cardModifiers: ['--home'],
+                        cardBarColour: '#00D494',
+                        cardTitle: "Design products and services",
+                        cardDescription: "Radically improve your existing products and services, or work with the team to conceive, create and build on an entirely new idea."
+                    } %}
+                </div>
+                <div class="Home-gridItem">
+                    {% include '@card' with {
+                        cardModifiers: ['--home'],
+                        cardBarColour: '#00D494',
+                        cardTitle: "Define your digital strategy.",
+                        cardDescription: "You might need a targeted intervention, to unpick a thorny problem, or a fresh perspective on your process."
+                    } %}
+                </div>
+                <div class="Home-gridItem">
+                    {% include '@card' with {
+                        cardModifiers: ['--home'],
+                        cardBarColour: '#00D494',
+                        cardTitle: "Develop a digital-first culture.",
+                        cardDescription: "Upskill your team, develop your processes, integrate design thinking and introduce new habits."
+                    } %}
+                </div>
+            </div>
 
-    <div class="Banner">
-        <div class="Banner-content">
-            <a href="#" class="MegaLink MegaLink--super">Meet the team</a>
+            <div class="Banner">
+                <div class="Banner-content">
+                    <h2 class="Heading Heading--secondary" style="margin: 0; line-height: 1">Client Stories.</h2>
+                </div>
+            </div>
+
         </div>
-    </div>
+
 
     {% include '@ch4-project' %}
 

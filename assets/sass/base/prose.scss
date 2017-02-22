@@ -53,8 +53,17 @@
         margin-left: 0;
         padding-left: 2rem;
     }
-    abbr {
-        border-bottom: 1px dotted $light-grey;
+    // abbr {
+    //     border-bottom: 1px dotted $light-grey;
+    // }
+    abbr[title] {
+        border-bottom: none;
+        text-decoration: underline;
+        text-decoration: underline dotted;
+    }
+    mark {
+        background-color: #ff0;
+        color: #000;
     }
     table {
         border-collapse: collapse;
@@ -71,6 +80,19 @@
     td {
         border-bottom: 1px solid #dce0d9;
         padding: 0.5rem;
+    }
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+    sub {
+        bottom: -0.25em;
+    }
+    sup {
+        top: -0.5em;
     }
 }
 

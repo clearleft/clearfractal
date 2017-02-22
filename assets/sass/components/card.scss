@@ -31,33 +31,29 @@
 .Card-description {
     color: $Dark-liver-grey;
     @include font(18px, 32px);
-    margin: 0 0 px2rem(16px) 0;
+    margin: 0;
 }
-
-.Card--image .Card-author {
+.Card-author {
     max-width: px2rem(97px);
 }
-.Card--tiny-lesson {
 
-    header {
-        border-top: 1px solid $Orange-yellow;
+/*****************************
+    Variations
+*****************************/
 
-        &:before {
-            content: '';
-            display: inline-block;
-            background: $Blank url('/assets/img/tiny-lessons-logo.svg') 0 50% no-repeat;
-            width: 166px;
-            height: 50px;
-            margin-top: -1.6rem;
-        }
-
-        .Card-title {
-            margin-top: px2rem(8px);
-        }
-    }
-
+.Card--background {
+    background-color: $Blank;
+    padding: px2rem(16px);
+}
+.Card--border {
+    border: 1px solid $Gainsboro-blue;
 }
 .Card--home {
+    background-color: $Blank;
+    border: 1px solid $Gainsboro-blue;
+    height: 100%;
+    padding: px2rem(16px);
+
     .Card-title {
         @include font(25px, 31px);
         letter-spacing: -0.36px;
@@ -69,6 +65,11 @@
     padding-left: px2rem(16px);
     padding-right: px2rem(16px);
 }
+
+/*****************************
+    Media Queries
+*****************************/
+
 @media screen and (min-width: px2em(500px)) {
     .Card-title {
         @include font(35px, 40px);
@@ -86,27 +87,13 @@
         }
     }
 }
-@media screen and (min-width: px2em(640px)) and (max-width: px2em(799px)) {
-    .Card--home {
-        .Card-primary {
-            display: flex;
-            justify-content: space-between;
-        }
-        header {
-            flex: 1 0 50%;
-            padding-right: 1rem;
-            max-width: px2rem(260px);
-        }
-        .Card-description {
-            flex: 0 0 50%;
-        }
-    }
-}
 @media screen and (min-width: px2em(800px)) {
     .Card--home {
+        padding: px2rem(56px) px2rem(40px);
         .Card-title {
             @include font(28px, 33px);
             letter-spacing: -0.4px;
+            margin-top: px2rem(24px);
         }
     }
 }

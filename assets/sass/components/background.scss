@@ -2,46 +2,28 @@
     background-color: $Blank;
 }
 .Background--grey {
-    color: $Jet-grey;
     background-color: $Anti-white-flash;
+    color: $Jet-grey;
 }
-.Background--lapis-lazuli-blue,
-.BgBlue {
-    color: $Blank;
+.Background--lapis-lazuli-blue {
     background-color: $Lapis-lazuli-blue;
+    color: $Blank;
     a {
         color: $Blank;
-        &:hover,
-        &:focus,
-        &:active {
-            color: $Gainsboro-blue;
-        }
     }
 }
-.Background--plum,
-.BgPurple {
-    color: $Blank;
+.Background--plum {
     background-color: $Brand-plum;
+    color: $Blank;
     a {
         color: $Blank;
-        &:hover,
-        &:focus,
-        &:active {
-            color: $Gainsboro-blue;
-        }
     }
 }
-.Background--carribean-green,
-.BgGreen {
-    color: $Blank;
+.Background--carribean-green {
     background-color: $Brand-carribean-green;
+    color: $Blank;
     a {
         color: $Blank;
-        &:hover,
-        &:focus,
-        &:active {
-            color: $Gainsboro-blue;
-        }
     }
 }
 .Background--frill {

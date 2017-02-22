@@ -1,4 +1,4 @@
-<article class="Card{% if cardModifier %} Card{{ cardModifier }}{% endif %}"{% if cardMiscStyles %} style="{{ cardMiscStyles }}"{% endif %}>
+<article class="Card {% if cardModifiers %}Card{{ cardModifiers|join(' Card') }}{% endif %}"{% if cardMiscStyles %} style="{{ cardMiscStyles }}"{% endif %}>
     {% if cardModifier != "--tiny-lesson" %}
         <div class="Bar"{% if cardBarColour %} style="color:{{ cardBarColour }}"{% endif %}></div>
     {% endif %}

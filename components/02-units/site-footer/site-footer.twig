@@ -14,13 +14,13 @@
                 </ul><!--/.SiteFooter-navigationLinks-->
                 <ul class="SiteFooter-icons">
                     {% for socialLink in socialLinks %}
-                    <li class="SiteFooter-icon"><a class="SiteFooter-iconLink" href="{{ socialLink.url }}"><img src="{{socialLink.imgSrc}}" alt="socialLink.imgAlt"></a></li>
+                    <li class="SiteFooter-icon"><a class="SiteFooter-iconLink" href="{{ socialLink.url }}"><img src="{{ socialLink.imgSrc }}" alt="{{ socialLink.alt }}"></a></li>
                     {% endfor %}
                 </ul><!--/.SiteFooter-icons-->
             </nav>
         </div><!--/.Cols-half-->
         <div class="Cols-item SiteFooter-small">
-            {{siteFooterSmall}}
+            {{ siteFooterSmall }}
         </div><!--/.SiteFooter-small-->
     </div><!--/.Cols-->
 </footer><!--/.SiteFooter-->
