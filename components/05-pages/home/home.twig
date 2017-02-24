@@ -2,7 +2,7 @@
 <div class="Impact Background--carribean-green">
     {% include '@site-header' %}
 
-    <h2 class="Heading Heading--main Heading--inverted">Digital design and strategy made clear.</h2>
+    <h2>We see you through.</h2>
 </div>
 
 <main>
@@ -18,25 +18,28 @@
                 <div class="Home-gridItem">
                     {% include '@card' with {
                         cardModifiers: ['--home'],
+                        cardBar: true,
                         cardBarColour: '#00D494',
-                        cardTitle: "Design products and services",
-                        cardDescription: "Radically improve your existing products and services, or work with the team to conceive, create and build on an entirely new idea."
+                        cardTitle: "Digital Design",
+                        cardDescription: "Work closely with the Clearleft team to conceive and create new products and services. Or make purposeful design improvements."
                     } %}
                 </div>
                 <div class="Home-gridItem">
                     {% include '@card' with {
                         cardModifiers: ['--home'],
+                        cardBar: true,
                         cardBarColour: '#00D494',
-                        cardTitle: "Define your digital strategy.",
-                        cardDescription: "You might need a targeted intervention, to unpick a thorny problem, or a fresh perspective on your process."
+                        cardTitle: "Digital strategy.",
+                        cardDescription: "We're here to help you navigate the complexities of digital innovation. Get a fresh sense of direction."
                     } %}
                 </div>
                 <div class="Home-gridItem">
                     {% include '@card' with {
                         cardModifiers: ['--home'],
+                        cardBar: true,
                         cardBarColour: '#00D494',
-                        cardTitle: "Develop a digital-first culture.",
-                        cardDescription: "Upskill your team, develop your processes, integrate design thinking and introduce new habits."
+                        cardTitle: "Digital culture.",
+                        cardDescription: "Develop healthy and consistent digital practices. Upskill your teams, develop your processes and introduce new habits."
                     } %}
                 </div>
             </div>
@@ -50,11 +53,20 @@
         </div>
 
 
-    {% include '@ch4-project' %}
-
-    {% include '@penguin-project' %}
-
-    {% include '@evo-project' %}
+    <div style="position: relative">
+        <div class="Background Background--grey" style="position: absolute; top: 7rem; width: 100%; height: calc(100% - 14rem); z-index:-1"></div>
+        <div class="Casestudy-grid">
+            <div class="Casestudy-gridItem">
+                {% include '@ch4-project' %}
+            </div>
+            <div class="Casestudy-gridItem">
+                {% include '@penguin-project' %}
+            </div>
+            <div class="Casestudy-gridItem">
+                {% include '@evo-project' %}
+            </div>
+        </div>
+    </div>
 
     {% include '@banner' with {bannerCaption: 'Latest Posts', bannerHeadline: 'Clear thinking.'} %}
 

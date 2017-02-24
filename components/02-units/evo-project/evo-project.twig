@@ -1,4 +1,5 @@
 <div class="EvoProject{%if evoModifier %} EvoProject{{evoModifier}}{% endif %}">
+
     {% if "--stage" in evoModifier %}
     {% include '@site-header' %}
     {% endif %}
@@ -8,33 +9,26 @@
         {% if "--stage" in evoModifier %}
         <div class="EvoProject-breadcrumb">
             {% include '@breadcrumb' %}
-        </div><!--/.EvoProject-breadcrumb-->
+        </div>
         {% endif %}
 
-        <div class="EvoProject-primary">
-            {% if evoContext %}
-            <p class="Heading Heading--context Heading--inverted">{{evoContext}}</p>
-            {% endif %}
+        <div class="EvoProject-content">
 
-            <h1 class="EvoProject-title Heading Heading--secondary Heading--inverted">{{evoTitle}}</h1>
+            <div class="EvoProject-question">{{ evoQuestion }}</div>
+
+            <a href="{{ evoUrl }}"><h2 class="EvoProject-title Heading Heading--secondary Heading--inverted">{{ evoTitle }}</h2></a>
 
             {% if evoDescription %}
             <div class="EvoProject-description Lead Bar">
                 {{evoDescription}}
-            </div><!--/.EvoProject-description Lead Bar-->
-            {% endif %}
-
-            {% if evoLink %}
-            <div class="EvoProject-extension">
-                <a class="MegaLink MegaLink--inverted" href="{{evoLinkUrl}}">{{evoLink}}</a>
-            </div><!--/.EvoProject-extension-->
+            </div>
             {% endif %}
 
             {% if evoLogoSrc %}
-            <img class="EvoProject-logo" src="{{evoLogoSrc}}" alt="{{evoLogoAlt}}">
+            <img class="EvoProject-logo" src="{{ evoLogoSrc }}" alt="{{ evoLogoAlt }}">
             {% endif %}
 
-        </div><!--./.EvoProject-primary-->
+        </div>
 
-    </div><!--/.EvoProject-wrapper-->
+    </div>
 </div><!--./EvoProject-->

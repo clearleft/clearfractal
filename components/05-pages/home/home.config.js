@@ -7,39 +7,36 @@ module.exports = {
         "primaryNavModifiers": ["--inverted", "--plum"],
         "logoModifiers": ["--inverted", "--plum"],
 
-        /*Masthead*/
-        "mastheadTitle": "What can design do for you?",
-        "mastheadModifier": "--full",
-        "mastheadHeadingModifer": "--inverted",
-        "mastheadImpact": true,
-
-        /*Intro*/
-        "introBarClass": "Bar Bar--green",
-        "introText": "We’re here to see you through changes in your digital presence and practices.",
-
-        "trioItems": "@trio.trioItems",
-        "helloHeading": "@hello.helloHeading",
-        "helloBody": "@hello.helloBody",
+        /*Ch4 Project feature*/
+        "ch4Modifier": '--tall',
+        "ch4Question": "How do you create a new kind of news service?",
+        "ch4Title": "Focus on the intelligent story.",
+        "ch4LinkUrl": "#",
+        "ch4LogoSrc": "/assets/img/work/ch4/ch4-logo.svg",
+        "ch4LogoAlt": "ch4 logo",
 
         /*Penguin feature*/
-        "penguinContext": "Penguin random house publishing company",
+        "penguinModifier": '--tall',
+        "penguinQuestion": "How do you bring more than 700 brands together into one website?",
         "penguinTitle": "Create a new universe.",
-        "penguinLink": "How do you bring more than 700 brands together into one website?",
         "penguinLinkUrl": "#",
-
-        /*Ch4 Project feature*/
-        "ch4Context": "ch4 random house publishing company",
-        "ch4Title": "Create a new universe.",
-        "ch4Link": "How do you bring more than 700 brands together into one website?",
-        "ch4LinkUrl": "#",
-        "ch4MainSrc": "/assets/img/work/ch4/c4-mag-glass.png",
+        "penguinLogoSrc": "/assets/img/work/penguin/penguin-logo.svg",
+        "penguinLogoAlt": "Penguin logo",
 
         /*Evo Project feature*/
-        "evoContext": "Evo random house publishing company",
-        "evoTitle": "@evo-project.evoTitle",
-        "evoLink": "How do you bring more than 700 brands together into one website?",
+        "evoModifier": '--tall',
+        "evoQuestion": "How do you reimagine a physical magazine?",
+        "evoTitle": "Drive reader engagement.",
         "evoLinkUrl": "#",
-        "evoMainSrc": "/assets/img/work/evo/evo-mag-stack.png",
+        "evoLogoSrc": "/assets/img/work/evo/evo-logo.svg",
+        "evoLogoAlt": "evo logo",
+
+        /* Hello */
+        "helloImgSrc": '@hello.helloImgSrc',
+        "helloImgAlt": '@hello.helloImgAlt',
+        "helloImgText": '@hello.helloImgText',
+        "helloHeading": "@hello.helloHeading",
+        "helloBody": "@hello.helloBody",
 
         /*Footer*/
         "footerLinks": "@site-footer.footerLinks",

@@ -1,0 +1,67 @@
+.PenguinDisplayCase {
+    position: relative;
+    background-color: #FCF9F2;
+    box-shadow: 0 -2px 0 0 #E5DECF, 0 2px 0 0 #E5DECF;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    .TextBlock {
+        max-width: px2rem(620px);
+    }
+}
+.PenguinDisplayCase-wrapper {
+    margin: 0 auto;
+    margin-top: 18rem;
+    max-width: 53rem;
+    background-repeat: no-repeat;
+    background-position: 100% -1px;
+    padding-bottom: 1rem;
+}
+.PenguinDisplayCase-chimney {
+    margin-top: -17rem;
+    margin-bottom: px2rem(10px);
+}
+.PenguinDisplayFont-wrapper {
+    display: table;
+    width: 100%;
+}
+.PenguinDisplayFont-wrapper:after {
+    content: '';
+}
+.PenguinDisplayFont {
+    padding: px2rem(20px);
+    background-color: $Blank;
+    border: 2px solid $Blank;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
+    border-radius: 10px;
+    width: 47%;
+    display: inline-block;
+    float: left;
+    margin-bottom: px2rem(20px);
+    margin-top: px2rem(20px);
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: px2rem(10px);
+        max-height: px2rem(100px);
+    }
+    &--left {
+        margin-right: 1.5%;
+    }
+    &--right {
+        margin-left: 1.5%;
+    }
+}
+.PenguinDisplayCase-example1 {
+    text-align: center;
+}
+.PenguinDisplayCase-example2 {
+    position: relative;
+}
+
+@media screen and (min-width: px2em(600px)) {
+    .PenguinDisplayCase-wrapper {
+        margin-top: 20rem;
+        padding-bottom: px2rem(40px);
+    }
+}

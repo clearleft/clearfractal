@@ -6,7 +6,7 @@
 .Ch4Project-wrapper {
     max-width: px2em(900px);
     margin: 0 auto;
-    padding: px2rem(16px);
+    padding: px2rem(20px);
     -webkit-font-smoothing: antialiased;
 }
 .Ch4Project-question {
@@ -69,27 +69,19 @@
         padding-right: px2rem(24px);
     }
 }
-@media screen and (min-width: px2em(1080px)) {
-    .Ch4Project {
-        background-image: url('http://clearleft-v5.s3.amazonaws.com/channel4-kyle-full.jpg');
-        background-size: px2rem(960px);
-    }
-}
 
 /****************************
     Variations
 ****************************/
 
-/* --short */
-
-.Ch4Project--short {
-
-}
-
 /* -- tall */
 
-.Ch4Project--tall {
+.Ch4Project--tall {}
 
+@media screen and (min-width: px2em(1080px)) {
+    .Ch4Project--tall {
+        background-size: px2rem(832px);
+    }
 }
 
 /* --stage */
@@ -147,47 +139,5 @@
 @media screen and (min-width: px2em(1400px)) {
     .Ch4Project--stage {
         background-position: 35vw 50%;
-    }
-}
-
-/*Display case*/
-.Ch4DisplayCase {
-    position: relative;
-    background-color: #F2F7FB;
-    box-shadow: 0 -2px 0 0 $Gainsboro-blue, 0 2px 0 0 $Gainsboro-blue;
-    background-image: url('/assets/img/work/ch4/display-case/logo-background.png');
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    .TextBlock {
-        max-width: px2rem(620px);
-    }
-}
-.Ch4DisplayCase-wrapper {
-    margin: 0 auto;
-    margin-top: 12rem;
-    max-width: 65rem;
-    background-image: url('/assets/img/work/ch4/display-case/dots.svg');
-    background-repeat: no-repeat;
-    background-position: 100% -1px;
-    padding-bottom: 1rem;
-}
-.Ch4DisplayCase-chimney {
-    margin-top: -10rem;
-}
-@media screen and (min-width: px2em(600px)) {
-    .Ch4DisplayCase-wrapper {
-        margin-top: 13rem;
-        margin-bottom: px2rem(58px);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-@media screen and (min-width: px2em(900px)) {
-    .Ch4DisplayCase-wrapper {
-        margin-top: 16rem;
-    }
-    .Ch4DisplayCase-chimney {
-        margin-top: -13rem;
     }
 }

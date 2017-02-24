@@ -1,33 +1,34 @@
 <div class="PenguinProject{%if penguinModifier %} PenguinProject{{penguinModifier}}{% endif %}">
+
     {% if "--stage" in penguinModifier %}
     {% include '@site-header' %}
     {% endif %}
 
     <div class="PenguinProject-wrapper">
+
         {% if "--stage" in penguinModifier %}
         <div class="Ch4Project-breadcrumb">
             {% include '@breadcrumb' %}
-        </div><!--/.Ch4Project-breadcrumb-->
+        </div>
         {% endif %}
 
-        <div class="PenguinProject-primary">
-            {% if penguinContext %}<p class="Heading Heading--context Heading--inverted">{{penguinContext}}</p>{% endif %}
-            <h1 class="PenguinProject-title Heading Heading--secondary Heading--inverted">{{penguinTitle}}</h1>
-            {% if penguinDescription %}<div class="PenguinProject-description Lead Bar">
-                {{penguinDescription}}
-            </div><!--/.PenguinProject-description Lead Bar-->
-            {% endif %}
-            <img class="PenguinProject-logo" src="{{penguinLogo}}" alt="{{penguinLogoAlt}}">
-            {% if penguinLink %}
-            <div class="PenguinProject-extension">
-                <a class="MegaLink MegaLink--inverted" href="{{penguinLinkUrl}}">{{penguinLink}}</a>
-            </div><!--/.PenguinProject-extension-->
-            {% endif %}
-        </div><!--./.PenguinProject-primary-->
+        <div class="PenguinProject-content">
 
-        <div class="PenguinProject-secondary">
-            
+            <div class="PenguinProject-question">{{ penguinQuestion }}</div>
+
+            <a href="{{ penguinUrl }}"><h2 class="PenguinProject-title Heading Heading--secondary Heading--inverted">{{ penguinTitle }}</h2></a>
+
+            {% if penguinDescription %}
+            <div class="PenguinProject-description Lead Bar">
+                {{penguinDescription}}
+            </div>
+            {% endif %}
+
+            {% if penguinLogoSrc %}
+            <img class="PenguinProject-logo" src="{{ penguinLogoSrc }}" alt="{{ penguinLogoAlt }}">
+            {% endif %}
+
         </div>
 
-    </div><!--/.PenguinProject-wrapper-->
+    </div>
 </div><!--./PenguinProject-->

@@ -14,10 +14,11 @@
     color: $mid-grey;
     font-family: $font-secondary;
     @include font(14px, 17px);
-    margin: 0 0 px2rem(16px) 0;
+    margin-bottom: px2rem(2px);
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
 }
 .Card-meta {
     color: $light-grey;
@@ -65,6 +66,11 @@
     padding-left: px2rem(16px);
     padding-right: px2rem(16px);
 }
+.Card--logo {
+    img {
+        width: px2rem(81px);
+    }
+}
 
 /*****************************
     Media Queries
@@ -95,11 +101,5 @@
             letter-spacing: -0.4px;
             margin-top: px2rem(24px);
         }
-    }
-}
-@media screen and (min-width: px2em(900px)) {
-    .Card-title {
-        @include font(43px, 50px);
-        letter-spacing: -0.46px;
     }
 }

@@ -1,6 +1,9 @@
 <article class="Card {% if cardModifiers %}Card{{ cardModifiers|join(' Card') }}{% endif %}"{% if cardMiscStyles %} style="{{ cardMiscStyles }}"{% endif %}>
-    {% if cardModifier != "--tiny-lesson" %}
+    {% if cardBar %}
         <div class="Bar"{% if cardBarColour %} style="color:{{ cardBarColour }}"{% endif %}></div>
+    {% endif %}
+    {% if cardLogoSrc %}
+        <img src="{{ cardLogoSrc }}" alt="{{ cardLogoAlt }}">
     {% endif %}
     <div class="Card-primary">
         <header>
@@ -15,8 +18,8 @@
         {% if cardCategory %}<div class="Card-category">{{ cardCategory }}</div>{% endif %}
         {% if cardMeta %}<div class="Card-meta">{{ cardMeta }}</div>{% endif %}
         {% if cardDescription %}<p class="Card-description">{{ cardDescription }}</p>{% endif %}
-        {% if cardModifier == "--vibrant" and cardLink %}
-            <a href="{{ cardLink }}">Read the case study</a>
+        {% if cardLink %}
+            <a href="{{ cardUrl }}">Read the case study</a>
         {% endif %}
         {% if authorImage or authorName %}
         <div class="Card-author">

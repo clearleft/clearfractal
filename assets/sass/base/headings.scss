@@ -100,7 +100,7 @@ a .Heading--inverted {
 **/
 // .Heading--impact {
 // font-size: calc( 60px + (102 - 60) * ( (100vw - 300px) / ( 1200 - 300) ));
-// Fluid font size ranging from 60 to 190 pixels if the window is more than 300 pixels wide and the window is less than 1200 pixels wide
+// Fluid font size ranging from `min` to `max` pixels if the window is more than 300 pixels wide and the window is less than 1200 pixels wide
 // }
 // @media screen and (min-width: px2em(1200px)) {
 //     .Heading--impact {

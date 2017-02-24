@@ -1,8 +1,14 @@
 <div class="Hello">
     <div class="Hello-container">
-        <h3 class="Hello-title Heading Heading--inverted Heading--medium">{{helloHeading}}</h3>
-        <div class="Hello-body">
-            {{helloBody}}
-        </div><!--/.Hello-body-->
-    </div><!--/.Hello-container-->
+        <figure class="Hello-image">
+            <img src="{{ helloImgSrc }}" alt="{{ helloImgAlt }}">
+            <figcaption>{{ helloImgText }}</figcaption>
+        </figure>
+        <div>
+            <h3 class="Hello-title Heading Heading--inverted Heading--medium">{{ helloHeading }}</h3>
+            <div class="Hello-body">
+                {{ helloBody }}
+            </div>
+        </div>
+    </div>
 </div><!--/.Hello-->

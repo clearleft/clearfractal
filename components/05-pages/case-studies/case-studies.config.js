@@ -4,7 +4,8 @@ let posts = [];
 
 for (var i = 0; i < 4; i++) {
     posts.push({
-        cardTitle: faker.lorem.words()
+        cardTitle: faker.lorem.words(),
+        cardDescription: faker.lorem.paragraph()
     });
 }
 
@@ -18,33 +19,35 @@ module.exports = {
         "mastheadModifier": "--chimney",
 
         /*Penguin feature*/
-        "penguinModifier": "--tall",
-        "penguinContext": "Penguin random house publishing company",
+        "penguinModifier": '--tall',
+        "penguinQuestion": "How do you bring more than 700 brands together into one website?",
         "penguinTitle": "Create a new universe.",
-        "penguinLink": "How do you bring more than 700 brands together into one website?",
         "penguinLinkUrl": "#",
+        "penguinLogoSrc": "/assets/img/work/penguin/penguin-logo.svg",
+        "penguinLogoAlt": "Penguin logo",
 
         /*Ch4 Project feature*/
-        "ch4Modifier": "--tall",
-        "ch4Context": "ch4 random house publishing company",
-        "ch4Title": "Create a new universe.",
-        "ch4Link": "How do you bring more than 700 brands together into one website?",
+        "ch4Modifier": '--tall',
+        "ch4Question": "How do you create a new kind of news service?",
+        "ch4Title": "Focus on the intelligent story.",
         "ch4LinkUrl": "#",
-        "ch4MainSrc": "/assets/img/work/ch4/c4-mag-glass.png",
+        "ch4LogoSrc": "/assets/img/work/ch4/ch4-logo.svg",
+        "ch4LogoAlt": "ch4 logo",
 
-        /*Evo project feature*/
-        "evoContext": "Evo random house publishing company",
-        "evoTitle": "@evo-project.evoTitle",
-        "evoLink": "How do you reimagine a physical magazine?",
+        /*Evo Project feature*/
+        "evoModifier": '--tall',
+        "evoQuestion": "How do you reimagine a physical magazine?",
+        "evoTitle": "Drive reader engagement.",
         "evoLinkUrl": "#",
-        "evoModifier": "--tall",
-        "evoMainSrc": "/assets/img/work/evo/evo-mag-stack.png",
         "evoLogoSrc": "/assets/img/work/evo/evo-logo.svg",
         "evoLogoAlt": "evo logo",
 
         "posts": posts,
-        "megaLinkText": "@mega-link.megaLinkText",
-        "megaLinkModifier": "@mega-link--super.megaLinkModifier",
+
+        /* Hello */
+        "helloImgSrc": '@hello.helloImgSrc',
+        "helloImgAlt": '@hello.helloImgAlt',
+        "helloImgText": '@hello.helloImgText',
         "helloHeading": "@hello.helloHeading",
         "helloBody": "@hello.helloBody",
 
