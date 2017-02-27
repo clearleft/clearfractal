@@ -16,7 +16,11 @@
 
             <div class="PenguinProject-question">{{ penguinQuestion }}</div>
 
-            <a href="{{ penguinUrl }}"><h2 class="PenguinProject-title Heading Heading--secondary Heading--inverted">{{ penguinTitle }}</h2></a>
+            {% if "--stage" in penguinModifier %}
+            <h2 class="PenguinProject-title Heading Heading--secondary Heading--inverted">{{ penguinTitle }}</h2>
+            {% else %}
+            <a href="{{ penguinLinkUrl }}"><h2 class="PenguinProject-title Heading Heading--secondary Heading--inverted">{{ penguinTitle }}</h2></a>
+            {% endif %}
 
             {% if penguinDescription %}
             <div class="PenguinProject-description Lead Bar">

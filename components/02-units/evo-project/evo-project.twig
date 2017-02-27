@@ -16,7 +16,11 @@
 
             <div class="EvoProject-question">{{ evoQuestion }}</div>
 
-            <a href="{{ evoUrl }}"><h2 class="EvoProject-title Heading Heading--secondary Heading--inverted">{{ evoTitle }}</h2></a>
+            {% if "--stage" in evoModifier %}
+            <h2 class="EvoProject-title Heading Heading--secondary Heading--inverted">{{ evoTitle }}</h2>
+            {% else %}
+            <a href="{{ evoLinkUrl }}"><h2 class="EvoProject-title Heading Heading--secondary Heading--inverted">{{ evoTitle }}</h2></a>
+            {% endif %}
 
             {% if evoDescription %}
             <div class="EvoProject-description Lead Bar">
