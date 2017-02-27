@@ -2,8 +2,12 @@
     {% if cardBar %}
         <div class="Bar"{% if cardBarColour %} style="color:{{ cardBarColour }}"{% endif %}></div>
     {% endif %}
-    {% if cardLogoSrc %}
+    {% if cardLogoAlt %}
+        {% if cardLogoSrc %}
         <img src="{{ cardLogoSrc }}" alt="{{ cardLogoAlt }}">
+        {% else %}
+        <h3 class="Heading Heading--context">{{ cardLogoAlt }}</h3>
+        {% endif %}
     {% endif %}
     <div class="Card-primary">
         <header>
