@@ -1,6 +1,4 @@
 
-'use strict';
-
 function Jobs(elm) {
 
     if( !elm ) {
@@ -70,3 +68,5 @@ Jobs.prototype = {
         }
     }
 }
+
+export default Jobs;

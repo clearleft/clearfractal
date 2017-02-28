@@ -1,5 +1,5 @@
 
-'use strict';
+import ClearCore from '../engine/clearcore.js';
 
 function PrimaryNavigation(elm) {
 
@@ -55,3 +55,5 @@ PrimaryNavigation.prototype = {
         }
     }
 }
+
+export default PrimaryNavigation;

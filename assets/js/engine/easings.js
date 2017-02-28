@@ -20,3 +20,5 @@ let Easings = {
         return -change/2 * ( (--time)*(time-2) - 1 ) + begin;
     }
 }
+
+export default Easings;

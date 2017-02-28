@@ -1,5 +1,6 @@
 
-'use strict';
+import ClearCore from '../engine/clearcore.js';
+import Tween from '../engine/tween.js';
 
 function Lead(elm) {
 
@@ -35,3 +36,5 @@ Lead.prototype.update = function() {
         this.tween.render();
     }
 }
+
+export default Lead;

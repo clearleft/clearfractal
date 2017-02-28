@@ -1,0 +1,89 @@
+.Impact {
+    position: relative;
+
+    h2 {
+        @include font(48px, 52px);
+        font-family: $font-statement;
+        letter-spacing: -1.04px;
+        margin: 0;
+        padding-bottom: 16px;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: px2em(280px)) {
+    .Impact {
+        background: $Brand-carribean-green url('http://clearleft-v5.s3.amazonaws.com/maze.jpg') 50% 2rem no-repeat;
+        background-size: 150%;
+        padding-bottom: 85%;
+
+        h2 {
+            position: absolute;
+            bottom: 1rem;
+            width: 100%;
+            margin: 0;
+            padding: 0 2%;
+        }
+    }
+}
+@media only screen and (min-width: px2em(430px)) {
+    .Impact {
+        padding-bottom: 80%;
+        h2 {
+            bottom: 2rem;
+        }
+    }
+}
+@media only screen and (min-width: px2em(480px)) {
+    .Impact {
+        background-position: 50% 0;
+        padding-bottom: 70%;
+    }
+}
+@media only screen and (min-width: px2em(650px)) {
+    .Impact {
+        h2 {
+            font-size: calc( 54px + ( 102 - 68 ) * ( (100vw - 300px) / ( 1200 - 300) ));
+        }
+    }
+}
+@media only screen and (min-width: px2em(800px)) {
+    .Impact {
+        background-image: url('http://clearleft-v5.s3.amazonaws.com/maze-kyle-crop-lg.png');
+        padding-bottom: 78%;
+        h2 {
+            bottom: 6rem;
+        }
+    }
+}
+@media only screen and (min-width: px2em(910px)) {
+    .Impact {
+        background-size: auto;
+        background-position: 50% 0;
+        padding-bottom: 0;
+        height: px2rem(820px);
+        h2 {
+            bottom: px2rem(140px);
+            @include font(90px, 84px);
+            padding: 0 4%;
+        }
+    }
+}
+@media only screen and (min-width: px2em(1100px)) {
+    .Impact {
+        height: px2rem(880px);
+        h2 {
+            @include font(102px, 103px);
+            letter-spacing: -2.75px;
+        }
+    }
+}
+@media only screen and (min-width: px2em(1300px)) {
+    .Impact {
+        h2 {
+            padding: 0;
+            max-width: 970px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

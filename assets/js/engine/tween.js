@@ -1,5 +1,8 @@
 
-'use strict';
+import ClearCore from './clearcore.js';
+import Easings from './easings.js';
+import Element from './element.js';
+import ElementPool from './element.js';
 
 /******
     Tween()
@@ -9,7 +12,6 @@
     The entire point of the easing function applied to the tween is to take the start state, total duration, amount to change and what the current duration is.
     Whether that's in ms, px or percent is generally up to you.
 */
-
 
 
 // Making an assumption that a Tween begins on creation.
@@ -108,3 +110,5 @@ Tween.prototype = {
         this.Element.render();
     }
 }
+
+export default Tween;

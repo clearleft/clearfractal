@@ -34,12 +34,7 @@
     },
 
     scripts: {
-        src:                [
-                                __dirname+'/assets/js/engine/clearcore.js',
-                                __dirname+'/assets/js/engine/!(clearcore).js',
-                                __dirname+'/assets/js/components/*',
-                                __dirname+'/assets/js/main.js'
-                            ],
+        src:                __dirname+'/assets/js/main.js',
         dest:               '/public/assets/js/main.js',
         clean:              ['/public/assets/js/*'],
         watch:              [__dirname+'/assets/js/**/*.js']
@@ -52,17 +47,21 @@
  *************************************/
 
 
-const autoprefixer  = require('autoprefixer');
-const del           = require('del');
-const concat        = require('gulp-concat');
-const gulp          = require('gulp');
-const postcss       = require('gulp-postcss');
-const rename        = require('gulp-rename');
-const sass          = require('gulp-sass');
-const sassGlob      = require('gulp-sass-glob');
-const sourcemaps    = require('gulp-sourcemaps');
-const syntax_scss   = require('postcss-scss');
-const stylelint     = require('gulp-stylelint');
+const autoprefixer      = require('autoprefixer');
+const del               = require('del');
+const concat            = require('gulp-concat');
+const gulp              = require('gulp');
+const postcss           = require('gulp-postcss');
+const rename            = require('gulp-rename');
+const rollup            = require('rollup');
+const rollupBabel       = require('rollup-plugin-babel');
+const rollupFilesize    = require('rollup-plugin-filesize');
+const rollupUglify      = require('rollup-plugin-uglify');
+const sass              = require('gulp-sass');
+const sassGlob          = require('gulp-sass-glob');
+const sourcemaps        = require('gulp-sourcemaps');
+const syntax_scss       = require('postcss-scss');
+const stylelint         = require('gulp-stylelint');
 
 
 // TODO: Do some ENV stuff here.
@@ -224,21 +223,31 @@ function scripts(prefix) {
 
     return () => {
 
-         let { fileName, path } = SplitParts(CONFIG.scripts.dest);
+        let { fileName, path } = SplitParts(CONFIG.scripts.dest);
 
-         // delete all previously compiled files + folders
-         del( (prefix || __dirname) + CONFIG.scripts.clean );
+        // delete all previously compiled files + folders
+        del( (prefix || __dirname) + CONFIG.scripts.clean );
 
-         return gulp.src( CONFIG.scripts.src )
+        return rollup.rollup({
+            entry: CONFIG.scripts.src,
+            plugins: [
+                rollupBabel({
+                    "presets": [
+                        [ "es2015", { "modules": false } ]
+                    ]
+                }),
+                rollupUglify(),
+                rollupFilesize(),
+            ],
+        })
+        .then(function (bundle) {
+            bundle.write({
+                format: 'es',
+                dest: (prefix || __dirname) + path + '/' + fileName,
+                sourceMap: true
+            });
+        });
 
-            // write sourcemap
-            // .pipe(sourcemaps.write('.'))
-
-            .pipe(concat('build.js'))
-
-            // output
-            .pipe( rename( fileName ) )
-            .pipe( gulp.dest( (prefix || __dirname) + path ) );
     }
 }
 

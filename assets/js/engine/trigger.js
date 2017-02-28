@@ -1,5 +1,5 @@
 
-'use strict';
+import ClearCore from './clearcore.js';
 
 /******
     Trigger()
@@ -57,6 +57,8 @@ Trigger.prototype = {
     }
 
 }
+
+export Trigger;
 
 /******
     TriggerBox()
@@ -140,3 +142,5 @@ TriggerBox.prototype = {
     }
 
 }
+
+export TriggerBox;

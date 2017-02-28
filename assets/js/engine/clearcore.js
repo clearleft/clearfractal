@@ -1,6 +1,4 @@
 
-'use strict';
-
 let ClearCore = {
 
     init() {
@@ -235,3 +233,5 @@ let ClearCore = {
         this._resizeQueue.push(cb);
     }
 }
+
+export default ClearCore;

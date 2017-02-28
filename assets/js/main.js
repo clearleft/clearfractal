@@ -1,4 +1,9 @@
 
+import ClearCore from './engine/clearcore.js';
+
+import BlogFilter from './components/blog-filter.js';
+import Jobs from './components/jobs.js';
+import PrimaryNavigation from './components/primary-navigation.js';
 
 ClearCore.init();
 

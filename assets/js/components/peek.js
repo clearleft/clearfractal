@@ -1,5 +1,6 @@
 
-'use strict';
+import ClearCore from '../engine/clearcore.js';
+import Tween from '../engine/tween.js';
 
 function Peek(elm) {
 
@@ -63,3 +64,6 @@ Peek.prototype = {
     }
 
 }
+
+
+export default Peek;

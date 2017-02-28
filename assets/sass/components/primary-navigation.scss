@@ -68,7 +68,7 @@
     background-color: $Brandeis-blue;
 }
 
-@media only screen and (min-width: px2em(300px)) and (max-width: px2em(719px)) {
+@media only screen and (min-width: px2em(280px)) and (max-width: px2em(719px)) {
     .PrimaryNavigation-menu {
         position: absolute;
         right: 1rem;
@@ -80,7 +80,7 @@
     }
 }
 
-@media only screen and (min-width: px2em(900px)) {
+@media only screen and (min-width: px2em(800px)) {
     .PrimaryNavigation-link {
         padding: px2rem(8px) px2rem(4px);
         margin-right: px2rem(16px);

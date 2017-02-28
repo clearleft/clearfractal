@@ -1,6 +1,3 @@
-
-'use strict';
-
 /*
     (class) Element.
 
@@ -97,3 +94,6 @@ let ElementPool = {
 
     }
 }
+
+export Element;
+export ElementPool;

@@ -1,7 +1,6 @@
 /*
     Show and hide content with aria-controls buttons
 */
-'use strict';
 
 function BlogFilter(elm) {
 
@@ -42,3 +41,5 @@ BlogFilter.prototype = {
         }
     }
 }
+
+export default BlogFilter;
