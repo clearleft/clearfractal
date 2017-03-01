@@ -39,6 +39,9 @@
 .Banner--decorated {
     background-color: $Crayola-red;
     color: $Blank;
+    .Banner-headline {
+        color: $Blank;
+    }
 }
 @media only screen and (min-width: px2em(600px)) {
     .Banner-headline {

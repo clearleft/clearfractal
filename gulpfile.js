@@ -116,36 +116,37 @@ function sassLint() {
 
 function sassBuild(prefix) {
 
-    return function() {
+    return () => {
 
         let { fileName, path } = SplitParts(CONFIG.css.dest);
 
         // delete all build files + folders
-        del( (prefix || __dirname) + CONFIG.css.clean );
+        return del( (prefix || __dirname) + CONFIG.css.clean )
+        .then(() => {
+            return gulp.src( CONFIG.css.src )
 
-        return gulp.src( CONFIG.css.src )
+            .pipe(sourcemaps.init())
 
-        .pipe(sourcemaps.init())
+            // glob
+            .pipe(sassGlob())
 
-        // glob
-        .pipe(sassGlob())
+            // compile SASS
+            .pipe(
+                sass().on('error', sass.logError)
+            )
 
-        // compile SASS
-        .pipe(
-            sass().on('error', sass.logError)
-        )
+            // PostCSS
+            .pipe(postcss( CSSProcessors ) )
 
-        // PostCSS
-        .pipe(postcss( CSSProcessors ) )
+            // rename (must be done before creating the sourcemap)
+            .pipe( rename( fileName ) )
 
-        // rename (must be done before creating the sourcemap)
-        .pipe( rename( fileName ) )
+            // create sourcemap
+            .pipe(sourcemaps.write('.'))
 
-        // create sourcemap
-        .pipe(sourcemaps.write('.'))
-
-        // output
-        .pipe( gulp.dest( (prefix || __dirname) + path ) );
+            // output
+            .pipe( gulp.dest( (prefix || __dirname) + path ) );
+        })
     }
 
 }
@@ -167,22 +168,23 @@ function images(prefix) {
     return () => {
 
         // delete all build files + folders
-        del( (prefix || __dirname) + CONFIG.images.clean );
+        return del( (prefix || __dirname) + CONFIG.images.clean )
+        .then(() => {
+            return gulp.src( CONFIG.images.src + '/' + CONFIG.images.optimise )
 
-        return gulp.src( CONFIG.images.src + '/' + CONFIG.images.optimise )
+                // image minification
+                // all files are piped through this package. Remove this pipe if you simply want to copy files without being minified.
+                // .pipe(imagemin({
+                //     progressive: true,
+                //     svgoPlugins: [
+                //         { removeViewBox: false },
+                //         { removeUselessStrokeAndFill: false }
+                //     ],
+                // }))
 
-            // image minification
-            // all files are piped through this package. Remove this pipe if you simply want to copy files without being minified.
-            // .pipe(imagemin({
-            //     progressive: true,
-            //     svgoPlugins: [
-            //         { removeViewBox: false },
-            //         { removeUselessStrokeAndFill: false }
-            //     ],
-            // }))
-
-            // output to dest folder
-            .pipe( gulp.dest( (prefix || __dirname) + CONFIG.images.dest ) );
+                // output to dest folder
+                .pipe( gulp.dest( (prefix || __dirname) + CONFIG.images.dest ) );
+        })
     }
 }
 
@@ -200,12 +202,14 @@ function fonts(prefix) {
     return () => {
 
         // delete all build files + folders
-        del( (prefix || __dirname) + CONFIG.fonts.clean );
+        return del( (prefix || __dirname) + CONFIG.fonts.clean )
+        .then(() => {
+            return gulp.src( CONFIG.fonts.src + '/' + CONFIG.fonts.copy )
 
-        return gulp.src( CONFIG.fonts.src + '/' + CONFIG.fonts.copy )
-
-            // output to dest folder
-            .pipe( gulp.dest( (prefix || __dirname) + CONFIG.fonts.dest  ) );
+                // output to dest folder
+                .pipe( gulp.dest( (prefix || __dirname) + CONFIG.fonts.dest  ) );
+        }
+        );
     }
 }
 
@@ -224,23 +228,23 @@ function scripts(prefix) {
 
         let { fileName, path } = SplitParts(CONFIG.scripts.dest);
 
-        // delete all previously compiled files + folders
-        del( (prefix || __dirname) + CONFIG.scripts.clean );
-
-        return rollup.rollup({
-            entry: CONFIG.scripts.src,
-            plugins: [
-                rollupBabel({
-                    "presets": [
-                        [ "es2015", { "modules": false } ]
-                    ]
-                }),
-                rollupUglify(),
-                rollupFilesize(),
-            ],
+        return del( (prefix || __dirname) + CONFIG.scripts.clean )
+        .then(() => {
+            return rollup.rollup({
+                entry: CONFIG.scripts.src,
+                plugins: [
+                    rollupBabel({
+                        "presets": [
+                            [ "es2015", { "modules": false } ]
+                        ]
+                    }),
+                    rollupUglify(),
+                    rollupFilesize(),
+                ],
+            })
         })
         .then(function (bundle) {
-            bundle.write({
+            return bundle.write({
                 format: 'es',
                 dest: (prefix || __dirname) + path + '/' + fileName,
                 sourceMap: true
@@ -256,7 +260,7 @@ gulp.task('scripts', scripts());
 
 function build(dest) {
 
-    return gulp.series(sassBuild(dest), images(dest), fonts(dest), scripts(dest))
+    return gulp.series(sassBuild(dest), images(dest), fonts(dest), scripts(dest) );
 }
 
 /** Watch **/
