@@ -42,6 +42,23 @@
         margin-bottom: px2rem(16px);
         margin-top: px2rem(16px);
     }
+    blockquote {
+        max-width: px2rem(680px);
+        position: relative;
+        margin: px2rem(40px) auto px2rem(20px) auto;
+        padding: px2rem(16px);
+        &:before {
+            background-image: url('/assets/img/quote-open.svg');
+            background-repeat: no-repeat;
+            content: ' ';
+            width: px2rem(60px);
+            height: px2rem(45px);
+            display: block;
+            position: absolute;
+            top: px2rem(-16px);
+            background-size: 65%;
+        }
+    }
     ol,
     ul {
         padding-left: 2rem;
