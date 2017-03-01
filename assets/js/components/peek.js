@@ -4,6 +4,10 @@ import Tween from '../engine/tween.js';
 
 function Peek(elm) {
 
+    if( ClearCore.screenDimensions.width < 520 ) {
+        return;
+    }
+
     this.component  = elm;
     this.headline   = this.component.getAttribute('data-componentAttributes') || 'Featured';
 
@@ -26,6 +30,7 @@ function Peek(elm) {
         padding: 0;
         line-height: 1;
         z-index: -1;
+        left: 5.3125rem;
     `);
 
     this.component.appendChild(this.peek);

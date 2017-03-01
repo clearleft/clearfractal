@@ -9,7 +9,7 @@
     elm.init( document.querySelector('.MyClass') );
 */
 
-let Element = {
+export default Element = {
 
     init(elm) {
         this._elm   = elm;
@@ -70,7 +70,7 @@ let Element = {
 }
 
 
-let ElementPool = {
+export const ElementPool = {
     ElementPool:    [],
     ObjectPool:     [],
 
@@ -94,6 +94,3 @@ let ElementPool = {
 
     }
 }
-
-export Element;
-export ElementPool;
