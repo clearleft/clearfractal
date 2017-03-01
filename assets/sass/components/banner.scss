@@ -39,15 +39,6 @@
 .Banner--decorated {
     background-color: $Crayola-red;
     color: $Blank;
-    .Banner-caption,
-    .Banner-headline,
-    .Banner-link {
-        color: $Blank;
-        border-color: $Blank;
-        &:after {
-            background-image: url('/assets/img/icons/icon-arrow-right--white.svg');
-        }
-    }
 }
 @media only screen and (min-width: px2em(600px)) {
     .Banner-headline {
