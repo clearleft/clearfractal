@@ -1,7 +1,7 @@
 module.exports = {
     "status": "wip",
     "context": {
-        "helloImgSrc": 'http://clearleft-v5.s3.amazonaws.com/uploads/DC.png',
+        "helloImgSrc": 'https://clearleft-v5.s3.amazonaws.com/uploads/DC.png',
         "helloImgAlt": 'Dan Caplin',
         "helloImgText": 'This is Dan',
         "helloHeading": "Open the conversation.",
