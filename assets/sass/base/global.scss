@@ -42,6 +42,15 @@ template {
     display: none;
 }
 
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
 a {
     color: $Brandeis-blue;
     text-decoration: none;

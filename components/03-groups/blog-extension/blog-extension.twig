@@ -1,16 +1,16 @@
-<div class="Background">
+<div class="Background Background--grey">
     <div class="Extension">
-        <div class="Extension-headline">   
-            <h2 class="Heading Heading--small">Recent articles by {{personFirstName}}</h2>
+        <div class="Extension-headline">
+            <h2 class="Heading Heading--small">Recent articles by {{ personFirstName }}</h2>
         </div><!--/.Extension-headline-->
         <div class="Extension-items">
             <div class="Cols">
             {% for card in cards %}
                 <div class="Cols-half Cols-item">
                     {% include '@card' with card %}
-                </div><!--/.Cols-half-->
+                </div>
             {% endfor %}
-            </div><!--/.Cols-->
-        </div><!--/.Extension-items-->
+            </div>
+        </div>
     </div><!--/.Extension-->
 </div><!--/.Background-->

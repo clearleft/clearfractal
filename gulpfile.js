@@ -49,7 +49,6 @@
 
 const autoprefixer      = require('autoprefixer');
 const del               = require('del');
-const concat            = require('gulp-concat');
 const gulp              = require('gulp');
 const postcss           = require('gulp-postcss');
 const rename            = require('gulp-rename');
