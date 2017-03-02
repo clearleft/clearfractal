@@ -1,0 +1,8 @@
+.GreyDots {
+    background: url('/assets/img/grey-dots-circle.svg') -28rem center no-repeat;
+}
+@media screen and (min-width: px2em(1600px)) {
+    .GreyDots {
+        background: url('/assets/img/grey-dots-circle.svg') left center no-repeat;
+    }
+}

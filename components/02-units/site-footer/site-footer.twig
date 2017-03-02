@@ -1,0 +1,26 @@
+
+<footer class="SiteFooter">
+    <div class="SiteFooter-container Cols">
+        <div class="Cols-half Cols-item">
+            {% include '@input-group' %}
+            <small class="Heading Heading--context">{{ footerInputSmall }}</small>
+        </div><!--/.SiteFooter-container-->
+        <div class="Cols-half Cols-item">
+            <nav class="SiteFooter-navigation">
+                <ul class="SiteFooter-navigationLinks">
+                    {% for footerLink in footerLinks %}
+                    <li class="SiteFooter-navigationItem"><a href="{{ footerLink.url }}" class="SiteFooter-navigationLink">{{ footerLink.title }}</a></li>
+                    {% endfor %}
+                </ul><!--/.SiteFooter-navigationLinks-->
+                <ul class="SiteFooter-icons">
+                    {% for socialLink in socialLinks %}
+                    <li class="SiteFooter-icon"><a class="SiteFooter-iconLink" href="{{ socialLink.url }}"><img src="{{ socialLink.imgSrc }}" alt="{{ socialLink.alt }}"></a></li>
+                    {% endfor %}
+                </ul><!--/.SiteFooter-icons-->
+            </nav>
+        </div><!--/.Cols-half-->
+        <div class="Cols-item SiteFooter-small">
+            {{ siteFooterSmall }}
+        </div><!--/.SiteFooter-small-->
+    </div><!--/.Cols-->
+</footer><!--/.SiteFooter-->

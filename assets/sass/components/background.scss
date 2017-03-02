@@ -1,0 +1,31 @@
+.Background {
+    background-color: $Blank;
+}
+.Background--grey {
+    background-color: $Anti-white-flash;
+    color: $Jet-grey;
+}
+.Background--lapis-lazuli-blue {
+    background-color: $Lapis-lazuli-blue;
+    color: $Blank;
+    a {
+        color: $Blank;
+    }
+}
+.Background--plum {
+    background-color: $Brand-plum;
+    color: $Blank;
+    a {
+        color: $Blank;
+    }
+}
+.Background--carribean-green {
+    background-color: $Brand-carribean-green;
+    color: $Blank;
+    a {
+        color: $Blank;
+    }
+}
+.Background--frill {
+    box-shadow: 0 -2px 0 0 $Gainsboro-blue, 0 2px 0 0 $Gainsboro-blue;
+}

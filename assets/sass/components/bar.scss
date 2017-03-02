@@ -1,0 +1,30 @@
+.Bar:before {
+    content: "";
+    display: block;
+    margin-bottom: px2rem(16px);
+    width: px2rem(54px);
+    height: px2rem(10px);
+    background-color: currentColor;
+}
+/*Bar colours*/
+.Bar--inverted:before {
+    background-color: $Blank;
+}
+.Bar--purple:before {
+    background-color: $Brand-plum;
+}
+.Bar--red:before {
+    background-color: $Crayola-red;
+}
+.Bar--blue:before {
+    background-color: $Lapis-lazuli-blue;
+}
+.Bar--yellow:before {
+    background-color: $Orange-yellow;
+}
+.Bar--lightBlue:before {
+    background-color: $Sea-serpent-blue;
+}
+.Bar--green:before {
+    background-color: $Brand-carribean-green;
+}

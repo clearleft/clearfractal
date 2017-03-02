@@ -1,0 +1,25 @@
+.Extension {
+    padding: px2rem(32px) 0 px2rem(48px) 0;
+    max-width: px2em(1040px);
+    margin: 0 auto;
+    position: relative;
+}
+.Extension-headline {
+    text-align: center;
+    margin-top: px2rem(64px);
+    margin-bottom: px2rem(64px);
+}
+.Extension:before {
+    display: block;
+    content: "";
+    width: px2rem(71px);
+    height: px2rem(71px);
+    background: url('/assets/img/icons/icon-lightbulb.svg') no-repeat center;
+    position: absolute;
+    top: px2rem(-32px);
+    left: calc(50% - 35px);
+    margin-bottom: px2rem(32px);
+}
+.Extension--clock:before {
+    background: url('/assets/img/icons/icon-clock.svg') no-repeat center;
+}

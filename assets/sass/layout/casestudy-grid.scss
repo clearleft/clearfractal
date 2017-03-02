@@ -1,0 +1,14 @@
+.Casestudy-grid {
+    padding: 0 px2rem(16px);
+    max-width: px2rem(1180px);
+    margin: 0 auto;
+}
+.Casestudy-gridItem + .Casestudy-gridItem {
+    margin-top: px2rem(16px);
+}
+
+@media only screen and (min-width: px2em(800px)) {
+    .Casestudy-gridItem + .Casestudy-gridItem {
+        margin-top: px2rem(32px);
+    }
+}

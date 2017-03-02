@@ -1,0 +1,34 @@
+<article class="Card {% if cardModifiers %}Card{{ cardModifiers|join(' Card') }}{% endif %}"{% if cardMiscStyles %} style="{{ cardMiscStyles }}"{% endif %}>
+    {% if cardBar %}
+        <div class="Bar"{% if cardBarColour %} style="color:{{ cardBarColour }}"{% endif %}></div>
+    {% endif %}
+    {% if cardLogoAlt %}
+        {% if cardLogoSrc %}
+        <img src="{{ cardLogoSrc }}" alt="{{ cardLogoAlt }}">
+        {% else %}
+        <h3 class="Heading Heading--context">{{ cardLogoAlt }}</h3>
+        {% endif %}
+    {% endif %}
+    <div class="Card-primary">
+        <header>
+            {% if cardUrl %}
+            <a href="{{ cardUrl }}">
+                <h3 class="Card-title"{% if cardHeaderColour %} style="color:{{ cardHeaderColour }}"{% endif %}>{{ cardTitle }}</h3>
+            </a>
+            {% else %}
+            <h3 class="Card-title"{% if cardHeaderColour %} style="color:{{ cardHeaderColour }}"{% endif %}>{{ cardTitle }}</h3>
+            {% endif %}
+        </header>
+        {% if cardCategory %}<div class="Card-category">{{ cardCategory }}</div>{% endif %}
+        {% if cardMeta %}<div class="Card-meta">{{ cardMeta }}</div>{% endif %}
+        {% if cardDescription %}<p class="Card-description">{{ cardDescription }}</p>{% endif %}
+        {% if cardLink %}
+            <a href="{{ cardUrl }}">Read the case study</a>
+        {% endif %}
+        {% if authorImage or authorName %}
+        <div class="Card-author">
+            {% include '@author' %}
+        </div><!--/.Card-author-->
+        {% endif %}
+    </div><!--/.Card-primary-->
+</article><!--/.Card-->

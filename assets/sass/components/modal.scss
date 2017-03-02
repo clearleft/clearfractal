@@ -1,0 +1,39 @@
+.Modal {
+    background-color: $Dark-liver-grey;
+    opacity: 0.8;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+.Modal-container {
+    position: absolute;
+    z-index: 1;
+    top: px2em(80px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $Blank;
+    border-radius: px2rem(2px);
+    padding: px2rem(18px);
+    width: 100%;
+}
+.Modal-close {
+    position: absolute;
+    border-bottom: none;
+    font-weight: normal;
+    top: px2rem(-23px);
+    right: 0;
+    color: $Blank;
+    text-transform: uppercase;
+    @include font(14px, 17px);
+}
+@media screen and (min-width: px2rem(700px)) {
+    .Modal-container {
+        padding: px2rem(48px);
+        width: px2em(600px);
+    }
+}

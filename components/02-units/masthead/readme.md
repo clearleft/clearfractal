@@ -1,0 +1,1 @@
+Chimney is taller to make space for the chimneys in Layout Alternate.

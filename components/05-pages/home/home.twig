@@ -1,0 +1,77 @@
+
+<div class="Impact Background--carribean-green">
+    {% include '@site-header' %}
+
+    <h2>We see you through.</h2>
+</div>
+
+<main>
+
+        <div style="
+        background-image: url(http://clearleft-v5.s3.amazonaws.com/dots/texture_dots-circle-green.png);
+        background-repeat: no-repeat;
+        background-position: 50% -220px;
+        background-size: 800px;
+        ">
+
+            <div class="Home-grid">
+                <div class="Home-gridItem">
+                    {% include '@card' with {
+                        cardModifiers: ['--home'],
+                        cardBar: true,
+                        cardBarColour: '#00D494',
+                        cardTitle: "Digital Design",
+                        cardDescription: "Work closely with the Clearleft team to conceive and create new products and services. Or make purposeful design improvements."
+                    } %}
+                </div>
+                <div class="Home-gridItem">
+                    {% include '@card' with {
+                        cardModifiers: ['--home'],
+                        cardBar: true,
+                        cardBarColour: '#00D494',
+                        cardTitle: "Digital strategy.",
+                        cardDescription: "We're here to help you navigate the complexities of digital innovation. Get a fresh sense of direction."
+                    } %}
+                </div>
+                <div class="Home-gridItem">
+                    {% include '@card' with {
+                        cardModifiers: ['--home'],
+                        cardBar: true,
+                        cardBarColour: '#00D494',
+                        cardTitle: "Digital culture.",
+                        cardDescription: "Develop healthy and consistent digital practices. Upskill your teams, develop your processes and introduce new habits."
+                    } %}
+                </div>
+            </div>
+
+            <div class="Banner">
+                <div class="Banner-content">
+                    <h2 class="Heading Heading--secondary" style="margin: 0; line-height: 1">Client Stories.</h2>
+                </div>
+            </div>
+
+        </div>
+
+
+    <div style="position: relative">
+        <div class="Background Background--grey" style="position: absolute; top: 7rem; width: 100%; height: calc(100% - 14rem); z-index:-1"></div>
+        <div class="Casestudy-grid">
+            <div class="Casestudy-gridItem">
+                {% include '@ch4-project' %}
+            </div>
+            <div class="Casestudy-gridItem">
+                {% include '@penguin-project' %}
+            </div>
+            <div class="Casestudy-gridItem">
+                {% include '@evo-project' %}
+            </div>
+        </div>
+    </div>
+
+    {% include '@banner' with {bannerCaption: 'Latest Posts', bannerHeadline: 'Clear thinking.'} %}
+
+</main>
+
+{% include '@hello' %}
+
+{% include '@site-footer' %}

@@ -1,0 +1,37 @@
+.ImageBlock {
+    padding: px2rem(8px) px2rem(16px);
+    display: table;
+    margin: 0 auto;
+    max-width: 100%;
+
+    img {
+        display: block;
+    }
+}
+.ImageBlock-item {
+    color: $mid-grey;
+    @include font(13px, 16px);
+    font-family: $font-secondary;
+    font-weight: 700;
+    letter-spacing: px2rem(1px);
+    margin-top: px2rem(8px);
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+}
+.ImageBlock--rightCaption {
+    .ImageBlock-item {
+        text-align: right;
+    }
+}
+.ImageBlock--short {
+    padding-bottom: 0;
+}
+@media screen and (min-width: px2em(500px)) {
+    .ImageBlock {
+        padding-top: px2rem(32px);
+        padding-bottom: px2rem(32px);
+    }
+    .ImageBlock--short {
+        padding-bottom: 0;
+    }
+}

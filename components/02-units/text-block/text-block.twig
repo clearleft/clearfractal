@@ -1,0 +1,23 @@
+<div class="TextBlock{% if textBlockModifier %} TextBlock{{textBlockModifier}}{% endif %}">
+    {% if "--author" in textBlockModifier %}
+    <div class="TextBlock-author">
+        {% include '@author' %}
+    </div>
+    {% endif %}
+
+    {% if textBlockImage and textBlockImageDirection == 'left' %}
+    <figure>
+        <img class="ImageBlock-item" src="{{ textBlockImage }}" alt="{{ textBlockImageAlt }}">
+        <figcaption class="ImageBlock-item">{{ textBlockImageCaption }}</figcaption>
+    </figure>
+    {% endif %}
+
+    <div class="Prose">{{ textBlockProse }}</div>
+
+    {% if textBlockImage and textBlockImageDirection == 'right' %}
+    <figure>
+        <img src="{{ textBlockImage }}" alt="{{ textBlockImageAlt }}">
+        <figcaption class="ImageBlock-item">{{ textBlockImageCaption }}</figcaption>
+    </figure>
+    {% endif %}
+</div><!--/.TextBlock Prose-->

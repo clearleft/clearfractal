@@ -1,0 +1,31 @@
+{% include '@ch4-project' %}
+
+<div class="Background Background--grey">
+    {% include '@voice' %}
+</div>
+
+<main>
+    {% include '@scene' %}
+
+    {% include '@image-block' %}
+
+    {% include '@text-block' %}
+
+    {% include '@quote' %}
+
+    {% include '@image-block--right-caption' with {imageBlockModifier: '--rightCaption', imageBlockCaption: 'Sketching from lo-fi to hi-fi', imageBlockSrc: '/assets/img/work/ch4/sketching-lo-hi.jpg'} %}
+
+    {% include '@text-block' %}
+
+    {% include '@ch4-display-case' %}
+
+    {% include '@image-block--short' with {imageBlockModifier: '--short', imageBlockCaption: false, imageBlockSrc: '/assets/img/work/ch4/ch4-team.png'} %}
+
+    {% include '@trio' %}
+
+    {% include '@signpost' %}
+</main>
+
+{% include '@hello' %}
+
+{% include '@site-footer' %}

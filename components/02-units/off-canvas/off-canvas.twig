@@ -1,0 +1,13 @@
+
+<div class="OffCanvas">
+    <div class="OffCanvas-header">
+        <button type="button" name="close" class="OffCanvas-close">close</button>
+    </div>
+    <ul class="OffCanvas-list">
+    {% for link in offCanvasLinks %}
+        <li class="OffCanvas-listItem">
+            <a href="{{ link.url }}" class="OffCanvas-link">{{ link.title }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</div>

@@ -1,0 +1,39 @@
+.TextBlock {
+    padding: 0 px2rem(16px);
+    margin: 0 auto;
+    max-width: 32em;
+}
+.TextBlock--wide {
+    max-width: 42em;
+}
+.TextBlock-author {
+    max-width: px2rem(120px);
+}
+.TextBlock--author {
+    padding-bottom: 0;
+}
+@media screen and (min-width: px2em(360px)) {
+    .TextBlock-author {
+        float: left;
+        margin-right: px2rem(16px);
+        margin-top: px2rem(8px);
+    }
+}
+@media screen and (min-width: px2em(500px)) {
+    .TextBlock--author {
+        padding-bottom: 0;
+    }
+}
+@media screen and (min-width: px2rem(800px)) {
+    .TextBlock-author {
+        margin-left: px2rem(-136px);
+    }
+    .TextBlock--image {
+        display: flex;
+        max-width: 42em;
+
+        figure {
+            flex: 1 0 45%;
+        }
+    }
+}

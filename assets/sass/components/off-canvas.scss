@@ -1,0 +1,47 @@
+
+.OffCanvas {
+    background-color: $Brand-carribean-green;
+    height: 100vh;
+    padding: 1rem;
+    width: 100%;
+    z-index: 20;
+}
+.OffCanvas-header {
+    text-align: right;
+}
+.OffCanvas-close {
+    background-color: transparent;
+    color: $Blank;
+    @include font(18px, 27px);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.OffCanvas-listItem {
+    list-style: none;
+}
+.OffCanvas-link {
+    border: none;
+    color: $Blank;
+    display: block;
+    @include font(40px, 47px);
+    font-family: $font-statement;
+    letter-spacing: -0.58px;
+    padding: px2em(2px) 1rem;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $Blank;
+    }
+}
+
+@media screen and (min-width: px2em(500px)) {
+    .OffCanvas-close {
+        @include font(28px, 33px);
+    }
+    .OffCanvas-link {
+        @include font(68px, 75px);
+    }
+}

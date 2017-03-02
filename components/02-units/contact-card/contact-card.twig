@@ -1,0 +1,15 @@
+<div class="ContactCard vcard">
+    <div class="ContactCard-item">
+        <span class="fn org">Clearleft Ltd</span>,<br>
+        <span class="street-address">{{contactStreet}}</span>,<br>
+        <span class="locality">{{contactTown}}</span>,<br>
+        <span class="postal-code">{{contactPostcode}}</span>
+    </div><!--/.ContactCard-item-->
+    <div class="ContactCard-item Contact-group">
+        <a class="email" href="mailto:{{contactEmail}}">{{contactEmail}}</a><br>
+        <a class="tel" href="tel:{{contactTel}}">{{contactTel}}</a><br>
+        {% if contactVcardLink %}
+        <a href="{{contactVcardLink}}">Download our vCard</a>
+        {% endif %}
+    </div><!--/.ContactCard-item-->
+</div><!--/.ContactCard-->

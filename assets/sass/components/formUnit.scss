@@ -1,0 +1,20 @@
+.FormUnit {
+    margin-top: px2rem(22px);
+    margin-bottom: px2rem(18px);
+}
+.FormUnit-label {
+    -webkit-font-smoothing: antialiased;
+    @include font(17px, 25px);
+}
+.FormUnit-field {
+    color: $Jet-grey;
+    background-color: $Blank;
+    border: 0;
+    font-family: $font-main;
+    -webkit-font-smoothing: antialiased;
+    @include font(14px);
+    padding: px2rem(12px) px2rem(10px);
+    border-radius: px2rem(5px);
+    border: px2rem(2px) solid $Gainsboro-blue;
+    width: 100%;
+}

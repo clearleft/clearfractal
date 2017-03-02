@@ -1,0 +1,59 @@
+.PageLead-secondary {
+    padding: px2em(8px) px2em(16px);
+}
+@media screen and (min-width: px2em(680px)) {
+    .PageLead {
+        padding: px2rem(32px) px2rem(16px) 0 px2rem(16px);
+        display: flex;
+        max-width: px2em(1180px);
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    .PageLead-primary {
+        flex-basis: 52%;
+    }
+    .PageLead-secondary {
+        flex-basis: 48%;
+        @include font-size(16px);
+        padding: px2em(8px) px2em(32px);
+
+        .Heading {
+            margin-bottom: 0;
+        }
+    }
+    .PageLead-primary {
+        margin-bottom: px2rem(-24px);
+        position: relative;
+        z-index: 3;
+    }
+    .PageLead--pinch .PageLead-primary {
+        margin-bottom: px2rem(-100px);
+    }
+}
+.PageLead--image .PageLead-primary {
+    width: auto;
+    flex-basis: auto;
+    margin: px2rem(-48px) auto px2rem(24px);
+}
+
+.PageLead-image {
+    border: $light-grey solid 0.5px;
+}
+@media screen and (min-width: px2em(700px)) {
+    .PageLead--image .PageLead-primary {
+        margin-top: px2rem(-90px);
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: px2em(800px)) {
+    .PageLead {
+        padding: px2rem(16px) px2rem(16px) 0 px2rem(16px);
+    }
+}
+@media screen and (min-width: px2em(1200px)) {
+    .PageLead {
+        padding: 0;
+        max-width: px2em(1040px);
+    }
+}

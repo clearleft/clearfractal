@@ -1,0 +1,1 @@
+Chapter components are typically found in groups to display information in steps.

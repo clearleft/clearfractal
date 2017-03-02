@@ -1,0 +1,6 @@
+<dl class="Metadata">
+    <dt class="Metadata-heading">{{metadataHeading}}</dt>
+    {% for item in items %}
+    <dd class="Metadata-description{% if metadataPill %} Pill{% endif %}">{{item.metadata}}</dd>
+    {% endfor %}
+</dl><!--/.MetaData-->

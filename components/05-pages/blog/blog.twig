@@ -1,0 +1,27 @@
+
+<div class="Background Background--grey">
+    {% include '@site-header' %}
+    {% include '@masthead' %}
+</div>
+
+<main>
+
+    <div class="BlogGrid">
+
+        {% include '@featured-card' %}
+
+        <div class="BlogGrid-container">
+            {% for post in posts %}
+            <div class="BlogGrid-item">
+                {% include '@card' %}
+            </div>
+            {% endfor %}
+        </div><!--/.Blog-container-->
+
+    </div><!--/.Blog-grid-->
+
+    {% include '@pagination' %}
+
+</main>
+
+{% include '@site-footer' %}

@@ -1,0 +1,17 @@
+.Cols-item {
+    padding: px2em(8px) px2em(16px);
+}
+@media screen and (min-width: px2em(680px)) {
+    .Cols {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: px2em(1040px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Cols-half {
+        flex: 0 1 auto;
+        width: 50%;
+    }
+}

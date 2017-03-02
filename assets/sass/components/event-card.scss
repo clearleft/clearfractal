@@ -1,0 +1,45 @@
+.EventCard {
+    margin-bottom: 1rem;
+}
+.EventCard-context {
+    color: $Dark-liver-grey;
+    @include font(14px, 17px);
+    font-family: $font-secondary;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.EventCard-eventName {
+    font-family: $font-secondary;
+    font-weight: 700;
+    @include font(30px, 35px);
+    margin-bottom: px2rem(20px);
+}
+.EventCard-image {
+    margin-bottom: px2rem(16px);
+}
+.EventCard-description {
+    margin-bottom: 1rem;
+}
+.EventCard-links {
+    margin-bottom: 1rem;
+}
+.EventCard-list {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+.EventCard-listItem {
+    display: inline-block;
+    list-style: none;
+    font-size: px2rem(16px);
+    margin-right: px2rem(6px);
+}
+.EventCard--inverted * {
+    color: $Blank;
+}
+
+@media screen and (min-width: px2em(720px)) {
+    .EventCard-eventName {
+        @include font(40px, 49px);
+    }
+}

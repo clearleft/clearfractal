@@ -1,0 +1,8 @@
+{% if imageBlockCaption %}
+<figure class="ImageBlock{% if imageBlockModifier %} ImageBlock{{imageBlockModifier}}{% endif %}">
+    <img class="ImageBlock-image" src="{{imageBlockSrc}}" alt="{{imageBlockAlt}}">
+    <figcaption class="ImageBlock-item">{{imageBlockCaption}}</figcaption>
+</figure><!--/.ImageBlock-->
+{% else %}
+<img class="ImageBlock{% if imageBlockModifier %} ImageBlock{{imageBlockModifier}}{% endif %}" src="{{imageBlockSrc}}" alt="{{imageBlockAlt}}">
+{% endif %}

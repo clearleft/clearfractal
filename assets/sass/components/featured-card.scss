@@ -1,0 +1,46 @@
+
+.FeaturedCard {
+    color: $Jet-grey;
+    background-color: $Blank;
+    padding: px2rem(16px);
+    box-shadow: 0 8px 10px rgba(50,50,50,0.3);
+}
+.FeaturedCard-title {
+    margin: 0 0 px2rem(18px) 0;
+}
+.FeaturedCard-category {
+    font-family: $font-secondary;
+    @include font(14px, 17px);
+    margin: px2rem(8px) 0 px2rem(16px) 0;
+    color: $mid-grey;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.FeaturedCard-secondary {
+    max-width: px2rem(100px);
+}
+
+@media only screen and (min-width: px2em(480px)) {
+    .FeaturedCard {
+        padding: px2rem(24px);
+    }
+    .FeaturedCard {
+        display: flex;
+    }
+    .FeaturedCard-primary {
+        flex: 1;
+    }
+    .FeaturedCard-secondary {
+        flex: 0 px2rem(160px);
+    }
+}
+
+@media only screen and (min-width: px2em(800px)) {
+    .FeaturedCard {
+        padding: px2rem(85px);
+    }
+    .FeaturedCard-secondary {
+        max-width: none;
+    }
+}

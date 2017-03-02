@@ -1,0 +1,10 @@
+.Nextprev-link {
+    border-bottom: none;
+    display: inline-block;
+    margin-right: px2rem(10px);
+    &:hover,
+    &:focus,
+    &:active {
+        opacity: 0.7;
+    }
+}

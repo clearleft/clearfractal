@@ -1,0 +1,47 @@
+.IndexCard {
+    display: inline-block;
+    font-family: $font-secondary;
+    border: 1px solid $Gainsboro-blue;
+}
+.IndexCard-details {
+    background-color: $Blank;
+    border-top: 1px solid $Gainsboro-blue;
+    padding: px2rem(16px);
+}
+.IndexCard-image {
+    display: block;
+    max-width: 100%;
+    min-height: px2rem(50px);
+}
+.IndexCard-name {
+    @include font(22px, 17px);
+    color: $Jet-grey;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.3px;
+    margin: 0;
+}
+.IndexCard-info {
+    color: $mid-grey;
+    display: block;
+    @include font(12px, 14px);
+    letter-spacing: px2rem(1px);
+    margin-top: px2rem(8px);
+    text-transform: uppercase;
+}
+
+.IndexCard--profile {
+    border: none;
+
+    .IndexCard-details {
+        border: none;
+        display: block;
+        text-transform: uppercase;
+    }
+    .IndexCard-name {
+        color: $mid-grey;
+        @include font(14px, 14px);
+        letter-spacing: px2rem(1px);
+        text-align: center;
+    }
+}

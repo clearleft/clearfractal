@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-pinterest</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LS-Profile-Links" transform="translate(-58.000000, -38.000000)" fill="#FFFFFF">
+            <g id="Group-6" transform="translate(1.000000, 33.000000)">
+                <path d="M63.617,18.227 C63.091,20.981 62.45,23.621 60.549,25 C59.963,20.838 61.41,17.713 62.083,14.395 C60.936,12.465 62.221,8.583 64.638,9.54 C67.613,10.716 62.062,16.712 65.788,17.462 C69.679,18.243 71.267,10.712 68.854,8.263 C65.369,4.725 58.708,8.18 59.528,13.245 C59.727,14.483 61.006,14.858 60.039,16.567 C57.808,16.073 57.142,14.313 57.228,11.967 C57.366,8.127 60.677,5.44 63.999,5.067 C68.2,4.596 72.143,6.61 72.688,10.561 C73.301,15.022 70.792,19.854 66.299,19.506 C65.081,19.411 64.571,18.807 63.617,18.227 Z" id="icon-pinterest"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,38 @@
+<div class="EvoProject{%if evoModifier %} EvoProject{{evoModifier}}{% endif %}">
+
+    {% if "--stage" in evoModifier %}
+    {% include '@site-header' %}
+    {% endif %}
+
+    <div class="EvoProject-wrapper">
+
+        {% if "--stage" in evoModifier %}
+        <div class="EvoProject-breadcrumb">
+            {% include '@breadcrumb' %}
+        </div>
+        {% endif %}
+
+        <div class="EvoProject-content">
+
+            <div class="EvoProject-question">{{ evoQuestion }}</div>
+
+            {% if "--stage" in evoModifier %}
+            <h2 class="EvoProject-title Heading Heading--secondary Heading--inverted">{{ evoTitle }}</h2>
+            {% else %}
+            <a href="{{ evoLinkUrl }}"><h2 class="EvoProject-title Heading Heading--secondary Heading--inverted">{{ evoTitle }}</h2></a>
+            {% endif %}
+
+            {% if evoDescription %}
+            <div class="EvoProject-description Lead Bar">
+                {{evoDescription}}
+            </div>
+            {% endif %}
+
+            {% if evoLogoSrc %}
+            <img class="EvoProject-logo" src="{{ evoLogoSrc }}" alt="{{ evoLogoAlt }}">
+            {% endif %}
+
+        </div>
+
+    </div>
+</div><!--./EvoProject-->

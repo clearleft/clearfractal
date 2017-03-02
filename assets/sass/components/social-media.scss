@@ -1,0 +1,27 @@
+.SocialMedia {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    margin-top: px2rem(8px);
+}
+.SocialMedia-item {
+    list-style: none;
+    margin-right: px2rem(16px);
+}
+.SocialMedia-link {
+    border: none;
+}
+.SocialMedia--dark {
+    .SocialMedia-link {
+        color: $Blank;
+        background-color: $Brandeis-blue;
+        border-radius: px2rem(4px);
+        width: px2rem(27px);
+        height: px2rem(27px);
+        padding: px2rem(2px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

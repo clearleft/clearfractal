@@ -1,0 +1,67 @@
+.Hello {
+    background-image: url('https://clearleft-v5.s3.amazonaws.com/dots/texture_dots-circle-grey.png');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-color: #8E3581;
+    background-size: px2rem(600px);
+    color: $Blank;
+    padding: px2rem(16px);
+}
+.Hello-container {
+    margin: 0 auto;
+    max-width: px2rem(800px);
+}
+.Hello-title {
+    margin-bottom: px2rem(20px);
+    margin-top: px2rem(16px);
+}
+.Hello-body a {
+    color: #fff;
+}
+.Hello-image {
+    max-width: px2rem(140px);
+    figcaption {
+        color: $Blank;
+        font-family: $font-secondary;
+        @include font(12px, 15px);
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+@media screen and (min-width: px2rem(500px)) {
+    .Hello {
+        background-position: 120% px2rem(-200px);
+        background-size: px2rem(480px);
+        padding: px2rem(38px) px2rem(32px) px2rem(72px) px2rem(32px);
+    }
+    .Hello-body {
+        margin-left: px2rem(38px);
+    }
+    .Hello-image {
+        figcaption {
+            @include font(14px, 15px);
+        }
+    }
+    .Hello-title {
+        @include font(35px, 40px);
+    }
+}
+@media screen and (min-width: px2rem(680px)) {
+    .Hello {
+        background-position: 80% 50%;
+        background-size: px2rem(620px);
+        padding: px2rem(48px) px2rem(32px) px2rem(48px) px2rem(32px);
+    }
+    .Hello-container {
+        display: flex;
+    }
+    .Hello-image {
+        flex-shrink: 0;
+    }
+    .Hello-title {
+        margin-top: 0;
+    }
+}

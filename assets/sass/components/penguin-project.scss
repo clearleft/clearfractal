@@ -1,0 +1,152 @@
+
+.PenguinProject {
+    color: $Blank;
+    background-color: #FF6600;
+}
+.PenguinProject-wrapper {
+    max-width: px2em(900px);
+    margin: 0 auto;
+    padding: px2rem(20px);
+    -webkit-font-smoothing: antialiased;
+}
+.PenguinProject-question {
+    font-family: $font-secondary;
+}
+.PenguinProject-title {
+    margin-top: px2rem(8px);
+    max-width: px2rem(400px);
+}
+.PenguinProject-description {
+    max-width: px2em(350px);
+}
+.PenguinProject-logo {
+    display: block;
+    margin-top: px2rem(36px);
+    width: px2rem(46px);
+}
+@media screen and (min-width: px2em(300px)) {
+    .PenguinProject {
+        background-image: url('https://clearleft-v5.s3.amazonaws.com/penguin-kyle-crop-sm.jpg');
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+        background-size: px2rem(320px);
+    }
+    .PenguinProject-wrapper {
+        padding-right: 6rem;
+    }
+    .PenguinProject-content {
+        max-width: px2rem(540px);
+    }
+}
+@media screen and (min-width: px2em(500px)) {
+    .PenguinProject {
+        background-size: px2rem(450px);
+    }
+    .PenguinProject-wrapper {
+        padding-top: px2rem(40px);
+        padding-bottom: px2rem(40px);
+    }
+    .PenguinProject-title {
+        max-width: none;
+    }
+}
+@media screen and (min-width: px2em(550px)) {
+    .PenguinProject-title {
+        @include font(72px, 77px);
+        letter-spacing: px2rem(-1.45px);
+    }
+}
+@media screen and (min-width: px2em(800px)) {
+    .PenguinProject {
+        background-image: url('https://clearleft-v5.s3.amazonaws.com/penguin-kyle-crop-med.jpg');
+        background-position: calc(100% + 3rem) 50%;
+        background-size: px2rem(800px);
+    }
+    .PenguinProject-wrapper {
+        padding-top: px2rem(100px);
+        padding-bottom: px2rem(80px);
+        padding-left: px2rem(24px);
+        padding-right: px2rem(24px);
+    }
+    .PenguinProject-logo {
+        margin-top: px2rem(90px);
+        width: px2rem(64px);
+    }
+}
+
+/****************************
+    Variations
+****************************/
+
+/* --tall */
+
+.PenguinProject--tall {
+
+}
+@media screen and (min-width: px2em(1080px)) {
+    .PenguinProject--tall {
+        background-position: 100% 50%;
+        background-size: px2rem(1000px);
+    }
+}
+
+/* --stage  */
+
+.PenguinProject--stage {
+    .PenguinProject-wrapper {
+        padding-top: 0;
+    }
+    .PenguinProject-question {
+        display: none;
+    }
+}
+@media screen and (min-width: px2em(300px)) {
+    .PenguinProject--stage {
+        background-position: 100% 3rem;
+        background-size: px2rem(280px);
+        .PenguinProject-wrapper {
+            padding-right: 1rem;
+        }
+        .PenguinProject-title {
+            padding-right: 5rem;
+        }
+        .PenguinProject-description {
+            margin-top: 2rem;
+        }
+    }
+}
+@media screen and (min-width: px2em(500px)) {
+    .PenguinProject--stage {
+        background-size: 60%;
+        .PenguinProject-wrapper {
+            padding-top: px2rem(16px);
+            padding-bottom: 2rem;
+        }
+    }
+}
+@media screen and (min-width: px2em(700px)) {
+    .PenguinProject--stage {
+        .PenguinProject-breadcrumb {
+            padding: 0 px2rem(24px);
+        }
+    }
+}
+@media screen and (min-width: px2em(800px)) {
+    .PenguinProject--stage {
+        background-size: 80%;
+        .PenguinProject-wrapper {
+            padding: px2rem(32px) px2rem(24px) 2rem px2rem(24px);
+        }
+    }
+}
+@media screen and (min-width: px2em(1080px)) {
+    .PenguinProject--stage {
+        background-position: 11vw 50%;
+        background-size: px2rem(1400px);
+    }
+}
+@media screen and (min-width: px2em(1400px)) {
+    .PenguinProject--stage {
+        background-position: 24vw 50%;
+    }
+}

@@ -1,0 +1,150 @@
+
+.EvoProject {
+    color: $Blank;
+    background-color: #000;
+}
+.EvoProject-wrapper {
+    max-width: px2em(900px);
+    margin: 0 auto;
+    padding: px2rem(20px);
+    -webkit-font-smoothing: antialiased;
+}
+.EvoProject-question {
+    font-family: $font-secondary;
+}
+.EvoProject-title {
+    margin-top: px2rem(8px);
+    max-width: px2rem(400px);
+}
+.EvoProject-description {
+    max-width: px2em(350px);
+}
+.EvoProject-logo {
+    display: block;
+    margin-top: px2rem(36px);
+    width: px2rem(54px);
+}
+@media screen and (min-width: px2em(300px)) {
+    .EvoProject {
+        background-image: url('https://clearleft-v5.s3.amazonaws.com/evo-kyle-crop-sm.jpg');
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+        background-size: 55%;
+    }
+    .EvoProject-wrapper {
+        padding-right: 6rem;
+    }
+    .EvoProject-content {
+        max-width: px2rem(540px);
+    }
+}
+@media screen and (min-width: px2em(500px)) {
+    .EvoProject {
+        background-size: 414px;
+    }
+    .EvoProject-wrapper {
+        padding-top: px2rem(40px);
+        padding-bottom: px2rem(40px);
+    }
+    .EvoProject-title {
+        max-width: none;
+    }
+}
+@media screen and (min-width: px2em(550px)) {
+    .EvoProject-title {
+        letter-spacing: px2rem(-1.45px);
+        @include font(72px, 77px);
+    }
+}
+@media screen and (min-width: px2em(800px)) {
+    .EvoProject {
+        background-image: url('https://clearleft-v5.s3.amazonaws.com/evo-kyle-crop-med.jpg');
+        background-position: 30vw 50%;
+        background-size: px2rem(640px);
+    }
+    .EvoProject-wrapper {
+        padding-top: px2rem(100px);
+        padding-bottom: px2rem(80px);
+        padding-left: px2rem(24px);
+        padding-right: px2rem(24px);
+    }
+    .EvoProject-logo {
+        margin-top: px2rem(90px);
+        width: px2rem(80px);
+    }
+}
+
+/****************************
+    Variations
+****************************/
+
+/* --tall */
+
+.EvoProject--tall {
+
+}
+@media screen and (min-width: px2em(1080px)) {
+    .EvoProject--tall {
+        background-position: 100% 50%;
+        background-size: px2rem(900px);
+    }
+}
+
+
+/* --stage  */
+
+.EvoProject--stage {
+    .EvoProject-wrapper {
+        padding-top: 0;
+    }
+    .EvoProject-question {
+        display: none;
+    }
+}
+@media screen and (min-width: px2em(300px)) {
+    .EvoProject--stage {
+        background-position: 100% 3rem;
+        .EvoProject-wrapper {
+            padding-right: 1rem;
+        }
+        .EvoProject-title {
+            padding-right: 5rem;
+        }
+        .EvoProject-description {
+            margin-top: 2rem;
+        }
+    }
+}
+@media screen and (min-width: px2em(500px)) {
+    .EvoProject--stage {
+        .EvoProject-wrapper {
+            padding-top: px2rem(16px);
+            padding-bottom: 2rem;
+        }
+    }
+}
+@media screen and (min-width: px2em(700px)) {
+    .EvoProject--stage {
+        .EvoProject-breadcrumb {
+            padding: 0 px2rem(24px);
+        }
+    }
+}
+@media screen and (min-width: px2em(800px)) {
+    .EvoProject--stage {
+        .EvoProject-wrapper {
+            padding: px2rem(32px) px2rem(24px) 2rem px2rem(24px);
+        }
+    }
+}
+@media screen and (min-width: px2em(1100px)) {
+    .EvoProject--stage {
+        background-position: 20vw 50%;
+        background-size: px2rem(1200px);
+    }
+}
+@media screen and (min-width: px2em(1400px)) {
+    .EvoProject--stage {
+        background-position: 35vw 50%;
+    }
+}

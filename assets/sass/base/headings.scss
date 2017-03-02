@@ -1,0 +1,109 @@
+.Heading {
+    color: $Jet-grey;
+    font-family: $font-secondary;
+    margin-bottom: px2rem(8px);
+    margin-top: px2rem(8px);
+    -webkit-font-smoothing: antialiased;
+}
+a.Heading,
+.Heading a,
+a .Heading {
+    border-bottom: none;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $Dark-liver-grey;
+    }
+}
+.Heading a {
+    color: inherit;
+}
+.Heading--main {
+    @include font(48px, 52px);
+    font-family: $font-statement;
+    letter-spacing: -1.04px;
+}
+.Heading--secondary {
+    @include font(39px, 42px);
+    letter-spacing: -0.42px;
+    font-family: $font-statement;
+}
+// body h2
+.Heading--medium {
+    @include font(31px, 34px);
+    font-weight: 700;
+    letter-spacing: -0.44px;
+}
+.Heading--small {
+    @include font(25px, 31px);
+    font-weight: 700;
+    letter-spacing: -0.31px;
+}
+.Heading--bump {
+    @include font(20px, 25px);
+    font-weight: 700;
+    letter-spacing: -0.27px;
+}
+.Heading--body {
+    @include font(16px, 25px);
+    font-weight: 700;
+    letter-spacing: -0.22px;
+}
+.Heading--context {
+    @include font(12px, 15px);
+    text-transform: uppercase;
+    color: $mid-grey;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.Heading--inverted {
+    color: $Blank;
+}
+a.Heading--inverted,
+.Heading--inverted a,
+a .Heading--inverted {
+    &:hover,
+    &:focus {
+        color: inherit;
+    }
+}
+@media screen and (min-width: px2em(500px)) {
+    .Heading {
+        margin-bottom: px2rem(16px);
+    }
+    .Heading--main {
+        @include font(90px, 84px);
+    }
+    .Heading--secondary {
+        @include font(68px, 75px);
+    }
+    .Heading--medium {
+        @include font(43px, 50px);
+        font-weight: 700;
+    }
+    .Heading--small {
+        @include font(35px, 40px);
+        font-weight: 700;
+    }
+    .Heading--bump {
+        @include font(28px, 27px);
+        font-weight: 700;
+    }
+    .Heading--body {
+        @include font(22px, 27px);
+        font-weight: 700;
+    }
+}
+
+/**
+    Old fluid calc-based 'impact' header font styles. Useful stuff. Maybe used later.
+**/
+// .Heading--impact {
+// font-size: calc( 60px + (102 - 60) * ( (100vw - 300px) / ( 1200 - 300) ));
+// Fluid font size ranging from `min` to `max` pixels if the window is more than 300 pixels wide and the window is less than 1200 pixels wide
+// }
+// @media screen and (min-width: px2em(1200px)) {
+//     .Heading--impact {
+//         @include font(102px, 160px);
+//     }
+// }

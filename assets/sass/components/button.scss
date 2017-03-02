@@ -1,0 +1,12 @@
+
+.Button {
+    color: $Brandeis-blue;
+    background-color: $Blank;
+    display: inline-block;
+    border-bottom: 0;
+    border-radius: px2rem(24px);
+    padding: px2rem(12px) px2rem(24px);
+    text-decoration: none;
+    font-weight: 700;
+    @include font(17px, 20px);
+}

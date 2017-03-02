@@ -1,0 +1,90 @@
+.LayoutAlternate {
+    padding: px2rem(16px);
+    margin-top: px2rem(16px);
+    max-width: px2rem(1096px);
+}
+.LayoutAlternate--chimney {
+    margin-top: px2rem(-70px);
+}
+.LayoutAlternate-image {
+    width: 100%;
+    border: $Gainsboro-blue solid 0.5px;
+}
+.LayoutAlternate-solo {
+    padding: px2rem(16px) px2rem(16px) 0 px2rem(16px);
+}
+.LayoutAlernate-item--leadSecondary {
+    margin-top: px2rem(-32px);
+    margin-left: px2rem(-16px);
+    margin-right: px2rem(-16px);
+    position: relative;
+    z-index: -1;
+}
+@media screen and (min-width: px2em(630px)) {
+    .LayoutAlternate {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: px2rem(20px);
+        overflow: auto;
+        padding: 0;
+    }
+    .LayoutAlternate-left {
+        float: left;
+    }
+    .LayoutAlternate-right {
+        float: right;
+    }
+    .LayoutAlternate-item {
+        width: 50%;
+        padding: px2rem(16px);
+    }
+    .LayoutAlternate-solo {
+        padding: 0 px2rem(64px);
+    }
+    .LayoutAlernate-item--leadPrimary {
+        margin-top: px2rem(32px);
+        width: 55%;
+        position: relative;
+        padding: 0;
+        z-index: 2;
+        padding: 0;
+    }
+    .LayoutAlernate-item--leadSecondary {
+        z-index: 1;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: px2rem(-64px);
+        padding: 0;
+    }
+}
+@media screen and (min-width: px2em(690px)) {
+    .LayoutAlternate-solo {
+        padding: px2rem(16px) px2rem(16px) 0 px2rem(16px);
+    }
+}
+@media screen and (min-width: px2em(750px)) {
+    .LayoutAlternate--chimney {
+        margin-top: px2rem(-42px);
+    }
+    .LayoutAlernate-item--leadPrimary {
+        margin-top: px2rem(40px);
+    }
+}
+@media screen and (min-width: px2em(900px)) {
+    .LayoutAlternate-item {
+        padding-left: px2rem(64px);
+        padding-right: px2rem(64px);
+    }
+    .LayoutAlternate-solo {
+        padding: px2rem(16px) px2rem(64px) 0 px2rem(64px);
+    }
+    .LayoutAlernate-item--leadSecondary,
+    .LayoutAlernate-item--leadPrimary {
+        padding: 0;
+    }
+}
+@media screen and (min-width: px2em(900px)) {
+    .LayoutAlternate--chimney {
+        margin-top: px2rem(-70px);
+    }
+}

@@ -1,0 +1,9 @@
+<div class="Author">
+    {% if authorImage %}
+    <img class="Author-image" src="{{ authorImage }}" alt="{{ authorName }}">
+    {% endif %}
+    <div class="Author-name">{{ authorName }}</div>
+    {% if authorMeta %}
+    <div class="Author-meta">{{ authorMeta }}</div>
+    {% endif %}
+</div><!--/.Author-->

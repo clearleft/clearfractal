@@ -1,0 +1,13 @@
+<article class="FeaturedCard">
+    <div class="FeaturedCard-primary">
+        <header>
+            <h3 class="FeaturedCard-title Heading Heading--secondary"><a href="{{featuredCardLink}}">{{featuredCardTitle}}</a></h3>
+        </header>
+        <div class="FeaturedCard-category">{{featuredCardCategory}}, featured</div>
+    </div><!--/.Featured-primary-->
+    {% if authorImage %}
+    <div class="FeaturedCard-secondary">
+            {% include '@author' %}
+    </div><!--/.Featured-secondary-->
+    {% endif %}
+</article><!--/.Featured-card-->

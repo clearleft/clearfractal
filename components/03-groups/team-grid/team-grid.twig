@@ -1,0 +1,7 @@
+<div class="TeamGrid">
+    {% for person in persons %}
+    <div class="TeamGrid-item">
+        {% include '@index-card' with {indexCardName: person.indexCardName, indexCardInfo: person.indexCardInfo, imageSrc: person.imageSrc} %}
+    </div>
+    {% endfor %}
+</div>

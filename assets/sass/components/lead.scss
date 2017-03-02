@@ -1,0 +1,48 @@
+.Lead {
+    @include font(18px, 28px);
+}
+.Lead--wrapper {
+    color: $Jet-grey;
+    background-color: $Blank;
+    border: px2rem(1px) solid #E2EBF1;
+    padding: px2rem(20px) px2rem(24px) px2rem(16px) px2rem(24px);
+    a {
+        color: $Brandeis-blue;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $Crayola-red;
+        }
+    }
+}
+.Lead--inverted {
+    color: $Blank;
+    a {
+        color: $Blank;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $Gainsboro-blue;
+        }
+    }
+}
+@media screen and (min-width: px2em(520px)) {
+    .Lead {
+        @include font(20px, 34px);
+    }
+    .Lead--wrapper {
+        padding: px2rem(32px) px2rem(32px) px2rem(38px) px2rem(32px);
+        margin-bottom: px2rem(8px);
+    }
+    .Lead-content {
+        width: 95%;
+    }
+}
+@media screen and (min-width: px2em(985px)) {
+    .Lead--wrapper {
+        padding: px2rem(42px) px2rem(64px) px2rem(38px) px2rem(64px);
+    }
+    .Lead {
+        @include font(23px, 36px);
+    }
+}

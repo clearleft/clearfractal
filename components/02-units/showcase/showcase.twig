@@ -1,0 +1,22 @@
+
+<div class="Showcase{% if showcaseModifier %} Showcase{{showcaseModifier}}{% endif %}" {% if showcaseMiscStyles %}style="{{showcaseMiscStyles}}"{% endif %}>
+    {% if showcaseModifier != "--featuredEvo Showcase--workEvo" %}
+    {% include '@site-header' %}
+    {% endif %}
+    <div class="Showcase-wrapper">
+        {% if showcaseModifier != "--featuredEvo Showcase--workEvo" %}
+        {% include '@breadcrumb' %}
+        {% endif %}
+        <div class="Showcase-primary">
+            <h1 class="Showcase-title Heading Heading--secondary">{{showcaseTitle}}</h1>
+            <div class="Showcase-description Lead Bar">{{showcaseText}}</div>
+        </div>
+        {% if showcaseLogo %}<img class="Showcase-logo" src="{{showcaseLogo}}" alt="">{% endif %}
+        {% if showcaseImage %}<img aria-hidden="true" class="Showcase-image" src="{{showcaseImage}}" alt="">{% endif %}
+    </div>
+    {% if showcaseModifier == "--featuredCh4" %}
+    <div class="Showcase-skew" aria-hidden="true">
+        <div class="Showcase-middle" aria-hidden="true"></div>
+    </div><!--/.Skewed section-->
+    {% endif %}
+</div><!--/.Showcase-->

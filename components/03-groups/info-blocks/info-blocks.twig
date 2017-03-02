@@ -1,0 +1,24 @@
+<div class="LayoutAlternate">
+   {% if books %}
+    <div class="LayoutAlternate-item"><h2 class="Heading Heading--small Bar">More from Andy</h2></div>
+    <div class="LayoutAlternate-left LayoutAlternate-item">
+        <h3 class="Heading Heading--body Heading--vibrant">Published books</h3>
+        <ul>
+        {% for book in books %}
+        {% include '@info-block' with book %}
+        {% endfor %}
+        </ul>
+    </div><!--/.Layout-alternate-item-->
+    {% endif %}
+    
+    {% if talks %}
+    <div class="LayoutAlternate-left LayoutAlternate-item">
+        <h3 class="Heading Heading--body Heading--vibrant">Previous talks</h3>
+        <ul>
+        {% for talk in talks %}
+        {% include '@info-block' with talk %}
+        {% endfor %}
+        </ul>
+    </div><!--/.Layout-alternate-item-->
+    {% endif %}
+</div><!--/.LayoutAlternate-->

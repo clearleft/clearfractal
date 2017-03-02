@@ -1,0 +1,17 @@
+
+.BlogArticle-intro {
+    margin-top: px2rem(-50px);
+}
+.BlogArticle {
+    max-width: px2rem(680px);
+    margin: px2rem(16px) auto px2rem(32px) auto;
+}
+
+@media only screen and (min-width: px2em(640px)) {
+    .BlogArticle {
+        position: relative;
+    }
+    .BlogArticle-intro {
+        margin-top: px2rem(-90px);
+    }
+}

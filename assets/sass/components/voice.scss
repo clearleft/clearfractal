@@ -1,0 +1,54 @@
+.Voice {
+    margin: 0 auto;
+    max-width: px2em(900px);
+    padding: px2rem(32px) px2rem(16px);
+}
+.Voice-cite {
+    margin-top: px2rem(16px);
+    margin-bottom: 0;
+}
+.Voice-description {
+    @include font(16px, 27px);
+}
+.Voice-person {
+    max-width: px2rem(100px);
+}
+@media screen and (min-width: px2em(300px)) {
+    .Voice-person {
+        float: left;
+        margin-right: px2rem(16px);
+    }
+}
+@media screen and (min-width: px2em(600px)) {
+    .Voice {
+        display: flex;
+        flex-wrap: wrap;
+        padding: px2rem(50px) px2rem(8px);
+    }
+    .Voice-person {
+        float: none;
+        width: 30%;
+        margin-right: 0;
+        padding: px2rem(8px);
+    }
+    .Voice-description {
+        width: 70%;
+        padding: px2rem(16px) px2rem(8px);
+    }
+}
+@media screen and (min-width: px2em(800px)) {
+    .Voice-person {
+        width: 20%;
+        max-width: none;
+    }
+    .Voice-description {
+        @include font(22px, 33px);
+        width: 65%;
+    }
+    .Voice-cite {
+        margin-top: px2rem(18px);
+    }
+    .Voice--tall {
+        padding-top: px2rem(145px);
+    }
+}

@@ -1,0 +1,23 @@
+
+<div class="Background Background--grey">
+    {% include '@site-header' %}
+    {% include '@masthead' %}
+</div>
+
+<main>
+
+    <div class="BlogArticle">
+        <div class="BlogArticle-intro">
+            {% include '@lead' %}
+        </div><!--/.BlogArticle-intro-->
+
+        {% include '@text-block' %}
+
+        {% include '@text-block' with {textBlockModifier: ''} %}
+
+    </div>
+
+
+</main>
+
+{% include '@site-footer' %}

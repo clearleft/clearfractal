@@ -1,0 +1,33 @@
+.Logo {
+    border-bottom: none;
+    display: inline-block;
+}
+.Logo--inverted .Logo-text {
+    fill: $Blank;
+}
+.Logo--plum .Logo-streak {
+    fill: $Brand-plum;
+}
+.Logo--carribean-green .Logo-streak {
+    fill: $Brand-carribean-green;
+}
+.Logo--sea-serpent-blue .Logo-streak {
+    fill: $Sea-serpent-blue;
+}
+.Logo--orange-yellow .Logo-streak {
+    fill: $Orange-yellow;
+}
+.Logo--crayola-red .Logo-streak {
+    fill: $Crayola-red;
+}
+.Logo--lapis-lazuli-blue .Logo-streak {
+    fill: $Lapis-lazuli-blue;
+}
+.Logo--brandeis-blue .Logo-streak {
+    fill: $Brandeis-blue;
+}
+@media only screen and (max-width: px2em(340px)) {
+    .Logo svg {
+        width: px2rem(130px);
+    }
+}

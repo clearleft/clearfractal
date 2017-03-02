@@ -1,0 +1,153 @@
+.Prose {
+    -webkit-font-smoothing: antialiased;
+    color: $Dark-liver-grey;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $font-secondary;
+        font-weight: 700;
+        -webkit-font-smoothing: antialiased;
+        color: $Jet-grey;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    h1 {
+        @include font(35px, 40px);
+        letter-spacing: px2rem(-0.5px);
+    }
+    h2 {
+        @include font(35px, 40px);
+        letter-spacing: px2rem(-0.5px);
+    }
+    h3 {
+        @include font(28px, 33px);
+        letter-spacing: px2rem(-0.4px);
+    }
+    h4 {
+        @include font(22px, 27px);
+        letter-spacing: px2rem(-0.3px);
+    }
+    h5 {
+        @include font(18px, 27px);
+        letter-spacing: px2rem(-0.3px);
+    }
+    h6 {
+        @include font(16px, 27px);
+        letter-spacing: px2rem(-0.3px);
+    }
+    p {
+        margin-bottom: px2rem(16px);
+        margin-top: px2rem(16px);
+    }
+    blockquote {
+        max-width: px2rem(680px);
+        position: relative;
+        margin: px2rem(40px) auto px2rem(20px) auto;
+        padding: px2rem(16px);
+        &:before {
+            background-image: url('/assets/img/quote-open.svg');
+            background-repeat: no-repeat;
+            content: ' ';
+            width: px2rem(60px);
+            height: px2rem(45px);
+            display: block;
+            position: absolute;
+            top: px2rem(-16px);
+            background-size: 65%;
+        }
+    }
+    ol,
+    ul {
+        padding-left: 2rem;
+    }
+    li {
+        margin: 0;
+    }
+    dd {
+        margin-left: 0;
+        padding-left: 2rem;
+    }
+    // abbr {
+    //     border-bottom: 1px dotted $light-grey;
+    // }
+    abbr[title] {
+        border-bottom: none;
+        text-decoration: underline;
+        text-decoration: underline dotted;
+    }
+    mark {
+        background-color: #ff0;
+        color: #000;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        @include font(14px, 24px);
+        width: 100%;
+    }
+    th {
+        background: #dce0d9;
+        font-weight: 400;
+        padding: 0.5rem;
+        text-align: left;
+    }
+    td {
+        border-bottom: 1px solid #dce0d9;
+        padding: 0.5rem;
+    }
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+    sub {
+        bottom: -0.25em;
+    }
+    sup {
+        top: -0.5em;
+    }
+}
+
+// Should probaby live elsewhere, but not sure where yet.
+@media screen and (max-width: px2em(480px)) {
+    .Table--narrow {
+        th:last-child,
+        td:last-child {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: px2em(500px)) {
+    .Prose {
+        h1 {
+            @include font(43px, 50px);
+            letter-spacing: px2rem(-0.46px);
+        }
+        h2 {
+            @include font(43px, 50px);
+            letter-spacing: px2rem(-0.46px);
+        }
+        h3 {
+            @include font(35px, 40px);
+            letter-spacing: px2rem(-0.5px);
+        }
+        h4 {
+            @include font(28px, 33px);
+            letter-spacing: px2rem(-0.4px);
+        }
+        h5 {
+            @include font(22px, 27px);
+            letter-spacing: px2rem(-0.3px);
+        }
+        h6 {
+            @include font(18px, 27px);
+            letter-spacing: px2rem(-0.3px);
+        }
+    }
+}

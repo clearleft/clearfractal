@@ -1,0 +1,27 @@
+<div class="Jobs">
+    <h2 class="Heading Heading--medium">Current Vacancies</h2>
+    <div class="Jobs-wrapper">
+        <div class="Jobs-section Jobs-section--side">
+            <h2 class="Heading Heading--body">Open Vacancies</h2>
+            <ul class="List Menu">
+                {% for job in jobs %}
+                <li class="List-item"><a class="Menu-item {% if job.current %} Menu-item--current{% endif %}" href="{{ job.url }}">{{ job.job }}</a></li>
+                {% endfor %}
+            </ul>
+        </div><!--/.Jobs-section-->
+
+        <div class="Jobs-section Jobs-section--main">
+
+            {% for job in jobs %}
+            <div class="Job" id="{{ job.url|replace({'#':''}) }}">
+                <h3 class="Heading Heading--small">{{ job.job }}</h3>
+                <div class="Prose">
+                    {{ jobProse }}
+                </div>
+                <a class="MegaLink" href="{{ jobApplyUrl }}">{{ jobApplyLink }}</a>
+            </div>
+            {% endfor %}
+
+        </div><!--/.Jobs-section-->
+    </div><!--/.Jobs-->
+</div><!--/.Jobs-->

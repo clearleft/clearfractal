@@ -1,0 +1,17 @@
+.Intro {
+    margin: 0 auto;
+    max-width: px2em(900px);
+    padding: px2rem(24px) px2rem(16px);
+}
+.Intro-text {
+    @include font(39px, 42px);
+    font-family: $font-secondary;
+    margin: 0;
+    padding: 0;
+    max-width: 42rem;
+}
+@media screen and (min-width: px2em(600px)) {
+    .Intro {
+        padding: px2rem(64px) 4%;
+    }
+}

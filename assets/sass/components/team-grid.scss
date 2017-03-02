@@ -1,0 +1,64 @@
+.TeamGrid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: px2rem(16px);
+}
+.TeamGrid-item {
+    display: inline-flex;
+}
+@media only screen and (min-width: px2em(280px)) {
+    .TeamGrid-item {
+        width: 50%;
+    }
+}
+@media only screen and (min-width: px2em(450px)) {
+    .TeamGrid-item {
+        width: 33.3%;
+    }
+}
+@media only screen and (min-width: px2em(680px)) {
+    .TeamGrid {
+        max-width: px2rem(720px);
+        padding-left: px2em(80px);
+        margin-bottom: px2rem(16px);
+    }
+    .TeamGrid-item:nth-child(6n+4) {
+        margin-left: px2em(-80px);
+    }
+}
+@media only screen and (min-width: px2em(980px)) {
+    .TeamGrid-item:nth-child(6n+4) {
+        margin-left: 0;
+    }
+    .TeamGrid-item {
+        width: 25%;
+    }
+    .TeamGrid-item:nth-child(8n+5) {
+        margin-left: px2em(-100px);
+    }
+    .TeamGrid {
+        max-width: px2rem(940px);
+        padding-left: 113px;
+    }
+}
+@media only screen and (min-width: px2em(1200px)) {
+    .TeamGrid {
+        max-width: px2rem(1160px);
+        padding-left: 100px;
+        margin-top: px2rem(-16px);
+    }
+    .TeamGrid-item {
+        .IndexCard,
+        .IndexCard-profile,
+        .IndexCard-image {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (min-width: px2em(1360px)) {
+    .TeamGrid {
+        max-width: px2rem(1260px);
+        padding-left: px2rem(126px);
+    }
+}

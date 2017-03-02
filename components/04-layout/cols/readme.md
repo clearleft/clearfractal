@@ -1,0 +1,1 @@
+The cols component ia used to create columned layouts. The modifier ```Cols--balanced``` centres the content vertically.

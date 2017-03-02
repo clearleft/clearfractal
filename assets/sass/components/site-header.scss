@@ -1,0 +1,20 @@
+.SiteHeader {
+    position: relative;
+    padding: px2rem(8px) px2rem(8px);
+    font-family: $font-secondary;
+}
+@media only screen and (min-width: px2em(280px)) {
+    .SiteHeader {
+        padding: px2rem(16px) px2rem(16px);
+    }
+}
+@media only screen and (min-width: px2em(720px)) {
+    .SiteHeader {
+        display: flex;
+        justify-content: space-between;
+        max-width: px2em(1040px);
+        margin-left: auto;
+        margin-right: auto;
+        padding: px2rem(24px) px2rem(16px);
+    }
+}

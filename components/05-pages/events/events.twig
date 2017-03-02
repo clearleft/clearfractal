@@ -1,0 +1,33 @@
+
+<div class="Background Background--lapis-lazuli-blue">
+    {% include '@site-header' %}
+    {% include '@masthead' %}
+</div>
+
+<main>
+    <div class="Background Background--lapis-lazuli-blue">{% include '@page-lead' %}</div>
+
+    <div>
+        {% for chapter in chapters %}
+            {% set chapterProse %}
+            {% include '@event-card' with chapter %}
+            {% endset %}
+            {% include '@chapter' with chapter %}
+        {% endfor %}
+    </div>
+
+    <div class="Background Background--lapis-lazuli-blue">
+        <div class="Extension Extension--clock">
+        {% include '@banner' %}
+            {% for pastEvent in pastEvents %}
+                {% set chapterProse %}
+                {% include '@event-card' with pastEvent %}
+                {% endset %}
+                {% include '@chapter' with pastEvent %}
+            {% endfor %}
+        </div>
+    </div>
+
+</main>
+
+{% include '@site-footer' %}

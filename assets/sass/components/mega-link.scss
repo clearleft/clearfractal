@@ -1,0 +1,34 @@
+.MegaLink {
+    position: relative;
+    font-family: $font-secondary;
+}
+.MegaLink--inverted {
+    color: $Blank;
+    border-color: $Blank;
+}
+.MegaLink--super {
+    @include font(22px, 27px);
+}
+.MegaLink--giant {
+    @include font(22px, 17px);
+}
+.MegaLink--button {
+    color: $Brandeis-blue;
+    border-bottom: $Crayola-red px2rem(2px) solid;
+    font-weight: 700;
+    padding-left: 0;
+    background: transparent;
+}
+.MegaLink--inverted {
+    color: $Blank;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $Blank;
+    }
+}
+@media screen and (min-width: px2em(600px)) {
+    .MegaLink--giant {
+        @include font(40px, 27px);
+    }
+}

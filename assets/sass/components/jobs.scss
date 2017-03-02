@@ -1,0 +1,25 @@
+.Jobs {
+    margin-top: px2rem(8px);
+    max-width: px2em(840px);
+    margin: 0 auto;
+    padding: px2rem(40px) px2rem(20px);
+}
+@media screen and (min-width: 700px) {
+    .Jobs {
+        padding-top: px2rem(60px);
+        padding-bottom: px2rem(60px);
+    }
+    .Jobs-wrapper {
+        display: flex;
+    }
+    .Jobs-section {
+        padding: px2rem(16px) 0;
+    }
+    .Jobs-section--side {
+        padding-right: px2rem(48px);
+        width: 28%;
+    }
+    .Jobs-section--main {
+        width: 75%;
+    }
+}

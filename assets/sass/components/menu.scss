@@ -1,0 +1,8 @@
+.Menu-item {
+    font-family: $font-secondary;
+    font-size: px2rem(16px);
+}
+.Menu-item--current {
+    color: $mid-grey;
+    border-bottom: none;
+}

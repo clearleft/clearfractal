@@ -1,0 +1,38 @@
+<div class="PenguinProject{%if penguinModifier %} PenguinProject{{penguinModifier}}{% endif %}">
+
+    {% if "--stage" in penguinModifier %}
+    {% include '@site-header' %}
+    {% endif %}
+
+    <div class="PenguinProject-wrapper">
+
+        {% if "--stage" in penguinModifier %}
+        <div class="Ch4Project-breadcrumb">
+            {% include '@breadcrumb' %}
+        </div>
+        {% endif %}
+
+        <div class="PenguinProject-content">
+
+            <div class="PenguinProject-question">{{ penguinQuestion }}</div>
+
+            {% if "--stage" in penguinModifier %}
+            <h2 class="PenguinProject-title Heading Heading--secondary Heading--inverted">{{ penguinTitle }}</h2>
+            {% else %}
+            <a href="{{ penguinLinkUrl }}"><h2 class="PenguinProject-title Heading Heading--secondary Heading--inverted">{{ penguinTitle }}</h2></a>
+            {% endif %}
+
+            {% if penguinDescription %}
+            <div class="PenguinProject-description Lead Bar">
+                {{penguinDescription}}
+            </div>
+            {% endif %}
+
+            {% if penguinLogoSrc %}
+            <img class="PenguinProject-logo" src="{{ penguinLogoSrc }}" alt="{{ penguinLogoAlt }}">
+            {% endif %}
+
+        </div>
+
+    </div>
+</div><!--./PenguinProject-->
