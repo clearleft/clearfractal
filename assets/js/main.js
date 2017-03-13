@@ -24,3 +24,6 @@ for (var card of document.querySelectorAll('.FeaturedCard')) {
 
 new Jobs( document.querySelector('.Jobs') );
 new PrimaryNavigation( document.querySelector('.PrimaryNavigation') );
+
+// Code Highlighting
+hljs.initHighlightingOnLoad();
