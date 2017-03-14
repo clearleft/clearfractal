@@ -23,8 +23,8 @@ function Peek(elm) {
     this.peek.setAttribute('style', `
         position: absolute;
         color: #f4f4f4;
-        font-family: "Gilroy", "Helvetica Neue", sans-serif;
-        font-size: 160px;
+        font-family: "Gilroy Black", "Helvetica Neue", sans-serif;
+        font-size: 190px;
         font-weight: 700;
         margin: 0;
         padding: 0;

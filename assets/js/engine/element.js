@@ -23,13 +23,13 @@ export default Element = {
         let styleAttribute = this._elm.getAttribute('style');
 
         if( styleAttribute ) {
-            let setStyles   = styleAttribute.replace(/\s*/g, ''); // remove all spaces
+            let setStyles   = styleAttribute.trim();
             let stylesArray = setStyles ? setStyles.split(';') : []; // split the syles into their property:value pairs
 
             for (var style of stylesArray) {
                 if( style.trim() != '' ) {
-                    let [key, value] = style.split(':');
-                    this.styles[key] = value;
+                    let [key, value] = style.trim().split(':');
+                    this.styles[key.trim()] = value.trim();
                 }
             }
         }
