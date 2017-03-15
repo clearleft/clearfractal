@@ -1,15 +1,15 @@
 /*
-    (class) Element.
+    (class) CustomElement.
 
     Provides an abstraction around a DOM element.
     Allows for maintaining styles and manipulating them in a performant manner.
 
     e.g.
-    let elm = Object.create(Element);
+    let elm = Object.create(CustomElement);
     elm.init( document.querySelector('.MyClass') );
 */
 
-export default Element = {
+export default CustomElement = {
 
     init(elm) {
         this._elm   = elm;
@@ -78,7 +78,7 @@ export const ElementPool = {
         let idx = this.ElementPool.indexOf(elm);
 
         if( idx === -1 ) {
-            let obj = Object.create(Element);
+            let obj = Object.create(CustomElement);
 
             obj.init(elm);
             obj.getStyles();
