@@ -10,6 +10,7 @@
     text-align: right;
 }
 .OffCanvas-close {
+    display: none;
     background-color: transparent;
     color: $Blank;
     @include font(18px, 27px);
@@ -37,7 +38,15 @@
     }
 }
 
-@media screen and (min-width: px2em(500px)) {
+@media screen and (max-height: px2em(400px)) {
+    .OffCanvas-list {
+        margin-top: 0;
+    }
+    .OffCanvas-link {
+        font-size: 9vh;
+    }
+}
+@media screen and (min-width: px2em(500px)) and (min-height: px2em(500px)) {
     .OffCanvas-close {
         @include font(28px, 33px);
     }
