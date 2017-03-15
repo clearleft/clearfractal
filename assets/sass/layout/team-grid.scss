@@ -1,0 +1,100 @@
+.TeamGrid {
+    margin: auto;
+    margin-bottom: px2rem(16px);
+    max-width: px2rem(280px);
+}
+.TeamGrid-item {
+    .IndexCard {
+        display: block;
+        height: 100%;
+    }
+    .IndexCard-profile,
+    .IndexCard-image {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: px2em(300px)) {
+    .TeamGrid {
+        max-width: px2rem(720px);
+    }
+    .TeamGrid-item {
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+    }
+}
+@media only screen and (min-width: px2em(480px)) {
+    .TeamGrid-item {
+        width: 32%;
+    }
+}
+@media only screen and (min-width: px2em(680px)) {
+    .TeamGrid {
+        padding-left: px2em(80px);
+        margin-bottom: px2rem(16px);
+    }
+}
+@media only screen and (min-width: px2em(980px)) {
+    .TeamGrid {
+        max-width: px2rem(940px);
+        padding-left: px2rem(113px);
+    }
+    .TeamGrid-item {
+        width: 24%;
+    }
+}
+@media only screen and (min-width: px2em(1200px)) {
+    .TeamGrid {
+        max-width: px2rem(1160px);
+        padding-left: 100px;
+        margin-top: px2rem(-16px);
+    }
+}
+@media only screen and (min-width: px2em(1360px)) {
+    .TeamGrid {
+        max-width: px2rem(1260px);
+        padding-left: px2rem(126px);
+    }
+}
+
+@supports (display: grid) {
+    .TeamGrid {
+        display: grid;
+    }
+    .TeamGrid-item {
+        width: 100%;
+    }
+
+    @media only screen and (min-width: px2em(300px)) {
+        .TeamGrid {
+            grid-template-columns: repeat(2, 50%);
+        }
+    }
+
+    @media only screen and (min-width: px2em(480px)) {
+        .TeamGrid {
+            grid-template-columns: repeat(3, 33.333%);
+        }
+    }
+
+    @media only screen and (min-width: px2em(680px)) and (max-width: px2em(979px)) {
+        .TeamGrid-item:nth-child(6n-2),
+        .TeamGrid-item:nth-child(6n-1),
+        .TeamGrid-item:nth-child(6n) {
+            transform: translateX(px2em(-80px));
+        }
+    }
+
+    @media only screen and (min-width: px2em(980px)) {
+        .TeamGrid {
+            grid-template-columns: repeat(4, 25%);
+        }
+
+        .TeamGrid-item:nth-child(8n-3),
+        .TeamGrid-item:nth-child(8n-2),
+        .TeamGrid-item:nth-child(8n-1),
+        .TeamGrid-item:nth-child(8n) {
+            transform: translateX(px2em(-100px));
+        }
+    }
+}
