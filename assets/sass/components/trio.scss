@@ -47,6 +47,9 @@
 .Trio--channel4 {
     background-color: #651C98;
     background-image: linear-gradient(-179deg, #651C98 3%, #4D1574 71%, #4D1574 84%);
+    position: relative;
+    z-index: 5;
+    margin-top: px2rem(-17px);
 }
 /*Trio for the featued Penguin case study */
 .Trio--penguin {
@@ -66,6 +69,9 @@
     }
     .Trio-statsFigure {
         @include font(50px, 60px);
+    }
+    .Trio--channel4 {
+        margin-top: px2rem(-42px);
     }
 }
 @media screen and (min-width: px2rem(720px)) {
