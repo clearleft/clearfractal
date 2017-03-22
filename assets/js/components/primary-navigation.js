@@ -1,9 +1,8 @@
 
-import ClearCore from '../engine/clearcore.js';
-
 function PrimaryNavigation(elm) {
 
     if( !elm ) {
+        console.warn('No primary navigation element provided!')
         return;
     }
 
@@ -15,7 +14,11 @@ function PrimaryNavigation(elm) {
     this.canvasClose    = this.offCanvas.querySelector('.OffCanvas-close');
 
     // states
-    this.isOpen = false;
+    this.isOpen         = false;
+
+    // hide the template (for non-supporting browsers)
+    document.querySelector('#offcanvas').style.display = 'none';
+    this.canvasClose.style.display = 'inline-block';
 
     // Set various styles on the off-canvas then add it to the document.
     this.offCanvas.style.display    = 'none';
@@ -26,6 +29,7 @@ function PrimaryNavigation(elm) {
 
     // events
     this.button.addEventListener('click', e => {
+        e.preventDefault();
         this.toggle();
     });
 
@@ -34,7 +38,7 @@ function PrimaryNavigation(elm) {
     });
 
     window.addEventListener('resize', e => {
-        if( ClearCore.screenDimensions.width > 719 && !this.isOpen ) {
+        if( window.innerWidth > 719 && !this.isOpen ) {
             this.links.style = '';
         }
     });
@@ -45,11 +49,13 @@ PrimaryNavigation.prototype = {
     toggle() {
         if( this.isOpen ) {
             this.offCanvas.style.display    = 'none';
+            this.body.position              = 'fixed';
             this.body.style.overflow        = '';
             this.isOpen                     = false;
         }
         else {
             this.offCanvas.style.display    = 'block';
+            this.body.position              = '';
             this.body.style.overflow        = 'hidden';
             this.isOpen                     = true;
         }

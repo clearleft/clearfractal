@@ -1,6 +1,6 @@
 
 <nav class="PrimaryNavigation{% if primaryNavModifiers %} PrimaryNavigation{{ primaryNavModifiers|join(' PrimaryNavigation') }}{% endif %}" data-component="PrimaryNavigation">
-    <button class="PrimaryNavigation-menu" aria-hidden="true">Menu</button>
+    <a href="#offcanvas" class="PrimaryNavigation-menu" aria-hidden="true">Menu</a>
     <ul class="PrimaryNavigation-list">
         {% for primaryNavlink in primaryNavlinks %}
         <li class="PrimaryNavigation-listItem"><a href="{{primaryNavlink.url}}" class="PrimaryNavigation-link{% if primaryNavlink.primaryActive %} is-active {% endif %}">{{ primaryNavlink.title }}</a></li>

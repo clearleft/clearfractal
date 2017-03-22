@@ -111,6 +111,10 @@
     sup {
         top: -0.5em;
     }
+    code {
+        font-family: 'Monaco', 'Consolas', 'Menlo', monospace;
+        font-size: px2rem(12px);
+    }
 }
 
 // Should probaby live elsewhere, but not sure where yet.

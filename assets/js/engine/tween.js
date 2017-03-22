@@ -1,7 +1,6 @@
 
 import ClearCore from './clearcore.js';
 import Easings from './easings.js';
-import Element from './element.js';
 import { ElementPool } from './element.js';
 
 /******

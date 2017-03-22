@@ -105,7 +105,8 @@ const CSSProcessors = [
 
 
 function sassLint() {
-    return gulp.src( 'assets/sass/**/*' )
+    // lint all files except those in a _vendor folder (I ain't fixing someone else's code).
+    return gulp.src( ['assets/sass/**/*.scss', '!assets/sass/_vendor/*.scss'] )
         // lint
         .pipe(stylelint({
             reporters: [
@@ -132,7 +133,7 @@ function sassBuild(prefix) {
 
             // compile SASS
             .pipe(
-                sass().on('error', sass.logError)
+                sass({outputStyle: 'compact'}).on('error', sass.logError)
             )
 
             // PostCSS
@@ -254,13 +255,23 @@ function scripts(prefix) {
     }
 }
 
-gulp.task('scripts', scripts());
+function copyScripts(prefix) {
+
+    return () => {
+        let path = '/public/assets/js/';
+        console.log(prefix, path);
+        return gulp.src( __dirname+'/assets/js/highlight.pack.js' )
+        .pipe( gulp.dest( (prefix || __dirname) + path + '/' ) );
+    }
+}
+
+gulp.task('scripts', gulp.series( scripts(), copyScripts() ) );
 
 ////
 
 function build(dest) {
 
-    return gulp.series(sassBuild(dest), images(dest), fonts(dest), scripts(dest) );
+    return gulp.series(sassBuild(dest), images(dest), fonts(dest), scripts(dest), copyScripts(dest) );
 }
 
 /** Watch **/
