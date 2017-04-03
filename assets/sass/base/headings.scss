@@ -21,12 +21,14 @@ a .Heading {
 .Heading--main {
     @include font(48px, 52px);
     font-family: $font-statement;
+    font-weight: 800;
     letter-spacing: -1.04px;
 }
 .Heading--secondary {
     @include font(39px, 42px);
-    letter-spacing: -0.42px;
     font-family: $font-statement;
+    font-weight: 800;
+    letter-spacing: -0.42px;
 }
 // body h2
 .Heading--medium {
