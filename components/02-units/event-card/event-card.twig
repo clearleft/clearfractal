@@ -1,4 +1,4 @@
-<div class="EventCard{% if eventCardModifier %} EventCard{{eventCardModifier}}{% endif %}">
+<div class="EventCard{% if eventCardModifier %} EventCard{{eventCardModifier}}{% endif %}"{% if eventBackground %}style="background-color:{{eventBackground}}"{% endif %}>
     {% if eventCardContext %}
     <p class="EventCard-context ">{{ eventCardContext }}</p>
     {% endif %}

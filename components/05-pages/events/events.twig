@@ -1,31 +1,64 @@
 
-<div class="Background Background--lapis-lazuli-blue">
+<div class="Background Background--grey">
     {% include '@site-header' %}
     {% include '@masthead' %}
 </div>
 
 <main>
-    <div class="Background Background--lapis-lazuli-blue">{% include '@page-lead' %}</div>
+    <div class="Background Background--grey">
+        {% include '@page-lead' %}
+    </div>
 
+    {# Current events #}
     <div>
-        {% for chapter in chapters %}
-            {% set chapterProse %}
-            {% include '@event-card' with chapter %}
-            {% endset %}
-            {% include '@chapter' with chapter %}
+        {% for event in currentEvents %}
+            <div class="EventBlock EventBlock--current">
+                <div class="EventBlock-primary">
+                    {% include '@event-card' with event %}
+                </div>
+                <div class="EventBlock-secondary">
+                    <div class="EventBlock-secondaryImages1">
+                        <img src="https://placehold.it/812x650" alt="Crowd shot - nothing to see here">
+                    </div>
+                    <div class="EventBlock-secondaryImages2">
+                        <picture>
+                            <source srcset="https://placehold.it/277x312">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+                        </picture>
+                        <picture>
+                            <source srcset="https://placehold.it/277x312">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+                        </picture>
+                    </div>
+                    <div class="EventBlock-secondaryImages3">
+                        <picture>
+                            <source srcset="https://placehold.it/277x312">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+                        </picture>
+                        <picture>
+                            <source srcset="https://placehold.it/277x312">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
         {% endfor %}
     </div>
 
-    <div class="Background Background--lapis-lazuli-blue">
-        <div class="Extension Extension--clock">
+    {# Past Events #}
+    <div class="Background Background--grey">
         {% include '@banner' %}
-            {% for pastEvent in pastEvents %}
-                {% set chapterProse %}
-                {% include '@event-card' with pastEvent %}
-                {% endset %}
-                {% include '@chapter' with pastEvent %}
-            {% endfor %}
-        </div>
+
+        {% for event in pastEvents %}
+            <div class="EventBlock EventBlock--past">
+                <div class="EventBlock-secondary">
+                    <img src="https://placehold.it/812x650" alt="Crowd shot - nothing to see here">
+                </div>
+                <div class="EventBlock-primary">
+                    {% include '@event-card' with event %}
+                </div>
+            </div>
+        {% endfor %}
     </div>
 
 </main>

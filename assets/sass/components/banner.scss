@@ -32,9 +32,14 @@
 .Banner--notice {
     color: $Jet-grey;
     background-color: $Anti-white-flash;
+    .Banner-caption {
+        color: $Lapis-lazuli-blue;
+    }
 }
-.Banner--notice .Banner-caption {
-    color: $Lapis-lazuli-blue;
+.Banner--plain {
+    .Banner-caption {
+        color: $Dark-liver-grey;
+    }
 }
 .Banner--decorated {
     background-color: $Crayola-red;
