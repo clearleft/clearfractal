@@ -26,6 +26,7 @@
     display: block;
     @include font(40px, 47px);
     font-family: $font-statement;
+    font-weight: 800;
     letter-spacing: -0.58px;
     padding: px2em(2px) 1rem;
     text-align: center;
