@@ -42,6 +42,9 @@
     .EventCard-eventName {
         @include font(40px, 49px);
     }
+    .EventCard-image {
+        margin-bottom: px2rem(42px);
+    }
 }
 
 
@@ -104,7 +107,7 @@
 
 @media screen and (min-width: px2em(720px)) {
     .EventBlock--current {
-        margin: 2rem 0;
+        margin: 2rem auto;
         .EventCard {
             padding: px2rem(48px) px2rem(74px);
         }
