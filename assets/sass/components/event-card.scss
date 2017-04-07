@@ -102,6 +102,15 @@
     }
 }
 
+@media screen and (min-width: px2em(720px)) {
+    .EventBlock--current {
+        margin: 2rem 0;
+        .EventCard {
+            padding: px2rem(48px) px2rem(74px);
+        }
+    }
+}
+
 @supports (display: grid) {
 
     @media screen and (min-width: px2em(960px)) {
