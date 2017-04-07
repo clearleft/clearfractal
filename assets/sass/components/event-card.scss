@@ -114,6 +114,40 @@
     }
 }
 
+@media screen and (min-width: px2em(960px)) {
+    .EventBlock--past {
+        padding: px2rem(48px);
+        > * {
+            width: 50%;
+        }
+        .EventBlock-primary {
+            padding: 0 px2rem(48px);
+        }
+        .EventCard {
+            padding: 0;
+        }
+    }
+    .EventBlock--past {
+        .EventBlock-primary {
+            order: 2;
+        }
+        .EventBlock-secondary {
+            order: 1;
+        }
+    }
+    .EventBlock--past:nth-child(even) {
+        .EventBlock-primary {
+            order: 1;
+        }
+        .EventBlock-secondary {
+            order: 2;
+        }
+    }
+    .EventBlock + .EventBlock {
+        margin-top: px2rem(32px);
+    }
+}
+
 @supports (display: grid) {
 
     @media screen and (min-width: px2em(960px)) {
@@ -155,37 +189,6 @@
             .EventBlock-secondaryImages2 {
                 order: 1;
             }
-        }
-        .EventBlock--past {
-            padding: px2rem(48px);
-            > * {
-                width: 50%;
-            }
-            .EventBlock-primary {
-                padding: 0 px2rem(48px);
-            }
-            .EventCard {
-                padding: 0;
-            }
-        }
-        .EventBlock--past {
-            .EventBlock-primary {
-                order: 2;
-            }
-            .EventBlock-secondary {
-                order: 1;
-            }
-        }
-        .EventBlock--past:nth-child(even) {
-            .EventBlock-primary {
-                order: 1;
-            }
-            .EventBlock-secondary {
-                order: 2;
-            }
-        }
-        .EventBlock + .EventBlock {
-            margin-top: px2rem(32px);
         }
     }
     @media screen and (min-width: px2em(1200px)) {
