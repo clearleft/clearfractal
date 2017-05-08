@@ -57,11 +57,15 @@
 .EventBlock + .EventBlock {
     margin-top: 1rem;
 }
-.EventBlock--current {
+.EventBlock--current,
+.EventBlock--largeBG {
     .EventCard {
         max-width: px2rem(540px);
         padding: px2rem(32px) px2rem(24px);
     }
+}
+.EventBlock-alternate {
+    display: none;
 }
 .EventBlock--past {
     background-color: #fff;
@@ -86,7 +90,8 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .EventBlock--current {
+    .EventBlock--current,
+    .EventBlock--largeBG {
         position: relative;
         padding: px2rem(8px) 0;
 
@@ -97,7 +102,8 @@
             z-index: 5;
         }
     }
-    .EventBlock--current:nth-child(odd) {
+    .EventBlock--current:nth-child(odd),
+    .EventBlock--largeBG:nth-child(odd) {
         justify-content: flex-end;
         .EventBlock-primary {
             right: 0;
@@ -106,7 +112,8 @@
 }
 
 @media screen and (min-width: px2em(720px)) {
-    .EventBlock--current {
+    .EventBlock--current,
+    .EventBlock--largeBG {
         margin: 2rem auto;
         .EventCard {
             padding: px2rem(48px) px2rem(74px);
@@ -115,6 +122,26 @@
 }
 
 @media screen and (min-width: px2em(960px)) {
+    .EventBlock-alternate {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        max-width: px2rem(640px);
+        left: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 45%;
+        z-index: 5;
+
+        img {
+            height: 30%;
+            margin: px2rem(4px);
+            width: 30%;
+        }
+    }
+    .EventBlock-alternate:nth-child(even) {
+        left: 2rem;
+    }
     .EventBlock--past {
         padding: px2rem(48px);
         > * {
@@ -145,6 +172,17 @@
     }
     .EventBlock + .EventBlock {
         margin-top: px2rem(32px);
+    }
+}
+
+@media screen and (min-width: px2em(1200px)) {
+    .EventBlock-alternate {
+        width: auto;
+
+        img {
+            height: auto;
+            width: auto;
+        }
     }
 }
 
