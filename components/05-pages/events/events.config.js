@@ -17,12 +17,31 @@ module.exports = {
 
         "currentEvents": [
             {
+                "src": "http://placehold.it/1330x650",
+                "srcAlt": "Patterns Day",
+                "eventBackground": "url('http://clearleft-v5.s3.amazonaws.com/events/light-tiles.png') 0 50% no-repeat",
+                "eventCardModifier": "",
+                "eventCardContext": "May 24-26 2017  laban, london",
+                "eventCardSrc": "http://placehold.it/380x70",
+                "eventCardAlt": "Patterns Day",
+                "eventCardUrl": "",
+                "eventCardLink": "Visit Event",
+                "eventCardDescription": "<p>Here is some description text. It keeps going a little bit like this and more words are also here.</p>",
+                "eventCardListTitle": "Visit past versions:",
+                "pastVersions": [
+                    { "item": "2016", "itemUrl": "#" },
+                    { "item": "2015", "itemUrl": "#" },
+                    { "item": "2014", "itemUrl": "#" },
+                    { "item": "2013", "itemUrl": "#" }
+                ],
+            },
+            {
                 "src": "http://placehold.it/760x650",
                 "srcAlt": "UXLondon",
                 "eventBackground": "#1F6B9C",
                 "eventCardModifier": "--inverted",
                 "eventCardContext": "May 24-26 2017  laban, london",
-                "eventCardSrc": "https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo.svg",
+                "eventCardSrc": "http://placehold.it/380x70",
                 "eventCardAlt": "UX London",
                 "eventCardUrl": "",
                 "eventCardLink": "Visit UX London",
