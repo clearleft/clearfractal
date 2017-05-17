@@ -1,0 +1,17 @@
+
+.WorkshopBlock {
+    padding: px2rem(16px);
+}
+
+@media only screen and (min-width: px2em(720px)) {
+    .WorkshopBlock {
+        display: flex;
+        padding: 3rem;
+    }
+    .WorkshopBlock-primary {
+        flex: 1 0 40%;
+    }
+    .WorkshopBlock-secondary {
+        flex: 1 0 60%;
+    }
+}

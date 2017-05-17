@@ -34,6 +34,15 @@
     -webkit-font-smoothing: antialiased;
 }
 
+.InputGroup--prominent {
+    margin: 0 auto;
+
+    .InputGroup-submit {
+        background-color: $Orange-yellow;
+        color: $Jet-grey;
+    }
+}
+
 @media screen and (min-width: px2em(420px)) {
     .InputGroup-field {
         @include font(16px);

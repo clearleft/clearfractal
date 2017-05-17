@@ -27,6 +27,18 @@
         color: $Blank;
     }
 }
+.MegaLink--block {
+    background-color: $Lapis-lazuli-blue;
+    border-bottom: none;
+    color: $Blank;
+    @include font(22px, 27px);
+    padding: px2rem(16px) px2rem(32px);
+
+    span {
+        display: inline-block;
+        border-bottom: 2px solid $Crayola-red;
+    }
+}
 @media screen and (min-width: px2em(600px)) {
     .MegaLink--giant {
         @include font(40px, 27px);
