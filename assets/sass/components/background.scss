@@ -5,6 +5,13 @@
     background-color: $Anti-white-flash;
     color: $Jet-grey;
 }
+.Background--carribean-green {
+    background-color: $Brand-carribean-green;
+    color: $Blank;
+    a {
+        color: $Blank;
+    }
+}
 .Background--lapis-lazuli-blue {
     background-color: $Lapis-lazuli-blue;
     color: $Blank;
@@ -12,15 +19,11 @@
         color: $Blank;
     }
 }
+.Background--orange-yellow {
+    background-color: $Orange-yellow;
+}
 .Background--plum {
     background-color: $Brand-plum;
-    color: $Blank;
-    a {
-        color: $Blank;
-    }
-}
-.Background--carribean-green {
-    background-color: $Brand-carribean-green;
     color: $Blank;
     a {
         color: $Blank;

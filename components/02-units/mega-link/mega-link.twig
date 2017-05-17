@@ -1,1 +1,7 @@
-<a href="{{megaLinkURL}}" class="MegaLink{% if megaLinkModifier %} MegaLink{{megaLinkModifier}}{% endif %}">{{megaLinkText}}</a>
+<a href="{{megaLinkURL}}" class="MegaLink{% if megaLinkModifier %} MegaLink{{megaLinkModifier}}{% endif %}">
+{% if megaLinkModifier == '--block' %}
+<span>{{megaLinkText}}</span>
+{% else %}
+{{megaLinkText}}
+{% endif %}
+</a>

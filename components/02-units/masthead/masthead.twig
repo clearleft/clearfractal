@@ -22,7 +22,7 @@
 
         {% if mastheadHasSelector %}{% include '@selector' %}{% endif %}
 
-        {% if mastheadSub %}<p class="Masthead-sub Heading Heading--context{% if mastheadHeadingModifer %} Heading{{ mastheadHeadingModifer }}{% endif %}">{{ mastheadSub }}</p>{% endif %}
+        {% if mastheadSub %}<p class="Masthead-sub{% if mastheadSubModifer %} Masthead-sub{{ mastheadSubModifer }}{% endif %} Heading Heading--context{% if mastheadHeadingModifer %} Heading{{ mastheadHeadingModifer }}{% endif %}">{{ mastheadSub }}</p>{% endif %}
 
     </div><!--/.Masthead-primary-->
 

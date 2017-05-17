@@ -139,8 +139,11 @@
             width: 30%;
         }
     }
-    .EventBlock-alternate:nth-child(even) {
-        left: 2rem;
+    .EventBlock--largeBG:nth-child(even) {
+        .EventBlock-alternate {
+            left: auto;
+            right: 2rem;
+        }
     }
     .EventBlock--past {
         padding: px2rem(48px);

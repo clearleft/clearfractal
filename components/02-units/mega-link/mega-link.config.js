@@ -4,22 +4,30 @@ module.exports = {
         "megaLinkURL": "",
         "megaLinkText": "A link to somewhere"
     },
-    "variants": [{
-        "name": "Super",
-        "context": {
-            "megaLinkModifier": "--super"
+    "variants": [
+        {
+            "name": "Super",
+            "context": {
+                "megaLinkModifier": "--super"
+            }
+        },
+        {
+            "name": "Giant",
+            "context": {
+                "megaLinkModifier": "--giant"
+            }
+        },
+        {
+            "name": "Inverted",
+            "context": {
+                "megaLinkModifier": "--inverted"
+            }
+        },
+        {
+            "name": "Block",
+            "context": {
+                "megaLinkModifier": "--block"
+            }
         }
-    },
-    {
-        "name": "Giant",
-        "context": {
-            "megaLinkModifier": "--giant"
-        }
-    },
-    {
-        "name": "Inverted",
-        "context": {
-            "megaLinkModifier": "--inverted"
-        }
-    }]
+    ]
 }

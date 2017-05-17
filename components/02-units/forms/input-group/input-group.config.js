@@ -2,6 +2,7 @@
 module.exports = {
     "status": "wip",
     "context": {
+        "inputGroupURL": "#",
         "inputGroupLabel": "Form input label",
         "inputGroupSubmit": "Get the Clearletter",
         "inputGroupID": "ID1",
