@@ -1,6 +1,3 @@
-{% if "--stage" not in penguinModifier %}
-<a href="{{ penguinLinkUrl }}">
-{% endif %}
 <div class="PenguinProject{%if penguinModifier %} PenguinProject{{penguinModifier}}{% endif %}">
 
     {% if "--stage" in penguinModifier %}
@@ -21,6 +18,10 @@
 
             <h2 class="PenguinProject-title Heading Heading--secondary Heading--inverted">{{ penguinTitle }}</h2>
 
+            {% if "--stage" not in penguinModifier %}
+            <a href="{{ penguinLinkUrl }}" class="MegaLink MegaLink--inverted">Read the case study</a>
+            {% endif %}
+
             {% if penguinDescription %}
             <div class="PenguinProject-description Lead Bar">
                 {{penguinDescription}}
@@ -35,6 +36,3 @@
 
     </div>
 </div><!--./PenguinProject-->
-{% if "--stage" not in penguinModifier %}
-</a>
-{% endif %}
