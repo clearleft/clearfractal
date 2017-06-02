@@ -1,6 +1,3 @@
-{% if "--stage" not in ch4Modifier %}
-<a href="{{ ch4LinkUrl }}">
-{% endif %}
 <div class="Ch4Project{%if ch4Modifier %} Ch4Project{{ch4Modifier}}{% endif %}">
 
     {% if "--stage" in ch4Modifier %}
@@ -21,6 +18,10 @@
 
             <h2 class="Ch4Project-title Heading Heading--secondary Heading--inverted">{{ ch4Title }}</h2>
 
+            {% if "--stage" not in ch4Modifier %}
+            <a href="{{ ch4LinkUrl }}" class="MegaLink MegaLink--inverted">Read the case study</a>
+            {% endif %}
+
             {% if ch4Description %}
             <div class="Ch4Project-description Lead Bar">
                 {{ ch4Description }}
@@ -35,6 +36,3 @@
 
     </div>
 </div><!--./Ch4Project-->
-{% if "--stage" not in ch4Modifier %}
-</a>
-{% endif %}

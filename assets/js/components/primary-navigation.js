@@ -48,16 +48,20 @@ PrimaryNavigation.prototype = {
 
     toggle() {
         if( this.isOpen ) {
-            this.offCanvas.style.display    = 'none';
-            this.body.position              = 'fixed';
+            this.offCanvas.style.opacity    = 0;
             this.body.style.overflow        = '';
             this.isOpen                     = false;
+
+            setTimeout(() => { this.offCanvas.style.display = 'none'; }, 200);
         }
         else {
+            this.offCanvas.classList.add('isActive');
             this.offCanvas.style.display    = 'block';
-            this.body.position              = '';
+            this.offCanvas.style.opacity    = 0;
             this.body.style.overflow        = 'hidden';
             this.isOpen                     = true;
+
+            setTimeout(() => { this.offCanvas.style.opacity = 1; }, 20);
         }
     }
 }

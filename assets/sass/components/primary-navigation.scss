@@ -88,3 +88,13 @@
         margin-left: px2rem(16px);
     }
 }
+
+.OffCanvas {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+
+    &.isActive {
+        display: block;
+        opacity: 1;
+    }
+}
