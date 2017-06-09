@@ -5,6 +5,13 @@
     background-color: $Anti-white-flash;
     color: $Jet-grey;
 }
+.Background--brandeis-blue {
+    background-color: $Brandeis-blue;
+    color: $Blank;
+    a {
+        color: $Blank;
+    }
+}
 .Background--carribean-green {
     background-color: $Brand-carribean-green;
     color: $Blank;
@@ -28,6 +35,9 @@
     a {
         color: $Blank;
     }
+}
+.Background--sea-serpent-blue {
+    background-color: $Sea-serpent-blue;
 }
 .Background--frill {
     box-shadow: 0 -2px 0 0 $Gainsboro-blue, 0 2px 0 0 $Gainsboro-blue;
