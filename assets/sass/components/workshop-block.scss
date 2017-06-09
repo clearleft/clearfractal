@@ -2,6 +2,9 @@
 .WorkshopBlock {
     padding: px2rem(16px);
 }
+.WorkshopBlock + .WorkshopBlock {
+    margin-top: 1rem;
+}
 
 @media only screen and (min-width: px2em(720px)) {
     .WorkshopBlock {
@@ -13,5 +16,8 @@
     }
     .WorkshopBlock-secondary {
         flex: 1 0 60%;
+    }
+    .WorkshopBlock + .WorkshopBlock {
+        margin-top: 3rem;
     }
 }
