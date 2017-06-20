@@ -1,9 +1,10 @@
 <article class="FeaturedCard">
     <div class="FeaturedCard-primary">
         <header>
-            <h3 class="FeaturedCard-title Heading Heading--secondary"><a href="{{featuredCardLink}}">{{featuredCardTitle}}</a></h3>
+            <h3 class="FeaturedCard-title Heading Heading--secondary"><a href="{{ featuredCardLink }}">{{featuredCardTitle}}</a></h3>
         </header>
-        <div class="FeaturedCard-category">{{featuredCardCategory}}, featured</div>
+        <div class="FeaturedCard-category">{{ featuredCardCategory }}, featured</div>
+        <div class="FeaturedCard-description">{{ featuredCardDescription }}</div>
     </div><!--/.Featured-primary-->
     {% if authorImage %}
     <div class="FeaturedCard-secondary">
