@@ -19,11 +19,8 @@
         margin: px2rem(-75px) auto 0;
     }
     .Work-gridItem {
-        &:nth-child(1) {
+        &:nth-child(4n-3) {
             margin-left: -2%;
-        }
-        &:nth-child(4) {
-            margin-right: -2%;
         }
     }
     .Work-featured {
@@ -32,11 +29,8 @@
 }
 @media screen and (min-width: px2em(1100px)) {
     .Work-gridItem {
-        &:nth-child(1) {
+        &:nth-child(4n-3) {
             margin-left: -6rem;
-        }
-        &:nth-child(4) {
-            margin-right: -6rem;
         }
     }
     .Work-featured {

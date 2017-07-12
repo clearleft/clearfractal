@@ -36,7 +36,7 @@ module.exports = {
             "context": {
                 "cardModifiers": ["--logo"],
                 "cardBar": false,
-                "cardLogoSrc": 'http://clearleft-v5.s3.amazonaws.com/rb-kensington-chelsea-2x.png',
+                "cardLogoSrc": 'https://clearleft-v5.s3.amazonaws.com/uploads/rb-kensington-chelsea-2x.png',
                 "cardLogoAlt": 'Royal Borough of Kensington and Chelsea',
                 "cardTitle": "Royal Borough of Kensington and Chelsea",
                 "authorImage": "/assets/img/authors/sm/edv.png",
