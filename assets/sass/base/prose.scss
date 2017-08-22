@@ -117,6 +117,22 @@
     }
 }
 
+.Prose--inverted {
+    color: #fff;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a {
+        color: #fff;
+    }
+
+
+}
+
 // Should probaby live elsewhere, but not sure where yet.
 @media screen and (max-width: px2em(480px)) {
     .Table--narrow {
