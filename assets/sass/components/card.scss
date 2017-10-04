@@ -33,6 +33,10 @@
     color: $Dark-liver-grey;
     @include font(18px, 32px);
     margin: 0;
+
+    &:not(:last-child) {
+        margin-bottom: units(1);
+    }
 }
 .Card-author {
     max-width: px2rem(97px);
@@ -51,13 +55,12 @@
 }
 .Card--home {
     background-color: $Blank;
-    border: 1px solid $Gainsboro-blue;
-    height: 100%;
-    padding: px2rem(16px);
+    padding: units(2);
 
     .Card-title {
         @include font(25px, 31px);
         letter-spacing: -0.36px;
+        margin-top: rem(24px);
     }
 }
 .Card--vibrant {
@@ -77,7 +80,7 @@
     Media Queries
 *****************************/
 
-@media screen and (min-width: px2em(500px)) {
+@media screen and (min-width: em(500px)) {
     .Card-title {
         @include font(35px, 40px);
         letter-spacing: -0.5px;
@@ -94,13 +97,18 @@
         }
     }
 }
-@media screen and (min-width: px2em(800px)) {
+@media screen and (min-width: em(800px)) {
     .Card--home {
-        padding: px2rem(56px) px2rem(40px);
+        padding: px2rem(56px) units(2);
+
         .Card-title {
             @include font(28px, 33px);
             letter-spacing: -0.4px;
-            margin-top: px2rem(24px);
         }
+    }
+}
+@media screen and (min-width: em(960px)) {
+    .Card--home {
+        padding: px2rem(56px) 10%;
     }
 }

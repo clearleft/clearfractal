@@ -1,22 +1,19 @@
 .Home-grid {
     margin: 0 auto;
-    max-width: px2rem(1180px);
-    padding: px2rem(16px) 1%;
+    max-width: rem(1260px);
+    padding: units(1) 1%;
 }
 .Home-gridItem + .Home-gridItem {
-    margin-top: px2rem(16px);
+    margin-top: units(1);
 }
 
 @media only screen and (min-width: px2em(800px)) {
     .Home-grid {
         display: flex;
-        margin-top: px2rem(-84px);
-        padding-bottom: px2rem(120px);
-        position: relative;
     }
     .Home-gridItem {
         flex: 1 0 33.33%;
-        padding: 0 px2rem(16px);
+        padding: 0 units(1);
     }
     .Home-gridItem + .Home-gridItem {
         margin-top: 0;

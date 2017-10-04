@@ -1,3 +1,27 @@
+const faker = require('faker');
+
+let blogPosts   = [];
+let quotes      = [];
+
+for (var i = 0; i < 3; i++) {
+    blogPosts.push({
+        cardBar: true,
+        cardTitle: "Article name here",
+        cardCategory: 'Opinion',
+        cardDescription: faker.lorem.paragraph(),
+        authorImage: "/assets/img/authors/sm/edv.png",
+        authorName: "Ellen DeVries"
+    });
+}
+
+for (var i = 0; i < 6; i++) {
+    quotes.push({
+        quote: faker.lorem.sentence(12),
+        authorImage: "/assets/img/authors/sm/edv.png",
+        authorName: "Ellen DeVries",
+        datePosted: 'Sep 21'
+    });
+}
 
 module.exports = {
     "status": "wip",
@@ -7,29 +31,19 @@ module.exports = {
         "primaryNavModifiers": ["--inverted", "--plum"],
         "logoModifiers": ["--inverted", "--plum"],
 
-        /*Ch4 Project feature*/
-        "ch4Modifier": '--tall',
-        "ch4Question": "How do you create a new kind of news service?",
-        "ch4Title": "Focus on the intelligent story.",
-        "ch4LinkUrl": "#",
-        "ch4LogoSrc": "/assets/img/work/ch4/ch4-logo.svg",
-        "ch4LogoAlt": "ch4 logo",
+        /* Home Splash */
+        "homeHeader": "We help design leaders get the most from their products, services &amp; teams.",
+        "homeSubheader": "Find out <a href=\"#\">who we are</a> or <a href=\"#\">how we can help</a>",
 
-        /*Penguin feature*/
-        "penguinModifier": '--tall',
-        "penguinQuestion": "How do you bring more than 700 brands together into one website?",
-        "penguinTitle": "Create a new universe.",
-        "penguinLinkUrl": "#",
-        "penguinLogoSrc": "/assets/img/work/penguin/penguin-logo.svg",
-        "penguinLogoAlt": "Penguin logo",
+        /* Featured case study */
+        "homeCardTitle": "Create a new universe.",
+        "homeCardDescription": faker.lorem.paragraph(),
 
-        /*Evo Project feature*/
-        "evoModifier": '--tall',
-        "evoQuestion": "How do you reimagine a physical magazine?",
-        "evoTitle": "Drive reader engagement.",
-        "evoLinkUrl": "#",
-        "evoLogoSrc": "/assets/img/work/evo/evo-logo.svg",
-        "evoLogoAlt": "evo logo",
+        /* Blog posts */
+        "homeBlogPosts": blogPosts,
+
+        /* Quotes */
+        "homeQuotes": quotes,
 
         /* Hello */
         "helloImgSrc": '@hello.helloImgSrc',

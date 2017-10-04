@@ -1,17 +1,27 @@
 .Cols-item {
-    padding: px2em(8px) px2em(16px);
+    padding: rem(8px) rem(16px);
 }
-@media screen and (min-width: px2em(680px)) {
+
+@supports(display: grid) {
     .Cols {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: px2em(1040px);
-        margin-left: auto;
-        margin-right: auto;
+        display: grid;
+        grid-template-columns: 1fr;
     }
-    .Cols-half {
-        flex: 0 1 auto;
-        width: 50%;
+    .Cols--gap {
+        grid-row-gap: units(1);
+        grid-column-gap: units(1);
+    }
+    @media screen and (min-width: em(680px)) {
+        .Cols--reverse {
+            >*:first-child {
+                order: 2;
+            }
+        }
+        .Cols--half {
+            grid-template-columns: 1fr 1fr;
+        }
+        .Cols--one-third {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 }

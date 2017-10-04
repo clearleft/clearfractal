@@ -5,6 +5,7 @@ module.exports = {
     },
     "variants": [{
         "name": "Inverted text",
+        "preview": "@preview-dark",
         "context": {
             "logoModifiers": ["--inverted"]
         }

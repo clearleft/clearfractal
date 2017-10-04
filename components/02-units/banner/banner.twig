@@ -1,14 +1,16 @@
-<div class="Banner{% if bannerModifier %} Banner{{bannerModifier}}{% endif %}">
+<div class="Banner {% if bannerModifiers %}Banner{{ bannerModifiers|join(' Banner') }}{% endif %}">
     <div class="Banner-content">
-        <div class="Banner-caption">{{bannerCaption}}</div>
-        <h2 class="Banner-headline Heading Heading--secondary">{{bannerHeadline}}</h2>
-        {% if bannerBody %}
+    {% if bannerCaption %}
+        <div class="Banner-caption">{{ bannerCaption }}</div>
+    {% endif %}
+        <h2 class="Banner-headline Heading Heading--secondary">{{ bannerHeadline }}</h2>
+    {% if bannerBody %}
         <div class="Banner-body">
-            {{bannerBody}}
-        </div><!--/.Banner-body-->
-        {% endif %}
-        {% if megaLinkURL %}
+            {{ bannerBody }}
+        </div>
+    {% endif %}
+    {% if megaLinkURL %}
         {% include '@mega-link' %}
-        {% endif %}
-    </div><!--/.Banner-content-->
-</div><!--/.Banner-->
+    {% endif %}
+    </div>
+</div>

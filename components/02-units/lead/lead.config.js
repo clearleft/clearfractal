@@ -14,6 +14,7 @@ module.exports = {
     },
     {
         "name": "inverted",
+        "preview": "@preview-dark",
         "context": {
             "leadModifier": "--inverted"
         }

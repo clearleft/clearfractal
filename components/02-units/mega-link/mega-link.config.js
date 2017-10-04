@@ -12,13 +12,8 @@ module.exports = {
             }
         },
         {
-            "name": "Giant",
-            "context": {
-                "megaLinkModifier": "--giant"
-            }
-        },
-        {
             "name": "Inverted",
+            "preview": "@preview-dark",
             "context": {
                 "megaLinkModifier": "--inverted"
             }

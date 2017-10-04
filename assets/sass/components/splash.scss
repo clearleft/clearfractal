@@ -1,0 +1,42 @@
+.Splash {
+    margin: 0 auto;
+    max-width: rem(1180px);
+    padding: units(1);
+}
+.Splash-header {
+    @include font(48px, 52px);
+    font-family: $font-statement;
+    font-weight: 800;
+    letter-spacing: -1.04px;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+.Splash-subHeader {
+    font-family: $font-statement;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+
+    a {
+        font-weight: 800;
+        border-bottom: rem(2px) solid map-get($colours, orange-yellow);
+    }
+}
+
+@media only screen and (min-width: em(280px)) {
+    .Splash {
+        padding: units(3) units(1);
+    }
+}
+@media only screen and (min-width: em(650px)) {
+    .Splash-header {
+        font-size: calc( 54px + ( 90 - 68 ) * ( (100vw - 300px) / ( 1200 - 300) ));
+    }
+}
+@media only screen and (min-width: em(910px)) {
+    .Splash {
+        padding: units(3) 10% units(3) 2%;
+    }
+    .Splash-header {
+        @include font(90px, 94px);
+    }
+}
