@@ -5,7 +5,7 @@ module.exports = {
         "eventCardContext": "May 24-26 2017  laban, london",
         "eventCardSrc": "https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo.svg",
         "eventCardAlt": "UX London",
-        "eventCardUrl": "",
+        "eventCardUrl": "#",
         "eventCardLink": "Visit UX London",
         "eventCardDescription": `We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
         "eventCardListTitle": "Visit past versions:",
@@ -18,8 +18,10 @@ module.exports = {
     },
     "variants": [{
         "name": "Inverted",
+        "preview": "@preview-dark",
         "context": {
             "eventCardModifier": "--inverted",
+            "eventCardSrc": "https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo-white.svg",
         }
     }]
 }

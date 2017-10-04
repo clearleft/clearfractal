@@ -5,6 +5,7 @@ module.exports = {
     },
     "variants": [{
         "name": "Inverted",
+        "preview": "@preview-dark",
         "context": {
             "barModifier": "--inverted"
         }

@@ -1,0 +1,19 @@
+
+.SpeechBubble {
+    background-color: #fff;
+    border: rem(1px) solid $light-grey;
+    padding: units(1);
+    position: relative;
+    text-align: left;
+
+    &:after {
+        content: '';
+        background: url('/assets/img/quote-triangle.svg') 0 0 no-repeat;
+        bottom: rem(-11px);
+        left: units(1);
+        display: block;
+        position: absolute;
+        height: rem(11px);
+        width: rem(9px);
+    }
+}

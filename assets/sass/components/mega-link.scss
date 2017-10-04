@@ -9,9 +9,6 @@
 .MegaLink--super {
     @include font(22px, 27px);
 }
-.MegaLink--giant {
-    @include font(22px, 17px);
-}
 .MegaLink--button {
     color: $Brandeis-blue;
     border-bottom: $Crayola-red px2rem(2px) solid;
@@ -37,10 +34,5 @@
     span {
         display: inline-block;
         border-bottom: 2px solid $Crayola-red;
-    }
-}
-@media screen and (min-width: px2em(600px)) {
-    .MegaLink--giant {
-        @include font(40px, 27px);
     }
 }

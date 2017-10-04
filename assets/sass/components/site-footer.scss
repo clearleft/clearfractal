@@ -1,15 +1,17 @@
 .SiteFooter {
+    background-color: #000;
     color: $Blank;
-    background-color: #000000;
     font-family: $font-secondary;
     margin-left: auto;
     margin-right: auto;
     padding-top: px2rem(24px);
+
     .Heading {
         color: $Blank;
     }
 }
 .SiteFooter-container {
+    margin: 0 auto;
     max-width: px2em(1040px);
 }
 .SiteFooter-navigationLinks {
@@ -31,10 +33,10 @@
     text-transform: uppercase;
 }
 .SiteFooter-icons {
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
     margin: 1rem 0 0 0;
+    padding: 0;
 }
 .SiteFooter-icon {
     list-style: none;
@@ -49,23 +51,23 @@
         display: inline-block;
     }
 }
-@media only screen and (min-width: px2em(350px)) {
+@media only screen and (min-width: em(350px)) {
     .SiteFooter-navigationLinks {
         column-count: 2;
     }
 }
-@media only screen and (min-width: px2em(550px)) {
+@media only screen and (min-width: em(550px)) {
     .SiteFooter-navigationLinks {
         column-count: 3;
     }
 }
-@media only screen and (min-width: px2em(680px)) {
+@media only screen and (min-width: em(680px)) {
     .SiteFooter-navigationLinks {
         column-count: 2;
         column-gap: px2rem(32px);
     }
 }
-@media only screen and (min-width: px2em(880px)) {
+@media only screen and (min-width: em(880px)) {
     .SiteFooter-navigation {
         display: flex;
     }
@@ -76,6 +78,7 @@
         margin-top: px2rem(32px);
     }
     .SiteFooter-icons {
+        margin: 0;
         max-width: px2rem(100px);
     }
     .SiteFooter-icon {

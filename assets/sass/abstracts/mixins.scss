@@ -16,7 +16,7 @@
 */
 @function px2rem($px, $base-font-size: $base-font-size) {
     @if unitless($px) {
-        @warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels.";
+        // @warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels.";
         @return px2rem($px * 1px, $base-font-size);
     }
     @else if unit($px) == rem {
@@ -25,18 +25,28 @@
     @return ($px / $base-font-size) * 1rem;
 }
 
+// shortcut for above function
+@function rem($px) {
+    @return px2rem($px);
+}
+
 /**
     Same as above but for ems
 */
 @function px2em($px, $base-font-size: $base-font-size) {
     @if unitless($px) {
-        @warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels.";
+        // @warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels.";
         @return px2em($px * 1px, $base-font-size);
     }
     @else if unit($px) == em {
         @return $px;
     }
     @return ($px / $base-font-size) * 1em;
+}
+
+// shortcut for above function
+@function em($px) {
+    @return px2em($px);
 }
 
 

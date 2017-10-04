@@ -11,6 +11,7 @@ module.exports = {
     },
     "variants": [{
         "name": "inverted",
+        "preview": "@preview-dark",
         "context": {
             "primaryNavModifiers": ["--inverted"]
         }

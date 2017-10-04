@@ -45,9 +45,10 @@ module.exports = {
         },
         {
             "name": "inverted",
+            "preview": "@preview-dark",
             "context": {
                 "mastheadHeadingModifer": "--inverted",
-                "mastheadContext": true,
+                "mastheadContext": "topic",
                 "breadcrumbModifier": false,
                 "segmentOne": "About us",
                 "segmentTwo": "Values"

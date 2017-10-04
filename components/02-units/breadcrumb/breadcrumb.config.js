@@ -6,6 +6,7 @@ module.exports = {
     },
     "variants": [{
         "name": "inverted",
+        "preview": "@preview-dark",
         "context": {
             "breadcrumbModifier": "--inverted"
         }
