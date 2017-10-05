@@ -62,6 +62,10 @@
         letter-spacing: -0.36px;
         margin-top: rem(24px);
     }
+
+    ul {
+        list-style-position: inside;
+    }
 }
 .Card--vibrant {
     padding-top: px2rem(24px);

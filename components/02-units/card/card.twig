@@ -13,10 +13,10 @@
         <header>
             {% if cardUrl %}
             <a href="{{ cardUrl }}">
-                <h3 class="Card-title"{% if cardHeaderColour %} style="color:{{ cardHeaderColour }}"{% endif %}>{{ cardTitle }}</h3>
+                <h2 class="Card-title"{% if cardHeaderColour %} style="color:{{ cardHeaderColour }}"{% endif %}>{{ cardTitle }}</h2>
             </a>
             {% else %}
-            <h3 class="Card-title"{% if cardHeaderColour %} style="color:{{ cardHeaderColour }}"{% endif %}>{{ cardTitle }}</h3>
+            <h2 class="Card-title"{% if cardHeaderColour %} style="color:{{ cardHeaderColour }}"{% endif %}>{{ cardTitle }}</h2>
             {% endif %}
         </header>
         {% if cardCategory %}<div class="Card-category">{{ cardCategory }}</div>{% endif %}
