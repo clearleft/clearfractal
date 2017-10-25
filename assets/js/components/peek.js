@@ -20,10 +20,11 @@ function Peek(elm) {
     this.component.style.overflow   = 'hidden';
     this.component.style.zIndex     = 0;
 
+    this.peek.classList.add('Heading','Heading--main');
+
     this.peek.setAttribute('style', `
         position: absolute;
         color: #f4f4f4;
-        font-family: "Gilroy Black", "Helvetica Neue", sans-serif;
         font-size: 190px;
         font-weight: 700;
         margin: 0;

@@ -4,7 +4,7 @@
     {% endif %}
     {% if cardLogoAlt %}
         {% if cardLogoSrc %}
-        <img src="{{ cardLogoSrc }}" alt="{{ cardLogoAlt }}">
+        <img class="Card-logo" src="{{ cardLogoSrc }}" alt="{{ cardLogoAlt }}">
         {% else %}
         <h3 class="Heading Heading--context">{{ cardLogoAlt }}</h3>
         {% endif %}
@@ -13,10 +13,10 @@
         <header>
             {% if cardUrl %}
             <a href="{{ cardUrl }}">
-                <h3 class="Card-title"{% if cardHeaderColour %} style="color:{{ cardHeaderColour }}"{% endif %}>{{ cardTitle }}</h3>
+                <h2 class="Card-title"{% if cardHeaderColour %} style="color:{{ cardHeaderColour }}"{% endif %}>{{ cardTitle }}</h2>
             </a>
             {% else %}
-            <h3 class="Card-title"{% if cardHeaderColour %} style="color:{{ cardHeaderColour }}"{% endif %}>{{ cardTitle }}</h3>
+            <h2 class="Card-title"{% if cardHeaderColour %} style="color:{{ cardHeaderColour }}"{% endif %}>{{ cardTitle }}</h2>
             {% endif %}
         </header>
         {% if cardCategory %}<div class="Card-category">{{ cardCategory }}</div>{% endif %}

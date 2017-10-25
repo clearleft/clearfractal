@@ -11,7 +11,7 @@
     -webkit-font-smoothing: antialiased;
 }
 .Card-category {
-    color: $mid-grey;
+    color: $Jet-grey;
     font-family: $font-secondary;
     @include font(14px, 17px);
     margin-bottom: px2rem(2px);
@@ -57,10 +57,17 @@
     background-color: $Blank;
     padding: units(2);
 
+    .Card-logo {
+        margin-bottom: units(1);
+    }
+
     .Card-title {
         @include font(25px, 31px);
         letter-spacing: -0.36px;
-        margin-top: rem(24px);
+    }
+
+    ul {
+        list-style-position: inside;
     }
 }
 .Card--vibrant {
@@ -92,8 +99,9 @@
     }
     .Card--home {
         .Card-title {
-            @include font(25px, 31px);
-            letter-spacing: -0.36px;
+            @include font(31px, 34px);
+            font-weight: 700;
+            letter-spacing: -0.44px;
         }
     }
 }
@@ -102,8 +110,7 @@
         padding: px2rem(56px) units(2);
 
         .Card-title {
-            @include font(28px, 33px);
-            letter-spacing: -0.4px;
+            @include font(43px, 50px);
         }
     }
 }

@@ -4,11 +4,9 @@
             <h2 class="Heading Heading--small">Recent articles by {{ personFirstName }}</h2>
         </div><!--/.Extension-headline-->
         <div class="Extension-items">
-            <div class="Cols">
+            <div class="Cols Cols--half Cols--gap">
             {% for card in cards %}
-                <div class="Cols-half Cols-item">
-                    {% include '@card' with card %}
-                </div>
+                {% include '@card' with card %}
             {% endfor %}
             </div>
         </div>

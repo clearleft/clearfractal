@@ -24,4 +24,10 @@
             grid-template-columns: 1fr 1fr 1fr;
         }
     }
+    @media screen and (min-width: em(960px)) {
+        .Cols--gap {
+            grid-row-gap: units(2);
+            grid-column-gap: units(2);
+        }
+    }
 }
