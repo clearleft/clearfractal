@@ -1,8 +1,23 @@
 .Container {
-    padding-left: units(1);
-    padding-right: units(1);
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .Container--constrained {
     margin: auto;
-    max-width: px2rem(1140px);
+    max-width: px2rem(1440px);
+}
+.Container--paddedLarge {
+    padding-top: units(4);
+    padding-bottom: units(4);
+}
+
+@media screen and (min-width: em(960px)) {
+    .Container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .Container--paddedLarge {
+        padding-top: units(8);
+        padding-bottom: units(8);
+    }
 }

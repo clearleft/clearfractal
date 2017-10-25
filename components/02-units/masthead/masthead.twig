@@ -1,40 +1,55 @@
 <div class="Masthead{% if mastheadModifier %} Masthead{{ mastheadModifier }}{% endif %}">
 
-    {% if "--arrows" in mastheadModifier or "--combo" in mastheadModifier %}
+    <div class="Masthead-container">
 
-    <div class="Masthead-secondary">
-        {% include '@next-prev' %}
-    </div><!--/.Masthead-secondary-->
+        {% if "--arrows" in mastheadModifier or "--combo" in mastheadModifier %}
 
-    {% endif %}
+        <div class="Masthead-secondary">
+            {% include '@next-prev' %}
+        </div><!--/.Masthead-secondary-->
 
-    <div class="Masthead-primary">
-
-        {% if mastheadBreadcrumb %}{% include '@breadcrumb' %}{% endif %}
-
-        {% if mastheadContext %}
-        <div class="Masthead-context">
-            <p class="Heading Heading--context{% if mastheadHeadingModifer %} Heading{{ mastheadHeadingModifer }}{% endif %}">{{ mastheadContext }}</p>
-        </div>
         {% endif %}
 
-        <h1 class="Heading{% if '--arrows' in mastheadModifier or '--combo' in mastheadModifier %} Heading--secondary{% else %} Heading--main{% endif %}{% if mastheadHeadingModifer %} Heading{{ mastheadHeadingModifer }}{% endif %}">{{ mastheadTitle }}</h1>
+        <div class="Masthead-primary">
 
-        {% if mastheadHasSelector %}{% include '@selector' %}{% endif %}
+            {% if mastheadBreadcrumb %}{% include '@breadcrumb' %}{% endif %}
 
-        {% if mastheadSub %}<p class="Masthead-sub{% if mastheadSubModifer %} Masthead-sub{{ mastheadSubModifer }}{% endif %} Heading Heading--context{% if mastheadHeadingModifer %} Heading{{ mastheadHeadingModifer }}{% endif %}">{{ mastheadSub }}</p>{% endif %}
+            {% if mastheadContext %}
+            <div class="Masthead-context">
+                <p class="Heading Heading--context{% if mastheadHeadingModifer %} Heading{{ mastheadHeadingModifer }}{% endif %}">{{ mastheadContext }}</p>
+            </div>
+            {% endif %}
 
-    </div><!--/.Masthead-primary-->
+            <h1 class="Heading{% if '--arrows' in mastheadModifier or '--combo' in mastheadModifier %} Heading--secondary{% else %} Heading--main{% endif %}{% if mastheadHeadingModifer %} Heading{{ mastheadHeadingModifer }}{% endif %}">{{ mastheadTitle }}</h1>
 
-    {% if "--combo" in mastheadModifier %}
+            {% if mastheadHasSelector %}{% include '@selector' %}{% endif %}
 
-    <div class="Masthead-third">
-        <div class="Heading Heading--context">
-                {{ mastheadThirdHeading }}
+            {% if mastheadSub %}<p class="Masthead-sub{% if mastheadSubModifer %} Masthead-sub{{ mastheadSubModifer }}{% endif %} Heading Heading--context{% if mastheadHeadingModifer %} Heading{{ mastheadHeadingModifer }}{% endif %}">{{ mastheadSub }}</p>{% endif %}
+
+        </div><!--/.Masthead-primary-->
+
+        {% if "--combo" in mastheadModifier %}
+
+        <div class="Masthead-third">
+            <div class="Heading Heading--context">
+                    {{ mastheadThirdHeading }}
+            </div>
+            {{ mastheadThird }}
+        </div><!--/.Masthead-third-->
+
+        {% endif %}
+
+        {% if mastheadDescription %}
+        <div class="Masthead-lead">
+            <div class="Masthead-description Lead Bar">{{ mastheadDescription }}</div>
+            {% if mastheadDescriptionSecondary %}
+            <div class="Masthead-descriptionSecondary">
+                {% include '@list' with { listItems: mastheadDescriptionSecondary } %}
+            </div>
+            {% endif %}
         </div>
-        {{ mastheadThird }}
-    </div><!--/.Masthead-third-->
-
-    {% endif %}
+        {% endif %}
+        
+    </div>
 
 </div><!--/.Masthead-->

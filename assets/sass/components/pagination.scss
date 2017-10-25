@@ -5,13 +5,13 @@
     padding: 0 px2rem(24px) px2rem(48px) px2rem(24px);
 }
 .Pagination-list {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    padding: 0;
     margin-top: px2rem(6px);
     margin-bottom: px2rem(6px);
-    display: flex;
+    padding: 0;
     width: 100%;
-    overflow-x: scroll;
 }
 .Pagination-item {
     font-family: "Gilroy", "Helvetica Neue", sans-serif;

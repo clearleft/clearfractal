@@ -6,7 +6,7 @@
     max-width: px2em(1080px);
 }
 .BlogGrid-container {
-    margin-top: 20px;
+    margin-top: rem(20px);
     margin-left: auto;
     margin-right: auto;
     padding: px2rem(16px);
@@ -19,25 +19,25 @@
 @media screen and (min-width: px2em(700px)) {
     .BlogGrid  {
         margin: px2rem(-50px) auto px2rem(24px) auto;
-        .BlogGrid-item {
-            flex: 0 1 auto;
-            width: 50%;
-            padding: px2rem(24px);
-        }
     }
     .BlogGrid-container {
         display: flex;
         flex-wrap: wrap;
     }
+    .BlogGrid-item {
+        flex: 0 1 auto;
+        width: 50%;
+        padding: px2rem(24px);
+    }
 }
 @media screen and (min-width: px2em(900px)) {
-    .BlogGrid-item {
-        padding: px2rem(48px);
-    }
     .BlogGrid  {
         margin: px2rem(-70px) auto px2rem(24px) auto;
     }
     .BlogGrid-container {
         padding: 0;
+    }
+    .BlogGrid-item {
+        padding: px2rem(48px);
     }
 }

@@ -42,6 +42,17 @@ module.exports = {
             }
         },
         {
+            "name": "description",
+            "context": {
+                "mastheadDescription": "Since 2005, we have applied strategic design, research, and product development to help deliver unprecedented value.",
+                "mastheadDescriptionSecondary": [
+                    `<a href="#">11 yrs old and growing. What’s our story?</a>`,
+                    `<a href="#">11 yrs old and growing. What’s our story?</a>`,
+                    `<a href="#">11 yrs old and growing. What’s our story?</a>`
+                ]
+            }
+        },
+        {
             "name": "inverted",
             "preview": "@preview-dark",
             "context": {

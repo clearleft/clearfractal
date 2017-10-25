@@ -3,19 +3,26 @@
     padding-left: 0;
     margin: px2rem(8px) 0;
 }
-.List--inline .List-item {
-    display: inline-block;
-}
 .List-item {
+    font-weight: 700;
     list-style: none;
     margin-bottom: px2rem(8px);
-    font-weight: 700;
     -webkit-font-smoothing: antialiased;
+}
+.List--styled {
+    list-style: none;
+
+    svg {
+        display: inline-block;
+        margin-right: units(0.5);
+    }
+}
+.List--inline .List-item {
+    display: inline-block;
 }
 @media screen and (min-height: px2em(700px)) {
     .List--tall .List-item {
         margin-top: px2rem(10px);
         margin-bottom: px2rem(10px);
-        display: inline-block;
     }
 }

@@ -1,7 +1,3 @@
-.Masthead--full {
-    padding: px2rem(16px) px2rem(16px) px2rem(24px) px2rem(16px);
-    min-height: calc(100vh - 2.5rem);
-}
 .Masthead-primary {
     padding: px2rem(16px) px2rem(16px) px2rem(24px) px2rem(16px);
     position: relative;
@@ -24,17 +20,28 @@
 .Masthead-third {
     padding: 0 px2rem(16px) px2rem(16px) px2rem(16px);
 }
-@media screen and (min-height: px2em(880px)) {
-    .Masthead--full {
-        min-height: calc(70vh - 24px - 16px);
+
+// Variants
+.Masthead--full {
+    padding: px2rem(16px) px2rem(16px) px2rem(24px) px2rem(16px);
+    min-height: calc(100vh - 2.5rem);
+}
+.Masthead--chimney {
+    padding-bottom: px2rem(60px);
+}
+
+@media screen and (min-width: px2em(800px)) {
+    .Masthead--chimney {
+        padding-bottom: px2rem(100px);
     }
 }
+
 @media screen and (min-width: px2em(850px)) {
-    .Masthead {
-        max-width: px2em(930px);
-        margin: auto;
+    .Masthead-container {
         display: flex;
         flex-wrap: wrap;
+        margin: auto;
+        max-width: px2em(930px);
         padding: px2rem(30px) px2rem(20px) px2rem(40px) px2rem(20px);
     }
     .Masthead-primary {
@@ -49,9 +56,20 @@
         order: 2;
         width: 15%;
     }
-}
-/*Masthead--arrows*/
-@media screen and (min-width: px2em(850px)) {
+    .Masthead-lead {
+        align-items: center;
+        display: flex;
+        order: 4;
+    }
+    .Masthead-description {
+        max-width: px2rem(530px);
+    }
+    .Masthead-descriptionSecondary {
+        flex-basis: 48%;
+        @include font-size(16px);
+        padding: px2em(8px) px2em(32px);
+    }
+
     .Masthead--arrows {
         .Masthead-secondary {
             display: flex;
@@ -63,20 +81,11 @@
             margin-right: 0;
         }
     }
-}
 
-/*Masthead--tall*/
-.Masthead--chimney {
-    padding-bottom: px2rem(60px);
-}
-@media screen and (min-width: px2em(800px)) {
     .Masthead--chimney {
         padding-bottom: px2rem(100px);
     }
-}
 
-/*Masthead--combo*/
-@media screen and (min-width: px2em(850px)) {
     .Masthead--combo {
         .Masthead-primary {
             width: 55%;
@@ -95,5 +104,11 @@
                 margin: 0;
             }
         }
+    }
+}
+
+@media screen and (min-height: px2em(880px)) {
+    .Masthead--full {
+        min-height: calc(70vh - 24px - 16px);
     }
 }

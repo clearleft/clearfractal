@@ -1,0 +1,27 @@
+
+.Texture--home {
+    background-attachment: fixed;
+    background-image: url('https://clearleft-v5.s3.amazonaws.com/dots/texture_corners-diamond-grey.png');
+    background-position: calc(50% + 50vw) calc(540px - 70vw);
+    background-repeat: no-repeat;
+    background-size: rem(720px);
+}
+
+@media screen and (min-width: em(500px)) {
+    .Texture--home {
+        background-position: calc(50% + 50vw) rem(120px);
+        background-size: auto;
+    }
+}
+
+@media screen and (min-width: em(910px)) {
+    .Texture--home {
+        background-position: calc(50% + 50vw) rem(320px);
+    }
+}
+
+@media screen and (min-width: em(1180px)) {
+    .Texture--home {
+        background-position: calc(57vw) rem(320px);
+    }
+}
