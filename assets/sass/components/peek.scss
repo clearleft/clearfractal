@@ -1,0 +1,22 @@
+
+.Peek {
+    color: #f4f4f4;
+    font-size: 20vw;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 5%;
+    z-index: -1;
+}
+
+@media screen and (min-width: em(800px)) {
+    .Peek {
+        left: 8%;
+    }
+}
+@media screen and (min-width: em(920px)) {
+    .Peek {
+        font-size: rem(190px);
+    }
+}
