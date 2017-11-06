@@ -16,23 +16,9 @@ function Peek(elm) {
     this.peek.appendChild( document.createTextNode(this.headline) );
 
     // set up the component
-    this.component.style.position   = 'relative';
-    this.component.style.overflow   = 'hidden';
-    this.component.style.zIndex     = 0;
+    this.component.setAttribute('style', 'position: relative; overflow: hidden; z-index: 0');
 
-    this.peek.classList.add('Heading','Heading--main');
-
-    this.peek.setAttribute('style', `
-        position: absolute;
-        color: #f4f4f4;
-        font-size: 190px;
-        font-weight: 700;
-        margin: 0;
-        padding: 0;
-        line-height: 1;
-        z-index: -1;
-        left: 5.3125rem;
-    `);
+    this.peek.classList.add('Peek','Heading','Heading--main');
 
     this.component.appendChild(this.peek);
 
