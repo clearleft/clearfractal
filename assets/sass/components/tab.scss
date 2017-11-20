@@ -1,0 +1,7 @@
+.Tab {
+    border-bottom-color: transparent;
+
+}
+.Tab[aria-selected] {
+    border: 1px solid blue;
+}

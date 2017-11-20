@@ -1,0 +1,9 @@
+<ul class="Panellist">
+  {% for tab in tabs %}
+    {% embed '@panel' %}
+        {% block panel_content %}
+            {{ tab.panelContent }}
+        {% endblock %}
+    {% endembed %}
+  {% endfor %}
+</ul>
