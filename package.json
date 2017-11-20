@@ -26,6 +26,8 @@
     "rollup-plugin-uglify": "^1.0.1"
   },
   "scripts": {
-    "build": "gulp && ./node_modules/.bin/fractal build"
+    "start": "gulp && fractal start --sync",
+    "build": "gulp && ./node_modules/.bin/fractal build",
+    "build:styles": "gulp"
   }
 }
