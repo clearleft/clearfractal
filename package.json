@@ -28,6 +28,6 @@
   "scripts": {
     "start": "gulp && fractal start --sync",
     "build": "gulp && ./node_modules/.bin/fractal build",
-    "build:styles": "gulp"
+    "build:assets": "gulp"
   }
 }
