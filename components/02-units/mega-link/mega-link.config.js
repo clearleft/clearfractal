@@ -23,12 +23,6 @@ module.exports = {
             "context": {
                 "megaLinkModifier": "--block"
             }
-        },
-        {
-            "name": "BlockAlt",
-            "context": {
-                "megaLinkModifier": "--block-alt"
-            }
         }
     ]
 }

@@ -2,13 +2,16 @@
     position: relative;
     font-family: $font-secondary;
 }
+
 .MegaLink--inverted {
     color: $Blank;
     border-color: $Blank;
 }
+
 .MegaLink--super {
     @include font(22px, 27px);
 }
+
 .MegaLink--button {
     color: $Brandeis-blue;
     border-bottom: $Crayola-red px2rem(2px) solid;
@@ -16,6 +19,7 @@
     padding-left: 0;
     background: transparent;
 }
+
 .MegaLink--inverted {
     color: $Blank;
     &:hover,
@@ -24,19 +28,8 @@
         color: $Blank;
     }
 }
-.MegaLink--block {
-    background-color: $Lapis-lazuli-blue;
-    border-bottom: none;
-    color: $Blank;
-    @include font(22px, 27px);
-    padding: px2rem(16px) px2rem(32px);
 
-    span {
-        display: inline-block;
-        border-bottom: 2px solid $Crayola-red;
-    }
-}
-.MegaLink--block-alt {
+.MegaLink--block {
     border: 1px solid transparent;
     @include font(20px, 24px);
     text-align: center;
@@ -49,5 +42,4 @@
     &:active {
         color: $Blank;
     }
-    
 }
