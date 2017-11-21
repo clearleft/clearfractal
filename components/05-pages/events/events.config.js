@@ -6,11 +6,10 @@ module.exports = {
         "logoModifiers": ["--crayola-red"],
 
         /*Masthead*/
-        "mastheadTitle": "Events",
-        "pageLeadModifier": "--pinch",
-        "pageLeadSecondary": false,
+        "mastheadTitle": "Events.",
+        "mastheadDescription": "Over the last 12 years we’ve been working hard to advance the practice of design by learning from expert thinkers and makers. In 2005, we created one of the UK’s first web conferences. Since then, we’ve run over 25 conferences.",
+        "mastheadModifier": '--chimney Texture--home',
 
-        "leadText": "Over the last 11 years we've been working hard to advance the practice of design by learning from expert thinkers and makers. In 2005, we created one of the UK's first web conferences. Since then, we've run 25 conferences. We also host regular community events at",
         "bannerCaption": "Missions Accomplished",
         "bannerHeadline": "Our Past Events",
         "bannerModifier": "--plain",
