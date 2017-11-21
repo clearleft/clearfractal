@@ -1,0 +1,5 @@
+<table class="TicketTiers">
+{% for item in items %}
+{% include '@tier' with item only %}
+{% endfor %}
+</table>
