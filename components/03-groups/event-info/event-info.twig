@@ -1,4 +1,5 @@
-{% set info = [{
+{% set context = {
+    info:  [{
                 title: 'Date',
                 type: 'date',
                 content: date
@@ -7,5 +8,5 @@
                 title: 'Location',
                 type: 'location',
                 content: location
-            }] %}
-{% include '@info-list' %}
+            }]} %}
+{% include '@info-list' with context only %}
