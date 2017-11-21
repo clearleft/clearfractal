@@ -1,0 +1,11 @@
+{% set info = [{
+                title: 'Date',
+                type: 'date',
+                content: date
+            }, 
+            {
+                title: 'Location',
+                type: 'location',
+                content: location
+            }] %}
+{% include '@info-list' %}

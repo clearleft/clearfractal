@@ -1,5 +1,6 @@
 .InfoList {
-    font: bold (18px/$base-font-size)*1em $font-secondary;
+    font-family: $font-secondary;
+    font-weight: bold;
 }
 
 .InfoList>* {
@@ -7,7 +8,7 @@
 }
 
 .InfoList-term {
-    margin-right: .3rem;
+    margin-right: .3em;
 }
 
 .InfoList-term[class*="InfoList-term--"] span {
@@ -23,9 +24,10 @@
     content: '';
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    width: px2rem(24px);
-    height: px2rem(24px);
-    margin-bottom: -.3rem;
+    background-size: contain;
+    width: 1.25em;
+    height: 1.25em;
+    margin-bottom: -.3em;
 }
 
 .InfoList-term--date::before {
