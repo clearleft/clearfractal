@@ -1,0 +1,18 @@
+.Tablist {
+    list-style: none;
+}
+.Tablist li {
+    display: block;
+}
+
+@media only screen and (min-width: px2em(500px)) {
+    .Tablist {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+    }
+    .Tablist li {
+        // flex: 1 0 0px;
+        display: flex;
+    }
+}

@@ -3,14 +3,18 @@ module.exports = {
     collated: true,
     context: {
         tabs: [{
-            panelContent: `<p>Panel 1</p>`
-        },
-        {
-            panelContent: `<p>Panel 2</p>`
-        },
-        {
-            panelContent: `<p>Panel 3</p>`
-        }
+                panelId: 'panel-01',
+                panelContent: `<p>Panel 1</p>`,
+                tabIsSelected: true,
+            },
+            {
+                panelId: 'panel-02',
+                panelContent: `<p>Panel 2</p>`
+            },
+            {
+                panelId: 'panel-03',
+                panelContent: `<p>Panel 3</p>`
+            }
         ]
     }
 }

@@ -1,5 +1,3 @@
-<section class="Panel">
-    {% block panel_content %}
-        Some content for the panel
-    {% endblock %}
+<section class="Panel" id="{{panelId}}" {%if tabIsSelected != true %}hidden{%endif%}>
+    {{panelContent}}
 </section>
