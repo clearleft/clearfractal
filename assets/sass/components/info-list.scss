@@ -1,0 +1,42 @@
+.InfoList {
+    font: bold (18px/$base-font-size)*1em $font-secondary;
+}
+
+.InfoList>* {
+    display: inline;
+}
+
+.InfoList-term {
+    margin-right: .3rem;
+}
+
+.InfoList-term[class*="InfoList-term--"] span {
+    @extend .l-vh;
+}
+
+.InfoList-term:not([class*="InfoList-term--"])::after {
+    content: ':';
+}
+
+.InfoList-term[class*="InfoList-term--"]::before {
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: px2rem(24px);
+    height: px2rem(24px);
+    margin-bottom: -.3rem;
+}
+
+.InfoList-term--date::before {
+    background-image: url('/assets/img/icons/icon-calendar.svg');
+}
+
+.InfoList-term--location::before {
+    background-image: url('/assets/img/icons/icon-map-pin.svg');
+}
+
+.InfoList-description {
+    margin-left: 0px;
+    margin-right: 1em;
+}
