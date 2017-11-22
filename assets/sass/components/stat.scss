@@ -1,0 +1,14 @@
+.Stat {
+    text-align: center;
+}
+
+.Stat-heading {
+    margin-bottom: .1em;
+    color: $Crayola-red;
+    // below is only for override 
+    @media screen and (min-width: em(580px)) {
+        &:not(:last-child) {
+            margin-bottom: .1em;
+        }
+    }
+}
