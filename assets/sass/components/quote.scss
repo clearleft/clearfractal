@@ -15,10 +15,12 @@
         background-size: 65%;
     }
 }
+
 .Quote-citation {
     text-transform: uppercase;
     color: $Jet-grey;
-    @include font(13px, 16px);
+    @include font(13px,
+    16px);
     font-family: $font-secondary;
     font-weight: 700;
     letter-spacing: px2rem(1px);
@@ -26,32 +28,39 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
-    > span {
-        display: inline-block;
-        margin-top: 0.5rem;
-    }
 }
+
 .Quote-avatar {
     border: px2rem(2px) solid #1E6B9C;
     margin-right: px2rem(16px);
 }
+
 .Quote-job {
     display: block;
     text-indent: px2rem(1px);
     margin-top: px2rem(4px);
     color: $mid-grey;
 }
+
+.Quote-author {
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.Quote-author>* {
+    display: block;
+}
+
 @media screen and (min-width: px2em(280px)) {
     .Quote-citation {
         display: flex;
-
-        > span {
-            margin-top: 0;
-            flex: 1;
-        }
+    }
+    .Quote-author {
+        margin-top: 0;
+        flex: 1;
     }
 }
+
 @media screen and (min-width: px2em(500px)) {
     .Quote {
         margin-top: px2rem(80px);
@@ -61,5 +70,23 @@
             top: px2rem(-48px);
             background-size: 100%;
         }
+    }
+}
+
+.Quote--event {
+    margin: 0;
+    padding: 2em 0 1em 0;
+    &:before {
+        background-image: url('/assets/img/quote-bg.svg');
+        width: px2rem(94px);
+        height: px2rem(82px);
+        top: 0px;
+    }
+    .Quote-avatar {
+        border-radius: 50%;
+        border: none;
+    }
+    .Quote-authorrole {
+        color: $Crayola-red;
     }
 }
