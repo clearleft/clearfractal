@@ -1,10 +1,11 @@
 .EventCard-context {
-    color: $Dark-liver-grey;
+    color: $Crayola-red;
     @include font(14px, 17px);
     font-family: $font-secondary;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
 }
 .EventCard-eventName {
     font-family: $font-secondary;
@@ -15,15 +16,11 @@
 .EventCard-image {
     margin-bottom: px2rem(16px);
 }
-.EventCard-description {
-    margin-bottom: 1rem;
-}
-.EventCard-links {
+.EventCard-section {
     margin-bottom: 1rem;
 }
 .EventCard-list {
     margin: 0;
-    -webkit-font-smoothing: antialiased;
 }
 .EventCard-listItem {
     display: inline-block;

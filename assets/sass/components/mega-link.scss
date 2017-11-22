@@ -37,6 +37,7 @@
     display: block;
     background-color: $Crayola-red;
     color: $Blank;
+    -webkit-font-smoothing: antialiased;
     &:hover,
     &:focus,
     &:active {
