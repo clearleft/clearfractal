@@ -1,3 +1,12 @@
 .TicketTiers {
     border-collapse: collapse;
 }
+
+.TicketTiers:not(:only-child),
+.TicketTiers:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.TicketTiers--three-quarters {
+    min-width: 75%;
+}

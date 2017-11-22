@@ -6,8 +6,7 @@ module.exports = {
             name: 'default',
             context: {
                 tierName: 'Super Early Bird tickets',
-                tierPrice: '£445 + VAT',
-                tierAvailable: true
+                tierPrice: '£445 + VAT'
             }
         },
         {
@@ -15,7 +14,7 @@ module.exports = {
             context: {
                 tierName: 'Early Bird tickets',
                 tierPrice: '£495 + VAT',
-                tierAvailable: false
+                tierSoldOut: true
             }
         }
     ]
