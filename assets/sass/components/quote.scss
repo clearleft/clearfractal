@@ -19,8 +19,7 @@
 .Quote-citation {
     text-transform: uppercase;
     color: $Jet-grey;
-    @include font(13px,
-    16px);
+    @include font(13px, 16px);
     font-family: $font-secondary;
     font-weight: 700;
     letter-spacing: px2rem(1px);
