@@ -11,6 +11,10 @@
         grid-row-gap: units(1);
         grid-column-gap: units(1);
     }
+    .Cols--constrained {
+        max-width: px2rem(1180px);
+        margin: 0 auto;
+    }
     @media screen and (min-width: em(680px)) {
         .Cols--reverse {
             >*:first-child {
