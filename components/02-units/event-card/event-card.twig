@@ -11,8 +11,27 @@
     {{ eventCardDescription }}
     </p>
 
+    {% if eventCardInfo %}
     {% include '@event-info' with eventCardInfo only %}
+    {% endif %}
+
+    {% if eventCardTicketTiers %}
     {% include '@ticket-tiers' with {ticketTiers: eventCardTicketTiers, ticketTiersModifiers: 'three-quarters'} only %}
+    {% endif %}
+
+    {% if pastVersions | length %}
+    <div class="EventCard-section">
+        <div class="EventCard-context">{{eventCardListTitle}}</div>
+        <ul class="EventCard-list">
+            {% for pastVersion in pastVersions %}
+                <li class="EventCard-listItem ">
+                    <a href="{{pastVersion.itemUrl}}">{{pastVersion.item}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
 
     {% if eventCardUrl %}
     <a href="{{eventCardUrl}}" class="EventCard-link MegaLink MegaLink--block">{{eventCardLink}}</a>
