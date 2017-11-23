@@ -28,9 +28,6 @@
     font-size: px2rem(16px);
     margin-right: px2rem(6px);
 }
-.EventCard--inverted * {
-    color: $Blank;
-}
 
 @media screen and (min-width: px2em(720px)) {
     .EventCard {
