@@ -17,6 +17,12 @@
 
 .Tier--soldOut .Tier-cell--price {
     color: $light-grey;
+    -webkit-font-smoothing: antialiased;
+}
+
+.Tier-cell--status {
+    max-width: 100px;
+    text-align: right;
 }
 
 .Tier-soldOut {

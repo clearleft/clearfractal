@@ -3,7 +3,7 @@ module.exports = {
     default: 'current',
     variants: [{
             name: 'current',
-            context: {                
+            context: {
                 eventCardSrc: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo.svg',
                 eventCardAlt: 'UX London',
                 eventCardUrl: '#',
@@ -32,7 +32,7 @@ module.exports = {
         {
             name: 'presents',
             context: {
-                eventCardSrc: '/assets/img/logos/clearleft-presents.svg',
+                eventCardSrc: '/assets/img/logos/clearleft-presents-sm.svg',
                 eventCardAlt: 'Clearleft presents: Jake Knapp Design Sprint Workshop',
                 eventCardName: 'Jake Knapp Design Sprint Workshop',
                 eventCardDescription: `Learn the Design Sprint process from its creator, Jake Knapp. The Design Sprint is a method for answering big questions quickly. It’s a greatest hits of design thinking, Lean Startup-style business strategy, innovation, behavioural science, and more.`,
@@ -87,16 +87,38 @@ module.exports = {
         {
             name: 'presents-past',
             context: {
-                eventCardName: 'Blair Enns The Four Conversations',
-                eventCardSrc: '/assets/img/logos/clearleft-presents.svg',
+                eventCardSrc: '/assets/img/logos/clearleft-presents-med.svg',
                 eventCardAlt: 'Clearleft presents: Blair Enns The Four Conversations',
                 eventCardDescription: `To launch the Clearleft Presents series, we’re pleased as punch to welcome Blair Enns, founder of Win Without Pitching. After Blair’s acclaimed presentation last year at our Founders Assembly event … `,
+                eventCardListTitle: 'Who',
+                pastVersions: [{
+                        item: 'Jake Knapp',
+                        itemUrl: '#'
+                    },
+                    {
+                        item: 'Blair Ennis',
+                        itemUrl: '#'
+                    },
+                    {
+                        item: 'Mike Monteiro',
+                        itemUrl: '#'
+                    },
+                    {
+                        item: 'Jan Chipchase',
+                        itemUrl: '#'
+                    }
+                ]
+            }
+        },
+        {
+            name: 'upcoming',
+            context: {
+                eventStatus: 'upcoming',
+                eventCardSrc: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo.svg',
+                eventCardAlt: 'UX London',
+                eventCardDescription: `We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
                 eventCardUrl: '#',
-                eventCardLink: 'Full event details',
-                eventCardInfo: {
-                    location: 'Hoxton Hotel, Shoreditch, London',
-                    date: 'Thursday 7th September, 2016'
-                }
+                eventCardLink: 'Sign up for updates'
             }
         }
     ]

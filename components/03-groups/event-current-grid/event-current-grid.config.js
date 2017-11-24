@@ -29,21 +29,25 @@ module.exports = {
         events: [
             {
                 eventCard: {
-                    eventCardSrc: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo.svg',
-                    eventCardAlt: 'UX London',
+                    eventCardSrc: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/leading-design-logo.svg?mtime=20170407111120',
+                    eventCardAlt: 'Leading Design',
                     eventCardUrl: '#',
                     eventCardLink: 'Full event details & tickets',
                     eventCardInfo: {
                         location: 'Laban, London',
                         date: 'May 24-26 2017'
                     },
-                    eventCardDescription: `We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
+                    eventCardDescription: `A conference for people leading design teams, overseeing design direction, or instilling a culture of design within their organisations. Listen to leaders from Facebook, Buzzfeed, IBM Design Studio and Vine discuss the challenges of managing design, and becoming a better design leader.`,
                     eventCardTicketTiers: tickets
                 },
                 eventPicture: pic
             },
             {
                 eventCard: '@event-card--presents',
+                eventPicture: pic
+            },
+            {
+                eventCard: '@event-card--upcoming',
                 eventPicture: pic
             }
         ]

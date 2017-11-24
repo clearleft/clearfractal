@@ -16,7 +16,7 @@
     {% endif %}
 
     {% if eventCardTicketTiers %}
-    {% include '@ticket-tiers' with {ticketTiers: eventCardTicketTiers, ticketTiersModifiers: 'three-quarters'} only %}
+    {% include '@ticket-tiers' with {ticketTiers: eventCardTicketTiers, ticketTiersModifiers: 'full'} only %}
     {% endif %}
 
     {% if pastVersions | length %}
@@ -32,8 +32,8 @@
     </div>
     {% endif %}
 
-
     {% if eventCardUrl %}
-    <a href="{{eventCardUrl}}" class="EventCard-link MegaLink MegaLink--block">{{eventCardLink}}</a>
+    {% set linkClasses = ((eventStatus == 'upcoming') ? 'MegaLink' : 'MegaLink MegaLink--block') %}
+    <a href="{{eventCardUrl}}" class="EventCard-link {{linkClasses}}">{{eventCardLink}}</a>
     {% endif %}
 </div>
