@@ -1,4 +1,4 @@
-<div class="Cols Cols--gap Cols--half">
+<div class="Cols Cols--gap Cols--half l-space-before l-space-after">
 {% for quote in quotes %}
     {% set quote = quote|merge({quoteModifiers:'event'}) %}
     {% include '@quote' with quote only %}

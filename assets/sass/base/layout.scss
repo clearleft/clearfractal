@@ -31,6 +31,22 @@
     padding-bottom: units(1);
 }
 
+.l-space-before--double {
+    margin-top: units(4);
+}
+
+.l-space-after--double {
+    margin-bottom: units(4);
+}
+
+.l-pad-before--double {
+    padding-top: units(4);
+}
+
+.l-pad-after--double {
+    padding-bottom: units(4);
+}
+
 .l-vh {
     /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
     position: absolute !important;

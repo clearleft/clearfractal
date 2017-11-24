@@ -1,6 +1,7 @@
 module.exports = {
     status: 'wip',
     collated: true,
+    default: 'representative',
     variants: [
         {
             name: 'ranges',

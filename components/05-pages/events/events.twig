@@ -7,56 +7,19 @@
 <main>
 
     {# Current events #}
-    <div>
-        {% for event in currentEvents %}
-            <div class="EventBlock EventBlock--current">
-                <div class="EventBlock-primary">
-                    {% include '@event-card' with event %}
-                </div>
-                <div class="EventBlock-secondary">
-                    <div class="EventBlock-secondaryImages1">
-                        <img src="https://placehold.it/812x650" alt="Crowd shot - nothing to see here">
-                    </div>
-                    <div class="EventBlock-secondaryImages2">
-                        <picture>
-                            <source srcset="https://placehold.it/277x312">
-                            <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
-                        </picture>
-                        <picture>
-                            <source srcset="https://placehold.it/277x312">
-                            <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
-                        </picture>
-                    </div>
-                    <div class="EventBlock-secondaryImages3">
-                        <picture>
-                            <source srcset="https://placehold.it/277x312">
-                            <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
-                        </picture>
-                        <picture>
-                            <source srcset="https://placehold.it/277x312">
-                            <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        {% endfor %}
+    <div class="Container Container--constrained ">
+    {% include '@event-current-grid' %}
     </div>
 
-    {# Past Events #}
     <div class="Background Background--grey">
-        {% include '@banner' %}
-
-        {% for event in pastEvents %}
-            <div class="EventBlock EventBlock--past">
-                <div class="EventBlock-secondary">
-                    <img src="https://placehold.it/812x650" alt="Crowd shot - nothing to see here">
-                </div>
-                <div class="EventBlock-primary">
-                    {% include '@event-card' with event %}
-                </div>
-            </div>
-        {% endfor %}
+        <div class="Container Container--constrained">
+            <h2 class="Heading Heading--secondary u-center l-space-before--double l-space-after">{{eventsSubHead}}</h2>
+            {% include '@stats' %}
+            {% include '@quote-grid' %}
+        </div>
     </div>
+
+    {% include '@hello' %}
 
 </main>
 
