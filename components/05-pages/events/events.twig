@@ -11,7 +11,10 @@
 
     <div class="Background Background--grey">
         <div class="Container Container--constrained">
-            <h2 class="Heading Heading--secondary u-center l-space-before--double l-space-after">{{eventsSubHead}}</h2>
+            <div class="u-center l-space-before--double l-space-after">
+            <h2 class="Heading Heading--secondary">{{eventsSubHead}}</h2>
+                <p><a href="{{eventsPastLink}}">{{eventsPastText}}</a></p>
+            </div>
             {% include '@stats' %}
             {% include '@quote-grid' %}
         </div>

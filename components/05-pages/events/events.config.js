@@ -11,6 +11,8 @@ module.exports = {
         mastheadModifier: '--chimney Texture--home',
 
         eventsSubHead: 'World-renowned events',
+        eventsPastLink: '#',
+        eventsPastText: 'View our past events',
         
         /* Events */
         events: '@event-current-grid.events',
