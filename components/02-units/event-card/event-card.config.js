@@ -88,7 +88,7 @@ module.exports = {
             context: {
                 eventCardSrc: '/assets/img/logos/clearleft-presents-med.svg',
                 eventCardAlt: 'Clearleft presents: Blair Enns The Four Conversations',
-                eventCardDescription: `To launch the Clearleft Presents series, we’re pleased as punch to welcome Blair Enns, founder of Win Without Pitching. After Blair’s acclaimed presentation last year at our Founders Assembly event … `,
+                eventCardDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.`,
                 eventCardListTitle: 'Who',
                 pastVersions: [{
                         item: 'Jake Knapp',
