@@ -1,8 +1,8 @@
-<div class="Hello">
+<div class="Hello {{helloClasses}}">
     <div class="Hello-container">
         <figure class="Hello-image">
             <img src="{{ helloImgSrc }}" alt="{{ helloImgAlt }}">
-            <figcaption>{{ helloImgText }}</figcaption>
+            {%if helloImgText%}<figcaption>{{ helloImgText }}</figcaption>{%endif%}
         </figure>
         <div>
             <h3 class="Hello-title Heading Heading--inverted Heading--medium">{{ helloHeading }}</h3>

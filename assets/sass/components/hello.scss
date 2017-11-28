@@ -2,7 +2,7 @@
     background-image: url('https://clearleft-v5.s3.amazonaws.com/dots/texture_dots-circle-grey.png');
     background-repeat: no-repeat;
     background-position: 100% 50%;
-    background-color: #8E3581;
+    background-color: $Brand-plum;
     background-size: px2rem(600px);
     color: $Blank;
     padding: px2rem(16px);
@@ -64,4 +64,15 @@
     .Hello-title {
         margin-top: 0;
     }
+}
+
+.Hello--dan {
+    background-color: $Brand-plum;
+}
+
+.Hello--alis {
+    background-color: $Crayola-red;
+}
+.Hello--alis .Hello-body a {
+    border-bottom: $Orange-yellow 0.125rem solid;
 }

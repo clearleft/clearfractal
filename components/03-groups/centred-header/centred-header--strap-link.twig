@@ -1,0 +1,7 @@
+{% set strapline %}
+<a href="{{headerStrapLinkURL}}">{{ headerStrapLinkText }}</a>
+{% endset %}
+{% include '@centred-header' with {
+    headerText: headerText,
+    headerStrapline: strapline
+}%}

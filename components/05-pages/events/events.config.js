@@ -1,124 +1,86 @@
 module.exports = {
-    "status": "wip",
-    "context": {
-        "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "primaryNavModifiers": ["--crayola-red"],
-        "logoModifiers": ["--crayola-red"],
+    status: 'wip',
+    context: {
+        primaryNavlinks: '@primary-navigation.primaryNavlinks',
+        primaryNavModifiers: ['--crayola-red'],
+        logoModifiers: ['--crayola-red'],
 
         /*Masthead*/
-        "mastheadTitle": "Events",
-        "pageLeadModifier": "--pinch",
-        "pageLeadSecondary": false,
+        mastheadTitle: 'Our<br>Events.',
+        mastheadDescription: 'Whether a digital leader, designer or developer we have events to inspire you and your team, give you new skills, and bring you the latest digital thinking from globally renowned speakers.',
+        mastheadModifier: '--chimney Texture--home',
 
-        "leadText": "Over the last 11 years we've been working hard to advance the practice of design by learning from expert thinkers and makers. In 2005, we created one of the UK's first web conferences. Since then, we've run 25 conferences. We also host regular community events at",
-        "bannerCaption": "Missions Accomplished",
-        "bannerHeadline": "Our Past Events",
-        "bannerModifier": "--plain",
+        eventsSubHead: {
+            headerText: 'World-renowned events',
+            headerStrapLinkURL: '#',
+            headerStrapLinkText: 'View our past events'
+        },
 
-        "currentEvents": [
-            {
-                "src": "http://placehold.it/1330x650",
-                "srcAlt": "Patterns Day",
-                "eventBackground": "url('http://clearleft-v5.s3.amazonaws.com/events/light-tiles.png') 0 50% no-repeat",
-                "eventCardModifier": "",
-                "eventCardContext": "May 24-26 2017  laban, london",
-                "eventCardSrc": "http://placehold.it/380x70",
-                "eventCardAlt": "Patterns Day",
-                "eventCardUrl": "",
-                "eventCardLink": "Visit Event",
-                "eventCardDescription": "<p>Here is some description text. It keeps going a little bit like this and more words are also here.</p>",
-                "eventCardListTitle": "Visit past versions:",
-                "pastVersions": [
-                    { "item": "2016", "itemUrl": "#" },
-                    { "item": "2015", "itemUrl": "#" },
-                    { "item": "2014", "itemUrl": "#" },
-                    { "item": "2013", "itemUrl": "#" }
-                ],
+        /* Events */
+        events: '@event-current-grid.events',
+        
+        /* Stats */
+        stats: '@stats.stats',
+        
+        /* Quotes */
+        quotes: [{
+                quoteAvatarSrc: '/assets/img/work/ch4/anna-doble.jpg',
+                quoteAvatarAlt: 'James Bates',
+                quoteText: 'I remember a really good sense of collaboration. There were a lot of moving parts—us at Clearleft, the team at Channel 4, but also the team at ITN. I think we had a really good working relationship between all of those people.',
+                quoteAuthor: 'James Bates',
+                quoteAuthorRole: 'Speaker at UX London 2009'
             },
             {
-                "src": "http://placehold.it/760x650",
-                "srcAlt": "UXLondon",
-                "eventBackground": "#1F6B9C",
-                "eventCardModifier": "--inverted",
-                "eventCardContext": "May 24-26 2017  laban, london",
-                "eventCardSrc": "http://placehold.it/380x70",
-                "eventCardAlt": "UX London",
-                "eventCardUrl": "",
-                "eventCardLink": "Visit UX London",
-                "eventCardDescription": "<p>We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.</p>",
-                "eventCardListTitle": "Visit past versions:",
-                "pastVersions": [
-                    { "item": "2016", "itemUrl": "#" },
-                    { "item": "2015", "itemUrl": "#" },
-                    { "item": "2014", "itemUrl": "#" },
-                    { "item": "2013", "itemUrl": "#" }
-                ],
+                quoteAvatarSrc: '/assets/img/work/ch4/anna-doble.jpg',
+                quoteAvatarAlt: 'James Bates',
+                quoteText: 'I remember a really good sense of collaboration. There were a lot of moving parts—us at Clearleft, the team at Channel 4, but also the team at ITN. I think we had a really good working relationship between all of those people.',
+                quoteAuthor: 'James Bates'
             },
             {
-                "src": "http://placehold.it/760x650",
-                "srcAlt": "Leading Design",
-                "eventBackground": "#C5E6F3",
-                "eventCardContext": "October 24-26 2017 london",
-                "eventCardSrc": "https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/leading-design-logo.svg",
-                "eventCardAlt": "UX London",
-                "eventCardUrl": "",
-                "eventCardLink": "Leading Design",
-                "eventCardDescription": "<p>A conference for people leading design teams, overseeing design direction, or instilling a culture of design within their organisations. Listen to leaders from Spotify, 37Signals and Google Ventures discuss the challenges of managing design, and becoming a better design leader.</p>",
-                "eventCardListTitle": "Visit past versions:",
-                "pastVersions": [
-                    { "item": "2016", "itemUrl": "#" }
-                ],
+                quoteAvatarSrc: '/assets/img/work/ch4/anna-doble.jpg',
+                quoteAvatarAlt: 'Don Norman',
+                quoteText: 'I came. I listened. I stayed. Great event, great speakers, great crowd, great venue. Learn, network. enjoy',
+                quoteAuthor: 'Don Norman',
+                quoteAuthorRole: 'Speaker at UX London 2009'
+            },
+            {
+                quoteAvatarSrc: '/assets/img/work/ch4/anna-doble.jpg',
+                quoteAvatarAlt: 'James Bates',
+                quoteText: 'I came. I listened. I stayed. Great event, great speakers, great crowd, great venue. Learn, network. enjoy',
+                quoteAuthor: 'Don Norman',
+                quoteAuthorRole: 'Speaker at UX London 2009'
             }
         ],
 
-        "pastEvents": [
-            {
-                "src": "http://placehold.it/544x360",
-                "srcAlt": "Leading Design",
-                "eventCardContext": "May 24-26 2017  laban, london",
-                "eventCardSrc": "https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/leading-design-logo.svg",
-                "eventCardAlt": "Leading Design",
-                "eventCardUrl": "",
-                "eventCardLink": "Visit Leading Design",
-                "eventCardDescription": "<p>We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.</p>",
-                "eventCardListTitle": "Visit past versions:",
-                "pastVersions": [
-                    { "item": "2016", "itemUrl": "#" },
-                    { "item": "2015", "itemUrl": "#" },
-                    { "item": "2014", "itemUrl": "#" },
-                    { "item": "2013", "itemUrl": "#" }
-                ],
-            },
-            {
-                "src": "http://placehold.it/544x360",
-                "srcAlt": "dConstruct",
-                "eventCardContext": "May 24-26 2017  laban, london",
-                "eventCardSrc": "https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/leading-design-logo.svg",
-                "eventCardAlt": "dConstruct",
-                "eventCardUrl": "",
-                "eventCardLink": "dConstruct",
-                "eventCardDescription": "<p>We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.</p>",
-                "eventCardListTitle": "Visit past versions:"
-            },
-            {
-                "src": "http://placehold.it/544x360",
-                "srcAlt": "Leading Design",
-                "eventCardContext": "May 24-26 2017  laban, london",
-                "eventCardSrc": "https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ampersand-logo-white.svg",
-                "eventCardAlt": "Leading Design",
-                "eventCardUrl": "",
-                "eventCardLink": "Visit Leading Design",
-                "eventCardDescription": "<p>We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.</p>",
-                "eventCardListTitle": "Visit past versions:",
-            }
-        ],
+        /* Input group */
+        mailingList: {
+            inputGroupURL: '#',
+            inputGroupLabel: 'Get notified with updates',
+            inputGroupSubmit: 'Join the mailing list',
+            inputGroupID: 'ID2',
+            inputGroupPlaceholder: 'Enter email address',
+            inputGroupMicrocopy: 'Low volume mailing list. Just for events & conference updates. <a href="#">See an example</a>',
+
+        },        
+
+        /* Hello */
+        helloClasses: '@hello--alis.helloClasses',
+        helloImgSrc: '@hello--alis.helloImgSrc',
+        helloImgAlt: '@hello--alis.helloImgAlt',
+        helloImgText: '@hello--alis.helloImgText',
+        helloHeading: "@hello--alis.helloHeading",
+        helloBody: '@hello--alis.helloBody',
 
         /*Footer*/
-        "footerLinks": "@site-footer.footerLinks",
-        "socialLinks": "@site-footer.socialLinks",
-        "inputGroupLabel": "@site-footer.inputGroupLabel",
-        "inputGroupSubmit": "@site-footer.inputGroupSubmit",
-        "inputModifier": '--combo',
-        "siteFooterSmall": "@site-footer.siteFooterSmall"
+        footer: {
+            footerLinks: '@site-footer.footerLinks',
+            socialLinks: '@site-footer.socialLinks',
+            inputGroupLabel: '@site-footer.inputGroupLabel',
+            inputGroupSubmit: '@site-footer.inputGroupSubmit',
+            inputGroupPlaceholder: 'E.g. example@domain.com',
+            inputGroupMicrocopy: 'Every 2 weeks. It’S non-salesy. We never spam.',
+            inputModifier: '--combo',
+            siteFooterSmall: '@site-footer.siteFooterSmall'
+        }       
     }
 };

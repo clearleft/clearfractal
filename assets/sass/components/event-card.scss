@@ -1,10 +1,14 @@
+.EventCard {
+    padding: 2rem 1.5rem;
+}
 .EventCard-context {
-    color: $Dark-liver-grey;
+    color: $Crayola-red;
     @include font(14px, 17px);
     font-family: $font-secondary;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
 }
 .EventCard-eventName {
     font-family: $font-secondary;
@@ -15,27 +19,36 @@
 .EventCard-image {
     margin-bottom: px2rem(16px);
 }
-.EventCard-description {
-    margin-bottom: 1rem;
-}
-.EventCard-links {
+.EventCard-section {
     margin-bottom: 1rem;
 }
 .EventCard-list {
     margin: 0;
-    -webkit-font-smoothing: antialiased;
 }
 .EventCard-listItem {
     display: inline-block;
     list-style: none;
     font-size: px2rem(16px);
     margin-right: px2rem(6px);
-}
-.EventCard--inverted * {
-    color: $Blank;
+    &:not(:last-child):after {
+        content: '\00200b,\00a0';
+        margin-left: -.13em;
+    }
 }
 
-@media screen and (min-width: px2em(720px)) {
+@media screen and (min-width: px2em(850px)) {
+    .EventCard {
+        padding: px2rem(44px);
+    }
+    .EventCard-eventName {
+        @include font(30px, 39px);
+    }
+    .EventCard-image {
+        margin-bottom: px2rem(32px);
+    }
+}
+
+@media screen and (min-width: px2em(1000px)) {
     .EventCard {
         padding: px2rem(74px);
     }

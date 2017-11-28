@@ -5,62 +5,27 @@
 </div>
 
 <main>
-    <div class="Background Background--grey">
-        {% include '@page-lead' %}
-    </div>
 
     {# Current events #}
-    <div>
-        {% for event in currentEvents %}
-            <div class="EventBlock EventBlock--current">
-                <div class="EventBlock-primary">
-                    {% include '@event-card' with event %}
-                </div>
-                <div class="EventBlock-secondary">
-                    <div class="EventBlock-secondaryImages1">
-                        <img src="https://placehold.it/812x650" alt="Crowd shot - nothing to see here">
-                    </div>
-                    <div class="EventBlock-secondaryImages2">
-                        <picture>
-                            <source srcset="https://placehold.it/277x312">
-                            <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
-                        </picture>
-                        <picture>
-                            <source srcset="https://placehold.it/277x312">
-                            <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
-                        </picture>
-                    </div>
-                    <div class="EventBlock-secondaryImages3">
-                        <picture>
-                            <source srcset="https://placehold.it/277x312">
-                            <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
-                        </picture>
-                        <picture>
-                            <source srcset="https://placehold.it/277x312">
-                            <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        {% endfor %}
-    </div>
+    {% include '@event-current-grid' %}
 
-    {# Past Events #}
     <div class="Background Background--grey">
-        {% include '@banner' %}
+        <div class="Container Container--constrained">
+            {% include '@centred-header--strap-link' with eventsSubHead %}             
+            {% include '@stats' %}
+            {% include '@quote-grid' %}
 
-        {% for event in pastEvents %}
-            <div class="EventBlock EventBlock--past">
-                <div class="EventBlock-secondary">
-                    <img src="https://placehold.it/812x650" alt="Crowd shot - nothing to see here">
-                </div>
-                <div class="EventBlock-primary">
-                    {% include '@event-card' with event %}
-                </div>
+            <div class="l-space-before--mega l-space-after--mega">
+                {% set mailingList = mailingList|merge({inputGroupModifiers:'highlight'}) %}
+                {% include '@input-group' with mailingList only %}
             </div>
-        {% endfor %}
+
+        </div>
     </div>
 
+    {% include '@hello' %}
+
+    
 </main>
 
-{% include '@site-footer' %}
+{% include '@site-footer' with footer only %}

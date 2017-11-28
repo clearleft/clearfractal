@@ -1,0 +1,6 @@
+<picture>
+    {% for src in sources %}
+    <source srcset="{{ src.srcset }}" media="{{src.media}}" type="{{src.type}}">
+    {% endfor %}
+    <img class="l-img-con" src="{{ img.src }}" alt="{{img.alt|default(' ')}}" style="{{img.style}}">
+</picture>

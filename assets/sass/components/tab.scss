@@ -1,0 +1,39 @@
+.Tab {
+    border: 1px solid $Brandeis-blue;
+    @include font(20px, 20px);
+    padding: .75em 1em;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.Tab:hover {
+    border-color: $Crayola-red;
+    outline: none;
+}
+
+.Tab[aria-selected],
+.Tab:focus,
+.Tab[aria-selected]:focus {
+    outline: none;
+    color: $Blank;
+    background-color: $Brandeis-blue;
+    border-color: transparent;
+}
+
+.Tab[aria-selected]:hover {
+    background-color: $Crayola-red;
+    border-color: transparent;
+    color: $Blank;
+}
+
+@media only screen and (max-width: px2em(500px)) {
+    .Tablist .Tab {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: px2em(500px)) {
+    .Tab {
+        text-align: center;
+    }
+}

@@ -1,0 +1,5 @@
+<div class="Cols Cols--half">
+{% for event in events %}
+    {% include '@event-current' with event only %}
+{% endfor %}
+</div>

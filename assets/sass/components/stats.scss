@@ -1,0 +1,14 @@
+.Stats {
+    margin-top: units(2);
+    margin-bottom: units(2);
+    .Stat {
+        display: inline-block;
+    }
+    @supports (display: grid) {
+        margin-left: -1*units(1);
+        margin-right: -1*units(1);
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}

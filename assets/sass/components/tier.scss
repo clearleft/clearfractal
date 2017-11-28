@@ -1,0 +1,37 @@
+.Tier {
+    font-size: .9em;
+}
+
+.Tier+.Tier {
+    border-top: 1px solid lightgray;
+}
+
+.Tier-cell {
+    padding: .3em .5em;
+    vertical-align: middle;
+}
+
+.Tier-cell:first-child {
+    padding-left: 1px;
+}
+
+.Tier--soldOut .Tier-cell--price {
+    color: $light-grey;
+    -webkit-font-smoothing: antialiased;
+}
+
+.Tier-cell--status {
+    max-width: 100px;
+    text-align: right;
+}
+
+.Tier-soldOut {
+    font-size: .6667em;
+    text-transform: uppercase;
+    color: $Crayola-red;
+    border: 1px solid currentColor;
+    border-radius: 2px;
+    padding: .3em .5em;
+    font-weight: bold;
+    display: inline-block;
+}

@@ -1,0 +1,6 @@
+<table class="TicketTiers{% if ticketTiersModifiers %} TicketTiers--{{ticketTiersModifiers}}{% endif %}">
+{% for tier in ticketTiers %}
+{% include '@tier' with tier only %}
+{% endfor %}
+</table>
+
