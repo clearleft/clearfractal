@@ -1,0 +1,9 @@
+<div class="Cols Cols--half">
+{% for event in events %}
+    {% set eventCardSide = 'left' %}
+    {% if loop.index is even %}
+        {% set eventCardSide = 'right' %}
+    {% endif %}
+    {% include '@event-past' with event|merge({ eventCardSide: eventCardSide}) only %}
+{% endfor %}
+</div>
