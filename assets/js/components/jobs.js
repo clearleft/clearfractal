@@ -1,5 +1,7 @@
 
 function Jobs(elm) {
+    
+    return;
 
     if( !elm ) {
         return;
