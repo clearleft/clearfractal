@@ -14,18 +14,13 @@
 .Tier-cell:first-child {
     padding-left: 1px;
 }
-
-.Tier--soldOut .Tier-cell--price {
-    color: $light-grey;
+.Tier-price {
     -webkit-font-smoothing: antialiased;
 }
-
-.Tier-cell--status {
-    max-width: 100px;
-    text-align: right;
+.Tier-price--soldout {
+    color: $light-grey;
 }
-
-.Tier-soldOut {
+.Tier-soldout {
     font-size: .6667em;
     text-transform: uppercase;
     color: $Crayola-red;
@@ -34,4 +29,5 @@
     padding: .3em .5em;
     font-weight: bold;
     display: inline-block;
+    margin-left: .5rem;
 }

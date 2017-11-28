@@ -1,5 +1,4 @@
-<tr class="Tier {% if tierSoldOut == true %} Tier--soldOut{% endif %}">
+<tr class="Tier">
     <td class="Tier-cell Tier-cell--name">{{tierName}}</td>
-    <td class="Tier-cell Tier-cell--price">{{tierPrice}}</td>
-    <td class="Tier-cell Tier-cell--status">{% if tierSoldOut == true %}<span class="Tier-soldOut">Sold&nbsp;out</span>{% endif %}</td>
+    <td class="Tier-cell Tier-cell--price"><span class="Tier-price{% if tierSoldOut == true %} Tier-price--soldout{% endif %}">{{tierPrice}}</span> {% if tierSoldOut == true %}<span class="Tier-soldout">Sold&nbsp;out</span>{% endif %}</td>
 </tr>
