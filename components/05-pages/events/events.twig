@@ -11,17 +11,21 @@
 
     <div class="Background Background--grey">
         <div class="Container Container--constrained">
-            <div class="u-center l-space-before--double l-space-after--double">
-            <h2 class="Heading Heading--secondary">{{eventsSubHead}}</h2>
-                <p><a href="{{eventsPastLink}}">{{eventsPastText}}</a></p>
-            </div>
+            {% include '@centred-header--strap-link' with eventsSubHead %}             
             {% include '@stats' %}
             {% include '@quote-grid' %}
+
+            <div class="l-space-before--mega l-space-after--mega">
+                {% set mailingList = mailingList|merge({inputGroupModifiers:'highlight'}) %}
+                {% include '@input-group' with mailingList only %}
+            </div>
+
         </div>
     </div>
 
     {% include '@hello' %}
 
+    
 </main>
 
-{% include '@site-footer' %}
+{% include '@site-footer' with footer only %}

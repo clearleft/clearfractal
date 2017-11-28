@@ -10,10 +10,12 @@ module.exports = {
         mastheadDescription: 'Whether a digital leader, designer or developer we have events to inspire you and your team, give you new skills, and bring you the latest digital thinking from globally renowned speakers.',
         mastheadModifier: '--chimney Texture--home',
 
-        eventsSubHead: 'World-renowned events',
-        eventsPastLink: '#',
-        eventsPastText: 'View our past events',
-        
+        eventsSubHead: {
+            headerText: 'World-renowned events',
+            headerStrapLinkURL: '#',
+            headerStrapLinkText: 'View our past events'
+        },
+
         /* Events */
         events: '@event-current-grid.events',
         
@@ -50,6 +52,17 @@ module.exports = {
             }
         ],
 
+        /* Input group */
+        mailingList: {
+            inputGroupURL: '#',
+            inputGroupLabel: 'Get notified with updates',
+            inputGroupSubmit: 'Join the mailing list',
+            inputGroupID: 'ID2',
+            inputGroupPlaceholder: 'Enter email address',
+            inputGroupMicrocopy: 'Low volume mailing list. Just for events & conference updates. <a href="#">See an example</a>',
+
+        },        
+
         /* Hello */
         helloClasses: '@hello--alis.helloClasses',
         helloImgSrc: '@hello--alis.helloImgSrc',
@@ -59,11 +72,15 @@ module.exports = {
         helloBody: '@hello--alis.helloBody',
 
         /*Footer*/
-        footerLinks: '@site-footer.footerLinks',
-        socialLinks: '@site-footer.socialLinks',
-        inputGroupLabel: '@site-footer.inputGroupLabel',
-        inputGroupSubmit: '@site-footer.inputGroupSubmit',
-        inputModifier: '--combo',
-        siteFooterSmall: '@site-footer.siteFooterSmall'
+        footer: {
+            footerLinks: '@site-footer.footerLinks',
+            socialLinks: '@site-footer.socialLinks',
+            inputGroupLabel: '@site-footer.inputGroupLabel',
+            inputGroupSubmit: '@site-footer.inputGroupSubmit',
+            inputGroupPlaceholder: 'E.g. example@domain.com',
+            inputGroupMicrocopy: 'Every 2 weeks. It’S non-salesy. We never spam.',
+            inputModifier: '--combo',
+            siteFooterSmall: '@site-footer.siteFooterSmall'
+        }       
     }
 };

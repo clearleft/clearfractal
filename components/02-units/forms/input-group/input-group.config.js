@@ -6,7 +6,8 @@ module.exports = {
         inputGroupLabel: 'Form input label',
         inputGroupSubmit: 'Get the Clearletter',
         inputGroupID: 'ID1',
-        inputGroupPlaceholder: 'E.g. example@domain.com'
+        inputGroupPlaceholder: 'E.g. example@domain.com',
+        inputGroupMicrocopy: 'Every 2 weeks. It’S non-salesy. We never spam.'
     },
     variants: [{
             name: 'highlight',

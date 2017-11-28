@@ -39,8 +39,7 @@
 
 .InputGroup-microcopy {
     text-transform: uppercase;
-    color: $Jet-grey;
-    @include font(13px, 16px);
+    @include font(13px);
     font-family: $font-secondary;
     font-weight: 700;
 }
@@ -83,7 +82,7 @@
 }
 
 .InputGroup--highlight {
-    margin: 0 auto;
+    margin: units(2) auto;
     max-width: px2rem(830px);
     .InputGroup-submit {
         background-color: $Crayola-red;

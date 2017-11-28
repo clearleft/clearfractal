@@ -47,6 +47,22 @@
     padding-bottom: units(4);
 }
 
+.l-space-before--mega {
+    margin-top: units(7);
+}
+
+.l-space-after--mega {
+    margin-bottom: units(7);
+}
+
+.l-pad-before--mega {
+    padding-top: units(7);
+}
+
+.l-pad-after--mega {
+    padding-bottom: units(7);
+}
+
 .l-vh {
     /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
     position: absolute !important;
