@@ -1,4 +1,4 @@
-<div class="Hello {{helloClasses}}">
+<div class="Hello{% if helloModifiers %} Hello--{{helloModifiers}}{% endif %}">
     <div class="Hello-container">
         <figure class="Hello-image">
             <img src="{{ helloImgSrc }}" alt="{{ helloImgAlt }}">

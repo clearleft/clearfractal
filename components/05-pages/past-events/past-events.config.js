@@ -18,7 +18,7 @@ module.exports = {
         events: '@event-past-grid.events',
 
         /* Hello */
-        helloClasses: '@hello--alis.helloClasses',
+        helloModifiers: '@hello--alis.helloModifiers',
         helloImgSrc: '@hello--alis.helloImgSrc',
         helloImgAlt: '@hello--alis.helloImgAlt',
         helloImgText: '@hello--alis.helloImgText',

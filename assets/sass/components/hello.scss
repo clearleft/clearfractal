@@ -7,23 +7,28 @@
     color: $Blank;
     padding: px2rem(16px);
 }
+
 .Hello-container {
     margin: 0 auto;
     max-width: px2rem(800px);
 }
+
 .Hello-title {
     margin-bottom: px2rem(20px);
     margin-top: px2rem(16px);
 }
+
 .Hello-body a {
     color: #fff;
 }
+
 .Hello-image {
     max-width: px2rem(140px);
     figcaption {
         color: $Blank;
         font-family: $font-secondary;
-        @include font(12px, 15px);
+        @include font(12px,
+        15px);
         font-weight: 700;
         text-align: center;
         text-transform: uppercase;
@@ -31,6 +36,7 @@
         -webkit-font-smoothing: antialiased;
     }
 }
+
 @media screen and (min-width: px2rem(500px)) {
     .Hello {
         background-position: 120% px2rem(-200px);
@@ -42,13 +48,16 @@
     }
     .Hello-image {
         figcaption {
-            @include font(14px, 15px);
+            @include font(14px,
+            15px);
         }
     }
     .Hello-title {
-        @include font(35px, 40px);
+        @include font(35px,
+        40px);
     }
 }
+
 @media screen and (min-width: px2rem(680px)) {
     .Hello {
         background-position: 80% 50%;
@@ -66,13 +75,14 @@
     }
 }
 
-.Hello--dan {
+.Hello--plum {
     background-color: $Brand-plum;
 }
 
-.Hello--alis {
+.Hello--crayola-red {
     background-color: $Crayola-red;
 }
-.Hello--alis .Hello-body a {
+
+.Hello--crayola-red .Hello-body a {
     border-bottom: $Orange-yellow 0.125rem solid;
 }
