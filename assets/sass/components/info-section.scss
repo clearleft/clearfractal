@@ -1,0 +1,23 @@
+.InfoSection {
+    padding: px2rem(8px) px2rem(16px);
+    &>*:first-child {
+        margin-top: 0;
+    }
+}
+
+.InfoSection--small {
+    font-size: 0.875rem;
+}
+
+.InfoSection--small .InfoSection-heading {
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+}
+
+@media screen and (min-width: px2em(500px)) {
+    .InfoSection {
+        padding-top: px2rem(16px);
+        padding-bottom: px2rem(16px);
+    }
+}

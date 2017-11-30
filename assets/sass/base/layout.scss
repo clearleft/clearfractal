@@ -63,6 +63,10 @@
     padding-bottom: units(7);
 }
 
+.l-pad-around {
+    padding: px2rem(20px) px2rem(24px) px2rem(16px) px2rem(24px);
+}
+
 .l-vh {
     /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
     position: absolute !important;

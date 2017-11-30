@@ -8,18 +8,34 @@
         clear: both;
     }
 }
+
 .Container--constrained {
     margin: auto;
     max-width: px2rem(1440px);
 }
+
 .Container--paddedLarge {
     padding-top: units(4);
     padding-bottom: units(4);
 }
+
 .Cols.Container {
     &:before,
-    &:after{
+    &:after {
         content: none;
+    }
+}
+
+.Container--mastheadAlign {
+    margin: 0 -.25rem 0 -.25rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (min-width: px2em(850px)) {
+    .Container--mastheadAlign {
+        padding-left: px2rem(20px);
+        padding-right: px2rem(20px);
     }
 }
 
@@ -31,5 +47,21 @@
     .Container--paddedLarge {
         padding-top: units(8);
         padding-bottom: units(8);
+    }
+    .Container--mastheadAlign {
+        padding-left: px2rem(20px);
+        padding-right: px2rem(20px);
+    }
+}
+
+$pad: px2rem(20px);
+$val: px2em(930px);
+@media screen and (min-width: em(1046px)) {
+    .Container--mastheadAlign {
+        margin-left: 10%;
+        margin-left: calc((100% - (#{$val} + 2*#{$pad})) * .5);
+        padding-left: 2.25rem;
+        padding-right: px2rem(20px);
+        max-width: 65em;
     }
 }

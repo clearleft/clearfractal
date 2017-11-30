@@ -1,0 +1,75 @@
+<div class="Background Background--grey">
+    {% include '@site-header' %}
+    {% include '@masthead' %}
+</div>
+
+<main>
+    <div class="Background Background--grey">
+        <div class="Container Container--mastheadAlign Cols Cols--half l-pad-after--mega">
+            {% include '@lead' with lead only %}
+            <div class="l-pad-around">
+                {% include '@event-info' with eventInfo only %}
+                {% include '@ticket-tiers' with {ticketTiers: eventTicketTiers } only %}
+                {% include '@mega-link' with {
+                    megaLinkURL: workshopTicketLink,
+                    megaLinkText: workshopTicketLinkText,
+                    megaLinkModifier: '--block'
+                    } %}
+            </div>
+        </div>
+
+    </div>
+
+    <div class="Container l-pad-before l-pad-after">
+        <div class="PresentsGrid">
+            <div class="PresentsGrid-primary">
+                <div class="TextBlock Prose">
+                    {{workshopDescription}}
+                </div>
+            </div>
+            <div class="PresentsGrid-secondary">
+                {% if workshopHostImage | length %}
+                    {% set workshopHostImageItem = workshopHostImage | first %}
+                    {% include '@image-block' with {
+                    imageBlockModifier: '--first',
+                    imageBlockSrc: workshopHostImageItem.url, 
+                    imageBlockAlt:workshopHostImageItem.title} %}
+                {% endif %}
+
+                {% include '@info-section' with {
+                    infoSectionHeading: workshopHostInfoTitle,
+                    infoSectionContent: workshopAboutHost,
+                    infoSectionModifiers: 'small'
+                } %}
+
+            <div class="Background--lapis-lazuli-blue l-space-before">
+
+                    {% include '@info-section' with {
+                        infoSectionHeading: 'Who Should Attend',
+                        infoSectionContent: workshopWhoShouldAttend,
+                        infoSectionModifiers: 'small',
+                        infoSectionIsInverted: true
+                    } %}
+
+                    {% set whereContent %}
+                    <span>{{ workshopLocation }}</span>
+                    {{ workshopLocationInfo }}
+                    {% endset %}
+
+                    {% include '@info-section' with {
+                        infoSectionHeading: 'Where',
+                        infoSectionContent: whereContent,
+                        infoSectionModifiers: 'small',
+                        infoSectionIsInverted: true
+                    } %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include '@hello' %}
+
+</main>
+
+{% include '@site-footer' with footer only %}

@@ -27,6 +27,9 @@
 .ImageBlock--short {
     padding-bottom: 0;
 }
+.ImageBlock--first {
+    padding-top: 1rem;
+}
 @media screen and (min-width: px2em(500px)) {
     .ImageBlock {
         padding-top: px2rem(32px);
@@ -34,5 +37,8 @@
     }
     .ImageBlock--short {
         padding-bottom: 0;
+    }
+    .ImageBlock--first {
+        padding-top: 1rem;
     }
 }

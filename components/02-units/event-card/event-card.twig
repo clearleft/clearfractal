@@ -1,39 +1,43 @@
 <div class="EventCard{% if eventCardModifier %} EventCard{{eventCardModifier}}{% endif %}" {% if eventBackground %} style="background:{{eventBackground}}" {% endif %}>
 
     {% if eventCardSrc %}
-    <img class="EventCard-image" src="{{eventCardSrc}}" alt="{{eventCardAlt}}">
+        <img class="EventCard-image" src="{{eventCardSrc}}" alt="{{eventCardAlt}}">
     {% endif %}
     {% if eventCardName %}
-    <div class="EventCard-eventName">{{ eventCardName }}</div>
+        <div class="EventCard-eventName">{{ eventCardName }}</div>
     {% endif %}
 
     <p class="EventCard-section Prose">
-    {{ eventCardDescription }}
+        {{ eventCardDescription }}
     </p>
 
     {% if eventCardInfo %}
-    {% include '@event-info' with eventCardInfo only %}
+        {% include '@event-info' with eventCardInfo only %}
     {% endif %}
 
     {% if eventCardTicketTiers %}
-    {% include '@ticket-tiers' with {ticketTiers: eventCardTicketTiers, ticketTiersModifiers: 'full'} only %}
+        {% include '@ticket-tiers' with {ticketTiers: eventCardTicketTiers, ticketTiersModifiers: 'full'} only %}
     {% endif %}
 
     {% if pastVersions | length %}
-    <div class="EventCard-section">
-        <div class="EventCard-context">{{eventCardListTitle}}</div>
-        <ul class="EventCard-list">
-            {% for pastVersion in pastVersions %}
-                <li class="EventCard-listItem ">
-                    <a href="{{pastVersion.itemUrl}}">{{pastVersion.item}}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
+        <div class="EventCard-section">
+            <div class="EventCard-context">{{eventCardListTitle}}</div>
+            <ul class="EventCard-list">
+                {% for pastVersion in pastVersions %}
+                    <li class="EventCard-listItem ">
+                        <a href="{{pastVersion.itemUrl}}">{{pastVersion.item}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
     {% endif %}
 
     {% if eventCardUrl %}
-    {% set linkClasses = ((eventStatus == 'upcoming') ? 'MegaLink' : 'MegaLink MegaLink--block') %}
-    <a href="{{eventCardUrl}}" class="EventCard-link {{linkClasses}}">{{eventCardLink}}</a>
+        {% set modifier = ((eventStatus == 'upcoming') ? ' EventCard-link' : '--block EventCard-link') %}
+        {% include '@mega-link' with {
+            megaLinkURL: eventCardUrl,
+            megaLinkText: eventCardLink,
+            megaLinkModifier: modifier
+        }%}
     {% endif %}
 </div>
