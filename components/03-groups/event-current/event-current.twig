@@ -1,4 +1,10 @@
-<div class="u-vertical-center u-border-top-n2">
-{% include '@event-card' %}
+<div 
+    class="u-vertical-center{% if not eventBackground %} u-border-top-n2{% endif %}"
+    {% if eventBackground %} style="background:{{eventBackground}}" {% endif %}>
+    {% include '@event-card' %}
 </div>
-{% include '@picture-contain' with eventPictures[0] only %}
+{% if eventPictures|length %}
+    {% include '@picture-contain' with eventPictures[0] only %}
+{% else %}
+    <div {% if eventBackground %} style="background:{{eventBackground}}" {% endif %}></div>
+{% endif %}

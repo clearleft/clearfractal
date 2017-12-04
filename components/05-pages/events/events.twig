@@ -15,10 +15,12 @@
             {% include '@stats' %}
             {% include '@quote-grid' %}
 
+            {% if mailingList %}
             <div class="l-space-before--mega l-space-after--mega">
                 {% set mailingList = mailingList|merge({inputGroupModifiers:'highlight'}) %}
                 {% include '@input-group' with mailingList only %}
             </div>
+            {% endif %}
 
         </div>
     </div>

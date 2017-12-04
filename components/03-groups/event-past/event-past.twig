@@ -7,12 +7,15 @@
 {% endif %}
 
 {% macro picture(pic) %}
+{% if pic is defined %}
 {% include '@picture-contain' with pic only %}
+{% endif %}
 {% endmacro %}
 
 {% macro card(card) %}
-<div class="u-vertical-center u-border-top-n2">
-{% include '@event-card' with card only %}
+<div class="u-vertical-center {% if not eventBackground %} u-border-top-n2{% endif %}"
+    {% if eventBackground %} style="background:{{eventBackground}}" {% endif %}>
+    {% include '@event-card' with card only %}
 </div>
 {% endmacro %}
 
