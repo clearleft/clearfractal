@@ -27,28 +27,37 @@ module.exports = {
     status: 'wip',
     context: {
         events: [
-            {
-                eventCard: {
-                    eventCardSrc: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/leading-design-logo.svg?mtime=20170407111120',
-                    eventCardAlt: 'Leading Design',
-                    eventCardUrl: '#',
-                    eventCardLink: 'Full event details & tickets',
-                    eventCardInfo: {
-                        location: 'Laban, London',
-                        date: 'May 24-26 2017'
-                    },
-                    eventCardDescription: `A conference for people leading design teams, overseeing design direction, or instilling a culture of design within their organisations. Listen to leaders from Facebook, Buzzfeed, IBM Design Studio and Vine discuss the challenges of managing design, and becoming a better design leader.`,
-                    eventCardTicketTiers: tickets
-                },
-                eventPicture: pic
+            {                
+                eventSrc: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/leading-design-logo.svg?mtime=20170407111120',
+                eventAlt: 'Leading Design',
+                eventUrl: '#',
+                eventLink: 'Full event details & tickets',
+                eventLocation: 'Laban, London',
+                eventDate: 'May 24-26 2017',
+                eventDescription: `A conference for people leading design teams, overseeing design direction, or instilling a culture of design within their organisations. Listen to leaders from Facebook, Buzzfeed, IBM Design Studio and Vine discuss the challenges of managing design, and becoming a better design leader.`,
+                eventTicketTiers: tickets,
+                eventPictures: [pic, pic, pic]                
             },
             {
-                eventCard: '@event-card--presents',
-                eventPicture: pic
+                eventSrc: '@event-card--presents.eventSrc',
+                eventAlt: '@event-card--upcoming.eventAlt',
+                eventName: '@event-card--presents.eventName',
+                eventDescription: '@event-card--presents.eventDescription',
+                eventUrl: '@event-card--presents.eventUrl',
+                eventLink: '@event-card--presents.eventLink',
+                eventLocation: '@event-card--presents.eventLocation',
+                eventDate: '@event-card--presents.eventDate',
+                eventTicketTiers: '@event-card--presents.eventTicketTiers',
+                eventPictures: [pic, pic, pic]     
             },
             {
-                eventCard: '@event-card--upcoming',
-                eventPicture: pic
+                eventStatus: '@event-card--upcoming.eventStatus',
+                eventSrc: '@event-card--upcoming.eventSrc',
+                eventAlt: '@event-card--upcoming.eventAlt',
+                eventDescription: '@event-card--upcoming.eventDescription',
+                eventUrl: '@event-card--upcoming.eventUrl',
+                eventLink: '@event-card--upcoming.eventLink',
+                eventPictures: [pic,pic,pic]
             }
         ]
     }

@@ -2,17 +2,14 @@ module.exports = {
     status: 'wip',
     preview: '@preview-cols',
     context: {
-        eventCard: {
-            eventCardSrc: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo.svg',
-            eventCardAlt: 'UX London',
-            eventCardUrl: '#',
-            eventCardLink: 'Full event details & tickets',
-            eventCardInfo: {
-                location: 'Laban, London',
-                date: 'May 24-26 2017'
-            },
-            eventCardDescription: `We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
-            eventCardTicketTiers: [{
+        eventSrc: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo.svg',
+        eventAlt: 'UX London',
+        eventUrl: '#',
+        eventLink: 'Full event details & tickets',
+        eventLocation: 'Laban, London',
+        eventDate: 'May 24-26 2017',
+        eventDescription: `We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
+        eventTicketTiers: [{
                 tierName: 'Super Early Bird tickets',
                 tierPrice: '£445 + VAT',
                 tierSoldOut: true
@@ -25,9 +22,8 @@ module.exports = {
                 tierName: 'Standard tickets',
                 tierPrice: '£595 + VAT'
             }
-            ]
-        },
-        eventPicture: {
+        ],
+        eventPictures: [{
             sources: [{
                 srcset: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/_1080x1080_crop_center-center_85/vhols-index.jpg?mtime=20171101102312',
                 media: '(min-width: 57.5em)'
@@ -39,6 +35,6 @@ module.exports = {
                 src: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/_400x400_crop_center-center_85/vhols-index.jpg?mtime=20171101102312',
                 style: 'object-position: 0% 50%'
             }
-        }
+        }]
     }
 }

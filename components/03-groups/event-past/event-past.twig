@@ -2,8 +2,8 @@
 {% if eventPictures.length is divisibleby(2) %}
 {% set eventPictures = eventPictures|slice(0,1) %}
 {% endif %}
-{% if eventCardSide is not defined %}
-    {% set eventCardSide = 'left' %}
+{% if eventSide is not defined %}
+    {% set eventSide = 'left' %}
 {% endif %}
 
 {% macro picture(pic) %}
@@ -18,14 +18,14 @@
 
 {% import _self as output %}
 
-{% if eventCardSide == 'left' %}
+{% if eventSide == 'left' %}
     {{ output.card(eventCard) }}
-    {% for eventPicture in eventPictures %}
+    {% for eventPicture in eventCard.eventPictures %}
         {{ output.picture(eventPicture) }}
     {% endfor %}
-{% elseif eventCardSide == 'right' %}
-    {% set firstPicture = eventPictures|slice(0,1)|first %}
-    {% set tailPictures = eventPictures|slice(1) %}
+{% elseif eventSide == 'right' %}
+    {% set firstPicture = eventCard.eventPictures|slice(0,1)|first %}
+    {% set tailPictures = eventCard.eventPictures|slice(1) %}
     {{ output.picture(firstPicture) }}
     {{ output.card(eventCard) }}
     {% for eventPicture in tailPictures %}

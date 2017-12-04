@@ -43,11 +43,19 @@ module.exports = {
     context: {
         events: [
             {
-                eventCard: '@event-card--past',
+                eventSrc: '@event-card--past.eventSrc',
+                eventAlt: '@event-card--past.eventAlt',
+                eventDescription: '@event-card--past.eventDescription',
+                eventListTitle: '@event-card--past.eventListTitle',
+                eventPastVersions: '@event-card--past.eventPastVersions',
                 eventPictures: [pic, pic3, pic2]
             },
             {
-                eventCard: '@event-card--presents-past',
+                eventSrc: '@event-card--presents-past.eventSrc',
+                eventAlt: '@event-card--presents-past.eventAlt',
+                eventDescription: '@event-card--presents-past.eventDescription',
+                eventListTitle: '@event-card--presents-past.eventListTitle',
+                eventPastVersions: '@event-card--presents-past.eventPastVersions',
                 eventPictures: [pic2, pic, pic3]
             }
         ]

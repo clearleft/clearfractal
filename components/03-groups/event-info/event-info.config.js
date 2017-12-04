@@ -1,8 +1,8 @@
 module.exports = {
     status: 'wip',
     context: {
-        date: '25-27 Oct',
-        location: 'The Barbican Centre, London'
+        eventDate: '25-27 Oct',
+        eventLocation: 'The Barbican Centre, London'
     },
     variants: [
         {

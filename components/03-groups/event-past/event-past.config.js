@@ -13,12 +13,12 @@ const pic = {
 };
 
 const context = {
-    eventCard: {
-        eventCardSrc: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo.svg',
-        eventCardAlt: 'UX London',
-        eventCardDescription: `3 days of inspiration for UX designers. We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
-        eventCardListTitle: 'WHEN',
-        pastVersions: [{
+    event: {
+        eventSrc: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo.svg',
+        eventAlt: 'UX London',
+        eventDescription: `3 days of inspiration for UX designers. We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
+        eventListTitle: 'WHEN',
+        eventPastVersions: [{
             item: '2016',
             itemUrl: '#'
         },
@@ -47,13 +47,13 @@ module.exports = {
         {
             name: 'right',
             context: {
-                eventCardSide: 'right',
+                eventSide: 'right',
                 eventCard: {
-                    eventCardSrc: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo.svg',
-                    eventCardAlt: 'UX London',
-                    eventCardDescription: `3 days of inspiration for UX designers. We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
-                    eventCardListTitle: 'WHEN',
-                    pastVersions: [{
+                    eventSrc: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo.svg',
+                    eventAlt: 'UX London',
+                    eventDescription: `3 days of inspiration for UX designers. We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
+                    eventListTitle: 'WHEN',
+                    eventPastVersions: [{
                         item: '2016',
                         itemUrl: '#'
                     },
@@ -69,21 +69,21 @@ module.exports = {
                         item: '2013',
                         itemUrl: '#'
                     }
-                    ]
-                },
-                eventPictures: [pic, pic, pic]
+                    ],
+                    eventPictures: [pic, pic, pic]
+                }                
             }
         },
         {
             name: 'left',
             context:{
-                eventCardSide: 'left',
+                eventSide: 'left',
                 eventCard: {
-                    eventCardSrc: '/assets/img/logos/clearleft-presents-med.svg',
-                    eventCardAlt: 'Clearleft presents: Blair Enns The Four Conversations',
-                    eventCardDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.`,
-                    eventCardListTitle: 'Who',
-                    pastVersions: [{
+                    eventSrc: '/assets/img/logos/clearleft-presents-med.svg',
+                    eventAlt: 'Clearleft presents: Blair Enns The Four Conversations',
+                    eventDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.`,
+                    eventListTitle: 'Who',
+                    eventPastVersions: [{
                         item: 'Jake Knapp',
                         itemUrl: '#'
                     },
@@ -99,9 +99,9 @@ module.exports = {
                         item: 'Jan Chipchase',
                         itemUrl: '#'
                     }
-                    ]
-                },
-                eventPictures: [pic, pic, pic]
+                    ],
+                    eventPictures: [pic, pic, pic]
+                }                
             }
         }
     ]

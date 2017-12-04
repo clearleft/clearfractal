@@ -8,10 +8,8 @@ module.exports = {
                 eventAlt: 'UX London',
                 eventUrl: '#',
                 eventLink: 'Full event details & tickets',
-                eventInfo: {
-                    location: 'Laban, London',
-                    date: 'May 24-26 2017'
-                },
+                eventLocation: 'Laban, London',
+                eventDate: 'May 24-26 2017',
                 eventDescription: `We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
                 eventTicketTiers: [{
                         tierName: 'Super Early Bird tickets',
@@ -38,10 +36,8 @@ module.exports = {
                 eventDescription: `Learn the Design Sprint process from its creator, Jake Knapp. The Design Sprint is a method for answering big questions quickly. It’s a greatest hits of design thinking, Lean Startup-style business strategy, innovation, behavioural science, and more.`,
                 eventUrl: '#',
                 eventLink: 'Full event details & tickets',
-                eventInfo: {
-                    location: 'Hoxton Hotel, Shoreditch, London',
-                    date: 'Thursday 7th September, 2016'
-                },
+                eventLocation: 'Hoxton Hotel, Shoreditch, London',
+                eventDate: 'Thursday 7th September, 2016',
                 eventTicketTiers: [{
                         tierName: 'Super Early Bird tickets',
                         tierPrice: '£445 + VAT'
@@ -113,7 +109,7 @@ module.exports = {
             name: 'upcoming',
             context: {
                 eventStatus: 'upcoming',
-                eventSrc: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo-white.svg?mtime=20170407111157',
+                eventSrc: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo.svg?mtime=20170407111157',
                 eventAlt: 'UX London',
                 eventDescription: `We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
                 eventUrl: '#',
@@ -130,10 +126,8 @@ module.exports = {
                 eventAlt: 'UX London',
                 eventUrl: '#',
                 eventLink: 'Full event details & tickets',
-                eventInfo: {
-                    location: 'Laban, London',
-                    date: 'May 24-26 2017'
-                },
+                eventLocation: 'Laban, London',
+                eventDate: 'May 24-26 2017',
                 eventDescription: `We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
                 eventTicketTiers: [{
                     tierName: 'Super Early Bird tickets',
@@ -162,10 +156,8 @@ module.exports = {
                 eventDescription: `Learn the Design Sprint process from its creator, Jake Knapp. The Design Sprint is a method for answering big questions quickly. It’s a greatest hits of design thinking, Lean Startup-style business strategy, innovation, behavioural science, and more.`,
                 eventUrl: '#',
                 eventLink: 'Full event details & tickets',
-                eventInfo: {
-                    location: 'Hoxton Hotel, Shoreditch, London',
-                    date: 'Thursday 7th September, 2016'
-                },
+                eventLocation: 'Hoxton Hotel, Shoreditch, London',
+                eventDate: 'Thursday 7th September, 2016',
                 eventTicketTiers: [{
                     tierName: 'Super Early Bird tickets',
                     tierPrice: '£445 + VAT'

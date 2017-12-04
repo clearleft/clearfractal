@@ -14,10 +14,10 @@
         {{ eventDescription }}
     </p>
 
-    {% if eventInfo %}
-        {% set modifier = (eventIsInverted ? 'inverted' : '') %}
-        {% include '@event-info' with eventInfo|merge({ infoListModifiers: modifier}) only %}
-    {% endif %}
+    
+    {% set modifier = (eventIsInverted ? 'inverted' : '') %}
+    {% include '@event-info' with {eventDate: eventDate, eventLocation: eventLocation, infoListModifiers: modifier} only %}
+    
 
     {% if eventTicketTiers %}
         {% set modifier = (eventIsInverted ? 'three-quarters TicketTiers--inverted' : 'three-quarters') %}

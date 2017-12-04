@@ -1,13 +1,20 @@
-{% set context = {
-    infoListModifiers: infoListModifiers,
-    info:  [{
-                title: 'Date',
-                type: 'date',
-                content: date
-            }, 
-            {
-                title: 'Location',
-                type: 'location',
-                content: location
-            }]} %}
-{% include '@info-list' with context only %}
+{% set context = { infoListModifiers: infoListModifiers} %}
+{% set items = [] %}
+
+{% if eventDate %}
+{% set items = items|merge([{
+        title: 'Date',
+        type: 'date',
+        content: eventDate
+    }]) %}
+{% endif %}
+
+{% if eventLocation %}
+{% set items = items|merge([{
+        title: 'Location',
+        type: 'location',
+        content: eventLocation
+    }]) %}
+{% endif %}
+
+{% include '@info-list' with context|merge({info: items}) only %}
