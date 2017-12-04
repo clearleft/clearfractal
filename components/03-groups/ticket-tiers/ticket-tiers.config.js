@@ -1,6 +1,6 @@
 module.exports = {
     status: 'wip',
-    collated: true,
+    collated: false,
     context: {
         ticketTiers: [{
                 tierName: 'Super Early Bird tickets',
@@ -19,6 +19,22 @@ module.exports = {
             context: {
                 ticketTiersModifiers: 'three-quarters'
             }
+        },
+        {
+            name: 'full',
+            context: {
+                ticketTiersModifiers: 'full'
+            }
+        },
+        {
+            name: 'inverted',
+            display: {
+                'background-color': '#333',
+            },
+            context: {
+                ticketTiersModifiers: 'inverted'
+            }
         }
-    ]
+    ],
+    
 }

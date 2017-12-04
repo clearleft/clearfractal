@@ -1,6 +1,7 @@
 .InfoList {
     font-family: $font-secondary;
     font-weight: bold;
+    -webkit-font-smoothing: antialiased;
 }
 
 .InfoList>* {
@@ -41,4 +42,12 @@
     margin-left: 0px;
     margin-right: 1em;
     display: inline-block;
+}
+
+.InfoList--inverted * {
+    color: $Blank;
+}
+
+.InfoList--inverted .InfoList-term[class*="InfoList-term--"]+.InfoList-description:before {
+    filter: brightness(200%) saturate(0%) opacity(70%);
 }

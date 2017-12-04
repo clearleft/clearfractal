@@ -1,6 +1,7 @@
 .MegaLink {
     position: relative;
     font-family: $font-secondary;
+    -webkit-font-smoothing: antialiased;
 }
 
 .MegaLink--inverted {
@@ -37,10 +38,18 @@
     display: block;
     background-color: $Crayola-red;
     color: $Blank;
-    -webkit-font-smoothing: antialiased;
     &:hover,
     &:focus,
     &:active {
         color: $Blank;
     }
+}
+
+.MegaLink--block.MegaLink--inverted {
+    background-color: fade-out($Blank, .9);
+    // border-color: fade-out($Blank, .95);
+}
+.MegaLink--block.MegaLink--inverted:hover,
+.MegaLink--block.MegaLink--inverted:focus {
+    background-color: fade-out($Blank, .85);
 }

@@ -29,10 +29,14 @@
     display: inline-block;
     list-style: none;
     margin-right: px2rem(2px);
+    -webkit-font-smoothing: antialiased;
     &:not(:last-child):after {
         content: '\00200b,\00a0';
         margin-left: -.13em;
     }
+}
+.EventCard--inverted * {
+    color: $Blank;
 }
 
 @media screen and (min-width: px2em(850px)) {

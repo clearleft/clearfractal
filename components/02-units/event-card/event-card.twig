@@ -1,29 +1,34 @@
-<div class="EventCard{% if eventCardModifier %} EventCard{{eventCardModifier}}{% endif %}" {% if eventBackground %} style="background:{{eventBackground}}" {% endif %}>
+<div 
+    class="EventCard{% if eventModifier %} EventCard{{eventModifier}}{% endif %}
+    {% if eventIsInverted %} EventCard--inverted{% endif %}" 
+    {% if eventBackground %} style="background:{{eventBackground}}" {% endif %}>
 
-    {% if eventCardSrc %}
-        <img class="EventCard-image" src="{{eventCardSrc}}" alt="{{eventCardAlt}}">
+    {% if eventSrc %}
+        <img class="EventCard-image" src="{{eventSrc}}" alt="{{eventAlt}}">
     {% endif %}
-    {% if eventCardName %}
-        <div class="EventCard-eventName">{{ eventCardName }}</div>
+    {% if eventName %}
+        <div class="EventCard-eventName">{{ eventName }}</div>
     {% endif %}
 
     <p class="EventCard-section Prose">
-        {{ eventCardDescription }}
+        {{ eventDescription }}
     </p>
 
-    {% if eventCardInfo %}
-        {% include '@event-info' with eventCardInfo only %}
+    {% if eventInfo %}
+        {% set modifier = (eventIsInverted ? 'inverted' : '') %}
+        {% include '@event-info' with eventInfo|merge({ infoListModifiers: modifier}) only %}
     {% endif %}
 
-    {% if eventCardTicketTiers %}
-        {% include '@ticket-tiers' with {ticketTiers: eventCardTicketTiers, ticketTiersModifiers: 'full'} only %}
+    {% if eventTicketTiers %}
+        {% set modifier = (eventIsInverted ? 'three-quarters TicketTiers--inverted' : 'three-quarters') %}
+        {% include '@ticket-tiers' with {ticketTiers: eventTicketTiers, ticketTiersModifiers: modifier } only %}
     {% endif %}
 
-    {% if pastVersions | length %}
+    {% if eventPastVersions | length %}
         <div class="EventCard-section">
-            <div class="EventCard-context">{{eventCardListTitle}}</div>
+            <div class="EventCard-context">{{eventListTitle}}</div>
             <ul class="EventCard-list">
-                {% for pastVersion in pastVersions %}
+                {% for pastVersion in eventPastVersions %}
                     <li class="EventCard-listItem ">
                         <a href="{{pastVersion.itemUrl}}">{{pastVersion.item}}</a>
                     </li>
@@ -32,11 +37,12 @@
         </div>
     {% endif %}
 
-    {% if eventCardUrl %}
+    {% if eventUrl %}
         {% set modifier = ((eventStatus == 'upcoming') ? ' EventCard-link' : '--block EventCard-link') %}
+        {% set modifier = (eventIsInverted ? modifier ~ ' MegaLink--inverted' : modifier) %}
         {% include '@mega-link' with {
-            megaLinkURL: eventCardUrl,
-            megaLinkText: eventCardLink,
+            megaLinkURL: eventUrl,
+            megaLinkText: eventLink,
             megaLinkModifier: modifier
         }%}
     {% endif %}

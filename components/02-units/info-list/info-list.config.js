@@ -1,6 +1,5 @@
 module.exports = {
     status: 'wip',
-    collated: true,
     context: {
         info: [
             {
@@ -18,5 +17,16 @@ module.exports = {
                 content: 'The Barbican Centre, London'
             }
         ]
-    }
+    },
+    variants:[
+        {
+            name: 'inverted',
+            display: {
+                'background-color':'#222'
+            },
+            context: {
+                infoListModifiers: 'inverted'
+            }
+        }
+    ]
 }
