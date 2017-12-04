@@ -1,4 +1,4 @@
-<dl class="InfoList">
+<dl class="InfoList{% if infoListModifiers%} InfoList--{{infoListModifiers}}{% endif %}">
     {% for item in info %}
     <dt class="InfoList-term{%if item.type%} InfoList-term--{{item.type}}{%endif%}"><span>{{item.title}}</span></dt>
     <dd class="InfoList-description">{{item.content}}</dd>

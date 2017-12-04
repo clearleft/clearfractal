@@ -31,3 +31,11 @@
     display: inline-block;
     margin-left: .5rem;
 }
+
+.TicketTiers--inverted .Tier-soldout {
+    color: fade-out(lighten($Crayola-red, 15%), .2);
+}
+
+.TicketTiers--inverted .Tier+.Tier {
+    border-top: 1px solid fade-out($Anti-white-flash, .8);
+}
