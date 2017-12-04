@@ -9,6 +9,17 @@
 }
 .Voice-description {
     @include font(16px, 27px);
+
+    blockquote {
+        quotes: '“' '”' '‘' '’';
+    }
+    blockquote:before {
+        content: open-quote;
+        margin-left: -0.6ch;
+    }
+    blockquote:after  {
+        content: close-quote;
+    }
 }
 .Voice-person {
     max-width: px2rem(100px);
