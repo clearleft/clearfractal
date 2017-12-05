@@ -38,7 +38,7 @@
     {% endif %}
 
     {% if eventUrl %}
-        {% set modifier = ((eventStatus == 'upcoming') ? ' EventCard-link' : '--block EventCard-link') %}
+        {% set modifier = ((eventStatus == 'current') ? '--block EventCard-link': ' EventCard-link' ) %}
         {% set modifier = (eventIsInverted ? modifier ~ ' MegaLink--inverted' : modifier) %}
         {% include '@mega-link' with {
             megaLinkURL: eventUrl,

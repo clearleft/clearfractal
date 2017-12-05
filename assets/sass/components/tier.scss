@@ -3,7 +3,7 @@
 }
 
 .Tier+.Tier {
-    border-top: 1px solid $Anti-white-flash;
+    border-top: 1px solid transparentize($Jet-grey, .8);
 }
 
 .Tier-cell {
@@ -18,7 +18,7 @@
     -webkit-font-smoothing: antialiased;
 }
 .Tier-price--soldout {
-    color: $light-grey;
+    color: transparentize($Jet-grey, .5);
 }
 .Tier-soldout {
     font-size: .6667em;
@@ -34,6 +34,10 @@
 
 .TicketTiers--inverted .Tier-soldout {
     color: fade-out(lighten($Crayola-red, 15%), .2);
+}
+
+.TicketTiers--inverted .Tier-price--soldout {
+    color: transparentize($Blank, .5);
 }
 
 .TicketTiers--inverted .Tier+.Tier {

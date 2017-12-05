@@ -1,5 +1,7 @@
 <div class="Stats">
     {% for stat in stats %}
+    {% if stat.statValue is not empty %}
     {% include '@stat' with stat %}
+    {% endif %}
     {% endfor %}
 </div>

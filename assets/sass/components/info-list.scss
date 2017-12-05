@@ -10,7 +10,6 @@
 
 .InfoList-term[class*="InfoList-term--"] span {
     @extend .l-vh;
-    
 }
 
 .InfoList-term:not([class*="InfoList-term--"]):after {

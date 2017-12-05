@@ -1,3 +1,8 @@
+{% if headerStrapLinkURL and headerStrapLinkText %}
+{% set headerStrapline %}
+<a href="{{headerStrapLinkURL}}">{{ headerStrapLinkText }}</a>
+{% endset %}
+{% endif %}
 <div class="u-center l-space-before--mega l-space-after--double">
     <h2 class="Heading Heading--secondary">{{headerText}}</h2>
     <p>{{headerStrapline}}</p>
