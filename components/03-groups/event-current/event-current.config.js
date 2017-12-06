@@ -8,6 +8,7 @@ module.exports = {
         eventLink: 'Full event details & tickets',
         eventLocation: 'Laban, London',
         eventDate: 'May 24-26 2017',
+        eventStatus:'current',
         eventDescription: `We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
         eventTicketTiers: [{
                 tierName: 'Super Early Bird tickets',

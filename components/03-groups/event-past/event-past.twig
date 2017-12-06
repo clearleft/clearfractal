@@ -1,37 +1,23 @@
-{% set eventPictures = eventPictures|slice(0,3) %}
-{% if eventPictures.length is divisibleby(2) %}
-{% set eventPictures = eventPictures|slice(0,1) %}
+{% import '@events-macros' as output %}
+{% set eventPictures = eventCard.eventPictures|slice(0,3) %}
+
+{% if eventPictures|length is divisibleby(2) %}
+    {% set eventPictures = eventPictures|slice(0,1) %}
 {% endif %}
 {% if eventSide is not defined %}
     {% set eventSide = 'left' %}
 {% endif %}
 
-{% macro picture(pic) %}
-{% if pic is defined %}
-{% include '@picture-contain' with pic only %}
-{% endif %}
-{% endmacro %}
-
-{% macro card(card) %}
-<div class="u-vertical-center {% if not eventBackground %} u-border-top-n2{% endif %}"
-    {% if eventBackground %} style="background:{{eventBackground}}" {% endif %}>
-    {% include '@event-card' with card only %}
-</div>
-{% endmacro %}
-
-{% import _self as output %}
-
 {% if eventSide == 'left' %}
     {{ output.card(eventCard) }}
-    {% for eventPicture in eventCard.eventPictures %}
-        {{ output.picture(eventPicture) }}
-    {% endfor %}
+    {{ output.pictures(eventPictures, true, eventCard.eventBackground) }}
+
 {% elseif eventSide == 'right' %}
-    {% set firstPicture = eventCard.eventPictures|slice(0,1)|first %}
-    {% set tailPictures = eventCard.eventPictures|slice(1) %}
-    {{ output.picture(firstPicture) }}
+    {% set headPictures = eventPictures|slice(0,1) %}
+    {% set tailPictures = eventPictures|slice(1) %}
+
+    {{ output.pictures(headPictures, true, eventCard.eventBackground) }}
     {{ output.card(eventCard) }}
-    {% for eventPicture in tailPictures %}
-        {{ output.picture(eventPicture) }}
-    {% endfor %}
+    {{ output.pictures(tailPictures, false) }}
+
 {% endif %}

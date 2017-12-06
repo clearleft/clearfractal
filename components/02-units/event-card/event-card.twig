@@ -30,7 +30,7 @@
             <ul class="EventCard-list">
                 {% for pastVersion in eventPastVersions %}
                     <li class="EventCard-listItem ">
-                        <a href="{{pastVersion.itemUrl}}">{{pastVersion.item}}</a>
+                        <a href="{{pastVersion.versionURL}}">{{pastVersion.versionText}}</a>
                     </li>
                 {% endfor %}
             </ul>

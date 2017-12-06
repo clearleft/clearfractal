@@ -1,0 +1,27 @@
+
+{% macro picture(pic) %}
+    {% if pic is defined and pic is not empty %}
+    {% include '@picture-contain' with pic only %}
+    {% endif %}
+{% endmacro %}
+
+{% macro pictures(pictures, doFallback, background) %}
+    {% import _self as self %}
+    {% if pictures|length %}
+        {% for pic in pictures %}
+            {{ self.picture(pic) }}
+        {% endfor %}
+    {% elseif doFallback == true %}
+    <div{% if background %} style="background:{{background}}" {% endif %}></div>
+    {% endif %}
+{% endmacro %}
+
+{% macro card(card) %}
+{% set background = card.eventBackground %}
+<div 
+    class="u-vertical-center{% if not background %} u-border-top-n2{% endif %}"
+    {% if background %} style="background:{{background}}" {% endif %}>
+    {% include '@event-card' with card only %}
+</div>
+{% endmacro %}
+

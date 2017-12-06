@@ -34,19 +34,21 @@ module.exports = {
                 eventLink: 'Full event details & tickets',
                 eventLocation: 'Laban, London',
                 eventDate: 'May 24-26 2017',
+                eventStatus: 'current',
                 eventDescription: `A conference for people leading design teams, overseeing design direction, or instilling a culture of design within their organisations. Listen to leaders from Facebook, Buzzfeed, IBM Design Studio and Vine discuss the challenges of managing design, and becoming a better design leader.`,
                 eventTicketTiers: tickets,
                 eventPictures: [pic, pic, pic]                
             },
             {
                 eventSrc: '@event-card--presents.eventSrc',
-                eventAlt: '@event-card--upcoming.eventAlt',
+                eventAlt: '@event-card--presents.eventAlt',
                 eventName: '@event-card--presents.eventName',
                 eventDescription: '@event-card--presents.eventDescription',
                 eventUrl: '@event-card--presents.eventUrl',
                 eventLink: '@event-card--presents.eventLink',
                 eventLocation: '@event-card--presents.eventLocation',
                 eventDate: '@event-card--presents.eventDate',
+                eventStatus: 'current',
                 eventTicketTiers: '@event-card--presents.eventTicketTiers',
                 eventPictures: [pic, pic, pic]     
             },

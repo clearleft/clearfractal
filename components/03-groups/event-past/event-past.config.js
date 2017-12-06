@@ -12,33 +12,6 @@ const pic = {
     }
 };
 
-const context = {
-    event: {
-        eventSrc: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo.svg',
-        eventAlt: 'UX London',
-        eventDescription: `3 days of inspiration for UX designers. We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
-        eventListTitle: 'WHEN',
-        eventPastVersions: [{
-            item: '2016',
-            itemUrl: '#'
-        },
-        {
-            item: '2015',
-            itemUrl: '#'
-        },
-        {
-            item: '2014',
-            itemUrl: '#'
-        },
-        {
-            item: '2013',
-            itemUrl: '#'
-        }
-        ]
-    },
-    eventPictures: [pic, pic, pic]
-};
-
 module.exports = {
     status: 'wip',
     preview: '@preview-cols',
@@ -54,20 +27,20 @@ module.exports = {
                     eventDescription: `3 days of inspiration for UX designers. We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
                     eventListTitle: 'WHEN',
                     eventPastVersions: [{
-                        item: '2016',
-                        itemUrl: '#'
+                        versionText: '2016',
+                        versionURL: '#'
                     },
                     {
-                        item: '2015',
-                        itemUrl: '#'
+                        versionText: '2015',
+                        versionURL: '#'
                     },
                     {
-                        item: '2014',
-                        itemUrl: '#'
+                        versionText: '2014',
+                        versionURL: '#'
                     },
                     {
-                        item: '2013',
-                        itemUrl: '#'
+                        versionText: '2013',
+                        versionURL: '#'
                     }
                     ],
                     eventPictures: [pic, pic, pic]
@@ -84,20 +57,20 @@ module.exports = {
                     eventDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.`,
                     eventListTitle: 'Who',
                     eventPastVersions: [{
-                        item: 'Jake Knapp',
-                        itemUrl: '#'
+                        versionText: 'Jake Knapp',
+                        versionURL: '#'
                     },
                     {
-                        item: 'Blair Ennis',
-                        itemUrl: '#'
+                        versionText: 'Blair Ennis',
+                        versionURL: '#'
                     },
                     {
-                        item: 'Mike Monteiro',
-                        itemUrl: '#'
+                        versionText: 'Mike Monteiro',
+                        versionURL: '#'
                     },
                     {
-                        item: 'Jan Chipchase',
-                        itemUrl: '#'
+                        versionText: 'Jan Chipchase',
+                        versionURL: '#'
                     }
                     ],
                     eventPictures: [pic, pic, pic]
