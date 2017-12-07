@@ -49,6 +49,9 @@
     .EventCard-image {
         margin-bottom: px2rem(32px);
     }
+    .EventCard-image+.EventCard-eventName {
+        margin-top: -1*px2rem(20px);
+    }
 }
 
 @media screen and (min-width: px2em(1000px)) {
@@ -57,8 +60,5 @@
     }
     .EventCard-eventName {
         @include font(40px, 49px);
-    }
-    .EventCard-image {
-        margin-bottom: px2rem(42px);
     }
 }
