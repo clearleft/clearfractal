@@ -20,8 +20,8 @@ module.exports = {
             leadModifier: ' Bar'
         },
         eventInfo: {
-            location: 'Hoxton Hotel, Shoreditch, London',
-            date: 'Thursday 7th Sep'
+            eventLocation: 'Hoxton Hotel, Shoreditch, London',
+            eventDate: 'Thursday 7th Sep'
         },
         eventTicketTiers: [{
                 tierName: 'Super Early Bird tickets',
