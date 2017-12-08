@@ -1,0 +1,6 @@
+<picture class="u-hide-sm">
+    {% for src in sources %}
+    <source data-srcset="{{ src.srcset }}" media="{{src.media}}" {% if src.type %}type="{{src.type}}"{% endif %}>
+    {% endfor %}
+    <img class="l-img-con" data-src="{{ img.src }}" alt="{{img.alt|default(' ')}}" style="{{img.style}}">
+</picture>

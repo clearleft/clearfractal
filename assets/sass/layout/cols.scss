@@ -15,6 +15,9 @@
         max-width: px2rem(1180px);
         margin: 0 auto;
     }
+    .Cols--dense {
+        grid-auto-flow: dense;
+    }
     @media screen and (min-width: em(680px)) {
         .Cols--reverse {
             >*:first-child {
@@ -26,6 +29,9 @@
         }
         .Cols--one-third {
             grid-template-columns: 1fr 1fr 1fr;
+        }
+        .Col--pull {
+            grid-column: 2/3;
         }
     }
     @media screen and (min-width: em(960px)) {

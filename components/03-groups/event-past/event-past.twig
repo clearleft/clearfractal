@@ -1,6 +1,5 @@
 {% import '@events-macros' as output %}
 {% set eventPictures = eventCard.eventPictures|slice(0,3) %}
-
 {% if eventPictures|length is divisibleby(2) %}
     {% set eventPictures = eventPictures|slice(0,1) %}
 {% endif %}
@@ -8,16 +7,9 @@
     {% set eventSide = 'left' %}
 {% endif %}
 
-{% if eventSide == 'left' %}
-    {{ output.card(eventCard) }}
-    {{ output.pictures(eventPictures, true, eventCard.eventBackground) }}
+{% set headPictures = eventPictures|slice(0,1) %}
+{% set tailPictures = eventPictures|slice(1) %}
 
-{% elseif eventSide == 'right' %}
-    {% set headPictures = eventPictures|slice(0,1) %}
-    {% set tailPictures = eventPictures|slice(1) %}
-
-    {{ output.pictures(headPictures, true, eventCard.eventBackground) }}
-    {{ output.card(eventCard) }}
-    {{ output.pictures(tailPictures, false) }}
-
-{% endif %}
+{{ output.card(eventCard, eventSide) }}
+{{ output.pictures(headPictures, true, eventCard.eventBackground) }}
+{{ output.picturesLsOnly(tailPictures, false) }}

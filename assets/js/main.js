@@ -8,6 +8,7 @@ import BlogFilter           from './components/blog-filter.js';
 import Jobs                 from './components/jobs.js';
 import Peek                 from './components/peek.js';
 import Tabs                 from './components/tabs.js';
+import LoadLsOnly           from './components/load-ls-only.js';
 
 (function() {
 
@@ -47,6 +48,8 @@ import Tabs                 from './components/tabs.js';
     new Jobs( document.querySelector('.Jobs') );
 
     new Tabs( document.querySelector('.Tabs') );
+
+    new LoadLsOnly();
 
     // Code Highlighting
     hljs.initHighlightingOnLoad();

@@ -1,6 +1,6 @@
 <picture>
     {% for src in sources %}
-    <source srcset="{{ src.srcset }}" media="{{src.media}}" type="{{src.type}}">
+    <source srcset="{{ src.srcset }}" media="{{src.media}}"{% if src.type %} type="{{src.type}}"{% endif %}>
     {% endfor %}
     <img class="l-img-con" src="{{ img.src }}" alt="{{img.alt|default(' ')}}" style="{{img.style}}">
 </picture>

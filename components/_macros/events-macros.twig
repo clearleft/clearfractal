@@ -1,7 +1,13 @@
 
 {% macro picture(pic) %}
     {% if pic is defined and pic is not empty %}
-    {% include '@picture-contain' with pic only %}
+        {% include '@picture-contain' with pic only %}
+    {% endif %}
+{% endmacro %}
+
+{% macro pictureLsOnly(pic) %}
+    {% if pic is defined and pic is not empty %}
+        {% include '@picture-contain-ls-only' with pic only %}
     {% endif %}
 {% endmacro %}
 
@@ -16,10 +22,20 @@
     {% endif %}
 {% endmacro %}
 
-{% macro card(card) %}
+{% macro picturesLsOnly(pictures) %}
+    {% import _self as self %}
+    {% if pictures|length %}
+        {% for pic in pictures %}
+            {{ self.pictureLsOnly(pic) }}
+        {% endfor %}
+    {% endif %}
+{% endmacro %}
+
+{% macro card(card, side) %}
 {% set background = card.eventBackground %}
 <div 
-    class="u-vertical-center{% if not background %} u-border-top-n2{% endif %}"
+    class="u-vertical-center{% if not background %} u-border-top-n2{% endif %}
+    {% if side == 'right' %} Col--pull"{% endif %}"
     {% if background %} style="background:{{background}}" {% endif %}>
     {% include '@event-card' with card only %}
 </div>
