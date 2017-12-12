@@ -9,7 +9,10 @@
             {% include '@lead' with lead only %}
             <div class="l-pad-around">
                 {% include '@event-info' with eventInfo only %}
-                {% include '@ticket-tiers' with {ticketTiers: eventTicketTiers } only %}
+                {% if eventTicketTiers %}
+                    {% set modifier = (eventIsInverted ? 'full TicketTiers--inverted' : 'full') %}
+                    {% include '@ticket-tiers' with {ticketTiers: eventTicketTiers, ticketTiersModifiers: modifier } only %}
+                {% endif %}
                 {% include '@mega-link' with {
                     megaLinkURL: workshopTicketLink,
                     megaLinkText: workshopTicketLinkText,

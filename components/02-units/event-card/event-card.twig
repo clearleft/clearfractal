@@ -16,11 +16,12 @@
 
     
     {% set modifier = (eventIsInverted ? 'inverted' : '') %}
+    {% if eventLocation or eventDate %}
     {% include '@event-info' with {eventDate: eventDate, eventLocation: eventLocation, infoListModifiers: modifier} only %}
-    
+    {% endif %}
 
     {% if eventTicketTiers %}
-        {% set modifier = (eventIsInverted ? 'three-quarters TicketTiers--inverted' : 'three-quarters') %}
+        {% set modifier = (eventIsInverted ? 'full TicketTiers--inverted' : 'full') %}
         {% include '@ticket-tiers' with {ticketTiers: eventTicketTiers, ticketTiersModifiers: modifier } only %}
     {% endif %}
 
