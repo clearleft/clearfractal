@@ -24,7 +24,7 @@ module.exports = {
                 eventCard: {
                     eventSrc: 'https://s3-eu-west-1.amazonaws.com/clearleft-v5/uploads/ux-london-logo.svg',
                     eventAlt: 'UX London',
-                    eventDescription: `3 days of inspiration for UX designers. We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.`,
+                    eventDescription: `<p>3 days of inspiration for UX designers. We bring engaging industry leaders from around the world to present a combination of inspirational talks and lively, hands-on workshops.</p>`,
                     eventListTitle: 'WHEN',
                     eventPastVersions: [{
                         versionText: '2016',
@@ -54,7 +54,7 @@ module.exports = {
                 eventCard: {
                     eventSrc: '/assets/img/logos/clearleft-presents-med.svg',
                     eventAlt: 'Clearleft presents: Blair Enns The Four Conversations',
-                    eventDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.`,
+                    eventDescription: `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>`,
                     eventListTitle: 'Who',
                     eventPastVersions: [{
                         versionText: 'Jake Knapp',
