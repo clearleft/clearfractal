@@ -7,7 +7,8 @@ for (var i = 0; i < 12; i++) {
     posts.push({
         cardTitle: "Article name here",
         cardCategory: 'Opinion',
-        cardDescription: faker.lorem.paragraph()
+        cardDescription: faker.lorem.paragraph(),
+        cardId: 'card-'+i
     });
 }
 
@@ -59,9 +60,9 @@ module.exports = {
         /*Blog posts*/
         "posts": posts,
         "cardTitle": "@card.cardTitle",
-        "cardCategory": "@card.cardCategory",
-        "cardDescription": "@card.cardDescription",
-        "cardModifier": "--image",
+        // "cardCategory": "@card.cardCategory",
+        // "cardDescription": "@card.cardDescription",
+        // "cardModifier": "--image",
 
         /*Pagination*/
         "items": "@pagination.items",

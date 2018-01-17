@@ -5,7 +5,8 @@ let posts = [];
 for (var i = 0; i < 4; i++) {
     posts.push({
         cardTitle: faker.lorem.words(),
-        cardDescription: faker.lorem.paragraph()
+        cardDescription: faker.lorem.paragraph(),
+        cardId: 'card-'+i
     });
 }
 

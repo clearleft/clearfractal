@@ -8,6 +8,7 @@ for (var i = 0; i < 3; i++) {
         cardBar: true,
         cardTitle: "Article name here",
         cardCategory: 'Opinion',
+        cardId: 'post-'+i,
         cardDescription: faker.lorem.paragraph(),
         authorImage: "/assets/img/authors/sm/edv.png",
         authorName: "Ellen DeVries"

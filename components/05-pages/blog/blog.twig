@@ -13,7 +13,7 @@
         <div class="BlogGrid-container">
             {% for post in posts %}
             <div class="BlogGrid-item">
-                {% include '@card' %}
+                {% include '@card' with post %}
             </div>
             {% endfor %}
         </div><!--/.Blog-container-->
