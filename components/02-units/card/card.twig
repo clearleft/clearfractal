@@ -33,8 +33,8 @@
         {% if cardCategory %}<div class="Card-category">{{ cardCategory }}</div>{% endif %}
         {% if cardMeta %}<div class="Card-meta">{{ cardMeta }}</div>{% endif %}
         {% if cardDescription %}<p class="Card-description">{{ cardDescription }}</p>{% endif %}
-        {% if cardLink %}
-            <a href="{{ cardUrl }}">Read the case study</a>
+        {% if cardLinkText %}
+            <a href="{{ cardUrl }}"{% if cardLinkLabel %} aria-label="{{ cardLinkLabel }}"{% endif %}>{{cardLinkText}}</a>
         {% endif %}
         {% if authorImage or authorName %}
         <div class="Card-author">

@@ -30,7 +30,8 @@ module.exports = {
                 cardCategory: false,
                 cardDescription: false,
                 cardUrl: '#',
-                cardLink: true,
+                cardLinkText: 'Read the case study',
+                cardLinkLabel: 'Read the Royal Borough case study',
                 cardId: 'card-03'
             }
         },
