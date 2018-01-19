@@ -30,6 +30,9 @@ $light-grey: #ADADAD;
 $mid-grey: #656565;
 $lighter-grey: #e1e1e1;
 
+// Accessibility adjusts
+$Crayola-red-acc: darken($Crayola-red, 2.7%);
+
 /** Typography */
 
 $font-main: "Adelle Sans", "Droid Sans", -apple-system, "Helvetica Neue", "Segoe UI", "Arial", sans-serif;
