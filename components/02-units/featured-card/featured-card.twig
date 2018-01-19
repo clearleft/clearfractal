@@ -1,7 +1,8 @@
-<article class="FeaturedCard">
+{% set cardHeadingId = featuredCardId|default('featured-card') ~ '-heading' %}
+<article class="FeaturedCard" aria-labelledby="{{cardHeadingId}}">
     <div class="FeaturedCard-primary">
         <header>
-            <h3 class="FeaturedCard-title Heading Heading--secondary"><a href="{{ featuredCardLink }}">{{featuredCardTitle}}</a></h3>
+            <h3 class="FeaturedCard-title Heading Heading--secondary" id="{{cardHeadingId}}"><a href="{{ featuredCardLink }}">{{featuredCardTitle}}</a></h3>
         </header>
         <div class="FeaturedCard-category">{{ featuredCardCategory }}, featured</div>
         <div class="FeaturedCard-description">{{ featuredCardDescription }}</div>

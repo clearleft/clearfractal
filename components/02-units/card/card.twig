@@ -1,14 +1,14 @@
-{% set cardHeadingText = cardId|default('card') ~ '-heading' %}
+{% set cardHeadingId = cardId|default('card') ~ '-heading' %}
 {% set cardHeading %}
 <h2 class="Card-title"{% if cardHeaderColour %} 
     style="color:{{ cardHeaderColour }}"{% endif %}
-    id="{{cardHeadingText}}"
+    id="{{cardHeadingId}}"
     >{{ cardTitle }}</h2>
 {% endset %}
 
 <article class="Card {% if cardModifiers %}Card{{ cardModifiers|join(' Card') }}{% endif %}"
     {% if cardMiscStyles %} style="{{ cardMiscStyles }}"{% endif %}
-    aria-labelledby="{{cardHeadingText}}"
+    aria-labelledby="{{cardHeadingId}}"
     >
     {% if cardBar %}
         <div class="Bar"{% if cardBarColour %} style="color:{{ cardBarColour }}"{% endif %}></div>
