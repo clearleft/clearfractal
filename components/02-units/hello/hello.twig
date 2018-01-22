@@ -1,11 +1,11 @@
-<div class="Hello{% if helloModifiers %} Hello--{{helloModifiers}}{% endif %}">
+<div class="Hello{% if helloModifiers %} Hello--{{helloModifiers}}{% endif %}" role="complementary" aria-labelledby="hello-heading">
     <div class="Hello-container">
         <figure class="Hello-image">
             <img src="{{ helloImgSrc }}" alt="{{ helloImgAlt }}">
             {%if helloImgText%}<figcaption>{{ helloImgText }}</figcaption>{%endif%}
         </figure>
         <div>
-            <h3 class="Hello-title Heading Heading--inverted Heading--medium">{{ helloHeading }}</h3>
+            <h3 class="Hello-title Heading Heading--inverted Heading--medium" id="hello-heading">{{ helloHeading }}</h3>
             <div class="Hello-body">
                 {{ helloBody }}
             </div>

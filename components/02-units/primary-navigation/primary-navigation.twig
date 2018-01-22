@@ -1,5 +1,5 @@
 
-<nav class="PrimaryNavigation{% if primaryNavModifiers %} PrimaryNavigation{{ primaryNavModifiers|join(' PrimaryNavigation') }}{% endif %}" data-component="PrimaryNavigation">
+<nav class="PrimaryNavigation{% if primaryNavModifiers %} PrimaryNavigation{{ primaryNavModifiers|join(' PrimaryNavigation') }}{% endif %}" aria-label="Primary Navigation" data-component="PrimaryNavigation">
     <a href="#offcanvas" class="PrimaryNavigation-menu" aria-hidden="true">Menu</a>
     <ul class="PrimaryNavigation-list">
         {% for primaryNavlink in primaryNavlinks %}

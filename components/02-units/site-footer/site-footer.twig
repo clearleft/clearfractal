@@ -6,7 +6,7 @@
             <small class="Heading Heading--context">{{ footerInputSmall }}</small>
         </div><!--/.SiteFooter-container-->
         <div class="Cols-item">
-            <nav class="SiteFooter-navigation">
+            <nav class="SiteFooter-navigation" aria-label="Site Footer Navigation">
                 <ul class="SiteFooter-navigationLinks">
                     {% for footerLink in footerLinks %}
                     <li class="SiteFooter-navigationItem"><a href="{{ footerLink.url }}" class="SiteFooter-navigationLink">{{ footerLink.title }}</a></li>
