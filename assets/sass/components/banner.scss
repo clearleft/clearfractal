@@ -8,7 +8,7 @@
 .Banner-caption {
     @include font(14px);
     font-family: $font-secondary;
-    color: $Crayola-red;
+    color: $Crayola-red-acc;
     font-weight: 700;
     letter-spacing: px2rem(1px);
     text-transform: uppercase;
@@ -42,7 +42,7 @@
     }
 }
 .Banner--decorated {
-    background-color: $Crayola-red;
+    background-color: $Crayola-red-acc;
     color: $Blank;
     .Banner-caption {
         color: $Blank;

@@ -27,6 +27,11 @@
     @include font(15px, 18px);
     font-weight: 700;
     border-bottom: none;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $Crayola-red-acc2;
+    }
     &.is-active::after {
         content: '';
         display: block;
@@ -44,6 +49,11 @@
     }
     .PrimaryNavigation-link {
         color: $Blank;
+        &:hover,
+        &:active,
+        &:focus {
+            color: $Blank;
+        }
     }
 }
 /*Streak colours*/

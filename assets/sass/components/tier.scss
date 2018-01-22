@@ -21,12 +21,12 @@
     -webkit-font-smoothing: antialiased;
 }
 .Tier-price--soldout {
-    color: transparentize($Jet-grey, .5);
+    color: transparentize($Jet-grey, .3);
 }
 .Tier-soldout {
     font-size: .6667em;
     text-transform: uppercase;
-    color: $Crayola-red;
+    color: $Crayola-red-acc;
     border: 1px solid currentColor;
     border-radius: 2px;
     padding: .3em .5em;

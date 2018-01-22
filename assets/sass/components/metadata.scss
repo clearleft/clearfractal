@@ -8,13 +8,13 @@
     @include font(13px, 16px);
     font-family: $font-secondary;
     font-weight: 700;
-    color: $mid-grey;
+    color: $Dark-liver-grey;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: px2rem(4px);
 }
 .Metadata-description {
     @include font(14px, 22px);
-    color: #777777;
+    color: $mid-grey;
     margin: 0;
 }

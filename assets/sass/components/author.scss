@@ -9,7 +9,7 @@
     display: block;
 }
 .Author-name {
-    color: $mid-grey;
+    color: $Dark-liver-grey;
     font-family: $font-secondary;
     @include font(14px, 17px);
     font-weight: 700;
@@ -20,7 +20,7 @@
     -webkit-font-smoothing: antialiased;
 }
 .Author-meta {
-    color: $light-grey;
+    color: $mid-grey;
     font-family: $font-secondary;
     @include font(14px, 17px);
     text-transform: uppercase;
