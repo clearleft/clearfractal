@@ -1,3 +1,5 @@
-<a href="{{megaLinkURL}}" class="MegaLink{% if megaLinkModifier %} MegaLink{{megaLinkModifier}}{% endif %}">
+<a href="{{megaLinkURL}}" 
+    class="MegaLink{% if megaLinkModifier %} MegaLink{{megaLinkModifier}}{% endif %}"
+    {% if megaLinkLabel%}aria-label="{{megaLinkLabel}}"{% endif %}>
 {{megaLinkText}}
 </a>

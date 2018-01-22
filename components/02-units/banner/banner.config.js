@@ -4,6 +4,7 @@ module.exports = {
         "bannerCaption": "Take a peek into Middle Street",
         "bannerHeadline": "Our Studio",
         "bannerBody": "",
+        "bannerLandmark": "complementary"
     },
     "variants": [
         {

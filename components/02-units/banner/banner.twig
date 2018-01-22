@@ -1,4 +1,4 @@
-<div class="Banner {% if bannerModifiers %}Banner{{ bannerModifiers|join(' Banner') }}{% endif %}">
+<div class="Banner {% if bannerModifiers %}Banner{{ bannerModifiers|join(' Banner') }}{% endif %}" {%if bannerLandmark%}role="{{bannerLandmark}}"{% endif %}>
     <div class="Banner-content">
     {% if bannerCaption %}
         <div class="Banner-caption">{{ bannerCaption }}</div>
