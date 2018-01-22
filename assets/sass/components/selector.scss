@@ -30,13 +30,19 @@
 }
 .Selector-list {
     list-style: none;
-    padding: 0;
+    padding: .5em 0;
     margin: 0;
 }
 .Selector-listLink {
-    @include font(30px, 35px);
+    @include font(30px, 40px);
     letter-spacing: -0.58px;
     border-bottom: none;
+    color: $Jet-grey;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $mid-grey;
+    }
 }
 
 /* Positioning and display styles should only be applied when JavaScript is available */
@@ -55,7 +61,7 @@
 
 @media screen and (min-width: px2em(300px)) {
     .Selector-listLink {
-        @include font(40px, 47px);
+        // @include font(40px, 47px);
     }
 }
 @media screen and (min-width: px2em(500px)) {
@@ -63,6 +69,6 @@
         box-shadow: 0 2px 10px rgba(20,20,20,0.6);
     }
     .Selector-listLink {
-        @include font(68px, 75px);
+        @include font(48px, 60px);
     }
 }

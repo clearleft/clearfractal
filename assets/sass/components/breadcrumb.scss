@@ -11,6 +11,11 @@
     letter-spacing: px2rem(1.75px);
     color: $Jet-grey;
     opacity: 0.5;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $Crayola-red-acc2;
+    }
 }
 .Breadcrumb-item--first {
     opacity: 1;
