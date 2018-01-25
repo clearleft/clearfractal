@@ -10,6 +10,10 @@
 </head>
 
 <body>
+    {% include '@skip-link' with {
+        skipToContentUrl: '#main-content',
+        skipToContentText: 'Skip to main content'
+    } %}
 
     {{ yield }}
 
