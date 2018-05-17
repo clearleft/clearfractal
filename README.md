@@ -18,4 +18,4 @@ When you've made changes to components that you want to be reflected on clearlef
 
 In this repo, update the `package.json` file to increment the version number.
 
-In the clearleft.com repo, update the corresponding line in `devDependencies` in the `package.json` file there. Then when you run `elf devbox:build` on the clearleft.com repo, it will pull in the correct versions of the components.
+In the clearleft.com repo, update the corresponding line in `dependencies` in the `package.json` file there. Then when you run `elf devbox:build` on the clearleft.com repo, it will pull in the correct versions of the components.
