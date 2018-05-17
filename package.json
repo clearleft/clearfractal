@@ -3,10 +3,11 @@
   "version": "0.2.7",
   "main": "fractal.js",
   "dependencies": {
-    "@frctl/fractal": "^1.1.0",
-    "@frctl/mandelbrot": "^1.1.0-alpha.0",
-    "@frctl/twig": "^1.0.0-beta.1",
-    "faker": "^3.1.0"
+    "@frctl/fractal": "^1.1.7",
+    "@frctl/mandelbrot": "^1.2.0",
+    "@frctl/twig": "^1.0.0-beta.2",
+    "faker": "^3.1.0",
+    "npm": "^6.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.1",
@@ -14,15 +15,15 @@
     "del": "^2.2.2",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-postcss": "^6.2.0",
-    "gulp-rename": "^1.2.2",
+    "gulp-rename": "^1.2.3",
     "gulp-sass": "^2.3.2",
-    "gulp-sass-glob": "^1.0.6",
-    "gulp-sourcemaps": "^1.8.1",
+    "gulp-sass-glob": "^1.0.9",
+    "gulp-sourcemaps": "^1.12.1",
     "gulp-stylelint": "^3.4.0",
     "postcss-scss": "^0.3.1",
     "rollup": "^0.41.4",
     "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-filesize": "^1.0.1",
+    "rollup-plugin-filesize": "^1.5.0",
     "rollup-plugin-uglify": "^1.0.1"
   },
   "scripts": {
