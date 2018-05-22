@@ -47,7 +47,6 @@
  *************************************/
 
 
-const autoprefixer      = require('autoprefixer');
 const del               = require('del');
 const gulp              = require('gulp');
 const postcss           = require('gulp-postcss');
@@ -91,16 +90,10 @@ const SplitParts = (str) => {
     - Glob files
     - Lint SASS (not the resulting CSS)
     - Compile
-    - Autoprefix
     - Create Sourcemap
     - Output stats
     - Write to disk
  *************************************/
-
-
-const CSSProcessors = [
-    autoprefixer( { browsers: CONFIG.css.autoprefix } )
-];
 
 
 
@@ -135,9 +128,6 @@ function sassBuild(prefix) {
             .pipe(
                 sass({outputStyle: 'compact'}).on('error', sass.logError)
             )
-
-            // PostCSS
-            .pipe(postcss( CSSProcessors ) )
 
             // rename (must be done before creating the sourcemap)
             .pipe( rename( fileName ) )
