@@ -37,6 +37,10 @@
     background-image: url('/assets/img/icons/icon-map-pin.svg');
 }
 
+.InfoList-term--time+.InfoList-description:before {
+    background-image: url('/assets/img/icons/icon-clock.svg');
+}
+
 .InfoList-description {
     margin-left: 0px;
     margin-right: 1em;

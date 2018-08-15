@@ -17,4 +17,12 @@
     }]) %}
 {% endif %}
 
+{% if eventTime %}
+{% set items = items|merge([{
+        title: 'Time',
+        type: 'time',
+        content: eventTime
+    }]) %}
+{% endif %}
+
 {% include '@info-list' with context|merge({info: items}) only %}
