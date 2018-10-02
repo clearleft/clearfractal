@@ -2,8 +2,12 @@
     <div class="LayoutAlternate-left LayoutAlternate-item LayoutAlernate-item--leadPrimary">
         {% include '@lead' %}
     </div>
+{% if personImage %}
     <div class="LayoutAlternate-right LayoutAlternate-item LayoutAlernate-item--leadSecondary">
         <img class="LayoutAlternate-image" src="{{personImage}}" alt="{{personFirstName}} {{personSurname}}">
+{% else %}
+    <div class="LayoutAlternate-right LayoutAlternate-item">
+{% endif %}
         <div class="LayoutAlternate-solo">
             <p class="Heading Heading--context">Find {{personFirstName}} on:</p>
             {% include '@social-media' %}
