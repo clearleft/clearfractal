@@ -30,7 +30,7 @@
     @include font(15px, 18px);
     font-weight: 700;
     border-bottom: none;
-    &:after {
+    &::after {
         position: absolute;
         left: 0;
         right: 100%;
@@ -38,7 +38,9 @@
         bottom: 0px;
         content: "";
     }
-    &:hover:after {
+    &:hover::after,
+    &:active::after,
+    &:focus::after {
         left: 0;
         right: 0;
     }
@@ -141,10 +143,11 @@
 .PrimaryNavigation-link {
     transition: color 0.1s $confident-ease;
 }
-.PrimaryNavigation-link:hover {
+.PrimaryNavigation-link:hover,
+.PrimaryNavigation-link:focus {
     transition: color 0.1s $confident-ease;
 }
-.PrimaryNavigation-link:after {
+.PrimaryNavigation-link::after {
     transition: 0.2s $confident-ease;
     transform: translate3d(0, 0, 0);
 }
