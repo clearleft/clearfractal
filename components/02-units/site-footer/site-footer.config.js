@@ -18,10 +18,12 @@ module.exports = {
             { "url": "#", "imgSrc": "/assets/img/icons/icon-medium.svg", "alt": "Find us on Medium" },
             { "url": "#", "imgSrc": "/assets/img/icons/icon-flickr.svg", "alt": "Find us on Flickr" }
         ],
-        "inputGroupLabel": "Feed your curiosity.",
-        "inputGroupSubmit": "Get the Clearletter",
-        "inputModifier": '--combo',
-        "footerInputSmall": "​Every 2 weeks. It’s non-salesy. We never spam.",
-        "siteFooterSmall": "&copy; 2005‑now Clearleft Ltd. All rights reserved."
+        "inputGroupURL": "#",
+        "inputGroupLabel": "Get notified with updates",
+        "inputGroupSubmit": "Join the mailing list",
+        "inputGroupID": "ID2",
+        "inputGroupPlaceholder": "Enter email address",
+        "inputGroupMicrocopy": "Low volume mailing list. Just for events & conference updates. <a href=\"#\">See an example</a>",
+        "inputGroupModifiers": "highlight"
     }
 }
