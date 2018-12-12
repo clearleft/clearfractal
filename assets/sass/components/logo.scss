@@ -6,25 +6,25 @@
     fill: $Blank;
 }
 .Logo--plum .Logo-streak {
-    fill: $Brand-plum;
+    stroke: $Brand-plum;
 }
 .Logo--carribean-green .Logo-streak {
-    fill: $Brand-carribean-green;
+    stroke: $Brand-carribean-green;
 }
 .Logo--sea-serpent-blue .Logo-streak {
-    fill: $Sea-serpent-blue;
+    stroke: $Sea-serpent-blue;
 }
 .Logo--orange-yellow .Logo-streak {
-    fill: $Orange-yellow;
+    stroke: $Orange-yellow;
 }
 .Logo--crayola-red .Logo-streak {
-    fill: $Crayola-red;
+    stroke: $Crayola-red;
 }
 .Logo--lapis-lazuli-blue .Logo-streak {
-    fill: $Lapis-lazuli-blue;
+    stroke: $Lapis-lazuli-blue;
 }
 .Logo--brandeis-blue .Logo-streak {
-    fill: $Brandeis-blue;
+    stroke: $Brandeis-blue;
 }
 @media only screen and (max-width: px2em(340px)) {
     .Logo svg {

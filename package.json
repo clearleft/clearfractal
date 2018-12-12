@@ -1,6 +1,10 @@
 {
   "name": "clearleft-fractal",
+<<<<<<< HEAD
   "version": "0.2.10",
+=======
+  "version": "0.2.11",
+>>>>>>> release/0.2.11
   "main": "fractal.js",
   "dependencies": {
     "@frctl/fractal": "^1.1.0",
