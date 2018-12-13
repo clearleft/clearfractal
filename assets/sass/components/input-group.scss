@@ -10,7 +10,7 @@
     border-radius: px2rem(2px);
     font-family: $font-main;
     @include font(14px);
-    padding: px2rem(10px) px2rem(100px);
+    padding: px2rem(10px) px2rem(10px);
     width: 100%;
     -webkit-font-smoothing: antialiased;
 }
