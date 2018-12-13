@@ -57,6 +57,11 @@
     border-bottom: none;
     display: block;
     padding: 0 px2rem(15px);
+    &:hover,
+    &:focus,
+    &:active {
+        filter: invert(0.5) sepia(1) saturate(200%) hue-rotate(107deg) brightness(1.25);
+    }
     img {
         display: inline-block;
     }
