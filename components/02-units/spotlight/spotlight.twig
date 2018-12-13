@@ -1,0 +1,15 @@
+<div class="Spotlight {% if SpotlightModifiers %}Spotlight{{ SpotlightModifiers|join(' Spotlight') }}{% endif %}">
+    <div class="Spotlight-content">
+    {% if SpotlightHeading %}
+        <h2 class="Spotlight-heading Heading Heading--small">{{ SpotlightHeading }}</h2>
+    {% endif %}
+    {% if SpotlightBody %}
+        <div class="Spotlight-body">
+            {{ SpotlightBody }}
+        </div>
+    {% endif %}
+    {% if SpotlightLink %}
+        <a class="Spotlight-link Heading--bump" href="{{ SpotlightLink }}">{{SpotlightLinkText}}</a>
+    {% endif %}
+    </div>
+</div>
