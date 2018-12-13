@@ -24,6 +24,8 @@ module.exports = {
         "inputGroupID": "ID2",
         "inputGroupPlaceholder": "Enter email address",
         "inputGroupMicrocopy": "Low volume mailing list. Just for events & conference updates. <a href=\"#\">See an example</a>",
-        "inputGroupModifiers": "highlight"
+        "inputGroupModifiers": "highlight",
+        "siteFooterSmall": "© 2005‑now Clearleft Ltd. All rights reserved.",
+
     }
 }
