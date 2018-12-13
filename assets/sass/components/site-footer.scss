@@ -38,6 +38,7 @@
 }
 .SiteFooter-small {
     @include font(10px, 17px);
+    text-align: center;
     text-transform: uppercase;
 }
 .SiteFooter-icons {
