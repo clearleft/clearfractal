@@ -58,6 +58,12 @@ module.exports = {
                 authorName: 'Ellen DeVries',
                 cardId: 'card-05'
             }
+        },
+        {
+            name: 'Home',
+            context: {
+                cardModifiers: ['--home'],
+            }
         }
     ]
 }
