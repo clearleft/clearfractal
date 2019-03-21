@@ -5,8 +5,7 @@
 }
 .Metadata-heading {
     display: inline;
-    @include font(13px, 16px);
-    font-family: $font-secondary;
+    @include font(14px, 22px);
     font-weight: 700;
     color: $Dark-liver-grey;
 }
