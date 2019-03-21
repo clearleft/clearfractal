@@ -20,7 +20,11 @@
     margin: 0;
 }
 .Metadata--stacked {
-    display: flex;
-    flex-direction: column;
-    margin-top: px2rem(8px);
+    display: grid;
+    grid-gap: px2rem(8px);
+}
+@media all and (min-width: px2rem(500px)) {
+    .Metadata--stacked .Metadata-heading {
+        grid-column: span 2;
+    }
 }
