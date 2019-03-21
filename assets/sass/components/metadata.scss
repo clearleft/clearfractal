@@ -19,9 +19,18 @@
     color: $mid-grey;
     margin: 0;
 }
+.Metadata-description::after {
+    content: ',';
+}
+.Metadata-description:last-of-type::after {
+    content: '';
+}
 .Metadata--stacked {
     display: grid;
     grid-gap: px2rem(8px);
+}
+.Metadata--stacked .Metadata-description::after {
+    content: '';
 }
 @media all and (min-width: px2rem(500px)) {
     .Metadata--stacked .Metadata-heading {
