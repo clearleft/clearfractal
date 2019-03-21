@@ -10,7 +10,11 @@ module.exports = {
         "segmentTwo": "Royal borough of kensington and chelsea",
 
         /*Showcase contents*/
-        "showcaseMiscStyles": "",
+        "showcaseActivities": [{
+            "metadata": "Design research"
+        },{
+            "metadata": "Design Sprints"
+        }],
         "showcaseTitle": "Changing the approach to digital publishing.",
         "showcaseText": "Clearleft worked with the Royal Borough of Kensington and Chelsea to fundamentally change their approach to digital publishing, resulting in hugely increased user satisfaction and a much easier internal workflow.",
         "showcaseImage": "/assets/img/work/rbkc/landing.png",

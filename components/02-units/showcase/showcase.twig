@@ -1,8 +1,11 @@
-
 {% include '@site-header' %}
 {% include '@breadcrumb' %}
 <div class="Showcase">
     <div class="Showcase-wrapper">
+        {% include '@metadata' with {
+            metadataHeading: 'What we did',
+            items: showcaseActivities
+        } %}
         <div class="Showcase-primary" role="banner">
             <h1 class="Showcase-title Heading Heading--secondary">{{showcaseTitle}}</h1>
             <p class="Showcase-description">{{showcaseText}}</p>
