@@ -1,12 +1,16 @@
 
 <div class="Showcase{% if showcaseModifier %} Showcase{{showcaseModifier}}{% endif %}">
-    {% include '@site-header' %}
-    {% include '@breadcrumb' %}
+{% include '@site-header' %}
+{% include '@breadcrumb' %}
     <div class="Showcase-wrapper">
         <div class="Showcase-primary" role="banner">
             <h1 class="Showcase-title Heading Heading--secondary">{{showcaseTitle}}</h1>
             <p class="Showcase-description">{{showcaseText}}</p>
         </div>
-        {% if showcaseImage %}<img class="Showcase-image" src="{{showcaseImage}}" alt="{{showcaseImageText}}">{% endif %}
     </div>
+{% if showcaseImage %}
+    <div class="Showcase-canvas"{% if showcaseColour %} style="background-color: {{ showcaseColour }}"{% endif %}>
+        <img class="Showcase-image" src="{{showcaseImage}}" alt="{{showcaseImageText}}">
+    </div>
+{% endif %}
 </div><!--/.Showcase-->
