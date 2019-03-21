@@ -1,8 +1,8 @@
 
 <div class="Showcase{% if showcaseModifier %} Showcase{{showcaseModifier}}{% endif %}">
     {% include '@site-header' %}
+    {% include '@breadcrumb' %}
     <div class="Showcase-wrapper">
-        {% include '@breadcrumb' %}
         <div class="Showcase-primary" role="banner">
             <h1 class="Showcase-title Heading Heading--secondary">{{showcaseTitle}}</h1>
             <p class="Showcase-description">{{showcaseText}}</p>
