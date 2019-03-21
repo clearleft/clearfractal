@@ -13,11 +13,6 @@ module.exports = {
         "items": items
     },
     "variants": [{
-        "name": "pill style",
-        "context": {
-            "metadataPill": true
-        }
-    },{
         "name": "stacked",
         "context": {
             "metadataModifier": "--stacked"
