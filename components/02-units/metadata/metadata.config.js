@@ -17,5 +17,10 @@ module.exports = {
         "context": {
             "metadataPill": true
         }
+    },{
+        "name": "stacked",
+        "context": {
+            "metadataModifier": "--stacked"
+        }
     }]
 }
