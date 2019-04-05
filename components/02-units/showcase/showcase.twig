@@ -2,14 +2,47 @@
 {% include '@breadcrumb' %}
 <div class="Showcase">
     <div class="Showcase-wrapper">
-        {% include '@metadata' with {
-            metadataHeading: 'What we did',
-            items: showcaseActivities
-        } %}
+{% if showcaseActivities %}
+{% include '@metadata' with {
+    metadataHeading: 'What we did',
+    items: showcaseActivities
+} %}
+{% endif %}
         <div class="Showcase-primary" role="banner">
             <h1 class="Showcase-title Heading Heading--secondary">{{showcaseTitle}}</h1>
             <p class="Showcase-description">{{showcaseText}}</p>
         </div>
+        <div class="Cols Cols--two-thirds">
+            <div class="Cols-item">
+{% if showcaseClient %}
+{% include '@metadata' with {
+    metadataHeading: 'Client',
+    items: showcaseClient
+} %}
+{% endif %}
+{% if showcaseSector %}
+{% include '@metadata' with {
+    metadataHeading: 'Sector',
+    items: showcaseSector
+} %}
+{% endif %}
+{% if showcaseDuration %}
+{% include '@metadata' with {
+    metadataHeading: 'Duration',
+    items: showcaseDuration
+} %}
+{% endif %}
+            </div>
+            <div class="Cols-item">
+{% if showcaseServices %}
+        {% include '@metadata' with {
+            metadataModifier: "--stacked",
+            metadataHeading: 'Services',
+            items: showcaseServices
+        } %}
+{% endif %}
+            </div>
+        </div><!--/.Cols-->
     </div>
 {% if showcaseImage %}
     <div class="Showcase-canvas"{% if showcaseColour %} style="background-color: {{ showcaseColour }}"{% endif %}>
