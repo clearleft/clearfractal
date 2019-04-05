@@ -32,6 +32,7 @@
 }
 @media all and (min-width: px2rem(500px)) {
     .Metadata--stacked .Metadata-heading {
+        margin-top: px2rem(8px);
         grid-column: span 2;
     }
 }
