@@ -1,7 +1,8 @@
 .Breadcrumb {
     width: 100%;
-    max-width: px2em(1006px);
+    max-width: px2em(1024px);
     margin: px2rem(16px) auto;
+    padding-left: px2rem(16px);
     line-height: 1.2;
 }
 .Breadcrumb-item {
