@@ -4,11 +4,8 @@ module.exports = {
     "context": {
         /*Header items*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "primaryNavModifiers": ["--inverted"],
-        "logoModifiers": ["--inverted"],
         "segmentOne": "Client stories",
         "segmentTwo": "Royal borough of kensington and chelsea",
-        "breadcrumbModifier": "--inverted",
 
         /*Showcase content*/
         "showcaseModifier": "--blue",
