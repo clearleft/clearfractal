@@ -8,24 +8,15 @@ module.exports = {
         "segmentTwo": "Royal borough of kensington and chelsea",
 
         /*Showcase content*/
-        "showcaseModifier": "--blue",
+        "showcaseModifier": "blue",
+        "showcaseActivities": "@showcase.showcaseActivities",
         "showcaseImage": "@showcase.showcaseImage",
         "showcaseTitle": "@showcase.showcaseTitle",
         "showcaseText": "@showcase.showcaseText",
-
-        /*Scene*/
-        "metas": "@scene.metas",
-        "sceneHeading": "The Project",
-        "sceneModifier": "--basic",
-        "sceneProse": `<p>One year later, what the Council ended up with was a fundamentally changed, fully
-        responsive website, redesigned from the inside outwards. It now puts the needs of residents
-        first (with a vastly improved satisfaction rating), while also making life easier for the 100+
-        council staff who publish and edit the website.</p>
-        <h2>The Method</h2>
-        <ul>
-        <li>Planning a pilot scheme</li>
-        <li>Extensive user research including public workshops with residents and council experts</li>
-        `,
+        "showcaseClient": "@showcase.showcaseClient",
+        "showcaseSector": "@showcase.showcaseSector",
+        "showcaseDuration": "@showcase.showcaseDuration",
+        "showcaseServices": "@showcase.showcaseServices",
 
         /*Content*/
         "imageBlockSrc": "@image-block.imageBlockSrc",
