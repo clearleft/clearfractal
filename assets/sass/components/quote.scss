@@ -102,14 +102,12 @@
         padding-left: px2rem(24px);
         font-family: $font-main;
         font-weight: 400;
-        font-size: px2rem(22px);
     }
     .Quote-citation {
         padding-left: px2rem(31px);
         text-transform: none;
         font-family: $font-main;
         font-weight: 400;
-        font-size: px2rem(18px);
         letter-spacing: normal;
     }
     .Quote-avatar {
@@ -117,5 +115,15 @@
         border: none;
         max-width: px2rem(70px);
         max-height: px2rem(70px);
+    }
+}
+@media screen and (min-width: px2em(500px)) {
+    .Quote--testimonial {
+        .Quote-text {
+            font-size: px2rem(22px);
+        }
+        .Quote-citation {
+            font-size: px2rem(18px);
+        }
     }
 }
