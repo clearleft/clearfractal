@@ -8,9 +8,9 @@ module.exports = {
         "segmentTwo": "Royal borough of kensington and chelsea",
 
         /*Showcase content*/
-        "showcaseModifier": "blue",
+        "showcaseModifier": "red",
         "showcaseActivities": "@showcase.showcaseActivities",
-        "showcaseImage": "@showcase.showcaseImage",
+        "showcaseImage": "/assets/img/work/evo/car.jpg",
         "showcaseTitle": "@showcase.showcaseTitle",
         "showcaseText": "@showcase.showcaseText",
         "showcaseClient": "@showcase.showcaseClient",
