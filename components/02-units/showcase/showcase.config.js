@@ -51,19 +51,19 @@ module.exports = {
     {
         "name": "Blue scribble",
         "context": {
-            "showcaseModifier": "--blue"
+            "showcaseModifier": "blue"
         }
     },
     {
         "name": "Red scribble",
         "context": {
-            "showcaseModifier": "--red"
+            "showcaseModifier": "red"
         }
     },
     {
         "name": "Yellow scribble",
         "context": {
-            "showcaseModifier": "--yellow"
+            "showcaseModifier": "yellow"
         }
     }]
 };
