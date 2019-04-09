@@ -1,6 +1,6 @@
 'use strict';
 module.exports = {
-    "status": "ready",
+    "status": "wip",
     "context": {
         /*Header items*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
@@ -46,6 +46,24 @@ module.exports = {
         "name": "Blue background",
         "context": {
             "showcaseColour": "#325E94"
+        }
+    },
+    {
+        "name": "Blue scribble",
+        "context": {
+            "showcaseModifier": "--blue"
+        }
+    },
+    {
+        "name": "Red scribble",
+        "context": {
+            "showcaseModifier": "--red"
+        }
+    },
+    {
+        "name": "Yellow scribble",
+        "context": {
+            "showcaseModifier": "--yellow"
         }
     }]
 };
