@@ -24,21 +24,7 @@ module.exports = {
         "imageBlockModifier": "@image-block.imageBlockModifier",
         "imageBlockCaption": "@image-block.imageBlockCaption",
         "textBlockProse": `
-        <h2>Misconception 1: Transitioning to “Agile” will solve our problems.</h2>
-        <p>The agile manifesto was born out of a frustration with traditionally managed projects.
-        But I don’t think it solved the problem. It actually created another one. I’ve seen teams and
-        organisations go from waterfall, which reduces their ability to compete in the market and
-        deliver value, to dysfunction and paralysis when implementing agile.</p>
-        <p>That’s largely due to the various interpretations of the manifesto borne of misunderstanding.
-        Bottom-up as well as top-down support is needed in order for a successful agile transformation to take
-        place in any organisation.</p>
-        <p>The agile manifesto was born out of a frustration with traditionally managed projects.
-        But I don’t think it solved the problem. It actually created another one. I’ve seen teams and
-        organisations go from waterfall, which reduces their ability to compete in the market and
-        deliver value, to dysfunction and paralysis when implementing agile.</p>
-        <p>That’s largely due to the various interpretations of the manifesto borne of misunderstanding.
-        Bottom-up as well as top-down support is needed in order for a successful agile transformation to take
-        place in any organisation.</p>
+        <p>Attraction Tickets Direct (ATD) sell tickets to the world’s leading theme parks and attractions. ATD were concerned that their checkout process was not performing as well as it should be –somewhere along the line customers were being let down and lost. They approached Clearleft to help reduce customer drop-out and increase conversion from basket to sale. We were given two weeks to make a difference.</p>
         `,
         "quoteAvatarSrc": "/assets/img/work/ch4/anna-doble.jpg",
         "quoteAvatarAlt": "@quote.quoteAvatarAlt",
