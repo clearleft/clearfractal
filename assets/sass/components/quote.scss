@@ -34,13 +34,6 @@
     margin-right: px2rem(16px);
 }
 
-.Quote-job {
-    display: block;
-    text-indent: px2rem(1px);
-    margin-top: px2rem(4px);
-    color: $mid-grey;
-}
-
 .Quote-author {
     display: inline-block;
     margin-top: 0.5rem;
@@ -49,6 +42,13 @@
 .Quote-author>* {
     display: block;
 }
+
+.Quote-authorrole {
+    display: block;
+    margin-top: 0.5rem;
+    color: $mid-grey;
+}
+
 
 @media screen and (min-width: px2em(280px)) {
     .Quote-citation {
@@ -87,5 +87,36 @@
     }
     .Quote-authorrole {
         color: $Crayola-red-acc2;
+    }
+}
+
+.Quote--testimonial {
+    margin: 0;
+    padding: 2em 0 1em 0;
+    &:before {
+        content: none;
+        width: auto;
+        height: auto;
+    }
+    .Quote-text {
+        border-left: px2rem(7px) solid black;
+        padding-left: px2rem(24px);
+        font-family: $font-main;
+        font-weight: 400;
+        font-size: px2rem(22px);
+    }
+    .Quote-citation {
+        padding-left: px2rem(31px);
+        text-transform: none;
+        font-family: $font-main;
+        font-weight: 400;
+        font-size: px2rem(18px);
+        letter-spacing: normal;
+    }
+    .Quote-avatar {
+        border-radius: 50%;
+        border: none;
+        max-width: px2rem(70px);
+        max-height: px2rem(70px);
     }
 }
