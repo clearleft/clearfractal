@@ -53,6 +53,7 @@ module.exports = {
         "quoteAvatarAlt": "@quote.quoteAvatarAlt",
         "quoteText": "@quote.quoteText",
         "quoteAuthor": "@quote.quoteAuthor",
+        "quoteModifiers": "testimonial",
 
         /*Global patterns*/
         "signpostItems": "@signpost.signpostItems",
