@@ -1,10 +1,10 @@
 .TextBlock {
     padding: 0 px2rem(16px);
     margin: 0 auto;
-    max-width: px2em(680px);
+    max-width: px2rem(680px);
 }
 .TextBlock--wide {
-    max-width: px2em(720px);
+    max-width: px2rem(720px);
 }
 .TextBlock--author {
     padding-bottom: 0;
@@ -25,7 +25,7 @@
     }
     .TextBlock--image {
         display: flex;
-        max-width: px2em(680px);
+        max-width: px2rem(680px);
 
         figure {
             flex: 1 0 45%;
