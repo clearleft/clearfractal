@@ -31,6 +31,15 @@ module.exports = {
         "quoteText": "@quote.quoteText",
         "quoteAuthor": "@quote.quoteAuthor",
         "quoteModifiers": "testimonial",
+        "resultsProse": `
+        <h2 class="Heading Heading--context">The Results</h2>
+        <h3 class="Heading Heading--bump"><span class="u-underline">A launchable MVP with direction</span></h3>
+        <p>This four week project has provided the space to shape a long term vision for the website and define a launchable MVP. Rooting the initial requirements in a wider vision enabled a strong concept and proposition to be baked into the website from the start. It also provided a roadmap for enhancements that build on these solid foundations.</p>
+        <h3 class="Heading Heading--bump"><span class="u-underline">One team with a shared vision</span></h3>
+        <p>Close collaboration and co-locating throughout has led to a sense of shared understanding and ownership of the website. Embedding the thinking behind the designs and creating guiding principles to inform and evaluate the outputs has enabled the team to make decisions faster and with more confidence.</p>
+        <h3 class="Heading Heading--bump"><span class="u-underline">Accelerated problem solving</span></h3>
+        <p>Adopting more effective design practice is often best encouraged and achieved through doing it and having a positive experience. The impact of group sketching, showing work as it emerges and inviting the wider team into the process led to a desire from the OU team to work in this way more often. Adding another sentance here to see what the spacing is like.</p>
+        `,
 
         /*Global patterns*/
         "signpostItems": "@signpost.signpostItems",
