@@ -12,7 +12,13 @@
     margin: px2rem(48px) auto 0 auto;
     display: block;
 }
-@media all and (min-width: px2rem(1024px)) {
+@media screen and (min-width: px2em(680px)) {
+    .Showcase-metadata {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+@media all and (min-width: px2em(1024px)) {
     .Showcase {
         background-position: 105% center;
         background-repeat: no-repeat;

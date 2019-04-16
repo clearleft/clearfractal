@@ -12,8 +12,8 @@
             <h1 class="Showcase-title Heading Heading--secondary">{{showcaseTitle}}</h1>
             <p class="Showcase-description">{{showcaseText}}</p>
         </div>
-        <div class="Cols Cols--two-thirds">
-            <div class="Cols-item">
+        <div class="Showcase-metadata">
+            <div>
 {% if showcaseClient %}
 {% include '@metadata' with {
     metadataHeading: 'Client',
@@ -33,7 +33,7 @@
 } %}
 {% endif %}
             </div>
-            <div class="Cols-item">
+            <div>
 {% if showcaseServices %}
         {% include '@metadata' with {
             metadataModifier: "--stacked",
