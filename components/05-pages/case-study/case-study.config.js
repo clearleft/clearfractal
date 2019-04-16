@@ -4,31 +4,19 @@ module.exports = {
     "context": {
         /*Header items*/
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
-        "primaryNavModifiers": ["--inverted"],
-        "logoModifiers": ["--inverted"],
         "segmentOne": "Client stories",
         "segmentTwo": "Royal borough of kensington and chelsea",
-        "breadcrumbModifier": "--inverted",
 
         /*Showcase content*/
-        "showcaseModifier": "--blue",
-        "showcaseImage": "@showcase.showcaseImage",
+        "showcaseModifier": "red",
+        "showcaseActivities": "@showcase.showcaseActivities",
+        "showcaseImage": "/assets/img/work/evo/car.jpg",
         "showcaseTitle": "@showcase.showcaseTitle",
         "showcaseText": "@showcase.showcaseText",
-
-        /*Scene*/
-        "metas": "@scene.metas",
-        "sceneHeading": "The Project",
-        "sceneModifier": "--basic",
-        "sceneProse": `<p>One year later, what the Council ended up with was a fundamentally changed, fully
-        responsive website, redesigned from the inside outwards. It now puts the needs of residents
-        first (with a vastly improved satisfaction rating), while also making life easier for the 100+
-        council staff who publish and edit the website.</p>
-        <h2>The Method</h2>
-        <ul>
-        <li>Planning a pilot scheme</li>
-        <li>Extensive user research including public workshops with residents and council experts</li>
-        `,
+        "showcaseClient": "@showcase.showcaseClient",
+        "showcaseSector": "@showcase.showcaseSector",
+        "showcaseDuration": "@showcase.showcaseDuration",
+        "showcaseServices": "@showcase.showcaseServices",
 
         /*Content*/
         "imageBlockSrc": "@image-block.imageBlockSrc",
@@ -36,26 +24,22 @@ module.exports = {
         "imageBlockModifier": "@image-block.imageBlockModifier",
         "imageBlockCaption": "@image-block.imageBlockCaption",
         "textBlockProse": `
-        <h2>Misconception 1: Transitioning to “Agile” will solve our problems.</h2>
-        <p>The agile manifesto was born out of a frustration with traditionally managed projects.
-        But I don’t think it solved the problem. It actually created another one. I’ve seen teams and
-        organisations go from waterfall, which reduces their ability to compete in the market and
-        deliver value, to dysfunction and paralysis when implementing agile.</p>
-        <p>That’s largely due to the various interpretations of the manifesto borne of misunderstanding.
-        Bottom-up as well as top-down support is needed in order for a successful agile transformation to take
-        place in any organisation.</p>
-        <p>The agile manifesto was born out of a frustration with traditionally managed projects.
-        But I don’t think it solved the problem. It actually created another one. I’ve seen teams and
-        organisations go from waterfall, which reduces their ability to compete in the market and
-        deliver value, to dysfunction and paralysis when implementing agile.</p>
-        <p>That’s largely due to the various interpretations of the manifesto borne of misunderstanding.
-        Bottom-up as well as top-down support is needed in order for a successful agile transformation to take
-        place in any organisation.</p>
+        <p>Attraction Tickets Direct (ATD) sell tickets to the world’s leading theme parks and attractions. ATD were concerned that their checkout process was not performing as well as it should be –somewhere along the line customers were being let down and lost. They approached Clearleft to help reduce customer drop-out and increase conversion from basket to sale. We were given two weeks to make a difference.</p>
         `,
         "quoteAvatarSrc": "/assets/img/work/ch4/anna-doble.jpg",
         "quoteAvatarAlt": "@quote.quoteAvatarAlt",
         "quoteText": "@quote.quoteText",
         "quoteAuthor": "@quote.quoteAuthor",
+        "quoteModifiers": "testimonial",
+        "resultsProse": `
+        <h2 class="Heading Heading--context">The Results</h2>
+        <h3 class="Heading Heading--bump"><span class="u-underline">A launchable MVP with direction</span></h3>
+        <p>This four week project has provided the space to shape a long term vision for the website and define a launchable MVP. Rooting the initial requirements in a wider vision enabled a strong concept and proposition to be baked into the website from the start. It also provided a roadmap for enhancements that build on these solid foundations.</p>
+        <h3 class="Heading Heading--bump"><span class="u-underline">One team with a shared vision</span></h3>
+        <p>Close collaboration and co-locating throughout has led to a sense of shared understanding and ownership of the website. Embedding the thinking behind the designs and creating guiding principles to inform and evaluate the outputs has enabled the team to make decisions faster and with more confidence.</p>
+        <h3 class="Heading Heading--bump"><span class="u-underline">Accelerated problem solving</span></h3>
+        <p>Adopting more effective design practice is often best encouraged and achieved through doing it and having a positive experience. The impact of group sketching, showing work as it emerges and inviting the wider team into the process led to a desire from the OU team to work in this way more often. Adding another sentance here to see what the spacing is like.</p>
+        `,
 
         /*Global patterns*/
         "signpostItems": "@signpost.signpostItems",
@@ -67,7 +51,10 @@ module.exports = {
         "socialLinks": "@site-footer.socialLinks",
         "inputGroupLabel": "@site-footer.inputGroupLabel",
         "inputGroupSubmit": "@site-footer.inputGroupSubmit",
-        "inputModifier": '--combo',
+        "inputGroupID": "@site-footer.inputGroupID",
+        "inputGroupPlaceholder": "@site-footer.inputGroupPlaceholder",
+        "inputGroupMicrocopy": "@site-footer.inputGroupMicrocopy",
+        "inputGroupModifiers": "@site-footer.inputGroupModifiers",
         "siteFooterSmall": "@site-footer.siteFooterSmall"
     }
 };

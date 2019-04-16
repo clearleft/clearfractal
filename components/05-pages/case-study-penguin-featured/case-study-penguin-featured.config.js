@@ -65,7 +65,10 @@ module.exports = {
         "socialLinks": "@site-footer.socialLinks",
         "inputGroupLabel": "@site-footer.inputGroupLabel",
         "inputGroupSubmit": "@site-footer.inputGroupSubmit",
-        "inputModifier": '--combo',
+        "inputGroupID": "@site-footer.inputGroupID",
+        "inputGroupPlaceholder": "@site-footer.inputGroupPlaceholder",
+        "inputGroupMicrocopy": "@site-footer.inputGroupMicrocopy",
+        "inputGroupModifiers": "@site-footer.inputGroupModifiers",
         "siteFooterSmall": "@site-footer.siteFooterSmall"
     }
 };

@@ -1,20 +1,38 @@
-
 .Metadata {
     font-family: $font-main;
-    margin-top: px2rem(8px);
-    margin: px2rem(8px) px2rem(16px) px2rem(24px) 0;
+    margin: px2rem(8px) px2rem(16px) px2rem(8px) 0;
 }
 .Metadata-heading {
-    @include font(13px, 16px);
-    font-family: $font-secondary;
+    display: inline;
+    @include font(14px, 22px);
     font-weight: 700;
     color: $Dark-liver-grey;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: px2rem(4px);
+}
+.Metadata-heading::after {
+    content: ':';
 }
 .Metadata-description {
+    display: inline;
     @include font(14px, 22px);
     color: $mid-grey;
     margin: 0;
+}
+.Metadata-description::after {
+    content: ',';
+}
+.Metadata-description:last-of-type::after {
+    content: '';
+}
+.Metadata--stacked {
+    display: grid;
+    grid-gap: px2rem(8px);
+}
+.Metadata--stacked .Metadata-description::after {
+    content: '';
+}
+@media all and (min-width: px2rem(500px)) {
+    .Metadata--stacked .Metadata-heading {
+        margin-top: px2rem(8px);
+        grid-column: span 2;
+    }
 }

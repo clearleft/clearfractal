@@ -1,12 +1,12 @@
 .Prose {
     -webkit-font-smoothing: antialiased;
     color: $Dark-liver-grey;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h1:not(.Heading),
+    h2:not(.Heading),
+    h3:not(.Heading),
+    h4:not(.Heading),
+    h5:not(.Heading),
+    h6:not(.Heading) {
         font-family: $font-secondary;
         font-weight: 700;
         -webkit-font-smoothing: antialiased;
@@ -14,27 +14,27 @@
         margin-top: 2rem;
         margin-bottom: 1rem;
     }
-    h1 {
+    h1:not(.Heading) {
         @include font(35px, 40px);
         letter-spacing: px2rem(-0.5px);
     }
-    h2 {
+    h2:not(.Heading) {
         @include font(35px, 40px);
         letter-spacing: px2rem(-0.5px);
     }
-    h3 {
+    h3:not(.Heading) {
         @include font(28px, 33px);
         letter-spacing: px2rem(-0.4px);
     }
-    h4 {
+    h4:not(.Heading) {
         @include font(22px, 27px);
         letter-spacing: px2rem(-0.3px);
     }
-    h5 {
+    h5:not(.Heading) {
         @include font(18px, 27px);
         letter-spacing: px2rem(-0.3px);
     }
-    h6 {
+    h6:not(.Heading) {
         @include font(16px, 27px);
         letter-spacing: px2rem(-0.3px);
     }
@@ -145,27 +145,27 @@
 
 @media screen and (min-width: px2em(500px)) {
     .Prose {
-        h1 {
+        h1:not(.Heading) {
             @include font(43px, 50px);
             letter-spacing: px2rem(-0.46px);
         }
-        h2 {
+        h2:not(.Heading) {
             @include font(43px, 50px);
             letter-spacing: px2rem(-0.46px);
         }
-        h3 {
+        h3:not(.Heading) {
             @include font(35px, 40px);
             letter-spacing: px2rem(-0.5px);
         }
-        h4 {
+        h4:not(.Heading) {
             @include font(28px, 33px);
             letter-spacing: px2rem(-0.4px);
         }
-        h5 {
+        h5:not(.Heading) {
             @include font(22px, 27px);
             letter-spacing: px2rem(-0.3px);
         }
-        h6 {
+        h6:not(.Heading) {
             @include font(18px, 27px);
             letter-spacing: px2rem(-0.3px);
         }

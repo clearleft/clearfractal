@@ -11,6 +11,11 @@ module.exports = {
             colsModifier: 'one-third'
         }
     }, {
+        name: 'two-thirds',
+        context: {
+            colsModifier: 'two-thirds'
+        }
+    }, {
         name: 'half-reverse',
         context: {
             colsModifier: 'half Cols--reverse'

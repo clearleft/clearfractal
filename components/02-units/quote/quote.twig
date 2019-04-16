@@ -1,12 +1,12 @@
-<blockquote class="Quote{% if quoteModifiers %} Quote--{{quoteModifiers}}{% endif %}">
+<figure class="Quote{% if quoteModifiers %} Quote--{{quoteModifiers}}{% endif %}">
+    <blockquote class="Quote-text">
     {{quoteText}}
-    <div class="Quote-citation">
+    </blockquote>
+    <figcaption class="Quote-citation">
         {% if quoteAvatarSrc %}<img class="Quote-avatar" src="{{quoteAvatarSrc}}" alt="{{quoteAvatarAlt}}">{% endif %}
         <div class="Quote-author">
-            <span class="Quote-authorname">{{quoteAuthor}}</span>
+            {% if quoteAuthor %}<span class="Quote-authorname">{{quoteAuthor}}</span>{% endif %}
             {% if quoteAuthorRole %}<span class="Quote-authorrole">{{quoteAuthorRole}}</span>{% endif %}
         </div>
-    </div>
-</blockquote>
-
-
+    </figcaption>
+</figure>
