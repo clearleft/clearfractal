@@ -30,6 +30,9 @@
         .Cols--one-third {
             grid-template-columns: 1fr 1fr 1fr;
         }
+        .Cols--two-thirds {
+            grid-template-columns: 1fr 2fr;
+        }
         .Col--pull {
             grid-column: 2/3;
         }

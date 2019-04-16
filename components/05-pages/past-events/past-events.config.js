@@ -31,10 +31,11 @@ module.exports = {
             socialLinks: '@site-footer.socialLinks',
             inputGroupLabel: '@site-footer.inputGroupLabel',
             inputGroupSubmit: '@site-footer.inputGroupSubmit',
-            inputGroupPlaceholder: 'E.g. example@domain.com',
-            inputGroupMicrocopy: 'Every 2 weeks. It’S non-salesy. We never spam.',
-            inputModifier: '--combo',
+            inputGroupID: '@site-footer.inputGroupID',
+            inputGroupPlaceholder: '@site-footer.inputGroupPlaceholder',
+            inputGroupMicrocopy: '@site-footer.inputGroupMicrocopy',
+            inputGroupModifiers: '@site-footer.inputGroupModifiers',
             siteFooterSmall: '@site-footer.siteFooterSmall'
-        }
+        }  
     }
 };

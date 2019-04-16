@@ -1,15 +1,14 @@
 {% include '@showcase' %}
 
 <main id="main-content">
-    {% include '@scene' %}
 
-    {% include '@text-block' %}
-
-    {% include '@image-block' %}
+    {% include '@text-block' with { textBlockModifier: ' Lead' } %}
 
     {% include '@quote' %}
 
-    {% include '@text-block' %}
+    {% include '@text-block' with { textBlockModifier: '--brush TextBlock--connected', textBlockProse: resultsProse  } %}
+
+    {% include '@image-block' %}
 
     {% include '@signpost' %}
 </main>

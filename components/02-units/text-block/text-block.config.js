@@ -28,6 +28,27 @@ module.exports = {
             }
         },
         {
+            "name": "Brushed background",
+            "context": {
+                "textBlockModifier": "--brush",
+                "textBlockProse": `<p>The agile manifesto was born out of a frustration with traditionally managed projects. But I don’t think it solved the problem. It actually created another one. I’ve seen teams and organisations go from waterfall, which reduces their ability to compete in the market and deliver value, to dysfunction and paralysis when implementing agile.</p>`
+            }
+        },
+        {
+            "name": "Connected",
+            "context": {
+                "textBlockModifier": "--connected",
+                "textBlockProse": `<p>The agile manifesto was born out of a frustration with traditionally managed projects. But I don’t think it solved the problem. It actually created another one. I’ve seen teams and organisations go from waterfall, which reduces their ability to compete in the market and deliver value, to dysfunction and paralysis when implementing agile.</p>`
+            }
+        },
+        {
+            "name": "Brushed background connected",
+            "context": {
+                "textBlockModifier": "--brush TextBlock--connected",
+                "textBlockProse": `<p>The agile manifesto was born out of a frustration with traditionally managed projects. But I don’t think it solved the problem. It actually created another one. I’ve seen teams and organisations go from waterfall, which reduces their ability to compete in the market and deliver value, to dysfunction and paralysis when implementing agile.</p>`
+            }
+        },
+        {
             "name": "With image",
             "context": {
                 "textBlockModifier": "--image",

@@ -1,6 +1,5 @@
 
 .Lead {
-    @include font(18px, 28px);
     padding: px2rem(20px) px2rem(24px) px2rem(16px) px2rem(24px);
 }
 .Lead--wrapper {
@@ -26,6 +25,10 @@
             color: $Gainsboro-blue;
         }
     }
+}
+
+.Lead-content {
+    @include font(22px, 32px);
 }
 @media screen and (min-width: px2em(520px)) {
     .Lead {

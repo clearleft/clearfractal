@@ -32,3 +32,7 @@
 .u-border-top-n2:not(:first-child) {
     border-top: 1px solid $lighter-grey;
 }
+
+.u-underline {
+    background-image: linear-gradient(transparent 60%,$Orange-yellow 60%, $Orange-yellow 85%, transparent 85%, transparent 100%);
+}

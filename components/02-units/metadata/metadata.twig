@@ -1,4 +1,4 @@
-<dl class="Metadata">
+<dl class="Metadata{% if metadataModifier %} Metadata{{metadataModifier}}{% endif %}">
     <dt class="Metadata-heading">{{metadataHeading}}</dt>
     {% for item in items %}
     <dd class="Metadata-description{% if metadataPill %} Pill{% endif %}">{{item.metadata}}</dd>

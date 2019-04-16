@@ -1,6 +1,8 @@
 .Breadcrumb {
     width: 100%;
-    margin-bottom: px2rem(16px);
+    max-width: px2em(1024px);
+    margin: px2rem(16px) auto;
+    padding-left: px2rem(32px);
     line-height: 1.2;
 }
 .Breadcrumb-item {
@@ -23,6 +25,7 @@
 .Breadcrumb-item--first:before {
     content: "←";
     color: currentColor;
+    margin-left: px2rem(-16px);
 }
 .Breadcrumb-separator {
     opacity: 0.5;
