@@ -20,7 +20,6 @@ module.exports = {
         "primaryNavlinks": "@primary-navigation.primaryNavlinks",
         "mastheadTitle": "Show me",
         "mastheadModifier": "--chimney",
-        "mastheadHasSelector": true,
         "selectorID": "categories",
         "triggerContent": "all posts",
         "triggerClass": "Heading Heading--main",
