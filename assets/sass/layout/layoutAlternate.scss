@@ -18,7 +18,6 @@
     margin-left: px2rem(-16px);
     margin-right: px2rem(-16px);
     position: relative;
-    z-index: -1;
 }
 @media screen and (min-width: px2em(630px)) {
     .LayoutAlternate {
@@ -39,7 +38,7 @@
         padding: px2rem(16px);
     }
     .LayoutAlternate-solo {
-        padding: 0 px2rem(64px);
+        padding: px2rem(16px) px2rem(16px) 0;
     }
     .LayoutAlernate-item--leadPrimary {
         margin-top: px2rem(32px);
