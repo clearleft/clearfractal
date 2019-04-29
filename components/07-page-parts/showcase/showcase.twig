@@ -2,10 +2,10 @@
 {% include '@breadcrumb' %}
 <div class="Showcase{% if showcaseModifier %} Showcase--{{showcaseModifier}}{% endif %}">
     <div class="Showcase-wrapper">
-{% if showcaseActivities %}
+{% if showcaseServices %}
 {% include '@metadata' with {
-    metadataHeading: 'What we did',
-    items: showcaseActivities
+    metadataHeading: 'Services',
+    items: showcaseServices
 } %}
 {% endif %}
         <div class="Showcase-primary" role="banner">
@@ -34,11 +34,11 @@
 {% endif %}
             </div>
             <div>
-{% if showcaseServices %}
+{% if showcaseExpertise %}
         {% include '@metadata' with {
             metadataModifier: "--stacked",
-            metadataHeading: 'Services',
-            items: showcaseServices
+            metadataHeading: 'What we did',
+            items: showcaseExpertise
         } %}
 {% endif %}
             </div>
