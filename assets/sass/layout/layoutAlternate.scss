@@ -13,6 +13,10 @@
 .LayoutAlternate-solo {
     padding: px2rem(16px) px2rem(16px) 0 px2rem(16px);
 }
+.LayoutAlernate-item--leadPrimary {
+    position: relative;
+    z-index: 2;
+}
 .LayoutAlernate-item--leadSecondary {
     margin-top: px2rem(-32px);
     margin-left: px2rem(-16px);
@@ -38,14 +42,11 @@
         padding: px2rem(16px);
     }
     .LayoutAlternate-solo {
-        padding: px2rem(16px) px2rem(16px) 0;
+        padding: px2rem(16px) px2rem(64px) 0;
     }
     .LayoutAlernate-item--leadPrimary {
         margin-top: px2rem(32px);
         width: 55%;
-        position: relative;
-        padding: 0;
-        z-index: 2;
         padding: 0;
     }
     .LayoutAlernate-item--leadSecondary {
