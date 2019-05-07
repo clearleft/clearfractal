@@ -85,6 +85,11 @@
     }
     .Quote-citation {
         padding-left: 0;
+        text-transform: uppercase;
+        @include font(13px, 16px);
+        font-family: $font-secondary;
+        font-weight: 700;
+        letter-spacing: px2rem(1px);
     }
     .Quote-authorrole {
         color: $Crayola-red-acc2;
@@ -96,7 +101,7 @@
             font-size: inherit;
         }
         .Quote-citation {
-            font-size: inherit;
+            @include font(13px, 16px);
         }
     }
 }
