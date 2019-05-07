@@ -1,28 +1,21 @@
 .Quote {
     max-width: px2rem(680px);
     position: relative;
-    margin: px2rem(40px) auto px2rem(20px) auto;
     padding: px2rem(16px);
-    &:before {
-        background-image: url('/assets/img/quote-open.svg');
-        background-repeat: no-repeat;
-        content: ' ';
-        width: px2rem(60px);
-        height: px2rem(45px);
-        display: block;
-        position: absolute;
-        top: px2rem(-16px);
-        background-size: 65%;
-    }
+    margin: px2rem(20px) auto;
+}
+
+.Quote-text {
+    border-left: px2rem(7px) solid black;
+    padding-left: px2rem(24px);
+    font-family: $font-main;
+    font-weight: 400;
 }
 
 .Quote-citation {
-    text-transform: uppercase;
+    padding-left: px2rem(31px);
     color: $Jet-grey;
     @include font(13px, 16px);
-    font-family: $font-secondary;
-    font-weight: 700;
-    letter-spacing: px2rem(1px);
     margin-top: px2rem(16px);
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +23,10 @@
 }
 
 .Quote-avatar {
-    border: px2rem(2px) solid #1E6B9C;
+    border: none;
+    border-radius: 50%;
+    max-width: px2rem(70px);
+    max-height: px2rem(70px);
     margin-right: px2rem(16px);
 }
 
@@ -61,15 +57,13 @@
 }
 
 @media screen and (min-width: px2em(500px)) {
-    .Quote {
-        margin-top: px2rem(80px);
-        padding-bottom: px2rem(25px);
-        padding-top: px2rem(10px);
-        &:before {
-            top: px2rem(-48px);
-            background-size: 100%;
-        }
+    .Quote-text {
+        font-size: px2rem(22px);
     }
+    .Quote-citation {
+        font-size: px2rem(18px);
+    }
+
 }
 
 .Quote--event {
@@ -77,53 +71,32 @@
     padding: 2em 0 1em 0;
     &:before {
         background-image: url('/assets/img/quote-bg.svg');
+        background-repeat: no-repeat;
+        content: ' ';
         width: px2rem(94px);
         height: px2rem(82px);
+        display: block;
+        position: absolute;
         top: 0px;
     }
-    .Quote-avatar {
-        border-radius: 50%;
-        border: none;
+    .Quote-text {
+        border-left: none;
+        padding-left: 0;
+    }
+    .Quote-citation {
+        padding-left: 0;
     }
     .Quote-authorrole {
         color: $Crayola-red-acc2;
     }
 }
-
-.Quote--testimonial {
-    margin: px2rem(20px) auto;
-    &:before {
-        content: none;
-        width: auto;
-        height: auto;
-    }
-    .Quote-text {
-        border-left: px2rem(7px) solid black;
-        padding-left: px2rem(24px);
-        font-family: $font-main;
-        font-weight: 400;
-    }
-    .Quote-citation {
-        padding-left: px2rem(31px);
-        text-transform: none;
-        font-family: $font-main;
-        font-weight: 400;
-        letter-spacing: normal;
-    }
-    .Quote-avatar {
-        border-radius: 50%;
-        border: none;
-        max-width: px2rem(70px);
-        max-height: px2rem(70px);
-    }
-}
 @media screen and (min-width: px2em(500px)) {
-    .Quote--testimonial {
+    .Quote--event {
         .Quote-text {
-            font-size: px2rem(22px);
+            font-size: inherit;
         }
         .Quote-citation {
-            font-size: px2rem(18px);
+            font-size: inherit;
         }
     }
 }

@@ -35,16 +35,6 @@ module.exports = {
                 quoteAuthor: 'Don Norman',
                 quoteAuthorRole: 'Speaker at UX London 2009'
             }
-        },
-        {
-            name: 'testimonial',
-            context: {
-                quoteModifiers: 'testimonial',
-                quoteAvatarSrc: '/assets/img/work/ch4/anna-doble.jpg',
-                quoteText: 'I can’t recommend this kind of research sprint enough. We got a report, detailed technical validation of an idea, mock ups and a plan for how to proceed, while getting staff and stakeholders involved in the project — all in the space of 5 days.',
-                quoteAuthor: 'Leon Paternoster',
-                quoteAuthorRole: 'Deputy Head of IT at Suffolk Libraries'
-            }
         }
     ]
 }
