@@ -30,7 +30,6 @@ module.exports = {
         "quoteAvatarAlt": "@quote.quoteAvatarAlt",
         "quoteText": "@quote.quoteText",
         "quoteAuthor": "@quote.quoteAuthor",
-        "quoteModifiers": "testimonial",
         "resultsProse": `
         <h2 class="Heading Heading--context">The Results</h2>
         <h3 class="Heading Heading--bump"><span class="u-underline">A launchable MVP with direction</span></h3>
