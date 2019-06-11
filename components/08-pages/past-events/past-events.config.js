@@ -8,7 +8,7 @@ module.exports = {
         /*Masthead*/
         mastheadTitle: 'Our Past<br>Events.',
         mastheadDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud .',
-        mastheadModifier: '--chimney Texture--home',
+        mastheadModifier: '--chimney Texture',
         mastheadBreadcrumb: true,
         segmentOne: 'Events',
         breadcrumbUrl: '/components/preview/events',
@@ -36,6 +36,6 @@ module.exports = {
             inputGroupMicrocopy: '@site-footer.inputGroupMicrocopy',
             inputGroupModifiers: '@site-footer.inputGroupModifiers',
             siteFooterSmall: '@site-footer.siteFooterSmall'
-        }  
+        }
     }
 };
