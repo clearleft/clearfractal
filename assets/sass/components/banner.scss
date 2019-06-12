@@ -4,6 +4,10 @@
     margin-right: auto;
     padding: px2rem(30px) px2rem(16px);
     text-align: center;
+
+    > * + * {
+        padding-top: 1.8rem;
+    }
 }
 .Banner-caption {
     @include font(14px);
