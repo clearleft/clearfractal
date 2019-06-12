@@ -13,7 +13,7 @@ module.exports = {
                 "bannerModifiers": ["--notice"],
                 "bannerCaption": "Fancy a change?",
                 "bannerHeadline": "Come grow with us",
-                "bannerBody" :"We care deeply about our work and always aim to do the right thing. If that sounds up your street then let’s chat."
+                "bannerBody": "We care deeply about our work and always aim to do the right thing. If that sounds up your street then let’s chat."
             }
         },
         {
@@ -28,11 +28,29 @@ module.exports = {
             "context": {
                 "bannerModifiers": ["--decorated"],
                 "bannerCaption": "",
-                "bannerBody":`<p>We’re a team of makers, thinkers, organisers and digital explorers.<br>We’re always actively seeking out new skills, challenges and opportunities.</p>`,
+                "bannerBody": `<p>We’re a team of makers, thinkers, organisers and digital explorers.<br>We’re always actively seeking out new skills, challenges and opportunities.</p>`,
                 "megaLinkURL": "#",
                 "megaLinkText": "Check out our open vacancies",
                 "megaLinkModifier": "--inverted"
             }
-        }
+        },
+        {
+            "name": "Two Links",
+            "context": {
+                "bannerModifiers": ["--decorated"],
+                "bannerCaption": "",
+                "bannerBody": `<p>We’re a team of makers, thinkers, organisers and digital explorers.<br>We’re always actively seeking out new skills, challenges and opportunities.</p>`,
+                "megaLinkModifier": "--inverted",
+                links: [
+                    {
+                        megaLinkURL: '#',
+                        megaLinkText: 'A link to somewhere'
+                    },
+                    {
+                        megaLinkURL: '#',
+                        megaLinkText: 'A link to somewhere'
+                    }]
+            }
+        },
     ]
 }
