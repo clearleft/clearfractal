@@ -1,0 +1,24 @@
+.MultiLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    > *:not(.MegaLink--block) + * {
+        margin-top: 1rem;
+    }
+
+    > .MegaLink--super + * {
+        margin-top: 2rem;
+    }
+
+    .MegaLink--block {
+        align-self: stretch;
+    }
+}
+
+// VARIANTS
+
+.MultiLink--left {
+    align-items: flex-start;
+}

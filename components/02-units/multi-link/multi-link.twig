@@ -1,0 +1,5 @@
+<div class="MultiLink{% if multiLinkModifier %} MultiLink{{multiLinkModifier}}{% endif %}"> 
+    {% for link in links %}
+        {% include '@mega-link' with link %}
+    {% endfor %}
+</div>
