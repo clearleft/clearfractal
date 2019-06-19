@@ -4,7 +4,6 @@ import ClearCore from './engine/clearcore.js';
 
 // components
 import PrimaryNavigation from './components/primary-navigation.js';
-import Jobs from './components/jobs.js';
 import LoadLsOnly from './components/load-ls-only.js';
 
 (function () {
@@ -27,7 +26,6 @@ import LoadLsOnly from './components/load-ls-only.js';
         new PrimaryNavigation(document.querySelector('.PrimaryNavigation'));
     }
 
-    new Jobs(document.querySelector('.Jobs'));
 
     new LoadLsOnly();
 
