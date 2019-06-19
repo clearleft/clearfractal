@@ -1,5 +1,3 @@
-import ClearCore from '../engine/clearcore.js';
-
 const attrsMap = {
     src: 'data-src',
     srcset: 'data-srcset'
