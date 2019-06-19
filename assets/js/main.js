@@ -6,7 +6,6 @@ import ClearCore from './engine/clearcore.js';
 import PrimaryNavigation from './components/primary-navigation.js';
 import BlogFilter from './components/blog-filter.js';
 import Jobs from './components/jobs.js';
-import Tabs from './components/tabs.js';
 import LoadLsOnly from './components/load-ls-only.js';
 
 (function () {
@@ -36,8 +35,6 @@ import LoadLsOnly from './components/load-ls-only.js';
     }
 
     new Jobs(document.querySelector('.Jobs'));
-
-    new Tabs(document.querySelector('.Tabs'));
 
     new LoadLsOnly();
 
