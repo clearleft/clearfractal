@@ -1,7 +1,4 @@
 
-// engine
-import ClearCore from './engine/clearcore.js';
-
 // components
 import PrimaryNavigation from './components/primary-navigation.js';
 import LoadLsOnly from './components/load-ls-only.js';
@@ -13,11 +10,6 @@ import LoadLsOnly from './components/load-ls-only.js';
         return;
     }
 
-
-    if ("performance" in window) {
-        ClearCore.init();
-    }
-
     /**************************
         Load components
     **************************/
@@ -25,7 +17,6 @@ import LoadLsOnly from './components/load-ls-only.js';
     if ('content' in document.createElement('template')) {
         new PrimaryNavigation(document.querySelector('.PrimaryNavigation'));
     }
-
 
     new LoadLsOnly();
 
