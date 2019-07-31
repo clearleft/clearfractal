@@ -54,4 +54,6 @@ import LoadLsOnly           from './components/load-ls-only.js';
     // Code Highlighting
     hljs.initHighlightingOnLoad();
 
+    DropDown();
+
 })(window);

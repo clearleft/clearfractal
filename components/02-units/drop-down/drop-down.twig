@@ -1,0 +1,10 @@
+<div class="Dropdown">
+  <button class="Dropdown-button" aria-controls="content" aria-expanded="false">{{ dropdownButtonText }}</button>
+  <ul id="content" class="Dropdown-content">
+    {% for item in items %}
+    <li class="Dropdown-item">
+      <a class="Dropdown-link" href="{{ item.url }}">{{ item.text }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
