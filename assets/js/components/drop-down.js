@@ -1,5 +1,4 @@
 function DropDown() {
-    console.log("beepboop");
     const dropdown = document.querySelector(".Dropdown");
 
     const button = dropdown.querySelector(".Dropdown-button");
@@ -9,8 +8,6 @@ function DropDown() {
     button.addEventListener("click", toggleContent);
 
     function toggleContent() {
-        console.log("test");
-
         let expanded = button.getAttribute("aria-expanded");
 
         if (expanded === "true") {
