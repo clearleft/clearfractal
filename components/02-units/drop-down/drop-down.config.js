@@ -9,11 +9,24 @@ module.exports = {
             },
             {
                 url: '#',
-                text: 'option two'
+                text: 'option two',
+                active: true
             },
             {
                 url: '#',
                 text: 'option three'
+            },
+            {
+                url: '#',
+                text: 'option four'
+            },
+            {
+                url: '#',
+                text: 'option five'
+            },
+            {
+                url: '#',
+                text: 'option six'
             },]
     }
 }
