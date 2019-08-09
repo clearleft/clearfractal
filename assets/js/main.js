@@ -5,6 +5,7 @@ import ClearCore            from './engine/clearcore.js';
 // components
 import PrimaryNavigation    from './components/primary-navigation.js';
 import BlogFilter           from './components/blog-filter.js';
+import DropDown             from './components/drop-down.js';
 import Jobs                 from './components/jobs.js';
 import Peek                 from './components/peek.js';
 import Tabs                 from './components/tabs.js';
