@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg viewBox="0 0 22 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Select</title>
     <g id="Posts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="select" transform="translate(-637.000000, -336.000000)" fill="#006FF5">
             <path d="M638.414214,336 L637,337.414214 L646.894203,347.308417 C647.289167,347.703381 647.925554,347.701863 648.319,347.308417 L658.213203,337.414214 L656.79899,336 L647.606602,345.192388 L638.414214,336 Z" id="up" transform="translate(647.606602, 341.802036) scale(1, -1) translate(-647.606602, -341.802036) "></path>
