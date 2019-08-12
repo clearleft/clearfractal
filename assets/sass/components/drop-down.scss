@@ -1,9 +1,24 @@
-.Dropdown {
+.Dropdown--constrained {
+    margin: auto;
+    max-width: px2em(930px);
+    padding: 0 px2rem(20px) px2rem(30px) px2rem(20px);
+}
+
+.Dropdown-inner {
     position: relative;
     height: auto;
     width: 100%;
-    max-width: 18rem;
+    max-width: 19rem;
     z-index: 1;
+}
+
+.Dropdown-label {
+    font-weight: bold;
+    @include font(12px);
+    color: $mid-grey;
+    text-transform: uppercase;
+    font-family: $font-secondary;
+    letter-spacing: 1.3px;
 }
 
 .Dropdown-button {
@@ -16,7 +31,6 @@
     color: $mid-grey;
     border: none;
     text-decoration: none;
-    color: $Jet-grey;
     font-family: $font-main;
     font-weight: normal;
     @include font(16px);
@@ -68,7 +82,7 @@
 
 .Dropdown-link:focus,
 .Dropdown-link:hover {
-    color: $Jet-grey;
+    color: $mid-grey;
     background-color: $Anti-white-flash;
     outline: none;
 }
@@ -130,7 +144,7 @@
     left: 0;
     margin: 0;
     border-bottom: none;
-    color: $Jet-grey;
+    color: $mid-grey;
     font-family: $font-main;
     font-weight: normal;
     @include font(16px);
