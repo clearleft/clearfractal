@@ -1,10 +1,15 @@
-<div class="Dropdown">
-  <button class="Dropdown-button" aria-controls="content" aria-expanded="false">{{ dropdownButtonText }}</button>
-  <ul id="content" class="Dropdown-content">
-    {% for item in items %}
-    <li class="Dropdown-item">
-      <a class="Dropdown-link {{item.active ? "Dropdown-link--active" : " "}}" href="{{ item.url }}">{{ item.text }}</a>
-    </li>
-    {% endfor %}
-  </ul>
+<div class="Dropdown{% if dropdownModifier %} Dropdown{{ dropdownModifier }}{% endif %}">
+  <div class="Dropdown-inner">
+    {% if dropdownLabel %}
+    <label class="Dropdown-label" for="Dropdown-button">{{ dropdownLabel }}</label>
+    {% endif %}
+    <button id="Dropdown-button" class="Dropdown-button" aria-controls="content" aria-expanded="false">{{ dropdownButtonText }}</button>
+    <ul id="content" class="Dropdown-content">
+      {% for item in items %}
+      <li class="Dropdown-item">
+        <a class="Dropdown-link {{item.active ? "Dropdown-link--active" : " "}}" href="{{ item.url }}">{{ item.text }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>

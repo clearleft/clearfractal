@@ -1,7 +1,8 @@
 module.exports = {
-    status: 'wip',
+    status: 'ready',
     context: {
-        dropdownButtonText: "Choose an option",
+        dropdownButtonText: 'Choose an option',
+        dropdownLabel: 'show',
         items: [
             {
                 url: '#',
@@ -28,5 +29,11 @@ module.exports = {
                 url: '#',
                 text: 'option six'
             },]
-    }
+    },
+    variants: [{
+        name: 'constrained',
+        context: {
+            dropdownModifier: '--constrained'
+        }
+    }]
 }
