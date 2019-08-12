@@ -4,6 +4,12 @@
     padding: 0 px2rem(20px) px2rem(30px) px2rem(20px);
 }
 
+@media screen and (min-width: 53.125em) {
+    .Dropdown--constrained {
+        padding: 0 px2rem(42px) px2rem(30px) px2rem(42px);
+    }
+}
+
 .Dropdown-inner {
     position: relative;
     height: auto;
