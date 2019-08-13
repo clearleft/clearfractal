@@ -2,6 +2,7 @@
 // components
 import PrimaryNavigation from './components/primary-navigation.js';
 import LoadLsOnly from './components/load-ls-only.js';
+import DropDown from './components/drop-down.js';
 
 (function () {
 
