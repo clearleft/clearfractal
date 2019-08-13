@@ -1,0 +1,179 @@
+.Dropdown--constrained {
+    margin: auto;
+    max-width: px2em(930px);
+    padding: 0 px2rem(20px) px2rem(30px) px2rem(20px);
+}
+
+@media screen and (min-width: 53.125em) {
+    .Dropdown--constrained {
+        padding: 0 px2rem(42px) px2rem(30px) px2rem(42px);
+    }
+}
+
+.Dropdown-inner {
+    position: relative;
+    height: auto;
+    width: 100%;
+    max-width: 19rem;
+    z-index: 1;
+}
+
+.Dropdown-label {
+    font-weight: bold;
+    @include font(12px);
+    color: $mid-grey;
+    text-transform: uppercase;
+    font-family: $font-secondary;
+    letter-spacing: 1.3px;
+}
+
+.Dropdown-button {
+    position: relative;
+    display: none;
+    width: 100%;
+    padding: 0.6rem 2rem 0.6rem 1rem;
+    margin: 0;
+    background: $Blank;
+    color: $mid-grey;
+    border: none;
+    text-decoration: none;
+    font-family: $font-main;
+    font-weight: normal;
+    @include font(16px);
+    text-align: left;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    overflow: hidden;
+    border: scale-color($Dark-liver-grey, $alpha: -80%) solid 2px;
+    border-radius: 4px;
+}
+
+.hasJS .Dropdown-button {
+    display: inline-block;
+}
+
+.Dropdown-button:after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 22 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.414 0L0 1.414l9.894 9.894a1.006 1.006 0 0 0 1.425 0l9.894-9.894L19.8 0l-9.192 9.192L1.414 0z' fill='%23CCC' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0.5rem;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    pointer-events: none;
+    transition: transform 0.2s ease-out;
+    transform-origin: center;
+}
+
+.Dropdown-button[aria-expanded="true"] {
+    border: 2px solid $Crayola-red;
+    border-bottom: none;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: border 0.2s ease-out;
+}
+
+.Dropdown-button[aria-expanded="true"]:after {
+    filter: invert(0.4) sepia(1) saturate(30) hue-rotate(306deg) brightness(0.89);
+    transform: rotate(0.5turn);
+}
+
+.Dropdown-button[aria-expanded="true"]:focus {
+    outline: none;
+}
+
+.Dropdown-link:focus,
+.Dropdown-link:hover {
+    color: $mid-grey;
+    background-color: $Anti-white-flash;
+    outline: none;
+}
+
+.Dropdown-content {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    z-index: -1;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.hasJS .Dropdown-content {
+    position: absolute;
+    top: 100%;
+    background-color: $Blank;
+    box-shadow: inset 0 2px 0 0 $Anti-white-flash;
+    border: 2px solid $Crayola-red-acc;
+    border-top: none;
+    max-height: 230px;
+    overflow: scroll;
+    opacity: 0;
+    transition: opacity 0.2s ease-out, transform 0.3s ease-out;
+}
+
+.Dropdown-content[aria-hidden="true"] {
+    visibility: hidden;
+    transform: translateY(-50px);
+}
+
+.Dropdown-content[aria-hidden="false"] {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Dropdown-item {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: px2rem(50px);
+    padding: 0.6rem 2rem;
+    margin: 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+.Dropdown-link {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border-bottom: none;
+    color: $mid-grey;
+    font-family: $font-main;
+    font-weight: normal;
+    @include font(16px);
+    line-height: px2rem(50px);
+    padding-left: 2rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.Dropdown-link--active:before {
+    content: '';
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64.16 52.5'%3E%3Cpath fill='%23e71651' d='M17.5 52.5L0 35l5.83-5.83L17.5 40.84 58.33 0l5.83 5.84z'/%3E%3C/svg%3E");
+
+}
+
+.hasJS .Dropdown-link {
+    text-decoration: none;
+}

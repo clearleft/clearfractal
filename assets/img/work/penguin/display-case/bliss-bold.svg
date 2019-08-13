@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="308px" height="209px" viewBox="0 0 308 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
-    <title>Rectangle</title>
-    <desc>Created with Sketch.</desc>
+    
     <defs>
         <path d="M0,10.0019796 C0,4.4780388 4.47365195,0 10.0029514,0 L289.997049,0 C295.521526,0 300,4.47998763 300,10.0019796 L300,190.99802 C300,196.521961 295.526348,201 289.997049,201 L10.0029514,201 C4.47847388,201 0,196.520012 0,190.99802 L0,10.0019796 Z" id="path-1"></path>
         <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
