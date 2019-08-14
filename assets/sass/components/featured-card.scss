@@ -10,6 +10,7 @@
     -webkit-font-smoothing: subpixel-antialiased;
 
     &:after {
+        pointer-events: none;
         content: "";
         position: absolute;
         width: 100%;
