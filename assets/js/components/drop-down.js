@@ -102,7 +102,7 @@ function DropDown() {
 
         function externalClick(e) {
             // If the click happened inside dropdown, exit.
-            if (event.target.closest(".Dropdown")) return;
+            if (event.target.closest(".Dropdown-inner")) return;
 
             closeFilter()
         }
