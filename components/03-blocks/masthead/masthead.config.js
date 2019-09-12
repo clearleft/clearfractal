@@ -56,11 +56,20 @@ module.exports = {
             "name": "inverted",
             "preview": "@preview-dark",
             "context": {
-                "mastheadHeadingModifer": "--inverted",
+                "mastheadModifier": "--inverted",
                 "mastheadContext": "topic",
                 "breadcrumbModifier": false,
                 "segmentOne": "About us",
-                "segmentTwo": "Values"
+                "segmentTwo": "Values",
+                "mastheadDescription": "Since 2005, we have applied strategic design, research, and product development to help deliver unprecedented value.",
+            }
+        },
+        {
+            "name": "minimal",
+            "context": {
+                "mastheadModifier": "--minimal",
+                "breadcrumbModifier": false,
+                "mastheadDescription": "Since 2005, we have applied strategic design, research, and product development to help deliver unprecedented value.",
             }
         },
         {
