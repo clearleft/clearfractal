@@ -10,23 +10,12 @@
     background-image: url('/assets/img/arrow.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 50% 80%;
+    background-position: 50% 0.5rem;
     right: calc(100% - 1.5rem);
     width: 1.5rem;
     height: 100%;
     transition: transform ease-out 0.4s;
     transform-origin: 50% 50%;
-}
-
-.Link--springboard:hover.Link--springboard:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    left: 2rem;
-    width: calc(100% - 2rem);
-    height: 2px;
-    bottom: -2px;
-    background-color: red;
 }
 
 .Link--springboard:hover.Link--springboard:before {
