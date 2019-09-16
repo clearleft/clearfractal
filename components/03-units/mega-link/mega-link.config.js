@@ -27,11 +27,17 @@ module.exports = {
         {
             name: 'Block-Inverted',
             display: {
-                'background-color':'#333' 
+                'background-color': '#333'
             },
             context: {
                 megaLinkModifier: '--block MegaLink--inverted'
             }
-        }
+        },
+        {
+            name: 'Springboard',
+            context: {
+                megaLinkModifier: '--springboard'
+            }
+        },
     ]
 }
