@@ -10,7 +10,7 @@
     {% if cardMiscStyles %} style="{{ cardMiscStyles }}"{% endif %}
     aria-labelledby="{{cardHeadingId}}"
     >
-    {% if cardBar %}
+    {% if (cardBar) or ('--springboard' not in cardModifiers) %}
         <div class="Bar"{% if cardBarColour %} style="color:{{ cardBarColour }}"{% endif %}></div>
     {% endif %}
     {% if cardLogoAlt %}
@@ -39,6 +39,11 @@
         {% if authorImage or authorName %}
         <div class="Card-author">
             {% include '@author' %}
+        </div><!--/.Card-author-->
+        {% endif %}
+        {% if megaLinkURL and megaLinkText %}
+        <div class="Card-link">
+            {% include '@mega-link' with {megaLinkModifier: '--springboard'} %}
         </div><!--/.Card-author-->
         {% endif %}
     </div><!--/.Card-primary-->
