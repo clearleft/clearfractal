@@ -105,3 +105,65 @@
         }
     }
 }
+
+.Quote--standalone {
+    margin: 0;
+    padding: 2em 0 1em 0;
+    &:before {
+        background-image: url('/assets/img/quote-standalone.svg');
+        background-repeat: no-repeat;
+        content: ' ';
+        width: px2rem(40px);
+        height: px2rem(29px);
+        display: block;
+        position: absolute;
+        top: 0px;
+    }
+    .Quote-text {
+        font-family: $font-secondary;
+        color: $Brand-plum;
+        border-left: none;
+        @include font(27px, 27px);
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+    .Quote-citation {
+        padding-left: 0;
+    }
+    .Quote-author > * {
+        @include font(19px, 30px);
+        display: inline;
+        color: $Brand-plum;
+    }
+    .Quote-author {
+        padding-left: 1.3rem;
+        position: relative;
+        &:before {
+            content: '—';
+            position: absolute;
+            left: 0;
+            top: 0.35rem;
+            color: $Brand-plum;
+        }
+    }
+}
+@media screen and (min-width: px2em(800px)) {
+    .Quote--standalone {
+        max-width: none;
+        margin: 0;
+        padding: 0 0 1em 3.7em;
+        &:before {
+            width: px2rem(94px);
+            height: px2rem(82px);
+            top: 1.4em; // optical adjustment
+            left: 0px;
+        }
+        .Quote-text {
+            @include font(44px, 44px);
+        }
+        .Quote-citation {
+            @include font(13px, 16px);
+            padding-top: 1em;
+        }
+    }
+}
