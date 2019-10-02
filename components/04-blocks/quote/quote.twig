@@ -6,7 +6,7 @@
         {% if quoteAvatarSrc %}<img class="Quote-avatar" src="{{quoteAvatarSrc}}" alt="{{quoteAvatarAlt}}">{% endif %}
         <div class="Quote-author">
             {% if quoteAuthor %}<span class="Quote-authorname">{{quoteAuthor}}</span>{% endif %}
-            {% if quoteAuthorRole %}<span class="Quote-authorrole">{{quoteAuthorRole}}</span>{% endif %}
+            {% if quoteAuthorRole %}<span class="Quote-authorrole">{% if 'standalone' in quoteModifiers %}, {% endif %}{{quoteAuthorRole}}</span>{% endif %}
         </div>
     </figcaption>
 </figure>

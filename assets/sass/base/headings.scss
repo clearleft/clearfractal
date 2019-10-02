@@ -45,10 +45,37 @@ a .Heading {
     font-weight: 700;
     letter-spacing: -0.27px;
 }
-.Heading--body {
+.Heading--body,
+.Heading--micro {
     @include font(16px, 25px);
     font-weight: 700;
     letter-spacing: -0.22px;
+}
+.Heading--micro {
+    padding: 0 2.5rem;
+    width: 100%;
+    position: relative;
+    color: $light-grey;
+}
+.Heading--micro:after,
+.Heading--micro:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+    width: 2rem;
+    height: 0.4rem;
+    background-image: url('/assets/img/line.svg');
+    background-repeat: no-repeat;
+    background-size: 600%;
+}
+.Heading--micro:before {
+    right: calc(100% - 2.3rem);
+    background-position: left;
+}
+.Heading--micro:after {
+    left: calc(100% - 2.3rem);
+    background-position: right;
 }
 .Heading--context {
     @include font(14px, 20px);
@@ -91,9 +118,37 @@ a .Heading--inverted {
         @include font(28px, 27px);
         font-weight: 700;
     }
-    .Heading--body {
+    .Heading--body,
+    .Heading--micro {
         @include font(22px, 27px);
         font-weight: 700;
+    }
+    .Heading--micro {
+        padding: 0;
+        width: auto;
+        display: inline-block;
+        position: relative;
+        color: $light-grey;
+    }
+    .Heading--micro:after,
+    .Heading--micro:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-30%);
+        width: 4.5rem;
+        height: 0.4rem;
+        background-image: url('/assets/img/line.svg');
+        background-repeat: no-repeat;
+        background-size: 600%;
+    }
+    .Heading--micro:before {
+        right: calc(100% + 1rem);
+        background-position: left;
+    }
+    .Heading--micro:after {
+        left: calc(100% + 1rem);
+        background-position: right;
     }
 }
 

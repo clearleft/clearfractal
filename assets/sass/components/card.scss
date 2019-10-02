@@ -81,6 +81,19 @@
         max-width: px2rem(200px);
     }
 }
+.Card--springboard {
+    .Card-title {
+        color: $Lapis-lazuli-blue;
+        font-weight: 800;
+        @include font(31px, 34px);
+    }
+    ul {
+        margin-left: 1.5rem;
+        color: $Lapis-lazuli-blue;
+        font-weight: 700;
+        font-family: $font-secondary;
+    }
+}
 
 /*****************************
     Media Queries
@@ -101,6 +114,11 @@
             @include font(31px, 34px);
             font-weight: 700;
             letter-spacing: -0.44px;
+        }
+    }
+    .Card--springboard {
+        .Card-title {
+            @include font(43px, 50px);
         }
     }
 }

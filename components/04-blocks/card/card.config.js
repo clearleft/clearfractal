@@ -64,6 +64,19 @@ module.exports = {
             context: {
                 cardModifiers: ['--home'],
             }
+        },
+        {
+            name: 'Springboard',
+            context: {
+                cardModifiers: ['--springboard'],
+                cardBar: false,
+                cardCategory: null,
+                cardDescription: '<p>The first phase in any design process is research. Our experienced researchers help you understand your customers, challenge assumptions, and nurture innovation ideas. They excel in</p><ul><li>Stakeholder research</li><li>Generative user research</li><li>Usability testing and heuristic analysis</li><li>Emerging trend, behaviour & market analysis</li><li>Behavioural segmentation and persona creation</li></ul><p>The first phase in any design process is research. Our experienced researchers help you understand your customers, challenge assumptions, and nurture innovation ideas. They excel in</p>',
+                cardMeta: null,
+                megaLinkURL: '#',
+                cardUrl: null,
+                megaLinkText: 'A link to somewhere'
+            }
         }
     ]
 }
