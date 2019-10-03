@@ -1,0 +1,29 @@
+:root {
+    --mouse-x: 0%;
+    --mouse-y: 0%;
+    --quarter-mouse-x: calc(var(--mouse-x) / 4);
+    --half-mouse-x: calc(var(--mouse-x) / 2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    #balloon,
+    .balloonmask {
+        transform: translate(var(--mouse-x), var(--mouse-y));
+    }
+
+    .balloonmask-bottom {
+        transform: translate(calc(var(--mouse-x) + var(--quarter-mouse-x)), var(--mouse-y));
+    }
+
+    #mountainfront {
+        transform: translateX(var(--quarter-mouse-x));
+    }
+
+    .mask {
+        transform: translateX(calc(var(--half-mouse-x)));
+    }
+
+    #mountainback {
+        transform: translateX(calc(-1 * var(--quarter-mouse-x)));
+    }
+}

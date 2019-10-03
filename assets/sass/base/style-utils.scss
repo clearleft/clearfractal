@@ -84,3 +84,66 @@
 .u-underline {
     background-image: linear-gradient(transparent 60%,$Orange-yellow 60%, $Orange-yellow 85%, transparent 85%, transparent 100%);
 }
+
+@media screen and (max-width: em(700px)) {
+    .Illustration {
+        padding-bottom: 40vh;
+    }
+}
+.Illustration {
+    position: relative;
+}
+
+.Illustration .Balloon {
+    position: absolute;
+    height: calc(3rem + 40vh);
+    bottom: 0;
+    right: 0;
+    fill: currentColor;
+    z-index: 0;
+}
+
+@media screen and (min-width: em(700px)) {
+    .Illustration .Balloon {
+        height: 60%;
+        right: -20%;
+        top: 3rem;
+    }
+
+    .Illustration .Heading {
+        max-width: 33rem;
+    }
+}
+
+@media screen and (min-width: em(900px)) {
+    .Illustration .Balloon {
+        right: -10%;
+    }
+
+    .Illustration .Heading {
+        max-width: none;
+    }
+}
+
+@media screen and (min-width: em(1100px)) {
+    .Illustration .Balloon {
+        height: 80%;
+        right: -5%;
+        top: unset;
+    }
+
+    .Illustration #cloud1 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: em(1600px)) {
+    .Illustration .Balloon {
+        right: 0;
+    }
+
+    .Illustration #cloud1 {
+        display: block;
+    }
+}
+
