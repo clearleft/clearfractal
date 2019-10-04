@@ -10,6 +10,15 @@
         color: $Crayola-red-acc2;
     }
 }
+.Background--highlight-grey {
+    background-color: $highlight-grey;
+    color: $Jet-grey;
+    a:not([class]):hover,
+    a:not([class]):active,
+    a:not([class]):focus {
+        color: $Crayola-red-acc2;
+    }
+}
 .Background--brandeis-blue {
     background-color: $Brandeis-blue;
     color: $Blank;
