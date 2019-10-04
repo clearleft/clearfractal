@@ -28,7 +28,7 @@
     background: inherit;
 }
 
-.Texture-border--bottom:after {
+.Texture-border--bottom:before {
     width: 100%;
     height: 2rem;
     bottom: -0.8rem;
@@ -41,6 +41,12 @@
     mask-size: cover;
     background: inherit;
 }
+
+.Texture-border--flip:after,
+.Texture-border--flip:before {
+    transform: scaleX(-1);
+}
+
 
 @media screen and (min-width: em(500px)) {
     .Texture {
@@ -156,10 +162,10 @@
     color: $Brandeis-blue;
 }
 .u-carribean-green {
-   color: $Brand-carribean-green;
+    color: $Brand-carribean-green;
 }
 .u-lapis-lazuli-blue {
-   color: $Lapis-lazuli-blue;
+    color: $Lapis-lazuli-blue;
 }
 .u-orange-yellow {
     color: $Orange-yellow;
