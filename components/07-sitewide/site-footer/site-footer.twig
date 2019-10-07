@@ -5,6 +5,12 @@
             {% include '@input-group' %}
             <small class="Heading Heading--context">{{ footerInputSmall }}</small>
         </div>
+
+         <ul class="SiteFooter-icons">
+            {% for socialLink in socialLinks %}
+            <li class="SiteFooter-icon"><a class="SiteFooter-iconLink" href="{{ socialLink.url }}"><img src="{{ socialLink.imgSrc }}" alt="{{ socialLink.alt }}"></a></li>
+            {% endfor %}
+        </ul><!--/.SiteFooter-icons-->
         
         <nav class="SiteFooter-navigation" aria-label="Site Footer Navigation">
             <ul class="SiteFooter-navigationLinks">
@@ -12,14 +18,9 @@
                 <li class="SiteFooter-navigationItem"><a href="{{ footerLink.url }}" class="SiteFooter-navigationLink">{{ footerLink.title }}</a></li>
                 {% endfor %}
             </ul><!--/.SiteFooter-navigationLinks-->
-            <ul class="SiteFooter-icons">
-                {% for socialLink in socialLinks %}
-                <li class="SiteFooter-icon"><a class="SiteFooter-iconLink" href="{{ socialLink.url }}"><img src="{{ socialLink.imgSrc }}" alt="{{ socialLink.alt }}"></a></li>
-                {% endfor %}
-            </ul><!--/.SiteFooter-icons-->
-        </nav>
-        <div class="SiteFooter-small">
+            <div class="SiteFooter-small">
             {{ siteFooterSmall }}
-        </div><!--/.SiteFooter-small-->
+            </div><!--/.SiteFooter-small-->
+        </nav>
     </div><!--/.Cols-->
 </footer><!--/.SiteFooter-->

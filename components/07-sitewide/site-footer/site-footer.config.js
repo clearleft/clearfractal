@@ -16,7 +16,8 @@ module.exports = {
             { "url": "#", "imgSrc": "/assets/img/icons/icon-instagram.svg", "alt": "Find us on Instagram" },
             { "url": "#", "imgSrc": "/assets/img/icons/icon-linkedin.svg", "alt": "Find us on LinkedIn" },
             { "url": "#", "imgSrc": "/assets/img/icons/icon-medium.svg", "alt": "Find us on Medium" },
-            { "url": "#", "imgSrc": "/assets/img/icons/icon-flickr.svg", "alt": "Find us on Flickr" }
+            { "url": "#", "imgSrc": "/assets/img/icons/icon-flickr.svg", "alt": "Find us on Flickr" },
+            { "url": "#", "imgSrc": "/assets/img/icons/icon-instagram.svg", "alt": "Find us on Instagram" },
         ],
         "inputGroupURL": "#",
         "inputGroupLabel": "Get notified with updates",
