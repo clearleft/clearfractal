@@ -107,11 +107,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .u-constrain-large {
     max-width: 120rem;
     margin: auto;
+}
+
+.u-transform-up {
+    transform: translateY(-4.3rem);
 }
 
 .u-hide-sm {
