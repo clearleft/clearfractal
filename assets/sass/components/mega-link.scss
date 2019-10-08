@@ -52,3 +52,27 @@
 .MegaLink--block.MegaLink--inverted:focus {
     background-color: fade-out($Blank, .85);
 }
+
+.MegaLink--springboard {
+    position: relative;
+    padding-left: 2rem;
+    border: none;
+    
+}
+.MegaLink--springboard:before {
+    content: '';
+    position: absolute;
+    background-image: url('/assets/img/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 0.5rem;
+    right: calc(100% - 1.5rem);
+    width: 1.5rem;
+    height: 100%;
+    transition: transform ease-out 0.4s;
+    transform-origin: 50% 50%;
+}
+
+.MegaLink--springboard:hover.MegaLink--springboard:before {
+    transform: translateX(0.35rem) rotate(0.02turn);
+}
