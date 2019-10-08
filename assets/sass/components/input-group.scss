@@ -89,11 +89,9 @@
         color: $Charcoal-grey;
     }
     .InputGroup-label {
-        text-align: center;
-        margin-bottom: px2rem(35px);
+        margin-bottom: px2rem(20px);
     }
     .InputGroup-microcopy {
-        text-align: center;
         display: inline-block;
         width: 100%;
         &>a[href] {
