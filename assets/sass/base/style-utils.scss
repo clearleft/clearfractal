@@ -15,10 +15,10 @@
 }
 
 .Texture-border--top:after {
-    width: 100%;
+    width: 102%;
     height: 2rem;
     top: -0.8rem;
-    left: 0;
+    left: -1%;
     position: absolute;
     content: '';
     -webkit-mask: url(/assets/img/mask.svg) no-repeat 50% 50%;
@@ -29,10 +29,10 @@
 }
 
 .Texture-border--bottom:before {
-    width: 100%;
+    width: 102%;
     height: 2rem;
     bottom: -0.8rem;
-    left: 0;
+    left: -1%;
     position: absolute;
     content: '';
     -webkit-mask: url(/assets/img/mask.svg) no-repeat 50% 50%;
