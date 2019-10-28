@@ -35,6 +35,12 @@ a .Heading {
     font-weight: 700;
     letter-spacing: -0.44px;
 }
+.Heading--medium-temp {
+    @include font(28px, 29px);
+    font-family: $font-statement;
+    font-weight: 700;
+    letter-spacing: -0.44px;
+}
 .Heading--small {
     @include font(25px, 31px);
     font-weight: 700;
