@@ -108,6 +108,16 @@
             }
         }
     }
+
+    .Masthead--inverted {
+        color: $Blank;
+    }
+
+    .Masthead--minimal {
+        .Masthead-description {
+            max-width: 60rem;
+        }
+    }
 }
 
 @media screen and (min-height: px2em(880px)) {

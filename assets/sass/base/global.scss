@@ -46,19 +46,18 @@ svg,
 video {
     vertical-align: middle;
 }
-
+p {
+    margin-top: 0;
+}
+ul {
+    padding: 0;
+}
 a {
     color: $Brandeis-blue;
     text-decoration: none;
     border-bottom: $Crayola-red px2rem(2px) solid;
     font-family: $font-secondary;
     font-weight: 700;
-}
-p {
-    margin-top: 0;
-}
-ul {
-    padding: 0;
 }
 a:hover,
 a:active,

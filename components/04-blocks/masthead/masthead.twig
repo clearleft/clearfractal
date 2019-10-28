@@ -16,11 +16,11 @@
 
             {% if mastheadContext %}
             <div class="Masthead-context">
-                <p class="Heading Heading--context{% if mastheadHeadingModifer %} Heading{{ mastheadHeadingModifer }}{% endif %}">{{ mastheadContext }}</p>
+                <p class="Heading Heading--context{% if mastheadModifier %} Heading{{ mastheadModifier }}{% endif %}">{{ mastheadContext }}</p>
             </div>
             {% endif %}
 
-            <h1 class="Heading{% if '--arrows' in mastheadModifier or '--combo' in mastheadModifier %} Heading--secondary{% else %} Heading--main{% endif %}{% if mastheadHeadingModifer %} Heading{{ mastheadHeadingModifer }}{% endif %}">{{ mastheadTitle }}</h1>
+            <h1 class="Heading{% if '--arrows' in mastheadModifier or '--combo' in mastheadModifier %} Heading--secondary{% else %} Heading--main{% endif %}{% if mastheadHeadingModifer %} Heading{{ mastheadHeadingModifer }}{% endif %}{% if '--inverted' in mastheadModifier %} Heading--inverted {% endif %}">{{ mastheadTitle }}</h1>
 
             {% if mastheadSub %}<p class="Masthead-sub{% if mastheadSubModifer %} Masthead-sub{{ mastheadSubModifer }}{% endif %} Heading Heading--context{% if mastheadHeadingModifer %} Heading{{ mastheadHeadingModifer }}{% endif %}">{{ mastheadSub }}</p>{% endif %}
 
@@ -39,7 +39,7 @@
 
         {% if mastheadDescription %}
         <div class="Masthead-lead">
-            <div class="Masthead-description Lead Bar">{{ mastheadDescription }}</div>
+            <div class="Masthead-description Lead {% if "--minimal" not in mastheadModifier %} Bar {% endif %}">{{ mastheadDescription }}</div>
             {% if mastheadDescriptionSecondary %}
             <div class="Masthead-descriptionSecondary">
                 {% include '@list' with { listItems: mastheadDescriptionSecondary } %}
