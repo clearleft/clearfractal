@@ -1,0 +1,9 @@
+<div class="Point{% if pointModifiers %} Point--{{pointModifiers}}{% endif %}">
+    {% if pointModifiers %} 
+    {% include '@numbers' with {
+        number: pointModifiers,
+    }%}
+    {% endif %}
+    <h3 class="Point-title Heading Heading--medium">{{ pointHeading }}</h3>
+    <p>{{ pointBody }}</p>
+</div>
