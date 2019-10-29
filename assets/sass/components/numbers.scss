@@ -1,0 +1,57 @@
+.number {
+    height: 150px;
+    flex-shrink: 0;
+    overflow: hidden;
+
+    &-path {
+        animation-duration: 0.8s;
+        animation-play-state: paused;
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        animation-fill-mode: forwards;
+    }
+
+    &-path--1 {
+        stroke-dasharray: 263;
+        stroke-dashoffset: 0;
+        animation-name: drawOne;
+    }
+
+    &-path--2 {
+        stroke-dasharray: 320;
+        stroke-dashoffset: 0;
+        animation-name: drawTwo;
+    }
+
+    &-path--3 {
+        stroke-dasharray: 376;
+        stroke-dashoffset: 0;
+        animation-name: drawThree;
+    }
+}
+
+@keyframes drawOne {
+    from {
+        stroke-dashoffset: 263;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes drawTwo {
+    from {
+        stroke-dashoffset: 320;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes drawThree {
+    from {
+        stroke-dashoffset: 376;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
