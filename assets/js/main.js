@@ -2,7 +2,7 @@
 import PrimaryNavigation from "./components/primary-navigation.js";
 import LoadLsOnly from "./components/load-ls-only.js";
 import DropDown from "./components/drop-down.js";
-import Numbers from "./components/numbers.js";
+import Intersect from "./components/intersect.js";
 
 (function() {
     // cut the mustard
@@ -25,5 +25,5 @@ import Numbers from "./components/numbers.js";
 
     DropDown();
 
-    Numbers();
+    Intersect();
 })(window);
