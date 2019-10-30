@@ -4,9 +4,9 @@
     overflow: hidden;
 
     &-path {
-        animation-duration: 0.8s;
+        animation-duration: 1s;
         animation-play-state: paused;
-        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
         animation-fill-mode: forwards;
     }
 
