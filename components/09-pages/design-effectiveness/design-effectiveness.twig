@@ -1,0 +1,40 @@
+
+<div class="Background--carribean-green">
+    {% include '@site-header' %}
+
+    <div class="Splash" role="banner">
+        <h1 class="Splash-header">{{ homeHeader }}</h1>
+
+        <h2 class="Splash-subHeader Heading--medium">{{ homeSubheader }}</h2>
+        
+    </div>
+    <div  class="Container--small">
+        {% include '@hands' %}
+    </div>
+
+</div>
+
+<main id="main-content" class="Texture-border Texture-border--top Background">
+    
+    <div class="Container Container--small Container--paddedLarge">
+        <h2 class="Heading Heading--medium u-lapis-lazuli-blue l-pad-after--mega">We found that nearly <span class="u-carribean-green">9 out of 10</span> organisations where design is making a positive impact have the following aspects in place</h2>
+       {% include '@point' with {
+            pointModifiers: "1",
+            pointHeading: "Empowerment",
+            pointBody: "The physical working environment supports collaborative design activities"
+        } %}
+        {% include '@point' with {
+            pointModifiers: "2",
+            pointHeading: "Empowerment",
+            pointBody: "The physical working environment supports collaborative design activities"
+        } %}
+        {% include '@point' with {
+            pointModifiers: "3",
+            pointHeading: "Empowerment",
+            pointBody: "The physical working environment supports collaborative design activities"
+        } %}
+    </div>
+
+</main>
+
+{% include '@site-footer' %}
