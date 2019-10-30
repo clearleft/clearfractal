@@ -65,13 +65,13 @@ a .Heading {
 }
 .Heading--micro:after,
 .Heading--micro:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-30%);
     width: 2rem;
     height: 0.4rem;
-    background-image: url('/assets/img/line.svg');
+    background-image: url("/assets/img/line.svg");
     background-repeat: no-repeat;
     background-size: 600%;
 }
@@ -104,7 +104,7 @@ a .Heading--inverted {
 }
 @media screen and (min-width: em(580px)) {
     .Heading:not(:last-child) {
-        margin-bottom: units(1);
+        margin-bottom: units(0.5);
     }
     .Heading--main {
         @include font(90px, 84px);
@@ -138,13 +138,13 @@ a .Heading--inverted {
     }
     .Heading--micro:after,
     .Heading--micro:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         transform: translateY(-30%);
         width: 4.5rem;
         height: 0.4rem;
-        background-image: url('/assets/img/line.svg');
+        background-image: url("/assets/img/line.svg");
         background-repeat: no-repeat;
         background-size: 600%;
     }
