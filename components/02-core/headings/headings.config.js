@@ -1,4 +1,5 @@
-'use strict';
+"use strict";
 module.exports = {
-    "status": "ready"
-}
+    status: "ready",
+    preview: "@preview-scroll"
+};
