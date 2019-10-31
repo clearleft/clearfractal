@@ -1,6 +1,6 @@
 .Texture {
     background-attachment: fixed;
-    background-image: url('https://clearleft-v5.s3.amazonaws.com/dots/texture_corners-diamond-grey.png');
+    background-image: url("https://clearleft-v5.s3.amazonaws.com/dots/texture_corners-diamond-grey.png");
     background-repeat: no-repeat;
     background-size: rem(720px);
     background-position: calc(50% + 50vw) calc(540px - 70vw);
@@ -20,7 +20,7 @@
     top: -0.8rem;
     left: 0;
     position: absolute;
-    content: '';
+    content: "";
     -webkit-mask: url(/assets/img/mask.svg) no-repeat 50% 50%;
     mask: url(/assets/img/mask.svg) no-repeat 50% 50%;
     -webkit-mask-size: cover;
@@ -34,7 +34,7 @@
     bottom: -0.8rem;
     left: 0;
     position: absolute;
-    content: '';
+    content: "";
     -webkit-mask: url(/assets/img/mask.svg) no-repeat 50% 50%;
     mask: url(/assets/img/mask.svg) no-repeat 50% 50%;
     -webkit-mask-size: cover;
@@ -82,5 +82,58 @@
 }
 
 .u-underline {
-    background-image: linear-gradient(transparent 60%,$Orange-yellow 60%, $Orange-yellow 85%, transparent 85%, transparent 100%);
+    background-image: linear-gradient(
+        transparent 60%,
+        $Orange-yellow 60%,
+        $Orange-yellow 85%,
+        transparent 85%,
+        transparent 100%
+    );
+}
+
+.u-underline-animated {
+    background-image: linear-gradient(
+        transparent 60%,
+        $Orange-yellow 60%,
+        $Orange-yellow 85%,
+        transparent 85%,
+        transparent 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    animation: animatedUnderline 1.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.8s
+        forwards paused;
+}
+
+@keyframes animatedUnderline {
+    to {
+        background-size: 100% 100%;
+    }
+}
+
+// color utilities
+
+.u-white {
+    color: $Blank;
+}
+.u-brandeis-blue {
+    color: $Brandeis-blue;
+}
+.u-carribean-green {
+    color: $Brand-carribean-green;
+}
+.u-lapis-lazuli-blue {
+    color: $Lapis-lazuli-blue;
+}
+.u-orange-yellow {
+    color: $Orange-yellow;
+}
+.u-plum {
+    color: $Brand-plum;
+}
+.u-sea-serpent-blue {
+    color: $Sea-serpent-blue;
+}
+.u-crayola-red {
+    color: $Crayola-red;
 }

@@ -1,13 +1,12 @@
-
 // components
-import PrimaryNavigation from './components/primary-navigation.js';
-import LoadLsOnly from './components/load-ls-only.js';
-import DropDown from './components/drop-down.js';
+import PrimaryNavigation from "./components/primary-navigation.js";
+import LoadLsOnly from "./components/load-ls-only.js";
+import DropDown from "./components/drop-down.js";
+import Intersect from "./components/intersect.js";
 
-(function () {
-
+(function() {
     // cut the mustard
-    if (!('classList' in Element.prototype)) {
+    if (!("classList" in Element.prototype)) {
         return;
     }
 
@@ -15,8 +14,8 @@ import DropDown from './components/drop-down.js';
         Load components
     **************************/
 
-    if ('content' in document.createElement('template')) {
-        new PrimaryNavigation(document.querySelector('.PrimaryNavigation'));
+    if ("content" in document.createElement("template")) {
+        new PrimaryNavigation(document.querySelector(".PrimaryNavigation"));
     }
 
     new LoadLsOnly();
@@ -26,4 +25,5 @@ import DropDown from './components/drop-down.js';
 
     DropDown();
 
+    Intersect();
 })(window);
