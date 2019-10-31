@@ -1,3 +1,7 @@
+.Point-group {
+    list-style: none;
+}
+
 .Point-group > * + * {
     margin-top: 2rem;
 }
