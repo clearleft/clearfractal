@@ -1,0 +1,32 @@
+.Point-group > * + * {
+    margin-top: 2rem;
+}
+
+@media all and (min-width: px2rem(500px)) {
+    .Point-group > * + * {
+        margin-top: 0;
+    }
+    .Point-group {
+        display: grid;
+        grid-template-columns: 3.5fr 2fr 3.5fr;
+        grid-row-gap: 4rem;
+    }
+    .Point-group-item:nth-of-type(1) {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+    }
+    .Point-group-item:nth-of-type(2) {
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 1;
+    }
+    .Point-group-item:nth-of-type(3) {
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 1;
+    }
+}
+
+@media all and (min-width: px2rem(900px)) {
+    .Point-group {
+        grid-row-gap: 8rem;
+    }
+}
