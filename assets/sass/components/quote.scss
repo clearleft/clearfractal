@@ -35,7 +35,7 @@
     margin-top: 0.5rem;
 }
 
-.Quote-author>* {
+.Quote-author > * {
     display: block;
 }
 
@@ -44,7 +44,6 @@
     margin-top: 0.5rem;
     color: $mid-grey;
 }
-
 
 @media screen and (min-width: px2em(280px)) {
     .Quote-citation {
@@ -63,16 +62,15 @@
     .Quote-citation {
         font-size: px2rem(18px);
     }
-
 }
 
 .Quote--event {
     margin: 0;
     padding: 2em 0 1em 0;
     &:before {
-        background-image: url('/assets/img/quote-bg.svg');
+        background-image: url("/assets/img/quote-bg.svg");
         background-repeat: no-repeat;
-        content: ' ';
+        content: " ";
         width: px2rem(94px);
         height: px2rem(82px);
         display: block;
@@ -107,21 +105,18 @@
 }
 
 .Quote--standalone {
+    color: inherit;
     margin: 0;
     padding: 2em 0 1em 0;
-    &:before {
-        background-image: url('/assets/img/quote-standalone.svg');
-        background-repeat: no-repeat;
-        content: ' ';
+    .Quote-marks {
         width: px2rem(40px);
-        height: px2rem(29px);
         display: block;
         position: absolute;
         top: 0px;
     }
     .Quote-text {
         font-family: $font-secondary;
-        color: $Brand-plum;
+        color: inherit;
         border-left: none;
         @include font(27px, 27px);
         padding-left: 0;
@@ -129,21 +124,22 @@
     }
     .Quote-citation {
         padding-left: 0;
+        color: inherit;
     }
     .Quote-author > * {
         @include font(19px, 30px);
         display: inline;
-        color: $Brand-plum;
+        color: inherit;
     }
     .Quote-author {
         padding-left: 1.3rem;
         position: relative;
         &:before {
-            content: '—';
+            content: "—";
             position: absolute;
             left: 0;
             top: 0.35rem;
-            color: $Brand-plum;
+            color: inherit;
         }
     }
 }
@@ -152,10 +148,9 @@
         max-width: none;
         margin: 0;
         padding: 0 0 1em 3.7em;
-        &:before {
-            width: px2rem(94px);
-            height: px2rem(82px);
-            top: 1.4em; // optical adjustment
+        .Quote-marks {
+            width: px2rem(50px);
+            top: 1em;
             left: 0px;
         }
         .Quote-text {
