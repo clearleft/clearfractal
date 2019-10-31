@@ -1,0 +1,7 @@
+<ul class="Point-group">
+{% for point in pointItems %}
+  <li class="Point-group-item">
+    {% include '@point' with point %}
+  </li>
+{% endfor %}
+</ul>
