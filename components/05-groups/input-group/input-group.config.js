@@ -7,6 +7,7 @@ module.exports = {
         inputGroupSubmit: 'Get the Clearletter',
         inputGroupID: 'ID1',
         inputGroupPlaceholder: 'E.g. example@domain.com',
+        inputGroupName: "EMAIL",
         inputGroupMicrocopy: 'Every 2 weeks. It’S non-salesy. We never spam.'
     },
     variants: [{
