@@ -1,6 +1,7 @@
 module.exports = {
     "status": "ready",
     "context": {
+        "contactOrg": "Clearleft Ltd",
         "contactStreet": "68 Middle Street",
         "contactTown": "Brighton",
         "contactPostcode": "BN1 1AL",
