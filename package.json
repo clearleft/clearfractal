@@ -1,33 +1,33 @@
 {
-    "name": "clearleft-fractal",
-    "version": "0.2.38",
-    "main": "fractal.js",
-    "dependencies": {
-        "@frctl/fractal": "^1.1.0",
-        "@frctl/mandelbrot": "^1.2.1",
-        "@frctl/twig": "^1.0.0-beta.5",
-        "faker": "^3.1.0"
-    },
-    "devDependencies": {
-        "babel-preset-es2015": "^6.22.0",
-        "del": "^2.2.2",
-        "gulp": "^4.0.0",
-        "gulp-postcss": "^6.2.0",
-        "gulp-rename": "^1.2.2",
-        "gulp-sass": "^2.3.2",
-        "gulp-sass-glob": "^1.0.6",
-        "gulp-sourcemaps": "^1.8.1",
-        "gulp-stylelint": "^3.4.0",
-        "postcss-scss": "^0.3.1",
-        "rollup": "^0.41.4",
-        "rollup-plugin-babel": "^2.7.1",
-        "rollup-plugin-filesize": "^1.0.1",
-        "rollup-plugin-uglify": "^1.0.1"
-    },
-    "scripts": {
-        "start": "gulp && fractal start --sync",
-        "build": "gulp && ./node_modules/.bin/fractal build",
-        "build:assets": "gulp",
-        "build:assets:watch": "gulp watch"
-    }
+  "name": "clearleft-fractal",
+  "version": "0.2.39",
+  "main": "fractal.js",
+  "dependencies": {
+    "@frctl/fractal": "^1.1.0",
+    "@frctl/mandelbrot": "^1.2.1",
+    "@frctl/twig": "^1.0.0-beta.5",
+    "faker": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "del": "^2.2.2",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-glob": "^1.0.6",
+    "gulp-sourcemaps": "^1.8.1",
+    "gulp-stylelint": "^3.4.0",
+    "postcss-scss": "^0.3.1",
+    "rollup": "^0.41.4",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-filesize": "^1.0.1",
+    "rollup-plugin-uglify": "^1.0.1"
+  },
+  "scripts": {
+    "start": "gulp && fractal start --sync",
+    "build": "gulp && ./node_modules/.bin/fractal build",
+    "build:assets": "gulp",
+    "build:assets:watch": "gulp watch"
+  }
 }
