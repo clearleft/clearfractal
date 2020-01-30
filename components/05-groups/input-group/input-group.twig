@@ -1,5 +1,5 @@
 <div class="InputGroup{% if inputGroupModifiers %} InputGroup--{{ inputGroupModifiers }}{% endif %}">
-    <form action="{{ inputGroupURL }}" method="{{ formMethod | default('post')}}">
+    <form action="{{ inputGroupURL }}" method="{{ formMethod | default('post')}}"{{ extraAttributes ? ' ' ~ extraAttributes : ''}}>
         {% for name, value in hiddenFields %}
             <input type="hidden" name="{{ name }}" value="{{ value }}" />
         {% endfor %}
