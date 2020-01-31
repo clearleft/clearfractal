@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -83,6 +82,9 @@ svg:not(:root) {
     display: none;
 }
 
+address {
+    font-style: normal;
+}
 @media screen and (min-width: px2em(800px)) {
     body {
         @include font(18px, 32px);
