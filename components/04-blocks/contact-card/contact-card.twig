@@ -1,17 +1,19 @@
 <div class="ContactCard vcard">
     <div class="ContactCard-item">
-        {% if contactOrg %}
-            <span class="fn org">{{contactOrg}}</span>,<br>
-        {% endif %}
-        {% if contactStreet %}
-            <span class="street-address">{{contactStreet}}</span>,<br>
-        {% endif %}
-        {% if contactTown %}
-            <span class="locality">{{contactTown}}</span>,<br>
-        {% endif %}
-        {% if contactPostcode %}
-            <span class="postal-code">{{contactPostcode}}</span>
-        {% endif %}
+        <address  itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            {% if contactOrg %}
+                <span class="fn org">{{contactOrg}}</span>,<br>
+            {% endif %}
+            {% if contactStreet %}
+                <span class="street-address" itemprop="streetAddress">{{contactStreet}}</span>,<br>
+            {% endif %}
+            {% if contactTown %}
+                <span class="locality" itemprop="addressLocality">{{contactTown}}</span>,<br>
+            {% endif %}
+            {% if contactPostcode %}
+                <span class="postal-code" itemprop="postalCode">{{contactPostcode}}</span>
+            {% endif %}
+        </address>
         <div>
             <a class="MegaLink" href="https://www.google.com/maps/place/68+Middle+Street/@50.8210014,-0.143087,16z/data=!4m12!1m6!3m5!1s0x0:0xa4714ad834ee75d7!2s68+Middle+Street!8m2!3d50.8210794!4d-0.1430705!3m4!1s0x0:0xa4714ad834ee75d7!8m2!3d50.8210794!4d-0.1430705?hl=en-GB">Find us here.</a>
         </div>
