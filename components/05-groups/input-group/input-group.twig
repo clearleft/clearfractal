@@ -1,6 +1,8 @@
 <div class="InputGroup{% if inputGroupModifiers %} InputGroup--{{ inputGroupModifiers }}{% endif %}">
-    <form action="{{ inputGroupURL }}" method="{{ formMethod | default('post')}}">
-        <input type="hidden" value="1" name="embed">
+    <form action="{{ inputGroupURL }}" method="{{ formMethod | default('post')}}"{{ extraAttributes ? ' ' ~ extraAttributes : ''}}>
+        {% for name, value in hiddenFields %}
+            <input type="hidden" name="{{ name }}" value="{{ value }}" />
+        {% endfor %}
         <label class="InputGroup-label Heading Heading--bump" for="{{ inputGroupID }}">{{ inputGroupLabel }}</label>
         <div class="Input InputGroup-combo">
             <input class="InputGroup-field" type="email" name="{{ inputGroupName }}" placeholder="{{ inputGroupPlaceholder }}" id="{{ inputGroupID }}"/>
