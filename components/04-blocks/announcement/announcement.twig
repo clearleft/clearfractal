@@ -1,8 +1,17 @@
-<section class="Announcement" {% if announcementImage %}style="background-image: url({{ announcementImage }});"{% endif %}>
-    <span class="Announcement-highlight">{{announcementHighlight}}</span>
+<section class="Announcement {% if inlineImage or (announcementImage and not inlineImage) %}Announcement--image{% endif%}" {% if announcementImage and not inlineImage %}style="background-image: url({{ announcementImage }});"{% endif %}>
+    {% if announcementHighlight %}
+        <span class="Announcement-highlight">{{announcementHighlight}}</span>
+    {% else %}
+        {# <span class="Announcement-spacer"></span> #}
+    {% endif %}
     <div class="Announcement-content">
         <h3 class="Announcement-title Heading Heading--medium-temp">{{announcementTitle}}</h3>
         <p class="Announcement-description">{{announcementDescription}}</p>
         {% include '@mega-link' with {megaLinkModifier: '--springboard'} %}
     </div>
+    {% if announcementImage and inlineImage %}
+        <figure class="Announcement-image">
+            <img src="{{ announcementImage }}" />
+        </figure>
+    {% endif %}
 </section>

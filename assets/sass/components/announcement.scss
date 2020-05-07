@@ -14,7 +14,11 @@
     background-position: bottom center;
     background-size: contain;
 
-    &[style] {
+    &--image {
+        --backgroundOffset: auto;
+    }
+
+    &--image[style] {
         --backgroundOffset: 180px;
     }
 
@@ -47,13 +51,12 @@
     text-transform: uppercase;
     justify-self: start;
     padding: 1rem 2.3rem;
-    margin-bottom: 1.8rem;
     background-color: $Crayola-red;
     color: $Blank;
 }
 
 .Announcement-content {
-    padding: 0 1.5rem;
+    padding: 1.5rem;
 }
 
 .Announcement-description {
@@ -71,9 +74,7 @@
 
 @media screen and (min-width: px2em(640px)) {
     .Announcement {
-        // grid-template-rows: auto auto 100px;
-
-        &[style] {
+        &--image[style] {
             --backgroundOffset: 100px;
         }
     }
@@ -86,11 +87,12 @@
         background-position: bottom right;
         background-size: 40% auto;
 
-        &[style] {
+        &--image {
             grid-template-columns: 1.5fr 1fr;
         }
     }
 
+    .Announcement-spacer,
     .Announcement-highlight {
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
@@ -99,10 +101,16 @@
     .Announcement-content {
         grid-column: 1 / span 1;
         grid-row: 2 / span 1;
-        margin-bottom: 1.5rem;
+        align-self: center;
     }
 
     .Announcement-description {
         padding: 1rem 0;
+    }
+
+    .Announcement-image {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+        align-self: center;
     }
 }
