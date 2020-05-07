@@ -1,4 +1,6 @@
 .Announcement {
+    --backgroundOffset: 20px;
+
     position: relative;
     overflow: visible;
     color: $Jet-grey;
@@ -7,11 +9,14 @@
     backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
     display: grid;
-    grid-template-rows: auto auto 180px;
-    background-image: url("/assets/img/illustrations/handsup.png");
+    grid-template-rows: auto auto var(--backgroundOffset);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: contain;
+
+    &[style] {
+        --backgroundOffset: 180px;
+    }
 
     &:after {
         pointer-events: none;
@@ -66,16 +71,24 @@
 
 @media screen and (min-width: px2em(640px)) {
     .Announcement {
-        grid-template-rows: auto auto 100px;
+        // grid-template-rows: auto auto 100px;
+
+        &[style] {
+            --backgroundOffset: 100px;
+        }
     }
 }
 
 @media screen and (min-width: px2em(800px)) {
     .Announcement {
         grid-template-rows: auto auto;
-        grid-template-columns: 1.5fr 1fr;
+        grid-template-columns: 1fr;
         background-position: bottom right;
         background-size: 40% auto;
+
+        &[style] {
+            grid-template-columns: 1.5fr 1fr;
+        }
     }
 
     .Announcement-highlight {

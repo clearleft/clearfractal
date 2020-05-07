@@ -1,4 +1,4 @@
-<section class="Announcement">
+<section class="Announcement" {% if announcementImage %}style="background-image: url({{ announcementImage }});"{% endif %}>
     <span class="Announcement-highlight">{{announcementHighlight}}</span>
     <div class="Announcement-content">
         <h3 class="Announcement-title Heading Heading--medium-temp">{{announcementTitle}}</h3>
