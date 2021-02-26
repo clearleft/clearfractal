@@ -1,69 +1,69 @@
 .is-panel-event {
-  .ImageBlock--fullwidth {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-
-  .panel {
-    margin-bottom: 3rem;
-  }
-
-  .panel-image {
-    flex-shrink: 0;
-    max-width: 300px;
-  }
-
-  .panel-image p {
-    margin-bottom: 0;
-  }
-
-  .ImageBlock--panel {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    margin: 0;
-    padding: 0;
-  }
-
-  .agenda {
-    list-style: none;
-  }
-
-  .ContactInfo-background {
-    position: relative;
-    height: 100%;
-    min-height: 400px;
-  }
-
-  @media(min-width: 53.125em) {
-    .Masthead-primary .Masthead-sub--contextLarge {
-      line-height: 1.3;
-    }
-  }
-
-  @media(min-width: 900px) {
-    .t-grid-offset {
-      display: grid;
-      grid-template-columns: repeat(9, 1fr);
-    }
-
-    .t-grid-offset > div:nth-child(odd) {
-      justify-self: start;
-      grid-column: 1 / span 7;
-    }
-
-    .t-grid-offset > div:nth-child(even) {
-      justify-self: start;
-      grid-column: 3 / span 7;
-    }
-
-    .panel-image {
-      margin-right: 2rem;
+    .ImageBlock--fullwidth {
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 
     .panel {
-      display: flex;
+        margin-bottom: 3rem;
     }
-  }
+
+    .panel-image {
+        flex-shrink: 0;
+        max-width: 300px;
+    }
+
+    .panel-image p {
+        margin-bottom: 0;
+    }
+
+    .ImageBlock--panel {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    .agenda {
+        list-style: none;
+    }
+
+    .ContactInfo-background {
+        position: relative;
+        height: 100%;
+        min-height: 400px;
+    }
+
+    @media (min-width: 53.125em) {
+        .Masthead-primary .Masthead-sub--contextLarge {
+            line-height: 1.3;
+        }
+    }
+
+    @media (min-width: 900px) {
+        .t-grid-offset {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+        }
+
+        .t-grid-offset > div:nth-child(odd) {
+            justify-self: start;
+            grid-column: 1 / span 7;
+        }
+
+        .t-grid-offset > div:nth-child(even) {
+            justify-self: start;
+            grid-column: 3 / span 7;
+        }
+
+        .panel-image {
+            margin-right: 2rem;
+        }
+
+        .panel {
+            display: flex;
+        }
+    }
 }

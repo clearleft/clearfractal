@@ -1,6 +1,11 @@
 .Logo {
     border-bottom: none;
     display: inline-block;
+
+    & svg {
+        width: px2rem(123px);
+        height: auto;
+    }
 }
 .Logo--inverted .Logo-text {
     fill: $Blank;
@@ -25,9 +30,4 @@
 }
 .Logo--brandeis-blue .Logo-streak {
     stroke: $Brandeis-blue;
-}
-@media only screen and (max-width: px2em(340px)) {
-    .Logo svg {
-        width: px2rem(130px);
-    }
 }
