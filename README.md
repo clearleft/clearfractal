@@ -4,6 +4,8 @@ The Fractal Pattern Library for the Clearleft website.
 
 ## Installation
 
+Works with Node v12.x and NPM v6.x
+
     npm install
     gulp
     fractal start --sync
