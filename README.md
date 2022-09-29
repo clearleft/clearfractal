@@ -1,4 +1,6 @@
-# ClearFractal
+# DEPRECATED ClearFractal
+
+This library is no longer used. The pattern library for the new website lives in the main repo which can be found [here](https://github.com/clearleft/v6.clearleft.com).
 
 The Fractal Pattern Library for the Clearleft website.
 
